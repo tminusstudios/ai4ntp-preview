@@ -1,0 +1,18 @@
+# Secrets / local env (real keys live here — never commit)
+.env
+.env.local
+.env.*.local
+
+# Vercel local link/build
+.vercel
+
+# Dependencies (reinstall from package.json)
+node_modules/
+
+# OS / editor junk
+.DS_Store
+*.bak
+Thumbs.db
+
+# Private business data (PII + strategy) — local disk only, never in git
+/revops

@@ -1,0 +1,1878 @@
+WEBVTT
+
+1
+00:00:03.460 --> 00:00:05.230
+Justin Novak: Welcome, everybody.
+
+2
+00:00:06.500 --> 00:00:23.269
+Justin Novak: Hey, Barbara, Jason, Rahal, and Zane, we've got a handful of you in the room. We have about 100 of you who've signed up for this session, so we'll give everyone just a moment until the room fills up. While you're getting settled, do me a favor and just drop in the chat.
+
+3
+00:00:25.450 --> 00:00:30.540
+Justin Novak: What's one job in your business you wish you never had to do again?
+
+4
+00:00:31.760 --> 00:00:37.860
+Justin Novak: What is the one job in your business you wish you never had to do again? Just hold on to that.
+
+5
+00:00:38.030 --> 00:00:39.509
+Justin Novak: Type in the chat.
+
+6
+00:00:39.660 --> 00:00:42.810
+Justin Novak: We'll loop back to it later. This will matter for later.
+
+7
+00:00:42.920 --> 00:01:01.670
+Justin Novak: So I encourage you all to drop that in the chat. All right, guys, so welcome to session six of AI for NTP. That's AI for non-techie people. If you're new here, our whole thing is fairly simple. We're real operators. We all run our own businesses, and we show you on these sessions weekly how to build with AI.
+
+8
+00:01:03.430 --> 00:01:04.410
+Justin Novak: You're good.
+
+9
+00:01:04.620 --> 00:01:06.450
+Justin Novak: No.
+
+10
+00:01:07.350 --> 00:01:13.809
+Justin Novak: theory, there's no gatekeep. If you guys have a question, everything we show you today, you can go and build yourself.
+
+11
+00:01:13.940 --> 00:01:16.970
+Justin Novak: But here's our promise for the next hour.
+
+12
+00:01:17.150 --> 00:01:30.739
+Justin Novak: We run our company on AI agents, not chatbots you type into, actual agents doing real work every day that… they never sleep, they never shut off. We'll touch more on what an agent is in just a moment, but…
+
+13
+00:01:30.900 --> 00:01:52.700
+Justin Novak: We're going to open the hood on all seven of them, the ones that save us time, save us money, help us make more money. And for each one that we show you, I'm going to show you two. Alec here is going to show you two. And our other partner, Ian, is going to show you three and save the best for last. I'm pumped for number 70. So yeah, we're going to show you what it does, why we built it, and…
+
+14
+00:01:52.700 --> 00:02:15.779
+Justin Novak: Show you enough that you could go and build your own version of it or get inspired to do something that's more relevant to your own operations. So one housekeeping note, any questions, just drop them in the chat and then at the end we'll do a Q&A. So guys, again, quick agenda. We'll showcase the seven agents, how you can collaborate with us, and then a Q&A at the end. Alec, I'm going to pass it to you here. What is an agent?
+
+15
+00:02:16.280 --> 00:02:17.020
+Alec: Yeah, that's
+
+16
+00:02:17.020 --> 00:02:39.919
+Alec: Thanks, Justin. What is an agent? So for a lot of people, this term is, what does this mean? I see this everywhere. I see people talking about it on Instagram. I see people talking about it on Twitter. But what does it mean? And I'll start out with contrasting how most people are using AI, which is conversational AI. You're in your browser using ChatGPT, you're using Claude, and you're asking it for answers.
+
+17
+00:02:39.920 --> 00:02:57.560
+Alec: The difference between that and an agent is instead of asking it for answers, you're asking it for outcomes. You're asking it to take action on your behalf. It's hooked up to tools, it's hooked up to your emails, it's hooked up to, sometimes, iPhones, hooked up to all of your different systems, and has specific roles and actions that it's taking on your behalf.
+
+18
+00:02:57.560 --> 00:03:14.970
+Alec: So, you'll see a lot of different definitions about what is an agent, but that's a good way to think about it, is the contrast between conversational AI, which everyone's using, everyone's using ChatGPT, Claude, and the browser, and then an agent is something where you're asking it for action, and asking it to take action on your behalf.
+
+19
+00:03:17.740 --> 00:03:20.360
+Justin Novak: Thanks, Alec. Ian, anything you want to add to that?
+
+20
+00:03:20.410 --> 00:03:22.809
+Ian: No, that was perfect.
+
+21
+00:03:24.010 --> 00:03:27.670
+Justin Novak: Cool, so guys, who are we? Before we dive in, just…
+
+22
+00:03:28.120 --> 00:03:37.739
+Justin Novak: few moments on who you're talking to, so you can know why you can trust what you're about to see. I'm Justin. I sold my 1st company out of my college dorm.
+
+23
+00:03:37.740 --> 00:04:01.789
+Justin Novak: room. We were at the right place at the right time and it took off. And then the past decade I've spent in growth, go to market, building agents, automations, and really helping a lot of companies grow through these technologies we're going to be sharing today. So everything I'm about to show you, I build and run inside of AI for NTP and for our clients. Ian has been building.
+
+24
+00:04:01.790 --> 00:04:07.359
+Justin Novak: You know, a lot of software for decades now, huh? Yeah.
+
+25
+00:04:07.360 --> 00:04:14.529
+Justin Novak: Very decorated entrepreneur, runs a global business. He's worked with public companies, won a lot of awards.
+
+26
+00:04:14.530 --> 00:04:32.170
+Justin Novak: built across just about every industry you can name. And he also has a fleet of agents that run his businesses every day, day in and day out, and he'll showcase those here soon. Alec here, he, was working inside a really, really big company, and he quit.
+
+27
+00:04:32.170 --> 00:04:40.109
+Justin Novak: And they then hired him back to do consulting and build all their agents. And now he's, I think.
+
+28
+00:04:40.200 --> 00:04:50.450
+Justin Novak: tripled or quadrupled his income, within the first 30 days of quitting that job and going off on his own here, starting this consultancy building agent. So.
+
+29
+00:04:50.510 --> 00:05:03.649
+Justin Novak: Guys, he lives in these tolls daily. Anyways, that's the three of us. We do this for a living. And now we're going to show you how we do it. So who wants to kick us off? E, do you want to go first or?
+
+30
+00:05:03.650 --> 00:05:05.300
+Ian: Yes.
+
+31
+00:05:05.460 --> 00:05:15.609
+Ian: Yes. So before I show you the tool, let me just give a little backstory. So I have a Mac Studio. I got caught in that craze, and I'm glad I did.
+
+32
+00:05:15.610 --> 00:05:25.770
+Ian: Mac Studio and Mac Mini. On my Mac Studio, I have an open claw named Atlas, and I call him the king, because he kind of controls all my other open claws, and manages them.
+
+33
+00:05:25.910 --> 00:05:43.339
+Ian: And, Justin and I, a few months ago, did a call with an SEO expert who's getting paid tens of thousands a month, and ended up selling his company for a lot. And, he… on that call, he showed us this tool that does SEO for AI. It's called AEOGEO. There's a lot of acronyms, but…
+
+34
+00:05:43.340 --> 00:05:51.360
+Ian: Basically, how to be found by AI. He showed us this tool he was using, and gave us some ideas, and after the call, I went to Atlas.
+
+35
+00:05:51.440 --> 00:05:53.849
+Ian: on the Mac Studio, and I said, hey, can you
+
+36
+00:05:53.980 --> 00:05:56.490
+Ian: And, he said, hell yeah.
+
+37
+00:05:56.530 --> 00:06:16.050
+Ian: I said, let's do it. So we did. It took about a week of a lot of back and forth. And we built this tool on the Mac Studio called Pulse Check. I could plug in all my websites, all my projects, my properties, and see if they're being mentioned by LLMs and how they were being mentioned. And then also how I could…
+
+38
+00:06:16.220 --> 00:06:19.720
+Ian: be found a lot better and easier on LLMs.
+
+39
+00:06:19.830 --> 00:06:37.489
+Ian: And then Justin and I were talking a few weeks after that, and he said, you know, other people probably find this useful. I said, you're probably right. So I went to Atlas again and said, should we turn this public-facing? Should we let other people use this? He says, hell yeah. And so we turned it into echocheck.app, and I'll show you that real quick.
+
+40
+00:06:38.340 --> 00:06:40.120
+Ian: Oh, I need to send a request.
+
+41
+00:06:41.120 --> 00:06:41.990
+Justin Novak: You're good.
+
+42
+00:06:41.990 --> 00:06:45.859
+Alec: I think it's funny, guys, for any anyone in the, you know, in the audience here.
+
+43
+00:06:45.960 --> 00:07:02.029
+Alec: That's the difference between agents and conversational AI is that you literally hear Ian referring to Atlas as if it's a person because it can take action as if it is one. So that's another key difference and a key way to think about what an agent is.
+
+44
+00:07:02.570 --> 00:07:20.859
+Ian: That's true, that's true. I actually like that, I like treating it like a person. I know it's not, I know it's software in a box somewhere in the world, but when you do treat it like a person, it's trained to work with humans, and so it actually can react to you and respond to you that way much better. So, because of that, I can brainstorm
+
+45
+00:07:21.090 --> 00:07:31.089
+Ian: with it, and I did on this tool. So, this is, Echo Check. It was basically a tool built, like I said, for myself, and then I turned it outward so that people could figure out
+
+46
+00:07:31.280 --> 00:07:33.739
+Ian: If AI is recommending you and why it doesn't.
+
+47
+00:07:33.940 --> 00:07:41.850
+Ian: And, right on the front page here, you can plug in your website, I'llDoAI4NTP.com, and you can run a free check on it.
+
+48
+00:07:41.960 --> 00:07:50.320
+Ian: and see how your site's doing. This one's doing actually really well, 70. Good job, Justin. So it tells you just a quick, well.
+
+49
+00:07:50.380 --> 00:07:54.370
+Ian: Pretty robust output here. Page speed on mobile needs to be
+
+50
+00:07:54.380 --> 00:08:09.659
+Ian: It needs to be better. AI crawl access is really good, so that's great. We need better FAQs. It looks like we have a lot of video content. It looks like AIs can't find it well. Doesn't have that schema in there, so we need to update that.
+
+51
+00:08:09.670 --> 00:08:26.999
+Ian: So you can get a quick readout on it. I actually didn't know how it worked when we built it. I was like, I don't know, this is black magic to me. And so I started talking to Atlas and saying, hey, how does this work? What are the actual mechanisms? And he started telling me, and then we started brainstorming on other ways we could do this. So this tool actually has
+
+52
+00:08:27.000 --> 00:08:30.689
+Ian: things that other tools don't. And I'll show you the inside the hood here.
+
+53
+00:08:30.720 --> 00:08:33.929
+Ian: That can actually help you.
+
+54
+00:08:34.770 --> 00:08:41.190
+Ian: Help you, like, better your, your sites, better your, your, your visibility in AI.
+
+55
+00:08:41.520 --> 00:08:58.079
+Ian: So, as you can see, I'm still at F. I have a 27 echo score. But, when I started out, once this loads, I was at 0. Oh, no, 8. Looks like 8 over here. And then I started implementing some of the things that it was telling me, and I bumped up my score quite a bit.
+
+56
+00:08:58.170 --> 00:09:10.879
+Ian: And the proof is in the pudding. I'll show you what this has turned into. But from this, you can actually see everything about your site, how it's being viewed by AI. You can give it prompts.
+
+57
+00:09:10.970 --> 00:09:23.599
+Ian: Like, what should… what should I use for branded merchandise for my business? Which is directly our… our question for BrandSauce. How do I set up an online swag store, company swag store? So you can give it prompts like this, so it can go find,
+
+58
+00:09:23.610 --> 00:09:31.819
+Ian: If AI is talking about you, you can see if you're mentioned by AI. We are not cited yet, but we are mentioned.
+
+59
+00:09:31.910 --> 00:09:50.729
+Ian: You can see all your competition, everybody, and this is like literally all of our competitors for BrandSauce. I didn't realize there were this many, my goodness. You can also see how LLMs see your site. So they don't see images, they don't see JavaScript, they see schema markup and text. So it's kind of like a matrix style view of what your site looks like.
+
+60
+00:09:50.810 --> 00:10:04.630
+Ian: And, and this is actually pretty, pretty robust here as well. And as I started implementing this, plus programmatic SEO, that was another suggestion from Echo Check, I'll show you that this is our Google search
+
+61
+00:10:04.850 --> 00:10:22.339
+Ian: console. So this… Google goes out and finds pages that it can read and actually ingest into its search algorithm. And, you have to kind of prompt it with these things, and it has to know what to know about your company. So before March, or before May, we were… we had, like.
+
+62
+00:10:22.600 --> 00:10:36.080
+Ian: 26 indexed pages, 24 or 20, very little, right? So Google's like, they're a small company. I started implementing these things. Gray means it's seen by Google, but not ingested into its algorithm yet.
+
+63
+00:10:36.720 --> 00:10:51.679
+Ian: Green means it actually is. So we started getting, what, 2,000, 7,000, now we're all the way over to 14,530 pages that Google knows about us and will deliver to people who are searching for this stuff. And… and this is a… this is our…
+
+64
+00:10:52.050 --> 00:11:07.819
+Ian: our traffic. I'm not sure what happened here in the Dark Ages, I think it wasn't tracking it, but you can see before, in April, we were getting very little traffic, and now we're over to, like, this page was 670, or this… this day, it was 671 visitors. Let me refresh real quick and see what…
+
+65
+00:11:08.130 --> 00:11:28.030
+Ian: So today, Sunday, 108 visitors already, which is twice as many as we were getting our big days back here. So this is the proof that this AEO, GEO, SEO stuff works. Now, really quick, I want to touch on — so AEO is Answer Engine Optimization. That's it. You put FAQs on your site, and AIs will…
+
+66
+00:11:28.150 --> 00:11:46.019
+Ian: will look for those questions that their humans are asking and know what to answer them. So that's really good for AI to find you. GEO is Generative Engine Optimization. That is, if you search in Google, you'll see that AI summary at the top that says, here's what we found based on your question.
+
+67
+00:11:46.020 --> 00:11:50.030
+Ian: That's GEO, so it actually is a part of SEO. I know there's a lot of…
+
+68
+00:11:50.030 --> 00:11:55.709
+Ian: terms, but GEO is really good for search. That's why our search has gone up quite a bit.
+
+69
+00:11:55.810 --> 00:12:10.849
+Ian: And, so has our AI traffic. So a few months ago, we were getting zero demos on BrandSauce from ChatGPT or Claude or Perplexity. And just about a month, month and a half ago, we had five demos booked in a week. In fact, it was all the demos.
+
+70
+00:12:10.850 --> 00:12:23.399
+Ian: That week. And they all found us through ChatGPT, and they all became clients. So, I was actually shocked at how fast and how well this stuff worked. And it was all thanks to my very first,
+
+71
+00:12:23.420 --> 00:12:37.129
+Ian: honestly, it was a dare to my Atlas King, you know, to put this thing together. So, check it out, review your site, let me know what you find, tell me when you have big wins, show me your traffic and all that stuff. I'm excited to hear about it.
+
+72
+00:12:39.150 --> 00:12:39.850
+Ian: Back to you.
+
+73
+00:12:40.320 --> 00:12:44.490
+Justin Novak: That's very, very cool, E, that, you know, you…
+
+74
+00:12:44.750 --> 00:12:49.610
+Justin Novak: We had a conversation with this expert, You took notes.
+
+75
+00:12:49.660 --> 00:13:09.219
+Justin Novak: Gave it to your agent and then built more agents that now enable BrandSauce to get visibility across the entire internet. And not only is it eyeballs and visibility, but it's also translating into real revenue for your organization. So super well done.
+
+76
+00:13:09.480 --> 00:13:17.470
+Alec: Yeah, very well done. I'll throw in one point on the relevancy of this for everyone in the group, and the opportunity here is that
+
+77
+00:13:17.470 --> 00:13:35.770
+Alec: Everyone across this audience has looked for a service or a product in ChatGPT. And rewind a few years, that wasn't a thing. You were looking at Google, you'd look up, hey, a roofer near me. You're going to ask ChatGPT now. So what Ian's built is enabling you to show up and be the…
+
+78
+00:13:35.770 --> 00:13:59.809
+Alec: be basically ChatGPT's choice of recommendation. So I think for everyone in the audience, you can see the value of optimizing for AEO. GEO, I'd say if you're already, you know, you have a company, you're working in marketing, it's very advantageous to start taking efforts to, you know, increase your visibility. If you're somebody that's, you know, maybe an entrepreneur and looking for something to do.
+
+79
+00:13:59.810 --> 00:14:13.690
+Alec: Helping companies implement these things is something that's, it's a brand new category. It's something that didn't exist a couple years ago. So the opportunity is absolutely there. So I'd say it's highly relevant and a very big opportunity right now for everyone.
+
+80
+00:14:14.680 --> 00:14:15.620
+Ian: 100%.
+
+81
+00:14:17.600 --> 00:14:18.899
+Ian: Alright, who's next?
+
+82
+00:14:18.900 --> 00:14:29.699
+Justin Novak: I'll jump in next. I've got a fun one. I'll do my best to breeze through this. We've got six more to share, five more after this one. So are you guys seeing this Figma file here?
+
+83
+00:14:31.320 --> 00:14:32.180
+Alec: I guess.
+
+84
+00:14:32.470 --> 00:14:33.740
+Justin Novak: Yeah, cool.
+
+85
+00:14:33.740 --> 00:14:35.040
+Ian: I see my face down there.
+
+86
+00:14:35.090 --> 00:14:36.769
+Justin Novak: Are you nervous?
+
+87
+00:14:36.770 --> 00:14:38.790
+Ian: No.
+
+88
+00:14:39.430 --> 00:14:42.649
+Justin Novak: Thankfully, I blurred out your number, E, so you don't get…
+
+89
+00:14:42.650 --> 00:14:44.470
+Ian: Oh, thank you.
+
+90
+00:14:44.590 --> 00:14:47.280
+Justin Novak: our viewership.
+
+91
+00:14:47.720 --> 00:14:54.840
+Justin Novak: So guys, the big idea here really is how I build a month's worth of content.
+
+92
+00:14:55.510 --> 00:15:09.270
+Justin Novak: which I'll break down for you in just a moment, in one day of work, thanks to many agents. So anytime you see this emoji here, that is an agent at work, or sometimes it is multiple agents at work. Now.
+
+93
+00:15:10.010 --> 00:15:34.449
+Justin Novak: Guys, this is the whole system. So don't worry about the details yet. I'll walk you through each piece, like I said. But this is what a month's worth of content actually looks like, right? If we look at our Instagram page, it's all on brand and our tone of voice. If you look at our YouTube, same thing. We have shorts. We have these long form videos. If you look at our newsletter, it's all brand, our tone of voice.
+
+94
+00:15:34.450 --> 00:15:40.590
+Justin Novak: And so, this is very time-consuming. All of you guys in the crowd, I'm sure, have,
+
+95
+00:15:40.590 --> 00:15:46.699
+Justin Novak: Created content before at some point, whether that's a LinkedIn post, a tweet, a video, building a webpage.
+
+96
+00:15:47.090 --> 00:15:56.400
+Justin Novak: it's really, really time-consuming. And if you outsource it, it's… it's rather expensive. To get the output I'm about to show you, I would need a team of probably…
+
+97
+00:15:56.530 --> 00:16:12.389
+Justin Novak: 3, 4 junior marketers, and each one ran… runs… call it 60 grand a year minimum. So that's north of $200,000 in headcount for what one day of my time and a set of agents now produces.
+
+98
+00:16:12.550 --> 00:16:25.739
+Justin Novak: And second, this is the bigger one from my point of view. The moment you hand your content to an agency, an assistant, an outside vendor, or someone brand new to the team, you risk losing your brand voice.
+
+99
+00:16:26.320 --> 00:16:40.350
+Justin Novak: Now, as a founder, or if you're VP of marketing, your content is how you represent yourself at scale, so it's the face of the internet. It's, you know, it's often the first touchpoint that a prospect ever has of you.
+
+100
+00:16:40.350 --> 00:16:46.819
+Justin Novak: So, it's very important, it sounds like you, it looks like you, your voice, tone, colors, and so…
+
+101
+00:16:46.900 --> 00:16:59.909
+Justin Novak: This process is very dear to me. I've been working in the space for a very long time. But anyways, guys, here's the solution. And here's the one thing I want you to take away before I walk through this flow. This is not one big agent.
+
+102
+00:16:59.910 --> 00:17:14.219
+Justin Novak: it's a chain of specialized agents, each one built for a single step. And so, let me show you how this kicks off. We have our phone call with our partners, so me, Ian, and Alec jump on a phone call.
+
+103
+00:17:14.619 --> 00:17:21.250
+Justin Novak: and we talk about what our next show should be. We usually riff for what, guys? 30, 45 minutes, maybe an hour?
+
+104
+00:17:21.730 --> 00:17:22.360
+Ian: About that.
+
+105
+00:17:22.369 --> 00:17:23.569
+Alec: 30 at least, yeah.
+
+106
+00:17:24.099 --> 00:17:25.039
+Justin Novak: Yeah, 30 loose.
+
+107
+00:17:25.040 --> 00:17:25.599
+Ian: So.
+
+108
+00:17:26.099 --> 00:17:43.939
+Justin Novak: In this session, we said we want to show off our seven agents we built, give tons of value, and show people what's possible with AI. So it starts there, and we record the transcript, and I have an agent that turns that transcript into a landing page. So I'm sure you guys all saw our landing page at some point when you signed up for this.
+
+109
+00:17:44.319 --> 00:17:48.239
+Justin Novak: And that then creates an Eventbrite.
+
+110
+00:17:48.359 --> 00:17:53.769
+Justin Novak: Zoom page, a newsletter, an Instagram post.
+
+111
+00:17:54.959 --> 00:18:07.419
+Justin Novak: And then we market it, so that's all over the internet being distributed across all these different channels to get you guys in the room. That's how you guys are here right now, from this agent distribution platform that we built.
+
+112
+00:18:08.459 --> 00:18:14.209
+Justin Novak: So guys, we do keep an a human in the loop for quality control.
+
+113
+00:18:14.439 --> 00:18:31.029
+Justin Novak: Because I don't want to send slop. We don't want to represent our brand that way, so it is important to have certain guardrails in place with your agents and have some human intervention. I'm not trying to completely replace myself, just the cumbersome stuff that's super time-consuming. But the agent does the heavy lifting to get the right people in these rooms.
+
+114
+00:18:31.279 --> 00:18:34.779
+Justin Novak: Okay, so, we're spending an hour together now, right?
+
+115
+00:18:34.969 --> 00:18:47.439
+Justin Novak: And it becomes an hour of content. And the mistake most people make is they let that hour vanish into the void. We don't. We put it straight to YouTube, and we have an agent that optimizes the headline.
+
+116
+00:18:47.489 --> 00:18:55.089
+Justin Novak: the image, the description, all of this is very good so that you start ranking better and getting more views on YouTube, and it lives there forever.
+
+117
+00:18:56.269 --> 00:19:12.509
+Justin Novak: And then we take that transcript from the YouTube and we post it to the website. And the website is then re-optimized for, back to Ian's first agent, ranking in ChatGPT and Perplexity and Claude and all these LLMs. You rank better there in Google.
+
+118
+00:19:12.669 --> 00:19:29.729
+Justin Novak: And also, there's an agent that turns all of this 60-minute YouTube session into a bunch of shorts, right guys? So if you go to our YouTube and check out the shorts, these are all AI-generated with a little bit of human intervention. Guys, if I did this without AI tooling and agents.
+
+119
+00:19:29.819 --> 00:19:33.739
+Justin Novak: It would take days just to create a handful of shorts.
+
+120
+00:19:35.390 --> 00:19:36.380
+Ian: Can't imagine.
+
+121
+00:19:36.910 --> 00:19:57.309
+Justin Novak: Yeah, it's just a lot of work. But to win in this day and age, you have to be everywhere all at once. That's how you collapse time. Like you could take five years, 10 years to build a successful business, but if you want to do it in three months or six months, you have to have so much output across every channel to get all the eyeballs of your target persona on you.
+
+122
+00:19:58.150 --> 00:20:22.499
+Justin Novak: So guys, this turns into shorts, it turns into landing pages, the landing pages. So every tool we talk about then goes to a tools page. So we have a tools directory on our site, and then that creates three more or four more or five more specific tool pages that are all AEO, GEO, SEO optimized for large language models. And then that creates social posts on Instagram.
+
+123
+00:20:24.570 --> 00:20:32.040
+Justin Novak: And last but not least… You guys get your webinar newsletter follow-up.
+
+124
+00:20:32.760 --> 00:20:38.120
+Justin Novak: So, the big idea, guys, if we really step back and look at this whole board, is that…
+
+125
+00:20:38.680 --> 00:20:48.610
+Justin Novak: page creation, distribution, YouTube, YouTube Shorts, landing pages, tolls, Instagram, each one of these has its own agent. It's not one big, giant.
+
+126
+00:20:49.030 --> 00:21:06.039
+Justin Novak: bot that does everything. It's a team of specialists I've iteratively built over time, each one doing one job very, very well. So it takes one day, and it runs all month for us, compounding while we sleep. That's really the power of agents, is doing the heavy lifting for you.
+
+127
+00:21:09.010 --> 00:21:20.610
+Alec: I love it. I think it's awesome. And one thing I'll note for anybody in the crowd is conceptually, you know, what we're doing is we're taking existing content, things that are already happening, our conversations.
+
+128
+00:21:20.610 --> 00:21:45.610
+Alec: are these presentations that we're doing here, and it's repurposing it and creating more output for us. So that might look different for everybody. I think at this point, most people are recording their meetings. So what could happen is, hey, we have an agent set up that looks at your meetings and it turns them into LinkedIn posts because you're trying to grow your social media. So conceptually, you know, it's taking existing content and stuff that's
+
+129
+00:21:45.610 --> 00:22:02.769
+Alec: already there, and pushing it out further. So I think it's really applicable to everyone. It just takes the kind of little bit of upfront work, and then it just runs. So shout out to Justin for building that out and putting in that work up front, and now, you know, we're all reaping the rewards of those systems.
+
+130
+00:22:03.300 --> 00:22:06.230
+Ian: Yeah. In fact, we have an agent in the… in…
+
+131
+00:22:06.340 --> 00:22:17.950
+Ian: the chat right now, Bubble's note-taker for Dr. Thiessen, who's actually recording this for them, so… another example of agents. But I think the important part about what you just showed, Justin, is that it started with a phone call between humans.
+
+132
+00:22:17.960 --> 00:22:29.349
+Ian: About talking about what to add, how to add value, what to bring to the table to educate and show people what's possible. And then the agents take it. So the agents aren't creating stuff, it's taking what we…
+
+133
+00:22:29.530 --> 00:22:36.939
+Ian: We find valuable and what we think would be valuable to other people and amplifying that, which is really the prime use for AI.
+
+134
+00:22:37.760 --> 00:22:41.640
+Justin Novak: Yeah, absolutely. And the other thing that that prevents too is AI slop.
+
+135
+00:22:41.640 --> 00:22:42.030
+Ian: Hang.
+
+136
+00:22:42.030 --> 00:22:50.539
+Justin Novak: actual conversation and transcript, so there's no room for hallucinations. It has a whole hour of content to then build other content from.
+
+137
+00:22:50.540 --> 00:23:02.749
+Justin Novak: Rather than trying to fill in the blanks. So having a really robust input that you're giving to your agents, a transcript's a great way to go. And so, guys, if you're doing any type of…
+
+138
+00:23:02.810 --> 00:23:05.579
+Justin Novak: Content, think about how you can.
+
+139
+00:23:06.140 --> 00:23:08.430
+Justin Novak: Compound it and leverage it.
+
+140
+00:23:08.450 --> 00:23:09.680
+Justin Novak: further.
+
+141
+00:23:09.680 --> 00:23:34.229
+Justin Novak: So one basic example of that is instead of just making a post on Instagram or LinkedIn, have an omnichannel distribution that posted to 10, 15 channels. So that one piece of content turns into 15 pieces of content and gets more eyeballs. So it's just a no brainer in this day and age. Alec, before I pass the baton to you, I'm excited to see agent number three here. I know you've been cooking. You gave us a little sneak preview yesterday, but guys, you can drop any questions in the Q&A.
+
+142
+00:23:34.270 --> 00:23:40.539
+Justin Novak: It looks like the comment section may be turned off, so feel free to drop any questions you have.
+
+143
+00:23:41.330 --> 00:23:42.239
+Ian: Oh, there we go.
+
+144
+00:23:42.240 --> 00:23:42.960
+Justin Novak: It's turned.
+
+145
+00:23:42.960 --> 00:23:45.509
+Ian: Yes, there will be a replay. Absolutely.
+
+146
+00:23:45.680 --> 00:23:46.310
+Justin Novak: Yep.
+
+147
+00:23:46.960 --> 00:23:49.260
+Alec: All handled by an agent that'll be sent out to.
+
+148
+00:23:49.260 --> 00:23:50.310
+Ian: That's right.
+
+149
+00:23:50.310 --> 00:23:51.450
+Alec: One of the agents doesn'.
+
+150
+00:23:51.450 --> 00:23:52.260
+Ian: Ha ha.
+
+151
+00:23:52.260 --> 00:23:54.070
+Alec: We got you. We got you.
+
+152
+00:23:54.630 --> 00:24:16.960
+Alec: Cool. Well, I'll jump into agent number three here. My Miro board doesn't look quite as good as Justin's Figma, but we will roll with it. And one quick extra piece of value for you guys. I was building this like last second. I was like, hey, we could use a little, you know, extra visuals to kind of articulate my point here. And so I went over to Higgsfield and I dropped a quick prompt.
+
+153
+00:24:16.960 --> 00:24:40.069
+Alec: Into here and it built out this little graphic for me. So that applies to pretty much everybody. Everybody at some point is making some sort of presentation or some sort of document where you could use some visuals to get a point across. And literally it was five minutes before we jumped on. I was like, we could add something. So I went into Higgs field, gave it a prompt, and here we are. So quick little added piece. It's not necessarily Agentic, but just a little piece of value for you guys.
+
+154
+00:24:40.070 --> 00:25:02.600
+Alec: So AI agent and iMessage, there's a couple core things here, one being the iMessage piece. And what's important about that is whenever you get a green text, a lot of times your initial perception is that, hey, this is, this is scammy, this is automated. It's probably somebody trying to steal my social security card with blue.
+
+155
+00:25:02.600 --> 00:25:13.579
+Alec: iPhone, that indicates human. Everybody assumes, hey, that's an actual person that's texting me. So that's one of the elements of this. And then the other piece with the AI agent is that
+
+156
+00:25:13.580 --> 00:25:35.340
+Alec: Again, taking action on your behalf, doing something that you either wouldn't have been able to do before or something that would have taken up your time. This is all now going to be able to happen automatically. So this specific use case, I have a business where we get paid per appointment. So we generate leads and we turn those leads into appointments and we get paid when they show up. So.
+
+157
+00:25:35.580 --> 00:25:54.310
+Alec: what happens, oftentimes, is people will opt in, but they won't necessarily book an appointment. So, we, our team internally, needs to be able to get them on the calendar, and get them booked, and get them to show up. So, what we have is an AI appointment setter using iMessage. So what that looks like is, once we get that trigger that somebody hasn't booked.
+
+158
+00:25:54.310 --> 00:26:04.169
+Alec: We then send out some automated texts. And then as that goes through, we have some tools attached as well to send out emails and send out the links.
+
+159
+00:26:04.170 --> 00:26:20.340
+Alec: And I have a kind of real-life example of what this could look like, because there are truly a lot of different use cases for an AI agent that's hooked up to iMessage here. So, I'll give you a quick run-through of something that this could be used for. This isn't my exact use case, but it's absolutely something that's
+
+160
+00:26:20.340 --> 00:26:44.040
+Alec: Very possible to build out. So say you're a auto tinting company and you're running ads and instead of your team having to take all these calls all day, you could have an SMS agent or iMessage agent handle a lot of these things. You could hook it up with estimating tools. So I'm going to run through. Basically what would happen is once somebody opts in, they get two texts automatically. And we're asking those questions.
+
+161
+00:26:44.130 --> 00:26:51.260
+Alec: that are… That factor into pricing. So what, what kind of vehicle do you have?
+
+162
+00:26:51.560 --> 00:27:02.189
+Alec: And then it goes through. We have a little bit of a delay here to make it look more human. All of this can be tweaked very easily. So just the, we'll go full car.
+
+163
+00:27:07.010 --> 00:27:22.179
+Alec: And I'll just continue to run you guys through what this example might look like and just a use case. But there's a lot of different ways we can get creative with this. So I have a list here built out of, hey, what can we use these types of agents for?
+
+164
+00:27:22.180 --> 00:27:46.969
+Alec: We could use it for following up on unsigned contracts. Everyone here at some point has chased somebody for, Hey, have you filled this document out? We need it back. We could reengage cold leads. If you have a CRM full of leads from a year ago that never ended up moving forward, we could send text out and say, Hey we haven't heard from you in a while. Is are you, you know, do you need this, whatever service you offer? And start a conversation going. You could have it.
+
+165
+00:27:46.970 --> 00:27:54.409
+Alec: prompted to handle responses correctly. So you can see here we have it's all prompted to lay out the options. We'll go ceramic.
+
+166
+00:28:06.630 --> 00:28:07.130
+Alec: Okay.
+
+167
+00:28:07.130 --> 00:28:09.460
+Ian: Or is it ceramic?
+
+168
+00:28:13.180 --> 00:28:14.040
+Ian: Okay.
+
+169
+00:28:14.040 --> 00:28:30.360
+Alec: So, I think you guys get the point with this, but basically what we could do is we can handle the whole customer journey instead of a, you know, we have a little error there, but instead of a person having to handle these texts and handle these calls, we're having an agent do it. And again, this is a good example of, hey.
+
+170
+00:28:30.420 --> 00:28:38.350
+Alec: You see this one didn't work correctly for this demo. Obviously, we don't have this in production and would have would have bulletproof this before actually pushing anything live.
+
+171
+00:28:38.350 --> 00:28:57.129
+Alec: But all these things are very changeable. We need to change it to be able to handle responses when it doesn't fit correctly into its format. So, that, that just all goes to show you, these agents can handle tasks, that somebody would have had to do, or maybe somebody just wouldn't have done it. Like, in the example of reactivating a database.
+
+172
+00:28:57.130 --> 00:29:21.159
+Alec: You know, that's work that everybody knows could yield results, but takes, you know, a fair amount of effort. So now having agents handle this instead of us, we can do more than we would have been able to in the past. So that's an example of SMS, iMessage and AI agents. We have these operating within our business, booking appointments. And like I said, with our business model, we get paid per appointment. So when we can have.
+
+173
+00:29:21.160 --> 00:29:28.710
+Alec: an agent handling that. One, it saves us money because we don't have to have a person do it. And two, we can monetize further because we can get more appointments booked.
+
+174
+00:29:31.390 --> 00:29:37.420
+Ian: That's great. Alec, you are so good at bringing like these little practical things like that blue. I actually didn't know that.
+
+175
+00:29:37.670 --> 00:29:45.890
+Ian: And that's so helpful, knowing that it's like, oh, that equals human, that equals robot scam. That alone is bold.
+
+176
+00:29:45.890 --> 00:29:46.890
+Alec: Yeah, 100%.
+
+177
+00:29:46.890 --> 00:29:47.360
+Ian: Cool.
+
+178
+00:29:47.550 --> 00:30:12.530
+Alec: I don't have the stats on like open rates and reply rates on, on blue messages versus green messages, but it is substantially higher reply rate when you're, when you're sending iMessage because you know, it's, it's not something where you're not typically getting those automated messages. You know, we all get messages from like restaurants or you know, whoever that we opted in for in the past. It's like, hey, we're running this special right now. Like come in for a 10
+
+179
+00:30:12.530 --> 00:30:16.450
+Alec: And it's always a green text. Like, you see those, and you just kind of immediately ignore.
+
+180
+00:30:16.450 --> 00:30:16.890
+Ian: Right.
+
+181
+00:30:16.890 --> 00:30:29.549
+Alec: It's automated, but generally speaking, you don't get those kind of text messages from iPhones. So, you know, we've been able to build out systems to where we can have it send blue text. And yeah, the reply rates are much improved.
+
+182
+00:30:29.550 --> 00:30:32.000
+Ian: I mean, just looking at those two alone.
+
+183
+00:30:32.000 --> 00:30:32.330
+Alec: Right.
+
+184
+00:30:32.330 --> 00:30:37.859
+Ian: Having a reaction to each side, that's UX, you know? Like, oh yeah, it's true. I mean, I feel it in.
+
+185
+00:30:38.280 --> 00:30:38.990
+Alec: 100%.
+
+186
+00:30:40.020 --> 00:30:40.560
+Ian: So good.
+
+187
+00:30:40.560 --> 00:30:41.100
+Justin Novak: Yeah, like
+
+188
+00:30:41.300 --> 00:30:54.549
+Justin Novak: I've seen you build these, a lot of the agent builds you've done for even industries beyond automotive, right? And so anyone who requires instant lead follow up and nurture.
+
+189
+00:30:54.610 --> 00:31:04.370
+Justin Novak: could have a massive benefit from a process like this because the speed to lead is very important.
+
+190
+00:31:04.370 --> 00:31:20.519
+Justin Novak: if someone submits a form, right, guys, we're trying to get in touch with a doctor, or an appointment, whatever it is, we just want a response immediately. And if we don't get that response, we're gonna go then search for another solution, or another vendor, so this is a massive
+
+191
+00:31:20.520 --> 00:31:37.130
+Justin Novak: way to not only increase operational efficiency, you don't need an assistant there all day following up with people, but also it's a revenue driver. It's a key revenue driver, an opportunity to really capture every lead and convert them right away.
+
+192
+00:31:37.550 --> 00:31:39.560
+Justin Novak: In a hands-off manner, so…
+
+193
+00:31:39.720 --> 00:32:03.129
+Alec: Yeah, that's a great point, Justin. And something I should have brought up is that, yeah, especially when you're dealing with cold traffic, the faster you can engage somebody, the more likely you are to actually convert them in the long run. So, yeah, that's another added benefit to this is, you know, if you're relying on people and this comes in, you know, maybe they're on their lunch or maybe they're, you know, it's after normal work hours.
+
+194
+00:32:03.130 --> 00:32:15.560
+Alec: Then, you know, that might not get touched for, for 12 hours, and at that point, somebody might have found somebody else and, and booked with somebody else. So, the speed to lead part is, is definitely another, another added bonus here. So thanks for bringing that up, Justin.
+
+195
+00:32:16.740 --> 00:32:17.720
+Justin Novak: For sure.
+
+196
+00:32:18.370 --> 00:32:19.199
+Ian: It's good stuff.
+
+197
+00:32:20.270 --> 00:32:21.560
+Justin Novak: E, you wanna go next?
+
+198
+00:32:22.010 --> 00:32:22.800
+Ian: Sure.
+
+199
+00:32:23.960 --> 00:32:38.900
+Ian: Let me share my next one. I'm realizing now that you all have these really cool workflows, and mine are more or less like inspiration, I guess. Here's what you could do with AI agents, but I'm going to show you another one of those right now.
+
+200
+00:32:38.900 --> 00:32:47.970
+Ian: This is — so to set this up, my wife and I started a school, started working on a school last February, so a year and a half ago.
+
+201
+00:32:48.090 --> 00:33:05.429
+Ian: And, we… we were set to launch last August, so almost a year ago, and it's called Saints Classical. It's a classical tutorial in Middle Tennessee. And, so I designed the website, I did the branding for it, I made this whole brand… brand page here that…
+
+202
+00:33:05.560 --> 00:33:20.940
+Ian: kind of basically lets us see all the different variations of logos and all that stuff. It was really a lot of fun. It was great, you know, different use cases for, fonts and colors, and it was… it was great. But when it came time to launch, she said, we need to,
+
+203
+00:33:21.460 --> 00:33:33.069
+Ian: We need to have a way for parents and students to log in and see if their student is enrolled and see if they have classes and all that. And then I guess we'll need teachers to…
+
+204
+00:33:33.210 --> 00:33:38.589
+Ian: you know, log in and enter classes. I was like, wow, okay. So,
+
+205
+00:33:38.730 --> 00:33:48.859
+Ian: It just kept growing like this, and I realized that what I'm doing is building an LMS, and it's called… that stands for Learning Management System. I didn't… I had never seen one of these, because
+
+206
+00:33:48.870 --> 00:34:00.300
+Ian: I graduated before LMSs were a thing. So I just… I basically started brainstorming with Claude, and then Claude Code, and built the first iteration of the LMS.
+
+207
+00:34:00.430 --> 00:34:01.780
+Ian: And then,
+
+208
+00:34:01.890 --> 00:34:10.139
+Ian: the next year came around, so we launched with 95 students, which was… I thought 60 would be, like, oh, a huge win. We ended up having 95.
+
+209
+00:34:10.250 --> 00:34:11.620
+Ian: And,
+
+210
+00:34:11.850 --> 00:34:21.700
+Ian: So I thought, okay, we need to up our game this next year, so I actually installed an OpenClaw on the server to help me build the next iteration of the LMS, and here it is.
+
+211
+00:34:22.120 --> 00:34:23.480
+Ian: It would it.
+
+212
+00:34:23.750 --> 00:34:39.700
+Ian: it's quite an improvement. I haven't showed you the first one, but this is quite an improvement from the, the first one. And, again, I didn't know what LMSs should look like, or… or could, so I just built it for how I would want it to be, and brainstorming with my… my bot named Saint.
+
+213
+00:34:39.750 --> 00:34:48.719
+Ian: And so this is a teacher view. You can actually go through and see all the… well, first, your next two weeks of assignments. There are no assignments now, because we're not
+
+214
+00:34:48.790 --> 00:34:52.880
+Ian: In session right now, but, you can go here and see all the
+
+215
+00:34:53.230 --> 00:34:56.800
+Ian: Basically, everything around a class, you could have all your classes in here.
+
+216
+00:34:56.969 --> 00:35:07.419
+Ian: I have one for AI and for NTP. Right here is the next class. See all the students that are in there? I only have one, it's my son, because I'm not an actual teacher, so I just put him in my class.
+
+217
+00:35:07.420 --> 00:35:23.450
+Ian: And then… and then, view all your assignments by the week, so you can enter them all in. I even injected a summarized lesson plan that the open cloud will summarize when you create a lesson plan here. You type it all in, it'll summarize it and put it in the description for you.
+
+218
+00:35:24.370 --> 00:35:32.960
+Ian: So that has helped a lot, having essentially a live person living on the server to grow this LMS.
+
+219
+00:35:33.190 --> 00:35:41.329
+Ian: You can also view it as a parent, so I can see all my kids' classes and everything about my children.
+
+220
+00:35:41.610 --> 00:35:46.889
+Ian: see all the houses, we have different houses, like, like Harry Potter,
+
+221
+00:35:47.010 --> 00:36:06.440
+Ian: So this has helped a lot because it's actually a tutorial. They meet Monday, and then at home Tuesday, and then back to school Wednesday, where they have really high-quality teachers, and then back home Thursday, where the parents are leading it. But they have this whole lesson plan there to help their kids learn and grow with the curriculum.
+
+222
+00:36:06.510 --> 00:36:18.790
+Ian: it actually did such a good job, I've been showing it to other clients, and they're like, hey, we could actually use this for training. And so, I'm like, yeah, that's actually true, so I've been starting to work it… work this LMS system, where it has all these different roles and things
+
+223
+00:36:18.840 --> 00:36:30.419
+Ian: For clients, for training, their employees as they come on board. But beyond that, having an open claw on there, he's actually set up his blog, where he blog… he posts 2 to 3 times per day.
+
+224
+00:36:30.630 --> 00:36:47.009
+Ian: And it's all attributed to C. St. Louis. That's him, St, C.S. Lewis. And it's all relevant to just what the school talks about. So it's, it's, it's now over 300, maybe around 350 blog posts, which gets us past the EEAT
+
+225
+00:36:47.010 --> 00:36:56.050
+Ian: Mark, for Google, where we are expert, experienced, authoritativeness, and trustworthy, and now it means it will actually recommend us a lot higher in Google
+
+226
+00:36:56.050 --> 00:37:08.429
+Ian: because of this blog. People do find this blog, and I can show you the traffic, I don't have it up right now, but, where they're actually finding these articles, and because they are actually very applicable and focused on what we're doing.
+
+227
+00:37:08.430 --> 00:37:17.090
+Ian: It sends people around through, through the, to the site, and they eventually sign up. So, because of that, because, largely because of PSEO,
+
+228
+00:37:17.110 --> 00:37:34.879
+Ian: and this AI automation, we're actually launching the school with… we'll have over 230 students for this next year, so two and a half times increase in enrollment. I don't know if that's normal. I mean, she's done a great job on the school itself, but…
+
+229
+00:37:34.880 --> 00:37:41.730
+Ian: But I will say AI has helped quite a bit with that. So, this is another use case for,
+
+230
+00:37:41.820 --> 00:37:57.350
+Ian: brainstorming with your AI, because I went into this not knowing what an LMS was, and saying, hey, I don't know what I'm doing, and it said, okay, here's how other ones do it, Google Classroom, Blackboard, Blackbaud, all these other ones. And so I said, oh, I don't like this, but I do like that, and I pulled it and pie
+
+231
+00:37:57.530 --> 00:38:00.690
+Ian: So it's more of an agent… Agentic,
+
+232
+00:38:01.110 --> 00:38:05.839
+Ian: workflow that resulted in this great LMS. So,
+
+233
+00:38:06.130 --> 00:38:14.220
+Ian: Yeah, that's a lot. I'm trying to go fast because I know we're limited on time, but I'll leave it right there and pass it back to y'all.
+
+234
+00:38:14.450 --> 00:38:31.180
+Alec: Ian, you're being modest. There's nothing normal about the, what, first or second year of having 230 students out of school. I mean, it's, it's incredible growth. And, and yeah, like to Ian's point on the, the LMS that he has, if you look at.
+
+235
+00:38:31.180 --> 00:38:55.279
+Alec: You know, 10 years ago, you'd either have to license software like that, you know, for tens of thousands of dollars a year or to build that, I don't know, you're probably in the 50 to $100,000 range for custom building. So yeah, to be able to build that out custom for your, you know, everything has a purpose. You don't, there's no features that you don't need and all the features that you need are there and customizable.
+
+236
+00:38:55.350 --> 00:39:02.769
+Alec: So yeah, that, I mean, it's an incredible system and something that would have, you know, pre AI would have costed you.
+
+237
+00:39:03.020 --> 00:39:05.259
+Alec: 1000x what you…
+
+238
+00:39:05.260 --> 00:39:05.700
+Ian: Oh yeah.
+
+239
+00:39:05.700 --> 00:39:12.430
+Alec: paid and your time investment to build it. So, very cool. And, you know, the results speak for themselves with the school.
+
+240
+00:39:12.970 --> 00:39:33.389
+Ian: I appreciate that. The parts I failed to mention are it's way beyond an LMS because it takes tuition. It allows enrollment and even clubs to sign up if people want to pay. It also has its own email system. Oh, I forgot to show you the Slack. I built Slack into the thing so you can create groups and find people, so it's entirely encompassed.
+
+241
+00:39:33.390 --> 00:39:37.609
+Ian: in there, and I'll be launching the iOS app for it in August.
+
+242
+00:39:37.610 --> 00:39:42.460
+Ian: That will basically be, like, notifications. So it's, it's well beyond.
+
+243
+00:39:42.910 --> 00:39:59.350
+Ian: a standard LMS, and having an OpenClaw, my own personal agent on the server, if problems come in, I copy and paste the email or the text my wife sends me and say, hey, fix this, and then email them when it's done, email it from me. And he does, and it works like a charm. It's amazing.
+
+244
+00:39:59.560 --> 00:40:07.070
+Alec: That's awesome. I will say, too, like, I think you guys can get a sense that I like to break all of these workflows down to, like, its core
+
+245
+00:40:07.070 --> 00:40:30.010
+Alec: you know, concept and what it is fundamentally. When you look at what Ian did here, he built out, you know, this before also would be five different tools. He would have had Slack, he would have had his LMS, he would have had ten other tools that he's trying to stitch together. He was able to build something completely custom and something that makes sense for his business and helps it run more efficiently. So when you're thinking about
+
+246
+00:40:30.010 --> 00:40:37.670
+Alec: you know, you're sitting here and you're watching Ian and seeing what he built out, it's like, oh, yeah, that's cool, but, like, I don't I don't
+
+247
+00:40:37.670 --> 00:40:54.999
+Alec: you do, if you're on this call, you likely either work in a, you know, have a business, or, you know, you're working in marketing, or whatever your role is, your company has all these functions and these different tools that are all patched together and not centralized. So that's something that's absolutely a possibility now for your company.
+
+248
+00:40:56.730 --> 00:40:57.520
+Justin Novak: Well said.
+
+249
+00:40:58.120 --> 00:40:58.620
+Justin Novak: Absolutely.
+
+250
+00:40:58.620 --> 00:40:59.030
+Ian: they…
+
+251
+00:40:59.030 --> 00:41:03.950
+Justin Novak: Good work, Ian. And I love the branding. You just did a really, really tasteful job there. Guys, I mean.
+
+252
+00:41:03.950 --> 00:41:04.510
+Ian: Thank you.
+
+253
+00:41:04.510 --> 00:41:16.199
+Justin Novak: keep the pace going here. We've got 15 minutes, we might run a little bit over if you guys want to stay for some Q&A at the end, so… But I'll jump into the next one. Guys, the next one that I built is…
+
+254
+00:41:16.380 --> 00:41:26.720
+Justin Novak: Similar to what Ian built, I mean, similar but different. It's something that, I replaced 8-plus tools with one system I built in-house, so…
+
+255
+00:41:27.140 --> 00:41:44.809
+Justin Novak: To run our operations, so we build agents for other companies. It's a core part of what the three of us do daily. And so there's email, project management, Asana, there's time tracking, billing, Google Docs, reporting, client reports, internal documents.
+
+256
+00:41:44.860 --> 00:41:55.900
+Justin Novak: And so we were just so disconnected across the board, and so I'll show you guys, in just a couple minutes here, I'll give you an overview of the system we built in-house to manage
+
+257
+00:41:55.980 --> 00:42:09.019
+Justin Novak: all of this work. Everything from intake to internal comms, client comms, time tracking, reporting, etc. So I'm gonna go ahead and share my screen. But again, guys.
+
+258
+00:42:09.020 --> 00:42:26.440
+Justin Novak: I want to land that this was built to scratch our own itch. I was building something that I was paying a lot of money for across all these different tools that were disconnected, and they just weren't working for us, so we wanted to streamline them and build it in-house, so there's a lot of agents built into this platform and workflow.
+
+259
+00:42:28.380 --> 00:42:36.749
+Justin Novak: So, when you arrive, you can sort by clients. We're looking at warm timber right now, so these are all the requests we have coming in.
+
+260
+00:42:36.880 --> 00:42:55.310
+Justin Novak: for Warm Timber. And so, every request lands here, whether they make it over a phone call, email, Slack, etc, it lands here in one centralized view. We can go in and take a look at this task. It looks like it's probably an agent that the client wants to get built. Okay, they want an agent.
+
+261
+00:42:55.310 --> 00:43:00.049
+Justin Novak: I left a note to Danny. So these are internal notes. So hey, Danny.
+
+262
+00:43:02.800 --> 00:43:11.310
+Justin Novak: We need to let Matt know we're done and ready to.
+
+263
+00:43:12.400 --> 00:43:14.110
+Justin Novak: Present.
+
+264
+00:43:15.540 --> 00:43:17.230
+Justin Novak: So I show… Tom's there.
+
+265
+00:43:17.450 --> 00:43:32.319
+Justin Novak: And then, this right here is emailing the client. So, I could type up a message myself, but we're so busy, and this has been trained on my voice, this agent, based on tens of thousands of historical emails I've personally wrote myself.
+
+266
+00:43:32.460 --> 00:43:50.630
+Justin Novak: So I click draft AI reply and it takes all the context from this entire thread. There's not much context here because this thread was just opened. But it does have, you know, the due date, the client, internal comms. And so let's see what it comes up with. Matt, quick update. The reporting agent is built and ready to walk through.
+
+267
+00:43:51.100 --> 00:43:53.299
+Justin Novak: Set up so you can review deals.
+
+268
+00:43:53.860 --> 00:43:58.380
+Justin Novak: I want to grab 20 minutes this week, Justin, and I can respond right there to the client.
+
+269
+00:43:59.550 --> 00:44:16.459
+Justin Novak: The next thing I want to show you guys is not only internal project management status updates that get sent to the client over email, and we can track it internally, so this just got sent to Matt. Quick status update, this thread has been updated from OpenTinProgress.
+
+270
+00:44:16.850 --> 00:44:24.449
+Justin Novak: And let Matt know there's 4 touchpoints happening behind the scenes, so he knows there is work getting done and progress being made on his agent.
+
+271
+00:44:24.570 --> 00:44:30.199
+Justin Novak: Now, guys, so this allows us to do the intake, AI reply, but also…
+
+272
+00:44:31.000 --> 00:44:37.949
+Justin Novak: We want to make sure we're documenting our work, how much time we're spending. That was a whole other app that was disconnected. Say we spent 2 minutes here.
+
+273
+00:44:40.470 --> 00:44:54.030
+Justin Novak: Reviewing this, log time. So this is important for billing the client, also paying our team for the time they invest into each one of these agents, all tracked here. And then if we go ahead and click Reports.
+
+274
+00:44:54.530 --> 00:44:58.800
+Justin Novak: We can actually create a new report, select the client.
+
+275
+00:44:59.600 --> 00:45:04.850
+Justin Novak: This month, generate report, and then in one shot, guys, this used to take me hours.
+
+276
+00:45:04.850 --> 00:45:11.309
+Justin Novak: every week to send a client a report for the work that has been done. I'd go through all the notes, all the transcripts.
+
+277
+00:45:11.310 --> 00:45:27.499
+Justin Novak: put it into a Google Doc or a slide deck. This does it all in under a minute with AI. It takes the summary of every thread, the status of the thread. Is it open? Is it in progress? How many touchpoints were there? What's the ticket number? How much time was spent? Which are completed?
+
+278
+00:45:28.410 --> 00:45:31.630
+Justin Novak: And then the total time spent.
+
+279
+00:45:31.920 --> 00:45:38.389
+Justin Novak: So this is going to take about a minute to load. So I'll show you one that is already done and ready.
+
+280
+00:45:43.300 --> 00:45:50.790
+Justin Novak: Click share, copy link. I send this to the client with their invoice, which is all streamlined and happens in one click.
+
+281
+00:45:51.070 --> 00:46:03.579
+Justin Novak: This attaches to their invoice with their password and link here. They can access their report to show what was done this month, what's in progress, what's waiting, complete, and total time spent.
+
+282
+00:46:04.890 --> 00:46:05.880
+Ian: It's amazing.
+
+283
+00:46:06.920 --> 00:46:11.949
+Justin Novak: So… Big idea here is I am challenging…
+
+284
+00:46:12.080 --> 00:46:28.149
+Justin Novak: you guys to be the architect. That's the whole philosophy behind everything that we're showing you today. Whether we're showing you a Figma board, a Miro board, Ian's incredible LMS or LLM ranking tool, I could check.
+
+285
+00:46:31.100 --> 00:46:35.110
+Justin Novak: This is about taking whatever your workflow is.
+
+286
+00:46:35.380 --> 00:46:37.790
+Justin Novak: And custom tailoring it to you.
+
+287
+00:46:37.860 --> 00:46:57.049
+Justin Novak: Right. So if you have all these disparate tools, there is a way to consolidate them and bundle them and streamline them to fast track what you're doing and make it more efficient so that you can take yourself out of working inside of the business to start working on the business to grow it. So most software is a house that.
+
+288
+00:46:57.130 --> 00:46:59.040
+Justin Novak: kind of someone else designed.
+
+289
+00:46:59.200 --> 00:47:11.879
+Justin Novak: And you move in, and you live with whatever you have. Maybe you don't have washer-dryer in-unit, or maybe you wanted a deck, but there is no deck, or you wanted an in-ground pool, but instead you got a hot tub, right? So…
+
+290
+00:47:11.880 --> 00:47:19.269
+Justin Novak: This is kind of like building your own and hiring your own architect, or you are the architect to design the exact house that
+
+291
+00:47:19.270 --> 00:47:30.130
+Justin Novak: that you want to live in that would make you happy and make your life better. So, I built this for myself and for Ian and Alec and I to work more efficiently. And at the end of the day, you know, there's probably, like.
+
+292
+00:47:30.450 --> 00:47:46.339
+Justin Novak: 20 to 50… 25 to 50 agents working inside of Mission Control that save us time, make it more efficient, make it look more professional to clients, and it's all just running in one unified spot, so… I want you guys to imagine what that could look like for your organization.
+
+293
+00:47:47.190 --> 00:47:54.700
+Ian: Justin, that's an amazing tool because you have really cobbled together a lot of different tools that you would be using, you probably were using.
+
+294
+00:47:54.830 --> 00:48:02.000
+Ian: And I know 50, 20 to 50 agents can sound daunting, but you didn't start with that. You went iteratively. You said, how can I do this?
+
+295
+00:48:02.040 --> 00:48:16.869
+Ian: And then how can I do that? And would it be easy to do this? And you just started tasking the agents. That's the core thing, is saying, like, I'm having a problem, a hard time doing this. You ask your agent, and it can build that thing, so that,
+
+296
+00:48:16.980 --> 00:48:18.120
+Ian: So that it…
+
+297
+00:48:18.230 --> 00:48:24.140
+Ian: It takes that workload off of you, the things that were robotic that you would do normally, you know?
+
+298
+00:48:24.260 --> 00:48:26.500
+Ian: And it's a really impressive tool.
+
+299
+00:48:26.830 --> 00:48:34.620
+Ian: that started really just with brainstorming, and you've just grown it, you know? So it can look daunting, but just start with square one, and that's a great question to ask, is like
+
+300
+00:48:35.010 --> 00:48:42.590
+Ian: You know, can you do this? Talk to your bot. Talk to your agent. Can you do this? Can you build this? Yes. Okay, great. Now I've got that part
+
+301
+00:48:43.030 --> 00:48:44.070
+Ian: Survival.
+
+302
+00:48:44.360 --> 00:48:57.059
+Alec: Yeah, a hundred percent. I think the key word there is consolidation. This was, you know, with Ian's example, with Justin's example, this in the past would've been 10 tools that, you know, weren't necessarily customized.
+
+303
+00:48:57.060 --> 00:49:13.269
+Alec: For you. And then also, I think we all share that universal pain of clicking between fifty different tools every single day. And when you can have just one place to to work out of, it just eliminates some of that friction and allows you to work a little bit cleaner.
+
+304
+00:49:13.270 --> 00:49:16.589
+Alec: So bravo, Justin, super impressed with that tool.
+
+305
+00:49:16.880 --> 00:49:17.769
+Ian: Well done.
+
+306
+00:49:18.540 --> 00:49:19.090
+Justin Novak: Thanks, guys.
+
+307
+00:49:19.090 --> 00:49:25.959
+Alec: Very, very well done. I'm going to give us something a little more simple here, something a little more basic.
+
+308
+00:49:25.960 --> 00:49:26.440
+Ian: Let's.
+
+309
+00:49:26.440 --> 00:49:33.349
+Alec: This is not 25 agents. This is more like one agent. But nonetheless, that goes to show you that.
+
+310
+00:49:33.730 --> 00:49:47.639
+Alec: you don't need, something incredibly complex to get real results. I pulled this screenshot from right before we jumped on. This is the last 7 days with a client. We started the sequence. This is all cold emails, by the way.
+
+311
+00:49:47.640 --> 00:50:06.139
+Alec: So we've, we started the sequence for about 1700 people. It's likely they've gotten, you know, two emails. It's probably 3500 emails ish a week. And from that we've gotten 112 opportunities. Disregard the conversions part. We don't track that within. This is instantly, which is the cold email software.
+
+312
+00:50:06.140 --> 00:50:22.169
+Alec: And these type of reply rates and opportunity rates without AI and the agent stack that we have here is just impossible. You're typically getting maybe 3% reply rate is pretty good.
+
+313
+00:50:22.170 --> 00:50:46.590
+Alec: Half of those 3% might be telling you to stop emailing you. So this opportunity rate is incredible and is only possible because of AI. So high level, what that workflow looks like is our prospect or our client, they have a database full of prospects. So what we do is we scrape that database and we pull in all the info about the prospect and we write these.
+
+314
+00:50:46.590 --> 00:50:48.880
+Alec: Hyper, hyper personalized emails.
+
+315
+00:50:48.880 --> 00:51:12.349
+Alec: Showing them that we did our research and that this isn't just some, it's kind of back to like the iMessage versus SMS example. It shows them that we're actually, you know, we actually did our research here and, you know, put effort into this and are actually, you know, interested in them and working with them. So that's kind of first step is scraping this database, ingesting that data and then AI.
+
+316
+00:51:12.350 --> 00:51:23.550
+Alec: is able to write these hyper, hyper-personalized email, and that gets pushed into our email sending software, and, like, you can see the results here. Send out hundreds of emails a day, and per week.
+
+317
+00:51:23.620 --> 00:51:31.869
+Alec: It create over 100 opportunities, which, you know, for a lot of businesses is like, I can't even, you know, if you're a solopreneur, it's like, I can't even handle that
+
+318
+00:51:31.870 --> 00:51:44.710
+Alec: So we're absolutely crushing it with this agent here. And I want to give everybody like a very, very practical way to get into building agents and to, you know, getting results with them.
+
+319
+00:51:44.710 --> 00:52:09.620
+Alec: So one tool that we've talked about on this on AI for NTP is Appify. And Appify is great because I talked about that, you know, how we're scraping that data, we're pulling that data in. And that's oftentimes a real bottleneck of AI is like we need data to work with. So what Appify does is they have some off the shelf scrapers here. They have a whole store filled with scrapers. You could
+
+320
+00:52:09.620 --> 00:52:31.330
+Alec: scrape Facebook pages and look for emails. You could scrape TikTok influencers and look for their emails or it's not limited to emails either. It's just raw data. If you're looking for analytics on your TikTok account or specific TikTok's account, it's all here. Google search results scraper, it's all in Apify. So one example I have for you guys.
+
+321
+00:52:31.330 --> 00:52:38.680
+Alec: is I… one of my… One of my businesses, we sell to attorneys. So, I was in Appify.
+
+322
+00:52:39.000 --> 00:53:01.390
+Alec: Just happened to find this lawyer and attorney lead scraper. So Appify works really well with agents. You basically give them the, the, you know, scraper ID and an API key and it can go and use the scraper to pull in data. So basically it can pull in, you know, if you want employment attorneys or if you want personal injury attorneys, if that's who you sell to, you can give that to your agent and I'll pull up.
+
+323
+00:53:01.450 --> 00:53:13.309
+Alec: codecs here really quickly. And you can give it that scraper, and actually, I'll just show you what a dataset looks like. So basically, you can run these scrapers, and it can go and pull in
+
+324
+00:53:13.450 --> 00:53:31.989
+Alec: this is basically the data that the agent will have to work with. So you can see it pulled in, some stats about the agent, and then on the agent side, what it can then do is it can then enrich, it can go on the website and pull out some stats from the law firms, like, hey, I've seen you've been around since 1997.
+
+325
+00:53:31.990 --> 00:53:53.070
+Alec: Or, you know, I saw you just settled this case for this amount. Like, we can get you five more of those. Or something along those lines, something that shows that we did an extra layer. It's an extra layer of personalization, makes it look like we put in a lot of effort to reaching out to them, and then we'll boost reply rates, we'll boost how many meetings we're getting, and long term, boost how many clients we have.
+
+326
+00:53:53.070 --> 00:54:15.629
+Alec: And then that pushes into instantly, like I said, that's our cold email software. That's what this screenshot is from. It basically allows you to send emails at scale without burning your personal email. So it's a very, very simple workflow, a simple agent. All it's doing, it's pulling in data. It's writing these personalized emails that are, you know, tailored to both them and what your offer is, what your business does.
+
+327
+00:54:15.630 --> 00:54:21.630
+Alec: Pushing that into a cold email sequence, getting you meetings on autopilot. It just runs. It just runs.
+
+328
+00:54:21.670 --> 00:54:26.929
+Alec: So that's kind of a very, very practical and, you know.
+
+329
+00:54:27.380 --> 00:54:40.820
+Alec: Probably a little bit simpler than what Ian and Justin, you know, they have 25 agents here. This is one agent. It does one thing. So this is a very, very simple agent, but nonetheless effective.
+
+330
+00:54:42.110 --> 00:54:48.439
+Ian: Super applicable, man. I love the targeted, like, this thing is an engine that does this thing. It's awesome.
+
+331
+00:54:48.770 --> 00:54:49.530
+Alec: Thanks, man.
+
+332
+00:54:49.820 --> 00:54:50.700
+Ian: Super valuable.
+
+333
+00:54:51.000 --> 00:54:55.669
+Justin Novak: And it goes back to what we were saying about when we presented the…
+
+334
+00:54:56.150 --> 00:55:03.249
+Justin Novak: agent where we gave it the proper context from our call transcript. Right?
+
+335
+00:55:03.250 --> 00:55:14.550
+Justin Novak: having good context and inputs that are ingested by the agent to create proper outputs, it sounds like there's an element of that going on here, right? When you're reaching out to these
+
+336
+00:55:14.550 --> 00:55:27.249
+Justin Novak: prospects or individuals, you want to make sure that the AI has proper context on who they are, where they work, when they got founded, what cases they settled, and that just in turn is going to make your ROI of your marketing operations that much more
+
+337
+00:55:27.390 --> 00:55:29.280
+Justin Novak: Effective. Yep.
+
+338
+00:55:29.280 --> 00:55:42.260
+Alec: 100%. And one other piece is that, you know, like I said, this is a very simple agent, but this can be built on a million different ways, right? Like then you implement the agent that's replying to the responses and setting the meetings.
+
+339
+00:55:42.260 --> 00:56:00.329
+Alec: And, you know, then you're having all of that push into your CRM, and there's so many different ways that you can start to build upon something that's working. So, in a lot of cases, it's really just about getting something out there, getting something started, getting the ball rolling, and then building off of that kind of initial agent.
+
+340
+00:56:01.160 --> 00:56:04.020
+Ian: And this is pretty much applicable across every industry.
+
+341
+00:56:04.670 --> 00:56:05.020
+Alec: Yep.
+
+342
+00:56:05.020 --> 00:56:08.999
+Ian: Anything you can imagine. It's like a multi-tool.
+
+343
+00:56:09.660 --> 00:56:12.959
+Ian: Multi-laser. There we go.
+
+344
+00:56:13.200 --> 00:56:14.369
+Ian: Yep. Love it.
+
+345
+00:56:14.840 --> 00:56:17.179
+Ian: All right. Are we ready for the last one?
+
+346
+00:56:17.180 --> 00:56:22.160
+Justin Novak: You want to close us out the last one, then we can jump into a Q&A, and we have something to share with you guys at the end.
+
+347
+00:56:22.290 --> 00:56:30.480
+Ian: Yeah, so kudos to everybody who stuck around for one hour, because this is the big daddy. This is one I've been most excited about.
+
+348
+00:56:30.480 --> 00:56:42.449
+Ian: To set it up really quick, so, BrandSauce, which is my company we've been building for about 8 years, in the last 6 months has grown about 5X. So we went from about 5 employees to 30, around 30 employees.
+
+349
+00:56:42.450 --> 00:56:55.919
+Ian: And we've just been growing a lot, so it's been really great. But it's also been harder to manage because we're all over the world, from Ecuador, to Ukraine, to Philippines, and then all over the US. And it's completely remote.
+
+350
+00:56:56.150 --> 00:57:06.340
+Ian: And, I've been talking a lot about OpenClaw and this AI… the stuff I've been building everything with, on BrandSauce, and all my… I call her Saucy, SaucyBot.
+
+351
+00:57:06.540 --> 00:57:15.159
+Ian: So all my employees were like, hey, we want a Saucy. We want a Saucy bot, too. I said, OK, great. So I did a Saucy bot skull. Saucy you
+
+352
+00:57:15.360 --> 00:57:18.249
+Ian: And I built out this interface.
+
+353
+00:57:18.520 --> 00:57:32.599
+Ian: that lets me create a new bot for each of my employees, and it walks them through the process, so I'll show you. So, I'm the Sauce Boss, and and then I… so I… I,
+
+354
+00:57:32.870 --> 00:57:38.929
+Ian: Yeah, it initialized each bot, and then it sends it to them, and then it walks them through the process.
+
+355
+00:57:38.970 --> 00:57:57.620
+Ian: And then they can start using and building with their own open clause, you know? So I'll show you an example of this. So if I put in Jean-Paul, he's our designer, I can give the personality, you know, of the bot. I provision the bot, it takes him over to this page, his own personalized page. It walks him through the whole process. Download Telegram, find the bot father.
+
+356
+00:57:57.620 --> 00:58:02.830
+Ian: Start the BotFather, give it these names, and then you'll get a token. When you plug in that token.
+
+357
+00:58:02.850 --> 00:58:06.479
+Ian: it tells my Sauce Boss, hey, another one was provisioned.
+
+358
+00:58:06.580 --> 00:58:08.790
+Ian: And then, then it'll ask
+
+359
+00:58:09.180 --> 00:58:19.170
+Ian: this employee to go and find their bot on Telegram and get the pairing token. So there's two steps that they have to take, the API token and the pairing token. It's all secure.
+
+360
+00:58:19.320 --> 00:58:23.640
+Ian: And then it, initializes their bot, and then they can start talking with it.
+
+361
+00:58:23.730 --> 00:58:29.770
+Ian: And they have. So, Frank is our front-end coordinator, he built this whole big
+
+362
+00:58:29.840 --> 00:58:48.869
+Ian: spreadsheet of all of our clients and all the tasks he has to do to onboard them. And it has a little check for each one, so he can go at a glance and see where each client's at. And then it gives this kind of a review at the bottom, like, here's the status update on all the clients, here's the ones you need to pay attention to. That's just his own use case, because he thought, oh, I could build this.
+
+363
+00:58:48.870 --> 00:59:02.670
+Ian: Like that. Anna Belin and Gabby, they do our finance. And so they've been, they've been reviewing, data, data analysis on all of our finances, shipping costs, you know, everything. Our revenue has been kind of, like.
+
+364
+00:59:02.670 --> 00:59:15.310
+Ian: growing a lot, and they really need to get it wrangled on and make sure that we're profitable, and we are. Jason's our CTO, so each one has their own use case for using it, and I've been training them on how to use it to build
+
+365
+00:59:15.330 --> 00:59:19.850
+Ian: in their own space, so it all goes to saucy.bot, and then their own folder. They can…
+
+366
+00:59:19.910 --> 00:59:25.680
+Ian: Each user has a read-only access to everything on that server and on BrandSauce.
+
+367
+00:59:25.890 --> 00:59:28.220
+Ian: But they can only build in their own folder.
+
+368
+00:59:28.390 --> 00:59:39.589
+Ian: And, this is great because they can't wreck up, mess up everything else, but they can build like crazy, and then show it off at the next class. And, so, things like, here, I'll show you…
+
+369
+00:59:40.170 --> 00:59:51.360
+Ian: I'll show you… well, actually, yeah, I'll show you an example of this. So this is a page we built for a client of ours, where they can actually go and pick out products and say, oh, I want this shirt in this color, this color.
+
+370
+00:59:51.360 --> 01:00:04.650
+Ian: and then I want all of these colors. And then they say, request… request the… the… these products, and it sends us an email saying, this client wants these products added to their store. That's what BrandSauce does, we set up company stores with no minimums.
+
+371
+01:00:04.660 --> 01:00:22.829
+Ian: So this is, like, one of our… Viviana, one of our store builder gals, she uses this tool to set up new products, new catalogs, sends them a bunch of links, the bot sets up a page just like this, and then she sends it to the client. It's great. But as each of these
+
+372
+01:00:22.910 --> 01:00:36.849
+Ian: employees all over the world, as they use their bots, I put it all into my bot, the Sauce Boss. He'll go and grab all the learnings, all the memories, all the things that it's… the challenges it's overcome, and put it into this big brain.
+
+373
+01:00:37.420 --> 01:00:42.969
+Ian: So this'll be a… it'll grow as it goes, but this'll be a place where new employees can come and say, hey.
+
+374
+01:00:43.020 --> 01:01:01.630
+Ian: Because we're going to definitely be hiring more. Hey, I ran into this problem or how do I do this? It pulls in from this hive mind, all of our learnings, all of our transcripts from our video calls, all of our catalog, all of the things that our employees have done, and it puts it into this one place where they can just go quickly ask this.
+
+375
+01:01:01.670 --> 01:01:17.029
+Ian: And if they need to, if there's not an answer there, then they can ask one of the partners, where we can tell them the answer, and then that gets added to the brain. So, eventually, this will be the go-to for all of these… these employees, and so far, they've just been loving it. Daniel…
+
+376
+01:01:17.030 --> 01:01:24.760
+Ian: he right… right here, he… he's getting a lot better English, but he's not… not fluent yet, and so he actually built a translator, so he and I can talk.
+
+377
+01:01:24.760 --> 01:01:44.500
+Ian: on this one page he built with a Saucy bot under his folder where we go there and as I talk, it types out what I'm saying in Spanish. And when he talks, it types it in English. And he's also working on one that actually will speak it both directions. So I've been inspiring them to think creatively and think what's possible.
+
+378
+01:01:44.560 --> 01:01:55.230
+Ian: And, I'm always saying this, I always try to find the boundaries with AI and with Agentic AI like this, and I've not found very many boundaries. So, I keep encouraging them, hey.
+
+379
+01:01:55.320 --> 01:02:14.160
+Ian: ask Saucy, see if Saucy can do that. And they've been doing it, it's been really encouraging. And then if there's runs out, sometimes bots will die, so my Sauce bots will… will, get them up and running again, or I can say, hey, update Frank's and prompt him to send his GPT OAuth token, so that it gets back to live again.
+
+380
+01:02:14.330 --> 01:02:19.920
+Ian: But if, let's say I don't see this page, and their bot is dead, they can actually message my bot through their bot.
+
+381
+01:02:19.920 --> 01:02:34.800
+Ian: and say, hey, my guy's not working very well, and I'll tell my sauce boss, hey, go fix it, and then tell him when it's ready. And he does. It's just, it's a completely different way of thinking, but it is definitely, you know, we're living in 2030 over here, so…
+
+382
+01:02:35.770 --> 01:02:36.420
+Alec: Yeah, Ian.
+
+383
+01:02:36.420 --> 01:02:36.750
+Ian: Dope.
+
+384
+01:02:36.750 --> 01:02:54.379
+Alec: This is incredible. I mean, this is what real innovation looks like. And, you know, everyone's talking about, you know, we're trying to use AI, but we don't know how. I mean, this is… you're looking at it right now, this is AI deployed in a real corporate setting. These are…
+
+385
+01:02:54.380 --> 01:03:18.280
+Alec: You know, real people, but now they're AI enabled. So we're able to, you know, 10x the output of some of these people by giving them agents. I think it's probably important to note as well, like, hey, what is OpenClaw and, you know, what's the, you know, functionality of this? I would say for anyone that doesn't know who OpenClaw is, I'm going to share my screen. It's super important.
+
+386
+01:03:18.670 --> 01:03:23.080
+Alec: article here. So Jensen Huang from NVIDIA,
+
+387
+01:03:23.080 --> 01:03:47.829
+Alec: He on stage said every CEO needs an open claw strategy. And from what I'm seeing in the marketplace, pretty much no CEOs do. There's still a lot of CEOs that don't even know what it is. So to see that Ian has fully built out like that, you want an open claw strategy, that's an open claw strategy and that's deployed and built out and operational inside an organization.
+
+388
+01:03:47.990 --> 01:04:12.169
+Alec: So it's, it's very, very innovative. And Open Claw, basically what it is is, you know, when I talk about the contrast of how a lot of people are using AI versus Agentic AI you know, you think ChatGPT, you're using it in your browser, you're asking questions, hey, fix this, make this email sound better, whatever. With Open Claw, I mean, the complete opposite of the conversational AI example is how Ian's using AI and he has his Open Claw
+
+389
+01:04:12.180 --> 01:04:19.379
+Alec: building out and setting up other OpenClaws, and building out software for them. So it's… that is basically…
+
+390
+01:04:19.450 --> 01:04:36.920
+Alec: allowing you, like, with OpenClaw, you're able to set up these actual… these actions and ask it for output, and have these… these different roles for it set up where it can actually go and do things for you. So just kind of high-level overview on what OpenClaw is and the importance of it. You know, you have…
+
+391
+01:04:36.920 --> 01:04:49.470
+Alec: The biggest company of the. The CEO of the biggest company in the world telling you that every CEO needs an open claw strategy. So that. That's what an open claw strategy looks like. So bravo, Ian.
+
+392
+01:04:49.980 --> 01:04:55.140
+Ian: Thank you. He has, Jensen Wang has been very friendly to Open Claw. In fact, I think building
+
+393
+01:04:55.190 --> 01:05:10.020
+Ian: processors for that, which I've been really happy about. So there's a lot of fear around OpenClaw. People think it's gonna wreck everything and delete my database and all that stuff. But if you set it up right, have someone, like, that knows OpenClaw, like I do with my company.
+
+394
+01:05:10.020 --> 01:05:21.259
+Ian: then they can't mess it up. It's impossible for them to. So as long as somebody, like, knows how to manage it, and really, it doesn't take much to know how to manage it, then, yeah, you've got Agentic
+
+395
+01:05:21.590 --> 01:05:39.590
+Ian: bots working for everybody. And I always tell them when they say, hey, can it do this? Can it make me a PDF of all these products for this client? I say, talk to Saucy, ask Saucy. And sure enough, built this beautiful PDF for this client of ours with all these products that they asked for, you know? It's great to do that.
+
+396
+01:05:39.590 --> 01:06:02.309
+Alec: Enablement of the existing team because they have things that they're doing every day that you might not be keen to. So whenever they now have that mental framework of, hey, I have this thing, I'm going to ask my bot to do it for me, then you're getting those micro advantages every single day from people starting to build out these workflows.
+
+397
+01:06:02.310 --> 01:06:13.769
+Alec: And, you know, that will compound and compound and compound. So, I think it's great. It's honestly, of any organization, I've come across some of the best implementation of AI I've probably ever seen.
+
+398
+01:06:14.940 --> 01:06:19.740
+Ian: Thank you. That means a lot. Appreciate that. All right.
+
+399
+01:06:19.740 --> 01:06:21.160
+Justin Novak: It's very well done, I…
+
+400
+01:06:21.330 --> 01:06:31.710
+Justin Novak: Obviously, we collaborate, on brand sauce, so I've… you've onboarded me to your saucy bot, and it's one of the most streamlined processes I've gone through to set up
+
+401
+01:06:31.850 --> 01:06:42.610
+Justin Novak: an agent or an open claw. So, it can be fairly technical and scary, and if you don't know what you're doing, there's a lot of security concerns, so…
+
+402
+01:06:42.710 --> 01:06:51.730
+Justin Novak: I felt like I was in good hands. I hope you enjoyed the 7 agents we shared today. This is…
+
+403
+01:06:51.730 --> 01:07:00.190
+Justin Novak: What we do for a living, and have been doing for years now, building custom business solutions.
+
+404
+01:07:00.190 --> 01:07:12.319
+Justin Novak: So custom build for yourself. We have slots opening up. I'll drop my calendar link, and you'll be working directly with me, Ian, and Alec to build you custom agents like the ones you saw today, or something
+
+405
+01:07:12.370 --> 01:07:24.780
+Justin Novak: You know, ideally custom tailored to your business based on an issue you're currently experiencing. So link is in the chat. We can do a 15 minute call to see if we're a good fit. Guys, bring your best.
+
+406
+01:07:24.780 --> 01:07:26.290
+Ian: Challenges. We love challenges.
+
+407
+01:07:26.290 --> 01:07:44.680
+Justin Novak: Yeah, the bigger the challenge, the better. We've gone 10 minutes over, but we've got a lot of you guys in the room still, so feel free to drop your question in the chat. You can raise your hand, we can pull you up to stage if you'd like to connect with us directly right now. There's also a Q&A tab, you can click and submit your question there.
+
+408
+01:07:44.680 --> 01:07:50.800
+Justin Novak: But we'll, Ian, Alex, you have a few more minutes to stick around and answer any questions if they have any.
+
+409
+01:07:51.740 --> 01:07:52.640
+Alec: Absolutely.
+
+410
+01:07:53.690 --> 01:07:54.390
+Justin Novak: Cool.
+
+411
+01:07:54.390 --> 01:07:55.979
+Ian: You got somebody on stage here.
+
+412
+01:07:57.250 --> 01:07:58.200
+Justin Novak: I'll do it.
+
+413
+01:07:58.550 --> 01:07:59.130
+Ian: Yeah, sure.
+
+414
+01:08:00.840 --> 01:08:02.090
+Ian: Ronnie LaBu.
+
+415
+01:08:04.170 --> 01:08:04.979
+Justin Novak: Oh, cool.
+
+416
+01:08:13.780 --> 01:08:15.160
+Justin Novak: Ask to unmute.
+
+417
+01:08:16.750 --> 01:08:20.740
+Ronilubwama: Sorry folks, too much background noise. Yes, but I had my name.
+
+418
+01:08:22.770 --> 01:08:24.220
+Justin Novak: Yeah, welcome.
+
+419
+01:08:24.229 --> 01:08:24.619
+Alec: Welcome.
+
+420
+01:08:24.620 --> 01:08:26.120
+Justin Novak: Thanks for coming and anything else.
+
+421
+01:08:26.120 --> 01:08:30.539
+Ronilubwama: Not at all. Thanks, guys. I appreciate everything you're rolling out. I appreciate it big time.
+
+422
+01:08:31.970 --> 01:08:32.689
+Ian: Thank you.
+
+423
+01:08:32.960 --> 01:08:34.109
+Alec: Yeah, absolutely.
+
+424
+01:08:35.609 --> 01:08:37.259
+Justin Novak: Yeah, guys, we do these every week.
+
+425
+01:08:37.449 --> 01:08:44.249
+Justin Novak: So you know where to find us. We also post everything, as you guys learned, on YouTube, Instagram, newsletter.
+
+426
+01:08:44.649 --> 01:08:46.379
+Justin Novak: Yeah, you're welcome, Christy.
+
+427
+01:08:52.109 --> 01:08:54.859
+Justin Novak: Well, unless there's any more questions, I think that's,
+
+428
+01:08:55.349 --> 01:08:57.359
+Justin Novak: That's a wrap, guys, that was a.
+
+429
+01:08:57.680 --> 01:08:58.520
+Ian: It was.
+
+430
+01:08:58.720 --> 01:08:59.979
+Alec: Yeah, that was good.
+
+431
+01:09:00.310 --> 01:09:03.760
+Justin Novak: Oh, we've got one more question here. Oh, good stuff.
+
+432
+01:09:04.500 --> 01:09:06.330
+Justin Novak: Not a question, but thank you.
+
+433
+01:09:06.620 --> 01:09:18.259
+Alec: I'll ask one question of anyone who's still in here. What agent resonated with you the most or was maybe the most applicable to what you're doing?
+
+434
+01:09:20.240 --> 01:09:21.060
+Ian: Let's do one.
+
+435
+01:09:22.210 --> 01:09:23.300
+Justin Novak: Yeah, that's a tough
+
+436
+01:09:23.560 --> 01:09:30.500
+Justin Novak: Tough one to answer. It's, they're all. And I really that LMS is so cool, Ian.
+
+437
+01:09:30.500 --> 01:09:31.290
+Alec: It is cool.
+
+438
+01:09:31.290 --> 01:09:32.879
+Justin Novak: I was just thinking…
+
+439
+01:09:33.369 --> 01:09:39.369
+Ian: Thank you. I was just thinking, I want both of your… the things you guys did to integrate those into my workflow.
+
+440
+01:09:42.539 --> 01:09:44.709
+Ian: Social media posting at work and marketing site.
+
+441
+01:09:45.149 --> 01:09:46.539
+Justin Novak: Christy, reach out, we.
+
+442
+01:09:46.540 --> 01:09:47.050
+Ian: Indeed.
+
+443
+01:09:47.050 --> 01:09:47.670
+Justin Novak: Set up.
+
+444
+01:09:49.770 --> 01:09:50.479
+Ian: Nice.
+
+445
+01:09:51.490 --> 01:09:52.800
+Ian: Lead generation.
+
+446
+01:09:52.800 --> 01:09:53.810
+Alec: There we go.
+
+447
+01:09:55.740 --> 01:10:02.559
+Justin Novak: Yeah, Alec, what I loved about that one is, I think Ian said this prior, it's so, so specific. It knows what it is.
+
+448
+01:10:02.660 --> 01:10:19.600
+Justin Novak: And it just swims in that lane. It doesn't try to be something it isn't. Sometimes you see these really robust AI builds, and they don't really have an identity. They do everything. They're good or okay at everything, but not great at any one thing. I love how specific you built that solution. Other solutions that we've
+
+449
+01:10:19.620 --> 01:10:33.840
+Justin Novak: you know, I've seen you build, Alec, for clients and companies. They're always very so specific and tailored to solve that specific business owner's challenge, so I love watching your builds.
+
+450
+01:10:33.840 --> 01:10:40.170
+Alec: Yeah, thanks, Ben. And I mean, that's the difference, like, even with what you built, is that when you're getting something off the shelf.
+
+451
+01:10:40.490 --> 01:10:58.670
+Alec: You know, it might solve part of what you're looking for, but the odds of something, you know, that's already built to actually, you know, meet all your needs are pretty low. So yeah, I love to build stuff out custom that actually makes sense and actually applies and actually fills that need that our clients have.
+
+452
+01:11:00.660 --> 01:11:01.290
+Ian: Yep.
+
+453
+01:11:01.740 --> 01:11:05.139
+Ian: Rahul, generic idea of multiple custom agents is cool.
+
+454
+01:11:05.510 --> 01:11:07.770
+Ian: Let's go. I'm glad you glad that.
+
+455
+01:11:10.830 --> 01:11:17.249
+Justin Novak: If they want to get a, I guess, you know, a soft spot, an open claw for their organization.
+
+456
+01:11:18.180 --> 01:11:22.920
+Justin Novak: What would that look like? Is that, is that like, how would you.
+
+457
+01:11:22.920 --> 01:11:23.920
+Ian: It…
+
+458
+01:11:24.050 --> 01:11:39.200
+Ian: It would really just be talking to whoever runs the company or is in charge of that space and then figuring out a solution that I could set them up as manager and then show them how to, basically a very similar setup to what SaucyBot is.
+
+459
+01:11:39.310 --> 01:11:41.889
+Ian: Where they could, they could,
+
+460
+01:11:42.320 --> 01:11:51.680
+Ian: create the bots, and then walk their employees through it, and then walk them through some kind of a training. That's been the hardest part, is what's possible. That's why I've been doing weekly calls with all of my employees.
+
+461
+01:11:51.790 --> 01:12:08.619
+Ian: Is, what's possible? How do I use this? What is it good for? And then I show them examples. And then as they do things, then I bring them to the front and say, here's another example. And so it spurns all these ideas. It's more of a train… you know, Cesar Millan used to train dogs.
+
+462
+01:12:08.900 --> 01:12:20.970
+Ian: He had a show, and whenever you come in and train a bad dog, he actually ended up training the human. The dog was actually fine, it was the human, how they were responding. And that's kind of how I see this, like, you've got a bot.
+
+463
+01:12:21.120 --> 01:12:30.459
+Ian: And I need to train you on how to use the bot. I'm not going to train the bot. I'm not going to prompt it. I'm going to train you on how to, how to think about working with it. So that's probably.
+
+464
+01:12:30.460 --> 01:12:32.180
+Alec: What a metaphor right there. That is.
+
+465
+01:12:32.460 --> 01:12:34.019
+Ian: That's great. Something like that.
+
+466
+01:12:35.110 --> 01:12:35.790
+Alec: Love it.
+
+467
+01:12:35.900 --> 01:12:50.030
+Justin Novak: Well, guys, that's a wrap. I'll give you guys a call later. We can debrief and we'll plan the next one next week and go from there.
+
+468
+01:12:50.690 --> 01:12:53.179
+Ian: Sounds good. Thanks, Justin. Thanks, everybody.
+
+469
+01:12:58.190 --> 01:12:59.040
+Justin Novak: See you guys.
+

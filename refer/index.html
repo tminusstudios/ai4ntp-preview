@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY783506Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4YY783506Y');
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invite peers, unlock exclusive rewards · AI4NTP</title>
+<meta name="description" content="Get your personal AI4NTP link in five simple steps: create it, share it, track your referrals, unlock exclusive rewards, and climb the monthly leaderboard.">
+<link rel="canonical" href="https://ai4ntp.com/refer">
+
+<meta property="og:title" content="Invite peers, unlock exclusive rewards">
+<meta property="og:description" content="Get your own link, invite peers to a live AI4NTP session, track every signup, and unlock exclusive rewards.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ai4ntp.com/refer">
+
+<link rel="icon" href="/ai4ntp-preview/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-monogram.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/ai4ntp-preview/icon-32.png">
+<link rel="apple-touch-icon" href="/ai4ntp-preview/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink:#0F1113; --ink-soft:#1C1F23; --paper:#F4F1EA; --paper-warm:#EDE7DA; --cream:#FAF7F0;
+    --signal:#D4FF3A; --signal-deep:#A8D000; --rust:#C4471C; --fog:#8A8679;
+    --line:rgba(15,17,19,.12); --line-strong:rgba(15,17,19,.35);
+    --sans:"Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --serif:"Fraunces", Georgia, serif; --mono:"JetBrains Mono", ui-monospace, monospace;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:var(--sans); background:var(--paper); color:var(--ink); -webkit-font-smoothing:antialiased; line-height:1.55; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 24px; }
+  ::selection { background:var(--signal); }
+
+  .hero { padding:clamp(48px,9vw,84px) 0 8px; }
+  h1 { font-family:var(--serif); font-weight:500; font-size:clamp(2.1rem,6.5vw,3.3rem); line-height:1.04; letter-spacing:-.01em; margin-bottom:14px; }
+  h1 em { font-style:italic; font-family:"Instrument Serif", var(--serif); color:var(--rust); }
+  .lead { font-size:1.12rem; color:var(--ink-soft); max-width:34em; }
+
+  /* steps */
+  .step { padding:clamp(30px,6vw,52px) 0; border-top:1px solid var(--line); }
+  .step-head { display:flex; align-items:center; gap:16px; margin-bottom:12px; }
+  .step-num { flex:0 0 auto; width:48px; height:48px; border-radius:13px; background:var(--ink); color:var(--signal);
+    display:grid; place-items:center; font-family:var(--serif); font-size:22px; font-weight:600; box-shadow:0 6px 18px rgba(15,17,19,.14); }
+  .step-head .lab { font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--fog); display:block; margin-bottom:2px; }
+  .step-head h2 { font-family:var(--serif); font-weight:500; font-size:clamp(1.5rem,4.6vw,2.1rem); line-height:1.06; margin:0; }
+  .step-copy { color:var(--ink-soft); font-size:1.06rem; max-width:36em; margin:0 0 22px; }
+
+  .card { background:var(--cream); border:1px solid var(--line); border-radius:18px; padding:clamp(20px,4vw,28px); box-shadow:0 12px 40px rgba(15,17,19,.05); }
+
+  form label { display:block; font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--fog); margin:0 0 6px; }
+  form input { width:100%; font-family:var(--sans); font-size:1rem; padding:14px 15px; border:1px solid var(--line-strong); border-radius:11px; background:#fff; color:var(--ink); margin-bottom:16px; }
+  form input:focus { outline:2px solid var(--signal-deep); outline-offset:1px; border-color:var(--signal-deep); }
+  form input.invalid { border-color:var(--rust); }
+  .btn { width:100%; cursor:pointer; border:0; border-radius:12px; padding:16px; font-family:var(--sans); font-weight:700; font-size:1.05rem; background:var(--ink); color:var(--cream); }
+  .btn:hover { background:#000; }
+  .btn:disabled { opacity:.6; cursor:default; }
+  .fineprint { font-size:.85rem; color:var(--fog); margin-top:12px; }
+  .err { color:var(--rust); font-size:.9rem; margin-top:10px; display:none; }
+
+  /* revealed link (step 1) */
+  .link-out { display:none; }
+  .link-out.show { display:block; }
+  .link-out .ready { font-weight:700; margin-bottom:12px; }
+  .linkrow { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .linkbox { flex:1 1 220px; min-width:0; font-family:var(--mono); font-size:13px; padding:13px 14px; border:1px solid var(--line-strong); border-radius:10px; background:#fff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .copy { cursor:pointer; border:0; border-radius:10px; padding:13px 18px; font-weight:700; background:var(--signal); color:var(--ink); font-family:var(--sans); }
+
+  /* share channels (step 2) */
+  .share { display:flex; gap:12px; flex-wrap:wrap; }
+  .share .chan, .share a { font-family:var(--mono); font-size:13px; letter-spacing:.04em; padding:11px 16px; border:1px solid var(--line-strong); border-radius:10px; color:var(--ink-soft); text-decoration:none; background:#fff; }
+  .share a:hover { color:var(--rust); border-color:var(--rust); }
+  .share .chan { opacity:.6; }
+  .share-hint { font-size:.85rem; color:var(--fog); margin-top:12px; }
+
+  /* dashboard preview (step 3, dark) */
+  .preview { background:#0E1116; border:1px solid #2A323F; border-radius:16px; padding:clamp(18px,3.5vw,24px); color:#EDEBE6; box-shadow:0 24px 60px rgba(15,17,19,.20); }
+  .preview .peb { font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#F5B133; margin-bottom:8px; }
+  .preview .ph { font-family:var(--serif); font-size:1.35rem; margin-bottom:18px; }
+  .preview .pstats { display:flex; gap:12px; margin-bottom:16px; }
+  .preview .pstat { flex:1; background:#171D26; border:1px solid #2A323F; border-radius:12px; padding:14px 16px; }
+  .preview .pn { font-family:var(--serif); font-size:2rem; line-height:1; }
+  .preview .pn.teal { color:#4FD6C4; }
+  .preview .pl { font-size:.74rem; color:#A7B0BD; margin-top:5px; }
+  .preview .pbar-top { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; font-size:.8rem; }
+  .preview .pbar-top .pnext { color:#EDEBE6; font-weight:600; }
+  .preview .pbar-top .paway { font-family:var(--mono); font-size:11px; color:#F5B133; }
+  .preview .ptrack { height:9px; border-radius:99px; background:#171D26; border:1px solid #2A323F; overflow:hidden; margin-bottom:16px; }
+  .preview .pfill { height:100%; width:48%; background:linear-gradient(90deg,#2E9E90,#4FD6C4); border-radius:99px; }
+  .preview .prow { display:flex; align-items:center; justify-content:space-between; gap:10px; border-top:1px solid #2A323F; padding-top:12px; }
+  .preview .pwho { font-weight:600; font-size:.9rem; }
+  .preview .ppill { font-family:var(--mono); font-size:10px; letter-spacing:.06em; text-transform:uppercase; padding:4px 9px; border-radius:99px; border:1px solid #2E9E90; color:#4FD6C4; }
+  .open-dash { display:none; margin-top:18px; }
+  .open-dash.show { display:block; }
+  .open-dash a { display:inline-block; background:var(--ink); color:var(--cream); text-decoration:none; font-weight:700; padding:14px 26px; border-radius:12px; }
+  .open-dash a:hover { background:#000; }
+  .open-dash .hint { font-size:.85rem; color:var(--fog); margin-top:10px; }
+
+  /* reward ladder (step 4, horizontal) */
+  .ladder-wrap { overflow-x:auto; padding:8px 0 4px; -webkit-overflow-scrolling:touch; }
+  .ladder { display:flex; position:relative; min-width:560px; padding:0 6px; }
+  .ladder::before { content:""; position:absolute; top:23px; left:12%; right:12%; height:2px; background:var(--line-strong); z-index:0; }
+  .rung { flex:1; text-align:center; position:relative; z-index:1; }
+  .rung .dot { width:48px; height:48px; margin:0 auto 12px; border-radius:50%; background:var(--ink); color:var(--signal); display:grid; place-items:center; font-family:var(--serif); font-size:19px; box-shadow:0 0 0 6px var(--paper); }
+  .rung .rname { font-weight:700; font-size:.98rem; }
+  .rung .rmeta { font-family:var(--mono); font-size:10px; color:var(--fog); text-transform:uppercase; letter-spacing:.08em; margin-top:3px; }
+  .rung .lock { display:block; font-size:11px; color:var(--fog); margin-top:6px; }
+  .ladder-cap { font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--fog); margin-top:14px; text-align:center; }
+
+  /* leaderboard (step 5) */
+  .board { border:1px solid var(--line); border-radius:16px; overflow:hidden; background:var(--cream); }
+  .board-row { display:flex; align-items:center; gap:14px; padding:14px 18px; border-top:1px solid var(--line); }
+  .board-row:first-child { border-top:0; }
+  .board-row .rank { flex:0 0 auto; width:30px; height:30px; border-radius:50%; display:grid; place-items:center; font-family:var(--serif); font-size:15px; background:var(--paper-warm); color:var(--ink); }
+  .board-row.g1 .rank { background:#F5C518; color:#1c1405; }
+  .board-row.g2 .rank { background:#C9CDD3; color:#1c1405; }
+  .board-row.g3 .rank { background:#E0A46A; color:#1c1405; }
+  .board-row .bn { flex:1 1 auto; font-weight:600; }
+  .board-row .bc { font-family:var(--mono); font-size:13px; color:var(--ink-soft); }
+  .board-cap { font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--fog); margin-top:14px; text-align:center; }
+
+  /* bottom CTA (only before they have their link) */
+  .endcta { text-align:center; }
+  .endcta h2 { font-family:var(--serif); font-weight:500; font-size:clamp(1.5rem,4.6vw,2.1rem); margin:0 0 8px; }
+  .endcta p { color:var(--ink-soft); margin:0 auto 22px; max-width:30em; }
+  .btn-inline { display:inline-block; width:auto; cursor:pointer; border:0; border-radius:12px; padding:16px 40px; font-family:var(--sans); font-weight:700; font-size:1.08rem; background:var(--ink); color:var(--cream); }
+  .btn-inline:hover { background:#000; }
+  .js-bottom-cta.hide { display:none; }
+</style>
+<link rel="stylesheet" href="/ai4ntp-preview/reskin.css">
+</head>
+<body>
+
+<script src="/ai4ntp-preview/nav.js"></script>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Invite peers to unlock <em>exclusive rewards.</em></h1>
+      <p class="lead">Five simple steps: get your link, share it, track your referrals, unlock rewards, and climb the leaderboard.</p>
+    </div>
+  </section>
+
+  <!-- STEP 1 -->
+  <section class="step" id="step-1">
+    <div class="wrap">
+      <div class="step-head"><span class="step-num">1</span><div><span class="lab">Step 1</span><h2>Get your personal link.</h2></div></div>
+      <p class="step-copy">Submit your information below and we will generate your personal referral link instantly.</p>
+      <div class="card">
+        <form class="js-form" novalidate>
+          <label for="rf-name">First name</label>
+          <input id="rf-name" name="first_name" type="text" autocomplete="given-name" placeholder="Alex">
+          <label for="rf-email">Email</label>
+          <input id="rf-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          <button class="btn" type="submit">Get my link</button>
+          <p class="fineprint">We use this to attribute your referrals and send you your link. No spam.</p>
+          <p class="err js-err">Something went wrong. Please try again.</p>
+        </form>
+        <div class="link-out js-link-out">
+          <p class="ready">Your link is ready. Share it in step 2.</p>
+          <div class="linkrow">
+            <div class="linkbox js-linkbox"></div>
+            <button type="button" class="copy js-copy">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section class="step">
+    <div class="wrap">
+      <div class="step-head"><span class="step-num">2</span><div><span class="lab">Step 2</span><h2>Share your link.</h2></div></div>
+      <p class="step-copy">Send it to peers who should be in the room, via email, X, LinkedIn, or a copy-paste link.</p>
+      <div class="card">
+        <div class="share js-share">
+          <span class="chan">Email</span><span class="chan">LinkedIn</span><span class="chan">X</span><span class="chan">Copy link</span>
+        </div>
+        <p class="share-hint js-share-hint">Your sharing buttons light up as soon as you finish step 1.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section class="step">
+    <div class="wrap">
+      <div class="step-head"><span class="step-num">3</span><div><span class="lab">Step 3</span><h2>Track your referrals.</h2></div></div>
+      <p class="step-copy">Watch every click and signup roll into your private dashboard, updating in real time.</p>
+      <div class="preview" aria-hidden="true">
+        <div class="peb">// referral dashboard</div>
+        <div class="ph">Your referrals, Alex.</div>
+        <div class="pstats">
+          <div class="pstat"><div class="pn teal">4</div><div class="pl">Friends signed up</div></div>
+          <div class="pstat"><div class="pn">12</div><div class="pl">Link clicks</div></div>
+        </div>
+        <div class="pbar-top"><span class="pnext">Next: VIP</span><span class="paway">1 more to unlock</span></div>
+        <div class="ptrack"><div class="pfill"></div></div>
+        <div class="prow"><span class="pwho">jordan@company.com</span><span class="ppill">attended</span></div>
+      </div>
+      <div class="open-dash js-open-dash">
+        <a class="js-open-link" href="#" data-cta="refer_open_dashboard">Open your dashboard &#8594;</a>
+        <p class="hint">Bookmark it. This private link is how you come back to track anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 4 -->
+  <section class="step">
+    <div class="wrap">
+      <div class="step-head"><span class="step-num">4</span><div><span class="lab">Step 4</span><h2>Unlock exclusive rewards.</h2></div></div>
+      <p class="step-copy">Unlock rewards, gifts, invite-only sessions, and special access only insiders get. The more peers you bring, the higher your tier.</p>
+      <div class="ladder-wrap">
+        <div class="ladder">
+          <div class="rung"><div class="dot">3</div><div class="rname">Insider</div><div class="rmeta">3 referrals</div><span class="lock">&#128274; Locked</span></div>
+          <div class="rung"><div class="dot">5</div><div class="rname">VIP</div><div class="rmeta">5 referrals</div><span class="lock">&#128274; Locked</span></div>
+          <div class="rung"><div class="dot">10</div><div class="rname">Inner Circle</div><div class="rmeta">10 referrals</div><span class="lock">&#128274; Locked</span></div>
+          <div class="rung"><div class="dot">20</div><div class="rname">Vanguard</div><div class="rmeta">20 referrals</div><span class="lock">&#128274; Locked</span></div>
+          <div class="rung"><div class="dot">50</div><div class="rname">Legend</div><div class="rmeta">50 referrals</div><span class="lock">&#128274; Locked</span></div>
+        </div>
+      </div>
+      <p class="ladder-cap">Each reward is revealed the moment you unlock its tier.</p>
+    </div>
+  </section>
+
+  <!-- STEP 5 -->
+  <section class="step">
+    <div class="wrap">
+      <div class="step-head"><span class="step-num">5</span><div><span class="lab">Step 5</span><h2>Climb the leaderboard.</h2></div></div>
+      <p class="step-copy">Compete on the monthly leaderboard. The top referrers each month win prizes.</p>
+      <div class="board" aria-hidden="true">
+        <div class="board-row g1"><span class="rank">1</span><span class="bn">Sarah K.</span><span class="bc">14 referrals</span></div>
+        <div class="board-row g2"><span class="rank">2</span><span class="bn">Marcus T.</span><span class="bc">11 referrals</span></div>
+        <div class="board-row g3"><span class="rank">3</span><span class="bn">Priya N.</span><span class="bc">9 referrals</span></div>
+        <div class="board-row"><span class="rank">4</span><span class="bn">Devin R.</span><span class="bc">7 referrals</span></div>
+        <div class="board-row"><span class="rank">5</span><span class="bn">You?</span><span class="bc">Start today</span></div>
+      </div>
+      <p class="board-cap">Illustrative. A live monthly leaderboard is coming soon.</p>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA: only shown while they have not gotten their link yet -->
+  <section class="step endcta js-bottom-cta">
+    <div class="wrap">
+      <h2>Ready to start?</h2>
+      <p>Grab your personal link and start climbing the tiers.</p>
+      <button type="button" class="btn-inline js-get-link" data-cta="refer_bottom_get_link">Get my link</button>
+    </div>
+  </section>
+</main>
+
+<script src="/ai4ntp-preview/footer.js"></script>
+
+<script>
+(function () {
+  var form = document.querySelector('.js-form');
+  var linkOut = document.querySelector('.js-link-out');
+  var errEl = document.querySelector('.js-err');
+  var openDash = document.querySelector('.js-open-dash');
+  var bottomCta = document.querySelector('.js-bottom-cta');
+  var SHARE_TEXT = 'Join me at a free live AI4NTP session. Grab your seat with my link:';
+
+  function showReveal(d) {
+    // Step 1: swap the form for the ready link.
+    document.querySelector('.js-linkbox').textContent = d.share_link;
+    form.style.display = 'none';
+    linkOut.classList.add('show');
+
+    var copyBtn = document.querySelector('.js-copy');
+    copyBtn.addEventListener('click', function () {
+      var done = function () { var t = copyBtn.textContent; copyBtn.textContent = 'Copied'; setTimeout(function () { copyBtn.textContent = t; }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(d.share_link).then(done, done);
+      else { var ta = document.createElement('textarea'); ta.value = d.share_link; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} document.body.removeChild(ta); done(); }
+      if (typeof gtag === 'function') gtag('event', 'refer_link_copied');
+    });
+
+    // Step 2: activate the real share buttons.
+    var body = SHARE_TEXT + '\n\n' + d.share_link;
+    document.querySelector('.js-share').innerHTML =
+      '<a href="mailto:?subject=' + encodeURIComponent('A free live AI4NTP session') + '&body=' + encodeURIComponent(body) + '" data-cta="refer_share_email">Email &#8599;</a>' +
+      '<a target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(d.share_link) + '" data-cta="refer_share_linkedin">LinkedIn &#8599;</a>' +
+      '<a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(SHARE_TEXT) + '&url=' + encodeURIComponent(d.share_link) + '" data-cta="refer_share_x">X &#8599;</a>';
+    var hint = document.querySelector('.js-share-hint');
+    if (hint) hint.textContent = 'Your link is live. Share it anywhere your peers hang out.';
+
+    // Step 3: light up the dashboard link.
+    document.querySelector('.js-open-link').setAttribute('href', d.portal_link);
+    openDash.classList.add('show');
+
+    // They now have their link, so hide the bottom "Get my link" CTA.
+    if (bottomCta) bottomCta.classList.add('hide');
+
+    try { if (d.code) localStorage.setItem('a4_mycode', d.code); } catch (e) {}
+    if (typeof gtag === 'function') gtag('event', 'refer_link_created');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    errEl.style.display = 'none';
+    var emailEl = form.querySelector('input[type="email"]');
+    var nameEl = form.querySelector('input[name="first_name"]');
+    var email = (emailEl.value || '').trim();
+    if (!email || email.indexOf('@') < 1) { emailEl.classList.add('invalid'); emailEl.focus(); return; }
+    emailEl.classList.remove('invalid');
+
+    var btn = form.querySelector('button[type="submit"]');
+    var original = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Creating your link…';
+
+    fetch('/api/refer-link', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, first_name: (nameEl.value || '').trim() || null, source: 'refer-page' })
+    }).then(function (r) {
+      if (!r.ok) throw new Error('status ' + r.status);
+      return r.json();
+    }).then(function (d) {
+      if (!d || !d.share_link) throw new Error('bad response');
+      showReveal(d);
+    }).catch(function () {
+      btn.disabled = false; btn.textContent = original;
+      errEl.style.display = 'block';
+    });
+  });
+
+  // Bottom CTA: jump back to step 1's form. Hide it entirely if they already have a link.
+  var getLinkBtn = document.querySelector('.js-get-link');
+  if (getLinkBtn) getLinkBtn.addEventListener('click', function () {
+    var target = document.getElementById('step-1');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(function () { var em = form.querySelector('input[type="email"]'); if (em) em.focus(); }, 450);
+  });
+  try { if (localStorage.getItem('a4_mycode') && bottomCta) bottomCta.classList.add('hide'); } catch (e) {}
+})();
+</script>
+<script src="/ai4ntp-preview/reskin.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "session_id": "003",
+  "status": "LIVE",
+  "date": "JUNE 10, 2026",
+  "time": "6:00 PM EST",
+  "headline_line1": "Build your own",
+  "headline_pre": "",
+  "headline_highlight": "AI Clone Agent",
+  "headline_post": ".",
+  "tagline": "SET UP LIVE IN UNDER AN HOUR · WITH OPENCLAW",
+  "operators": [
+    { "img": "images/ian-kilpatrick.jpg", "name": "Ian Kilpatrick" },
+    { "img": "images/justin-novak.jpg", "name": "Justin Novak" }
+  ],
+  "headline_size": 104,
+  "card_w": 1200,
+  "card_h": 600,
+  "scale": 1.566666667,
+  "centered": true,
+  "output": "og-eventbrite.jpg"
+}

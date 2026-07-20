@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY783506Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4YY783506Y');
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 006 recap · 7 AI agents we built to run our company · AI4NTP</title>
+<meta name="description" content="The Session 006 recap. Justin, Ian, and Alec opened the hood on seven AI agents running inside their companies: Echo Check, a content engine, an iMessage appointment setter, a custom LMS, Mission Control, a cold-email agent, and SaucyBot. Watch the replay, read the 5-minute catch-up, and get every tool.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<link rel="canonical" href="https://ai4ntp.com/sessions/006">
+
+<meta property="og:title" content="7 AI agents we built to run our company · AI4NTP Session 006 recap">
+<meta property="og:description" content="The full teardown: seven AI agents running inside our companies, what each does, why we built it, and how you build the same. Replay, catch-up, and every tool.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ai4ntp.com/sessions/006">
+<meta property="og:image" content="https://ai4ntp.com/sessions/006/og-image.jpg">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="7 AI agents we built · AI4NTP Session 006 recap">
+<meta name="twitter:description" content="Seven AI agents running inside our companies, and exactly how we built them. Replay, 5-minute catch-up, and every tool.">
+<meta name="twitter:image" content="https://ai4ntp.com/sessions/006/og-image.jpg">
+
+<meta property="og:video" content="https://www.youtube.com/watch?v=q7-F4KbikbY">
+<meta property="og:video:url" content="https://www.youtube.com/watch?v=q7-F4KbikbY">
+<meta property="og:video:secure_url" content="https://www.youtube.com/embed/q7-F4KbikbY">
+<meta property="og:video:type" content="text/html">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
+<meta name="twitter:player" content="https://www.youtube.com/embed/q7-F4KbikbY">
+<meta name="twitter:player:width" content="1280">
+<meta name="twitter:player:height" content="720">
+
+<link rel="icon" href="/ai4ntp-preview/type/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/type/logo-monogram.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/ai4ntp-preview/type/icon-32.png">
+<link rel="apple-touch-icon" href="/ai4ntp-preview/type/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Shared theme (see /theme/README.md): base tokens/buttons -> dark skin
+     (scoped to body.v6.dark; also darkens the shared nav.js header) -> page-specific styles. -->
+<link rel="stylesheet" href="/ai4ntp-preview/type/theme/base.css">
+<link rel="stylesheet" href="/ai4ntp-preview/type/theme/dark.css">
+<link rel="stylesheet" href="/ai4ntp-preview/type/sessions/006/session-006-dark.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "7 AI agents we built to save time, save money, and make more money · AI4NTP Session 006",
+  "description": "Justin Novak, Ian Kilpatrick, and Alec Saluga opened the hood on seven AI agents running inside their companies: Echo Check (AI visibility), a content engine, an iMessage appointment setter, the Saints Classical LMS, Mission Control (an in-house operations platform), a cold-email lead-gen agent, and SaucyBot. For each one they showed what it does, why they built it, the size of company and industry it was built for, and how you build the same. Free, recorded live on Zoom.",
+  "startDate": "2026-07-12T14:00:00-04:00",
+  "endDate": "2026-07-12T15:15:00-04:00",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "isAccessibleForFree": true,
+  "location": { "@type": "VirtualLocation", "url": "https://ai4ntp.com/sessions/006" },
+  "image": "https://ai4ntp.com/sessions/006/og-image.jpg",
+  "organizer": { "@type": "Organization", "name": "AI4NTP", "url": "https://ai4ntp.com" },
+  "performer": [
+    { "@type": "Person", "name": "Justin Novak", "url": "https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/" },
+    { "@type": "Person", "name": "Ian Kilpatrick", "url": "https://ianpk.com" },
+    { "@type": "Person", "name": "Alec Saluga", "url": "https://www.linkedin.com/in/alec-saluga-4295521a6/" }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://ai4ntp.com/sessions/006",
+    "validFrom": "2026-07-03T00:00:00-04:00"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What are the seven AI agents they showed?", "acceptedAnswer": { "@type": "Answer", "text": "Echo Check (Ian, AI visibility), a content engine (Justin, a month of content in a day), an iMessage appointment setter (Alec), the Saints Classical LMS (Ian), Mission Control (Justin, an in-house operations platform), a cold-email lead-gen agent (Alec, Apify plus Instantly), and SaucyBot (Ian, a personal agent for every employee)." } },
+    { "@type": "Question", "name": "What actually is an AI agent?", "acceptedAnswer": { "@type": "Answer", "text": "With conversational AI you ask for answers. With an agent you ask for outcomes. An agent is hooked into your email, your tools, sometimes your phone, and takes action on your behalf inside a specific role, doing real work rather than just chatting." } },
+    { "@type": "Question", "name": "What is OpenClaw and do I need to be technical to use it?", "acceptedAnswer": { "@type": "Answer", "text": "OpenClaw is the agent runtime Ian runs across his companies. You set it up with roles and actions and it goes and does things, including building software and setting up other agents. Set up correctly, employees get read-only access and can only build in their own sandbox, so they cannot break anything. It can be technical to configure, which is why you want someone who has done it before." } },
+    { "@type": "Question", "name": "20 to 50 agents sounds like a lot. Where do I start?", "acceptedAnswer": { "@type": "Answer", "text": "Start at square one and grow iteratively. Pick one repetitive, time-consuming job, ask your agent if it can handle it, and build from there. Both Mission Control and the content engine started small and compounded. Get one agent working before designing the whole system." } },
+    { "@type": "Question", "name": "What is AEO and GEO, and does it move revenue?", "acceptedAnswer": { "@type": "Answer", "text": "AEO (Answer Engine Optimization) means putting clear FAQs on your site so AIs can find and reuse your answers. GEO (Generative Engine Optimization) means optimizing for the AI summary at the top of a search result. Ian showed the payoff: BrandSauce went from roughly 26 to over 14,500 indexed pages and booked five demos in a week from ChatGPT that all became clients." } },
+    { "@type": "Question", "name": "Is this really free? What was the offer at the end?", "acceptedAnswer": { "@type": "Answer", "text": "The session is free. At the close, the team made one small, optional offer: a free 15-minute call to see if it is a fit to build a custom agent with Justin, Ian, and Alec. If that is not you, you still leave with everything shown." } }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "7 AI agents we built to run our companies · AI4NTP Session 006",
+  "description": "Justin Novak, Ian Kilpatrick, and Alec Saluga open the hood on seven AI agents running inside their companies: Echo Check (AI visibility), a content engine, an iMessage appointment setter, a custom LMS, an in-house operations platform, a cold-email agent, and SaucyBot. For each, what it does, why they built it, and the real numbers behind it.",
+  "thumbnailUrl": "https://i.ytimg.com/vi/q7-F4KbikbY/maxresdefault.jpg",
+  "uploadDate": "2026-07-13",
+  "duration": "PT1H3M",
+  "contentUrl": "https://www.youtube.com/watch?v=q7-F4KbikbY",
+  "embedUrl": "https://www.youtube.com/embed/q7-F4KbikbY",
+  "publisher": { "@type": "Organization", "name": "AI4NTP", "url": "https://ai4ntp.com" }
+}
+</script>
+<link rel="stylesheet" href="/ai4ntp-preview/type/reskin.css">
+</head>
+<body class="v6 dark">
+
+<script src="/ai4ntp-preview/type/nav.js"></script>
+
+<main id="top">
+
+  <!-- ============ HERO (recap) ============ -->
+  <section class="s6-hero" id="replay-top">
+    <div class="container">
+      <div class="s6-hero-center">
+        <div class="s6-tagrow center">
+          <span class="s6-tag replay">Replay · Session 006</span>
+          <span class="s6-tag">Recorded July 12, 2026</span>
+        </div>
+        <h1 class="s6-h1">7 AI agents we built to <em>run our company.</em></h1>
+        <p class="s6-lede">We opened the hood on seven AI agents running inside our companies every day, the ones that save us time, save us money, and help us make more. Watch the full replay, or skim the teardown below.</p>
+
+        <!-- host faces -->
+        <div class="s6-faces">
+          <div class="row">
+            <img src="/ai4ntp-preview/type/sessions/006/images/justin-novak.jpg" alt="Justin Novak">
+            <img src="/ai4ntp-preview/type/sessions/006/images/ian-kilpatrick.jpg" alt="Ian Kilpatrick">
+            <img src="/ai4ntp-preview/type/sessions/006/images/alec-saluga.jpg" alt="Alec Saluga">
+          </div>
+          <div class="cap">Hosted by <b>Justin, Ian &amp; Alec</b></div>
+        </div>
+
+        <div class="s6-ctarow" style="justify-content:center;">
+          <a class="s6-cta" href="#replay" data-cta="s6_hero_watch_replay">Watch the replay ↓</a>
+          <a class="s6-cta ghost" href="/ai4ntp-preview/type/calendar" data-cta="s6_hero_book_call">Book a 15-min call</a>
+        </div>
+        <p class="s6-note" style="margin-top:var(--s5);">In a hurry? Read the <a href="#catchup" style="color:var(--signal);border-bottom:1px solid var(--signal);text-decoration:none;">5-minute catch-up</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REPLAY ============ -->
+  <section class="s6-section" id="replay">
+    <div class="container">
+      <div class="s6-sec-eyebrow">The replay</div>
+      <h2 class="s6-h2">Watch the <em>full session.</em></h2>
+      <p class="s6-intro">All seven agents, the real numbers behind each, and the live Q&amp;A. About 63 minutes.</p>
+
+      <div class="s6-video">
+        <iframe src="https://www.youtube.com/embed/q7-F4KbikbY" title="AI4NTP Session 006 replay: 7 AI agents we built to run our companies" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE BIG IDEA / TRIFECTA ============ -->
+  <section class="s6-section warm" id="trifecta">
+    <div class="container">
+      <div class="s6-sec-eyebrow">The big idea</div>
+      <h2 class="s6-h2">Every agent we build does <em>one of three things.</em></h2>
+      <p class="s6-intro">We do not build AI for the sake of it. Every agent has to earn its keep on one of three fronts. Get all three working together and you do not just improve, you <b>compound.</b> That is the whole strategy in one picture.</p>
+
+      <div class="s6-trifecta">
+        <div class="s6-prongs">
+          <div class="s6-prong">
+            <div class="pnum">Prong 01</div>
+            <div class="picon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>
+            </div>
+            <h3>Save <em>time</em></h3>
+            <p>The low-leverage work that eats your team's day, done in minutes, on repeat, while you sleep.</p>
+          </div>
+          <div class="s6-prong">
+            <div class="pnum">Prong 02</div>
+            <div class="picon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"></path><path d="M3 7l2.5-3h13L21 7"></path><circle cx="16" cy="13" r="1.6"></circle></svg>
+            </div>
+            <h3>Save <em>money</em></h3>
+            <p>The retainers, tools, and headcount an agent quietly replaces, without dropping the ball.</p>
+          </div>
+          <div class="s6-prong">
+            <div class="pnum">Prong 03</div>
+            <div class="picon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18l6-6 4 4 6-8"></path><path d="M15 8h5v5"></path></svg>
+            </div>
+            <h3>Make <em>more</em></h3>
+            <p>Faster follow-up, more at-bats, deals that would have slipped: the agents that put revenue on the board.</p>
+          </div>
+        </div>
+
+        <div class="s6-converge" aria-hidden="true">
+          <svg viewBox="0 0 600 64" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M100 2 C100 34, 300 30, 300 62"></path>
+            <path d="M300 2 L300 62"></path>
+            <path d="M500 2 C500 34, 300 30, 300 62"></path>
+          </svg>
+        </div>
+        <div style="display:flex; justify-content:center;">
+          <div class="s6-outcome">
+            <span class="v">You grow <em>faster.</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE 7 AGENTS (revealed) ============ -->
+  <section class="s6-section" id="agents">
+    <div class="container">
+      <div class="s6-sec-eyebrow">The show and tell</div>
+      <h2 class="s6-h2">Seven agents. <em>Seven teardowns.</em></h2>
+      <p class="s6-intro">Here is exactly what we opened the hood on, in the order we showed it. For each one: what it does, who built it, and the old way it replaced.</p>
+
+      <div class="s6-agents">
+        <div class="s6-agent">
+          <div class="no">01</div>
+          <div class="body">
+            <h3>Echo Check</h3>
+            <p>Ian's AEO/GEO/SEO tool, live at <a href="https://echocheck.app" style="color:var(--signal);text-decoration:none;border-bottom:1px solid var(--signal);">echocheck.app</a>. Run a free check on your site, see how LLMs cite you, and get recommended by AI. It took BrandSauce from ~26 to 14,500+ indexed pages and booked five ChatGPT demos in a week that all became clients. <span class="old"><b>Replaced:</b> guessing whether AI recommends you.</span></p>
+          </div>
+          <span class="flag grow">Make more</span>
+        </div>
+        <div class="s6-agent">
+          <div class="no">02</div>
+          <div class="body">
+            <h3>The content engine</h3>
+            <p>Justin's chain of specialist agents that turns one phone call into a month of on-brand content: landing page, Eventbrite, newsletter, YouTube, shorts, tool pages, and social. A human stays in the loop so it never ships slop. <span class="old"><b>Replaced:</b> 3 to 4 junior marketers, north of $200k in headcount.</span></p>
+          </div>
+          <span class="flag time">Save time</span>
+        </div>
+        <div class="s6-agent">
+          <div class="no">03</div>
+          <div class="body">
+            <h3>The iMessage appointment setter</h3>
+            <p>Alec's blue-bubble SMS agent that chases opted-in leads until they book. A blue text reads as human, not spam, so reply rates jump. Speed to lead, hands-off. <span class="old"><b>Replaced:</b> an assistant chasing every lead by hand (and the leads lost after hours).</span></p>
+          </div>
+          <span class="flag grow">Make more</span>
+        </div>
+        <div class="s6-agent">
+          <div class="no">04</div>
+          <div class="body">
+            <h3>The Saints Classical LMS</h3>
+            <p>Ian's custom learning-management system, built with Claude Code and an OpenClaw named Saint. Teacher and parent views, houses, tuition, enrollment, a built-in email system and Slack, iOS app coming in August. Helped grow the school from 95 to 230+ students. <span class="old"><b>Replaced:</b> $50k to $100k of custom software, or a yearly license.</span></p>
+          </div>
+          <span class="flag money">Save money</span>
+        </div>
+        <div class="s6-agent">
+          <div class="no">05</div>
+          <div class="body">
+            <h3>Mission Control</h3>
+            <p>Justin's in-house operations platform with 20 to 50 agents inside it. Every client request in one view, an AI reply drafted in Justin's own voice, time logged per task, and a monthly client report that used to take hours generated in under a minute. <span class="old"><b>Replaced:</b> 8+ disconnected tools (email, Asana, time tracking, billing, reporting).</span></p>
+          </div>
+          <span class="flag time">Save time</span>
+        </div>
+        <div class="s6-agent">
+          <div class="no">06</div>
+          <div class="body">
+            <h3>The cold-email lead-gen agent</h3>
+            <p>Alec's simplest build, on purpose: one agent, one job. Apify scrapes and enriches a prospect list, AI writes hyper-personalized outreach, Instantly sends it without burning your inbox. Last seven days with one client: ~1,700 people, 112 opportunities. <span class="old"><b>Replaced:</b> a 3% reply rate and manual list-building.</span></p>
+          </div>
+          <span class="flag grow">Make more</span>
+        </div>
+        <div class="s6-agent">
+          <div class="no">07</div>
+          <div class="body">
+            <h3>SaucyBot</h3>
+            <p>Ian's big one. A system that provisions a personal OpenClaw for every employee, in their own sandbox, all feeding one shared "big brain." A 30-person remote team across four countries, all AI-enabled, all building in their own lane. <span class="old"><b>Replaced:</b> one person's AI advantage staying with one person.</span></p>
+          </div>
+          <span class="flag time">Save time</span>
+        </div>
+      </div>
+      <p class="s6-agents-foot">This is not one big agent. It is <b>a chain of specialists,</b> each doing one job very, very well, compounding while we sleep.</p>
+    </div>
+  </section>
+
+  <!-- ============ 5-MIN CATCH-UP ============ -->
+  <section class="s6-section warm" id="catchup">
+    <div class="container">
+      <div class="s6-sec-eyebrow">Missed it live?</div>
+      <h2 class="s6-h2">The 5-minute <em>catch-up.</em></h2>
+      <div class="s6-catchup">
+        <p><b>The frame: agents ask for outcomes, not answers.</b> Most people use conversational AI, sitting in a browser asking ChatGPT or Claude for answers. An agent is the opposite: you ask it for an outcome and it takes action on your behalf, hooked into your email, your tools, sometimes your phone. The tell all three hosts share is that they name their agents, Atlas, Saint, Saucy, because they act like teammates, not chatbots.</p>
+        <p><b>Ian's Echo Check turns AI visibility into revenue.</b> Built with his OpenClaw "Atlas," it started as a private tool and became echocheck.app: plug in a URL, get an echo score, see your competitors, and see your site the way an LLM reads it. The proof was concrete. BrandSauce went from roughly 26 to over 14,500 indexed pages, and after months of zero, booked five demos in a week that all came from ChatGPT and all became clients.</p>
+        <p><b>Justin's content engine makes a month of content in a day.</b> Not one big agent, a chain of specialists. It starts with a real phone call, records the transcript, and hands it down the line to a landing page, newsletter, YouTube, shorts, tool pages, and the follow-up. His math: the same output would need three or four junior marketers, north of $200,000 in headcount.</p>
+        <p><b>Alec's iMessage appointment setter wins on the color of the bubble.</b> A green text reads as automated and gets ignored, a blue iMessage reads as human and gets replies. Alec's agent sends blue-bubble texts to leads who opted in but never booked, and pushes them to a booked appointment. Justin's add: speed to lead. Answer in seconds, not twelve hours, and you keep the lead.</p>
+        <p><b>Ian's Saints Classical LMS grew from a login page into a platform.</b> Built brainstorming with Claude and Claude Code, then run by an OpenClaw on the server, it has teacher and parent views, tuition, enrollment, email, even Slack. A blog the agent writes under the pen name C.S. Lewis (350+ posts) pushed the school past Google's EEAT bar. Enrollment went from 95 to over 230 students.</p>
+        <p><b>Justin's Mission Control replaced eight-plus tools with one.</b> Every client request in one view, an AI reply in Justin's own voice trained on tens of thousands of his emails, time logged per task, and a monthly report that used to take hours generated in under a minute. His philosophy for the hour: be the architect. Build the house you actually want to live in.</p>
+        <p><b>Alec's cold-email agent booked 112 opportunities in a week.</b> The simplest build of the day. It scrapes a prospect database with Apify, enriches each record so the outreach proves real research, writes personalized emails, and sends them through Instantly. About 1,700 people, roughly 3,500 emails, 112 opportunities, at reply rates he says are impossible without AI.</p>
+        <p><b>Ian's SaucyBot gives every employee their own agent.</b> BrandSauce grew 5x in six months to about 30 people, fully remote. So Ian built an interface that provisions a personal OpenClaw for each employee via Telegram. Everyone can build only in their own folder, so they experiment hard without breaking anything. His master bot, the Sauce Boss, pulls every employee's learnings into one hive mind for the next hire.</p>
+        <p><b>The takeaway: start with one, then compound.</b> Nobody built 50 agents on day one. Start at square one, ask your agent if it can do the next thing, and grow it iteratively. Ian's closing metaphor stuck: like Cesar Millan training dogs, you do not train the bot, you train the human to work with it.</p>
+      </div>
+
+      <div class="s6-moments">
+        <div class="mh">Best moments</div>
+        <div class="s6-moment"><span class="t">0:05</span><span>Alec defines an agent: you ask it for <b>outcomes, not answers.</b></span></div>
+        <div class="s6-moment"><span class="t">2:35</span><span>Ian's Echo Check origin story, and Atlas, the OpenClaw "king."</span></div>
+        <div class="s6-moment"><span class="t">7:00</span><span>The proof: BrandSauce from ~26 to <b>14,530 indexed pages,</b> five ChatGPT demos that all closed.</span></div>
+        <div class="s6-moment"><span class="t">10:35</span><span>Justin's content engine: a month of content in one day.</span></div>
+        <div class="s6-moment"><span class="t">19:35</span><span>Alec's iMessage setter, and why a <b>blue text beats a green one.</b></span></div>
+        <div class="s6-moment"><span class="t">27:15</span><span>Ian's Saints Classical LMS, built with Claude Code and an OpenClaw.</span></div>
+        <div class="s6-moment"><span class="t">29:50</span><span>The blog agent posting as C.S. Lewis, and <b>95 to 230+ students.</b></span></div>
+        <div class="s6-moment"><span class="t">34:20</span><span>Justin's Mission Control: eight-plus tools replaced with one.</span></div>
+        <div class="s6-moment"><span class="t">39:10</span><span>"Be the architect." The house-you-want-to-live-in metaphor.</span></div>
+        <div class="s6-moment"><span class="t">42:25</span><span>Alec's cold-email agent: 1,700 people, <b>112 opportunities in seven days.</b></span></div>
+        <div class="s6-moment"><span class="t">48:30</span><span>Ian's SaucyBot: a personal OpenClaw for every employee.</span></div>
+        <div class="s6-moment"><span class="t">54:15</span><span>Jensen Huang: every CEO needs an OpenClaw strategy.</span></div>
+        <div class="s6-moment"><span class="t">1:02:00</span><span>Rolling this out: <b>train the human, not the bot.</b></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOK / GET IN TOUCH ============ -->
+  <section class="s6-section" id="book">
+    <div class="container">
+      <div class="s6-sec-eyebrow">Work with us</div>
+      <h2 class="s6-h2">Want one of these built <em>for you?</em></h2>
+      <p class="s6-intro">No pitch. If the session sparked something, grab a free 15-minute call with the operator whose builds fit your problem. Bring your hardest challenge, the bigger the better.</p>
+      <div class="s6-book">
+        <div class="s6-bcard">
+          <img class="ph" src="/ai4ntp-preview/type/sessions/006/images/justin-novak.jpg" alt="Justin Novak">
+          <div class="nm">Justin Novak</div>
+          <div class="co">Partner at AI4NTP</div>
+          <p class="blurb">Growth, go-to-market, and the content + operations agents. Bring a distribution or systems problem.</p>
+          <div class="links">
+            <a class="primary" href="/ai4ntp-preview/type/calendar" data-book-cta="justin">Book 15 min →</a>
+            <a href="https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="mailto:justin@ai4ntp.com">Email</a>
+          </div>
+        </div>
+        <div class="s6-bcard">
+          <img class="ph" src="/ai4ntp-preview/type/sessions/006/images/ian-kilpatrick.jpg" alt="Ian Kilpatrick">
+          <div class="nm">Ian Kilpatrick</div>
+          <div class="co">Partner at AI4NTP</div>
+          <p class="blurb">OpenClaw, AI visibility, and custom builds (LMS, Echo Check, SaucyBot). Bring your hardest "can an agent do this?" question.</p>
+          <div class="links">
+            <a class="primary" href="/ai4ntp-preview/type/calendar" data-book-cta="ian">Book 15 min →</a>
+            <a href="https://www.linkedin.com/in/ianpk/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://ianpk.com" target="_blank" rel="noopener">ianpk.com ↗</a>
+          </div>
+        </div>
+        <div class="s6-bcard">
+          <img class="ph" src="/ai4ntp-preview/type/sessions/006/images/alec-saluga.jpg" alt="Alec Saluga">
+          <div class="nm">Alec Saluga</div>
+          <div class="co">Partner at AI4NTP</div>
+          <p class="blurb">Lead-gen, cold email, and appointment-setting agents. Bring a speed-to-lead or outbound problem.</p>
+          <div class="links">
+            <a class="primary" href="/ai4ntp-preview/type/calendar" data-book-cta="alec">Book 15 min →</a>
+            <a href="https://www.linkedin.com/in/alec-saluga-4295521a6/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS ============ -->
+  <section class="s6-section warm" id="tools">
+    <div class="container">
+      <div class="s6-sec-eyebrow">The stack</div>
+      <h2 class="s6-h2">Every tool we <em>touched.</em></h2>
+      <p class="s6-intro">Grouped by what each tool actually did across the seven agents. Deeper write-ups live in the <a href="/ai4ntp-preview/type/ai-tools" style="color:var(--signal);text-decoration:none;border-bottom:1px solid var(--signal);">AI4NTP tools directory</a>.</p>
+
+      <div class="s6-tools">
+        <div class="s6-toolgroup">
+          <div class="tg-h">Agents &amp; orchestration</div>
+          <div class="tg-list">
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/openclaw">OpenClaw</a>, the agent runtime behind most of the session. Ian runs named OpenClaws: Atlas, Saint, Saucy, and the Sauce Boss. <span class="who">Demoed by Ian.</span></div>
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/telegram">Telegram</a>, how SaucyBot provisions a personal agent for each employee, via the BotFather. <span class="who">Demoed by Ian.</span></div>
+          </div>
+        </div>
+        <div class="s6-toolgroup">
+          <div class="tg-h">AI visibility (AEO/GEO)</div>
+          <div class="tg-list">
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/echo-check">Echo Check</a>, Ian's own AI-visibility tool, live at <a href="https://echocheck.app" target="_blank" rel="noopener">echocheck.app</a>. Free echo score, competitor map, LLM's-eye view of your site. <span class="who">Demoed by Ian.</span></div>
+            <div class="s6-tool"><b>Google Search Console</b>, where Ian showed the climb from ~26 to 14,500+ indexed pages. <span class="who">Referenced by Ian.</span></div>
+          </div>
+        </div>
+        <div class="s6-toolgroup">
+          <div class="tg-h">Building the software</div>
+          <div class="tg-list">
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/claude">Claude</a> &amp; <a href="/ai4ntp-preview/type/ai-tools/claude-code">Claude Code</a>, Ian's starting point for the first Saints Classical LMS. <span class="who">Mentioned by Ian.</span></div>
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/codex">Codex</a>, Alec used it to drive an Apify scraper and enrich prospect data. <span class="who">Demoed by Alec.</span></div>
+          </div>
+        </div>
+        <div class="s6-toolgroup">
+          <div class="tg-h">Data &amp; outbound</div>
+          <div class="tg-list">
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/apify">Apify</a>, a store of off-the-shelf scrapers that feed the cold-email agent (Alec showed an attorney lead scraper). <span class="who">Demoed by Alec.</span></div>
+            <div class="s6-tool"><b>Instantly</b>, the cold-email sending software: ~1,700 prospects, 112 opportunities in a week. <span class="who">Demoed by Alec.</span></div>
+          </div>
+        </div>
+        <div class="s6-toolgroup">
+          <div class="tg-h">Visuals &amp; boards</div>
+          <div class="tg-list">
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/higgsfield">Higgsfield</a>, Alec generated an explainer graphic five minutes before going live. <span class="who">Demoed by Alec.</span></div>
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/figma">Figma</a> and <b>Miro</b>, the boards Justin and Alec used to map their systems. <span class="who">Shown by Justin and Alec.</span></div>
+          </div>
+        </div>
+        <div class="s6-toolgroup">
+          <div class="tg-h">Answer engines</div>
+          <div class="tg-list">
+            <div class="s6-tool"><a href="/ai4ntp-preview/type/ai-tools/chatgpt">ChatGPT</a>, <a href="/ai4ntp-preview/type/ai-tools/claude">Claude</a>, and <a href="/ai4ntp-preview/type/ai-tools/perplexity">Perplexity</a>, the engines Echo Check optimizes for, and where BrandSauce's demos now come from. <span class="who">Discussed by Ian and Alec.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DECK ============ -->
+  <section class="s6-section" id="deck">
+    <div class="container">
+      <div class="s6-sec-eyebrow">The slides</div>
+      <h2 class="s6-h2">Flip through the <em>deck.</em></h2>
+      <div class="s6-deck">
+        <div class="d-copy">
+          <h3>Session 006 slides</h3>
+          <p>The trifecta, the seven agents, and the "be the architect" close, in the order we ran them.</p>
+        </div>
+        <a class="s6-cta" href="/ai4ntp-preview/type/sessions/006/slides" target="_blank" rel="noopener" data-cta="s6_deck_open">Open the deck ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHARE THE REPLAY ============ -->
+  <section class="s6-section warm" id="invite">
+    <div class="container">
+      <div class="s6-sec-eyebrow">Pass it on</div>
+      <h2 class="s6-h2">Know an operator who <em>needs this?</em></h2>
+      <div class="s6-invite">
+        <div class="copy">
+          <h3>Send them <em>the teardown.</em></h3>
+          <p>The seven agents map cleanly onto jobs every business has: outreach, follow-up, reporting, content, visibility. If one of them is the exact thing eating a friend's week, forward the replay. Everyone gets their own copy, and you plant the idea.</p>
+        </div>
+        <div class="s6-share">
+          <div class="lab">Share this recap</div>
+          <div class="s6-share-row">
+            <a href="#" class="js-share" data-share="email" data-cta="s6_invite_email_click">Email ↗</a>
+            <a href="#" class="js-share" data-share="linkedin" data-cta="s6_invite_linkedin_click">LinkedIn ↗</a>
+            <a href="#" class="js-share" data-share="x" data-cta="s6_invite_x_click">X ↗</a>
+            <button type="button" class="js-copy" data-cta="s6_invite_copy_click">Copy link</button>
+          </div>
+          <div class="linkbox js-linkbox">https://ai4ntp.com/sessions/006</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHO THIS IS FOR ============ -->
+  <section class="s6-section" id="fit">
+    <div class="container">
+      <div class="s6-sec-eyebrow">Straight talk</div>
+      <h2 class="s6-h2">Who these sessions <em>are and aren't for.</em></h2>
+      <p class="s6-intro">We run one about every week. Here is who gets the most out of them.</p>
+      <div class="s6-fit">
+        <div class="s6-fit-col yes">
+          <div class="h">Come if you are</div>
+          <ul>
+            <li>A founder or hands-on operator who wants to become AI native</li>
+            <li>Running a business doing $1M-$50M in revenue</li>
+            <li>US-based, and feeling AI reshape your market</li>
+            <li>Ready to actually build, not just watch</li>
+          </ul>
+        </div>
+        <div class="s6-fit-col no">
+          <div class="h">Maybe skip if you are</div>
+          <ul>
+            <li>Already running a robust in-house AI team</li>
+            <li>Looking for a no-code course, not real builds</li>
+            <li>Not willing to change how you work</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="s6-section warm" id="faqs">
+    <div class="container">
+      <div class="s6-sec-eyebrow">Questions</div>
+      <h2 class="s6-h2">What people <em>asked.</em></h2>
+
+      <div class="s6-faq">
+        <details class="faq-item"><summary>What are the seven agents they showed?</summary><div class="ans">In order: Echo Check (Ian, AI visibility), the content engine (Justin, a month of content in a day), the iMessage appointment setter (Alec), the Saints Classical LMS (Ian), Mission Control (Justin, an in-house operations platform), the cold-email lead-gen agent (Alec, Apify plus Instantly), and SaucyBot (Ian, a personal agent for every employee). Each one maps to the trifecta: save time, save money, or make more.</div></details>
+        <details class="faq-item"><summary>What actually is an agent?</summary><div class="ans">With conversational AI you ask for answers. With an agent you ask for outcomes. An agent is hooked into your email, your tools, sometimes your phone, and takes action on your behalf inside a specific role. The tell all three hosts share is that they name their agents (Atlas, Saint, Saucy) and talk to them like teammates, because they do real work, not just chat.</div></details>
+        <details class="faq-item"><summary>What is OpenClaw, and do I need to be technical to use it?</summary><div class="ans">OpenClaw is the agent runtime Ian runs across his companies. Instead of typing questions into a browser, you set it up with roles and actions and it goes and does things, including building software and setting up other agents. Set up correctly, employees get read-only access to the company and can only build inside their own folder, so they can experiment hard without breaking anything. It can be technical to configure, which is exactly why you want someone who has done it before.</div></details>
+        <details class="faq-item"><summary>20 to 50 agents sounds like a lot. Where do I start?</summary><div class="ans">Nobody built their stack in one go. Start at square one and grow it iteratively. Pick one job you keep doing that is robotic and time-consuming, ask your agent if it can handle it, and build from there. Both Mission Control and the content engine started small and compounded. Get one agent working, do not design the whole system up front.</div></details>
+        <details class="faq-item"><summary>What is AEO and GEO, and does it really move revenue?</summary><div class="ans">AEO (Answer Engine Optimization) means putting clear FAQs on your site so AIs can find and reuse your answers. GEO (Generative Engine Optimization) means optimizing for the AI summary at the top of a search result. Ian showed the payoff: BrandSauce went from roughly 26 to over 14,500 indexed pages, and after months of zero, booked five demos in a week from ChatGPT that all became clients. <a href="https://echocheck.app">Echo Check</a> is the free tool he built to measure it.</div></details>
+        <details class="faq-item"><summary>Is this really free? What was the offer at the end?</summary><div class="ans">The session is free. At the close, the team made one small, optional offer: a free 15-minute call to see if it is a fit to build a custom agent with Justin, Ian, and Alec. If that is not you, you still leave with everything shown. <a href="/ai4ntp-preview/type/calendar">Book a time</a> and bring your hardest challenge.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRANSCRIPT ============ -->
+  <section class="s6-section" id="transcript">
+    <div class="container">
+      <div class="s6-sec-eyebrow">The full record</div>
+      <h2 class="s6-h2">Searchable <em>transcript.</em></h2>
+      <div class="s6-transcript">
+        <details class="transcript-toggle">
+          <summary>Read the full Session 006 transcript</summary>
+          <div class="s6-tx">
+            <p class="note">Cleaned and speaker-labeled to match the edited replay. Tool names and proper nouns corrected, no editorial rewriting. Recorded Sunday, July 12, 2026.</p>
+            <p><span class="sp">[0:00] Justin:</span> Quick agenda: we'll showcase the seven agents, how you can collaborate with us, and then a Q&amp;A at the end. Alec, I'll pass it to you. What is an agent?</p>
+            <p><span class="sp">[0:05] Alec:</span> Thanks, Justin. I'll contrast it with how most people use AI, which is conversational AI: you're in your browser using ChatGPT or Claude, asking it for answers. The difference with an agent is instead of asking for answers, you're asking for outcomes. You're asking it to take action on your behalf. It's hooked up to your tools, your emails, sometimes iPhones, all your systems, with specific roles and actions it takes for you. That's the contrast: conversational AI, which everyone's using, versus an agent, where you ask it to take action on your behalf.</p>
+            <p><span class="sp">[1:20] Justin:</span> Cool, so who are we? I'm Justin. I sold my first company out of my college dorm room, and I've spent the past decade in growth, go-to-market, building agents and automations, helping a lot of companies grow. Everything I'll show you, I build and run inside AI4NTP and for our clients. Ian has been building software for decades, runs a global business, worked with public companies, and has a fleet of agents that run his businesses every day. Alec was inside a really big company, quit, and they hired him back to build all their agents, and he tripled or quadrupled his income within 30 days of going off on his own. That's the three of us. We do this for a living. E, do you want to go first?</p>
+            <p><span class="sp">[2:35] Ian:</span> Yes. Before I show you the tool, some backstory. On my Mac Studio, I have an OpenClaw named Atlas. I call him the king, because he controls and manages all my other OpenClaws. A few months ago, Justin and I did a call with an SEO expert who's getting paid tens of thousands a month, and he showed us a tool for AEO/GEO, basically how to be found by AI. After the call, I went to Atlas and said, can you build this? He said, hell yeah. It took about a week of back and forth, and we built a tool called Pulse Check, where I could plug in all my sites and see if they're mentioned by LLMs. Justin said other people would find this useful, so I turned it into echocheck.app.</p>
+            <p><span class="sp">[4:05] Alec:</span> I think it's funny for anyone in the audience, that's the difference between agents and conversational AI: you literally hear Ian referring to Atlas as if it's a person, because it can take action as if it is one.</p>
+            <p><span class="sp">[4:20] Ian:</span> That's true, I like treating it like a person. So this is Echo Check. Right on the front page, you can plug in your website, AI4NTP.com, and run a free check. This one's doing well, 70. Good job, Justin. It tells you a robust output: page speed on mobile needs to be better, AI crawl access is really good, we need better FAQs, there's a lot of video content AIs can't find well, doesn't have that schema in there. When I started out, I was at an 8. I started implementing what it told me and bumped my score up. You can see how LLMs see your site: they don't see images or JavaScript, they see schema markup and text. It's a Matrix-style view of your site.</p>
+            <p><span class="sp">[6:50] Ian:</span> As I started implementing this, plus programmatic SEO, another suggestion from Echo Check, this is our Google Search Console. Before May we had about 26 indexed pages, very little. I started implementing these things, and we went to 2,000, 7,000, now all the way to 14,530 pages that Google knows about us. And this is our traffic. Today, Sunday, 108 visitors already, twice as many as our big days before. So this proves the AEO, GEO, SEO stuff works. AEO is Answer Engine Optimization: you put FAQs on your site and AIs know what to answer. GEO is Generative Engine Optimization: the AI summary at the top of a Google search.</p>
+            <p><span class="sp">[8:40] Ian:</span> A few months ago we were getting zero demos on BrandSauce from ChatGPT or Claude or Perplexity. About a month and a half ago, we had five demos booked in a week. In fact, it was all the demos that week. They all found us through ChatGPT, and they all became clients. I was shocked at how fast and how well this worked, and it was all thanks to a dare to my Atlas King. So check it out, review your site, let me know what you find. Back to you.</p>
+            <p><span class="sp">[10:35] Justin:</span> I'll jump in next. The big idea here is how I build a month's worth of content in one day of work, thanks to many agents. Anytime you see this emoji, that's an agent at work. This is what a month of content looks like: our Instagram, our YouTube shorts and long-form, our newsletter, all on brand. Content is very time-consuming, and if you outsource it, it's expensive. To get this output I'd need three or four junior marketers at 60 grand a year each, north of $200,000 in headcount. And the moment you hand content to an agency or someone new, you risk losing your brand voice.</p>
+            <p><span class="sp">[12:40] Justin:</span> Here's the one thing to take away: this is not one big agent. It's a chain of specialized agents, each built for a single step. It kicks off with a phone call between me, Ian, and Alec about what our next show should be. We record the transcript, and an agent turns that transcript into a landing page. That creates an Eventbrite, a Zoom page, a newsletter, an Instagram post, and it's distributed across the internet to get you in the room. We keep a human in the loop for quality control, because I don't want to send slop. Then this hour becomes an hour of content: straight to YouTube, with an agent optimizing the headline, image, and description.</p>
+            <p><span class="sp">[15:00] Justin:</span> Then we take the transcript and post it to the website, re-optimized for ranking in ChatGPT, Perplexity, Claude, and Google. And an agent turns the 60-minute session into a bunch of shorts. If I did this without AI, it would take days just to make a handful of shorts. To win in this day and age, you have to be everywhere all at once. That's how you collapse time. Every tool we talk about goes to a tools directory page, all AEO/GEO/SEO optimized. So page creation, distribution, YouTube, shorts, landing pages, tools, Instagram, each one has its own agent. It's a team of specialists I've built over time, each doing one job well. One day of work runs all month, compounding while we sleep.</p>
+            <p><span class="sp">[18:00] Ian:</span> The important part about what you showed, Justin, is that it started with a phone call between humans about what to add and how to add value. Then the agents take it. The agents aren't creating stuff out of thin air, they're taking what we find valuable and amplifying it, which is the prime use for AI.</p>
+            <p><span class="sp">[19:35] Alec:</span> I'll jump into agent number three. My Miro board doesn't look as good as Justin's Figma, but we'll roll with it. Quick extra value: five minutes before we jumped on, I went to Higgsfield, dropped a prompt, and it built this graphic for me. That applies to everybody making a presentation. So, AI agent and iMessage. When you get a green text, your perception is it's scammy or automated. A blue iPhone text indicates human. So one element here is that a blue text reads as a real person. And the agent piece is it takes action on your behalf. I have a business where we get paid per appointment, so we need to get leads booked and showing up.</p>
+            <p><span class="sp">[21:05] Alec:</span> What happens is people opt in but don't book. So we have an AI appointment setter using iMessage. Once we get the trigger that someone hasn't booked, we send automated texts, with tools attached to send emails and links. Say you're an auto tinting company running ads: instead of your team taking calls all day, an iMessage agent handles it. Once someone opts in, they get two texts asking the questions that factor into pricing, like what vehicle you have. We add a delay to make it look human. We can use these agents for following up on unsigned contracts, reengaging cold leads from a CRM, and handling responses. With our model, we get paid per appointment, so this saves money (no person doing it) and makes more (more appointments booked).</p>
+            <p><span class="sp">[25:50] Justin:</span> I've seen you build these for industries beyond automotive. Anyone who requires instant lead follow-up and nurture benefits, because speed to lead is very important. If someone submits a form, we want a response immediately. If we don't get that response, we'll search for another vendor. So this increases operational efficiency (you don't need an assistant following up all day) and it's a key revenue driver, capturing every lead and converting them right away, hands-off.</p>
+            <p><span class="sp">[27:15] Ian:</span> Let me share my next one. My wife and I started working on a school a year and a half ago, called Saints Classical, a classical tutorial in Middle Tennessee. When it came time to launch, she said we need parents and students to log in, and teachers to enter classes. It kept growing, and I realized I was building an LMS, a Learning Management System. I'd never seen one, because I graduated before LMSs were a thing. So I brainstormed with Claude, then Claude Code, and built the first iteration. We launched with 95 students, when I thought 60 would be a win. So I installed an OpenClaw on the server to build the next iteration, brainstorming with my bot named Saint.</p>
+            <p><span class="sp">[29:50] Ian:</span> You can view it as a teacher or a parent, see all your kids' classes, and we have houses, like Harry Potter. It's a tutorial: they meet Monday, home Tuesday, back Wednesday with high-quality teachers, home Thursday where parents lead with the lesson plan. It did such a good job I've been showing clients, who want to use it for training their employees. Beyond that, the OpenClaw runs a blog, posting 2 to 3 times a day, attributed to C.S. Lewis, all relevant to the school. It's over 350 blog posts, which gets us past Google's EEAT mark. Largely because of programmatic SEO and this AI automation, we're launching with over 230 students this year, a two and a half times increase in enrollment.</p>
+            <p><span class="sp">[33:00] Ian:</span> The parts I failed to mention: it's way beyond an LMS. It takes tuition, allows enrollment and clubs, has its own email system, and I built Slack into it so you can create groups. I'll launch the iOS app in August. Having an OpenClaw on the server, if problems come in, I copy and paste the email my wife sends me and say, fix this, then email them when it's done, from me. And he does. It works like a charm.</p>
+            <p><span class="sp">[34:20] Justin:</span> Good work, Ian. I'll jump into the next one. It's similar to what Ian built: I replaced 8-plus tools with one system I built in-house to run our operations. We build agents for other companies, so there's email, project management, Asana, time tracking, billing, Google Docs, client reports, all disconnected. This was built to scratch our own itch. When you arrive, you sort by clients. We're looking at Warm Timber, and every request lands here in one centralized view, whether it came over phone, email, or Slack. I left an internal note to Danny. And this right here is emailing the client, trained on my voice from tens of thousands of emails I've written.</p>
+            <p><span class="sp">[37:00] Justin:</span> I click draft AI reply and it takes all the context from the thread: due date, client, internal comms. "Matt, quick update, the reporting agent is built and ready to walk through." I can respond right there. There are also status updates sent to the client over email. We track time, important for billing and paying our team. And if we click Reports, we create a new report, select the client, this month, generate. This used to take me hours every week. It does it in under a minute: the summary of every thread, its status, touchpoints, ticket number, time spent, what's completed, total time. I send it to the client with their invoice in one click.</p>
+            <p><span class="sp">[39:10] Justin:</span> The big idea: I'm challenging you to be the architect. Whether it's a Figma board, a Miro board, Ian's LMS, this is about taking your workflow and custom-tailoring it to you. Most software is a house someone else designed. You move in and live with whatever you have, maybe no washer-dryer, maybe no deck. This is building your own, or being the architect, to design the exact house you want to live in. There are probably 20 to 50 agents inside Mission Control that save us time and make it look more professional to clients, all running in one unified spot.</p>
+            <p><span class="sp">[40:30] Ian:</span> That's amazing, Justin. 20 to 50 agents sounds daunting, but you didn't start there. You went iteratively. You asked, how can I do this, and just started tasking the agents. That's the core thing: I'm having a hard time doing this, you ask your agent, and it builds that thing. So it can look daunting, but just start with square one.</p>
+            <p><span class="sp">[41:45] Alec:</span> A hundred percent. The key word is consolidation. In the past this would've been 10 tools that weren't customized for you. We all share the pain of clicking between fifty tools every day. When you have one place to work out of, it eliminates that friction.</p>
+            <p><span class="sp">[42:25] Alec:</span> I'll give us something more basic. This is not 25 agents, more like one. I pulled this screenshot from right before we jumped on: the last 7 days with a client, all cold emails. We started the sequence for about 1,700 people, probably 3,500 emails a week, and we've gotten 112 opportunities. This is Instantly, the cold email software. These reply and opportunity rates without AI are impossible. Typically 3% reply rate is good, and half of those might be telling you to stop. What the workflow does: our client has a database of prospects, we scrape it, pull in all the info, and AI writes hyper-personalized emails showing we did our research.</p>
+            <p><span class="sp">[44:50] Alec:</span> A very practical way to get into building agents: one tool we've talked about on AI4NTP is Apify. Data is often the bottleneck of AI, and Apify has off-the-shelf scrapers, a whole store. You can scrape Facebook pages, TikTok accounts, Google search results. One of my businesses sells to attorneys, so I found a lawyer and attorney lead scraper. You give the agent the scraper ID and an API key and it pulls in data. I'll pull up Codex. The agent enriches the data, goes on the website and pulls stats, like "I saw you've been around since 1997," an extra layer of personalization. Then it pushes into Instantly. It's a simple agent: pull in data, write personalized emails, push into a cold email sequence, get meetings on autopilot. It just runs.</p>
+            <p><span class="sp">[48:30] Ian:</span> Kudos to everyone who stuck around, because this is the big daddy, the one I'm most excited about. BrandSauce, my company for about 8 years, grew about 5X in the last 6 months, from about 5 employees to around 30. It's completely remote, from Ecuador to Ukraine to the Philippines and all over the US. I call my bot Saucy, SaucyBot. My employees all said they wanted a Saucy too. So I built an interface that lets me create a new bot for each employee and walks them through the process. I'm the Sauce Boss. It initializes each bot, sends it to them, and walks them through: download Telegram, find the BotFather, get a token. Then they get a pairing token, it's all secure, and their bot initializes.</p>
+            <p><span class="sp">[50:40] Ian:</span> Frank, our front-end coordinator, built a big spreadsheet of all our clients and onboarding tasks. Anna Belin and Gabby do finance and have been running data analysis on our finances. Each employee has their own use case. Everyone has read-only access to the company but can only build in their own folder, so they can't mess up everything else but can build like crazy. Viviana, a store builder, uses it to set up new product catalogs. As each employee uses their bot, I put it all into the Sauce Boss, which grabs all the learnings, memories, and challenges and puts them into this big brain.</p>
+            <p><span class="sp">[52:40] Ian:</span> So new employees can come and say, I ran into this problem, how do I do this? It pulls from this hive mind: all our learnings, transcripts, catalog, everything our employees have done. If there's no answer, they ask a partner, and it gets added to the brain. Daniel is getting better English but isn't fluent, so he built a translator: on one page, as I talk it types it in Spanish, and when he talks it types it in English. I've been inspiring them to think what's possible. I always try to find the boundaries with agentic AI, and I've not found many.</p>
+            <p><span class="sp">[54:15] Alec:</span> Ian, this is incredible. This is what real innovation looks like. Everyone's saying we're trying to use AI but don't know how. This is AI deployed in a real corporate setting: real people, now AI-enabled, 10x-ing their output. Important to note, Jensen Huang from NVIDIA said on stage that every CEO needs an OpenClaw strategy, and pretty much no CEOs do. Many don't even know what it is. Ian has fully built one out, deployed and operational inside an organization. OpenClaw is the opposite of conversational AI: Ian's OpenClaw is building out and setting up other OpenClaws and software for them.</p>
+            <p><span class="sp">[56:00] Ian:</span> Thank you. There's a lot of fear around OpenClaw, that it'll wreck everything and delete your database. But if you set it up right, with someone who knows OpenClaw, they can't mess it up. It's impossible. And I always tell them, when they ask, can it make me a PDF of all these products, I say, ask Saucy. And sure enough, it built a beautiful PDF for the client.</p>
+            <p><span class="sp">[57:45] Justin:</span> Very well done. We collaborate on BrandSauce, so you've onboarded me to your Saucy bot, one of the most streamlined processes I've gone through to set up an OpenClaw. It can be technical and scary with security concerns, so I felt like I was in good hands. I hope you enjoyed the seven agents. This is what we do for a living, building custom business solutions. We have slots opening up. I'll drop my calendar link, and you'll work directly with me, Ian, and Alec to build custom agents like the ones you saw, tailored to a challenge you're experiencing. We can do a 15-minute call to see if we're a good fit. Bring your best challenges.</p>
+            <p><span class="sp">[58:45] Justin:</span> We've gone 10 minutes over, but we've got a lot of you still here, so drop your question in the chat, raise your hand, or use the Q&amp;A tab. Ian, Alec, stick around for a few minutes for questions.</p>
+            <p><span class="sp">[59:00] Ronnie Lubwama:</span> Sorry, folks, too much background noise, but I had my hand up. Not at all, thanks guys. I appreciate everything you're rolling out. I appreciate it big time.</p>
+            <p><span class="sp">[1:00:00] Alec:</span> I'll ask one question of anyone still in here. What agent resonated with you the most, or was most applicable to what you're doing?</p>
+            <p><span class="sp">[1:00:20] Justin:</span> That's a tough one to answer, they're all good, and that LMS is so cool, Ian. What I loved about Alec's cold-email agent is it's so specific. It knows what it is and swims in that lane. Sometimes you see robust AI builds that don't have an identity, they do everything okay but nothing great. I love how specific you built that solution.</p>
+            <p><span class="sp">[1:01:45] Justin:</span> If someone wants an OpenClaw for their organization, what would that look like?</p>
+            <p><span class="sp">[1:02:00] Ian:</span> It would really be talking to whoever runs the company, setting them up as manager, a similar setup to SaucyBot, where they create the bots and walk their employees through it and some training. The hardest part is showing what's possible. That's why I do weekly calls with all my employees: what's possible, how do I use this, what's it good for. It's like Cesar Millan training dogs, he actually ended up training the human, because the dog was fine, it was how the human responded. That's how I see this: you've got a bot, and I need to train you on how to use it. I'm not going to train the bot, I'm going to train you on how to work with it.</p>
+            <p><span class="sp">[1:03:05] Justin:</span> Well, guys, that's a wrap. I'll give you a call later, we'll debrief and plan the next one. Thanks, everybody.</p>
+            <p class="note">This is a lightly condensed version for skimming. Watch the <a href="#replay">replay</a> for everything, verbatim.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEXT / FINAL CTA ============ -->
+  <section class="s6-final" id="next">
+    <div class="container">
+      <div class="s6-sec-eyebrow">What's next</div>
+      <h2>That's a wrap on <em>Session 006.</em></h2>
+      <p class="s6-final-sub">We do this about every week. Watch the replay, book a call, or get on the list and we'll email you when the next session and the replay are live.</p>
+      <form class="s6-form js-signup" novalidate>
+        <input type="hidden" name="source" value="episode-006-recap">
+        <input type="email" name="email" required placeholder="you@company.com" autocomplete="email" aria-label="Email address">
+        <button type="submit">Keep me posted</button>
+      </form>
+      <p class="s6-note js-note">No spam, ever. The replay and the next session, straight to your inbox.</p>
+      <div class="s6-success js-success" style="max-width:460px;margin:var(--s6) auto 0;">
+        <div class="ico">✓</div>
+        <h3>You're on the list.</h3>
+        <p>We'll email you the moment the replay is live, plus the details for the next session.</p>
+      </div>
+      <div class="s6-ctarow" style="justify-content:center;margin-top:var(--s6);">
+        <a class="s6-cta ghost" href="/ai4ntp-preview/type/calendar" data-cta="s6_next_book_call">Book a 15-min call</a>
+      </div>
+      <p class="s6-about"><b>About this session:</b> AI4NTP Session 006, recorded live on Zoom, Sunday July 12, 2026. Hosts Justin Novak, Ian Kilpatrick, and Alec Saluga opened the hood on seven AI agents running inside their companies. Free to attend.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="/ai4ntp-preview/type/footer.js"></script>
+<script src="/ai4ntp-preview/type/ref.js"></script>
+<script src="/ai4ntp-preview/type/refer-block.js"></script>
+
+<!-- ============ SIGNUP + SHARE + ANALYTICS WIRING ============ -->
+<script>
+  (function () {
+    // ---- Supabase wiring. Anon key is safe to expose; RLS on ai4ntp_signups allows INSERT only.
+    var SUPABASE_URL = 'https://qytiyechjtkrejhhczcg.supabase.co';
+    var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5dGl5ZWNoanRrcmVqaGhjemNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMzc0OTcsImV4cCI6MjA5MjYxMzQ5N30.P7vYQPWFlVU6GrBFNxjnl28y9dTSRCet9n9V8YNxj1U';
+    var TABLE = 'ai4ntp_signups';
+
+    // ---- signup forms (post-event: capture for the list + replay notify)
+    var forms = document.querySelectorAll('form.js-signup');
+    Array.prototype.forEach.call(forms, function (form) {
+      var note = form.parentElement.querySelector('.js-note');
+      var success = form.parentElement.querySelector('.js-success');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('button[type="submit"]');
+        var original = btn.textContent;
+        var emailInput = form.querySelector('input[type="email"]');
+        var email = (emailInput.value || '').trim();
+
+        if (!email || email.indexOf('@') < 1) {
+          form.classList.add('invalid');
+          emailInput.focus();
+          return;
+        }
+        form.classList.remove('invalid');
+        btn.disabled = true;
+        btn.textContent = 'Saving…';
+
+        var payload = {
+          email: email,
+          first_name: null,
+          interests: ['future-episodes', 'community'],
+          source: (form.querySelector('input[name="source"]') || {}).value || 'episode-006-recap'
+        };
+        if (window.AI4Ref) AI4Ref.attach(payload);
+
+        fetch(SUPABASE_URL + '/rest/v1/' + TABLE, {
+          method: 'POST',
+          headers: {
+            'apikey': SUPABASE_ANON_KEY,
+            'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+            'Content-Type': 'application/json',
+            'Prefer': 'return=minimal'
+          },
+          body: JSON.stringify(payload)
+        }).then(function (res) {
+          if (res.ok || res.status === 409) {
+            if (form) form.style.display = 'none';
+            if (note) note.style.display = 'none';
+            if (success) success.classList.add('show');
+            if (success && window.AI4Refer) {
+              var rb = success.querySelector('.js-refer-block');
+              if (!rb) { rb = document.createElement('div'); rb.className = 'js-refer-block'; success.appendChild(rb); }
+              AI4Refer.issue(email, payload.first_name, rb, { source: 'auto:sessions-006-recap' });
+            }
+            if (typeof gtag === 'function') {
+              gtag('event', 'signup_success', { source: payload.source, session: '006' });
+            }
+          } else {
+            return res.text().then(function (t) {
+              console.error('Signup failed', res.status, t);
+              btn.disabled = false;
+              btn.textContent = original;
+              alert('Something went wrong. Please try again or email justin@ai4ntp.com.');
+            });
+          }
+        }).catch(function (err) {
+          console.error(err);
+          btn.disabled = false;
+          btn.textContent = original;
+          alert('Network error. Please try again or email justin@ai4ntp.com.');
+        });
+      });
+    });
+
+    // ---- share the recap (personalize to the visitor's own referral link when we have one)
+    var MY_CODE = (window.AI4Ref && AI4Ref.myCode) ? AI4Ref.myCode() : '';
+    var SHARE_URL = MY_CODE ? ('https://ai4ntp.com/r/' + MY_CODE) : 'https://ai4ntp.com/sessions/006';
+    var SHARE_TEXT = '7 AI agents we built to run our company. The full teardown (Echo Check, a content engine, an iMessage setter, a custom LMS, Mission Control, cold email, and SaucyBot) plus the replay.';
+    var linkbox = document.querySelector('.js-linkbox');
+    if (linkbox && MY_CODE) linkbox.textContent = SHARE_URL;
+    document.querySelectorAll('.js-share').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        var kind = el.getAttribute('data-share');
+        var url;
+        if (kind === 'email') {
+          url = 'mailto:?subject=' + encodeURIComponent('Worth an hour: 7 AI agents, built live') +
+                '&body=' + encodeURIComponent(SHARE_TEXT + '\n\n' + SHARE_URL);
+        } else if (kind === 'linkedin') {
+          url = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(SHARE_URL);
+        } else if (kind === 'x') {
+          url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(SHARE_TEXT) + '&url=' + encodeURIComponent(SHARE_URL);
+        }
+        if (url) window.open(url, '_blank', 'noopener,width=640,height=640');
+      });
+    });
+    var copyBtn = document.querySelector('.js-copy');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function () {
+        var done = function () {
+          var orig = copyBtn.textContent;
+          copyBtn.textContent = 'Copied ✓';
+          copyBtn.classList.add('copied');
+          setTimeout(function () { copyBtn.textContent = orig; copyBtn.classList.remove('copied'); }, 2000);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(SHARE_URL).then(done, done);
+        } else { done(); }
+      });
+    }
+
+    // ---- generic GA4 data-cta handler
+    document.querySelectorAll('[data-cta]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (typeof gtag === 'function') gtag('event', el.getAttribute('data-cta'));
+      });
+    });
+
+    // ---- booking CTA events (fires book_30_min_click with operator)
+    document.querySelectorAll('[data-book-cta]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (typeof gtag === 'function') gtag('event', 'book_30_min_click', { operator: el.getAttribute('data-book-cta'), session: '006' });
+      });
+    });
+
+    // ---- tool link clicks
+    document.querySelectorAll('.s6-tool a[href^="/ai4ntp-preview/type/ai-tools"]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (typeof gtag === 'function') gtag('event', 'tool_click', { tool_name: el.textContent.trim(), session: '006' });
+      });
+    });
+
+    // ---- transcript open
+    document.querySelectorAll('.transcript-toggle').forEach(function (el) {
+      el.addEventListener('toggle', function () {
+        if (el.open && typeof gtag === 'function') gtag('event', 'transcript_open', { session: '006' });
+      });
+    });
+
+    // ---- FAQ open events
+    document.querySelectorAll('.s6-faq details').forEach(function (el) {
+      el.addEventListener('toggle', function () {
+        if (!el.open) return;
+        var s = el.querySelector('summary');
+        if (typeof gtag === 'function') {
+          gtag('event', 'faq_open', { question: s ? s.textContent.trim().slice(0, 100) : 'unknown', session: '006' });
+        }
+      });
+    });
+  })();
+</script>
+
+<script src="/ai4ntp-preview/type/reskin.js" defer></script>
+</body>
+</html>

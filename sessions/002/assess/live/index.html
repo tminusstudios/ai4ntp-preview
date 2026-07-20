@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Host Dashboard · Episode 002 · AI4NTP</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --paper-warm: #EDE7DA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --line: rgba(15, 17, 19, 0.12);
+    --line-strong: rgba(15, 17, 19, 0.32);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.28;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  .topbar {
+    padding: 22px 40px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .topbar-left {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+  }
+  .logo {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .logo .four {
+    background: var(--signal);
+    padding: 0 7px;
+    margin: 0 2px;
+    border-radius: 2px;
+    font-style: italic;
+    display: inline-block;
+  }
+  .live-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .live-pill .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--rust);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .phase-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .phase-indicator .badge {
+    background: var(--signal);
+    color: var(--ink);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  .phase-indicator .badge.locked {
+    background: var(--ink);
+    color: var(--cream);
+  }
+  .counter-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  }
+  .counter {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    transition: transform 0.3s;
+  }
+  .counter.bump { transform: scale(1.12); }
+  .counter-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+
+  /* MAIN GRID */
+  .dashboard {
+    padding: 24px 40px 60px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 1000px) {
+    .dashboard { grid-template-columns: 1fr; padding: 20px 20px 48px; }
+    .topbar { padding: 16px 20px; }
+  }
+
+  .col {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-height: 540px;
+  }
+  .col-header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 14px;
+  }
+  .col-eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 6px;
+  }
+  .col-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  /* SUBMISSION FEED */
+  .feed {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .feed-empty {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    opacity: 0.4;
+    font-size: 18px;
+  }
+  .card {
+    padding: 14px 16px;
+    border-left: 3px solid var(--line-strong);
+    background: var(--paper);
+    transition: background 1.8s, border-color 1.8s;
+    animation: slide-in 0.5s ease-out;
+  }
+  .card.fresh {
+    background: var(--signal);
+    border-left-color: var(--ink);
+  }
+  @keyframes slide-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .card-who {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 5px;
+  }
+  .card-what {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.35;
+    color: var(--ink);
+  }
+
+  /* CONTROL PANEL */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .ctl-btn {
+    background: var(--ink);
+    color: var(--cream);
+    border: 1px solid var(--ink);
+    padding: 18px 22px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
+  }
+  .ctl-btn:hover { background: var(--signal); color: var(--ink); }
+  .ctl-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .ctl-btn.secondary {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--line-strong);
+  }
+  .ctl-btn.secondary:hover { background: var(--ink); color: var(--cream); }
+  .ctl-btn.warn { color: var(--rust); border-color: var(--rust); background: transparent; }
+  .ctl-btn.warn:hover { background: var(--rust); color: var(--cream); }
+  .ctl-hint {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.65;
+    line-height: 1.4;
+  }
+  .ctl-section {
+    border-top: 1px dashed var(--line);
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .ctl-section.no-border { border-top: none; padding-top: 0; }
+
+  /* VOTING TALLY */
+  .tally {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .tally-row {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    width: 100%;
+  }
+  .tally-row:hover { border-color: var(--ink); }
+  .tally-row.winner { background: var(--signal); border-color: var(--ink); }
+  .tally-row-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 2px;
+  }
+  .tally-row-vibe {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 6px;
+  }
+  .tally-row-line {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+    line-height: 1.35;
+  }
+  .tally-bar-wrap {
+    height: 4px;
+    background: rgba(15, 17, 19, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .tally-bar {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0;
+    background: var(--signal-deep);
+    transition: width 0.5s ease;
+  }
+  .tally-row.winner .tally-bar { background: var(--ink); }
+  .tally-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-top: 6px;
+  }
+
+  /* LOCKED REVEAL ON DASHBOARD */
+  .locked-reveal-mini {
+    text-align: center;
+    padding: 24px 8px;
+  }
+  .locked-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 12px;
+  }
+  .locked-name-mini {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(36px, 5vw, 56px);
+    letter-spacing: -0.025em;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .locked-name-mini span {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    background: var(--signal);
+    padding: 0 0.08em;
+    display: inline-block;
+  }
+  .locked-line-mini {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    opacity: 0.85;
+  }
+
+  .status-foot {
+    padding: 16px 40px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 700px) {
+    .status-foot { padding: 14px 20px; flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <a href="/ai4ntp-preview/" class="logo">ai<span class="four">4</span>ntp</a>
+    <span class="live-pill"><span class="dot"></span>Host · Episode 002</span>
+  </div>
+  <div class="topbar-right">
+    <div class="phase-indicator">
+      <span>Phase</span>
+      <span class="badge" id="phase-badge">—</span>
+    </div>
+    <div class="counter-wrap">
+      <span class="counter" id="counter">0</span>
+      <span class="counter-label" id="counter-label">submissions</span>
+    </div>
+  </div>
+</div>
+
+<section class="dashboard">
+  <!-- LEFT: live submissions feed -->
+  <div class="col">
+    <div class="col-header">
+      <div class="col-eyebrow">Live audience submissions</div>
+      <div class="col-title">What they're <em style="font-family:'Instrument Serif',serif;font-style:italic;">throwing in.</em></div>
+    </div>
+    <div class="feed" id="feed">
+      <div class="feed-empty">Waiting on submissions.</div>
+    </div>
+  </div>
+
+  <!-- RIGHT: phase controller -->
+  <div class="col">
+    <div class="col-header">
+      <div class="col-eyebrow">Phase controller</div>
+      <div class="col-title" id="control-title">Submissions <em style="font-family:'Instrument Serif',serif;font-style:italic;">open.</em></div>
+    </div>
+
+    <div class="controls" id="controls-submitting">
+      <div class="ctl-hint">Once you have enough ideas in the feed (target: 30+ in 90 seconds), trigger Claude to synthesize 5 funny, buildable candidate businesses. Voting opens automatically once synthesis finishes.</div>
+      <button class="ctl-btn" id="btn-synthesize">Run AI synthesis → 5 options</button>
+      <div class="ctl-section">
+        <div class="ctl-hint">Pre-show smoke test only:</div>
+        <button class="ctl-btn warn" id="btn-reset">Reset all data (truncate)</button>
+      </div>
+    </div>
+
+    <div class="controls" id="controls-voting" style="display:none;">
+      <div class="ctl-hint">Voting is live. Click a row to mark it the winner. Lock the winner once the audience has had ~60 seconds to vote.</div>
+      <div class="tally" id="tally"></div>
+      <div class="ctl-section">
+        <button class="ctl-btn" id="btn-lock">Lock winner →</button>
+        <button class="ctl-btn secondary" id="btn-back-to-submit">← Back to submitting</button>
+      </div>
+    </div>
+
+    <div class="controls" id="controls-locked" style="display:none;">
+      <div class="locked-reveal-mini">
+        <div class="locked-eyebrow">Locked. We're building</div>
+        <div class="locked-name-mini" id="winner-name-mini"><span>—</span></div>
+        <div class="locked-line-mini" id="winner-line-mini"></div>
+      </div>
+      <div class="ctl-section">
+        <button class="ctl-btn secondary" id="btn-back-to-voting">← Back to voting</button>
+        <button class="ctl-btn warn" id="btn-reset-locked">Reset all data (truncate)</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="status-foot">
+  <span>AI4NTP · Episode 002 · Host Dashboard</span>
+  <span id="status">Connecting…</span>
+</div>
+
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+  const SUPABASE_URL = 'https://qytiyechjtkrejhhczcg.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5dGl5ZWNoanRrcmVqaGhjemNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMzc0OTcsImV4cCI6MjA5MjYxMzQ5N30.P7vYQPWFlVU6GrBFNxjnl28y9dTSRCet9n9V8YNxj1U';
+
+  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // ---- STATE ----
+  let rows = []; // all rows from ai4ntp_pulse_002
+  let options = []; // 5 synthesized options
+  let currentPhase = null;
+  let winnerId = null;
+  let stagedWinnerId = null; // host-picked winner candidate during voting
+
+  function safe(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  function setStatus(msg) {
+    document.getElementById('status').textContent = msg;
+  }
+
+  // ---- RENDER ----
+  function renderCounter(bump) {
+    const c = document.getElementById('counter');
+    c.textContent = rows.length;
+    document.getElementById('counter-label').textContent =
+      rows.length === 1 ? 'submission' : 'submissions';
+    if (bump) {
+      c.classList.add('bump');
+      setTimeout(() => c.classList.remove('bump'), 320);
+    }
+  }
+
+  function renderFeed(freshId) {
+    const el = document.getElementById('feed');
+    const items = rows.filter(r => r.idea).slice(0, 60);
+    if (!items.length) {
+      el.innerHTML = '<div class="feed-empty">Waiting on submissions.</div>';
+      return;
+    }
+    el.innerHTML = items.map(r => {
+      const fresh = freshId && r.id === freshId;
+      const who = r.name ? safe(r.name) : 'Anonymous';
+      return `
+        <div class="card${fresh ? ' fresh' : ''}">
+          <div class="card-who">${who}</div>
+          <div class="card-what">${safe(r.idea)}</div>
+        </div>
+      `;
+    }).join('');
+    if (freshId) {
+      setTimeout(() => {
+        document.querySelectorAll('.card.fresh').forEach(c => c.classList.remove('fresh'));
+      }, 1800);
+    }
+  }
+
+  function renderPhaseBadge() {
+    const b = document.getElementById('phase-badge');
+    b.textContent = currentPhase || '—';
+    b.classList.toggle('locked', currentPhase === 'locked');
+  }
+
+  function showControlPanel() {
+    const ctitle = document.getElementById('control-title');
+    document.getElementById('controls-submitting').style.display = currentPhase === 'submitting' ? '' : 'none';
+    document.getElementById('controls-voting').style.display = currentPhase === 'voting' ? '' : 'none';
+    document.getElementById('controls-locked').style.display = currentPhase === 'locked' ? '' : 'none';
+    if (currentPhase === 'submitting') {
+      ctitle.innerHTML = 'Submissions <em style="font-family:\'Instrument Serif\',serif;font-style:italic;">open.</em>';
+    } else if (currentPhase === 'voting') {
+      ctitle.innerHTML = 'Voting <em style="font-family:\'Instrument Serif\',serif;font-style:italic;">live.</em>';
+    } else if (currentPhase === 'locked') {
+      ctitle.innerHTML = 'Winner <em style="font-family:\'Instrument Serif\',serif;font-style:italic;">locked.</em>';
+    }
+  }
+
+  function voteCountsByOption() {
+    const counts = new Map();
+    for (const o of options) counts.set(o.id, 0);
+    for (const r of rows) {
+      if (r.vote_for_id) counts.set(r.vote_for_id, (counts.get(r.vote_for_id) || 0) + 1);
+    }
+    return counts;
+  }
+
+  function renderTally() {
+    const el = document.getElementById('tally');
+    if (!options.length) {
+      el.innerHTML = '<div class="feed-empty">Synthesizing options…</div>';
+      return;
+    }
+    const counts = voteCountsByOption();
+    const max = Math.max(1, ...counts.values());
+    // Highest-vote becomes the default staged winner
+    if (!stagedWinnerId) {
+      let topId = null, topCount = -1;
+      for (const [id, c] of counts.entries()) {
+        if (c > topCount) { topCount = c; topId = id; }
+      }
+      stagedWinnerId = topId;
+    }
+    el.innerHTML = options.map(o => {
+      const c = counts.get(o.id) || 0;
+      const pct = (c / max) * 100;
+      const isStaged = stagedWinnerId === o.id;
+      return `
+        <button type="button" class="tally-row${isStaged ? ' winner' : ''}" data-id="${safe(o.id)}">
+          <div class="tally-row-vibe">${safe(o.vibe || '')}</div>
+          <div class="tally-row-name">${safe(o.name)}</div>
+          <div class="tally-row-line">${safe(o.one_liner)}</div>
+          <div class="tally-bar-wrap"><div class="tally-bar" style="width: ${pct}%;"></div></div>
+          <div class="tally-count">${c} vote${c === 1 ? '' : 's'}${isStaged ? ' · staged winner' : ''}</div>
+        </button>
+      `;
+    }).join('');
+    el.querySelectorAll('.tally-row').forEach(btn => {
+      btn.addEventListener('click', () => {
+        stagedWinnerId = btn.dataset.id;
+        renderTally();
+      });
+    });
+  }
+
+  function renderLockedMini() {
+    const winner = options.find(o => o.id === winnerId);
+    const nameEl = document.getElementById('winner-name-mini');
+    const lineEl = document.getElementById('winner-line-mini');
+    if (winner) {
+      nameEl.innerHTML = `<span>${safe(winner.name)}</span>`;
+      lineEl.textContent = winner.one_liner || '';
+    }
+  }
+
+  // ---- DATA LOADERS ----
+  async function loadRows() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_002')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(500);
+    if (error) {
+      console.error('Rows load failed', error);
+      setStatus('Load error · check RLS');
+      return;
+    }
+    rows = data || [];
+    renderCounter();
+    renderFeed();
+    if (currentPhase === 'voting') renderTally();
+  }
+
+  async function loadOptions() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_002_options')
+      .select('*')
+      .order('created_at', { ascending: true });
+    if (error) {
+      console.error('Options load failed', error);
+      return;
+    }
+    options = data || [];
+    if (currentPhase === 'voting') renderTally();
+    if (currentPhase === 'locked') renderLockedMini();
+  }
+
+  async function loadState() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_002_state')
+      .select('*')
+      .eq('id', 1)
+      .single();
+    if (error) {
+      console.error('State load failed', error);
+      return;
+    }
+    applyState(data);
+  }
+
+  function applyState(state) {
+    if (!state) return;
+    const changedPhase = currentPhase !== state.phase;
+    currentPhase = state.phase;
+    winnerId = state.winner_id;
+    if (changedPhase && state.phase === 'voting') stagedWinnerId = null;
+    renderPhaseBadge();
+    showControlPanel();
+    if (state.phase === 'voting' && !options.length) loadOptions();
+    if (state.phase === 'locked') {
+      if (!options.length) loadOptions();
+      else renderLockedMini();
+    }
+  }
+
+  // ---- HOST ACTIONS (open: no token, this page is host-only by obscurity) ----
+  async function callApi(path, body) {
+    const res = await fetch(path, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body || {}),
+    });
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(path + ' failed: ' + res.status + ' ' + text);
+    }
+    return res.json();
+  }
+
+  async function actSynthesize() {
+    const btn = document.getElementById('btn-synthesize');
+    const ideas = rows.filter(r => r.idea).map(r => r.idea);
+    if (ideas.length < 1 && !confirm('No audience submissions yet. Run synthesis anyway with host-seeded prompt?')) return;
+    btn.disabled = true;
+    const orig = btn.textContent;
+    btn.textContent = 'Synthesizing…';
+    try {
+      await callApi('/api/synthesize', { ideas });
+      // The route flips state to 'voting' itself; realtime will pick it up.
+      // Also force-reload options just in case realtime is laggy.
+      setTimeout(loadOptions, 500);
+    } catch (err) {
+      console.error(err);
+      btn.textContent = 'Failed · retry?';
+      setTimeout(() => { btn.disabled = false; btn.textContent = orig; }, 2000);
+      return;
+    }
+    btn.disabled = false;
+    btn.textContent = orig;
+  }
+
+  async function actLockWinner() {
+    if (!stagedWinnerId) {
+      alert('Pick a winner row first (click one of the candidates).');
+      return;
+    }
+    const btn = document.getElementById('btn-lock');
+    btn.disabled = true;
+    const orig = btn.textContent;
+    btn.textContent = 'Locking…';
+    try {
+      await callApi('/api/state', { phase: 'locked', winner_id: stagedWinnerId });
+    } catch (err) {
+      console.error(err);
+      btn.textContent = 'Failed · retry?';
+      setTimeout(() => { btn.disabled = false; btn.textContent = orig; }, 2000);
+      return;
+    }
+    btn.disabled = false;
+    btn.textContent = orig;
+  }
+
+  async function actBack(toPhase) {
+    try {
+      await callApi('/api/state', { phase: toPhase, winner_id: null });
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  async function actReset() {
+    if (!confirm('Reset all submissions, options, votes, and phase to submitting? This is destructive.')) return;
+    try {
+      await callApi('/api/state', { reset: true });
+      rows = [];
+      options = [];
+      stagedWinnerId = null;
+      renderCounter();
+      renderFeed();
+    } catch (err) {
+      console.error(err);
+      alert('Reset failed: ' + err.message);
+    }
+  }
+
+  document.getElementById('btn-synthesize').addEventListener('click', actSynthesize);
+  document.getElementById('btn-lock').addEventListener('click', actLockWinner);
+  document.getElementById('btn-back-to-submit').addEventListener('click', () => actBack('submitting'));
+  document.getElementById('btn-back-to-voting').addEventListener('click', () => actBack('voting'));
+  document.getElementById('btn-reset').addEventListener('click', actReset);
+  document.getElementById('btn-reset-locked').addEventListener('click', actReset);
+
+  // ---- REALTIME ----
+  function subscribe() {
+    supabase
+      .channel('host-002-' + Date.now())
+      .on('postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'ai4ntp_pulse_002' },
+        (payload) => {
+          rows.unshift(payload.new);
+          renderCounter(true);
+          renderFeed(payload.new.id);
+          if (currentPhase === 'voting') renderTally();
+        })
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_002' },
+        (payload) => {
+          const idx = rows.findIndex(r => r.id === payload.new.id);
+          if (idx !== -1) rows[idx] = payload.new;
+          else rows.unshift(payload.new);
+          renderFeed(payload.new.id);
+          if (currentPhase === 'voting') renderTally();
+        })
+      .on('postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'ai4ntp_pulse_002_options' },
+        () => { loadOptions(); })
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_002_state' },
+        (payload) => applyState(payload.new))
+      .subscribe((status) => {
+        if (status === 'SUBSCRIBED') {
+          setStatus('Streaming · ' + new Date().toLocaleTimeString());
+        } else if (['CHANNEL_ERROR','TIMED_OUT','CLOSED'].includes(status)) {
+          setStatus('Reconnecting…');
+        }
+      });
+  }
+
+  // ---- INIT ----
+  (async function init() {
+    await loadState();
+    await loadRows();
+    if (currentPhase === 'voting' || currentPhase === 'locked') await loadOptions();
+    subscribe();
+  })();
+
+  // Heartbeat fallback in case realtime stalls
+  setInterval(() => { loadState(); loadRows(); }, 30000);
+</script>
+
+</body>
+</html>

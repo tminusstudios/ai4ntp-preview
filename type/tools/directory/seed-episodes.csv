@@ -1,0 +1,92 @@
+slug,episode,operator,used_for
+claude-code,001,The operators,Custom development and backend work
+claude-code,002,Alec Saluga,Building the working workout-plan generator live
+claude-code,003,Justin Novak,"Serving as his daily coding driver, contrasted against an always-on OpenClaw agent"
+claude-code,004,Justin Novak,Serving as his daily driver for hands-on building inside VS Code
+claude-code,005,Justin Novak,"Building the Milk and Cookies marketplace flow inside VS Code from a spoken, plain-English prompt"
+claude-code,006,Ian Kilpatrick,Building the first iteration of the Saints Classical LMS
+codex,001,Justin Novak,"Building the AI4NTP site, ads, and live widget"
+codex,004,Alec Saluga,Building a prospect list via the SpyFu API in about 10 minutes
+codex,005,Alec Saluga,Comparing coding-agent options before choosing Lovable
+codex,006,Alec Saluga,Driving an Apify scraper and enriching prospect data for the cold-email agent
+lovable,001,Alec Saluga,Landing pages and prototypes
+lovable,002,Alec Saluga,Building and comparing the GotoBuild marketing site
+lovable,005,Alec Saluga,"Building the Crumb B2B landing page, cookie-drop order flow, and publishable app prototype"
+manus,001,Ian Kilpatrick,Building functional apps no-code
+supabase,001,Ian Kilpatrick,"Backend for live apps, powering AI4NTP's audience pulse feature"
+openclaw,002,Ian Kilpatrick,Producing GotoBuild's full hosted brand kit
+openclaw,003,Ian Kilpatrick,"Setting one up live, from a blank server to a working Telegram bot"
+openclaw,005,Ian Kilpatrick,"Running multiple parallel agents for Sunday Crumb's branding, copy, orders, and admin view"
+openclaw,006,Ian Kilpatrick,"Named agents (Atlas, Saint, Saucy) that built Echo Check, run the Saints Classical LMS, and give every BrandSauce employee their own agent"
+zapier,001,Alec Saluga,Automating transcript-to-AI workflows
+zapier,004,Alec Saluga,Pushing PLAUD recordings into Google Drive automatically
+pulsar,002,Justin Novak,"Running GotoBuild's go-to-market across newsletter, blog, and social"
+chatgpt,002,Ian Kilpatrick,Generating the first GotoBuild logo from a Midjourney reference
+chatgpt,003,Ian Kilpatrick,Serving as the model brain behind the live OpenClaw agent
+chatgpt,004,Justin Novak,Generating a Midjourney prompt from an uploaded image
+chatgpt,005,Ian Kilpatrick and Alec Saluga,"Ideating Sunday Crumb and Crumb B2B, and comparing image outputs in Higgsfield"
+chatgpt,006,Ian Kilpatrick,Referenced as the answer engine now recommending and sending clients to BrandSauce
+perplexity,002,Ian Kilpatrick,Research and step-by-step walkthroughs
+perplexity,006,Ian Kilpatrick,Referenced as an AI answer engine to optimize visibility for
+wispr-flow,002,Alec Saluga,Voice-prompting AI tools to build an app in under an hour
+wispr-flow,004,Justin Novak,Voice dictation with live auto-correct throughout the session
+wispr-flow,005,Justin Novak and Alec Saluga,"Dictating long prompts for brand, product, and Lovable build context"
+midjourney,002,Ian Kilpatrick,Logo and visual moodboarding for the GotoBuild brand build
+midjourney,004,Justin Novak,Creative ideation and prompt-to-image work for merch and site mockups
+midjourney,005,Justin Novak,Generating early logo and brand directions for Milk and Cookies
+behance,002,Ian Kilpatrick,Design inspiration and trend-reading
+behance,004,Justin Novak,A creative-inspiration gallery referenced alongside Midjourney
+behance,005,Justin Novak,Finding visual inspiration while exploring Milk and Cookies' brand direction
+pexels,002,Ian Kilpatrick,Photo direction on the GotoBuild brand
+google-fonts,002,Ian Kilpatrick,Choosing Archivo as the type system for GotoBuild's brand
+brand-sauce,001,Ian Kilpatrick,Programmatic SEO case study
+beehiiv,002,Justin Novak,Shipping the GotoBuild newsletter live on air
+echo-check,001,Ian Kilpatrick,Measuring LLM / answer-engine visibility
+echo-check,006,Ian Kilpatrick,Demoed live: scoring AI visibility and getting BrandSauce recommended by ChatGPT
+apollo-io,002,Alec Saluga,Sourcing prospect and contact data for cold outreach
+apify,002,Alec Saluga,Scraping prospect lists from Google Maps by keyword and geo
+apify,004,Alec Saluga,Pulling social platform data with off-the-shelf scrapers
+apify,006,Alec Saluga,Scraping an attorney lead list to feed the cold-email agent
+fireshot,002,Alec Saluga,Capturing whole sites as AI context
+fireshot,005,Alec Saluga,Capturing a full Crumbl reference page as prompt context
+plaud-note,001,Alec Saluga,Capturing meetings and calls into an AI workflow
+plaud-note,004,Alec Saluga,Routing recordings into Google Drive via Zapier for Claude to read
+loom,001,The operators,"Async handoffs, sales, and coaching"
+namecheap,002,Ian Kilpatrick,Buying the GotoBuild domain live for one cent
+instant-domain-search,002,Ian Kilpatrick,Checking domain availability live before buying gotobuild.pro
+digitalocean,003,Ian Kilpatrick,Hosting the live OpenClaw agent on a 2GB VPS droplet
+telegram,003,Ian Kilpatrick,Connected the OpenClaw agent so you control it by chat
+telegram,006,Ian Kilpatrick,Provisioning a personal agent for each employee via the BotFather (SaucyBot)
+tailscale,003,Ian Kilpatrick,Running a private VPN funnel to keep sensitive agent work off the open internet
+firecrawl,003,Ian Kilpatrick,Scraping pages at scale to feed the agent
+kimi,003,Ian Kilpatrick,Tried as a low-cost model brain for OpenClaw
+kimi,004,Justin Novak,Serving as the cheap model swapped into Hermes
+claude,003,Ian Kilpatrick,Powering his original OpenClaw agent's model brain (Opus 4.6)
+claude,004,Justin Novak,Building the Slow Hand Remodeling and AI4NTP sites from mockups
+claude,005,"Alec Saluga, Justin Novak, and Ian Kilpatrick","Ideating brands, rebuilding Milk and Cookies, writing copy, and critiquing Sunday Crumb design passes"
+claude,006,Ian Kilpatrick,Brainstorming and building the first version of the Saints Classical LMS
+github,003,Ian Kilpatrick,Hosting the code agents write and OpenClaw's open source versions
+github,005,Alec Saluga,Explaining the code handoff layer Lovable skips for first publish
+sendgrid,003,Ian Kilpatrick,Sent bulk email at scale; the source of Ian's API-key security lesson
+gohighlevel,004,Justin Novak,Querying James's pipeline by voice in a live agentic CRM demo
+n8n,004,Alec Saluga,Scraping live creator stats and pushing them to a client's website
+higgsfield,004,Alec Saluga,Comparing image and video model outputs and generating UGC videos
+higgsfield,005,Alec Saluga,"Generating logos, comparing image models, and creating AI UGC concepts for Crumb"
+higgsfield,006,Alec Saluga,Generating a quick explainer graphic minutes before the session
+spyfu,004,Alec Saluga,"Pulling a list of current advertisers by keyword via its API, fed to Codex"
+figma,004,Justin Novak,Light wireframing and layout mockups before handoff to Claude Design
+figma,005,Justin Novak,An ideation surface for shaping the first Milk and Cookies brand direction
+figma,006,Justin Novak,Mapping the content-engine system of agents
+canva,004,Justin Novak,Assembling mockups and assets that feed into Claude Design
+hermes,004,Justin Novak,"Demoing persistent memory, skills, cron jobs, and live cohort analysis"
+gemini,005,Alec Saluga,Powering the Nano Banana cookie-logo mockup for Crumb B2B
+grok,005,Alec Saluga,Compare as one of the models available inside Higgsfield for swapping outputs.
+visual-studio-code,005,Justin Novak,Hosting the local workspace for building Milk and Cookies with Claude Code
+vercel,005,Justin Novak and Alec Saluga,Deploying the Milk and Cookies AI-built app to a live URL
+dafont,005,Justin Novak,Finding fonts to shape the Milk and Cookies bakery brand
+postgres,005,Justin Novak,Storing production marketplace data for Milk and Cookies
+trpc,005,Justin Novak,Serving as a possible production API layer for Milk and Cookies
+stripe,005,Justin Novak,Handling production payments and subscriptions for Milk and Cookies
+twilio,005,Justin Novak,Handling production SMS and notifications for Milk and Cookies
+instantly,006,Alec Saluga,Sending AI-personalized cold email at scale (112 opportunities in a week)
+miro,006,Alec Saluga,Mapping and presenting the iMessage appointment-setter workflow

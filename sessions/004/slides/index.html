@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Session 004 · Slides · AI4NTP</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #E0623A;
+    --fog: rgba(250, 247, 240, 0.64);
+    --line: rgba(250, 247, 240, 0.16);
+    --line-strong: rgba(250, 247, 240, 0.32);
+    --panel: rgba(250, 247, 240, 0.045);
+  }
+
+  html, body {
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  /* ---- Grain texture (subtle on dark) ---- */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  /* ---- Reveal core overrides ---- */
+  .reveal {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--cream);
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .reveal .slides { text-align: left; }
+  .reveal .slides section {
+    padding: 56px 112px;
+    box-sizing: border-box;
+  }
+  .reveal.center .slides section.present > * { max-width: 100%; }
+
+  /* ---- Typography ---- */
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    color: var(--cream);
+    letter-spacing: -0.025em;
+    line-height: 1.04;
+    margin: 0 0 24px;
+    text-transform: none;
+  }
+  .reveal h1 { font-size: 92px; }
+  .reveal h2 { font-size: 70px; }
+  .reveal h3 { font-size: 48px; }
+  .reveal h4 { font-size: 36px; font-weight: 400; }
+
+  .reveal p { margin: 0 0 20px; font-size: 28px; line-height: 1.55; }
+  .reveal em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--signal);
+  }
+  .reveal strong { font-weight: 600; color: var(--cream); }
+
+  .highlight {
+    background: var(--signal);
+    color: var(--ink);
+    padding: 0 0.12em;
+    margin: 0 0.03em;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    display: inline-block;
+  }
+
+  /* ---- Eyebrow / metadata bars ---- */
+  .meta-strip {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fog);
+    margin-bottom: 56px;
+  }
+  .meta-strip .live {
+    color: var(--signal);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .meta-strip .live::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--signal);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.45; transform: scale(0.8); }
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--fog);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: var(--signal);
+    opacity: 0.8;
+  }
+
+  /* ---- Lists ---- */
+  .reveal ul, .reveal ol {
+    margin: 24px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .reveal ul li, .reveal ol li {
+    font-size: 30px;
+    line-height: 1.45;
+    padding: 18px 0 18px 40px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .reveal ol li { padding-left: 64px; }
+  .reveal ul li:last-child, .reveal ol li:last-child { border-bottom: none; }
+  .reveal ol { counter-reset: idx; }
+  .reveal ol li::before {
+    counter-increment: idx;
+    content: counter(idx, decimal-leading-zero);
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    color: var(--signal);
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+  .reveal ul li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--signal);
+    position: absolute;
+    left: 8px;
+    top: 36px;
+  }
+
+  /* ---- Speaker chips (title slide) ---- */
+  .hosts {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;
+    align-items: center;
+  }
+  .host { display: flex; align-items: center; gap: 16px; }
+  .host .pic {
+    width: 84px; height: 84px; border-radius: 50%; overflow: hidden;
+    border: 1px solid var(--line); background: var(--ink-soft); flex-shrink: 0;
+  }
+  .host .pic img { width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: grayscale(100%) contrast(1.05); }
+  .host .nm { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 26px; }
+  .host .rl { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fog); margin-top: 4px; }
+
+  /* ---- Pillar cards ---- */
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 28px;
+  }
+  .pillar-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .pillar-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 30px 28px;
+  }
+  .pillar-card .num {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--signal);
+    margin-bottom: 14px;
+  }
+  .pillar-card h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .pillar-card p {
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--fog);
+    margin: 0;
+  }
+
+  /* ---- Callout ---- */
+  .callout {
+    background: var(--panel);
+    color: var(--cream);
+    padding: 44px 52px;
+    margin: 28px 0;
+    border-left: 8px solid var(--signal);
+  }
+  .callout .quote {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+  .callout .attribution {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--fog);
+  }
+  .callout.signal {
+    background: var(--signal);
+    color: var(--ink);
+    border-left-color: var(--ink);
+  }
+  .callout.signal .attribution { color: rgba(15,17,19,0.65); }
+
+  /* ---- Section / tool title slide ---- */
+  .section-title-eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--signal);
+    margin-bottom: 28px;
+  }
+  .section-title h2 { font-size: 104px; line-height: 1.0; }
+  .section-title .by {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 34px;
+    margin-top: 28px;
+    color: var(--fog);
+  }
+
+  /* ---- Workflow row (Claude design to deploy) ---- */
+  .flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 32px;
+    flex-wrap: nowrap;
+  }
+  .flow-step {
+    flex: 1;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 24px 20px;
+  }
+  .flow-step .s-label {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+  .flow-step .s-desc {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--fog);
+  }
+  .flow-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--signal);
+    font-size: 28px;
+    padding: 0 12px;
+    flex-shrink: 0;
+  }
+
+  /* ---- Two-up media + text ---- */
+  .media-row {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 56px;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .media-row img.shot {
+    width: 100%;
+    border: 1px solid var(--line);
+    display: block;
+  }
+
+  /* ---- Big stat ---- */
+  .stat-number {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: 150px;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    color: var(--signal);
+  }
+
+  /* ---- Sign-off ---- */
+  .signoff { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; }
+  .signoff-line { font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 80px; line-height: 1.05; letter-spacing: -0.025em; margin-bottom: 48px; max-width: 1100px; }
+  .brand-mark { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 56px; letter-spacing: -0.02em; color: var(--cream); }
+  .brand-mark .four { background: var(--signal); color: var(--ink); padding: 0 14px; margin: 0 2px; font-style: italic; display: inline-block; }
+
+  /* ---- Title slide wordmark ---- */
+  .title-slide-eyebrow { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 30px; margin-bottom: 16px; letter-spacing: -0.02em; color: var(--cream); }
+  .title-slide-eyebrow .four { background: var(--signal); color: var(--ink); padding: 0 8px; margin: 0 1px; font-style: italic; display: inline-block; }
+
+  /* ---- CTA pill ---- */
+  .cta-line { font-family: 'JetBrains Mono', monospace; font-size: 20px; letter-spacing: 0.04em; color: var(--signal); margin-top: 24px; }
+
+  /* ---- Reveal controls + progress ---- */
+  .reveal .controls { color: var(--signal); opacity: 0.85; }
+  .reveal .controls:hover { opacity: 1; }
+  .reveal .progress { background: rgba(250, 247, 240, 0.1); color: var(--signal); }
+  .reveal .progress span { background: var(--signal); }
+  .reveal .slide-number { background: transparent; color: var(--cream); opacity: 0.4; font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 12px; letter-spacing: 0.1em; }
+
+  /* ---- Tighter type ---- */
+  .tight ul li, .tight ol li { font-size: 26px; padding: 14px 0 14px 40px; }
+  .tight ol li { padding-left: 60px; }
+  .tight ul li::before { top: 30px; }
+  .tight ol li::before { top: 24px; }
+
+  /* ---- Watermark ---- */
+  .slide-watermark { position: absolute; bottom: 18px; left: 28px; font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 16px; letter-spacing: -0.02em; color: var(--cream); opacity: 0.45; z-index: 10; }
+  .slide-watermark .four { background: var(--signal); color: var(--ink); padding: 0 5px; margin: 0 1px; font-style: italic; display: inline-block; }
+
+  /* ---- Model cheat sheet (which brain for which job) ---- */
+  .brain-dek { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 28px; color: var(--fog); margin: 4px 0 14px; }
+  .brain-premise { font-size: 18px; line-height: 1.45; color: var(--fog); border-left: 4px solid var(--signal); padding: 6px 0 6px 18px; margin-bottom: 20px; }
+  .brain-premise strong { color: var(--cream); font-weight: 600; }
+  .brain-table { border-top: 2px solid var(--line); }
+  .brain-row { display: grid; grid-template-columns: 1.1fr 1.05fr 1.55fr; gap: 30px; padding: 15px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .brain-row .num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--signal); letter-spacing: 0.1em; margin-bottom: 6px; }
+  .brain-row .job { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 22px; line-height: 1.12; }
+  .brain-row .pick { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 21px; }
+  .brain-row .meta { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--fog); margin-top: 6px; line-height: 1.5; }
+  .brain-row .price { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; margin-top: 8px; padding: 4px 8px; background: var(--panel); border: 1px solid var(--line); color: var(--cream); }
+  .brain-row .price.free { background: var(--signal); color: var(--ink); border-color: var(--signal); }
+  .brain-row .why { font-size: 15px; line-height: 1.42; color: var(--fog); }
+  .brain-row .why strong { color: var(--cream); }
+  .brain-foot { display: flex; gap: 44px; margin-top: 18px; font-size: 16px; color: var(--fog); }
+  .brain-foot strong { color: var(--cream); }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+  <!-- ============ 1 · INTRO ============ -->
+  <section data-background-color="#0F1113">
+    <div class="meta-strip">
+      <span>Episode 004</span>
+      <span>June 18, 2026 · 6:00 PM EST</span>
+      <span class="live">Live on Zoom</span>
+    </div>
+    <div class="title-slide-eyebrow">ai<span class="four">4</span>ntp</div>
+    <h1>7 AI tools you've never heard of,<br><em>that you need to be using.</em></h1>
+    <div class="hosts">
+      <div class="host">
+        <div class="pic"><img src="/ai4ntp-preview/sessions/004/images/justin-novak.jpg" alt="Justin Novak"></div>
+        <div><div class="nm">Justin Novak</div><div class="rl">Host</div></div>
+      </div>
+      <div class="host">
+        <div class="pic"><img src="/ai4ntp-preview/sessions/004/images/alec-saluga.jpg" alt="Alec Saluga"></div>
+        <div><div class="nm">Alec Saluga</div><div class="rl">Host</div></div>
+      </div>
+    </div>
+    <aside class="notes">
+      What's up guys, Justin and Alec here, your two favorite AI guys. We were voted number one best hair in all of AI. Not saying much though, most everyone else is bald, so the competition is not looking great.
+
+      You may have noticed we like to keep this fun, not super serious. We don't take ourselves seriously, but we do take our work seriously. So drop in the chat: if you've been here before, say "I". If it's your first time, say "first time".
+
+      We've been running these sessions for under a month and nearly a thousand people have signed up. That's really cool. A lot of you are repeat faces coming back, and we love that. This one today is more intimate. It was invite-only, so if you got the invite, kudos to you. Let's get into it.
+    </aside>
+  </section>
+
+  <!-- ============ 2 · BONUS ============ -->
+  <section data-background-color="#0F1113">
+    <div class="eyebrow">Stay to the end</div>
+    <h2>Two <span class="highlight">bonuses</span> for everyone live.</h2>
+    <div class="pillar-grid" style="margin-top:36px;">
+      <div class="pillar-card">
+        <div class="num">Bonus 01</div>
+        <h4>Live only.</h4>
+        <p>Two free gifts for everyone who stays to the end. Nothing to sell you. These are just yours for showing up.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">Bonus 02</div>
+        <h4>Off the record.</h4>
+        <p>A few segments today are kept private and will not be in the replay, for reasons you will see. You have to be here live to catch them.</p>
+      </div>
+    </div>
+    <aside class="notes">
+      Before we dive in: everyone who stays until the end gets a bonus. Not one, two. Two-for-one special. Buy one get one. Just kidding, we have nothing to sell you, but we are giving away two freebies, and trust me, you are going to want to stay till the end.
+
+      They are only for people who are live. And it's worth noting, there are going to be segments of this session that we keep private, for reasons you'll see in a minute. So if you want all of it, stick around.
+    </aside>
+  </section>
+
+  <!-- ============ 3 · AGENDA ============ -->
+  <section data-background-color="#0F1113">
+    <h1 style="font-size:150px; line-height:0.98;">The <em>show and tell</em>.</h1>
+    <aside class="notes">
+      Here is the plan. Four tools, show and tell style. We are going to show, not just tell, so you will watch us actually use these live.
+
+      Hermes first, then MidJourney, then building a real website with Claude, then the CRM I run my business on. Each one is roughly five to seven minutes. Save your questions, we have open Q and A at the end, plus those two bonuses. Let's go.
+    </aside>
+  </section>
+
+  <!-- ============ 3A · CODEX · ALEC ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell · Alec</div>
+    <h2>Codex.<br><em>A week of work, done in ten minutes.</em></h2>
+    <div class="pillar-grid three" style="margin-top: 28px;">
+      <div class="pillar-card">
+        <div class="num">What it is</div>
+        <h4>OpenAI's coding agent.</h4>
+        <p>Think of it as their version of Claude Code. Lightning fast, writes and runs real code, and it comes with the $20 OpenAI plan.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">The use case</div>
+        <h4>Built a prospect list.</h4>
+        <p>I needed advertisers to target. ChatGPT pointed me to the SpyFu API, I handed Codex the key and the docs, and it pulled the whole list in about ten minutes.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">The mindset</div>
+        <h4>What you'd hand a VA.</h4>
+        <p>Anything you would offload to an assistant is a candidate for AI first. The real cost you save is not the hourly rate, it's lost momentum.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:28px; color:var(--fog);">No developer background required. If something confuses you, ask Codex what to do.</p>
+    <aside class="notes">
+      I'll go first. Codex is incredible, and I'll show you how I used it yesterday. I run in the lead-gen space, and I needed a list of prospects who are already spending on ads. Normally I'd have a VA spend a couple days pulling that. Instead I did it in about ten minutes with Codex.
+
+      If you know Claude Code, Codex is basically OpenAI's version, and it's lightning fast. It started in regular ChatGPT: I asked if there was an API to pull current advertisers by keyword. There was, SpyFu. I got an account, handed Codex the API key and the docs, and said go pull this list. Done.
+
+      The mental model that matters: anything you'd hand to a VA is a great first thing to try with AI. It's low-leverage work that still needs doing. And you don't need to be technical. If something's confusing, ask Codex what to do. Just don't expose sensitive data or API keys.
+    </aside>
+  </section>
+
+  <!-- ============ 4 · HERMES · VALUE ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell</div>
+    <h2>Hermes.<br><em>An employee that lives on your computer.</em></h2>
+    <div class="pillar-grid three" style="margin-top: 28px;">
+      <div class="pillar-card">
+        <div class="num">It remembers</div>
+        <h4>Knows how you work.</h4>
+        <p>Your projects, your style, the way you like things done. Most AI forgets you the second you close the tab. Hermes doesn't.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">It learns</div>
+        <h4>Turns work into skills.</h4>
+        <p>When it figures out a hard task, it saves it as a skill. Next time it just does it. No re-explaining, no starting over.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">It's connected</div>
+        <h4>Slack, email, WhatsApp.</h4>
+        <p>Hand it work from your phone while you grab coffee. It runs on your machine and gets better the more you use it.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:28px; color:var(--fog);">I'm starting from a totally fresh install. Nothing set up. No smoke and mirrors.</p>
+    <aside class="notes">
+      What you're looking at is going to change how you think about getting work done. This is Hermes.
+
+      Now I know how that sounds. Another AI tool, another thing to learn, sounds like hype. It's not. Here's the difference. Most AI you've used forgets you the second you close the tab. You re-explain yourself every single time. Hermes doesn't. It lives on your computer. It remembers your projects, your style, the way you like things done. And the longer you use it, the better it gets at doing your job the way you would.
+
+      When it figures out a hard task, it saves that as a skill. So next time, it just does it. No re-explaining, no starting over. It connects to your Slack, your email, your WhatsApp, so you can give it work from your phone while you're getting coffee.
+
+      And the best part: I'm starting from a totally fresh install. Nothing set up, same as you would on day one. So you're going to see exactly what this looks like out of the box. Let's open it up.
+    </aside>
+  </section>
+
+  <!-- ============ 5 · HERMES · DEMO ============ -->
+  <section data-background-color="#0F1113">
+    <div class="eyebrow">Hermes · live demo</div>
+    <div class="media-row">
+      <img class="shot" src="/ai4ntp-preview/sessions/004/assets/cohort-cover.png" alt="Audience Intelligence Report cohort analysis">
+      <div>
+        <h3 style="font-size:40px;">Watch it actually <span class="highlight">work</span>.</h3>
+        <ul class="tight" style="margin-top:8px;">
+          <li>Build a full webinar cohort analysis from our real data.</li>
+          <li>Spin up a daily briefing, on a schedule.</li>
+          <li>Explain a cron job in plain English.</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="notes">
+      Let me show you three things, live. First, I'm going to have it build this: a full webinar cohort analysis on our real attendee data. Who shows up, their roles, their companies, where the opportunities are. I'll pull the report up on screen.
+
+      Second, a daily briefing. I'll have Hermes set itself up to send me a briefing every morning, automatically. That's a cron job, which just means a task that runs on a schedule. I'll have it explain that back to us in plain English so it's not a black box.
+
+      The point: this isn't a chatbot you babysit. It's doing real work while you watch.
+    </aside>
+  </section>
+
+  <!-- ============ 6 · HERMES · MODELS / GLM ============ -->
+  <section data-background-color="#0F1113">
+    <div class="eyebrow">The part nobody's talking about</div>
+    <h3>You can run it <span class="highlight">free</span>, on your own machine.</h3>
+    <div class="callout signal" style="margin-top:24px;">
+      <div class="quote">GLM 5.2 by Z.ai is a breakthrough. A local model you can host on your own computer and use for free.</div>
+      <div class="attribution">Swap the model inside Hermes · no subscription required</div>
+    </div>
+    <p style="margin-top:20px; color:var(--fog);">Hermes lets you pick the model under the hood. Run a free local model like GLM 5.2, or plug in a frontier one. Your call.</p>
+    <aside class="notes">
+      Here's the part nobody's talking about. Hermes lets you choose the model running underneath it. And one of the options is wild right now: GLM 5.2 by Z.ai.
+
+      This is a local model, meaning it runs on your own computer. You can host it yourself and use it for free. No monthly subscription, no per-token bill. The quality jump here is a genuine breakthrough. So you get this agent doing your work, and you can run the engine for nothing. That combination did not exist a few months ago.
+    </aside>
+  </section>
+
+  <!-- ============ 6b · MODELS CHEAT SHEET ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Field guide · Hermes models</div>
+    <h3 style="font-size:52px; margin-bottom:4px;">Which <span class="highlight">brain</span> for which job.</h3>
+    <p class="brain-dek">Pick the model by the work, not by the logo.</p>
+    <div class="brain-premise"><strong>Cheapest per token is not the cheapest job.</strong> A weak model that loops, fails, and retries can cost more than a solid one that nails it the first time. Match the model to the task.</div>
+    <div class="brain-table">
+      <div class="brain-row">
+        <div><div class="num">01</div><div class="job">Everyday agent work &amp; long multi-step tasks</div></div>
+        <div><div class="pick">GLM 5.2</div><div class="price">$1.40 in / $4.40 out</div></div>
+        <div class="why">Built for long-horizon agent work and tool use, at a fraction of frontier price. Your default workhorse.</div>
+      </div>
+      <div class="brain-row">
+        <div><div class="num">02</div><div class="job">Tasks where the agent has to see</div></div>
+        <div><div class="pick">Kimi K2.7 Code</div><div class="price">$0.74 in / $3.50 out</div></div>
+        <div class="why">Accepts image input for browser vision and screenshots, and stays cheap. GLM 5.2 is text only.</div>
+      </div>
+      <div class="brain-row">
+        <div><div class="num">03</div><div class="job">High-volume, low-stakes, or testing</div></div>
+        <div><div class="pick">Free tier</div><div class="meta">Nemotron 3 Ultra · Step 3.7 Flash</div><div class="price free">$0 per token</div></div>
+        <div class="why">Great for tinkering and background tasks. Rate limited and can change without notice, so never bet a live demo on them.</div>
+      </div>
+      <div class="brain-row">
+        <div><div class="num">04</div><div class="job">Quality-critical or client-facing output</div></div>
+        <div><div class="pick">Opus 4.8</div><div class="price">$10 in / $50 out</div></div>
+        <div class="why">Top quality for the moments that matter. Reach for it deliberately, not as your daily engine.</div>
+      </div>
+      <div class="brain-row">
+        <div><div class="num">05</div><div class="job">Building internal tools &amp; writing code</div></div>
+        <div><div class="pick">GLM 5.2 or Kimi K2.7 Code</div><div class="meta">both tuned for coding</div></div>
+        <div class="why">Both built for code generation and agentic software work, at a small fraction of frontier cost. Start here.</div>
+      </div>
+    </div>
+    <div class="brain-foot">
+      <span><strong>Spend less:</strong> cache reused context, and start cheap then escalate only when it falls short.</span>
+      <span>Prices per 1M tokens, list rate. Verify live.</span>
+    </div>
+    <aside class="notes">
+      People always ask me the same thing: which model should I use? So here's my cheat sheet. The big idea at the top: the cheapest price per token is not always the cheapest job. A weak model that loops and retries can burn more than a solid one that gets it right the first time.
+
+      For everyday agent work, GLM 5.2 is my workhorse. If the agent needs to actually see something, a screenshot or a browser, use Kimi K2.7 Code because it takes images. For high volume or just messing around, the free tier is great, but it's rate limited so I never run a live demo on it. When it's client-facing and quality matters, I step up to a frontier model like Opus. And for building tools and writing code, GLM 5.2 or Kimi. Two ways everyone can save: cache the context you reuse, and always start with the cheapest model that could plausibly do the job.
+    </aside>
+  </section>
+
+  <!-- ============ 6c · APIFY · ALEC ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell · Alec</div>
+    <h2>Apify.<br><em>Pull any data off the internet.</em></h2>
+    <div class="pillar-grid" style="margin-top:24px;">
+      <div class="pillar-card">
+        <div class="num">What it is</div>
+        <h4>A library of scrapers.</h4>
+        <p>Ready-made scrapers for Instagram, YouTube, LinkedIn, Facebook, and more. You don't build anything custom, you grab one off the shelf.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">How you run it</div>
+        <h4>On its own, or in a workflow.</h4>
+        <p>Run it inside Apify, or hand a scraper to an agent like Hermes or Codex, or drop it into an automation that pulls the data every day.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:28px; color:var(--fog);">If the data is on the internet, there's probably an Apify scraper for it.</p>
+    <aside class="notes">
+      I'm going two in a row because they're related. First, Apify. Sometimes you need data that lives somewhere specific: Instagram post performance, YouTube comments, LinkedIn. Apify is a library of scrapers, so you grab one off the shelf instead of building it.
+
+      You can run it right in Apify, or you can hand a scraper to an agent like Hermes or Codex, or drop it into a workflow that pulls the data every day, say, to watch a competitor. Whatever data you're after, if it's on the internet, there's probably already a scraper for it.
+    </aside>
+  </section>
+
+  <!-- ============ 6d · N8N · ALEC ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell · Alec</div>
+    <h2>n8n.<br><em>Wire your tools together, visually.</em></h2>
+    <div class="pillar-grid three" style="margin-top:28px;">
+      <div class="pillar-card">
+        <div class="num">What it is</div>
+        <h4>A visual workflow builder.</h4>
+        <p>Connect tools, route data, and drop AI into the middle. You can see every step, which makes it easy to debug when something breaks.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">A real build</div>
+        <h4>Live creator stats.</h4>
+        <p>Every Sunday it scrapes YouTube, Instagram, and TikTok follower counts for a client's creators and pushes them to their site. Agencies spent months. This took about three hours.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">Why not Zapier</div>
+        <h4>Open source, flat cost.</h4>
+        <p>Zapier and Make.com do the same thing but bill per execution. n8n is open source, self-host it for a few dollars a month with unlimited runs.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:28px; color:var(--fog);">The best place to start. Once you've got the feel, graduate to Claude Code.</p>
+    <aside class="notes">
+      This was my impetus for getting into AI, rewind about a year and a half: n8n. It's visual, it lets you connect tools, build workflows, and put AI in the middle. I run an AI implementation and lead-gen agency, so here's a real one we built for a client.
+
+      It runs every Sunday, pulls a list of creators, scrapes their live follower counts off YouTube, Instagram, and TikTok, and pushes them to the client's WordPress site. They'd worked with top agencies for months. We knocked it out in about three hours.
+
+      A lot of people use Zapier or Make.com, which are great, but they bill per execution. n8n is open source, you can self-host it for a few dollars a month with unlimited runs. And because you can see every step, it's the best place to start before you graduate to building this kind of logic in Claude Code.
+    </aside>
+  </section>
+
+  <!-- ============ 7 · MIDJOURNEY · HOOK ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell</div>
+    <h2>MidJourney.</h2>
+    <div class="callout" style="margin-top:8px;">
+      <div class="quote">It went viral today: an image model so good it's now replacing MRI machines. Around 1,000x cheaper, turning into health and wellness spas.</div>
+      <div class="attribution">From image generation to medical imaging</div>
+    </div>
+    <aside class="notes">
+      Quick story to set this up, because it's nuts. MidJourney went viral today. They built technology that is replacing MRI machines. It's going to be about a thousand times cheaper, and they're turning it into health and wellness spas.
+
+      Now, I've done consulting for an MRI technology company, I know a bit about this space. This is genuinely breakthrough technology. But here's what's interesting: how they got started. They started as an image generation model that is just so good. So good that it's now going to replace MRI machines. Hold that thought, because the everyday version of this is something you can use today.
+    </aside>
+  </section>
+
+  <!-- ============ 8 · MIDJOURNEY · HOW TO ============ -->
+  <section data-background-color="#0F1113">
+    <div class="eyebrow">MidJourney · live demo</div>
+    <h3>Steal any look in <span class="highlight">two minutes</span>.</h3>
+    <div class="pillar-grid" style="margin-top:24px;">
+      <div class="pillar-card">
+        <div class="num">The trick</div>
+        <h4>Let AI write the prompt.</h4>
+        <p>Drop an image into ChatGPT or Claude and ask, "give me a MidJourney prompt to recreate this." Paste it in. Done. Recreate inspiration instead of starting from a blank page.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">The use case</div>
+        <h4>Start a t-shirt company.</h4>
+        <p>Look at growing trends, find cool images, generate the designs. A whole creative process collapsed into minutes.</p>
+      </div>
+    </div>
+    <aside class="notes">
+      We'll start easy, something anyone can do right now, live. I'm going to generate an image from a prompt. But here's the pro move: I don't write the prompt myself. I take an image I like, drop it into ChatGPT or Claude, and say "give me a MidJourney prompt that would recreate this image." Then I paste that into MidJourney. That's how you recreate inspiration and speed up the whole creative process.
+
+      Let's make it real. Say you want to start a t-shirt company. You look at growing trends, you find cool images, you generate designs around them, all in a few minutes. If anyone wants to try it, I've got a referral link for a free two-week trial, just DM me and I'll send it over.
+    </aside>
+  </section>
+
+  <!-- ============ 8a · PLAUD NOTE · ALEC ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell · Alec</div>
+    <h2>PLAUD Note.<br><em>Record every conversation, not just Zoom.</em></h2>
+    <div class="pillar-grid three" style="margin-top:28px;">
+      <div class="pillar-card">
+        <div class="num">What it is</div>
+        <h4>A pocket recorder.</h4>
+        <p>A small hardware device that sticks to the back of your phone, like a wallet, and records what's happening around you.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">Why it matters</div>
+        <h4>Beyond the Zoom call.</h4>
+        <p>Zoom is one medium. This captures phone calls and in-person conversations too, so you stay present instead of scribbling notes.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">The integration</div>
+        <h4>Straight into your tools.</h4>
+        <p>A Zapier automation drops every recording into Google Drive, and my Claude reads my Drive, so any conversation is there when I need it.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:28px; color:var(--fog);">Some sauce: it's about $150 new. I found mine on eBay for sixty or seventy.</p>
+    <aside class="notes">
+      I won't share a screen for this one, I've got the device in my hand. This is the PLAUD Note. It's like a wallet on the back of your phone, but it's a recorder.
+
+      You might already use the Zoom recording on calls, which is great, but Zoom is just one medium. You also have phone calls and in-person conversations, and PLAUD captures all of it, so you can actually be present instead of scribbling notes. The best part is the integrations. I run a Zapier automation so every recording lands in my Google Drive, and my Claude is hooked up to my Drive, so any conversation I had is right there when I need to reference it. Quick tip: it's about a hundred and fifty new, I found mine on eBay for sixty or seventy.
+    </aside>
+  </section>
+
+  <!-- ============ 9 · CLAUDE · SITES ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell</div>
+    <h2>Claude.<br><em>Design to deployed, start to finish.</em></h2>
+    <p style="margin-top:8px; color:var(--fog);">Two real sites I built this way. I'll show you the result first, then the exact process.</p>
+    <div class="pillar-grid" style="margin-top:24px;">
+      <div class="pillar-card">
+        <div class="num">Built with Claude</div>
+        <h4>slowhandremodeling.com</h4>
+        <p>A full client website, designed and shipped.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">Built with Claude</div>
+        <h4>ai4ntp.com</h4>
+        <p>This whole brand, the site you registered on.</p>
+      </div>
+    </div>
+    <aside class="notes">
+      This one is my favorite. I'm going to show you two websites I built, and then the exact tool and process I used to build them.
+
+      First the results. This is slowhandremodeling.com, a real client site. And this is ai4ntp.com, our whole brand, the site you registered on today. Both built the same way. Let me walk you through how, because once you see it, you'll realize you can build a professional website without a developer.
+    </aside>
+  </section>
+
+  <!-- ============ 10 · CLAUDE · WORKFLOW ============ -->
+  <section data-background-color="#0F1113">
+    <div class="eyebrow">The exact workflow</div>
+    <h3>Figma to live site, no dev team.</h3>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="s-label">Figma</div>
+        <div class="s-desc">Mock up the pages visually. The design.</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">
+        <div class="s-label">Claude</div>
+        <div class="s-desc">Pull the Figma design straight into Claude with an MCP connector, a bridge that lets Claude read your Figma file.</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">
+        <div class="s-label">Claude Code</div>
+        <div class="s-desc">Claude writes and ships the real, production code.</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">
+        <div class="s-label">Vercel</div>
+        <div class="s-desc">Hosts the live website. Free to start.</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">
+        <div class="s-label">Namecheap</div>
+        <div class="s-desc">Where I bought the domain name.</div>
+      </div>
+    </div>
+    <p style="margin-top:28px; color:var(--fog); font-size:22px;"><strong>MCP connector</strong>, in plain English: a standard plug that lets Claude talk to another app. Here, it reads your Figma designs directly.</p>
+    <aside class="notes">
+      Here's the whole pipeline. I mocked up the pages in Figma, that's the design. Then I pulled those Figma files straight into Claude using an MCP connector. An MCP connector is just a bridge, a standard plug that lets Claude talk to another app. In this case it lets Claude read my Figma designs directly, so it can build exactly what I drew.
+
+      From there, Claude Code writes the actual production code. I host it on Vercel, which is free to start, and I bought the domain on Namecheap. Figma, Claude, Claude Code, Vercel, Namecheap. That's a full professional website, and not one line of it required me to be an engineer.
+    </aside>
+  </section>
+
+  <!-- ============ 10a · HIGGSFIELD · ALEC ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell · Alec · Honorable mention</div>
+    <h2>Higgsfield.<br><em>Every image and video model, one place.</em></h2>
+    <div class="pillar-grid" style="margin-top:24px;">
+      <div class="pillar-card">
+        <div class="num">What it is</div>
+        <h4>One prompt, five models.</h4>
+        <p>An aggregator of image and video models (NanoBanana, Seed Dance, and more). Run a prompt through several at once and keep the best output.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">What you get</div>
+        <h4>A marketing studio.</h4>
+        <p>Generate UGC-style video and creative in-house. A full UGC video runs about 1/100 of your credits, work that used to cost $300 a clip.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px; font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:28px; color:var(--fog);">Worth the honorable mention. It's about $150 a month, with cheaper tiers to start.</p>
+    <aside class="notes">
+      Quick honorable mention that ties into MidJourney: Higgsfield. There are a ton of image and video models out there now, NanoBanana from Google, Seed Dance, ChatGPT's own. Higgsfield aggregates them, so you put in one prompt, run it through five models, and pick the best output. Same for video.
+
+      They've also got a marketing studio for generating UGC content, which is really cool. It's not cheap, I pay about a hundred and fifty a month, and there are cheaper tiers to start. But when an entire UGC video is a fraction of your credits and that used to cost three hundred dollars a clip, it's well worth it.
+    </aside>
+  </section>
+
+  <!-- ============ 11 · AGENTIC CRM ============ -->
+  <section data-background-color="#0F1113">
+    <div class="section-title-eyebrow">Show &amp; Tell</div>
+    <h2>My <span class="highlight">agentic CRM</span>.</h2>
+    <div class="media-row" style="grid-template-columns: 1fr 1fr;">
+      <div>
+        <div class="stat-number">$99<span style="font-size:48px;">/mo</span></div>
+        <p style="margin-top:12px; color:var(--fog);">For something that's honestly worth thousands. I use it every single day.</p>
+      </div>
+      <div>
+        <h4 style="margin-bottom:16px;">What it does for me</h4>
+        <ul class="tight">
+          <li>I ask it each morning what needs my attention.</li>
+          <li>It tells me which opportunities to act on now.</li>
+          <li>It runs the follow-up so leads never go cold.</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="notes">
+      Last one. This is the CRM I use every single day, and I'm going to show you what it does rather than name it on screen. It's agentic, meaning I can talk to it. Every morning I go in and ask, what needs to happen today, what opportunities need to be acted on. And it tells me. It runs my follow-up so nothing slips through the cracks.
+
+      It costs me ninety-nine dollars a month and it's genuinely worth thousands. Here's an offer: if you want access, reach out to me. If you sign up through my link, I'll get you a free two-week trial and I'll even load some of my templates into your backend so you're not starting from scratch.
+    </aside>
+  </section>
+
+  <!-- ============ 12 · Q&A / SIGN-OFF ============ -->
+  <section data-background-color="#0F1113">
+    <div class="signoff">
+      <div class="signoff-line">That's the show. <em>Now your questions.</em></div>
+      <p style="color:var(--fog); font-size:24px; margin-bottom:40px;">Stay to the end for your two live-only bonuses.</p>
+      <div class="brand-mark">ai<span class="four">4</span>ntp</div>
+      <p style="margin-top:28px; font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--fog);">ai4ntp.com · thanks for being here</p>
+    </div>
+    <aside class="notes">
+      That's our show and tell. Hermes, MidJourney, Claude, and the CRM. Now let's open it up, drop your questions in the chat and we'll go through as many as we can.
+
+      And remember, stay to the end for your two bonuses. They're live only. Thanks for being here, this was a fun one.
+    </aside>
+  </section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  // Inject the ai4ntp watermark into every slide except the first and last.
+  var secs = document.querySelectorAll('.reveal .slides > section');
+  secs.forEach(function (s, i) {
+    if (i === 0 || i === secs.length - 1) return;
+    var w = document.createElement('div');
+    w.className = 'slide-watermark';
+    w.innerHTML = 'ai<span class="four">4</span>ntp';
+    s.appendChild(w);
+  });
+
+  Reveal.initialize({
+    width: 1600,
+    height: 1000,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2.0,
+    center: true,
+    transition: 'fade',
+    backgroundTransition: 'fade',
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    history: true,
+    keyboard: true,
+    overview: true,
+    touch: true,
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>

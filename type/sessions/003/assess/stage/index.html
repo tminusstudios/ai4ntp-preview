@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stage · Episode 003 · AI4NTP</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/type/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --line: rgba(244, 241, 234, 0.14);
+    --line-strong: rgba(244, 241, 234, 0.30);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: var(--ink);
+    color: var(--cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.18;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  /* ---- HEADER ---- */
+  .stage-head {
+    flex: 0 0 auto;
+    padding: 26px 44px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    z-index: 2;
+  }
+  .head-left { max-width: 70%; }
+  .head-eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  .head-eyebrow .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--rust);
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.7); }
+  }
+  .head-q {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(26px, 3vw, 44px);
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+  }
+  .head-q em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    color: var(--ink);
+    background: var(--signal);
+    padding: 0 0.1em;
+  }
+  .head-right { text-align: right; flex: 0 0 auto; }
+  .counter {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(56px, 7vw, 96px);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    color: var(--signal);
+    transition: transform 0.3s;
+  }
+  .counter.bump { transform: scale(1.1); }
+  .counter-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-top: 6px;
+  }
+
+  /* ---- WALL ---- */
+  .wall-wrap {
+    flex: 1 1 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 22px 44px 30px;
+  }
+  .wall {
+    column-gap: 20px;
+    column-fill: balance;
+    height: 100%;
+  }
+  /* column count adapts to width */
+  @media (min-width: 700px)  { .wall { column-count: 2; } }
+  @media (min-width: 1100px) { .wall { column-count: 3; } }
+  @media (min-width: 1700px) { .wall { column-count: 4; } }
+
+  .tile {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    padding: 18px 20px;
+    background: var(--ink-soft);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--line-strong);
+    animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .tile.fresh {
+    border-left-color: var(--signal);
+    box-shadow: 0 0 0 1px var(--signal-deep);
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(-10px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .tile-who {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.45;
+    margin-bottom: 8px;
+  }
+  .tile-task {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.32;
+    color: var(--cream);
+  }
+  .tile-reply {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.4;
+    color: var(--signal);
+    display: flex;
+    gap: 8px;
+    animation: fade 0.6s ease;
+  }
+  .tile-reply .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    opacity: 0.7;
+    flex: 0 0 auto;
+  }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  .tile-stack {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    animation: fade 0.6s ease;
+  }
+  .tile-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    color: var(--signal);
+    background: rgba(212, 255, 58, 0.12);
+    border: 1px solid rgba(212, 255, 58, 0.32);
+    padding: 2px 7px;
+    border-radius: 3px;
+  }
+  .tile-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cream);
+    opacity: 0.5;
+    margin-left: 2px;
+  }
+  .tile-time::before { content: '\23F1\FE0E'; margin-right: 4px; opacity: 0.8; }
+
+  .wall-empty {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 30px;
+    opacity: 0.4;
+  }
+
+  /* ---- THEMES ---- */
+  .themes-wrap {
+    flex: 1 1 auto;
+    min-height: 0;            /* allow the panel to shrink inside the flex column */
+    overflow-y: auto;          /* safety net if the room produces a very tall set */
+    position: relative;
+    z-index: 2;
+    padding: 26px 60px 28px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start; /* anchor to the top so it never rides under the header */
+  }
+  .theme-list { display: flex; flex-direction: column; gap: clamp(12px, 2.2vh, 22px); padding-top: clamp(8px, 2vh, 24px); }
+  .theme {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 24px;
+    animation: rise 0.5s ease;
+  }
+  .theme-rank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    opacity: 0.4;
+    letter-spacing: 0.1em;
+  }
+  .theme-body { min-width: 0; }
+  .theme-label {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(20px, 2.3vw, 30px);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 6px;
+  }
+  .theme-blurb {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(15px, 1.5vw, 19px);
+    opacity: 0.7;
+    line-height: 1.3;
+  }
+  .theme-bar-wrap {
+    grid-column: 2 / 3;
+    margin-top: 8px;
+    height: 6px;
+    background: rgba(244,241,234,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .theme-bar {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0;
+    background: var(--signal);
+    transition: width 0.8s cubic-bezier(0.2,0.7,0.2,1);
+  }
+  .theme-count {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(26px, 3.2vw, 44px);
+    color: var(--signal);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .theme-count small {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-top: 4px;
+    color: var(--cream);
+  }
+
+  body.mode-themes .wall-wrap { display: none; }
+  body.mode-themes .themes-wrap { display: flex; }
+
+  /* ---- FOOTER STRIP ---- */
+  .stage-foot {
+    flex: 0 0 auto;
+    padding: 14px 44px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    position: relative;
+    z-index: 2;
+  }
+  .stage-foot .logo {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    opacity: 1;
+    color: var(--cream);
+  }
+  .stage-foot .logo .four {
+    background: var(--signal);
+    color: var(--ink);
+    padding: 0 5px;
+    border-radius: 2px;
+    font-style: italic;
+  }
+  .stage-foot .join { color: var(--signal); }
+</style>
+</head>
+<body>
+
+<header class="stage-head">
+  <div class="head-left">
+    <div class="head-eyebrow"><span class="dot"></span>Episode 003 · The room, live</div>
+    <div class="head-q">If you had an AI agent, what's one thing you'd <em>have it do?</em></div>
+  </div>
+  <div class="head-right">
+    <div class="counter" id="counter">0</div>
+    <div class="counter-label" id="counter-label">tasks in</div>
+  </div>
+</header>
+
+<main class="wall-wrap">
+  <div class="wall" id="wall">
+    <div class="wall-empty">Waiting on the room.</div>
+  </div>
+</main>
+
+<section class="themes-wrap" id="themes">
+  <div class="theme-list" id="theme-list"></div>
+</section>
+
+<footer class="stage-foot">
+  <span class="logo">ai<span class="four">4</span>ntp</span>
+  <span>Add yours at <span class="join">ai4ntp.com/sessions/003/assess</span></span>
+</footer>
+
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+  const SUPABASE_URL = 'https://qytiyechjtkrejhhczcg.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5dGl5ZWNoanRrcmVqaGhjemNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMzc0OTcsImV4cCI6MjA5MjYxMzQ5N30.P7vYQPWFlVU6GrBFNxjnl28y9dTSRCet9n9V8YNxj1U';
+
+  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  const MAX_TILES = 36; // keep the wall full but bounded so it never overflows
+
+  let rows = [];           // newest first
+  let mode = 'wall';
+  let synthesis = null;
+
+  function safe(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+  // ai_reply is a JSON string { stack, plan, timeline }; tolerate legacy prose.
+  function parseReply(raw) {
+    if (!raw) return null;
+    if (typeof raw === 'object') return raw;
+    try { const o = JSON.parse(raw); if (o && (o.plan || o.stack)) return o; } catch (e) {}
+    return { plan: String(raw), stack: [], timeline: '' };
+  }
+
+  const counterEl = document.getElementById('counter');
+  const counterLabel = document.getElementById('counter-label');
+  const wallEl = document.getElementById('wall');
+
+  function renderCounter(bump) {
+    counterEl.textContent = rows.length;
+    counterLabel.textContent = rows.length === 1 ? 'task in' : 'tasks in';
+    if (bump) {
+      counterEl.classList.add('bump');
+      setTimeout(() => counterEl.classList.remove('bump'), 320);
+    }
+  }
+
+  function renderWall(freshId) {
+    const items = rows.filter(r => r.task).slice(0, MAX_TILES);
+    if (!items.length) {
+      wallEl.innerHTML = '<div class="wall-empty">Waiting on the room.</div>';
+      return;
+    }
+    wallEl.innerHTML = items.map(r => {
+      const fresh = freshId && r.id === freshId;
+      const who = r.name ? safe(r.name) : 'Anonymous';
+      const rep = parseReply(r.ai_reply);
+      const reply = rep && rep.plan
+        ? `<div class="tile-reply"><span class="arrow">&#8627;</span><span>${safe(rep.plan)}</span></div>`
+        : '';
+      const chips = rep && Array.isArray(rep.stack) ? rep.stack.filter(Boolean) : [];
+      const meta = rep && (chips.length || rep.timeline)
+        ? `<div class="tile-stack">${chips.map(s => `<span class="tile-chip">${safe(s)}</span>`).join('')}${rep.timeline ? `<span class="tile-time">${safe(rep.timeline)}</span>` : ''}</div>`
+        : '';
+      return `
+        <div class="tile${fresh ? ' fresh' : ''}">
+          <div class="tile-who">${who}</div>
+          <div class="tile-task">${safe(r.task)}</div>
+          ${reply}${meta}
+        </div>`;
+    }).join('');
+    if (freshId) {
+      setTimeout(() => wallEl.querySelectorAll('.tile.fresh').forEach(t => t.classList.remove('fresh')), 2000);
+    }
+  }
+
+  function renderThemes() {
+    const list = document.getElementById('theme-list');
+    if (!synthesis || !Array.isArray(synthesis.themes) || !synthesis.themes.length) {
+      list.innerHTML = '<div class="wall-empty">Synthesizing the room…</div>';
+      return;
+    }
+    const max = Math.max(1, ...synthesis.themes.map(t => t.count || 0));
+    list.innerHTML = synthesis.themes.map((t, i) => {
+      const pct = ((t.count || 0) / max) * 100;
+      return `
+        <div class="theme">
+          <div class="theme-rank">${String(i + 1).padStart(2, '0')}</div>
+          <div class="theme-body">
+            <div class="theme-label">${safe(t.label)}</div>
+            <div class="theme-blurb">${safe(t.blurb || '')}</div>
+            <div class="theme-bar-wrap"><div class="theme-bar" data-pct="${pct}"></div></div>
+          </div>
+          <div class="theme-count">${t.count || 0}<small>tasks</small></div>
+        </div>`;
+    }).join('');
+    // animate bars after paint
+    requestAnimationFrame(() => {
+      list.querySelectorAll('.theme-bar').forEach(b => { b.style.width = b.dataset.pct + '%'; });
+    });
+  }
+
+  function applyMode(m) {
+    mode = m === 'themes' ? 'themes' : 'wall';
+    document.body.classList.toggle('mode-themes', mode === 'themes');
+    if (mode === 'themes') renderThemes();
+  }
+
+  // ---- LOADERS ----
+  async function loadRows() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_003')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(500);
+    if (error) { console.error('rows load failed', error); return; }
+    rows = data || [];
+    renderCounter();
+    renderWall();
+  }
+
+  async function loadState() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_003_state')
+      .select('*')
+      .eq('id', 1)
+      .single();
+    if (error) { console.error('state load failed', error); return; }
+    synthesis = data.synthesis || null;
+    applyMode(data.mode);
+  }
+
+  function subscribe() {
+    supabase
+      .channel('stage-003-' + Date.now())
+      .on('postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'ai4ntp_pulse_003' },
+        (payload) => {
+          rows.unshift(payload.new);
+          renderCounter(true);
+          if (mode === 'wall') renderWall(payload.new.id);
+        })
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_003' },
+        (payload) => {
+          const idx = rows.findIndex(r => r.id === payload.new.id);
+          if (idx !== -1) rows[idx] = payload.new;
+          else rows.unshift(payload.new);
+          if (mode === 'wall') renderWall(payload.new.id); // the agent reply streaming in
+        })
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_003_state' },
+        (payload) => {
+          synthesis = payload.new.synthesis || null;
+          applyMode(payload.new.mode);
+        })
+      .subscribe();
+  }
+
+  (async function init() {
+    await loadState();
+    await loadRows();
+    subscribe();
+  })();
+
+  // Heartbeat fallback in case realtime stalls
+  setInterval(() => { loadState(); loadRows(); }, 30000);
+</script>
+
+</body>
+</html>

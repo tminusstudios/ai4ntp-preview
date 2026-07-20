@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI4NTP Session 006 — Eventbrite banner (2:1)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#0F1113; --cream:#FAF7F0; --signal:#D4FF3A; --rust:#C4471C;
+    --fog:rgba(250,247,240,0.64); --line:rgba(250,247,240,0.16);
+    --serif:'Fraunces',Georgia,serif; --italic:'Instrument Serif',Georgia,serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace; --body:'Hanken Grotesk',sans-serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  /* grey page so you can see the banner edges; the banner itself is exactly 1080x540 (2:1). */
+  body { background:#3a3a3a; display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px; }
+  .banner {
+    width:1080px; height:540px; background:var(--ink); color:var(--cream);
+    position:relative; overflow:hidden; flex:none;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:46px 64px; gap:22px;
+  }
+  .banner::after {
+    content:''; position:absolute; right:-120px; top:-140px; width:520px; height:520px;
+    background:radial-gradient(circle, rgba(212,255,58,0.16), transparent 70%); pointer-events:none;
+  }
+  .banner > * { position:relative; z-index:1; }
+  .tags { display:flex; gap:12px; align-items:center; }
+  .pill { display:inline-flex; align-items:center; gap:9px; background:var(--signal); color:var(--ink);
+    padding:8px 15px; border-radius:999px; font-family:var(--mono); font-size:13px; letter-spacing:0.14em;
+    text-transform:uppercase; font-weight:500; }
+  .pill .dot { width:8px; height:8px; border-radius:50%; background:var(--rust); }
+  .date { font-family:var(--mono); font-size:13px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--fog); border:1px solid var(--line); padding:8px 14px; border-radius:999px; }
+  h1 { font-family:var(--serif); font-weight:400; font-size:60px; line-height:1.0; letter-spacing:-0.035em; max-width:16ch; }
+  h1 em { font-family:var(--italic); font-style:italic; color:var(--signal); }
+  .sub { font-family:var(--italic); font-style:italic; font-size:23px; line-height:1.35; color:rgba(250,247,240,0.82); max-width:46ch; }
+  .faces { display:flex; gap:16px; margin-top:6px; }
+  .faces img { width:88px; height:88px; border-radius:50%; object-fit:cover; object-position:top center;
+    filter:grayscale(100%) contrast(1.05); border:1px solid var(--line); }
+  .hosts { font-family:var(--body); font-size:16px; color:var(--fog); }
+  .hosts b { color:var(--cream); font-weight:600; }
+  .brand { position:absolute; left:40px; bottom:34px; font-family:var(--serif); font-weight:700; font-size:22px; letter-spacing:-0.02em; z-index:1; }
+  .brand .four { background:var(--signal); color:var(--ink); padding:0 5px; border-radius:2px; font-style:italic; }
+  .free { position:absolute; right:40px; bottom:34px; font-family:var(--mono); font-size:13px; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--signal); z-index:1; display:inline-flex; align-items:center; gap:8px; }
+  .free::before { content:''; width:6px; height:6px; background:var(--signal); }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="tags">
+      <span class="pill"><span class="dot"></span>Live &middot; Session 006</span>
+      <span class="date">Sunday, July 12 &middot; 2 PM ET</span>
+    </div>
+    <h1>7 AI agents we built to <em>run our company.</em></h1>
+    <p class="sub">We open the hood on seven AI agents running inside our company every day.</p>
+    <div class="faces">
+      <img src="images/justin-novak.jpg" alt="Justin Novak">
+      <img src="images/ian-kilpatrick.jpg" alt="Ian Kilpatrick">
+      <img src="images/alec-saluga.jpg" alt="Alec Saluga">
+    </div>
+    <div class="hosts">Hosted live by <b>Justin, Ian &amp; Alec</b></div>
+    <div class="brand">ai<span class="four">4</span>ntp</div>
+    <div class="free">Free &middot; Live on Zoom</div>
+  </div>
+</body>
+</html>

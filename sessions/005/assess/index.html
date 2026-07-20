@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY783506Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4YY783506Y');
+</script>
+
+<script defer src="/_vercel/insights/script.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pick the brief · Episode 005 · AI4NTP</title>
+<meta name="description" content="The audience picks the one company all three builders race to build in under an hour.">
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --paper-warm: #EDE7DA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --line: rgba(15, 17, 19, 0.12);
+    --line-strong: rgba(15, 17, 19, 0.32);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+  a { color: inherit; }
+
+  .nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  .nav-logo {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .nav-logo .four {
+    background: var(--signal);
+    padding: 0 6px;
+    margin: 0 1px;
+    border-radius: 2px;
+    font-style: italic;
+  }
+  .nav-back { text-decoration: none; color: var(--ink); opacity: 0.65; }
+  .nav-back:hover { opacity: 1; }
+
+  .hero {
+    padding: 56px 40px 20px;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .session-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 9px 18px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .session-pill .live-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--rust);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+  .hero-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(44px, 8vw, 88px);
+    letter-spacing: -0.028em;
+    line-height: 0.98;
+    margin-bottom: 18px;
+  }
+  .hero-title em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    background: var(--signal);
+    padding: 0 0.1em;
+    margin: 0 0.02em;
+    display: inline-block;
+  }
+  .hero-sub {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.4;
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.88;
+  }
+
+  .stage-wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 28px 40px 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Hide all stages by default; activate via JS */
+  .stage { display: none; }
+  .stage.active { display: block; }
+
+  .form-card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 40px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* SUBMITTING STAGE */
+  .field { margin-bottom: 20px; }
+  .field > label {
+    display: block;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.92;
+    margin-bottom: 10px;
+  }
+  .field .opt {
+    opacity: 0.7;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    margin-left: 6px;
+  }
+  .field input[type="text"],
+  .field input[type="email"],
+  .field textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--line-strong);
+    padding: 12px 0 14px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--ink);
+    transition: border-color 0.2s;
+  }
+  .field input:focus, .field textarea:focus {
+    outline: none;
+    border-bottom-color: var(--ink);
+  }
+  .field textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+  .field input.error, .field textarea.error {
+    border-bottom-color: var(--rust);
+  }
+  .examples {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.45;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+  .submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    border: 1px solid var(--ink);
+    padding: 18px 28px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
+    margin-top: 8px;
+    width: 100%;
+  }
+  .submit:hover { background: var(--signal); color: var(--ink); }
+  .submit:disabled { opacity: 0.6; cursor: wait; }
+
+  .submitted-state {
+    text-align: center;
+    padding: 16px 12px;
+  }
+  .check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: var(--signal);
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 18px;
+  }
+  .submitted-state h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .submitted-state p {
+    opacity: 0.78;
+    max-width: 440px;
+    margin: 0 auto;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  /* VOTING STAGE */
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .option-card {
+    background: var(--cream);
+    border: 2px solid var(--line);
+    padding: 24px 22px 20px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+  }
+  .option-card:hover {
+    border-color: var(--ink);
+    transform: translateY(-2px);
+  }
+  .option-card.voted {
+    border-color: var(--ink);
+    background: var(--signal);
+  }
+  .option-card.disabled {
+    cursor: default;
+    opacity: 0.7;
+    transform: none;
+  }
+  .option-card.disabled:hover {
+    border-color: var(--line);
+    transform: none;
+  }
+  .option-card.disabled.voted:hover {
+    border-color: var(--ink);
+  }
+  .option-vibe {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .option-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .option-line {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.35;
+    opacity: 0.85;
+  }
+  .option-bar-wrap {
+    margin-top: 4px;
+    height: 4px;
+    background: rgba(15, 17, 19, 0.08);
+    position: relative;
+    overflow: hidden;
+  }
+  .option-bar {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0;
+    background: var(--signal-deep);
+    transition: width 0.5s ease;
+  }
+  .option-card.voted .option-bar { background: var(--ink); }
+  .option-count {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-top: 4px;
+  }
+
+  /* LOCKED STAGE */
+  .locked-reveal {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  .locked-eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 16px;
+  }
+  .locked-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(56px, 10vw, 112px);
+    letter-spacing: -0.03em;
+    line-height: 0.98;
+    margin-bottom: 18px;
+  }
+  .locked-name span {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    background: var(--signal);
+    padding: 0 0.08em;
+    display: inline-block;
+  }
+  .locked-line {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(20px, 2.4vw, 26px);
+    line-height: 1.4;
+    opacity: 0.85;
+    margin-bottom: 30px;
+  }
+  .locked-footnote {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+
+  /* WAITING / LOADING */
+  .waiting {
+    text-align: center;
+    padding: 40px 12px;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    opacity: 0.65;
+  }
+  .waiting .dots::after {
+    content: '...';
+    animation: dots 1.2s steps(4, end) infinite;
+  }
+  @keyframes dots {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+  }
+
+  @media (max-width: 700px) {
+    .nav { padding: 16px 24px; }
+    .hero { padding: 36px 24px 12px; }
+    .stage-wrap { padding: 20px 20px 56px; }
+    .form-card { padding: 26px 20px; }
+    .options-grid { grid-template-columns: 1fr; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/ai4ntp-preview/" class="nav-logo">ai<span class="four">4</span>ntp</a>
+  <a href="/ai4ntp-preview/sessions/005" class="nav-back">← Episode 005</a>
+</nav>
+
+<header class="hero">
+  <div class="session-pill"><span class="live-dot"></span>Episode 005 · Live now</div>
+  <h1 class="hero-title" id="hero-title">What should we <em>build?</em></h1>
+  <p class="hero-sub" id="hero-sub">Three builders. One hour. One brief. You pick what all three of them race to build with AI, live. Make it real, make it buildable, make it something you'd actually want to exist.</p>
+</header>
+
+<section class="stage-wrap">
+
+  <!-- STAGE 1: SUBMITTING -->
+  <div class="stage" id="stage-submitting">
+    <div class="form-card" id="submit-card">
+      <form id="idea-form" novalidate>
+        <div class="field">
+          <label for="build">What should we build? <span class="opt">required</span></label>
+          <textarea id="build" name="build" required autofocus></textarea>
+          <div class="examples">Think real and buildable. Examples: a booking tool for mobile dog groomers, a CRM for solo realtors, an AI that drafts release notes from your commits, a meal-prep app for new parents.</div>
+        </div>
+        <div class="field">
+          <label for="nameit">What should we call it? <span class="opt">optional</span></label>
+          <input type="text" id="nameit" name="nameit" autocomplete="off" placeholder="Give it a name. Brandable is better.">
+        </div>
+        <div class="field">
+          <label for="name">Name <span class="opt">optional</span></label>
+          <input type="text" id="name" name="name" autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="opt">optional, for follow-up</span></label>
+          <input type="email" id="email" name="email" autocomplete="email">
+        </div>
+        <button type="submit" class="submit" id="submit-btn">Submit →</button>
+      </form>
+    </div>
+
+    <div class="form-card submitted-state" id="submitted-card" style="display:none;">
+      <div class="check">✓</div>
+      <h2>Idea locked in.</h2>
+      <p>Hang tight. Once we have enough ideas, we'll synthesize five candidates and you'll vote on the one all three builders take on.</p>
+    </div>
+  </div>
+
+  <!-- STAGE 2: VOTING -->
+  <div class="stage" id="stage-voting">
+    <div class="options-grid" id="options-grid"></div>
+    <div class="waiting" id="options-waiting" style="display:none;"><span class="dots">Loading options</span></div>
+  </div>
+
+  <!-- STAGE 3: LOCKED -->
+  <div class="stage" id="stage-locked">
+    <div class="locked-reveal">
+      <div class="locked-eyebrow">All three are building</div>
+      <div class="locked-name" id="winner-name"><span>—</span></div>
+      <div class="locked-line" id="winner-line"></div>
+      <div class="locked-footnote">Watch the build-off now in Zoom.</div>
+    </div>
+  </div>
+
+  <!-- FALLBACK: loading state -->
+  <div class="stage active" id="stage-loading">
+    <div class="waiting"><span class="dots">Loading</span></div>
+  </div>
+
+</section>
+
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+  const SUPABASE_URL = 'https://qytiyechjtkrejhhczcg.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5dGl5ZWNoanRrcmVqaGhjemNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMzc0OTcsImV4cCI6MjA5MjYxMzQ5N30.P7vYQPWFlVU6GrBFNxjnl28y9dTSRCet9n9V8YNxj1U';
+
+  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  const ROW_KEY = 'ai4ntp_005_row_id';
+  const VOTE_KEY = 'ai4ntp_005_vote_for_id';
+
+  // Stages
+  const stages = {
+    loading: document.getElementById('stage-loading'),
+    submitting: document.getElementById('stage-submitting'),
+    voting: document.getElementById('stage-voting'),
+    locked: document.getElementById('stage-locked'),
+  };
+  function showStage(name) {
+    for (const k in stages) stages[k].classList.toggle('active', k === name);
+  }
+
+  // Submit-form elements
+  const submitCard = document.getElementById('submit-card');
+  const submittedCard = document.getElementById('submitted-card');
+  const ideaForm = document.getElementById('idea-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const buildInput = document.getElementById('build');
+  const nameitInput = document.getElementById('nameit');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+
+  // Vote elements
+  const optionsGrid = document.getElementById('options-grid');
+  const optionsWaiting = document.getElementById('options-waiting');
+
+  // Local state
+  let currentPhase = null;
+  let options = [];
+  let voteCounts = new Map();
+  let myVoteId = localStorage.getItem(VOTE_KEY) || null;
+
+  function safe(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  // ---- SUBMIT ----
+  function showSubmittedState() {
+    submitCard.style.display = 'none';
+    submittedCard.style.display = 'block';
+  }
+  function showSubmitForm() {
+    submitCard.style.display = 'block';
+    submittedCard.style.display = 'none';
+  }
+
+  // Decide whether this browser should see the form or the "locked in" card.
+  // A returning visitor shows "locked in", BUT if the host has reset the round
+  // (their saved row no longer exists in the DB), we clear the local flags and
+  // let them participate again. This keeps a reset from stranding the audience.
+  async function syncSubmittedState() {
+    const savedRow = localStorage.getItem(ROW_KEY);
+    if (!savedRow) { showSubmitForm(); return; }
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_005')
+      .select('id')
+      .eq('id', savedRow)
+      .maybeSingle();
+    if (!error && !data) {
+      localStorage.removeItem(ROW_KEY);
+      localStorage.removeItem(VOTE_KEY);
+      myVoteId = null;
+      showSubmitForm();
+    } else {
+      showSubmittedState();
+    }
+  }
+
+  // Show the right state immediately, then verify against the DB.
+  if (localStorage.getItem(ROW_KEY)) showSubmittedState();
+  syncSubmittedState();
+
+  ideaForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const build = (buildInput.value || '').trim();
+    if (!build) {
+      buildInput.classList.add('error');
+      buildInput.focus();
+      return;
+    }
+    buildInput.classList.remove('error');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Saving…';
+
+    // Compose the answers into the single `idea` column the synthesis step reads.
+    const nameit = (nameitInput.value || '').trim();
+    const idea = nameit
+      ? `Build: ${build}\nName idea: ${nameit}`
+      : build;
+
+    const payload = {
+      idea,
+      name: (nameInput.value || '').trim() || null,
+      email: (emailInput.value || '').trim() || null,
+    };
+
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_005')
+      .insert(payload)
+      .select()
+      .single();
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Submit →';
+
+    if (error) {
+      console.error('Submit failed', error);
+      buildInput.classList.add('error');
+      submitBtn.textContent = 'Try again →';
+      return;
+    }
+
+    localStorage.setItem(ROW_KEY, data.id);
+    showSubmittedState();
+  });
+
+  // ---- VOTING ----
+  async function loadOptions() {
+    optionsWaiting.style.display = 'block';
+    optionsGrid.style.display = 'none';
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_005_options')
+      .select('*')
+      .order('created_at', { ascending: true });
+    if (error) {
+      console.error('Options load failed', error);
+      return;
+    }
+    options = data || [];
+    optionsWaiting.style.display = 'none';
+    optionsGrid.style.display = 'grid';
+    await loadVoteCounts();
+    renderOptions();
+  }
+
+  async function loadVoteCounts() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_005')
+      .select('vote_for_id')
+      .not('vote_for_id', 'is', null);
+    if (error) {
+      console.error('Vote count load failed', error);
+      voteCounts = new Map();
+      return;
+    }
+    const counts = new Map();
+    for (const r of data || []) {
+      counts.set(r.vote_for_id, (counts.get(r.vote_for_id) || 0) + 1);
+    }
+    voteCounts = counts;
+  }
+
+  function renderOptions() {
+    if (!options.length) {
+      optionsGrid.innerHTML = '';
+      return;
+    }
+    const maxCount = Math.max(1, ...voteCounts.values());
+    optionsGrid.innerHTML = options.map(o => {
+      const count = voteCounts.get(o.id) || 0;
+      const pct = (count / maxCount) * 100;
+      const isVoted = myVoteId === o.id;
+      const cls = ['option-card'];
+      if (isVoted) cls.push('voted');
+      if (myVoteId) cls.push('disabled');
+      const vibe = o.vibe ? safe(o.vibe) : '';
+      return `
+        <button type="button" class="${cls.join(' ')}" data-id="${safe(o.id)}">
+          ${vibe ? `<div class="option-vibe">${vibe}</div>` : ''}
+          <div class="option-name">${safe(o.name)}</div>
+          <div class="option-line">${safe(o.one_liner)}</div>
+          <div class="option-bar-wrap"><div class="option-bar" style="width: ${pct}%;"></div></div>
+          <div class="option-count">${count} vote${count === 1 ? '' : 's'}${isVoted ? ' · your pick' : ''}</div>
+        </button>
+      `;
+    }).join('');
+
+    optionsGrid.querySelectorAll('.option-card').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        if (myVoteId) return;
+        const id = btn.dataset.id;
+        await castVote(id);
+      });
+    });
+  }
+
+  async function castVote(optionId) {
+    if (myVoteId) return;
+    // Disable all immediately for snappy feel
+    myVoteId = optionId;
+    localStorage.setItem(VOTE_KEY, optionId);
+    voteCounts.set(optionId, (voteCounts.get(optionId) || 0) + 1);
+    renderOptions();
+
+    const existingRow = localStorage.getItem(ROW_KEY);
+    if (existingRow) {
+      const { error } = await supabase
+        .from('ai4ntp_pulse_005')
+        .update({ vote_for_id: optionId })
+        .eq('id', existingRow);
+      if (error) console.error('Vote update failed', error);
+    } else {
+      const { data, error } = await supabase
+        .from('ai4ntp_pulse_005')
+        .insert({ vote_for_id: optionId })
+        .select()
+        .single();
+      if (error) {
+        console.error('Vote insert failed', error);
+      } else if (data) {
+        localStorage.setItem(ROW_KEY, data.id);
+      }
+    }
+  }
+
+  // ---- LOCKED REVEAL ----
+  function showWinner(winnerId) {
+    const winner = options.find(o => o.id === winnerId);
+    const nameEl = document.getElementById('winner-name');
+    const lineEl = document.getElementById('winner-line');
+    if (winner) {
+      nameEl.innerHTML = `<span>${safe(winner.name)}</span>`;
+      lineEl.textContent = winner.one_liner || '';
+    } else {
+      // options not loaded yet; fetch and retry
+      supabase.from('ai4ntp_pulse_005_options').select('*').eq('id', winnerId).single()
+        .then(({ data }) => {
+          if (data) {
+            nameEl.innerHTML = `<span>${safe(data.name)}</span>`;
+            lineEl.textContent = data.one_liner || '';
+          }
+        });
+    }
+  }
+
+  // ---- STATE-DRIVEN STAGE SWITCH ----
+  async function applyState(state) {
+    if (!state) return;
+    currentPhase = state.phase;
+    if (state.phase === 'submitting') {
+      showStage('submitting');
+      // Re-check: a host reset flips us back to submitting and wipes rows, so a
+      // browser stuck on "locked in" should return to the form on its own.
+      syncSubmittedState();
+    } else if (state.phase === 'voting') {
+      showStage('voting');
+      if (!options.length) await loadOptions();
+    } else if (state.phase === 'locked') {
+      if (!options.length) {
+        await loadOptions();
+      }
+      showStage('locked');
+      if (state.winner_id) showWinner(state.winner_id);
+    }
+  }
+
+  async function loadInitialState() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_005_state')
+      .select('*')
+      .eq('id', 1)
+      .single();
+    if (error) {
+      console.error('State load failed', error);
+      showStage('submitting'); // safe default
+      return;
+    }
+    await applyState(data);
+  }
+
+  function subscribeRealtime() {
+    supabase
+      .channel('pulse-005-' + Date.now())
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_005_state' },
+        (payload) => { applyState(payload.new); })
+      .on('postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'ai4ntp_pulse_005_options' },
+        () => { if (currentPhase === 'voting') loadOptions(); })
+      .on('postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'ai4ntp_pulse_005' },
+        (payload) => {
+          if (currentPhase === 'voting' && payload.new.vote_for_id) {
+            voteCounts.set(payload.new.vote_for_id, (voteCounts.get(payload.new.vote_for_id) || 0) + 1);
+            renderOptions();
+          }
+        })
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_005' },
+        (payload) => {
+          if (currentPhase === 'voting' && payload.new.vote_for_id && payload.new.vote_for_id !== payload.old?.vote_for_id) {
+            // A row added/changed its vote
+            if (payload.old?.vote_for_id) {
+              voteCounts.set(payload.old.vote_for_id, Math.max(0, (voteCounts.get(payload.old.vote_for_id) || 0) - 1));
+            }
+            voteCounts.set(payload.new.vote_for_id, (voteCounts.get(payload.new.vote_for_id) || 0) + 1);
+            renderOptions();
+          }
+        })
+      .subscribe();
+  }
+
+  // Clear error styling as the user types
+  ideaForm.querySelectorAll('input, textarea').forEach(el => {
+    el.addEventListener('input', () => el.classList.remove('error'));
+  });
+
+  loadInitialState();
+  subscribeRealtime();
+
+  // Heartbeat fallback in case realtime stalls
+  setInterval(loadInitialState, 30000);
+</script>
+
+</body>
+</html>

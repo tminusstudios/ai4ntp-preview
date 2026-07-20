@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a session · AI4NTP</title>
+<meta name="description" content="Book a free 15-minute working session with the AI4NTP team.">
+
+<link rel="canonical" href="https://ai4ntp.com/calendar">
+
+<meta property="og:title" content="Book a session · AI4NTP">
+<meta property="og:description" content="Book a free 15-minute working session with the AI4NTP team.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ai4ntp.com/calendar">
+<meta property="og:image" content="https://ai4ntp.com/sessions/001/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book a session · AI4NTP">
+<meta name="twitter:description" content="Book a free 15-minute working session with the AI4NTP team.">
+
+<link rel="icon" href="/ai4ntp-preview/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-monogram.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/ai4ntp-preview/icon-32.png">
+<link rel="apple-touch-icon" href="/ai4ntp-preview/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --paper-warm: #EDE7DA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --line: rgba(15, 17, 19, 0.12);
+    --line-strong: rgba(15, 17, 19, 0.32);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+  a { color: inherit; }
+
+  /* NAV */
+  .nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  .nav-logo {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .nav-logo .four {
+    background: var(--signal);
+    padding: 0 6px;
+    margin: 0 1px;
+    border-radius: 2px;
+    font-style: italic;
+  }
+  .nav-back {
+    text-decoration: none;
+    color: var(--ink);
+    opacity: 0.65;
+    transition: opacity 0.2s;
+  }
+  .nav-back:hover { opacity: 1; }
+
+  /* HERO */
+  .hero {
+    padding: 56px 40px 24px;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 9px 18px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--signal);
+  }
+  .hero-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-size: clamp(40px, 6vw, 76px);
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+    margin-bottom: 20px;
+  }
+  .hero-title em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    background: var(--signal);
+    padding: 0 0.1em;
+    margin: 0 0.02em;
+    display: inline-block;
+  }
+  .hero-sub {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.4;
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.88;
+  }
+
+  /* CAL EMBED */
+  .cal-wrap {
+    max-width: 1100px;
+    margin: 24px auto 56px;
+    padding: 0 32px;
+    position: relative;
+    z-index: 2;
+  }
+  .cal-frame {
+    width: 100%;
+    height: calc(100vh - 260px);
+    min-height: 720px;
+    border: 1px solid var(--line);
+    background: var(--cream);
+    display: block;
+  }
+  .fallback {
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    opacity: 0.6;
+  }
+  .fallback a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--line-strong);
+    text-underline-offset: 3px;
+  }
+  .fallback a:hover { text-decoration-color: var(--ink); }
+
+  footer {
+    padding: 28px 40px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    position: relative;
+    z-index: 2;
+  }
+  .footer-tag {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 700px) {
+    .nav { padding: 16px 24px; }
+    .hero { padding: 36px 24px 12px; }
+    .cal-wrap { padding: 0 20px; margin-bottom: 40px; }
+    .cal-frame { min-height: 640px; }
+    footer { flex-direction: column; gap: 12px; text-align: center; padding: 20px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<script src="/ai4ntp-preview/nav.js"></script>
+
+<header class="hero">
+  <div class="hero-eyebrow">15 minutes</div>
+  <h1 class="hero-title">Talk Ai <em>to me.</em></h1>
+</header>
+
+<div class="cal-wrap">
+  <!--
+    Google Calendar appointment schedule embed.
+    The /u/0 segment is removed and ?gv=true is appended — Google requires
+    this format for third-party iframe embeds (without it Google sets
+    X-Frame-Options that block the load).
+  -->
+  <iframe
+    class="cal-frame"
+    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Poi3ruhBoznNnHbrGJYuDlZT7bWvXdqvEt-eRkT4oELvJKY-MVJGoHl1aHRjbLPVWUmKzpdXD?gv=true"
+    title="Book a session with AI4NTP"
+    loading="lazy"
+    frameborder="0"></iframe>
+  <p class="fallback">
+    Calendar not loading? <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2Poi3ruhBoznNnHbrGJYuDlZT7bWvXdqvEt-eRkT4oELvJKY-MVJGoHl1aHRjbLPVWUmKzpdXD" target="_blank" rel="noopener">Open it in a new tab</a>.
+  </p>
+</div>
+
+<script src="/ai4ntp-preview/footer.js"></script>
+
+</body>
+</html>

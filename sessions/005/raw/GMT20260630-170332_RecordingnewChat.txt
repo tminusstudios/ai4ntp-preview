@@ -1,0 +1,123 @@
+00:14:56	Chris Sherman:	First time here looking forward to this
+00:14:58	Fireflies.ai Notetaker Freda:	Freda invited Fireflies.ai here to record & take notes.
+By continuing, you agree to https://fireflies.ai/privacy
+
+Type:
+'/ff pause' - pause recording
+'/ff leave' - to stop recording
+
+View Realtime notes here: https://app.fireflies.ai/live/01KW7NXQNYD2D8WY4ZY00FQ74N?ref=live_chat
+00:15:03	Daniel Sharpe:	Durham NC
+00:15:15	Chris Sherman:	New York
+00:15:16	Rina Kat:	San Diego
+00:15:21	Krislyn Chan:	Sf
+00:15:25	Ravi Mariathasan:	Philadelphia
+00:15:25	Daniel Sharpe:	Yea Raleigh Durham Chapel Hill
+00:15:27	Charles Hills:	Devon, UK
+00:15:29	sohaib almahy:	uae -dubai
+00:15:30	Modi Moses Eyobo KEI:	First time attending from Dublin, Ireland
+00:15:30	Camik Agonkpahoun:	Milwaukee
+00:15:31	Richard Blanco-Topping:	Alabama
+00:15:38	Maryna Kuz:	Ukraine
+00:15:41	Rahul Baji:	Mumbai, India
+00:15:45	Susan D'Elia:	San Francisco
+00:15:52	Justin Novak:	https://ai4ntp.com/sessions/005/assess
+00:16:43	Chris Sherman:	Fashion brand or product brand
+00:16:58	Sri Banda:	Hi, I'm an AI assistant helping sri Banda take notes for this meeting. Follow along the transcript here:  https://otter.ai/u/iXbXiTMIRUpvKH2JcO5Rbeutoms?utm_source=va_chat_link_1
+
+You can see screenshots and add highlights and comments. After the meeting, you'll get a summary and action items.
+
+
+If you'd like to stop this recording, you can go to the link above and click the Stop button.
+
+If you'd like to stop the recordings for all Otter Notetakers in this meeting, you can type "otter stop" in Zoom chat.
+00:17:00	Brett:	Whatever you want 🙂
+00:20:18	Brett:	https://ai4ntp.com/sessions/005/assess
+00:20:25	Daniel Sharpe:	Credit Repair Company
+00:20:37	Rahul Baji:	I am not able to post the idea. I will post in chat
+00:20:40	Chris Sherman:	Fashion brand
+00:20:40	Rahul Baji:	An AI-driven B2B marketplace that allows renting products rather than purchasing
+00:20:42	Modi Moses Eyobo KEI:	Clothing brand
+00:20:52	Krislyn Chan:	Can’t submit the idea through the link
+00:20:57	Krislyn Chan:	Rate your landlord app
+00:21:14	Mia Redillo:	i’m watching this from a bakery right now. Can’t submit idea through the link for some reason
+00:21:21	Chris Sherman:	In NY a food truck
+00:21:25	Triple A:	Build an app that custom builds websites based on conditions you give it
+00:21:40	Chris Sherman:	Food truck and catering bakery
+00:22:00	Triple A:	Build an app that’s a universal gym sharing thing. Invite friends to your gym, share workouts and plan lifts together
+00:25:19	Brett:	So we chose: BAKERY BUSINESS! 3 locations: LA, NYC, and Nashville
+00:27:14	Charles Hills:	Jolene bakery and crème cookies - both London. Great brandings
+00:27:32	Brett:	YES CHARLES!!!
+00:32:44	Justin Novak:	YES ALEC!
+00:32:47	Justin Novak:	I love that
+00:34:55	Rahul Baji:	Alec would there be multiple types of cookies?
+00:34:59	Krislyn Chan:	Are you going to screen share while you’re building
+00:35:32	Krislyn Chan:	yes
+00:35:33	Brett:	Seeing Justin’s Screen on his Idea - Farm to Cookie 😄
+00:35:50	Brett:	(Milk and Cookies)
+00:39:33	sohaib almahy:	WHAT AI did u use for make the website when u where talking
+00:39:53	Justin Novak:	Claude + VSCODE
+00:39:58	Brett:	He used Claude Code, connected through VScode
+00:40:19	Chris Sherman:	This is so dope from all of you
+00:42:08	Modi Moses Eyobo KEI:	@Justin, how about the backend?
+00:44:37	Justin Novak:	It’s just mockups today but in production it will be Postgres, rest/tRPC, Stripe for subs, twill for SMS and push notifications
+00:45:32	Brett:	Send me your questions; going to do round robin questions next. Just ask away, tell me who you want me to ask, and I’ll ask it coming up next!
+00:46:17	Matthew S:	Can you guys group the different tools you use by function? e.g lovable for website build (can be a follow up email)
+00:46:56	Justin Novak:	Matthew we will in the show notes we send you via email
+00:47:01	Justin Novak:	After the session
+00:48:57	Sri Banda:	sri is on a Basic Otter plan with 30 minute meetings. To record longer meetings, upgrade to Pro: https://otter.ai/pricing?utm_source=oa-chat-basic
+00:48:59	Matthew S:	Thanks!
+00:49:03	Justin Novak:	Got u
+00:49:06	Brett:	😄 😄
+00:52:39	Brett:	So we went from a WireFrame - TO this, in 10 minutes
+00:56:34	Brett:	Wow, looks amazing
+00:58:02	Charles Hills:	Looks like porchetta with some crispy crackling
+00:58:10	Charles Hills:	Yum
+00:58:27	Brett:	haha
+01:01:36	Rahul Baji:	I thought the logos would go on the box
+01:01:56	Brett:	I think he wants them on the COOKIE
+01:02:37	Chris Sherman:	This is so insightful
+01:04:19	Brett:	I’m glad you think so Chris ;D
+01:06:31	Richard Blanco-Topping:	Amazing!
+01:06:40	Chris Sherman:	So dope
+01:07:55	Chris Sherman:	Impressive
+01:08:27	Omar Ghandour:	This actually should be built out, all the assets could be better built but idea is ingenious. Alec ftw
+01:08:27	Justin Novak:	https://milk-and-cookies-t-minus-studios.vercel.app
+01:08:33	Brett:	^^
+01:10:26	Matthew S:	the box says Titler
+01:11:06	Omar Ghandour:	@Alec, im in no joke
+01:11:17	Justin Novak:	Omar & Alec collab coming soon!
+01:11:23	Brett:	Let’s goooooooo
+01:11:25	Justin Novak:	!!!
+01:12:03	Brett:	This is so creative!!!
+01:12:17	Chris Sherman:	Wow it just worked
+01:12:21	Justin Novak:	!!!
+01:12:24	Justin Novak:	WHAAAAT
+01:12:29	Alec:	Hit me up ! https://www.linkedin.com/mynetwork/grow/
+01:12:30	Chris Sherman:	I’m on it now!
+01:13:13	Chris Sherman:	What did you use to make this again ?
+01:13:21	Brett:	Ian uses OpenClaw
+01:13:30	Brett:	Former episodes go a bit more in depth
+01:13:35	Chris Sherman:	Thanks
+01:14:36	Chris Sherman:	This was an amazing webinar you are all winners
+01:14:47	Omar Ghandour:	Alec wrong link
+01:14:54	Chris Sherman:	I voted
+01:14:57	Matthew S:	very cool
+01:15:03	Alec:	https://www.linkedin.com/in/alec-saluga-4295521a6/
+01:15:45	Ian:	https://www.linkedin.com/in/ianpk/
+01:15:58	Ravi Mariathasan:	This is one of the best webinars I have attended in a long time. Great job guys.
+01:16:28	Chris Sherman:	Amazing experience here
+01:16:34	Brett:	Im glad Ravi, Chris!!!
+01:16:42	Justin Novak:	My contact info:
+01:16:43	Justin Novak:	https://ai4ntp.com/calendar
+01:16:46	Chris Sherman:	I can push my brand forward much better with this
+01:16:54	Justin Novak:	https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/
+01:17:14	Brett:	WIFIINMYCOOKETHANKSIAN
+01:18:05	Brett:	<3<3
+01:18:11	Matthew S:	Thanks yall
+01:18:21	Modi Moses Eyobo KEI:	Thanks
+01:18:24	Justin Novak:	TY all
+01:18:35	Rahul Baji:	Thanks a ton
+01:18:52	Chris Sherman:	Thank you guys so much
+01:18:56	Richard Blanco-Topping:	Thank you so much guys!
+01:19:51	Maryna Kuz:	thank you for your time and ideas ☺️

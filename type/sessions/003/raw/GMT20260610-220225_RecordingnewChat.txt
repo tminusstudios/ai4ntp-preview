@@ -1,0 +1,143 @@
+00:11:15	ian:	Nashville
+00:11:21	Michele Tucci:	Michele, Miami
+00:11:23	Debbie Elder:	Debbie E. Long Beach WA
+00:11:24	Fireflies.ai Notetaker Vidhya:	Vidhya invited Fireflies.ai here to record & take notes.
+By continuing, you agree to https://fireflies.ai/privacy
+
+Type:
+'/ff pause' - pause recording
+'/ff leave' - to stop recording
+
+View Realtime notes here: https://app.fireflies.ai/live/01KTN80QGTVQGVWSF5CR1N5HFZ?ref=live_chat
+00:11:26	Jude Erisnor:	Miami
+00:11:28	A M:	hi from Los Angeles
+00:11:29	David Young:	David, Maine
+00:11:30	Fernanda Gandara:	Fernanda, Philadelphia
+00:11:34	Joel Ortiz:	Joel Puerto Rico
+00:11:34	John Lawrence:	John  Murrieta CA
+00:11:37	Ian Clarke:	Ian Felixstowe UK
+00:11:37	Peggy Tsai:	NYC
+00:11:38	Kristin daRoza:	Kristin Oceanside, CA
+00:11:38	Irteza Alif:	Teza, New Jersey
+00:11:39	Patricia Collazo:	New York
+00:11:43	Ashwin Nair:	Boston
+00:11:48	Tobe Aguegbodo:	Tobe, manitoba
+00:12:00	Erin Cobb:	Nashville
+00:12:27	Deborah Elias:	Riverside CA
+00:12:30	Jean Jacques SENOU:	Hi Jean Jacques, Happy to be here. And grateful that both of you consider the openclaw and Hermes agent system training.Joining from Amsterdam, Midnight here -
+00:13:00	David Young:	Stay!
+00:13:03	Kristin daRoza:	So amazing!!
+00:13:05	David Young:	So good!
+00:13:06	Ashwin Nair:	It was great, compact, and informative. Very articulate
+00:13:11	Jude Erisnor:	Will this be recorded?
+00:13:48	Jean Jacques SENOU:	Instructive, great, valuable and most importantly applicable
+00:14:57	Deborah Elias:	I wish it cleaned and did laundry too lol
+00:18:48	Fernanda Gandara:	Where is the link?
+00:19:00	Justin Novak:	https://ai4ntp.com/sessions/003/assess
+00:22:16	Fernanda Gandara:	I am writing something more serious :)
+00:24:54	Tobe Aguegbodo:	Is this session going to be recorded?
+00:24:57	Justin Novak:	Yes tobe
+00:25:49	Jean Rebel:	If I arrived late can I send a submission?
+00:26:59	Justin Novak:	www.digitalocean.com
+00:27:11	Jean Rebel:	I would like to have something showing what media aired and what the responses were from the media and what my ROAS from the media and have this sent to me daily
+00:27:41	ian:	sudo apt update && sudo apt -y upgrade
+sudo apt install -y ufw fail2ban unattended-upgrades curl git ca-certificates build-essential
+sudo systemctl enable --now fail2ban
+sudo dpkg-reconfigure -plow unattended-upgrades
+00:28:01	Fa Nasri:	Item for an AI Agent - How to write an AI agent for analyzing the incoming revenue, donations to a non-profit from multiple channels and making a daily report, at the end of the day. Multi-channel incoming donations coming to multiple departments in the same non-profit. Need a department wise report, aggregated per channel. -- Thank you in advance for your help -- regards - FA Nasri
+00:29:09	Tobe Aguegbodo:	Sorry how did you get to this particukl
+00:29:27	Tobe Aguegbodo:	Particular page
+00:29:42	Justin Novak:	5 min Tobe
+00:31:03	Justin Novak:	Yes Harlan
+00:31:19	David Young:	So does this code need to be installed every time I run digital ocean?
+00:31:49	ian:	sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow OpenSSH
+sudo ufw --force enable
+sudo ufw status verbose
+00:31:49	Justin Novak:	No David
+00:32:08	David Young:	gotcha
+00:32:11	Justin Novak:	Just the first time
+00:32:22	Ashwin Nair:	The first code script prompts a password , is that going to activate only after we have digital ocean account setup ?
+00:33:25	Ashwin Nair:	got it! thanks
+00:33:45	Fa Nasri:	ok  -good q from Ashwin -- and thanks for clarifying
+00:33:49	ian:	sudo adduser openclaw
+sudo usermod -aG sudo openclaw
+sudo rsync -a --chown=openclaw:openclaw ~/.ssh /home/openclaw/
+00:33:50	Jean Jacques SENOU:	May you guys help us with an MD instruction file at the end with for exemple sudo ufw default deny incomingsudo ufw default allow outgoingsudo ufw allow OpenSSHsudo ufw --force enablesudo ufw status verboseAnd other Thank you upfront
+00:35:23	Mara Fernandez:	Can this be connected to google emails?
+00:36:43	Tobe Aguegbodo:	Sorry i still don’t understand, are we copying the code?
+00:37:04	Fa Nasri:	oh nice - that it can be connected to google emails, calendar --
+00:37:15	David Young:	Bob Ross is a G!
+00:37:34	Fa Nasri:	Bob Ross !!! :)
+00:38:14	ian:	curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install -y nodejs
+sudo npm install -g openclaw
+openclaw --version
+00:39:49	Jean Rebel:	Does this work with Microsoft products?
+00:40:30	Jean Rebel:	I work off a macbook
+00:41:00	ian:	Openclaw setup
+00:41:10	Donald Hendrickson:	Will this run in powershell in a pc?
+00:41:56	Tobe Aguegbodo:	Where can i watch the recording, do you have a Skool community you post it on?
+00:43:01	Justin Novak:	Yes tobe email justin@ai4ntp.com
+00:49:22	Fa Nasri:	LoL -- good anecdote -- 'french cuss words'
+00:52:17	Darion Lanagan:	Can we re watch this I came in late?
+00:52:26	Debbie Elder:	Bottle
+00:52:36	Jude Erisnor:	tango
+00:52:38	Darion Lanagan:	Can you put that in the chat for me please
+00:52:42	Mahlon Clottey:	4NTP
+00:52:48	Justin Novak:	Justin@ai4ntp.com
+00:52:51	Erin Cobb:	Alphabot
+00:53:13	Jean Rebel:	bottleneck
+00:53:22	David Young:	👍🏼
+00:54:49	Darion Lanagan:	Hey Justin I sent you an email from info@dreamcaresolutions.com
+00:58:49	Jean Rebel:	For someone who has zero tech experience and finds any this type of work daunting - you have given me hope. I’m looking forward to working on this over the weekend. Thanks!
+01:02:07	ian:	export OPENCLAW_SECRET='123456:ABC-your-telegram-token-here'
+openclaw install
+01:03:39	Darion Lanagan:	Would we have to do everything your doing to build one of our own lol so much😩
+01:08:50	Fa Nasri:	Im a newbie, so I have the same question as Darion ... this is a wee bit more than a few steps ... :)
+01:09:17	Fa Nasri:	Yes, yes - agreed Justin -- need some robust instructions pleeez -- thanks
+01:09:32	John Lawrence:	Is there an Ai agent that can set this all up?
+01:10:07	Jean Rebel:	I spoke too soon….Darion, I think we may need a side group to help each other set these up!
+01:10:09	A M:	I have to hop off but thank you!  This was helpful to see, I'll catch the rest of the recording
+01:12:29	ian:	Thanks A M!
+01:13:22	Fa Nasri:	I have to drop off now - Thank You guys -- will email you and follow for more -- Thanks again --
+01:16:18	Fernanda Gandara:	I do have to leave too! Please send the recording via email (I sent an email to Justin)
+01:16:56	Debbie Elder:	When you create the Bot would one of the first tasks be to create another?
+01:16:59	Deborah Elias:	thank you!
+01:17:20	Mara Fernandez:	Thank you for all. I will be in touch
+01:17:21	Darion Lanagan:	Are you guys going have another class after this?
+01:17:22	Rony Zaman:	will you be sharing the video / transcript?
+01:19:50	Rony Zaman:	how can I converse in the terminal with openclaw
+01:21:18	Darion Lanagan:	You need 12 to do that or can one only do it?
+01:21:20	John Lawrence:	That's great thanks!
+01:22:33	David Young:	I gotta bounce guys but looking forward to the next one
+01:22:38	ian:	Darion, 1 will do but 2 is better
+01:23:06	Debbie Elder:	This is so incredible.
+01:23:28	ian:	Https://minimatch.app
+01:23:35	Rony Zaman:	Dropping out , thanks a lot guys
+01:23:39	Justin Novak:	Thanks Rony!
+01:24:48	Tobe Aguegbodo:	I sent the email, please let me know if you receive it
+01:25:28	Justin Novak:	Got it Tobe!
+01:25:42	Darion Lanagan:	For someone who’s new this how long would this take me to learn and how can I put in small terms so I could understand and make my own apps and bots
+01:25:53	Darion Lanagan:	To*
+01:26:06	Jean Jacques SENOU:	@Ian please, How do you set up the AI strategy, UI, UX bot that you presented during previous section ?
+01:26:37	Darion Lanagan:	Do you guys also use lovabl I believe is the name
+01:26:57	Justin Novak:	lololololol
+01:28:58	Darion Lanagan:	So open Claude is the 1st step to make a bot right?
+01:29:07	Darion Lanagan:	& apps?
+01:30:57	Jean Rebel:	If I have an app idea with detail would I just feed the  into the bot and ask it to create an app for it?
+01:34:28	Ian Clarke:	Thanks. Bye
+01:34:32	Justin Novak:	Thanks Ian!
+01:34:36	Darion Lanagan:	I use Claude and tried to use aapp lovable to try to build an app. However didn’t come out nice, is there a link you guys can share to get old videos on Al that you guys have made to get more info so I can start doing my hw lol
+01:35:12	ian:	ian@ianpk.com
+01:35:15	Jean Rebel:	As a marketing consultant this SEO example shows if you aren’t up to speed in creating and using bots  - you will get left behind
+01:35:35	Ashwin Nair:	Thank you guys
+01:35:44	Peggy Tsai:	Thanks so much for this session!
+01:35:52	Jean Rebel:	Thank you!
+01:35:52	Darion Lanagan:	Please come back and share more please
+01:37:27	Jean Rebel:	How do I sign up to get invites to all of you sessions
+01:37:38	Justin Novak:	www.ai4ntp.com
+01:38:27	Debbie Elder:	Thank you Thank you,
+01:38:31	John Lawrence:	Thank you!
+01:38:31	Darion Lanagan:	Thank you

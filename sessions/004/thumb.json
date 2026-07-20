@@ -1,0 +1,20 @@
+{
+  "session_id": "004",
+  "status": "REPLAY",
+  "date": "",
+  "time": "",
+  "headline_line1": "7 AI tools",
+  "headline_pre": "",
+  "headline_highlight": "you've never heard of",
+  "headline_post": ".",
+  "tagline": "SEVEN TOOLS WE ACTUALLY USE",
+  "operators": [
+    { "img": "images/alec-saluga.jpg", "name": "Alec Saluga" },
+    { "img": "images/justin-novak.jpg", "name": "Justin Novak" }
+  ],
+  "headline_size": 150,
+  "card_w": 1280,
+  "card_h": 720,
+  "scale": 2,
+  "output": "thumbnail.jpg"
+}

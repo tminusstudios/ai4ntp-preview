@@ -1,0 +1,34 @@
+/* ============================================================
+   AI4NTP Reskin v1 — shared design layer (every page)
+   Loads AFTER each page's own CSS so these upgrades win the
+   cascade. Motion, sheen hovers, and button polish only; no
+   structural changes. See /reskin.js for the behavior half.
+   ============================================================ */
+
+/* ---- scroll reveal ---- */
+.rv { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22,1,0.36,1); }
+.rv.rv-in { opacity: 1; transform: none; }
+
+/* ---- sheen (overlay div injected by reskin.js, so zero
+   pseudo-element conflicts with page-specific ::after art) ---- */
+.rk-host { position: relative !important; overflow: hidden; }
+.rk-sheen {
+  position: absolute; inset: 0; pointer-events: none; z-index: 3;
+  background: linear-gradient(105deg, transparent 42%, rgba(212,255,58,0.30) 50%, transparent 58%);
+  transform: translateX(-125%);
+  transition: transform 0.9s cubic-bezier(0.22,1,0.36,1);
+}
+.rk-dark .rk-sheen { background: linear-gradient(105deg, transparent 42%, rgba(250,247,240,0.14) 50%, transparent 58%); }
+.rk-host:hover .rk-sheen { transform: translateX(125%); }
+
+/* ---- button upgrades (generator .btn/.btn-ghost, hand-built .btn,
+   featured CTAs): keep brand colors, add lift + lime glow ---- */
+.btn, .btn-ghost { transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.25s, box-shadow 0.25s; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(212,255,58,0.32); }
+.btn-ghost:hover { transform: translateY(-2px); }
+.cta-card .btn:hover { box-shadow: 0 12px 30px rgba(15,17,19,0.35); }
+.featured .cta { transition: background 0.2s, border-color 0.2s, transform 0.25s, box-shadow 0.25s; }
+.featured .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(212,255,58,0.35); }
+
+/* Motion note: gentle effects (reveals, sheen, hovers) run for everyone;
+   only scroll-hijacking (Lenis) and parallax stay gated in reskin.js. */

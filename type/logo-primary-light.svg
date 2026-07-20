@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 140" width="480" height="140">
+  <style>
+    .ai4ntp-wordmark { font-family: 'Fraunces', 'Times New Roman', serif; font-weight: 900; font-size: 120px; letter-spacing: -0.05em; }
+    .ai4ntp-four { font-style: italic; }
+  </style>
+  <rect width="480" height="140" fill="#0F1113"/>
+  <text x="240" y="105" text-anchor="middle" class="ai4ntp-wordmark" fill="#FAF7F0">ai<tspan class="ai4ntp-four" fill="#FAF7F0">4</tspan>ntp</text>
+</svg>

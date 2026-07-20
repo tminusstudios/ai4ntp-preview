@@ -1,0 +1,19 @@
+{
+  "session_id": "005",
+  "status": "REPLAY",
+  "date": "JUNE 30, 2026",
+  "time": "1:00 PM EST",
+  "headline_line1": "Three bakery businesses,",
+  "headline_pre": "",
+  "headline_highlight": "built with AI in one hour",
+  "headline_post": ".",
+  "tagline": "ONE AUDIENCE BRIEF · THREE AI BUILDS · FULL SHOW NOTES",
+  "operators": [
+    { "img": "images/ian-kilpatrick.jpg", "name": "Ian Kilpatrick" },
+    { "img": "images/justin-novak.jpg", "name": "Justin Novak" },
+    { "img": "images/alec-saluga.jpg", "name": "Alec Saluga" },
+    { "img": "images/brett-haralson.jpeg", "name": "Brett Haralson" }
+  ],
+  "headline_size": 116,
+  "output": "og-image.jpg"
+}

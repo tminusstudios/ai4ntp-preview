@@ -1,0 +1,35 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/r/:code", "destination": "/api/r?code=:code" },
+    { "source": "/internal", "destination": "/api/internal?doc=brief" },
+    { "source": "/internal/refer", "destination": "/api/internal-refer" },
+    { "source": "/internal/brief", "destination": "/api/internal?doc=brief" },
+    { "source": "/internal/model", "destination": "/api/internal?doc=model" },
+    { "source": "/internal/growth", "destination": "/api/internal?doc=growth" },
+    { "source": "/internal/growth-notes", "destination": "/api/internal?doc=growth-notes" }
+  ],
+  "redirects": [
+    {
+      "source": "/q",
+      "destination": "/sessions/001/assess",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "interest-cohort=()" }
+      ]
+    },
+    {
+      "source": "/logo-(.*).svg",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}

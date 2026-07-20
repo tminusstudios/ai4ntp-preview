@@ -1,0 +1,5 @@
+{
+  "_help": "Publish each Google Sheet tab to the web as CSV (File -> Share -> Publish to web -> pick the tab -> Comma-separated values (.csv)), then paste the two URLs below. They look like https://docs.google.com/spreadsheets/d/e/<id>/pub?gid=<gid>&single=true&output=csv",
+  "tools_csv_url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQn9lbPTDN9OI8iF_JFibXwaez3M39whXTGEKz132a-ECmgWsruMW6uKMcsHCHENa2YcStz3xXyGD5t/pub?gid=0&single=true&output=csv",
+  "episodes_csv_url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQn9lbPTDN9OI8iF_JFibXwaez3M39whXTGEKz132a-ECmgWsruMW6uKMcsHCHENa2YcStz3xXyGD5t/pub?gid=1417811987&single=true&output=csv"
+}

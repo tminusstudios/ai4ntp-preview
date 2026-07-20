@@ -1,0 +1,2408 @@
+WEBVTT
+
+00:00:23.000 --> 00:00:28.000
+Yeah, see that at the bottom of the screen there. Where in the world you're joining from
+
+00:00:28.000 --> 00:00:31.000
+Ohio
+
+00:00:31.000 --> 00:00:37.000
+Edinburgh, Scotland, Kentucky, Tennessee
+
+00:00:37.000 --> 00:00:39.000
+Bahrain
+
+00:00:39.000 --> 00:00:55.000
+New Jersey, San Fran, Dubai, Wisconsin, Atlanta. Awesome, guys. We're going, we're going global. Guys, this is gonna be a 60-minute segment. We're gonna build a company in real time using AI. We're gonna build the brand identity, a website
+
+00:00:55.000 --> 00:01:08.000
+And a go-to-market motion, including a newsletter, social media, and all kind of fun stuff. We're gonna do it live here in front of you, and we're gonna use AI to do all the heavy lifting
+
+00:01:08.000 --> 00:01:14.000
+But what makes this session really interesting and unique is that you guys pick what we built
+
+00:01:14.000 --> 00:01:24.000
+You guys pick what we build so nothing's pre-baked. There's no way we could have prepared for this. So I'm going to drop a link in the chat. Everyone click that link
+
+00:01:24.000 --> 00:01:28.000
+And you're going to submit your idea that you think we should build.
+
+00:01:28.000 --> 00:01:30.000
+You guys submit
+
+00:01:30.000 --> 00:01:35.000
+the idea that you want us to build today, and then we're all gonna vote on it
+
+00:01:35.000 --> 00:01:38.000
+So I'm going to share my screen here.
+
+00:01:38.000 --> 00:01:47.000
+And Brett is gonna be helping me co-moderate today. So, Brett, let's let's get you up on the stage while everyone's completing this quiz that I dropped
+
+00:01:47.000 --> 00:02:02.000
+Oh, hey, y'all, everybody. Glad to be here. Thanks for having me. This is exciting. AI is what you can do now is like incredible in the timeframe of what it used to take has been massively condensed. So I'm really excited to see
+
+00:02:02.000 --> 00:02:10.000
+What we come up with to build today. Oh, a real estate business. Andrew, did you… did you submit that? That would be amazing.
+
+00:02:10.000 --> 00:02:20.000
+Look at this. Build an AI filter to always give breath the best hair in the room. Name idea, no baldies. I like that.
+
+00:02:20.000 --> 00:02:21.000
+That could be the winner
+
+00:02:21.000 --> 00:02:22.000
+That's Alec picking on me
+
+00:02:22.000 --> 00:02:23.000
+Thanks, Alec.
+
+00:02:23.000 --> 00:02:28.000
+It wasn't me, I swear.
+
+00:02:28.000 --> 00:02:29.000
+So let's see
+
+00:02:29.000 --> 00:02:31.000
+So we're just gonna wait for a few more to come in
+
+00:02:31.000 --> 00:02:34.000
+Workforce transformation system.
+
+00:02:34.000 --> 00:02:35.000
+Online workout planning
+
+00:02:35.000 --> 00:02:39.000
+Oh, workout plan. That's cool.
+
+00:02:39.000 --> 00:02:45.000
+done-for-you movie rights
+
+00:02:45.000 --> 00:02:46.000
+Indify. That's cool.
+
+00:02:46.000 --> 00:02:55.000
+All right, guys, everyone get your submissions in. We're gonna run the AI synthesis and then all of you guys vote on what you want us to build.
+
+00:02:55.000 --> 00:03:00.000
+So we'll give you one more minute to get your ideas in.
+
+00:03:00.000 --> 00:03:02.000
+Brett, any favorites so far?
+
+00:03:02.000 --> 00:03:10.000
+I want to, I'm already fixing to take off and go do an adult go-kart business. I want to go ride a go-kart.
+
+00:03:10.000 --> 00:03:15.000
+Look at this. Something for parents and children staying afar
+
+00:03:15.000 --> 00:03:19.000
+That's cool. That's cool.
+
+00:03:19.000 --> 00:03:21.000
+I like all of these
+
+00:03:21.000 --> 00:03:24.000
+We had seven submissions so far. We've got about
+
+00:03:24.000 --> 00:03:29.000
+Let's see, 60 people in here, so let's just try to get a few more
+
+00:03:29.000 --> 00:03:38.000
+Rashi raised their hand. Rashi, I'm gonna bring you to stage if you have a question here. Oh, lowered his hand.
+
+00:03:38.000 --> 00:03:40.000
+All right.
+
+00:03:40.000 --> 00:03:44.000
+20 more seconds. Submit it if you haven't already link is in the chat
+
+00:03:44.000 --> 00:03:48.000
+Let's go get them submitted.
+
+00:03:48.000 --> 00:03:53.000
+So what happens when you run this AI synthesis? What happens?
+
+00:03:53.000 --> 00:04:00.000
+Brett, what happens is, and this is a tool I just built the other day using AI, is that
+
+00:04:00.000 --> 00:04:18.000
+It runs through a prompt in Claude, and Claude turns these into full-fledged business ideas here, a tech business to monitor AI solutions. AI watchdog. Nice. And so you'll see what happens here, Brett, is we're going to click run AI synthesis
+
+00:04:18.000 --> 00:04:23.000
+And then that link I have in the chat, if you guys open your link one more time
+
+00:04:23.000 --> 00:04:27.000
+This one in the chat here, you can now vote live
+
+00:04:27.000 --> 00:04:29.000
+So everyone submit your vote what you want to vote
+
+00:04:29.000 --> 00:04:39.000
+Oh, cool. Okay, I see it. Go to build cart pass, watchdog, Yeskia.
+
+00:04:39.000 --> 00:04:40.000
+I can see it.
+
+00:04:40.000 --> 00:04:46.000
+So everybody submit your boat
+
+00:04:46.000 --> 00:04:47.000
+These are all great, man.
+
+00:04:47.000 --> 00:04:50.000
+Let's see who wins. Whatever wins is what we're building, guys.
+
+00:04:50.000 --> 00:04:55.000
+These are great. Oh, cart pass just took the lead.
+
+00:04:55.000 --> 00:05:04.000
+Go to Build has the lead. Yeskie is tied. Oh, I feel like I'm what's that? Jeff from Survivor. Go to Build has six now in the lead.
+
+00:05:04.000 --> 00:05:09.000
+Workout plans. Oh, go-to builds got seven, eight.
+
+00:05:09.000 --> 00:05:14.000
+Ninth member voted off the tribe
+
+00:05:14.000 --> 00:05:20.000
+Looks like GoToBuild has it. That's nine 10 oh yeah, it's taking the lead now.
+
+00:05:20.000 --> 00:05:21.000
+It's off
+
+00:05:21.000 --> 00:05:22.000
+All right.
+
+00:05:22.000 --> 00:05:35.000
+We're gonna… we're gonna call it at 107. You guys have one more minute to vote. We got 57 people in here, so get your vote in. The link is in the chat where you can vote for what business we build live today in the next 53 minutes.
+
+00:05:35.000 --> 00:05:46.000
+What do you say, Brett?
+
+00:05:46.000 --> 00:05:47.000
+We're locking it
+
+00:05:47.000 --> 00:05:51.000
+I don't know, it's looking, I'm watching and I'm kind of addicted to this. I wasn't expected to be. So Jeske has got a go to's got 10. I think we're going to have to call it. I think go to build is going to be it. Really close though. So looks like we're going to be building
+
+00:05:51.000 --> 00:05:59.000
+Go to build a personalized wiki workout plan generated and updated that remembers you. That's cool.
+
+00:05:59.000 --> 00:06:08.000
+Ian, I have a feeling you're going to dig this one. I know you've built something in this realm before to fine tune your health and wellness.
+
+00:06:08.000 --> 00:06:24.000
+Hannah, so since Go to Build was your idea, make sure you send me an email. I have a giveaway for you. So my email is justin@aiforntp.com. Guys, we're going to be doing a few giveaways throughout this session. So Henna, make sure you shoot me an email to claim your prize. You're
+
+00:06:24.000 --> 00:06:27.000
+you're gonna really dig it. All right, Brett, what are we doing next?
+
+00:06:27.000 --> 00:06:46.000
+So we've got our business name, we've got our… we know what it is and who we're targeting. And Hannah, this one's… let's see if this resonates with you. So let's start with Ian. Where would you start? So we've got an idea, we want to get into a… we want to build this amazing
+
+00:06:46.000 --> 00:06:50.000
+at this company, this is where we want to start. Let's start with the company. Where would you start in?
+
+00:06:50.000 --> 00:06:53.000
+Well.
+
+00:06:53.000 --> 00:07:04.000
+This is a very high-speed brand kit I'm going to build 15 minutes is not much time, so typically, just as you were saying before, this would take weeks or even months of a lot of back and forth, but we're going to do a first draft
+
+00:07:04.000 --> 00:07:14.000
+pitch at a brand kit. So, where I would start, actually, let me pull up my screen here, and I'll just show you guys. I would start with… let me move this image
+
+00:07:14.000 --> 00:07:31.000
+With Behance. Behance is really just my go-to for inspiration. It's an Adobe product. They bought it years ago. It's basically where all the greatest designers in the world post their best stuff. So, I would go here just to, first off, if I don't know the industry, which I do know this one, but if I didn't know it
+
+00:07:31.000 --> 00:07:39.000
+I'll go here just to get a feel for what people are actually doing, what design trends are it. So this one is a
+
+00:07:39.000 --> 00:07:41.000
+Actually, let me pull it up again. So
+
+00:07:41.000 --> 00:07:43.000
+Personalized workout
+
+00:07:43.000 --> 00:07:49.000
+It's a weekly workout plan generated and updated by AI that remembers you. So think like
+
+00:07:49.000 --> 00:07:50.000
+Work
+
+00:07:50.000 --> 00:07:53.000
+Like, like workout plans, like, it helps you… yeah, it's a workout planner specifically for you. Yeah.
+
+00:07:53.000 --> 00:08:05.000
+Workout planner. Yeah, okay. So here's what I would do first. Most of them are apps, you know, that would be probably the first go-to if I were actually building it. As far as
+
+00:08:05.000 --> 00:08:08.000
+brand goes, this is
+
+00:08:08.000 --> 00:08:17.000
+Kind of all over the place, actually. It's men and women, there's some hard edge, there's some softer colors, so I'd probably actually go more like, let's say, workout logo or brand
+
+00:08:17.000 --> 00:08:20.000
+identity.
+
+00:08:20.000 --> 00:08:21.000
+So this will give us
+
+00:08:21.000 --> 00:08:29.000
+Now, Hannah, you're the star for this, so feel free to jump in. I'm watching chat. So if you want to throw in colors or something, we'll drive this for you. Go ahead, go ahead, Ian.
+
+00:08:29.000 --> 00:08:44.000
+Great. So yeah, I can kind of see like there's a lot of bold fonts, serif or sans serif fonts, these lime colors, maybe some blue. Yeah, a lot of greens. So after I get kind of a feel for what we're going for, I would actually switch over to
+
+00:08:44.000 --> 00:08:59.000
+Midjourney. So Midjourney is a text-to-image AI model that there are a lot of them out there as Nano Banana, there's Veo, there's, oh shoot, there's a bunch. But I started with this one, I just kind of, I understood it best, so this is the one I stick with
+
+00:08:59.000 --> 00:09:03.000
+I would actually go over here, go out, go work out, logo
+
+00:09:03.000 --> 00:09:12.000
+And I mean, none of these are really striking me, but I would find something that kind of like fits a workout planner. Let's try that.
+
+00:09:12.000 --> 00:09:13.000
+Work up
+
+00:09:13.000 --> 00:09:23.000
+Well, just to give you just to keep in mind, we do have a little bit of input from Hannah. Hannah wants yellow and sans serif color yellow henna and sans serif
+
+00:09:23.000 --> 00:09:30.000
+Okay, great. So let's throw that in as well. SIPA has this many. Okay.
+
+00:09:30.000 --> 00:09:32.000
+Oh
+
+00:09:32.000 --> 00:09:34.000
+Sans serif
+
+00:09:34.000 --> 00:09:43.000
+Not many logos here, but what I'm going to do next. So if I went, if I said, okay, let's do Apple one's not that great
+
+00:09:43.000 --> 00:09:45.000
+Let's do
+
+00:09:45.000 --> 00:09:46.000
+Let's just do this guy
+
+00:09:46.000 --> 00:09:47.000
+Yeah.
+
+00:09:47.000 --> 00:09:48.000
+Inspiration, right?
+
+00:09:48.000 --> 00:09:49.000
+That dude looks like he's… he's doing it
+
+00:09:49.000 --> 00:10:04.000
+So, actually, with Midjourney, you can actually… once you pick one, you're like, oh, I like this one. What else is there? You can hit this little magnifying glass, and it shows you other images similar to that made by the same creator or just similar in vibe. So, let's stick with the one we've got
+
+00:10:04.000 --> 00:10:10.000
+And we'll go over to ChatGPT now. So I'm going to say, make me a logo
+
+00:10:10.000 --> 00:10:12.000
+using this
+
+00:10:12.000 --> 00:10:16.000
+For a workout planner
+
+00:10:16.000 --> 00:10:19.000
+It's called GoTo
+
+00:10:19.000 --> 00:10:21.000
+build. I like that name.
+
+00:10:21.000 --> 00:10:22.000
+All right, so it
+
+00:10:22.000 --> 00:10:29.000
+And we've got some good feedback from the comments section. Hannah thinks it needs to be more gender neutral for the logo.
+
+00:10:29.000 --> 00:10:30.000
+It's a valid consideration.
+
+00:10:30.000 --> 00:10:32.000
+You know what? Probably right. I'm a man, so
+
+00:10:32.000 --> 00:10:33.000
+That's a good point. That's a good point.
+
+00:10:33.000 --> 00:10:34.000
+We're missing out on half of our customers.
+
+00:10:34.000 --> 00:10:36.000
+Yeah. No, no. Actually
+
+00:10:36.000 --> 00:10:41.000
+Actually, I think Henna likes the banana barbell. I think
+
+00:10:41.000 --> 00:10:42.000
+Let's see
+
+00:10:42.000 --> 00:10:43.000
+The banana barbell.
+
+00:10:43.000 --> 00:10:44.000
+Where is that?
+
+00:10:44.000 --> 00:10:45.000
+pick a yellow barbell. Yes, yes, yes, yes, yes
+
+00:10:45.000 --> 00:10:49.000
+Right here? Okay, okay. We are going with that one. Scratch that.
+
+00:10:49.000 --> 00:10:51.000
+That's cool
+
+00:10:51.000 --> 00:10:52.000
+That's
+
+00:10:52.000 --> 00:10:53.000
+Well, actually, I like that logo, but let's make it with the banana now. That'd be even better.
+
+00:10:53.000 --> 00:10:55.000
+That use this one instead. This is gonna be great.
+
+00:10:55.000 --> 00:11:11.000
+And why you do that, Ian, real quick, Diane wants to know, is Midjourney a free resource?
+
+00:11:11.000 --> 00:11:12.000
+Like inspiration.
+
+00:11:12.000 --> 00:11:16.000
+It does have a free account. You can do, I think it's like 10 images. You can generate images. I don't typically generate my own from scratch. I'll start with one of these. Let's say we did the banana one. I'll show you. Yeah, I'll go. So these are all other images that people have created
+
+00:11:16.000 --> 00:11:27.000
+Because it's got millions by now. And so you can actually click this and say, use this prompt, and it'll actually put the prompt in there, and I can say, make one just like it, and it'll be creating it right over here
+
+00:11:27.000 --> 00:11:41.000
+So, whoops, went back to the home. But for now, we'll just use the banana one. I actually, most of the time we'll take something for inspiration and then pull it into my illustrator or Photoshop and work with it there. Okay, so I've got ChatGPT working on a logo
+
+00:11:41.000 --> 00:11:42.000
+Oh, there we go.
+
+00:11:42.000 --> 00:11:50.000
+Not bad, not bad. So I'm going to actually take this image and go over to my open claw. So I have a
+
+00:11:50.000 --> 00:12:01.000
+open claw that is named E-I-A-I-N, because he's my digital clone. Okay, so I said it's call, go to build, it's a personalized weekly workout.
+
+00:12:01.000 --> 00:12:03.000
+Planner
+
+00:12:03.000 --> 00:12:11.000
+That I'll just, I'll keep it at that. Here is the logo. Make a brand kit.
+
+00:12:11.000 --> 00:12:27.000
+Okay, great. So I'm going to submit that to him. He's actually using another… a GPT 5.5 brain. He's going to produce a brand kit for me, a web style kit, on my website that I'm going to send that link over to Justin and Alec for their parts of the build.
+
+00:12:27.000 --> 00:12:29.000
+So
+
+00:12:29.000 --> 00:12:30.000
+Okay
+
+00:12:30.000 --> 00:12:36.000
+So real quick, for those of us who may just be slipping in, just so we have taken
+
+00:12:36.000 --> 00:12:47.000
+A poll from the audience. We have arrived at building a go-to build, which is a personalized weekly workout plan generated by AI. Hannah, in the audience. This is
+
+00:12:47.000 --> 00:12:57.000
+All of the choices that we've been making, yellow, banana, and we're just ripping on this, and now Ian is using Telegram to call his open cloud in the background
+
+00:12:57.000 --> 00:13:00.000
+To build a brand kit. I'm getting everybody caught up. Back to you, Ian, sorry.
+
+00:13:00.000 --> 00:13:08.000
+Yeah, great. All right, so I just submitted the full description to him. I just copy and pasted from the AI4NTP page.
+
+00:13:08.000 --> 00:13:18.000
+So while he's doing that, I'm actually going to switch back over here to Pexels. This is another free resource where you can search for, it's like Unsplash or any of these other free
+
+00:13:18.000 --> 00:13:29.000
+free stock photos, and you can use all of these. The great part is, with Midjourney or with Pexels, you can use all of these rights free. You don't have to pay anybody because nobody owns them.
+
+00:13:29.000 --> 00:13:38.000
+And Midjourney, you can even do video, and it's pretty impressive. So I'll go over here, and I'm gonna say fitness
+
+00:13:38.000 --> 00:13:44.000
+Oops, fitness. Let's just search fitness and see what we get. Okay.
+
+00:13:44.000 --> 00:13:46.000
+Maybe
+
+00:13:46.000 --> 00:13:56.000
+What I'm looking for now are, like, more images to put into the brand kit so that we have things to work with. Basically, the tone of it. So was it Henna that
+
+00:13:56.000 --> 00:13:57.000
+Yes.
+
+00:13:57.000 --> 00:14:09.000
+Suggested this one? All right, give me some ideas for imagery. These look mostly masculine. Let's try, well, there
+
+00:14:09.000 --> 00:14:10.000
+Barbells, yes
+
+00:14:10.000 --> 00:14:11.000
+So I think like the barbells or yeah, yeah, I bet.
+
+00:14:11.000 --> 00:14:16.000
+So, another one with Pexels, you can click that, and then also go down here and see more images like it. So
+
+00:14:16.000 --> 00:14:18.000
+Where are the yellow ones? We need a yellow one
+
+00:14:18.000 --> 00:14:23.000
+Actually, let's click this and see if it gives us yellow.
+
+00:14:23.000 --> 00:14:25.000
+Okay, okay. Here we go
+
+00:14:25.000 --> 00:14:27.000
+We are time constrained. There we go, grab it, grab it.
+
+00:14:27.000 --> 00:14:32.000
+Yeah, yeah. I'm going to grab that and I'm going to give that to
+
+00:14:32.000 --> 00:14:34.000
+him as well
+
+00:14:34.000 --> 00:14:48.000
+And go find a few more, but I'll put I'll be putting all of these into the brand book and let me go see if he's already finished it. Use this for photo direction
+
+00:14:48.000 --> 00:14:49.000
+Oh, great.
+
+00:14:49.000 --> 00:14:50.000
+And you've got 6 minutes left. Pressure's on.
+
+00:14:50.000 --> 00:14:54.000
+No, all good. Okay.
+
+00:14:54.000 --> 00:14:56.000
+Go to build. So let me
+
+00:14:56.000 --> 00:15:02.000
+Let me check on the website and see if it's… if he's got it. So it's empk.com slash go to build.
+
+00:15:02.000 --> 00:15:04.000
+There we go.
+
+00:15:04.000 --> 00:15:05.000
+Working on it
+
+00:15:05.000 --> 00:15:19.000
+Okay, he's still working on it, because there's no styles in there yet. So once I find some imagery, I will actually go over to like Google fonts, because Google fonts are great because you can use them on your website and download them and use them locally. So it's free as well. You just I don't think you even have to have
+
+00:15:19.000 --> 00:15:26.000
+an account. But I will, I'll pull some fonts from here. Let's try some
+
+00:15:26.000 --> 00:15:28.000
+Well, let's try sans serif over here
+
+00:15:28.000 --> 00:15:31.000
+Yeah.
+
+00:15:31.000 --> 00:15:32.000
+Yeah.
+
+00:15:32.000 --> 00:15:35.000
+Serif, sans-serif, there we go. All let's go, like, actually, let's go grotesque and see if
+
+00:15:35.000 --> 00:15:37.000
+These strike us
+
+00:15:37.000 --> 00:15:38.000
+Hmm…
+
+00:15:38.000 --> 00:15:47.000
+something kind of sporty. How about italicize? Let's try… you know, I… one of my favorites, actually, is Archivo
+
+00:15:47.000 --> 00:15:48.000
+Yeah, I like that.
+
+00:15:48.000 --> 00:15:52.000
+This one because it has a great bold italic bold italic one. So I'm going to use that one
+
+00:15:52.000 --> 00:15:54.000
+Use Archivo
+
+00:15:54.000 --> 00:15:57.000
+What is that one called?
+
+00:15:57.000 --> 00:15:59.000
+The weight
+
+00:15:59.000 --> 00:16:00.000
+900 font. Wait
+
+00:16:00.000 --> 00:16:06.000
+This is good questions. We've got good questions. Yeah, if you're asking questions, we're gonna we'll circle back at the end of a lot of those. That's a good question, Gene.
+
+00:16:06.000 --> 00:16:13.000
+Main font. And I'm going to tell my AI just choose another font. Secondary font.
+
+00:16:13.000 --> 00:16:28.000
+That works. And let him… let him choose. And then after that, what we'll… I'll actually do is go over here to Instant Domain Search, and I'll search for, like, go… oops, go to build, and see what comes up. So this shows me all the options that are available for name… domain names
+
+00:16:28.000 --> 00:16:29.000
+So what is that instant domain search? That's great.
+
+00:16:29.000 --> 00:16:42.000
+Instant domain search, yeah. Yeah, it's an awesome tool. And then you can click it and go straight to GoDaddy. I prefer Namecheap just because it's cheaper. It's about 60% of the price of GoDaddy.
+
+00:16:42.000 --> 00:16:48.000
+But I would go like, oh, go to build.pro. That sounds kind of cool. Let's see if it actually is available. Make sure it is.
+
+00:16:48.000 --> 00:16:51.000
+Oh, that's cool.
+
+00:16:51.000 --> 00:16:52.000
+With a three-year term.
+
+00:16:52.000 --> 00:17:04.000
+It is for one cent. So I'll probably buy that domain here and then point it at the final product when we're all done here. So let me check on him here. First pass is live. Okay, he says it's live. Let's double check
+
+00:17:04.000 --> 00:17:05.000
+Okay
+
+00:17:05.000 --> 00:17:06.000
+Oh, there we go.
+
+00:17:06.000 --> 00:17:12.000
+It's got some yellow, it's got some of the, let's see if we have archival in there yet
+
+00:17:12.000 --> 00:17:14.000
+Banana energy.
+
+00:17:14.000 --> 00:17:17.000
+I love it. At Clarity. There we go.
+
+00:17:17.000 --> 00:17:21.000
+This is great. Got some blue. See, okay, so color theory really quick. How much time do I have, Justin?
+
+00:17:21.000 --> 00:17:23.000
+You've got four minutes.
+
+00:17:23.000 --> 00:17:40.000
+Okay, great. So color theory, yellows and reds, or not reds, but yellows in these lime greens and bright colors are much more vibrant, make you awake, feel like you're advanced, a lot more fitness focused. Blues, blues are good to have in a palette because it's a cooler color and it sets it apart. So if you need a call to action
+
+00:17:40.000 --> 00:17:46.000
+Or some way to drive the customer to the next thing. If it's all yellow, yellow blends in. So you want something to stand out.
+
+00:17:46.000 --> 00:18:03.000
+But also, if you were to pick blue, maybe not this blue, but more of, like, an IBM blue, it connotes more slow moving and more trust. That's why banks use it a lot, and larger tech firms. So this one, the colors are actually right on, especially because it's gender neutral, has a lot of.
+
+00:18:03.000 --> 00:18:14.000
+fun, cooler, but also a real hot, you know, tempo red here. I'm actually loving this, so… Oh, he chose the wrong color fonts. Let's see if he updated that yet.
+
+00:18:14.000 --> 00:18:27.000
+Let's check in with Ian. He's still working. Okay, there we go.
+
+00:18:27.000 --> 00:18:28.000
+Yes, yes. Actually.
+
+00:18:28.000 --> 00:18:30.000
+So Ian, you just created this is the brand identity, the brand book. This is not the website, correct? This is just for Alec to now build the consumer facing website. Is that what you did here with
+
+00:18:30.000 --> 00:18:34.000
+Yeah, make this brand kit
+
+00:18:34.000 --> 00:18:40.000
+downloadable put the link oops
+
+00:18:40.000 --> 00:18:55.000
+In the header. Okay, so I'm going to make this downloadable so you guys can actually download the HTML or the PDF and give that to your bots. But this is actually one of the best ways, even the link, you can just copy the link and give it to Claude or chat or whoever, and it will be able
+
+00:18:55.000 --> 00:19:09.000
+To search it, read it, and read all the styles, because it's reading the back-end code as well, and pull from that, and build out whatever it is that you're building. And the bigger and the stronger you make this right now, this is really a 10-minute build
+
+00:19:09.000 --> 00:19:20.000
+The stronger you make it, the more time you spend with it, the tighter it gets, and then everything across all the web presence or apps, or whatever you do will be brand aligned. So
+
+00:19:20.000 --> 00:19:22.000
+Is that the end of my time?
+
+00:19:22.000 --> 00:19:23.000
+Maybe my question
+
+00:19:23.000 --> 00:19:26.000
+We've got two more minutes, E
+
+00:19:26.000 --> 00:19:27.000
+Okay, good.
+
+00:19:27.000 --> 00:19:28.000
+Well, do you want to keep going, Ian?
+
+00:19:28.000 --> 00:19:30.000
+No, no, go ahead. What's your question?
+
+00:19:30.000 --> 00:19:38.000
+Well, I know, so we built the brain kit for those who may just be joining us. We've built the brand kit off of a poll
+
+00:19:38.000 --> 00:19:39.000
+Yep.
+
+00:19:39.000 --> 00:19:46.000
+of a business, go to build. Alec, when it's your turn, my question is, like, if we're gonna build the website on this and Henna has an idea of
+
+00:19:46.000 --> 00:19:55.000
+Who they want to come to this business. Is that the right time to sort of pass that to you, or do we need to bake that into brand kit?
+
+00:19:55.000 --> 00:19:58.000
+The audience
+
+00:19:58.000 --> 00:19:59.000
+Yeah.
+
+00:19:59.000 --> 00:20:15.000
+Audience actually would be part of a brand kit. Same with voice tone, which I think is probably included in here. Positioning, actually, right here, audience, busy beginners, returning lifters, casual athletes, and people who like structure but do not want to become spreadsheet monks. Okay
+
+00:20:15.000 --> 00:20:16.000
+Yeah.
+
+00:20:16.000 --> 00:20:23.000
+That's actually really good. So what Hannah said was they want it to be for young adults, fitness by themselves or little ones, so beginners would be great. So this probably fits that. That's fantastic.
+
+00:20:23.000 --> 00:20:26.000
+Great.
+
+00:20:26.000 --> 00:20:41.000
+Great. Yeah, promise, personality. So it's a… I mean, once I say brand kit to an open claw or an AI, it knows, it knows the parameters it's working with and it will make it fit the standard template across the industry. So I will actually continue working on this to give it a few more like
+
+00:20:41.000 --> 00:20:52.000
+Logo uses and fonts and then build out some other things. I'll show you guys at the end, but meantime, Alec, I'm going to send you this link, and you can go ahead and
+
+00:20:52.000 --> 00:20:54.000
+And start building your part
+
+00:20:54.000 --> 00:20:55.000
+Let's do it, guys. Let's build
+
+00:20:55.000 --> 00:20:57.000
+So what's the next step, Alec? What are you going to be doing?
+
+00:20:57.000 --> 00:21:18.000
+So I'm going to share my screen and you'll see once that comes through, I have two things up here. One is lovable, one is Claude Code. If anyone has used Claude Code, I'd love to get kind of a feel from the chat on who's used that before. I'm going to be doing both because our end goal and our output here can be achieved with both of these platforms
+
+00:21:18.000 --> 00:21:35.000
+One, lovable is much more user friendly, much more focused on beginners, really. And then Claude Code is a little bit more advanced. There's going to be a couple more steps to actually get anything that we build into production. So I'm going to show you guys both, and we're going to compare the results. And
+
+00:21:35.000 --> 00:21:36.000
+Go ahead.
+
+00:21:36.000 --> 00:21:41.000
+Alec, I'm sorry, real quick before we jump into this, let me, for anybody who may have joined, I want to make sure that we're all aligned.
+
+00:21:41.000 --> 00:21:59.000
+So this is… we're doing a live build session. Ian just built a brand kit from somebody from Henna inside our audience, who picked a business. We chose to build GoToBuild is the business. It's a gym. Ian has built the brand kit. Now, Alec has taken that brand kit
+
+00:21:59.000 --> 00:22:06.000
+And it's going to build a website, a user front-end facing website to attract business. Okay, Alec, back to you. Sorry.
+
+00:22:06.000 --> 00:22:24.000
+Brett, thank you for that. Thank you for the context. First off, just want to make a quick note and just a little streaks of it super zoomed in here, but the fact that Ian was able to knock something like this out in 15 minutes is incredible. I mean, when you think about five years ago, even a couple years ago, this is something that truly would take days
+
+00:22:24.000 --> 00:22:41.000
+weeks to get something like this built out. So great job to Ian. It gives me, you know, really good kind of starting point to build off of. So in the same sense, you know, we have kind of the two platforms that we're going to build or the two tools that we're going to build with, one being Claude Code, other one being lovable
+
+00:22:41.000 --> 00:23:02.000
+We're going to take kind of a similar approach to what Ian did. We're going to look for kind of inspiration and, you know, some things that are already out there in the market to see what we like and get kind of a, you know, a good layout for the site that we're going to build. I don't think we're going to do really any functionality of the app. We actually might have time to build in kind of a rough version. We're going to be focusing on is just building kind of the front end
+
+00:23:02.000 --> 00:23:18.000
+things that, like, kind of a landing page that customers will visit, and then that'll prompt them to go get the app, or if we're doing a web, we'll consider it a web app for now. So we're just going to go look at, we're going to go work out apps, and we're going to go look at some existing
+
+00:23:18.000 --> 00:23:20.000
+sites and existing pages.
+
+00:23:20.000 --> 00:23:24.000
+So, this all looks like a mobile app
+
+00:23:24.000 --> 00:23:28.000
+I like it. I think it's pretty clean, not great. I think
+
+00:23:28.000 --> 00:23:39.000
+We'll go for kind of a darker look
+
+00:23:39.000 --> 00:23:40.000
+Yeah
+
+00:23:40.000 --> 00:23:41.000
+So we're just kind of getting some inspiration to see what other people have done right now. Just looking
+
+00:23:41.000 --> 00:23:58.000
+Okay, I like this. I think this looks pretty good. So with any really any time you're using AI, whether you're using ChatGPT, whether you're building an app or a website with something like Claude Code or Lovable, the more context, the better. So when we could feed this in as an example, it's going to
+
+00:23:58.000 --> 00:24:17.000
+Get us a better output first go. And all of these processes are always super iterative. You start with kind of your initial output and then you tweak it from there and refine it. But the more context you can get upfront, the better result that you're going to get on the first go. So I think this looks pretty good. So I'm going to use shout out to Ian for putting me on to this. Take
+
+00:24:17.000 --> 00:24:28.000
+This Chrome extension here, I can take a screenshot of this entire website here in one go without having to take 50 screenshots. So shout out to Ian for that. So I'm going to save that
+
+00:24:28.000 --> 00:24:29.000
+I'm gonna save it into
+
+00:24:29.000 --> 00:24:33.000
+I know the question's coming. What is this?
+
+00:24:33.000 --> 00:24:35.000
+The Chrome extension
+
+00:24:35.000 --> 00:24:36.000
+Yes.
+
+00:24:36.000 --> 00:24:47.000
+Ian, I'll let you take that one.
+
+00:24:47.000 --> 00:24:48.000
+That's really
+
+00:24:48.000 --> 00:24:49.000
+That's called Fireshot. It's a free Chrome extension that takes a full screenshot of an entire website. So you can hit it and then it'll give you the option to save it as a download. And it's awesome.
+
+00:24:49.000 --> 00:25:02.000
+Well, it's really great, too, especially when you're browsing for inspiration and you like this page, or you like that page, and you want to, you know, catalog and dump it into an AI prompt, which is basically what Alex is doing now. It's really nice.
+
+00:25:02.000 --> 00:25:10.000
+And Ian, all the tools you used to make this brand identity, how much do you spend per month on everything you used?
+
+00:25:10.000 --> 00:25:27.000
+Right here, let's see, Midjourney is about 29 a month. It just went up. Behance, you can use it for free. I have an Adobe account, but I don't think I get anything different. Google fonts is free. Pexels is free. ChatGPT is 20 bucks a month
+
+00:25:27.000 --> 00:25:30.000
+And so, looking at, like, around 50
+
+00:25:30.000 --> 00:25:31.000
+Wow.
+
+00:25:31.000 --> 00:25:32.000
+For the whole thing.
+
+00:25:32.000 --> 00:25:35.000
+50 bucks. 50 bucks. Guys, in the chat, what do you think of Ian's build? He did that in 15 minutes for 50 bucks
+
+00:25:35.000 --> 00:25:39.000
+Be nice, be nice.
+
+00:25:39.000 --> 00:25:51.000
+Throw some love in the chat if you liked it. Say you loved it. Say you hated it. But for 50 bucks in subscriptions, Ian created that entire brand identity in 15 minutes. Sure, it needs a little bit of love, but
+
+00:25:51.000 --> 00:25:54.000
+Gets us off to a great start for this session.
+
+00:25:54.000 --> 00:25:55.000
+Yeah, great work, Ian.
+
+00:25:55.000 --> 00:25:56.000
+It's a yellow banana. What's not to like?
+
+00:25:56.000 --> 00:26:02.000
+One quick thing for you, Ian. This… is this currently downloadable? Did we get that functionality added with the download button?
+
+00:26:02.000 --> 00:26:06.000
+He is adding that right now, actually refresh real quick. I think it might be
+
+00:26:06.000 --> 00:26:22.000
+Okay, what I'm going to do is you'll see that I took a screenshot of everything using that Chrome extension. I'm going to copy in all of the text off of this, and I'm going to drop that into both Claude code as well as lovable here. Again, context is everything. The more context that we could give it
+
+00:26:22.000 --> 00:26:30.000
+the better. So I'm going to copy all this here and I'm going to drop that in
+
+00:26:30.000 --> 00:26:31.000
+Yes.
+
+00:26:31.000 --> 00:26:41.000
+I wonder how many people that are watching have done some level of this in their professional life, building a brand kit or being a part of a website build that took
+
+00:26:41.000 --> 00:26:48.000
+Weeks, months. And what we're doing here is just blowing you away. I'm just curious.
+
+00:26:48.000 --> 00:26:56.000
+Yeah guys, just drop a yes in the chat if you've been involved in an initiative like this, branding, design
+
+00:26:56.000 --> 00:27:16.000
+All right, so now that I have the context and with Claude Code, it's a little bit different than Lovable. It's kind of easy to drag and drop into Lovable all the files that you have, all these, you know, different screenshots that we have. With Claude Code, it's a little bit different. You kind of work out of a folder. So you see I have my folder here that I work out of that has some of our assets
+
+00:27:16.000 --> 00:27:34.000
+And then they both build for like getting an actual display of what it's building. Lovable is a little bit more user-friendly, and we'll show you in real time. Whereas with Claude Code, you have to deploy to localhost to get a look at it. So we'll see all that in a second here. So I'm going to now drop my prompt in to start building this out
+
+00:27:34.000 --> 00:27:49.000
+I'm going to use a tool called Whisperflow. If you guys are using that, great. If you're not, I highly recommend it. It's something I use every day. Basically, what it is, it's voice dictation. So it's like, you know, voice text on your phone, but it's actually good. So I'm going to say
+
+00:27:49.000 --> 00:28:03.000
+We are building a workout app. I want to build the landing page. I attached an example. I attached our brand kit below and some context. Please build.
+
+00:28:03.000 --> 00:28:16.000
+Okay, so I'm going to drop that into Claude as well. And then we're going to let them both build kind of side by side here. I need to get the rest of the assets in here
+
+00:28:16.000 --> 00:28:21.000
+So we're basically taking the brand kit that Ian built 10 minutes ago
+
+00:28:21.000 --> 00:28:23.000
+Putting
+
+00:28:23.000 --> 00:28:29.000
+Building a website with lovable and with Claude at the same time in tandem. This is going to be an interesting experiment.
+
+00:28:29.000 --> 00:28:49.000
+Yeah, it'll be interesting to see what gives us a better initial output because with either of these, we can get it to where we want it to be by just like saying, hey, change this, change that. And using a tool like Wisp Flow makes it super easy because it's whatever's on your mind, press a button, start talking, and it'll transcribe it. So makes the process super easy, but it's always interesting to see
+
+00:28:49.000 --> 00:28:59.000
+What will get us the best result? On the, on the first go here. So I think, Justin, how are we on time right now?
+
+00:28:59.000 --> 00:29:00.000
+You're good.
+
+00:29:00.000 --> 00:29:01.000
+You've got seven more minutes
+
+00:29:01.000 --> 00:29:09.000
+Seven. Okay, definitely good to get our landers built out here. We'll see if we can get some functionality and see if we can have like an AI workout plan generator or something along those lines.
+
+00:29:09.000 --> 00:29:25.000
+So real quick, Alec, this is really interesting. Adams has been doing this for a while. He and his dad are software engineers and graphic designers, and they've been building companies for over a decade. And this is like a huge
+
+00:29:25.000 --> 00:29:33.000
+time saver, just what we're doing. Adams has been doing this for forever. Like, it's crazy what we're doing in 10 minutes.
+
+00:29:33.000 --> 00:29:34.000
+It's crazy.
+
+00:29:34.000 --> 00:29:47.000
+Yeah, no, it's unbelievable. It allows you to, as an individual, be able to accomplish much more than you would have been able to in the past. I mean, even when you compare what we're doing right now to a WordPress or Wix, like a traditional drag and drop
+
+00:29:47.000 --> 00:30:05.000
+Web builder. I personally think it's absolutely obsolete and is something that we'll all view as a thing of the past, and you're already starting to see platforms like Wix having, you know, a kind of a lovable type interface that allows you to kind of just prompt it to build something instead of having these, you know, drag and drop
+
+00:30:05.000 --> 00:30:25.000
+type features to build sites, so it's definitely the future, and it allows you to work a lot faster, and honestly, you know, you're seeing site speed be much better, and it's just all around a better experience, so it's truly incredible what can be done with these tools, and you'll see… you see how easy it is to use Lovable. It's literally you sign up for it. I believe there's a free tier
+
+00:30:25.000 --> 00:30:44.000
+You prompt in natural language what you want, and then you iterate on that based on the outputs that you get. So lovable, super easy tool, Claude code, a little bit more, you know, takes a little bit more time to get the hang of it, but once you have it down, you know, it becomes second nature.
+
+00:30:44.000 --> 00:30:45.000
+Exactly.
+
+00:30:45.000 --> 00:30:48.000
+I mean, we're literally sitting here talking and it's building things for us. Look, Claude has a checklist. I didn't come up with that
+
+00:30:48.000 --> 00:30:57.000
+No, there's a lot of good memes about that. It'll be like, you know, clocking in to prompt Claude and then scroll reels while it's working.
+
+00:30:57.000 --> 00:31:05.000
+I mean, I gotta say, I wonder, Hannah, you're going to be judging this at the end. Is this your dream banana?
+
+00:31:05.000 --> 00:31:10.000
+workout center, I mean, we're not fooling around up here.
+
+00:31:10.000 --> 00:31:11.000
+So what, oh, here we go, here we go. First view.
+
+00:31:11.000 --> 00:31:15.000
+All right, guys, about to have an output here. Let's see what we got.
+
+00:31:15.000 --> 00:31:18.000
+All right, so
+
+00:31:18.000 --> 00:31:31.000
+got a very… it looks very similar to E Insight. I'm going to switch this into bypass permission mode so this can work a little bit faster. So this is kind of our first go at the website
+
+00:31:31.000 --> 00:31:36.000
+In here, let's make this full screen so we could all get a better look at it.
+
+00:31:36.000 --> 00:31:37.000
+Yeah, let's see
+
+00:31:37.000 --> 00:31:43.000
+Okay, here's what we got. So definitely in line with the brand kit.
+
+00:31:43.000 --> 00:31:44.000
+Yes
+
+00:31:44.000 --> 00:32:04.000
+Some nice animations here. I would say, as far as like the you know example site that we gave it, not super in line with that, definitely much more in line with the brand head and how that looked. But overall, I mean, a great starting point, especially considering all we did was drag some information in
+
+00:32:04.000 --> 00:32:21.000
+And, you know, kind of tell it what to do. So this is first go. And you see that that took us, what, less than 10 minutes with me explaining it. So if your head's down, you can work a little bit faster here. Looks like Claude is done as well, so I'm going to say
+
+00:32:21.000 --> 00:32:23.000
+deploy to localhost
+
+00:32:23.000 --> 00:32:24.000
+Again, there's a little whisper flow action for you
+
+00:32:24.000 --> 00:32:26.000
+Yeah, I'm curious to see this.
+
+00:32:26.000 --> 00:32:36.000
+Yeah, we'll see what we have here. It'll be really, really interesting to see what, you know, what looks better. And then again, either way
+
+00:32:36.000 --> 00:32:51.000
+We can get to our desired output, especially for something like a a website landing page where there's not a lot of, you know, back end logic or any complexity like that. You can always get to to what you need using something like lovable. So my
+
+00:32:51.000 --> 00:32:54.000
+I've gone a few
+
+00:32:54.000 --> 00:32:55.000
+Go ahead.
+
+00:32:55.000 --> 00:33:02.000
+Well, like I think you're doing too good of a job. Shivani said, I'm actually more keen on using the workout app now than AI.
+
+00:33:02.000 --> 00:33:03.000
+Okay, here we go.
+
+00:33:03.000 --> 00:33:04.000
+Oh, I like this.
+
+00:33:04.000 --> 00:33:05.000
+Oh, that's like
+
+00:33:05.000 --> 00:33:19.000
+So this is definitely more in line with the example that we gave it. This looks pretty clean. I mean, the dark mode, it's very kind of techy and gives it more of an app look, I would say.
+
+00:33:19.000 --> 00:33:20.000
+I wish we had
+
+00:33:20.000 --> 00:33:21.000
+It's very polished
+
+00:33:21.000 --> 00:33:28.000
+Yeah, it's very polished. I would. I wish we had something in place ahead of time to get a vote here on
+
+00:33:28.000 --> 00:33:29.000
+What we like
+
+00:33:29.000 --> 00:33:34.000
+We just, Hannah, which one do you like? Do you like the one's the lovable.
+
+00:33:34.000 --> 00:33:35.000
+Do you like the lovable
+
+00:33:35.000 --> 00:33:36.000
+This is loveable right here. And then this is
+
+00:33:36.000 --> 00:33:37.000
+Or do you like the clawed
+
+00:33:37.000 --> 00:33:38.000
+God.
+
+00:33:38.000 --> 00:33:41.000
+This is the Claude
+
+00:33:41.000 --> 00:33:44.000
+Shivani likes lovable.
+
+00:33:44.000 --> 00:33:48.000
+But I'm curious about Hannah. And Doris also likes Claude
+
+00:33:48.000 --> 00:33:59.000
+Yeah, I'd say anyone either drop Lovable or Claude in the chat. I'd love to get some feedback on what did a better job first go.
+
+00:33:59.000 --> 00:34:00.000
+Wow
+
+00:34:00.000 --> 00:34:01.000
+Oh, it's we're split down the middle. I feel like I'm back to Jeff at Survivor. And the first one voted off the… I'm just kidding.
+
+00:34:01.000 --> 00:34:06.000
+Lovable.
+
+00:34:06.000 --> 00:34:07.000
+barely
+
+00:34:07.000 --> 00:34:09.000
+I would like Claud's how I don't know. Henna like well I will say Henna likes Claude.
+
+00:34:09.000 --> 00:34:10.000
+Okay.
+
+00:34:10.000 --> 00:34:13.000
+Okay, here's what we're going to do very, very quick.
+
+00:34:13.000 --> 00:34:22.000
+We are going to try to build a little bit of functionality here to have AI give us a workout plan. Justin, how am I on time? Probably like two minutes, right?
+
+00:34:22.000 --> 00:34:25.000
+If you want to do a workout plan, we'll give you… we'll give you 5 more, Alec
+
+00:34:25.000 --> 00:34:26.000
+Okay, let's do it.
+
+00:34:26.000 --> 00:34:28.000
+So, 140.
+
+00:34:28.000 --> 00:34:29.000
+Okay, cool.
+
+00:34:29.000 --> 00:34:31.000
+This is a big goal you have here, so let's see what you can do in 5 minutes.
+
+00:34:31.000 --> 00:34:33.000
+Alright, let's knock it out
+
+00:34:33.000 --> 00:34:45.000
+Okay, we want to do a demo. I needed an MVP of AI generating workout plan. I'm going to give you a OpenAI API key. I'll put that in the environment file so
+
+00:34:45.000 --> 00:34:57.000
+build that out, build it so I can say what areas I want to work on, what my age, weight, goals are, and it'll give me a workout plan just for the week.
+
+00:34:57.000 --> 00:35:04.000
+Build out that functionality, I'll upload the Api key, and then make those updates.
+
+00:35:04.000 --> 00:35:09.000
+All right, so I'm going to do this. I'm actually going to do this in both
+
+00:35:09.000 --> 00:35:12.000
+May as well see what we can do.
+
+00:35:12.000 --> 00:35:30.000
+And just to give you guys an idea of what can be done because like right now you're seeing me do this for a workout app, but the same logic can be reapplied for whatever it is you're trying to build. Whether you're trying to build an internal tool like an internal quoting tool or truly whatever you can think of
+
+00:35:30.000 --> 00:35:42.000
+You're seeing in real time that these things can be done, whereas a couple of years ago, everyone has ideas like, man, there should be an app for that or whatever. Now you can do it. And this is just kind of going to be a display of that
+
+00:35:42.000 --> 00:35:49.000
+I don't know if y'all are watching chat explode, but there's like marketing craziness happening. People are like.
+
+00:35:49.000 --> 00:35:58.000
+They're spitballing ways to segment user audiences. Like crazy stuff's happening over here. This is insane. I'm loving this
+
+00:35:58.000 --> 00:35:59.000
+I got you, it's exciting.
+
+00:35:59.000 --> 00:36:02.000
+I don't have any eyes on the chat, but once my segment's over, can't wait to check it out.
+
+00:36:02.000 --> 00:36:04.000
+That's cool.
+
+00:36:04.000 --> 00:36:20.000
+Okay, cool. So this should take a second here. But yeah, I want everyone in the room to just be thinking a little bit bigger now that you see what's possible and see what can be built out here. And that the technical moat has, in a lot of cases
+
+00:36:20.000 --> 00:36:26.000
+been withered away. You don't have to be like, no, I don't, you know, I'm not a developer. I can't build that
+
+00:36:26.000 --> 00:36:51.000
+You can build it. You can use Cloud Code, you can use Lovable. So it's a reps thing. It's a get in there and try it, try to use the tools, build out something internally that could make your life easier. If you're doing something every day at work where it's like, hey, I have to generate this report every day, and you can make, like, a little app using Lovable or Claude where you can easily input the information, format it and the report for you. Something as simple as that. I just want everyone
+
+00:36:51.000 --> 00:37:08.000
+to be thinking of things that can make your life easier. And hey, maybe it is something where it's like, oh yeah, I'm building websites every day, and I'm using WordPress. I would strongly advise you to try a different tool. I would advise you to try one of these lovable Claude Code codecs, any of the kind of
+
+00:37:08.000 --> 00:37:12.000
+Natural language prompting tools. I would strongly recommend everyone tries them.
+
+00:37:12.000 --> 00:37:16.000
+I get asked this a lot, but I'm going to ask you in front of everybody
+
+00:37:16.000 --> 00:37:17.000
+Put me on the spot, Brad.
+
+00:37:17.000 --> 00:37:27.000
+When you see all of this and you understand it, even Adams was talking about how he's done this for decades with his father and building brand kits and websites. When you see
+
+00:37:27.000 --> 00:37:30.000
+this happened in 10 min.
+
+00:37:30.000 --> 00:37:35.000
+If somebody wants to start, where do you send them? Like where do they start?
+
+00:37:35.000 --> 00:37:52.000
+Yeah, absolutely. It's a great question. And that's honestly the entire reason and kind of building these in tandem here is to show you a very low barrier to entry, as well as something a little bit more advanced. And truthfully, Claude Code is something anyone in this room is capable of
+
+00:37:52.000 --> 00:38:12.000
+getting their arms wrapped around. But lovable, I think, is the kind of lowest friction way to getting started. It's something anyone could go make an account right now. It has the same window we started with that's, let's build something, tell it what you want to build. You might not get a great result on your first go, but you'll learn over time with those repetitions on what gives you good results
+
+00:38:12.000 --> 00:38:42.000
+So, that's where I would say your starting point is. I'd say now, because the big thing with all, and this applies to really anything in AI and outside of just this limited use case is first you have to kind of have to be aware of the tools. So being here is a great step to becoming aware of what's out there and what's available. And then the second step is using them. If you're just learning all day and you're never learning how to use the tools or trying to use them
+
+00:38:51.000 --> 00:38:52.000
+Right.
+
+00:38:52.000 --> 00:38:54.000
+It's not going to get you anywhere. So I would say to anyone that's looking to start that hasn't used anything like this before, just think of a small use case. Try to build a little personal website for yourself, or like maybe you're paying for something like Linktree, and you could go build your own link tree instead. That is what I would advise everyone to do
+
+00:38:54.000 --> 00:38:56.000
+And actually, sorry.
+
+00:38:56.000 --> 00:38:57.000
+Good
+
+00:38:57.000 --> 00:39:10.000
+I know I'm probably at risking going over time. I just dragged my cloud code out of view real quick. I'm going to put my API key in here to everyone who is not a developer, do not be careful with your API keys
+
+00:39:10.000 --> 00:39:11.000
+So
+
+00:39:11.000 --> 00:39:12.000
+Careful. Okay
+
+00:39:12.000 --> 00:39:13.000
+Be careful.
+
+00:39:13.000 --> 00:39:29.000
+I actually, to parry off that, Alec, too, this is… these tools, everybody, are great prototyping tools. So what used to be in the past, where you draw with a pencil and paper, or write out stuff, now you can prototype stuff. There's always going to be… it doesn't make you a great designer or a great developer
+
+00:39:29.000 --> 00:39:39.000
+So you always want to find the experts in those fields to, like, help you, at least, or at least, you know, check it, check your work. But that's great for prototyping.
+
+00:39:39.000 --> 00:39:56.000
+And it also really gives, I'm not a designer at all, but to be able to just, like you were showing us, Ian, go to these certain sites, getting inspiration, downloading with that tool, putting it all together and just having AI generate some really cool stuff
+
+00:39:56.000 --> 00:40:00.000
+It's such a great starting point for someone like me.
+
+00:40:00.000 --> 00:40:03.000
+100%.
+
+00:40:03.000 --> 00:40:04.000
+Okay.
+
+00:40:04.000 --> 00:40:05.000
+Okay, so what do we have now?
+
+00:40:05.000 --> 00:40:20.000
+Yeah, so just we'll just check out Lovables real quick. It looks like they have a built like lovable. You don't have to go down the API path and getting a set up in the developer page with OpenAI or Claude. It looks like they have that
+
+00:40:20.000 --> 00:40:33.000
+off the shelf, which is another reason why, if you're just getting started, this is a much better way to
+
+00:40:33.000 --> 00:40:34.000
+Oh, we've got
+
+00:40:34.000 --> 00:40:40.000
+To get started. So, I'm gonna go… we'll see where that functionality lives here. Okay, let's see what we got. Tell me about you, and I'll build you the week. Okay, so I'm gonna go. I'm 25.
+
+00:40:40.000 --> 00:40:43.000
+go intermediate
+
+00:40:43.000 --> 00:40:46.000
+0165. Say one
+
+00:40:46.000 --> 00:40:50.000
+You're being modest. I don't think you're intermediate.
+
+00:40:50.000 --> 00:40:57.000
+And we want to we want to get swole here. We're going to build muscle. We'll commit to four days a week
+
+00:40:57.000 --> 00:41:02.000
+bump that up. We'll go an hour
+
+00:41:02.000 --> 00:41:03.000
+David
+
+00:41:03.000 --> 00:41:04.000
+should need shoulders here
+
+00:41:04.000 --> 00:41:05.000
+Owed to be young again.
+
+00:41:05.000 --> 00:41:09.000
+And we will be skipping leg day. No legs.
+
+00:41:09.000 --> 00:41:11.000
+And let's see what we got.
+
+00:41:11.000 --> 00:41:14.000
+Skippy leg day.
+
+00:41:14.000 --> 00:41:15.000
+The cardinal sin.
+
+00:41:15.000 --> 00:41:16.000
+Cardinal
+
+00:41:16.000 --> 00:41:18.000
+Anna, we're building your week right now.
+
+00:41:18.000 --> 00:41:36.000
+Building my week. So we'll see what our output looks like here. We're waiting on Claude to finish up. Okay, let's see what we got. Okay, so in this case, whenever you get errors, because this naturally will happen when you're building these things out and building this functionality, it's going to happen. You're going to have errors. It's not going to always work on the first try.
+
+00:41:36.000 --> 00:41:42.000
+The good thing with Lovable is it has a built in where you could say try to fix and it will give
+
+00:41:42.000 --> 00:41:44.000
+So you see it gives
+
+00:41:44.000 --> 00:42:07.000
+AI, all the context into what went wrong. So we'll let it kind of see if it can fix itself there, and then we'll give it another go while that's happening. Hopefully, Clydeco finish up here in just a second, and we'll see if that works any better.
+
+00:42:07.000 --> 00:42:08.000
+Yep
+
+00:42:08.000 --> 00:42:14.000
+The crazy thing there, though, is those error logs, one is a dev, you need to know where to go look for them. Two, you would have to read those logs, understand what they mean, research what it's trying to do, research how to fix it, do all of that, and then try to figure out how to apply a fix to it.
+
+00:42:14.000 --> 00:42:15.000
+And AI does all of this
+
+00:42:15.000 --> 00:42:31.000
+Exactly. And Brett, I'm glad you mentioned that because it all relates back to the speed piece. This is something where like even this process of debugging would take hours and potentially days. So that's something now that's just kind of immediate. So we'll give
+
+00:42:31.000 --> 00:42:36.000
+I mean, it may be saying philosophizing and frolicking, but it's doing some stuff.
+
+00:42:36.000 --> 00:42:37.000
+Yeah.
+
+00:42:37.000 --> 00:42:38.000
+and mustering
+
+00:42:38.000 --> 00:42:39.000
+100%.
+
+00:42:39.000 --> 00:42:41.000
+It's crazy. Okay, let's try again. Here we go.
+
+00:42:41.000 --> 00:42:46.000
+Okay, let's try again and see if we can get a better result here.
+
+00:42:46.000 --> 00:42:51.000
+Build muscle 4 days a week, one hour
+
+00:42:51.000 --> 00:42:59.000
+All right, build my week.
+
+00:42:59.000 --> 00:43:05.000
+Meanwhile, Claude is still mulling
+
+00:43:05.000 --> 00:43:06.000
+Let's
+
+00:43:06.000 --> 00:43:15.000
+Yeah, yeah, Claude is doing its thing. It looks like if you look at the checklist here. Okay. Try to fix. We'll go one more time with lovable. See what we got looks like Claude is finished. So we'll give this a go here. Build my week
+
+00:43:15.000 --> 00:43:16.000
+Oh, here we go
+
+00:43:16.000 --> 00:43:18.000
+Okay, similar layout at 25
+
+00:43:18.000 --> 00:43:23.000
+65
+
+00:43:23.000 --> 00:43:40.000
+Five days a week old shoulders, chest. Generate my week.
+
+00:43:40.000 --> 00:43:41.000
+Oh, there you go. Wow.
+
+00:43:41.000 --> 00:43:53.000
+All right, here we go. We got a plan. And you'll see, like, there's small, you know, UI problems here that we're dealing with, and the process for those is really like, hey, we'll either give Claude a screenshot and say like
+
+00:43:53.000 --> 00:43:59.000
+on my week plan, the days are outside of the boxes, and maybe upload a, you know, image context, or something like that.
+
+00:43:59.000 --> 00:44:04.000
+Or even crazier, if you have the Claude plug-in in Chrome, you just tell it to go look.
+
+00:44:04.000 --> 00:44:05.000
+Yeah, yeah, that as well.
+
+00:44:05.000 --> 00:44:08.000
+I mean, it's crazy.
+
+00:44:08.000 --> 00:44:27.000
+So yeah, that's kind of now we have some real functionality. We have AI generated us a plan. So that's just a kind of good example here of like, hey, we can build out these workflows. This could apply to really anything that you're doing in your day-to-day. I'll try lovable one last time, then I'll hand this off to Justin here because I know we're squeezing
+
+00:44:27.000 --> 00:44:44.000
+For time. Okay, this is still working. I'm glad Claude was able to give us a good result, and that that truly is a kind of a good example of the differences between lovable and cloud code. I have always found lovable to be very strong at getting a, you know, quick website, quick landing page together
+
+00:44:44.000 --> 00:45:07.000
+For actual back-end functionality, cloud code is typically going to be better. So just something to keep in mind. I still think it's always worth, you know, if you're just getting started, start with Lovable. So yeah, I will wrap up there and hand the baton off to Justin here. I know it went a little bit over on time, so I appreciate the extra time, hope everyone got some value out of that piece and looking forward to the Gtm part from Justin here
+
+00:45:07.000 --> 00:45:15.000
+What did you guys think of Alex Session? Drop in the chat. Do we like Alec? Do we think he did a good job or did AI fail him?
+
+00:45:15.000 --> 00:45:30.000
+I mean, the question is, is what does Hannah think? Like, how amazing is that site just like that from brand to site to building a week like just spitballing an idea and seeing it visually in front of you is
+
+00:45:30.000 --> 00:45:31.000
+It's crazy.
+
+00:45:31.000 --> 00:45:40.000
+Yeah, and Al has a good question here, Al Calli, can this be done directly in Claude code or do you have to use the other tool too? Alec, if you want to take that one before we move on
+
+00:45:40.000 --> 00:46:09.000
+Yeah, absolutely. There's a handful of options for using Cloud Code. You can use it in the app, you can use it in the browser, you can use it in VS Code. So there's a few options. I would say it really comes down to personal preference. There's not really one right answer for it. I think all of them are good options. I know a lot of people that build in the Cloud app. I'd like to get of the four of us, I think we all use Claude Code pretty extensively. I use it in VS Code and use the plugin
+
+00:46:09.000 --> 00:46:11.000
+What do you guys use?
+
+00:46:11.000 --> 00:46:18.000
+Yeah, I live out of Claude Code. For our next segment, I'm going to show you guys what I built with Claude Code and it's my
+
+00:46:18.000 --> 00:46:21.000
+Are you building out of the app, though?
+
+00:46:21.000 --> 00:46:25.000
+Or are you building out of VS Code?
+
+00:46:25.000 --> 00:46:26.000
+Yeah.
+
+00:46:26.000 --> 00:46:28.000
+I use Visual Studio Code, VS Code, or out of the app. I generally prefer VS Code.
+
+00:46:28.000 --> 00:46:29.000
+That's right, Ian
+
+00:46:29.000 --> 00:46:30.000
+Open claw, open claw.
+
+00:46:30.000 --> 00:46:31.000
+Yeah.
+
+00:46:31.000 --> 00:46:32.000
+And of course.
+
+00:46:32.000 --> 00:46:34.000
+Well, lobster. My spirit animal's a lobster
+
+00:46:34.000 --> 00:46:35.000
+I've been, I've been
+
+00:46:35.000 --> 00:46:41.000
+For those of you guys who don't know, Ian has maybe 15 bots or so now that are working for him. Oh, my bad, only 12.
+
+00:46:41.000 --> 00:46:42.000
+Only 12.
+
+00:46:42.000 --> 00:46:43.000
+Just 12, just 12. Yeah.
+
+00:46:43.000 --> 00:46:44.000
+Who's keeping count?
+
+00:46:44.000 --> 00:46:52.000
+And Ian, how does that work? You have a different bot assigned to a different business or project you're working on or they have different training models. Why do you have 12?
+
+00:46:52.000 --> 00:47:18.000
+Yeah, every project I set up, sometimes I have multiple on a server just for someone else to use or for me for different purposes. But I also have some local models too and they're good for both things. VPS, like a server, you can have them build and post to the web with links and they take care of everything and take care of security, firewalls, all that stuff
+
+00:47:18.000 --> 00:47:19.000
+I'm laughing at the
+
+00:47:19.000 --> 00:47:20.000
+Locally, they're great for apps and for building local… what are you laughing at?
+
+00:47:20.000 --> 00:47:21.000
+Tell you, somebody, Angie said
+
+00:47:21.000 --> 00:47:22.000
+The chat's crazy right now.
+
+00:47:22.000 --> 00:47:23.000
+Yeah, the twins one got me. It's true.
+
+00:47:23.000 --> 00:47:25.000
+That's what I started laughing at earlier. Thanks, Angie.
+
+00:47:25.000 --> 00:47:27.000
+That's all
+
+00:47:27.000 --> 00:47:28.000
+I wonder who
+
+00:47:28.000 --> 00:47:32.000
+They… now we should have gone back and done the AI Brett's hair builder. That's okay
+
+00:47:32.000 --> 00:47:35.000
+I told you to wear your wigs, guys. I warned you.
+
+00:47:35.000 --> 00:47:36.000
+Only on the weekend here. I have to have a limit.
+
+00:47:36.000 --> 00:47:37.000
+That's hilarious.
+
+00:47:37.000 --> 00:47:40.000
+Two sets of twins.
+
+00:47:40.000 --> 00:47:45.000
+Angie… Angie, you win best comment, shoot me an email. I have a… I have a prize for you for that. That's awesome.
+
+00:47:45.000 --> 00:47:48.000
+That's funny.
+
+00:47:48.000 --> 00:47:49.000
+Yeah, that was too good.
+
+00:47:49.000 --> 00:47:59.000
+I'm gonna jump into my build. So
+
+00:47:59.000 --> 00:48:00.000
+Yeah.
+
+00:48:00.000 --> 00:48:06.000
+Ian did the branding in 15 minutes. Alec did the website. Alec, are you going to publish that to a domain so we can preview it? I think that'd be awesome. And then Ian can wire it up to a domain while I'm working on this end.
+
+00:48:06.000 --> 00:48:07.000
+So guys, while there
+
+00:48:07.000 --> 00:48:09.000
+Let's do it. Let's do
+
+00:48:09.000 --> 00:48:15.000
+Yeah, let's do it. I'll… I'll deploy… which one do you guys think I should deploy? Should I deploy the Cloud Code one, or should I deploy
+
+00:48:15.000 --> 00:48:17.000
+Dealer's choice, Alec
+
+00:48:17.000 --> 00:48:19.000
+Henna Light Claw.
+
+00:48:19.000 --> 00:48:31.000
+Okay, we'll deploy… okay, we'll deploy the cloud code one for you. Ian, I will send you the DNS records privately here and then we'll get that deployed.
+
+00:48:31.000 --> 00:48:32.000
+She was mistaken
+
+00:48:32.000 --> 00:48:35.000
+Just put them in chat with your API key.
+
+00:48:35.000 --> 00:48:36.000
+I'm just kidding.
+
+00:48:36.000 --> 00:48:37.000
+Yeah, let's do that.
+
+00:48:37.000 --> 00:48:38.000
+Developer jokes.
+
+00:48:38.000 --> 00:48:45.000
+Your private keys as well
+
+00:48:45.000 --> 00:48:46.000
+Wait.
+
+00:48:46.000 --> 00:48:48.000
+So while Alex building now the background, Ian's probably cooking up something for us as well, knowing Ian, he's always got something cooking.
+
+00:48:48.000 --> 00:48:49.000
+Hannah, yeah
+
+00:48:49.000 --> 00:48:50.000
+Oh, wait, wait, I'm sorry. Alec, dude lovable.
+
+00:48:50.000 --> 00:48:51.000
+I do love them
+
+00:48:51.000 --> 00:48:52.000
+Henna liked lovable
+
+00:48:52.000 --> 00:48:53.000
+Okay, cool. Let's do it.
+
+00:48:53.000 --> 00:48:55.000
+Glad I caught that. Okay, go on, Justin.
+
+00:48:55.000 --> 00:48:56.000
+Sorry, Bubba.
+
+00:48:56.000 --> 00:49:03.000
+Cool, guys. So for my session, we're going to do go to market motion, which is essentially you launch a startup
+
+00:49:03.000 --> 00:49:19.000
+Now what do you do with it? There's this build it and they will come fallacy. People think you build a website, you get a logo, you start a business and all these customers are just going to flood in. I hate to break it, you guys, but that's just not the reality. It's not how it works
+
+00:49:19.000 --> 00:49:34.000
+You really do need emotion to acquire customers, whether that means knocking on doors, sending mailers, emails, ads, you know, hiring Alec to run your ChatGPT ads, or whatever it is that you do
+
+00:49:34.000 --> 00:49:48.000
+You do need a method to your madness. Now, getting customers, once you crack that code, again, a lot of ways to do it. It's not easy, but there are a lot of really effective ways in 2026 using AI
+
+00:49:48.000 --> 00:50:04.000
+Ian has done a really nice job using internal tools to rank on LLMs to generate leads for his businesses. So there's a lot of things you can do, but something that I've found that a lot of companies I've worked with over the past decade
+
+00:50:04.000 --> 00:50:27.000
+Something a lot of them miss is the middle of the funnel. So the top of the funnel is generating new prospects. In the middle of the funnel is nurturing those prospects and getting them closer to becoming a customer. Guys, if that all makes sense, just drop a yes in the chat. I want to make sure we're all we're tracking here. Brett, any questions, anything I left out to lay the foundation for what we're building here?
+
+00:50:27.000 --> 00:50:31.000
+No, I think it makes a lot of sense and I
+
+00:50:31.000 --> 00:50:47.000
+I think you're on point. I mean, now we see it's relatively easy to build a rep brand kit, build a website behind it. Now what do I do? How do we get people in Henna's new gym? What does it matter if we have an awesome brand kit and a website if we can't get
+
+00:50:47.000 --> 00:50:48.000
+Traffic
+
+00:50:48.000 --> 00:51:04.000
+Yeah, and this is a great example because I've helped gyms before and they're local, so you can target everyone in a five mile radius. You can send mailers, you can host events. You know, the referral feedback loop works really well if your customers are happy. You can do boot camps, you can do private cohorts, you can do
+
+00:51:04.000 --> 00:51:23.000
+You know, workout plans, diet plans, there's a lot you can do to get customers, and they're all within a 5-10 mile radius. So, you can do a lot of local targeting, really own Google Ads, get a lot of reviews on your Google My Business, set up your social media properly. There's a ton you can do at the top of the funnel, but what do you do once you get people interested?
+
+00:51:23.000 --> 00:51:39.000
+What I've found is a lot of people are, again, missing that middle of funnel piece, which is a newsletter. Newsletters are incredible at nurturing the middle of your funnel. Does anyone here follow any newsletters? Just drop a yes in the chat or say which newsletter you like to read
+
+00:51:39.000 --> 00:51:56.000
+On a daily or weekly basis, just so we know if you guys like newsletters or not. But what I've found is that they're really great at turning customers, or turning prospects into customers. You get topical authority, they see you as the key opinion leader in the space, and you stay top of mind. That's most important
+
+00:51:56.000 --> 00:52:01.000
+If you have a weekly cadence sending out a newsletter
+
+00:52:01.000 --> 00:52:14.000
+Whenever someone's in market for your solution, you're going to be the go-to expert they think about. So guys, I've been running newsletters for many, many years now, growing them, but something I've found is they're very cumbersome. Writing
+
+00:52:14.000 --> 00:52:31.000
+Sourcing articles to write about image generation, putting it all together, making it look good, spell check, all these things, you know, you want to make sure all that's really pretty and looks good and well read before you hit publish and send it to 10, 50, 100,000 people, right?
+
+00:52:31.000 --> 00:52:37.000
+So, I built this tool internally here, if you guys can see my screen. Can you guys all see my screen?
+
+00:52:37.000 --> 00:52:38.000
+Yeah, yeah.
+
+00:52:38.000 --> 00:52:50.000
+Awesome. So, while Ian and Alec were putting together the brand kit and the website in the background, what I did was I clicked Manage Brands, and I spun up a new brand called Go to Build, and I just did a couple things here.
+
+00:52:50.000 --> 00:53:00.000
+I gave it a brand voice, words we use, words we don't use, who our audience is, people who want a workout planner that learns as you use it
+
+00:53:00.000 --> 00:53:07.000
+Brandline, less Jim guessing I took that from the brand kit and website. Words we don't use
+
+00:53:07.000 --> 00:53:11.000
+preferred phases like gains, bulking, cutting, lean muscle
+
+00:53:11.000 --> 00:53:14.000
+skip leg day. We'll throw that in there for Alec.
+
+00:53:14.000 --> 00:53:19.000
+And then you can change the tone of voice. I think we should make it a little more playful
+
+00:53:19.000 --> 00:53:24.000
+Let's have some fun with this. Less serious
+
+00:53:24.000 --> 00:53:25.000
+More concise
+
+00:53:25.000 --> 00:53:26.000
+Always
+
+00:53:26.000 --> 00:53:29.000
+And a bit more casual.
+
+00:53:29.000 --> 00:53:31.000
+So we're going to save that voice
+
+00:53:31.000 --> 00:53:39.000
+The next one I'm going to do, guys, is make sure the brand colors look right
+
+00:53:39.000 --> 00:53:42.000
+How's that look, Ian? You made the brand book. Does that align well
+
+00:53:42.000 --> 00:53:44.000
+Looks right to me
+
+00:53:44.000 --> 00:53:45.000
+Yeah, it looks
+
+00:53:45.000 --> 00:53:46.000
+Yep.
+
+00:53:46.000 --> 00:53:48.000
+That looks on point. It's that blue and yellow and that green we like
+
+00:53:48.000 --> 00:53:49.000
+Yep.
+
+00:53:49.000 --> 00:53:59.000
+And so for context, what I did was I created a brand intelligence. So I uploaded Ian's brand kit here and I told it to emulate this
+
+00:53:59.000 --> 00:54:01.000
+So from
+
+00:54:01.000 --> 00:54:05.000
+This one source I added, I could have added any source here
+
+00:54:05.000 --> 00:54:08.000
+Added that one source, and it created
+
+00:54:08.000 --> 00:54:11.000
+these colors
+
+00:54:11.000 --> 00:54:13.000
+newsletter ideas
+
+00:54:13.000 --> 00:54:31.000
+You know, local weather because it's a local business, something fun, quick hits and opening top stories, right? And now what we're going to do is we're going to make our first newsletter issue. But first, any questions from the chat, Brett, did anything light up in there that you think we should address quickly?
+
+00:54:31.000 --> 00:54:41.000
+I think we're still just on our edge of the seat to see how you're doing this. I do have a, there's a couple questions. We'll probably, I'll circle back to the end here, but let's keep going
+
+00:54:41.000 --> 00:54:46.000
+Let's do it. So guys, a newsletter is great because it's not all original content.
+
+00:54:46.000 --> 00:55:03.000
+you're pulling from cool things you found on the internet and sharing it with your audience, and then you might do a little editorial layer and talk about why you thought this article was relevant or interesting to them. So I'm going to add a few articles. This is workout routines. We'll make that quick hits, we're gonna add that
+
+00:55:03.000 --> 00:55:18.000
+One thing I would add to this, though, if there's any questions. When Justin's going to this, the pulsar tab, that is something he built with AI just to sort of manage this for himself. Similar to how we're showing you how you can start a business
+
+00:55:18.000 --> 00:55:36.000
+this banana… the banana gym with GoToBuild for HNA, something like that, your day-to-day things that you do that you need AI to do lifting, this is something that Jordan, I'm sorry, Justin does all the time, which is newsletters. This is what he's really, really good at. So he's built an app for himself to manage this.
+
+00:55:36.000 --> 00:55:37.000
+Wanted to give a little context there.
+
+00:55:37.000 --> 00:55:52.000
+Thank you, Brad. That adds some color. So what I'm doing here is I'm just adding some sources that while Alec was building, I was just scouring the internet for nicest gyms in Pittsburgh were pretending the business is in Pittsburgh free personalized diet plan, workout routines
+
+00:55:52.000 --> 00:56:05.000
+And Alec, once you have that website ready to stage, I'm going to throw that website in here as well, but let's find some, what else do you guys think would be interesting for this newsletter? A meal
+
+00:56:05.000 --> 00:56:20.000
+I want to know, like, like what people are eating to lose weight. I want to know what people are eating to gain weight. I'd want to know what I could eat
+
+00:56:20.000 --> 00:56:25.000
+have hair again. These are things that are really important to me
+
+00:56:25.000 --> 00:56:27.000
+Amen, brother
+
+00:56:27.000 --> 00:56:31.000
+There's two sets of twins up here, Ian.
+
+00:56:31.000 --> 00:56:32.000
+I didn't think I looked anything like Justin, but I guess
+
+00:56:32.000 --> 00:56:37.000
+Apparently I do. Me and Alec are like
+
+00:56:37.000 --> 00:56:38.000
+inseparable
+
+00:56:38.000 --> 00:56:40.000
+It pees in a pod.
+
+00:56:40.000 --> 00:56:47.000
+Yeah, David's got a good one. Science behind nutrition and exercise. Like these kinds of things would be
+
+00:56:47.000 --> 00:56:49.000
+Really interesting. Oh
+
+00:56:49.000 --> 00:56:59.000
+Oh, that's even good. What about recent research that corroborates exercise and nutrition? So, Jean and David kind of had the same thing that's really great. Sorry, I'm talking too fast, Justin.
+
+00:56:59.000 --> 00:57:14.000
+This is great. So I'm just adding a bunch of these ideas in here. So we have personalized diet plan from Mayo Clinic, workout routines. We've got something fun. I've tried every healthy meal delivery service and these are the best. So we got
+
+00:57:14.000 --> 00:57:19.000
+We have our foundation of a newsletter here, so I'm going to click draft issue from selections
+
+00:57:19.000 --> 00:57:27.000
+This cost 20 cents to generate. And what it's going to do is scrape all of these articles and then
+
+00:57:27.000 --> 00:57:31.000
+rewrite them in our own tone of voice that we uploaded
+
+00:57:31.000 --> 00:57:47.000
+And it's going to give credits to these articles, so we're not stealing their information or using it in an illegal fashion. We're giving them credit, but then putting our own spin on it with the help of AI, which is using our brand voice that Ian helped create in the first segment
+
+00:57:47.000 --> 00:57:52.000
+So sometimes this takes just about a minute, and then we'll have the preview to show you guys.
+
+00:57:52.000 --> 00:58:00.000
+And I know we're using a custom software here, but just to put this into context for everybody
+
+00:58:00.000 --> 00:58:02.000
+Basically
+
+00:58:02.000 --> 00:58:12.000
+Justin's created a really cool app that automates this, but you could do this in a context window of using any of these AI tools that you would like.
+
+00:58:12.000 --> 00:58:14.000
+It won't be as cool as this, but
+
+00:58:14.000 --> 00:58:25.000
+So here we have our preview. It pulled all those articles and it made a little image and we can edit these images in real time.
+
+00:58:25.000 --> 00:58:27.000
+Gym tips
+
+00:58:27.000 --> 00:58:33.000
+Top stories, that's from Mayo Clinic, quick hits, that's 1,000 plus workout database.
+
+00:58:33.000 --> 00:58:38.000
+gave us a quote. None of those meal boxes will adjust your macros because you skipped leg day
+
+00:58:38.000 --> 00:58:44.000
+So it's using our voice there, as you guys can see, those are phrases we said we would use as skipping leg day.
+
+00:58:44.000 --> 00:58:54.000
+We have the weather, and again, guys, I just built this over the weekend, so it's not perfect, right? But it's showing Pittsburgh's weather. We're pretending the business is in Pittsburgh.
+
+00:58:54.000 --> 00:58:58.000
+And now watch this. I'm going to approve and lock the final
+
+00:58:58.000 --> 00:59:06.000
+Let's pretend it's good to go. We edited it, we're happy, we want to ship it to Beehive. Now, are you guys familiar with Beehive?
+
+00:59:06.000 --> 00:59:09.000
+I mean, let's say no. What is Beehive?
+
+00:59:09.000 --> 00:59:15.000
+Beehive is a really great platform to manage a newsletter
+
+00:59:15.000 --> 00:59:20.000
+So this right here is building the newsletter in under 5 minutes.
+
+00:59:20.000 --> 00:59:23.000
+Beehive allows you to then
+
+00:59:23.000 --> 00:59:30.000
+distribute it and edit it further, and have an audience that you own. Newsletters are great because you collect a lot of email addresses, and
+
+00:59:30.000 --> 00:59:38.000
+And then you can stay in touch with all of your prospects and customers on a weekly cadence, a daily cadence, whatever you find to be natural for your business.
+
+00:59:38.000 --> 00:59:44.000
+And so what we're going to do is ship this to Beehive
+
+00:59:44.000 --> 00:59:51.000
+So, I don't have the API set up yet, but it automatically opens Beehive. And then I click new
+
+00:59:51.000 --> 00:59:55.000
+Copy-paste the headline
+
+00:59:55.000 --> 01:00:02.000
+And then copy and paste the body
+
+01:00:02.000 --> 01:00:08.000
+So just like that, it's going to take some editing, guys. This isn't perfect. We built this over the weekend with AI
+
+01:00:08.000 --> 01:00:12.000
+We have a full-fledged newsletter here
+
+01:00:12.000 --> 01:00:15.000
+Did AI just help create
+
+01:00:15.000 --> 01:00:17.000
+Under 10 minutes.
+
+01:00:17.000 --> 01:00:18.000
+Now
+
+01:00:18.000 --> 01:00:19.000
+But I mean, still, that is
+
+01:00:19.000 --> 01:00:22.000
+light years ahead
+
+01:00:22.000 --> 01:00:25.000
+Of what it used to take to build
+
+01:00:25.000 --> 01:00:30.000
+Anything newsletter or outreach. Like
+
+01:00:30.000 --> 01:00:31.000
+That was
+
+01:00:31.000 --> 01:00:33.000
+And you know where it gets really cool, Brett
+
+01:00:33.000 --> 01:00:34.000
+Where?
+
+01:00:34.000 --> 01:00:36.000
+A newsletter in and of itself
+
+01:00:36.000 --> 01:00:42.000
+It's fine. But what if you could take a newsletter and create 20 pieces of content
+
+01:00:42.000 --> 01:00:48.000
+or a few blog posts and 10 social posts. So right here, if we click Generate 3 Blogs
+
+01:00:48.000 --> 01:00:52.000
+30 cents using the Haiku
+
+01:00:52.000 --> 01:00:53.000
+AI model
+
+01:00:53.000 --> 01:01:01.000
+That's a good question. I mean, I'm glad you said that. Someone asked, what model? Let me ask you this. You use Haiku, why?
+
+01:01:01.000 --> 01:01:16.000
+Well, you know, Brett, I don't have the answer to everything. Sometimes I just go to AI or I go to Ian, or I go to Alec, and I say, hey, this is what I'm building. What model should I use? Or maybe Ian's a jerk and doesn't answer. Alec's too busy in the gym, doesn't answer.
+
+01:01:16.000 --> 01:01:32.000
+So, I reach out to AI, and I say, this is what I'm building, which model should I use? And it says, well, for this layer, it's cheaper, it's faster, it's better for digesting articles and rewriting them, or this one's better for image generation
+
+01:01:32.000 --> 01:01:45.000
+So you can really a la carte, use different models in different places depending on the use case. And guys, if you have any questions about what model you should use, you can always reach out to any of us here, or you can ask AI. It's available to everyone
+
+01:01:45.000 --> 01:02:00.000
+Or you could just try and see which one generates the results you like. But it's also, I would say, Justin, tell me, it's also finding a good model that's fast and not overly expensive that gives you the considerable consistent results.
+
+01:02:00.000 --> 01:02:16.000
+100% agree. But the other thing too, Brett, that we've talked about before, it's like an arms race every day, every week, there's a new model coming out. It's better for this, that, the other. So I just find something that works for me and every now and again, I look into optimizing which model I'm using
+
+01:02:16.000 --> 01:02:25.000
+I'm not spending all that much money relative to what I'm building. And so, as long as the output's consistent and you're happy with it.
+
+01:02:25.000 --> 01:02:26.000
+You know, don't
+
+01:02:26.000 --> 01:02:36.000
+Think about it too long or too hard, but I found Haiku is really good for this use case. So back to the newsletter. What I found is from one newsletter, you should be able to generate about 30 pieces of content.
+
+01:02:36.000 --> 01:02:40.000
+So right here, for this example, I just created two blog posts
+
+01:02:40.000 --> 01:02:43.000
+That's based on the newsletter
+
+01:02:43.000 --> 01:02:47.000
+And then I could download, I can edit it. I'm going to approve it
+
+01:02:47.000 --> 01:03:01.000
+Generate social, you'll see that in a moment. 5 cents to generate a social post. I can copy the HTML and MD and send that directly to Cloud Code and say, upload this to my website.
+
+01:03:01.000 --> 01:03:08.000
+And now, so we have blog posts that waterfalled from that pillar pieces of newsletter content
+
+01:03:08.000 --> 01:03:14.000
+And the next step, guys, this is my favorite part. I think this is really cool.
+
+01:03:14.000 --> 01:03:20.000
+We now have social media assets with captions ready
+
+01:03:20.000 --> 01:03:23.000
+imagery ready.
+
+01:03:23.000 --> 01:03:25.000
+That fits the brand
+
+01:03:25.000 --> 01:03:28.000
+And I think it looks clean and cohesive.
+
+01:03:28.000 --> 01:03:38.000
+And you can change them up here. You want square. You want something for Instagram? Do you want some landscape for your blog post? You can just click
+
+01:03:38.000 --> 01:03:41.000
+Download PNG
+
+01:03:41.000 --> 01:03:43.000
+Just like that
+
+01:03:43.000 --> 01:03:45.000
+You can post that to your social media
+
+01:03:45.000 --> 01:03:54.000
+That's cool. I mean, you've basically built something that solves your flow. I mean, this is such
+
+01:03:54.000 --> 01:04:05.000
+wonderful flow to get content out there and start generating foot traffic. People want to know, how do you bring people to an idea? This is one potential way to do it.
+
+01:04:05.000 --> 01:04:11.000
+Yeah, or maybe I want to edit the newsletter now. Throw these in here if they're not already.
+
+01:04:11.000 --> 01:04:13.000
+I can edit in Beehive
+
+01:04:13.000 --> 01:04:15.000
+You can also edit
+
+01:04:15.000 --> 01:04:21.000
+Within the app here in real time. So guys, this at the end of the day
+
+01:04:21.000 --> 01:04:27.000
+I built this for myself because I spend a lot of time
+
+01:04:27.000 --> 01:04:45.000
+Helping companies implement newsletters as part of their go-to-market motion. And it was eating up too much of my team's time, so we made them a tool to use to help expedite this process. So I think that's a really good place to start when you're thinking about building with AI is where am I spending five hours or 10 hours every week
+
+01:04:45.000 --> 01:04:48.000
+And how can I replace myself?
+
+01:04:48.000 --> 01:04:50.000
+Yeah.
+
+01:04:50.000 --> 01:05:06.000
+I mean, look, I agree with David. He loves that this addresses the middle of the funnel and it's really oftentimes overlooked. I agree with that. And this is again, just one way to tackle people want to know, I've got an idea I want to go do something.
+
+01:05:06.000 --> 01:05:22.000
+Well, we just from a random suggestion from Henna, just went start to finish with a brand kit from Ian, a website from Alec that nobody really liked, but we were just being nice. And now we've got a go-to-market newsletter strategy
+
+01:05:22.000 --> 01:05:28.000
+Like one way out of 50
+
+01:05:28.000 --> 01:05:29.000
+But wait.
+
+01:05:29.000 --> 01:05:30.000
+Just picking with you, Alec. I thought it looked okay.
+
+01:05:30.000 --> 01:05:31.000
+Thank you.
+
+01:05:31.000 --> 01:05:32.000
+Oh.
+
+01:05:32.000 --> 01:05:33.000
+There's more. Let me show you something real quick.
+
+01:05:33.000 --> 01:05:47.000
+Let me show you something. So while you guys were yapping and building and doing your AI thing, I built out the brand kit even more. So it's got, it's got everything in there now. If I mouse over and click on one of these, it copies that color to my clipboard
+
+01:05:47.000 --> 01:05:54.000
+Which is just something just threw in there. Added a bunch of imagery. That fits for playful reward moments
+
+01:05:54.000 --> 01:05:55.000
+Hmm.
+
+01:05:55.000 --> 01:06:10.000
+But at the top, so each of these are not clickable to that section. But then I thought, you know what, we need to be findable by LLMs. So I created this AEOGEO page that basically says, here's some of the top things you can do. Answerable pages, citable structure
+
+01:06:10.000 --> 01:06:25.000
+LLM readable maps. So you go down here and you'll find an LLMs.txt file, which is really important for your website. If you're going to be found by LLMs. This basically tells LLMs, which are AI models, ChatGPT, Grok
+
+01:06:25.000 --> 01:06:36.000
+It tells it all about your website. And so it can go look and glean from it. But if you have one of these, it gives it a head start.
+
+01:06:36.000 --> 01:06:37.000
+You would actually
+
+01:06:37.000 --> 01:06:38.000
+Ian, what would you do with that file, that text file? Would you just throw
+
+01:06:38.000 --> 01:06:47.000
+You would copy this and create it, just copy it into a text file and call it LLMS.txt and then upload that to your root server.
+
+01:06:47.000 --> 01:06:53.000
+Of your website.
+
+01:06:53.000 --> 01:06:54.000
+Yeah
+
+01:06:54.000 --> 01:06:55.000
+Or in the lovable case, copy all that, give it to lovable and say, here's my LLS.txt.
+
+01:06:55.000 --> 01:07:09.000
+Exactly, exactly, yeah. Or my open claw, yeah, that's what I do. Okay, so here's other programmatic SEO pages that it could build out. So you can build out, like, hundreds or even thousands of these pages to talk about the problem you solve or more about your company
+
+01:07:09.000 --> 01:07:21.000
+So that's good for being found by search and for LLMs. But then I thought, well, we need to create a competitive analysis. So I had mine go out and do some research on not banana oriented
+
+01:07:21.000 --> 01:07:37.000
+workout plans, but just general workout plans. So it kind of basically says, here's what's out there, and here's where you stand out, you know, where to overinvest first, adaptive weekly planning, this is the things you should focus on just to set yourself apart from the other
+
+01:07:37.000 --> 01:07:41.000
+apps out there. And then I had to create a growth plan. So
+
+01:07:41.000 --> 01:07:56.000
+Build on demand in layers, so you go phase one is prove the promise with demos, founder-led content. So basically you're the one out there hustling and beating the street. And then PSEO pages, which is what we just showed you on the AEO GEO page
+
+01:07:56.000 --> 01:08:03.000
+And then scale the channels that already show conversion. So you focus on what's working and you pour into that.
+
+01:08:03.000 --> 01:08:06.000
+And so on and so forth
+
+01:08:06.000 --> 01:08:07.000
+Continue
+
+01:08:07.000 --> 01:08:08.000
+So like if the newsletter's working, continue, or if not, pivot
+
+01:08:08.000 --> 01:08:25.000
+Or double down, or add more to it, and see what's working. A-B test everything. Always A-B test. And then down at the very bottom, I said, okay, give me a growth plan for, like, if I had 12,000 monthly visitors, and sign-up conversion was, let's say, yeah, 4%. This is what it could turn into. I don't know what we're charging for this, because
+
+01:08:25.000 --> 01:08:41.000
+We, oh, wait, here we go, monthly price, $12. So if you're charging 12 bucks, you get 12,000 visitors, 4% conversion rate, trial.paid is 28%. Then this is what your growth plan could look like. So year one revenue, that's probably pretty steep, but you never know, you know
+
+01:08:41.000 --> 01:08:43.000
+If you start with 1,000
+
+01:08:43.000 --> 01:08:49.000
+monthly visitors, here's where you could go. So I just told him, hey, put something together that kind of juices me about this
+
+01:08:49.000 --> 01:09:00.000
+this app, this thing we just built, what's the potential with it? Because this is actually what drives me. It's like, oh, this is actually valuable, serves a purpose, and can grow and actually provide for me. So
+
+01:09:00.000 --> 01:09:03.000
+Anyways, yet another use case for
+
+01:09:03.000 --> 01:09:05.000
+AI.
+
+01:09:05.000 --> 01:09:12.000
+I mean
+
+01:09:12.000 --> 01:09:13.000
+Let's go.
+
+01:09:13.000 --> 01:09:14.000
+Oh, let's see.
+
+01:09:14.000 --> 01:09:15.000
+Oh, let's see this
+
+01:09:15.000 --> 01:09:17.000
+There we go.
+
+01:09:17.000 --> 01:09:18.000
+Beautiful
+
+01:09:18.000 --> 01:09:31.000
+Great job, Ian. That's sweet. I'll let everyone know I just sent the link in the domain is all hooked up to the website here. So you'll see that in the chat. So take a look. The functionality for building a plan works now as well. I think it looks really good and I'm glad that was able to sometimes it takes a little bit longer for the DNS settings to propagate
+
+01:09:31.000 --> 01:09:35.000
+Good.
+
+01:09:35.000 --> 01:09:36.000
+Go to Build.pro
+
+01:09:36.000 --> 01:09:37.000
+Since that's all hooked up, everyone can, you know, actually go on the site and visit it, and we really, you know, we went 0 to 1 on this meeting. We have a live site, so with some actual functionality.
+
+01:09:37.000 --> 01:09:38.000
+That's awesome. Good work, Alec.
+
+01:09:38.000 --> 01:09:46.000
+Hannah, how does that make you feel from idea to nuts and bananas on the screen ready to go.
+
+01:09:46.000 --> 01:09:54.000
+Guys, we've got just a little bit of time left, so we're going to bring Jean-Jacques to stage. Sorry if I butchered your name.
+
+01:09:54.000 --> 01:10:03.000
+For a little Q&A here. So anyone who has a question, just raise your hand and we'll bring you on the stage to ask.
+
+01:10:03.000 --> 01:10:15.000
+Hannah loves it, but Lena wants the… Hannah wants the domain now. Give me the domain. Now look, we can work something out. Hannah, we'll take 20%. I'm just kidding, of course, we'll work it out. This is
+
+01:10:15.000 --> 01:10:17.000
+You can have it. I don't know, Ian, I'm
+
+01:10:17.000 --> 01:10:18.000
+Hello, Aryan
+
+01:10:18.000 --> 01:10:19.000
+I think Ian paid a real premium for that domain. I don't know if he'll be willing to give it up.
+
+01:10:19.000 --> 01:10:22.000
+It was more than a pity, but
+
+01:10:22.000 --> 01:10:24.000
+I learned
+
+01:10:24.000 --> 01:10:25.000
+Hi, Jean
+
+01:10:25.000 --> 01:10:26.000
+Hello.
+
+01:10:26.000 --> 01:10:29.000
+Hello? Yeah, hi! Thank you, you folks
+
+01:10:29.000 --> 01:10:34.000
+I just, it turns out that I've seen the
+
+01:10:34.000 --> 01:10:45.000
+About the meeting or the webinar two hours ago. And I'm glad that I changed my plan and follow it.
+
+01:10:45.000 --> 01:10:56.000
+That was a very, very vast and vast knowledge. Thank you guys. My question is about the systems
+
+01:10:56.000 --> 01:11:01.000
+Because I'm used to cloud code, you know, to vibe code
+
+01:11:01.000 --> 01:11:13.000
+But I can see the difference when you have, and I'm sure all my colleague here will say the same when you have a kind of a domain and a way. So my first question to Jan
+
+01:11:13.000 --> 01:11:28.000
+is, like, I know he's open claw, we can have also MS agent. The good part is now that ChatGPT allow you to have it, like, instead of API. So do you have a session, or do you have some I don't know recording system
+
+01:11:28.000 --> 01:11:45.000
+To have, I mean, training or whatever if it was some online resources and everything to have the same system like that because you know prompting your open clue that is linked to your own website, your own domain, and then if he create the project by slash
+
+01:11:45.000 --> 01:11:57.000
+And create the project, and then can create a sub-session, and then, you know, this is a very great things. How to, and then it's the same things for the rest. I don't know if we will have the prompt from Alec.
+
+01:11:57.000 --> 01:12:13.000
+If from Justin, I'm very, very well impressed by his system. I was even asking about if it was a policy brief. I don't know how we can learn or, you know, if they get trained or I don't know about the system, because the system will
+
+01:12:13.000 --> 01:12:18.000
+basically help us more build those kind of projects. Thank you. I won't be long.
+
+01:12:18.000 --> 01:12:27.000
+That's a great question and thank you for the kind words. You know, it's funny you ask that, John, because Ian and I were just talking about doing a
+
+01:12:27.000 --> 01:12:43.000
+open claw setup training, and we're going to be running these sessions roughly once a week. So we'll do one on open claw, and then John, just shoot me an email, justin at AI4ntp.com, and I'll give you free access to this
+
+01:12:43.000 --> 01:12:56.000
+Pulsar tool that we use for the newsletter and social media generation to get you access and, you know, you can help me improve it. That'd be fun. We can, we can collaborate on it. And then, Ian, anything you want to add to that?
+
+01:12:56.000 --> 01:13:05.000
+No, I think there is a need for video, so I've had that question before, so I think I'll produce some, and then we'll put on AI for NTP for you.
+
+01:13:05.000 --> 01:13:22.000
+Oh, great. Thank you so much, because I know a bit about, you know, setting up especially MS Agent is very easy than open call because of the soul and everything. The whole thing is the way you craft it to have both, I can see you have AI strategy
+
+01:13:22.000 --> 01:13:43.000
+You have your UI and UINGs and all those, you know the knowledge, the way you give him those skills, it might be something very I think it will be useful for all of us, and I will welcome it at AI for Tnp. Thank you again, Justin
+
+01:13:43.000 --> 01:13:44.000
+Thank you, John.
+
+01:13:44.000 --> 01:13:45.000
+Thank you, guys
+
+01:13:45.000 --> 01:13:46.000
+Thank you, Jean.
+
+01:13:46.000 --> 01:13:47.000
+I will shoot you an email, and yeah, I won't take it so long. Thank you, guys.
+
+01:13:47.000 --> 01:13:48.000
+We've got another
+
+01:13:48.000 --> 01:13:54.000
+Remember here, we're going to pull up the stage.
+
+01:13:54.000 --> 01:13:59.000
+That's a great question.
+
+01:13:59.000 --> 01:14:00.000
+How's it going?
+
+01:14:00.000 --> 01:14:01.000
+Hi.
+
+01:14:01.000 --> 01:14:03.000
+Hi, welcome.
+
+01:14:03.000 --> 01:14:11.000
+So my question was that I am starting out a business
+
+01:14:11.000 --> 01:14:18.000
+So, I'm selling AI receptionist to, like, different businesses, and I chose the niche roofers
+
+01:14:18.000 --> 01:14:20.000
+And
+
+01:14:20.000 --> 01:14:35.000
+Like, I'm getting, like, I kind of… I haven't done something like this before, so, I kind of got scared I only called, like, 10 people, but, like, obviously I'm going to call, like, more, but I was wondering
+
+01:14:35.000 --> 01:14:50.000
+Like, can I use, like, Claude to get like leads for free because the site that I found, like, when I use Google Gemini, it only gave me 10 leads and then it told me to go to Phantom Buster.
+
+01:14:50.000 --> 01:14:53.000
+And I have to pay like
+
+01:14:53.000 --> 01:15:13.000
+Basically, a lot of money for leads per month, and I'm looking at it, like, if that I should copy, like, basically Phantom Buster's code and then post it in, can I be able to
+
+01:15:13.000 --> 01:15:14.000
+I got the answer for you here
+
+01:15:14.000 --> 01:15:15.000
+generate those same leads so that I can
+
+01:15:15.000 --> 01:15:31.000
+So as someone that does this, I build voice agents for companies as well. I would say for you and going and kind of building out a prospecting list, there are off the shelf tools like Phantom Buster that can kind of get a list aggregated for you of who to call on
+
+01:15:31.000 --> 01:15:45.000
+I would say your best bet is going to be Apify. You could use a Google Maps scraper. You could look up a keyword roofers, and it'll pull all of them and whatever geo you select or nationwide, whatever makes the most sense for you. I would
+
+01:15:45.000 --> 01:15:47.000
+No, I'm looking for, like, a free tool. That's the reason.
+
+01:15:47.000 --> 01:16:03.000
+There's a free tier. There's a free tier. I think you're kind of limited on credits, but it can definitely get you to the point where you can start to get real clients if you hit the phone enough. So there's a free tier for Appify
+
+01:16:03.000 --> 01:16:28.000
+using their Google Maps scraper. You could also just use going to Claude Code and say, build out a scraper to find roofing contacts. You can do that as well. So I would say just get into the tools, like get into Claude Code and ask it for a list. And I would say
+
+01:16:28.000 --> 01:16:29.000
+Yeah
+
+01:16:29.000 --> 01:16:33.000
+your hottest prospects are gonna be, like, make the dials, and honestly hope that people don't answer, because if they don't answer, that's a smoking hot prospect for you, because they're missing… they're missing calls, which means they're missing out on money. So don't shy away from the phone
+
+01:16:33.000 --> 01:16:36.000
+But if they don't answer, you wouldn't be able to talk to them.
+
+01:16:36.000 --> 01:16:52.000
+Right. Yeah, but eventually you will be able to if you're persistent enough. So it's in your benefit for them to not answer for a skill and stay on top of them. So that would be my advice to you. Try Apify, use Claude Code to try to build something out bespoke
+
+01:16:52.000 --> 01:16:55.000
+And make the dials man
+
+01:16:55.000 --> 01:16:56.000
+Okay.
+
+01:16:56.000 --> 01:16:58.000
+Sounds good. Thank you.
+
+01:16:58.000 --> 01:17:00.000
+Yeah.
+
+01:17:00.000 --> 01:17:11.000
+I think those are our questions. And we ran a little, we're in power hour, Tom now. We've ran a little over, but I can't say I'm just, I'm upset about it. It was amazing questions, amazing content
+
+01:17:11.000 --> 01:17:16.000
+This was really, really great. Is there anything that anybody here wants to
+
+01:17:16.000 --> 01:17:19.000
+Add Ian, Alec, Justin
+
+01:17:19.000 --> 01:17:22.000
+I think, you know, the one takeaway
+
+01:17:22.000 --> 01:17:29.000
+Even after those past couple questions to it reaffirmed it is that
+
+01:17:29.000 --> 01:17:33.000
+The big idea really here is just being resourceful
+
+01:17:33.000 --> 01:17:38.000
+You can do anything
+
+01:17:38.000 --> 01:17:47.000
+Truly.
+
+01:17:47.000 --> 01:17:48.000
+Literally.
+
+01:17:48.000 --> 01:17:54.000
+You can literally do anything. He just asked Alec for a freemium alternative to Apify and Alec told him tell Claude you need a free alternative to Apify. I would challenge you guys to go try that right now. Build a scraper for me that scrapes Google my business and finds their phone number
+
+01:17:54.000 --> 01:17:58.000
+Right? So AI, the only limitation
+
+01:17:58.000 --> 01:18:03.000
+Is your imagination
+
+01:18:03.000 --> 01:18:04.000
+That's it.
+
+01:18:04.000 --> 01:18:14.000
+That's it. The amount of times in the past 15 years I've wanted to build something but couldn't because I wasn't an engineer in the traditional sense.
+
+01:18:14.000 --> 01:18:17.000
+All of those excuses are out the window now
+
+01:18:17.000 --> 01:18:19.000
+Spend a weekend
+
+01:18:19.000 --> 01:18:22.000
+building something that
+
+01:18:22.000 --> 01:18:29.000
+Well, no, you don't have to go for a moonshot. Just build something that replaces your current job so that you have more free time to
+
+01:18:29.000 --> 01:18:41.000
+Now go aside business, now build a side business, or, you know, like, just build whatever you guys see fit, and be resourceful doing so. I mean, we even saw Alec running into some bugs and errors during his build
+
+01:18:41.000 --> 01:18:43.000
+And he said, fix this
+
+01:18:43.000 --> 01:18:59.000
+Right? He didn't prompt engineer it like a hero. He just said, fix it. And Claude and Lovable fixed it. So I think that would be the one thing I'd like for you guys to take away is encouraging you to be resourceful because there's no limitations anymore.
+
+01:18:59.000 --> 01:19:09.000
+I agree. And just seeing the process of a brand kit, going to a website, going to even some level of a weak builder
+
+01:19:09.000 --> 01:19:10.000
+regiment
+
+01:19:10.000 --> 01:19:19.000
+I mean, I've told this to everybody on stage, but for everybody who's attending, I know we're a little over, but I'll just say I've worked in companies
+
+01:19:19.000 --> 01:19:23.000
+That this motion takes
+
+01:19:23.000 --> 01:19:30.000
+months, a quarter, two quarters, a year to launch one big product at the end of the year.
+
+01:19:30.000 --> 01:19:38.000
+And the timeline it took to do that is getting just massively compressed. And before you know it
+
+01:19:38.000 --> 01:19:42.000
+You can have a full-fledged up and going business and
+
+01:19:42.000 --> 01:19:48.000
+The only thing stopping you in 2026 is you, period. Full stop.
+
+01:19:48.000 --> 01:20:03.000
+Yeah, I would add to that, if there's something you don't know how to do, that's a great question for AI, for Claude, for Perplexity. And if you said something in there like, oh, you just set up this or that or the other, you just say, how do I do that? And they can literally walk you through
+
+01:20:03.000 --> 01:20:15.000
+As if you know zero, as if you know nothing. You say, okay, I know this stuff, take the next step. He can walk you through the entire process. Honestly, that's how I've… before this year, I had never built a database
+
+01:20:15.000 --> 01:20:32.000
+Or even knew about AEO or GEO. And I just, I'm a bit like this. I get really hyper-focused, but you just follow your curiosity, like Justin was saying, it's an imagination race. It's a creativity race. Lean into what you are interested in and you will show all that stuff will be amplified. It's like a mech suit
+
+01:20:32.000 --> 01:20:39.000
+put on an exit, and suddenly you're, like, you're tearing down trees and houses and stuff, you know, so just run, run with your curiosity and don't let anything stop you
+
+01:20:39.000 --> 01:20:57.000
+Yeah, that's exactly it. You guys all said it very well, and I would just tell everybody to get out there and try the tools. I said earlier that there's two really big factors in improving it with AI, and one of them is tool awareness. The other is actually going and using those tools and executing with them.
+
+01:20:57.000 --> 01:21:26.000
+For everyone, you might have… you might now be aware of two tools that you weren't aware of, maybe more after today. So actually go out and try them, and then, you know, try to find a good use case, and then, you know, continue to do that day in, day out, and you will… the bar to being a, you know, top 1% user of AI is very low.
+
+01:21:26.000 --> 01:21:27.000
+Absolutely.
+
+01:21:27.000 --> 01:21:30.000
+If you continue to show up to things like this and actually try the tools, you will be very far ahead of everybody else, and you'll see the benefits in your work and in your life. So I would just encourage everybody to continue to use the tools and and try things.
+
+01:21:30.000 --> 01:21:38.000
+And kudos to you for being on this one. Very few people know the stuff that we just showed you here today. So kudos to you.
+
+01:21:38.000 --> 01:21:42.000
+Okay, it's been amazing. Justin, you want to close this out? This has been
+
+01:21:42.000 --> 01:21:44.000
+This has been fantastic.
+
+01:21:44.000 --> 01:21:51.000
+Yeah, we won 20 minutes over, so we appreciate the looks like 45 people still in here. So as
+
+01:21:51.000 --> 01:22:06.000
+Ian and Brett were saying kudos to you guys for coming along for this journey, and we plan to do this just about every week, if you guys would like us to, so just drop a comment in the chat if you want us to do this again. We're gonna do a lot more subject matter around open claw
+
+01:22:06.000 --> 01:22:17.000
+hackathons. We're gonna bring on some really exciting guests that'll do deep dives, and guys, really, at the end of the day, the reason we do this is because there's so much content out there that's theory
+
+01:22:17.000 --> 01:22:20.000
+It shares ideas, but doesn't really show you
+
+01:22:20.000 --> 01:22:34.000
+how to act on it. Our mission and initiative here is to show and tell with full transparency every single time, so that you can walk away ready to apply
+
+01:22:34.000 --> 01:22:42.000
+everything you learn the same day, or the next morning, or whenever you see fit, right? So, if you guys wants to continue doing this content
+
+01:22:42.000 --> 01:22:48.000
+Just shoot us a note over email and we'll keep in touch.
+
+01:22:48.000 --> 01:22:58.000
+I love it. And Henna, you just let me know when you're opening up that banana gym. I'm gonna go get my lift on, but not legs. No legs.
+
+01:22:58.000 --> 01:23:02.000
+Not again.
+
+01:23:02.000 --> 01:23:03.000
+Thank you, everybody.
+
+01:23:03.000 --> 01:23:04.000
+Bye y'all. Thank you.
+
+01:23:04.000 --> 01:23:05.000
+It's been great.
+
+01:23:05.000 --> 01:23:13.000
+Thanks, everyone.
+

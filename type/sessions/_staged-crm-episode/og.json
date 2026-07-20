@@ -1,0 +1,14 @@
+{
+  "session_id": "004",
+  "status": "COMING SOON",
+  "headline_line1": "The Agentic AI CRM",
+  "headline_pre": "that changed ",
+  "headline_highlight": "Justin's life",
+  "headline_post": ".",
+  "tagline": "A LIVE CRASH COURSE ON THE CRM BEHIND EVERY COMPANY JUSTIN HAS SCALED",
+  "operators": [
+    { "img": "images/justin-novak.jpg", "name": "Justin Novak" }
+  ],
+  "headline_size": 110,
+  "output": "og-image.jpg"
+}

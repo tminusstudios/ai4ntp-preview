@@ -1,0 +1,17 @@
+{
+  "session_id": "003",
+  "status": "REPLAY",
+  "date": "JUNE 10, 2026",
+  "time": "6:00 PM EST",
+  "headline_line1": "Build your own",
+  "headline_pre": "",
+  "headline_highlight": "AI Clone Agent",
+  "headline_post": ".",
+  "tagline": "THE OPENCLAW STARTER KIT · STEP BY STEP",
+  "operators": [
+    { "img": "images/ian-kilpatrick.jpg", "name": "Ian Kilpatrick" },
+    { "img": "images/justin-novak.jpg", "name": "Justin Novak" }
+  ],
+  "headline_size": 124,
+  "output": "og-image.jpg"
+}

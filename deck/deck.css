@@ -1,0 +1,332 @@
+/* ============================================================
+   AI4NTP Partner Deck — shared brand stylesheet
+   Reuses the exact system from /sessions/004/slides + brand-kit.md.
+   Dark (Ink) theme by default; add class="paper" to a <section>
+   for a warm light slide. Never use em dashes in copy.
+   ============================================================ */
+
+:root {
+  --ink: #0F1113;
+  --ink-soft: #1C1F23;
+  --paper: #F4F1EA;
+  --paper-warm: #EDE7DA;
+  --cream: #FAF7F0;
+  --signal: #D4FF3A;
+  --signal-deep: #A8D000;
+  --rust: #C4471C;
+  --fog: rgba(250, 247, 240, 0.64);
+  --line: rgba(250, 247, 240, 0.16);
+  --line-strong: rgba(250, 247, 240, 0.32);
+  --panel: rgba(250, 247, 240, 0.045);
+}
+
+html, body { background: var(--ink); color: var(--cream); }
+
+/* ---- Grain texture (subtle on dark) ---- */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+/* ---- Reveal core overrides ---- */
+.reveal {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--cream);
+  font-size: 28px;
+  line-height: 1.5;
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section { padding: 56px 112px; box-sizing: border-box; }
+.reveal.center .slides section.present > * { max-width: 100%; }
+
+/* ---- Light / paper slide variant ---- */
+.reveal section.paper { color: var(--ink); }
+.reveal section.paper h1, .reveal section.paper h2,
+.reveal section.paper h3, .reveal section.paper h4 { color: var(--ink); }
+.reveal section.paper p { color: var(--ink); }
+.reveal section.paper .eyebrow,
+.reveal section.paper .section-title-eyebrow,
+.reveal section.paper .meta-strip { color: rgba(15,17,19,0.55); }
+.reveal section.paper .pillar-card,
+.reveal section.paper .kpi,
+.reveal section.paper .tm-card,
+.reveal section.paper .compare-col,
+.reveal section.paper .road-col,
+.reveal section.paper .role-card,
+.reveal section.paper .opt-card {
+  background: var(--cream);
+  border-color: rgba(15,17,19,0.12);
+}
+.reveal section.paper .pillar-card p,
+.reveal section.paper .tm-card .who { color: rgba(15,17,19,0.6); }
+
+/* ---- Typography ---- */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: -0.025em;
+  line-height: 1.04;
+  margin: 0 0 24px;
+  text-transform: none;
+}
+.reveal h1 { font-size: 92px; }
+.reveal h2 { font-size: 70px; }
+.reveal h3 { font-size: 48px; }
+.reveal h4 { font-size: 36px; font-weight: 400; }
+
+.reveal p { margin: 0 0 20px; font-size: 28px; line-height: 1.55; }
+.reveal em {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--signal);
+}
+.reveal strong { font-weight: 600; color: var(--cream); }
+.reveal section.paper strong { color: var(--ink); }
+
+.highlight {
+  background: var(--signal);
+  color: var(--ink);
+  padding: 0 0.12em;
+  margin: 0 0.03em;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  display: inline-block;
+}
+
+/* ---- Eyebrow / metadata bars ---- */
+.meta-strip {
+  display: flex; gap: 32px; align-items: center;
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--fog); margin-bottom: 56px;
+}
+.meta-strip .live { color: var(--signal); font-weight: 700; display: inline-flex; align-items: center; gap: 10px; }
+.meta-strip .live::before {
+  content: ''; width: 9px; height: 9px; border-radius: 50%;
+  background: var(--signal); animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.8); }
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--fog); margin-bottom: 32px;
+  display: flex; align-items: center; gap: 14px;
+}
+.eyebrow::before { content: ''; width: 36px; height: 1px; background: var(--signal); opacity: 0.8; }
+/* '//' motif variant, matches the site's section-label */
+.eyebrow.slash::before { content: '//'; width: auto; height: auto; background: none; color: var(--signal-deep); font-family: 'JetBrains Mono', monospace; letter-spacing: 0; }
+
+/* ---- Lists ---- */
+.reveal ul, .reveal ol { margin: 24px 0; padding: 0; list-style: none; }
+.reveal ul li, .reveal ol li {
+  font-size: 30px; line-height: 1.45; padding: 18px 0 18px 40px;
+  border-bottom: 1px solid var(--line); position: relative;
+}
+.reveal ol li { padding-left: 64px; }
+.reveal ul li:last-child, .reveal ol li:last-child { border-bottom: none; }
+.reveal ol { counter-reset: idx; }
+.reveal ol li::before {
+  counter-increment: idx; content: counter(idx, decimal-leading-zero);
+  font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 14px;
+  letter-spacing: 0.14em; color: var(--signal); position: absolute; left: 0; top: 30px;
+}
+.reveal ul li::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--signal); position: absolute; left: 8px; top: 36px;
+}
+
+/* ---- Tighter type ---- */
+.tight ul li, .tight ol li { font-size: 26px; padding: 14px 0 14px 40px; }
+.tight ol li { padding-left: 60px; }
+.tight ul li::before { top: 30px; }
+.tight ol li::before { top: 24px; }
+
+/* ---- Speaker chips ---- */
+.hosts { display: flex; gap: 40px; margin-top: 48px; align-items: center; flex-wrap: wrap; }
+.host { display: flex; align-items: center; gap: 16px; }
+.host .pic {
+  width: 84px; height: 84px; border-radius: 50%; overflow: hidden;
+  border: 1px solid var(--line); background: var(--ink-soft); flex-shrink: 0;
+}
+.host .pic img { width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: grayscale(100%) contrast(1.05); }
+.host .nm { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 26px; }
+.host .rl { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fog); margin-top: 4px; }
+
+/* ---- Pillar cards ---- */
+.pillar-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 28px; }
+.pillar-grid.three { grid-template-columns: repeat(3, 1fr); }
+.pillar-grid.four { grid-template-columns: repeat(4, 1fr); }
+.pillar-card { background: var(--panel); border: 1px solid var(--line); padding: 30px 28px; }
+.pillar-card .num {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 13px;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--signal); margin-bottom: 14px;
+}
+.pillar-card h4 {
+  font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 28px;
+  letter-spacing: -0.015em; line-height: 1.15; margin-bottom: 12px;
+}
+.pillar-card p { font-size: 19px; line-height: 1.5; color: var(--fog); margin: 0; }
+
+/* ---- Callout ---- */
+.callout { background: var(--panel); color: var(--cream); padding: 44px 52px; margin: 28px 0; border-left: 8px solid var(--signal); }
+.callout .quote {
+  font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 40px;
+  line-height: 1.18; letter-spacing: -0.02em; margin-bottom: 18px;
+}
+.callout .attribution {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 13px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--fog);
+}
+.callout.signal { background: var(--signal); color: var(--ink); border-left-color: var(--ink); }
+.callout.signal .attribution { color: rgba(15,17,19,0.65); }
+
+/* ---- Section title ---- */
+.section-title-eyebrow {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 15px;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--signal); margin-bottom: 28px;
+}
+.section-title h2 { font-size: 104px; line-height: 1.0; }
+
+/* ---- Big stat ---- */
+.stat-number {
+  font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 150px;
+  letter-spacing: -0.04em; line-height: 0.95; color: var(--signal);
+}
+
+/* ============================================================
+   NEW components for the partner deck
+   ============================================================ */
+
+/* ---- KPI grid (traction hero) ---- */
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 24px; }
+.kpi-grid.three { grid-template-columns: repeat(3, 1fr); }
+.kpi { background: var(--panel); border: 1px solid var(--line); padding: 28px 26px; }
+.kpi .figure {
+  font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 76px;
+  line-height: 0.95; letter-spacing: -0.035em; color: var(--signal);
+}
+.kpi .figure .unit { font-size: 34px; color: var(--cream); letter-spacing: -0.02em; }
+.kpi .label {
+  font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--fog); margin-top: 16px; line-height: 1.4;
+}
+.brand-row {
+  font-family: 'JetBrains Mono', monospace; font-size: 18px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--fog); margin-top: 36px;
+}
+.brand-row strong { color: var(--cream); }
+
+/* ---- Episode timeline ---- */
+.timeline { margin-top: 24px; border-top: 2px solid var(--line); }
+.tl-row {
+  display: grid; grid-template-columns: 0.5fr 0.9fr 2.1fr 1.1fr; gap: 28px;
+  padding: 22px 0; border-bottom: 1px solid var(--line); align-items: baseline;
+}
+.tl-row .ep { font-family: 'JetBrains Mono', monospace; font-size: 15px; letter-spacing: 0.14em; color: var(--signal); }
+.tl-row .date { font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.08em; color: var(--fog); }
+.tl-row .title { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1.12; }
+.tl-row .meta { font-size: 16px; color: var(--fog); line-height: 1.45; }
+.tl-row .meta strong { color: var(--cream); }
+
+/* ---- Testimonial wall ---- */
+.tm-wall { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 24px; }
+.tm-card { background: var(--panel); border: 1px solid var(--line); padding: 26px 24px; display: flex; flex-direction: column; }
+.tm-card .q {
+  font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 23px;
+  line-height: 1.32; color: var(--cream); margin-bottom: 18px; flex: 1;
+}
+.tm-card .who { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fog); line-height: 1.5; }
+.tm-card .who strong { color: var(--cream); }
+
+/* ---- Compare columns (base vs bull, monetization) ---- */
+.compare { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 24px; }
+.compare.three { grid-template-columns: repeat(3, 1fr); }
+.compare-col { background: var(--panel); border: 1px solid var(--line); padding: 34px 32px; }
+.compare-col.featured { border-color: var(--signal); border-width: 2px; }
+.compare-col .case-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--signal); margin-bottom: 16px;
+}
+.compare-col .case-figure {
+  font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 64px;
+  letter-spacing: -0.035em; line-height: 0.98; color: var(--cream); margin-bottom: 8px;
+}
+.compare-col .case-sub { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fog); margin-bottom: 20px; }
+.compare-col ul { margin: 0; }
+.compare-col ul li { font-size: 19px; padding: 12px 0 12px 28px; }
+.compare-col ul li::before { top: 22px; width: 6px; height: 6px; }
+
+/* ---- Roadmap ---- */
+.road { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 24px; }
+.road-col { background: var(--panel); border: 1px solid var(--line); padding: 28px 24px; }
+.road-col .when { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--signal); margin-bottom: 16px; }
+.road-col ul { margin: 0; }
+.road-col ul li { font-size: 18px; padding: 11px 0 11px 24px; line-height: 1.4; }
+.road-col ul li::before { top: 20px; width: 6px; height: 6px; }
+
+/* ---- Roles grid ---- */
+.roles-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 20px; }
+.role-card { background: var(--panel); border: 1px solid var(--line); padding: 24px 26px; display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+.role-card .who2 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 24px; min-width: 150px; }
+.role-card .who2 .tag { display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--signal); margin-top: 6px; }
+.role-card .duties { font-size: 18px; color: var(--fog); line-height: 1.45; }
+.role-card.hire { border-style: dashed; border-color: var(--line-strong); }
+.role-card.hire .who2 .tag { color: var(--rust); }
+
+/* ---- Decision options (branding) ---- */
+.opt-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 24px; }
+.opt-card { background: var(--panel); border: 1px solid var(--line); padding: 30px 28px; }
+.opt-card .opt-name { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 30px; letter-spacing: -0.015em; margin-bottom: 6px; }
+.opt-card .opt-tag { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fog); margin-bottom: 18px; }
+.opt-card .pro, .opt-card .con { font-size: 17px; line-height: 1.45; margin-bottom: 10px; color: var(--fog); padding-left: 26px; position: relative; }
+.opt-card .pro::before { content: '+'; position: absolute; left: 6px; color: var(--signal); font-weight: 700; }
+.opt-card .con::before { content: '–'; position: absolute; left: 6px; color: var(--rust); font-weight: 700; }
+.opt-card.lean { border-color: var(--signal); border-width: 2px; }
+
+/* ---- The ask ---- */
+.ask-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 24px; }
+.ask-card { background: var(--panel); border: 1px solid var(--line); border-left: 6px solid var(--signal); padding: 26px 28px; }
+.ask-card .a-num { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: var(--signal); margin-bottom: 10px; }
+.ask-card h4 { font-size: 28px; margin-bottom: 8px; }
+.ask-card p { font-size: 18px; color: var(--fog); margin: 0; line-height: 1.45; }
+
+/* ---- Sign-off / brand mark ---- */
+.signoff { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; }
+.signoff-line { font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 80px; line-height: 1.05; letter-spacing: -0.025em; margin-bottom: 48px; max-width: 1100px; }
+.brand-mark { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 56px; letter-spacing: -0.02em; color: var(--cream); }
+.brand-mark .four { background: var(--signal); color: var(--ink); padding: 0 14px; margin: 0 2px; font-style: italic; display: inline-block; }
+
+/* ---- Title slide wordmark ---- */
+.title-slide-eyebrow { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 30px; margin-bottom: 16px; letter-spacing: -0.02em; color: var(--cream); }
+.title-slide-eyebrow .four { background: var(--signal); color: var(--ink); padding: 0 8px; margin: 0 1px; font-style: italic; display: inline-block; }
+
+/* ---- Placeholder marker (visible while building, easy to grep) ---- */
+.ph {
+  color: var(--rust); font-family: 'JetBrains Mono', monospace; font-style: normal;
+  font-size: 0.7em; letter-spacing: 0.04em; background: rgba(196,71,28,0.12);
+  padding: 0 6px; border: 1px dashed rgba(196,71,28,0.5);
+}
+
+/* ---- Reveal controls + progress ---- */
+.reveal .controls { color: var(--signal); opacity: 0.85; }
+.reveal .controls:hover { opacity: 1; }
+.reveal .progress { background: rgba(250, 247, 240, 0.1); color: var(--signal); }
+.reveal .progress span { background: var(--signal); }
+.reveal .slide-number { background: transparent; color: var(--cream); opacity: 0.4; font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 12px; letter-spacing: 0.1em; }
+
+/* ---- Watermark ---- */
+.slide-watermark { position: absolute; bottom: 18px; left: 28px; font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 16px; letter-spacing: -0.02em; color: var(--cream); opacity: 0.45; z-index: 10; }
+.slide-watermark .four { background: var(--signal); color: var(--ink); padding: 0 5px; margin: 0 1px; font-style: italic; display: inline-block; }

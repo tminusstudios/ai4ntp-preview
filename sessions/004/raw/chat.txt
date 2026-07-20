@@ -1,0 +1,74 @@
+00:17:32	David Young:	Aye
+00:17:37	Eugene Slesarenko:	first time
+00:17:37	Anne M:	aye
+00:17:38	Erika Barbosa:	First time
+00:17:39	James:	First timer !!
+00:17:43	David Young:	What's up!
+00:17:43	Toledo, David:	first
+00:18:00	José Armando Ortiz:	First time!
+00:18:59	Rolando Rivas:	First time
+00:19:01	Manisha Haridasan:	Hi
+00:19:24	Ashwin Nair:	Aye
+00:19:25	Jean Rebel:	Hi Everyone!
+00:20:01	Erika Barbosa:	Yes!
+00:20:01	Wade Lagrone:	yup
+00:20:02	James:	Solid
+00:26:51	Rolando Rivas:	How do you know that what was delivered is actually valid
+00:28:17	David Young:	Getting deliverables to clients pronto!
+00:29:22	Deborah Elias:	yes
+00:29:25	Jean Rebel:	Only the retailer
+00:29:25	Alec:	no
+00:29:33	Deborah Elias:	wake up everyone
+00:29:42	José Armando Ortiz:	Heard of it, never used it
+00:34:37	Jean Rebel:	Could this be something where I could give a database of zip codes and get the demo of people who live in those zip codes?
+00:37:55	Jayme Pretzloff:	How does it work for design?
+00:38:40	Wade Lagrone:	/Can we see one more use case
+00:38:47	Ashwin Nair:	Does this desktop agent have a good statistical / math reasoning which can be connected with open source research ?
+00:42:19	Erika Barbosa:	Are these scrapers not against TOS?
+00:43:28	Toledo, David:	Cron jobs = scheduled task. The skills piece based on past usage and work flows is incredible. Justin how have you improved your workflows based on these auto generated skills? Has this reduced your use of Claude / CGPT directly?
+00:44:10	Justin Novak:	Will address all of these at Q&A :)
+00:48:32	Toledo, David:	So you still recommend N8N vs. Claude code bc the debugging process if more visual and easier to understand the logic?
+00:48:42	Manisha Haridasan:	I have
+00:48:42	Wade Lagrone:	me
+00:48:46	Ashwin Nair:	yes
+00:48:48	Eugene Slesarenko:	yes!
+00:53:27	Toledo, David:	What are your thoughts on WisprFlow Vs. Superwhisper? Lol I use the latter and have been hesitant to switch bc if works so well.
+00:58:29	Jean Rebel:	GO STEELERS!!
+00:58:34	Justin Novak:	YES JEAN!!!
+00:58:48	José Armando Ortiz:	Amazing stuff. A+
+01:00:58	Rolando Rivas:	Plaud -or Claude?
+01:01:08	Alec:	Plaud
+01:01:13	Wade Lagrone:	plaud.ia
+01:01:17	Wade Lagrone:	Plaid.ai
+01:01:23	Wade Lagrone:	Plaud.ai
+01:01:27	Wade Lagrone:	Jesus
+01:01:36	Toledo, David:	Damn. Its been an hour already?!
+01:01:51	Jayme Pretzloff:	Love my Plaud. But the worththrough of transcribing and pulling it into Chat/Claude/Notion to create notes is a drag. Would love to hear how Alec uses automations with Plaud
+01:02:15	David Young:	yes
+01:02:22	Deborah Elias:	no
+01:03:04	Wade Lagrone:	Not sure we're seeing the site you mention
+01:03:08	David Young:	Not seeing it
+01:03:12	José Armando Ortiz:	Change the screen
+01:03:25	Jean Rebel:	blank
+01:03:26	David Young:	About blank
+01:05:52	José Armando Ortiz:	I will join to all of your sessions. Amazing job! Thank you.
+01:05:58	Justin Novak:	Welcome to the club Jose!
+01:08:46	David Young:	That hat is baller!
+01:09:33	Toledo, David:	Whoa an agentic CRM. What is this built on? lol
+01:10:40	Justin Novak:	https://darteegolf.com
+01:10:49	Justin Novak:	Checkout James golf brand
+01:14:09	Justin Novak:	For those of you who asked for tools: https://ai4ntp.com/ai-tools
+01:14:28	Justin Novak:	Agentic CRM is in there David "GoHighLevel"
+01:14:39	Toledo, David:	Sweet dude thanks.
+01:17:16	Jayme Pretzloff:	Can you just go high level 50,000 foot view on Hermes. Vs Claude code. Pros/cons/cost
+01:17:24	Jayme Pretzloff:	Vs.
+01:20:08	Jayme Pretzloff:	Hell yeah. That helps a lots. Thanks guys
+01:20:27	Eugene Slesarenko:	great webinar, thanks guys!
+01:21:01	David Young:	U guys killed it
+01:21:04	Anne M:	Incredibly helpful and informative, thank you!
+01:21:05	Jayme Pretzloff:	Damn my texting typos prove I need to use Whispr lol
+01:21:06	Toledo, David:	Thank you guys this was great. Time flew by
+01:21:52	Eugene Slesarenko:	Alec, add me on LinkedIn, would love to chat
+01:21:55	Jean Rebel:	Thanks for both of your time. It really helps me understand it a little bit at a time.
+01:22:04	Deborah Elias:	thank you!!!!
+01:22:27	Alec:	https://www.linkedin.com/in/alec-saluga-4295521a6/

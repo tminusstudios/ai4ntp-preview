@@ -1,0 +1,18 @@
+{
+  "session_id": "002",
+  "status": "REPLAY",
+  "date": "JUNE 2, 2026",
+  "time": "1:00 PM EST",
+  "headline_line1": "We built a company",
+  "headline_pre": "with AI in under",
+  "headline_highlight": "an hour",
+  "headline_post": ".",
+  "tagline": "WE BUILT GOTOBUILD, AN AI WORKOUT APP",
+  "operators": [
+    { "img": "images/ian-kilpatrick.jpg", "name": "Ian Kilpatrick" },
+    { "img": "images/alec-saluga.jpg", "name": "Alec Saluga" },
+    { "img": "images/justin-novak.jpg", "name": "Justin Novak" }
+  ],
+  "headline_size": 108,
+  "output": "og-image.jpg"
+}

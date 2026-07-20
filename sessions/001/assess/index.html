@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY783506Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4YY783506Y');
+</script>
+
+<!-- Vercel Web Analytics (enable in Vercel dashboard for script to start logging) -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your one wish · Episode 001 · AI4NTP</title>
+<meta name="description" content="A 30-second pulse check that steers today's AI4NTP session.">
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --paper-warm: #EDE7DA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --line: rgba(15, 17, 19, 0.12);
+    --line-strong: rgba(15, 17, 19, 0.32);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+  a { color: inherit; }
+
+  .nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  .nav-logo {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .nav-logo .four {
+    background: var(--signal);
+    padding: 0 6px;
+    margin: 0 1px;
+    border-radius: 2px;
+    font-style: italic;
+  }
+  .nav-back { text-decoration: none; color: var(--ink); opacity: 0.65; }
+  .nav-back:hover { opacity: 1; }
+
+  .hero {
+    padding: 64px 40px 28px;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .session-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 9px 18px;
+    border-radius: 999px;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .session-pill .live-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--rust);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+  .hero-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(52px, 9vw, 104px);
+    letter-spacing: -0.028em;
+    line-height: 0.98;
+    margin-bottom: 22px;
+  }
+  .hero-title em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    background: var(--signal);
+    padding: 0 0.1em;
+    margin: 0 0.02em;
+    display: inline-block;
+  }
+  .hero-sub {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.4;
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.88;
+  }
+
+  .form-wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 40px 80px;
+    position: relative;
+    z-index: 2;
+  }
+  .form-card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 40px;
+  }
+  .form-field { margin-bottom: 22px; }
+  .form-field > label {
+    display: block;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 8px;
+  }
+  .form-field input[type="text"],
+  .form-field input[type="email"],
+  .form-field textarea,
+  .step input[type="text"],
+  .step input[type="email"],
+  .step textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--line-strong);
+    padding: 14px 0 16px;
+    font-family: inherit;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--ink);
+    transition: border-color 0.2s;
+  }
+  .form-field input:focus, .form-field textarea:focus,
+  .step input:focus, .step textarea:focus {
+    outline: none;
+    border-bottom-color: var(--ink);
+  }
+  .form-field textarea,
+  .step textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+  .req { color: var(--rust); opacity: 0.85; }
+  .opt {
+    opacity: 0.5;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 13px;
+    margin-left: 6px;
+  }
+  .hint {
+    margin-top: 8px;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0.6;
+  }
+
+  /* ---- Click-through stepper ---- */
+  .step { display: none; }
+  .step.active { display: block; }
+  .step-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+  .step-meta .req-tag { color: var(--rust); font-weight: 700; }
+  .step-meta .opt-tag {
+    opacity: 0.65;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .step-question {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(24px, 3vw, 30px);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .step input.error, .step textarea.error {
+    border-bottom-color: var(--rust);
+  }
+  .progress-bar {
+    height: 3px;
+    background: rgba(15, 17, 19, 0.08);
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress-bar .fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: var(--signal-deep);
+    transition: width 0.3s ease;
+  }
+  .submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    border: 1px solid var(--ink);
+    padding: 18px 28px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .submit:hover { background: var(--signal); color: var(--ink); }
+  .submit:disabled { opacity: 0.6; cursor: wait; }
+
+  .success {
+    display: none;
+    text-align: center;
+    padding: 24px 12px;
+  }
+  .success.show { display: block; }
+  .check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    background: var(--signal);
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+  .success h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+  .success p {
+    opacity: 0.78;
+    max-width: 380px;
+    margin: 0 auto;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  @media (max-width: 700px) {
+    .nav { padding: 16px 24px; }
+    .hero { padding: 40px 24px 16px; }
+    .form-wrap { padding: 24px 20px 56px; }
+    .form-card { padding: 28px 22px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/ai4ntp-preview/" class="nav-logo">ai<span class="four">4</span>ntp</a>
+  <a href="/ai4ntp-preview/sessions/001" class="nav-back">← Episode 001</a>
+</nav>
+
+<header class="hero">
+  <div class="session-pill"><span class="live-dot"></span>Episode 001 · Live now</div>
+  <h1 class="hero-title">What&rsquo;s your <em>one wish?</em></h1>
+  <p class="hero-sub">If you had a genie for today&rsquo;s session, what would you ask? Your answer steers everything we cover next. Takes 30 seconds.</p>
+</header>
+
+<section class="form-wrap">
+  <div class="form-card" id="form-card">
+    <div class="progress-bar"><div class="fill" id="progress-fill" style="width: 0%;"></div></div>
+
+    <form id="pulse-form" novalidate>
+      <input type="hidden" name="source" value="pulse-ep001">
+
+      <!-- Q1 · name · required -->
+      <div class="step active" data-step="1" data-field="name" data-required="true">
+        <div class="step-meta">
+          <span>Question 1 of 6</span>
+          <span class="req-tag">Required</span>
+        </div>
+        <div class="step-question">Name.</div>
+        <input type="text" id="name" name="name" required autofocus autocomplete="given-name">
+        <button type="button" class="submit next-btn">Next →</button>
+      </div>
+
+      <!-- Q2 · goal · required -->
+      <div class="step" data-step="2" data-field="goal" data-required="true">
+        <div class="step-meta">
+          <span>Question 2 of 6</span>
+          <span class="req-tag">Required</span>
+        </div>
+        <div class="step-question">During this session I want to learn...</div>
+        <textarea id="goal" name="goal" required></textarea>
+        <button type="button" class="submit next-btn">Next →</button>
+      </div>
+
+      <!-- Q3 · tool · required -->
+      <div class="step" data-step="3" data-field="tool" data-required="true">
+        <div class="step-meta">
+          <span>Question 3 of 6</span>
+          <span class="req-tag">Required</span>
+        </div>
+        <div class="step-question">One AI tool you want to learn more about.</div>
+        <textarea id="tool" name="tool" required></textarea>
+        <button type="button" class="submit next-btn">Next →</button>
+      </div>
+
+      <!-- Q4 · vision · optional -->
+      <div class="step" data-step="4" data-field="vision" data-required="false">
+        <div class="step-meta">
+          <span>Question 4 of 6</span>
+          <span class="opt-tag">Optional</span>
+        </div>
+        <div class="step-question">In one sentence, you or your team&rsquo;s biggest AI goal for 2026.</div>
+        <textarea id="vision" name="vision"></textarea>
+        <button type="button" class="submit next-btn">Next →</button>
+      </div>
+
+      <!-- Q5 · job_title · required -->
+      <div class="step" data-step="5" data-field="job_title" data-required="true">
+        <div class="step-meta">
+          <span>Question 5 of 6</span>
+          <span class="req-tag">Required</span>
+        </div>
+        <div class="step-question">Job title.</div>
+        <input type="text" id="job_title" name="job_title" required autocomplete="organization-title">
+        <button type="button" class="submit next-btn">Next →</button>
+      </div>
+
+      <!-- Q6 · email · required -->
+      <div class="step" data-step="6" data-field="email" data-required="true">
+        <div class="step-meta">
+          <span>Question 6 of 6</span>
+          <span class="req-tag">Required</span>
+        </div>
+        <div class="step-question">Email.</div>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <button type="submit" class="submit next-btn">Done →</button>
+      </div>
+    </form>
+
+    <div class="success" id="success">
+      <div class="check">✓</div>
+      <h2>Thank You.</h2>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var SUPABASE_URL = 'https://qytiyechjtkrejhhczcg.supabase.co';
+    var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5dGl5ZWNoanRrcmVqaGhjemNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMzc0OTcsImV4cCI6MjA5MjYxMzQ5N30.P7vYQPWFlVU6GrBFNxjnl28y9dTSRCet9n9V8YNxj1U';
+    var TABLE = 'ai4ntp_pulse_001';
+    var TOTAL_STEPS = 6;
+
+    var form = document.getElementById('pulse-form');
+    var formCard = document.getElementById('form-card');
+    var success = document.getElementById('success');
+    var progressFill = document.getElementById('progress-fill');
+    var rowId = null;
+
+    function setProgress(step) {
+      var pct = ((step - 1) / TOTAL_STEPS) * 100;
+      progressFill.style.width = pct + '%';
+    }
+
+    function commonHeaders() {
+      return {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Content-Type': 'application/json'
+      };
+    }
+
+    function saveStep(stepEl) {
+      var field = stepEl.dataset.field;
+      var required = stepEl.dataset.required === 'true';
+      var input = stepEl.querySelector('input, textarea');
+      var value = (input.value || '').trim();
+
+      // Validate required fields
+      if (required && !value) {
+        input.classList.add('error');
+        input.focus();
+        return Promise.resolve(false);
+      }
+      input.classList.remove('error');
+
+      var payload = {};
+      payload[field] = value || null;
+
+      if (!rowId) {
+        // First save creates the row. `goal` is NOT NULL in the schema, so the
+        // first INSERT must be Q1 (goal). The data-step order guarantees that.
+        return fetch(SUPABASE_URL + '/rest/v1/' + TABLE, {
+          method: 'POST',
+          headers: Object.assign(commonHeaders(), { 'Prefer': 'return=representation' }),
+          body: JSON.stringify(payload)
+        }).then(function (res) {
+          if (!res.ok) return res.text().then(function (t) { throw new Error('Insert failed: ' + res.status + ' ' + t); });
+          return res.json();
+        }).then(function (data) {
+          rowId = data[0].id;
+          return true;
+        }).catch(function (err) {
+          console.error(err);
+          // Allow them to continue; subsequent saves will also try to INSERT
+          // until the first one succeeds.
+          return true;
+        });
+      }
+
+      // Update existing row
+      return fetch(SUPABASE_URL + '/rest/v1/' + TABLE + '?id=eq.' + encodeURIComponent(rowId), {
+        method: 'PATCH',
+        headers: Object.assign(commonHeaders(), { 'Prefer': 'return=minimal' }),
+        body: JSON.stringify(payload)
+      }).then(function (res) {
+        if (!res.ok) return res.text().then(function (t) { throw new Error('Update failed: ' + res.status + ' ' + t); });
+        return true;
+      }).catch(function (err) {
+        console.error(err);
+        return true; // Don't block the user
+      });
+    }
+
+    function advance() {
+      var current = form.querySelector('.step.active');
+      if (!current) return;
+      var step = parseInt(current.dataset.step, 10);
+      var btn = current.querySelector('button');
+      var originalLabel = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Saving…';
+
+      saveStep(current).then(function (ok) {
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+        if (!ok) return;
+
+        if (step < TOTAL_STEPS) {
+          current.classList.remove('active');
+          var next = form.querySelector('.step[data-step="' + (step + 1) + '"]');
+          next.classList.add('active');
+          setProgress(step + 1);
+          var nextInput = next.querySelector('input, textarea');
+          if (nextInput) {
+            // Defer focus so transition doesn't fight it
+            setTimeout(function () { nextInput.focus(); }, 50);
+          }
+        } else {
+          // Finished — show success state and fill the bar
+          formCard.querySelector('form').style.display = 'none';
+          progressFill.style.width = '100%';
+          success.classList.add('show');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    }
+
+    // Click handlers on every Next/Done button
+    form.querySelectorAll('.next-btn').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        advance();
+      });
+    });
+
+    // Final form submit (catches Enter inside the last step's input)
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      advance();
+    });
+
+    // Enter key advances on single-line inputs (not textareas)
+    form.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      if (e.target.tagName === 'TEXTAREA') return; // allow newlines
+      e.preventDefault();
+      advance();
+    });
+
+    // Clear error styling as the user types
+    form.querySelectorAll('input, textarea').forEach(function (el) {
+      el.addEventListener('input', function () { el.classList.remove('error'); });
+    });
+
+    // Init progress bar to step 1
+    setProgress(1);
+  })();
+</script>
+
+</body>
+</html>

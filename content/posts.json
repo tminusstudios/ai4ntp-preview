@@ -1,0 +1,2087 @@
+{
+  "_note": "Source of truth for /blog. Run `node tools/directory/generate.mjs` after editing (it builds tools + blog + sitemap + llms.txt together). Schema + field docs: tools/blog/README.md. HARD RULES: every numeric claim MUST carry an evidence timestamp in source.citations, verified against sessions/<id>/transcript.md. Never fabricate a number, a result, a quote, or a date. A `quote` must be the speaker's actual words. status:'draft' records are never generated, sitemapped, or listed in llms.txt. No em dashes anywhere (sitewide brand rule).",
+  "posts": [
+    {
+      "slug": "why-ai-websites-look-the-same",
+      "archetype": "howto",
+      "status": "published",
+      "title": "Why AI-Built Websites All Look the Same (and How to Fix It)",
+      "seo_title": "Why Do AI-Built Websites All Look the Same? | AI4NTP",
+      "dek": "It is not the model's fault. It is what you did not give it.",
+      "description": "AI-built websites all look the same because models fall back on trained design defaults when you give them no direction. Here is why, and the two-pass fix, from a designer of 20 years.",
+      "keyword": {
+        "primary": "why do ai websites look the same",
+        "secondary": [
+          "ai website templates",
+          "why do ai generated websites look the same",
+          "make ai websites look better",
+          "vibe coded website"
+        ],
+        "question": "Why do AI-built websites all look the same?",
+        "intent": "informational"
+      },
+      "answer": "AI-built websites look the same because models are trained on certain design aesthetics and fall back on them when you give them nothing else to work from. The tells are consistent: constrained max-width, heavy rounded corners, and text filling space where imagery should be. The fix is context, not a better prompt.",
+      "takeaways": [
+        "Ian Kilpatrick's diagnosis: AI has templates it does not mean to have, because it is trained on certain design aesthetics.",
+        "The fix is feeding it screenshots of sites you actually like, before you build, not describing them in words.",
+        "Expect the first pass to look templated. That is normal. The second pass, with imagery and specific direction, is where it stops looking AI-made.",
+        "Alec Saluga's logo before-and-after makes the same point: no real prompt produced garbage, and a saved skill file produced night-and-day better output.",
+        "The common tells are a constrained max-width, heavy rounded corners, and text where a hero image should be."
+      ],
+      "author": "Ian Kilpatrick",
+      "reviewers": [
+        "Alec Saluga"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "005",
+        "citations": [
+          {
+            "ts": "6:01",
+            "speaker": "Alec",
+            "claim": "Start from inspiration rather than nothing, without ripping anyone off.",
+            "quote": "we don't wanna steal something from anyone. We don't wanna directly rip anything off, but it's great to get inspiration so we're not starting from a complete... zero."
+          },
+          {
+            "ts": "7:50",
+            "speaker": "Alec",
+            "claim": "Capture the whole page in one screenshot to use as context.",
+            "quote": "now I can capture the entire page here. So this'll go, and it'll take a, a big screenshot of everything on this site."
+          },
+          {
+            "ts": "23:45",
+            "speaker": "Alec",
+            "claim": "Without a real prompt the output was garbage; a saved skill file changed it completely.",
+            "quote": "I didn't really give it much of a prompt, and I was getting just garbage."
+          },
+          {
+            "ts": "23:45",
+            "speaker": "Alec",
+            "claim": "A skill file is just a saved prompt.",
+            "quote": "all a skill file really is is it's a prompt. It's, it's just a prompt saved in a... MD file."
+          },
+          {
+            "ts": "31:24",
+            "speaker": "Ian",
+            "claim": "AI fills space convincingly without imagery, and you learn to recognize the template.",
+            "quote": "if you don't give them imagery, they're really good at making stuff look good without actually using imagery. But you'll start to recognize, oh, that's... a standard template."
+          },
+          {
+            "ts": "31:24",
+            "speaker": "Ian",
+            "claim": "The core diagnosis: models have unintentional templates from their training.",
+            "quote": "So AI has templates... that they don't mean to, but they're just kinda trained on certain design... aesthetics."
+          },
+          {
+            "ts": "31:24",
+            "speaker": "Ian",
+            "claim": "The fix is feeding it screenshots of sites you like.",
+            "quote": "So what you have to do is start to give it other... screenshots of other sites you like or styles and designs to kinda help guide it in the direction you want it to go."
+          },
+          {
+            "ts": "31:24",
+            "speaker": "Ian",
+            "claim": "First pass is always templated; the second pass is where refinement happens.",
+            "quote": "first pass will always look roughly like this. Second pass is when you really wanna start to refine it and give it more imagery"
+          },
+          {
+            "ts": "31:24",
+            "speaker": "Ian",
+            "claim": "The layout tell: AI defaults to a constrained max-width.",
+            "quote": "I like to go full width or at least for hero images."
+          },
+          {
+            "ts": "31:24",
+            "speaker": "Ian",
+            "claim": "The outcome if you break out of the template.",
+            "quote": "if you can break out of it, give it a lot of training, a lot of guidance, then you can actually make it your own and nobody will even know that you AI coded it, Vibe coded it."
+          },
+          {
+            "ts": "35:09",
+            "speaker": "Ian",
+            "claim": "The judgment comes from two decades of design experience, not from the tool.",
+            "quote": "a lot of the stuff... that I do is, comes from like 20 something years of like web design"
+          },
+          {
+            "ts": "35:09",
+            "speaker": "Ian",
+            "claim": "You direct it in plain language by showing it the problem area.",
+            "quote": "once you get in there, you can really just start to even talk to it in, in plain language"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "Why do AI-built websites all look the same?",
+          "id": "why",
+          "table": null,
+          "quote": {
+            "text": "So AI has templates... that they don't mean to, but they're just kinda trained on certain design... aesthetics.",
+            "speaker": "Ian Kilpatrick",
+            "ts": "31:24"
+          },
+          "body": [
+            "You have seen it. The centered column, the soft rounded corners, the three feature cards, the gradient nobody asked for. Different tools, different prompts, same website.",
+            "Ian Kilpatrick built a bakery site live on Session 005 and named the cause while it was happening. Models are trained on certain design aesthetics, and when you give them nothing to work from, they fall back on what they were trained on. The template is not a feature anyone shipped. It is the average of everything the model has seen.",
+            "The second half of his diagnosis is the part people miss: AI is very good at making something look finished without any imagery at all. It will fill the space convincingly. That is exactly why the result reads as generic, and why you stop noticing what is missing."
+          ]
+        },
+        {
+          "h2": "What are the tells?",
+          "id": "tells",
+          "quote": null,
+          "table": {
+            "headers": [
+              "The tell",
+              "What to ask for instead"
+            ],
+            "rows": [
+              [
+                "A constrained max-width column",
+                "Full width, at least for hero images"
+              ],
+              [
+                "Heavy rounded corners on everything",
+                "Corner treatment that matches the brand, not the default"
+              ],
+              [
+                "Text filling space where an image belongs",
+                "Real imagery you supply, placed high"
+              ],
+              [
+                "Punchy headlines and calls to action everywhere",
+                "Fine, if the copy is actually yours"
+              ]
+            ]
+          },
+          "body": [
+            "Ian's list came out of watching his own first pass. The layout defaults to a constrained max-width. Corners are rounded, sometimes heavily. Imagery sits below the fold or does not exist, because the model filled the hero with text instead.",
+            "He is honest that some of it works. For a bakery, rounded corners were fine. The problem is not that the defaults are ugly. The problem is that they are the same defaults everyone else is shipping this week."
+          ]
+        },
+        {
+          "h2": "How do you break out of the template?",
+          "id": "fix",
+          "table": null,
+          "quote": {
+            "text": "if you can break out of it, give it a lot of training, a lot of guidance, then you can actually make it your own and nobody will even know that you AI coded it, Vibe coded it.",
+            "speaker": "Ian Kilpatrick",
+            "ts": "31:24"
+          },
+          "body": [
+            "Give it more context, not a better adjective. Screenshots of sites you actually like, real imagery, and specific direction about what you do not like.",
+            "Alec Saluga demonstrated the same principle on logos in the same session, and the before-and-after was blunt. Without a real prompt he was getting garbage he could not use. Then he pasted in a saved skill file, which is nothing more exotic than a prompt saved in a markdown file, and called the difference night and day.",
+            "Same lesson, two mediums: the model was never the constraint. The context was."
+          ]
+        },
+        {
+          "h2": "Do you need design experience to do this?",
+          "id": "experience",
+          "table": null,
+          "quote": null,
+          "body": [
+            "It helps, and it is worth being straight about that rather than pretending the tool erases the skill. Ian's ability to look at a page and say what is wrong comes from about 20 years of web design and knowing how CSS collapses.",
+            "But the useful part is that you do not need to know how to fix it. You need to notice that something is off and say so in plain language. Take a screenshot of the area you do not like, hand it back, and say you do not like it. That is the whole interaction.",
+            "The second pass is where the work is. Almost nobody does it, which is why almost every AI-built site still looks like an AI-built site."
+          ]
+        }
+      ],
+      "howto": {
+        "total_time": null,
+        "steps": [
+          {
+            "name": "Find a site you actually admire",
+            "tool_slug": "behance",
+            "body": "Start from inspiration rather than a blank prompt. Alec's framing is the right guardrail: you are not stealing anything or ripping it off, you are avoiding starting from a complete zero. National brands are a good hunting ground because they have already spent real money working out what converts."
+          },
+          {
+            "name": "Capture the entire page as one screenshot",
+            "tool_slug": "fireshot",
+            "body": "Not a crop of the header. The whole page, top to bottom, in a single image, so the model sees the rhythm, the spacing, and where imagery sits. This is one browser extension and one click, and it is the highest-leverage thirty seconds in the process."
+          },
+          {
+            "name": "Feed the screenshot in as context before you build",
+            "tool_slug": "lovable",
+            "body": "Give the builder the image along with your brief. This is the step that decides whether you get the template or something of your own, and it happens before a single line is generated."
+          },
+          {
+            "name": "Expect the first pass to look templated",
+            "tool_slug": null,
+            "body": "It will. Ian's first pass did, on camera, and he had every advantage. Do not judge the tool here and do not start over. The first pass is a draft that exists so you have something specific to react to."
+          },
+          {
+            "name": "Second pass: give it imagery and name what is wrong",
+            "tool_slug": "openclaw",
+            "body": "This is the pass that matters. Supply real images and ask for specific placement, like a full-width hero. Screenshot anything you dislike, hand it back, and say so in plain language. Ian's example: he asked for a big hero image of a warm cinnamon bun, with text over the top, to make it feel real."
+          },
+          {
+            "name": "Save the direction that worked as a reusable prompt",
+            "tool_slug": "higgsfield",
+            "body": "Once you have direction that produces output you like, save it. Alec keeps a small library of these skill files, one per niche and task, so the good result is repeatable instead of a thing he re-earns every time."
+          }
+        ]
+      },
+      "itemlist": null,
+      "definition": null,
+      "results": null,
+      "faqs": [
+        {
+          "q": "Why do AI-generated websites all look the same?",
+          "a": "Because models are trained on certain design aesthetics and fall back on them when you give them no direction. As Ian Kilpatrick put it on Session 005, AI has templates it does not mean to have. It is also very good at making a page look finished without any imagery, which is why the results read as generic."
+        },
+        {
+          "q": "How do you make an AI-built website not look AI-built?",
+          "a": "Give it context instead of adjectives. Screenshot a full page you admire and feed it in before you build, expect the first pass to look templated, then do a second pass supplying real imagery and specific direction. Ian's claim is that if you break out of the template, nobody will even know you built it with AI."
+        },
+        {
+          "q": "What are the signs a website was built with AI?",
+          "a": "A constrained max-width column, heavy rounded corners on everything, text filling space where a hero image should be, and punchy headlines with calls to action everywhere. None of these are bad on their own; they are just the defaults everyone is shipping."
+        },
+        {
+          "q": "Is it the AI model's fault?",
+          "a": "No. Both examples in Session 005 point the other way. Ian's site looked generic until he supplied imagery and direction. Alec's logos were garbage until he pasted in a saved prompt, after which he called the difference night and day. The model was never the constraint."
+        },
+        {
+          "q": "Do you need to be a designer?",
+          "a": "It helps. Ian's eye comes from about 20 years of web design. But you do not need to know how to fix anything: you need to notice something is off, screenshot it, and say so in plain language. The tool does the fixing."
+        },
+        {
+          "q": "What is a skill file?",
+          "a": "A prompt saved in a markdown file, and nothing more complicated than that. Alec Saluga keeps a library of them, one per task or niche, so a result that worked once can be reused instead of re-earned every time."
+        }
+      ],
+      "links": {
+        "tools": [
+          "fireshot",
+          "openclaw",
+          "claude",
+          "chatgpt",
+          "lovable",
+          "higgsfield",
+          "behance",
+          "midjourney",
+          "wispr-flow"
+        ],
+        "sessions": [
+          "005"
+        ],
+        "posts": [
+          "build-a-company-with-ai"
+        ],
+        "cta": "/register"
+      },
+      "og": {
+        "kicker": "SESSION 005 - PLAYBOOK",
+        "headline_line1": "Why AI websites",
+        "headline_pre": "all look the ",
+        "headline_highlight": "same",
+        "headline_post": ".",
+        "subtitle": "It is not the model's fault. It is what you did not give it.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 112,
+        "output": "og-image.jpg"
+      }
+    },
+    {
+      "slug": "n8n-vs-claude-code",
+      "archetype": "listicle",
+      "status": "published",
+      "title": "n8n vs Claude Code vs Hermes: Which One Should You Use?",
+      "seo_title": "n8n vs Claude Code vs Hermes: Which To Use When | AI4NTP",
+      "dek": "Three categories, one rule each. Scheduled work, visual work, and going in to get work done.",
+      "description": "When to use n8n vs Claude Code vs Hermes, from two operators who use all three daily. The split is by job: visual wiring, always-on schedules, or going in to get work done.",
+      "keyword": {
+        "primary": "when to use n8n vs claude code",
+        "secondary": [
+          "n8n vs claude code",
+          "n8n vs zapier",
+          "ai automation tools comparison",
+          "best ai automation tool"
+        ],
+        "question": "When should you use n8n vs Claude Code vs Hermes?",
+        "intent": "commercial-investigation"
+      },
+      "answer": "The split is by job, not by quality. Use n8n when you need to see and debug a workflow visually, or to wire two tools together fast. Use an always-on agent like Hermes or OpenClaw for anything on a schedule. Use Claude Code or Codex when you are going in to get work done.",
+      "takeaways": [
+        "Alec Saluga's rule: if it's doing something all the time, use Hermes or OpenClaw. If you're going in to get work done, use Claude Code.",
+        "n8n's advantage is visibility. Claude Code agents are a black box where you verify outputs; in n8n you see every execution and find exactly what broke.",
+        "n8n is open source and self-hostable for about $4 a month with unlimited executions. Zapier and Make.com do fundamentally the same thing but bill per execution.",
+        "If you have never built a workflow, start in n8n. It teaches you what a system prompt is and how an HTTP request works, then switch to Claude Code once you have a feel.",
+        "Justin Novak's split: Hermes for high-velocity marketing operations, Claude Code as the daily driver, and a structured CRM for customer relationships."
+      ],
+      "author": "Alec Saluga",
+      "reviewers": [
+        "Justin Novak"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "004",
+        "citations": [
+          {
+            "ts": "22:00",
+            "speaker": "Alec",
+            "claim": "What n8n is and why it is useful.",
+            "quote": "n8n. Great tool because it's visual, it lets you connect tools, build workflows, and put AI in the workflow."
+          },
+          {
+            "ts": "25:00",
+            "speaker": "Alec",
+            "claim": "The pricing model difference against Zapier and Make.com.",
+            "quote": "A lot of people use Zapier or Make.com, which are great and do fundamentally the same thing, but they're billed per execution. n8n is open source, host it on your own infrastructure for about $4 a month, unlimited executions."
+          },
+          {
+            "ts": "26:00",
+            "speaker": "Alec",
+            "claim": "Alec's actual day-to-day use for n8n.",
+            "quote": "The most common case is a new landing page where I need to pull the data in and route it to the client, or push it to a Google Sheet and Airtable. Simple, quick routing, I'll use n8n all day."
+          },
+          {
+            "ts": "26:00",
+            "speaker": "Justin",
+            "claim": "The trade-off framed as control versus black box.",
+            "quote": "Sounds like it gives better control over the data and how to manipulate it, whereas AI can feel like a black box."
+          },
+          {
+            "ts": "27:00",
+            "speaker": "Alec",
+            "claim": "The debugging difference, which is the real argument for n8n.",
+            "quote": "everyone's talking about Claude Code agents, and it's a black box. You tell it the outputs and verify if it's working. In n8n you see all the executions, find exactly what isn't functioning and why."
+          },
+          {
+            "ts": "49:00",
+            "speaker": "Alec",
+            "claim": "Which to start with if you are not technical.",
+            "quote": "For anyone who's never built these workflows or isn't technical, n8n is a great starting point to understand how they work. What's a system prompt? How do you make an HTTP request? You'll learn that in n8n."
+          },
+          {
+            "ts": "53:00",
+            "speaker": "Justin",
+            "claim": "Justin's three-way split across his own stack.",
+            "quote": "Hermes I use for high-velocity marketing operations and intel... And Claude Code is still my daily driver."
+          },
+          {
+            "ts": "53:00",
+            "speaker": "Alec",
+            "claim": "Alec's rule, stated as a rule.",
+            "quote": "My take: anything you're running a cron job on, anything scheduled, I'd use Hermes or OpenClaw. Claude Code is the daily driver where you have your environment and API keys set"
+          },
+          {
+            "ts": "54:00",
+            "speaker": "Alec",
+            "claim": "The rule compressed to one line.",
+            "quote": "So if it's doing something all the time, use Hermes or OpenClaw. If you're going in to get work done, use Claude Code."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "When should you use n8n vs Claude Code vs Hermes?",
+          "id": "which",
+          "table": null,
+          "quote": {
+            "text": "So if it's doing something all the time, use Hermes or OpenClaw. If you're going in to get work done, use Claude Code.",
+            "speaker": "Alec Saluga",
+            "ts": "54:00"
+          },
+          "body": [
+            "This question gets answered badly because people argue about which tool is better. They do different jobs, and the operators who use all of them daily split by job rather than by preference.",
+            "Alec Saluga and Justin Novak went through the whole stack live on Episode 004. Their rules agree, which is the useful part."
+          ]
+        },
+        {
+          "h2": "Why would you use n8n when Claude Code can just build it?",
+          "id": "why-n8n",
+          "table": null,
+          "quote": {
+            "text": "everyone's talking about Claude Code agents, and it's a black box. You tell it the outputs and verify if it's working. In n8n you see all the executions, find exactly what isn't functioning and why.",
+            "speaker": "Alec Saluga",
+            "ts": "27:00"
+          },
+          "body": [
+            "Because you can see it. That is the entire argument, and it is a better one than it sounds.",
+            "A coding agent is a black box: you state the outcome and then verify whether it worked. When it breaks, you are debugging by inference. In n8n every execution is visible, so you find exactly what is not functioning and why.",
+            "Alec is candid that n8n was more necessary a year and a half ago, before you could build the same logic in Claude Code or Codex. It survives because visibility is worth something, and because wiring two tools together does not need an agent."
+          ]
+        },
+        {
+          "h2": "What does each one actually cost?",
+          "id": "cost",
+          "quote": null,
+          "table": {
+            "headers": [
+              "Tool",
+              "Billing model"
+            ],
+            "rows": [
+              [
+                "n8n (self-hosted)",
+                "Open source, about $4/month on your own infrastructure, unlimited executions"
+              ],
+              [
+                "Zapier / Make.com",
+                "Billed per execution"
+              ],
+              [
+                "Claude Code",
+                "Included with Claude paid plans"
+              ],
+              [
+                "Codex",
+                "Needs a $20 OpenAI subscription"
+              ]
+            ]
+          },
+          "body": [
+            "The pricing split matters more than it looks. Zapier and Make.com do fundamentally the same thing as n8n and are genuinely good, but they bill per execution, so a workflow that fires constantly gets expensive by design.",
+            "n8n is open source. Host it yourself for roughly $4 a month and run unlimited executions. If you have a high-frequency workflow, that is the whole decision."
+          ]
+        },
+        {
+          "h2": "Which should you learn first?",
+          "id": "first",
+          "table": null,
+          "quote": null,
+          "body": [
+            "n8n, if you have never built a workflow and do not consider yourself technical. This was Alec's answer to a live question about exactly this, and his reasoning is about education rather than capability.",
+            "You will learn what a system prompt is and how to make an HTTP request, because n8n makes you see both. Then, once you have a feel for how workflows actually operate, switch to Claude Code for anything complex.",
+            "His honest caveat: it is case by case and depends on your experience. In real time, anything complex goes to Claude Code. If he just needs to wire some tools together quickly, n8n all day."
+          ]
+        }
+      ],
+      "itemlist": [
+        {
+          "group": "Visual workflow builders: when you need to see it",
+          "name": "n8n",
+          "tool_slug": "n8n",
+          "price": "Open source; about $4/month self-hosted, unlimited executions.",
+          "evidence_ts": "22:00",
+          "body": "Visual, connects tools, builds workflows, and lets you put AI inside the workflow. Its real advantage is that every execution is visible, so debugging is looking rather than guessing. Alec's most common use is routing data from a new landing page to a client, a Google Sheet, or Airtable. Simple, quick routing, all day."
+        },
+        {
+          "group": "Visual workflow builders: when you need to see it",
+          "name": "Zapier",
+          "tool_slug": "zapier",
+          "price": "Free tier; billed per task volume.",
+          "evidence_ts": "25:00",
+          "body": "Does fundamentally the same job as n8n and does it well, with a huge library of off-the-shelf integrations. The difference is billing: per execution. That is fine for low-frequency workflows and expensive for constant ones. Make.com sits in the same category with the same trade-off."
+        },
+        {
+          "group": "Always-on agents: when it runs on a schedule",
+          "name": "Hermes",
+          "tool_slug": "hermes",
+          "price": "Free and paid model options; you supply the models.",
+          "evidence_ts": "53:00",
+          "body": "Justin's pick for anything scheduled and for high-velocity marketing operations and intel. Anything he was doing manually in marketing ops gets offloaded here so colleagues are not doing busy work. Its edge is persistent memory: it does not forget you between sessions."
+        },
+        {
+          "group": "Always-on agents: when it runs on a schedule",
+          "name": "OpenClaw",
+          "tool_slug": "openclaw",
+          "price": "Open source; self-hosted.",
+          "evidence_ts": "53:00",
+          "body": "The other half of Alec's scheduled-work answer, and the one the AI4NTP operators run for always-on agents doing real work. If the job is a cron job, this or Hermes is the category, not a coding agent."
+        },
+        {
+          "group": "Coding agents: when you are going in to get work done",
+          "name": "Claude Code",
+          "tool_slug": "claude-code",
+          "price": "Paid; included with Claude paid plans.",
+          "evidence_ts": "54:00",
+          "body": "The daily driver, where you have your environment and API keys already set. Reach for it when the work is complex, or when you are sitting down to build rather than to schedule. The cost is visibility: it is a black box, and you verify outcomes rather than watch steps."
+        },
+        {
+          "group": "Coding agents: when you are going in to get work done",
+          "name": "Codex",
+          "tool_slug": "codex",
+          "price": "Needs a $20 OpenAI subscription.",
+          "evidence_ts": null,
+          "body": "OpenAI's equivalent, and in Alec's words better in some cases and lightning fast. Same category and same rule as Claude Code: it is for going in and getting work done, including work that has nothing to do with shipping software, like building a deck or a PDF."
+        }
+      ],
+      "howto": null,
+      "definition": null,
+      "results": null,
+      "faqs": [
+        {
+          "q": "When should you use n8n vs Claude Code?",
+          "a": "Alec Saluga's rule: if it's doing something all the time, use Hermes or OpenClaw; if you're going in to get work done, use Claude Code. n8n sits alongside both, for when you want to see and debug a workflow visually or wire two tools together quickly. Anything complex goes to Claude Code."
+        },
+        {
+          "q": "Is n8n still worth learning now that Claude Code exists?",
+          "a": "Yes, for two reasons. If you have never built a workflow, n8n teaches you what a system prompt is and how an HTTP request works, because it makes you see both. And when something breaks, n8n shows every execution so you find exactly what failed, where a coding agent is a black box you verify by output."
+        },
+        {
+          "q": "n8n vs Zapier: what is the difference?",
+          "a": "They do fundamentally the same thing and Zapier is genuinely good. The difference is billing. Zapier and Make.com charge per execution; n8n is open source and self-hostable for about $4 a month with unlimited executions. For a high-frequency workflow, that is the entire decision."
+        },
+        {
+          "q": "What is Hermes used for?",
+          "a": "Scheduled and always-on work. Justin Novak uses it for high-velocity marketing operations and intel, offloading anything he was doing manually. Its distinguishing feature is persistent memory: unlike a chat window, it does not forget you when you close the tab."
+        },
+        {
+          "q": "Which should a non-technical person start with?",
+          "a": "n8n. That was Alec's answer to this exact question live: for anyone who has never built these workflows or is not technical, it is a great starting point for understanding how they work. Once you have the feel, move to Claude Code for the complex builds."
+        }
+      ],
+      "links": {
+        "tools": [
+          "n8n",
+          "claude-code",
+          "hermes",
+          "openclaw",
+          "codex",
+          "zapier",
+          "apify",
+          "gohighlevel"
+        ],
+        "sessions": [
+          "004"
+        ],
+        "posts": [
+          "what-is-an-ai-agent",
+          "ai-cold-email"
+        ],
+        "cta": "/calendar"
+      },
+      "og": {
+        "kicker": "SESSION 004 - TOOL ROUNDUP",
+        "headline_line1": "n8n, Claude Code,",
+        "headline_pre": "or ",
+        "headline_highlight": "Hermes",
+        "headline_post": "?",
+        "subtitle": "Three categories, one rule each. From operators who use all three daily.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 108,
+        "output": "og-image.jpg"
+      }
+    },
+    {
+      "slug": "get-recommended-by-chatgpt",
+      "archetype": "case-study",
+      "status": "published",
+      "title": "How to Get Your Business Recommended by ChatGPT",
+      "seo_title": "How to Get Your Business Recommended by ChatGPT | AI4NTP",
+      "dek": "One operator took his company from 26 indexed pages to 14,530, and from zero AI-sourced demos to five in a week.",
+      "description": "How to get your business recommended by ChatGPT: what AEO and GEO actually mean, how LLMs read your site, and the real numbers from an operator who did it live.",
+      "keyword": {
+        "primary": "how to get recommended by chatgpt",
+        "secondary": [
+          "how to get your business recommended by ai",
+          "what is aeo",
+          "answer engine optimization",
+          "how to show up in chatgpt"
+        ],
+        "question": "How do you get your business recommended by ChatGPT?",
+        "intent": "informational"
+      },
+      "answer": "Getting recommended by ChatGPT means making your site readable by answer engines. LLMs do not see images or JavaScript, they see schema markup and text, so the work is FAQs, schema, and indexable pages. Ian Kilpatrick took BrandSauce from about 26 indexed pages to 14,530, and from zero AI-sourced demos to five booked in one week.",
+      "takeaways": [
+        "LLMs do not see images or JavaScript on your site. They see schema markup and text, which is why a visually impressive site can be invisible to ChatGPT.",
+        "AEO (Answer Engine Optimization) is putting FAQs on your site so AI assistants can find the answers their users are asking for.",
+        "BrandSauce went from about 26 Google-indexed pages before May to 14,530, after adding AEO fixes plus programmatic SEO.",
+        "Five demos booked in one week all came from ChatGPT, and all five became clients. A few months earlier that number was zero.",
+        "Ian's own visibility score went from 8 to 27 and is still a failing grade, so this is compounding work, not a one-time fix."
+      ],
+      "author": "Ian Kilpatrick",
+      "reviewers": [
+        "Justin Novak",
+        "Alec Saluga"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "006",
+        "citations": [
+          {
+            "ts": "5:03",
+            "speaker": "Ian",
+            "claim": "The tool started as an agent build on Ian's own Mac Studio.",
+            "quote": "On my Mac Studio, I have an OpenClaw named Atlas, and I call him the king, because he kind of controls all my other OpenClaws, and manages them."
+          },
+          {
+            "ts": "5:56",
+            "speaker": "Ian",
+            "claim": "Echo Check began as an internal tool called Pulse Check.",
+            "quote": "we built this tool on the Mac Studio called Pulse Check"
+          },
+          {
+            "ts": "8:09",
+            "speaker": "Ian",
+            "claim": "Ian's own score is still failing, having started at 8.",
+            "quote": "I'm still at F. I have a 27 echo score."
+          },
+          {
+            "ts": "8:58",
+            "speaker": "Ian",
+            "claim": "LLMs read schema markup and text, not images or JavaScript.",
+            "quote": "they don't see images, they don't see JavaScript, they see schema markup and text"
+          },
+          {
+            "ts": "9:50",
+            "speaker": "Ian",
+            "claim": "Indexed pages went from about 26 before May to 14,530.",
+            "quote": "before March, or before May, we had like 26 indexed pages... now we're all the way over to 14,530 pages that Google knows about us"
+          },
+          {
+            "ts": "10:52",
+            "speaker": "Ian",
+            "claim": "AEO defined in plain English.",
+            "quote": "AEO is Answer Engine Optimization. That's it. You put FAQs on your site, and AIs will look for those questions that their humans are asking and know what to answer them."
+          },
+          {
+            "ts": "11:55",
+            "speaker": "Ian",
+            "claim": "Zero AI-sourced demos became five in a week, all of whom became clients.",
+            "quote": "a few months ago, we were getting zero demos on BrandSauce from ChatGPT or Claude or Perplexity. And just about a month, month and a half ago, we had five demos booked in a week. In fact, it was all the demos that week. And they all found us through ChatGPT, and they all became clients."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "How do you get your business recommended by ChatGPT?",
+          "id": "how",
+          "table": null,
+          "quote": null,
+          "body": [
+            "Buyers now ask an AI assistant before they ask Google. That makes \"do we show up in the answer\" its own discipline, and it is not the same work as ranking a blue link.",
+            "Ian Kilpatrick ran this on his own company, BrandSauce, live on Session 006. The short version: make the site readable by machines, put the answers where the machines look, and publish enough indexable pages that Google stops treating you as a small company. The numbers below are what happened."
+          ]
+        },
+        {
+          "h2": "How do LLMs actually read your site?",
+          "id": "how-llms-read",
+          "table": null,
+          "quote": {
+            "text": "they don't see images, they don't see JavaScript, they see schema markup and text",
+            "speaker": "Ian Kilpatrick",
+            "ts": "8:58"
+          },
+          "body": [
+            "This is the part that surprises people with beautiful websites. An LLM crawling your site does not experience the hero video, the animation, or the interactive pricing widget. It reads structured data and text.",
+            "If your value proposition only exists inside an image, a JavaScript-rendered component, or a video with no transcript, it does not exist to ChatGPT. Ian describes the readable view as a Matrix-style version of the site: the text and the schema, and nothing else."
+          ]
+        },
+        {
+          "h2": "What is AEO, and what is GEO?",
+          "id": "aeo-geo",
+          "table": null,
+          "quote": null,
+          "body": [
+            "AEO is Answer Engine Optimization. In Ian's words: you put FAQs on your site, and AIs look for the questions their humans are asking and know what to answer them with. That is the whole idea.",
+            "GEO is Generative Engine Optimization, which targets the AI summary at the top of a Google results page. GEO is a part of SEO rather than a replacement for it, and it is why search traffic moves when you do this work.",
+            "Both come down to the same instinct: write the answer to a real question, in text, in a structure a machine can parse, on a page that is indexable."
+          ]
+        },
+        {
+          "h2": "What actually changed for BrandSauce?",
+          "id": "results",
+          "quote": null,
+          "table": null,
+          "body": [
+            "Before May, Google knew about roughly 26 pages of BrandSauce. Ian implemented the fixes the tool suggested, plus programmatic SEO, and the count went to 14,530 pages that Google knows about and can deliver to searchers.",
+            "The revenue signal came separately. A few months ago BrandSauce was getting zero demos from ChatGPT, Claude, or Perplexity. About a month and a half ago it had five demos booked in a week, which was every demo that week. All five found the company through ChatGPT. All five became clients.",
+            "Worth being honest about the ceiling: Ian's own site scores 27 out of 100 on the tool he built, which is still an F. He started at 8. This is compounding work, not a switch you flip."
+          ]
+        },
+        {
+          "h2": "Where do you start if you have never done this?",
+          "id": "start",
+          "table": null,
+          "quote": null,
+          "body": [
+            "Run your site through a visibility checker and read what it says about crawl access, FAQs, and schema. Those three are the cheapest wins and the ones most sites fail.",
+            "Then write FAQs that match the questions your buyers actually ask out loud, mark them up as structured data, and make sure the answer is in text on the page. Then give Google enough indexable pages to take you seriously.",
+            "The tool Ian built for himself, Echo Check, started as an internal project called Pulse Check on a Mac Studio, before it was ever public. The point is not the tool. The point is that the checklist is short and nobody is doing it yet."
+          ]
+        }
+      ],
+      "results": [
+        {
+          "metric": "Google-indexed pages",
+          "before": "about 26",
+          "after": "14,530",
+          "timeframe": "roughly three months (before May to July 2026)",
+          "as_of": "2026-07-12",
+          "evidence_ts": "9:50"
+        },
+        {
+          "metric": "Demos booked from AI assistants",
+          "before": "zero",
+          "after": "five in one week, all of whom became clients",
+          "timeframe": "a month to a month and a half",
+          "as_of": "2026-07-12",
+          "evidence_ts": "11:55"
+        },
+        {
+          "metric": "Echo Check visibility score",
+          "before": "8",
+          "after": "27 (still a failing grade)",
+          "timeframe": "not stated",
+          "as_of": "2026-07-12",
+          "evidence_ts": "8:09"
+        }
+      ],
+      "howto": null,
+      "itemlist": null,
+      "definition": null,
+      "faqs": [
+        {
+          "q": "How do you get your business recommended by ChatGPT?",
+          "a": "Make the site readable by answer engines. LLMs see schema markup and text, not images or JavaScript, so the work is putting real answers in text, marking them up as structured data, adding FAQs that match what buyers actually ask, and publishing enough indexable pages. Ian Kilpatrick did exactly this at BrandSauce and went from zero AI-sourced demos to five booked in one week."
+        },
+        {
+          "q": "What is AEO?",
+          "a": "AEO is Answer Engine Optimization. In Ian Kilpatrick's words on Session 006: you put FAQs on your site, and AIs will look for those questions that their humans are asking and know what to answer them. It is optimizing to be the answer, rather than to be a link."
+        },
+        {
+          "q": "What is the difference between AEO and GEO?",
+          "a": "AEO (Answer Engine Optimization) targets AI assistants like ChatGPT, Claude, and Perplexity answering a user directly. GEO (Generative Engine Optimization) targets the AI summary at the top of a Google search results page. GEO is a part of SEO rather than a separate thing, which is why doing this work tends to move classic search traffic too."
+        },
+        {
+          "q": "How long does it take to show up in ChatGPT?",
+          "a": "BrandSauce went from about 26 indexed pages before May to 14,530 by mid-July 2026, and the first AI-sourced demos arrived about a month to a month and a half before Session 006 (recorded July 12, 2026). That is roughly a three-month arc. It is also not finished: Ian's own visibility score is 27 out of 100, up from 8."
+        },
+        {
+          "q": "Does AEO actually drive revenue, or just traffic?",
+          "a": "Both, in this case. The traffic signal was 26 to 14,530 indexed pages. The revenue signal was five demos booked in one week, all sourced from ChatGPT, all of whom became clients, against zero AI-sourced demos a few months earlier."
+        }
+      ],
+      "links": {
+        "tools": [
+          "echo-check",
+          "openclaw",
+          "chatgpt",
+          "claude",
+          "perplexity",
+          "brand-sauce"
+        ],
+        "sessions": [
+          "006"
+        ],
+        "posts": [],
+        "cta": "/calendar"
+      },
+      "og": {
+        "kicker": "SESSION 006 - CASE STUDY",
+        "headline_line1": "Get recommended",
+        "headline_pre": "by ",
+        "headline_highlight": "ChatGPT",
+        "headline_post": ".",
+        "subtitle": "26 to 14,530 indexed pages. Zero to five AI-sourced demos in a week.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 116,
+        "output": "og-image.jpg"
+      }
+    },
+    {
+      "slug": "build-custom-software-with-ai",
+      "archetype": "case-study",
+      "status": "published",
+      "title": "We Built a School Platform With AI. Enrollment Went 95 to 230.",
+      "seo_title": "Build Custom Software With AI: A Real $50k-$100k Build | AI4NTP",
+      "dek": "A designer with no LMS experience built the software his school runs on, then let an agent write its blog.",
+      "description": "Should you build custom software with AI instead of buying it? A real build: a school platform made with Claude Code and an agent, alongside enrollment going from 95 to over 230.",
+      "keyword": {
+        "primary": "build custom software with ai",
+        "secondary": [
+          "build vs buy software",
+          "can ai build custom software",
+          "build an app with ai"
+        ],
+        "question": "Should you build custom software with AI instead of buying it?",
+        "intent": "informational"
+      },
+      "answer": "Building custom software with AI is now cheaper than licensing it for many teams. Ian Kilpatrick built the learning management system his school runs on using Claude, Claude Code, and an agent on the server, having never seen an LMS before. Alec Saluga estimated the same build would have cost $50,000 to $100,000 custom.",
+      "takeaways": [
+        "Ian Kilpatrick built a full learning management system for Saints Classical after starting with no idea what an LMS was, by brainstorming with Claude and building with Claude Code.",
+        "Alec Saluga estimated the same system would run $50,000 to $100,000 to build custom, or tens of thousands a year to license, before AI.",
+        "An agent on the server writes the school blog 2 to 3 times a day, now over 300 posts, attributed to a persona named after C.S. Lewis.",
+        "Enrollment went from 95 students to over 230 in one year, which Ian attributes largely to programmatic SEO and AI automation while hedging that the school itself did a great job.",
+        "The system went well beyond an LMS: it takes tuition, handles enrollment, and has its own email and Slack-style messaging built in."
+      ],
+      "author": "Ian Kilpatrick",
+      "reviewers": [
+        "Justin Novak",
+        "Alec Saluga"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "006",
+        "citations": [
+          {
+            "ts": "32:22",
+            "speaker": "Ian",
+            "claim": "The school is Saints Classical, a classical tutorial in Middle Tennessee.",
+            "quote": "my wife and I started working on a school last February, so a year and a half ago... it's called Saints Classical. It's a classical tutorial in Middle Tennessee."
+          },
+          {
+            "ts": "33:38",
+            "speaker": "Ian",
+            "claim": "Ian had never seen an LMS and built the first version by brainstorming with Claude and Claude Code.",
+            "quote": "I basically started brainstorming with Claude, and then Claude Code, and built the first iteration of the LMS. And then the next year came around, so we launched with 95 students"
+          },
+          {
+            "ts": "33:38",
+            "speaker": "Ian",
+            "claim": "An OpenClaw agent on the server built the next iteration.",
+            "quote": "I actually installed an OpenClaw on the server to help me build the next iteration of the LMS"
+          },
+          {
+            "ts": "36:18",
+            "speaker": "Ian",
+            "claim": "An agent writes the school blog 2 to 3 times daily, now around 350 posts.",
+            "quote": "he's actually set up his blog, where he posts 2 to 3 times per day. And it's all attributed to C.S. Lewis... it's now over 300, maybe around 350 blog posts"
+          },
+          {
+            "ts": "36:18",
+            "speaker": "Ian",
+            "claim": "Enrollment went to over 230, which Ian attributes largely to SEO and AI automation, while hedging.",
+            "quote": "largely because of programmatic SEO and this AI automation, we're actually launching the school with over 230 students for this next year, so a two and a half times increase in enrollment. I don't know if that's normal. I mean, she's done a great job on the school itself."
+          },
+          {
+            "ts": "37:34",
+            "speaker": "Ian",
+            "claim": "Ian's own summary of AI's contribution.",
+            "quote": "But I will say AI has helped quite a bit with that."
+          },
+          {
+            "ts": "38:14",
+            "speaker": "Alec",
+            "claim": "Alec's estimate of what the same build would have cost.",
+            "quote": "you're probably in the 50 to $100,000 range for custom building"
+          },
+          {
+            "ts": "39:12",
+            "speaker": "Ian",
+            "claim": "The system goes beyond an LMS: tuition, enrollment, email, and Slack-style messaging.",
+            "quote": "it's way beyond an LMS because it takes tuition. It allows enrollment and even clubs to sign up if people want to pay. It also has its own email system."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "Should you build custom software with AI instead of buying it?",
+          "id": "build-vs-buy",
+          "table": null,
+          "quote": null,
+          "body": [
+            "The old answer was obvious: buy it. Building custom meant a budget, a team, and months. So you licensed something close enough and lived with the gaps.",
+            "Ian Kilpatrick's wife needed a way for parents and students to log in, check enrollment, and see classes, and for teachers to enter them. What she was describing was a learning management system. Ian had never seen one, because he graduated before they existed.",
+            "He built it anyway. Saints Classical, a classical tutorial in Middle Tennessee, now runs on it."
+          ]
+        },
+        {
+          "h2": "How do you build something you have never seen before?",
+          "id": "how",
+          "table": null,
+          "quote": {
+            "text": "I basically started brainstorming with Claude, and then Claude Code, and built the first iteration of the LMS.",
+            "speaker": "Ian Kilpatrick",
+            "ts": "33:38"
+          },
+          "body": [
+            "The first move was not writing code. It was asking. Ian went to Claude saying he did not know what he was doing, and it walked him through how Google Classroom, Blackboard, and Blackbaud each handle it. He pulled the parts he liked and discarded the rest.",
+            "That is the whole trick, and it is why not knowing the category turned out not to matter. The AI has seen every LMS. You supply the taste and the requirements; it supplies the reference.",
+            "The first version launched to 95 students. For the second, Ian installed an agent directly on the server to help build the next iteration, and to keep helping after launch: when a problem comes in, he pastes his wife's text to the agent, tells it to fix the issue and email the parent when it is done, and it does."
+          ]
+        },
+        {
+          "h2": "What does custom software cost now?",
+          "id": "cost",
+          "table": null,
+          "quote": {
+            "text": "you're probably in the 50 to $100,000 range for custom building",
+            "speaker": "Alec Saluga",
+            "ts": "38:14"
+          },
+          "body": [
+            "Alec's estimate is the useful anchor. Ten years ago this system meant licensing something for tens of thousands a year, or paying $50,000 to $100,000 to have it built custom.",
+            "That is an estimate of the alternative, not an invoice Ian paid. What he actually spent was his own time plus AI tooling. The comparison is the point: the build-versus-buy math that held for two decades has inverted for a large class of internal software.",
+            "And what he got is not a compromise. It takes tuition, handles enrollment and club signups, has its own email system, and has Slack-style groups built in. No unused features, and nothing missing."
+          ]
+        },
+        {
+          "h2": "What did the AI-written blog actually do?",
+          "id": "blog",
+          "table": null,
+          "quote": null,
+          "body": [
+            "The agent on the server set up the school's blog and posts to it 2 to 3 times per day, written in a persona attributed to C.S. Lewis and scoped to what the school actually teaches. It is now over 300 posts, maybe around 350.",
+            "The goal was E-E-A-T: enough expert, experienced, authoritative, trustworthy material for Google to recommend the school higher. People find the articles, and because they are relevant to the curriculum, some of those readers end up signing up.",
+            "Enrollment went from 95 students to over 230 for the next year, roughly two and a half times. Ian's own framing is worth keeping intact rather than tidying up: he credits programmatic SEO and AI automation \"largely\", and then immediately says \"I don't know if that's normal. I mean, she's done a great job on the school itself.\" AI helped quite a bit. It did not do it alone, and he is the first to say so."
+          ]
+        }
+      ],
+      "results": [
+        {
+          "metric": "Enrollment",
+          "before": "95 students",
+          "after": "over 230 students",
+          "timeframe": "one year",
+          "as_of": "2026-07-12",
+          "evidence_ts": "36:18"
+        },
+        {
+          "metric": "Blog posts on the school site",
+          "before": null,
+          "after": "over 300, around 350",
+          "timeframe": "at 2 to 3 posts per day",
+          "as_of": "2026-07-12",
+          "evidence_ts": "36:18"
+        }
+      ],
+      "howto": null,
+      "itemlist": null,
+      "definition": null,
+      "faqs": [
+        {
+          "q": "Can AI really build custom software?",
+          "a": "It built the platform a real school runs on. Ian Kilpatrick had never seen a learning management system, brainstormed the requirements with Claude, built the first iteration with Claude Code, and used an agent on the server for the second. It handles enrollment, tuition, classes, lesson plans, email, and messaging."
+        },
+        {
+          "q": "How much does it cost to build custom software with AI?",
+          "a": "Alec Saluga estimated on Session 006 that the same system would have cost $50,000 to $100,000 to build custom before AI, or tens of thousands a year to license. That is an estimate of the alternative, not what Ian paid; his cost was his own time plus AI tooling."
+        },
+        {
+          "q": "Do you need to be a developer?",
+          "a": "Ian is a designer and developer, so he is not a beginner. But the load-bearing skill here was not coding, it was not knowing what an LMS was and asking the AI to explain how existing ones work, then choosing. He went in saying he did not know what he was doing."
+        },
+        {
+          "q": "Did the AI blog cause the enrollment increase?",
+          "a": "Partly, and Ian is careful about this. He says the increase from 95 to over 230 students is \"largely because of programmatic SEO and this AI automation\", then immediately adds \"I don't know if that's normal. I mean, she's done a great job on the school itself\" and \"I will say AI has helped quite a bit.\" The school's own quality is part of the story."
+        },
+        {
+          "q": "Should you build or buy?",
+          "a": "Buy when an off-the-shelf tool genuinely fits. Build when you are stitching five tools together to approximate what you need. Ian's system replaced what would have been an LMS plus Slack plus an email tool plus a payments flow, and every feature exists because he needed it."
+        }
+      ],
+      "links": {
+        "tools": [
+          "claude",
+          "claude-code",
+          "openclaw"
+        ],
+        "sessions": [
+          "006"
+        ],
+        "posts": [
+          "build-a-company-with-ai"
+        ],
+        "cta": "/calendar"
+      },
+      "og": {
+        "kicker": "SESSION 006 - CASE STUDY",
+        "headline_line1": "Build custom software",
+        "headline_pre": "with ",
+        "headline_highlight": "AI",
+        "headline_post": ".",
+        "subtitle": "A school platform that would have cost $50k to $100k. Enrollment went 95 to 230.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 104,
+        "output": "og-image.jpg"
+      }
+    },
+    {
+      "slug": "ai-cold-email",
+      "archetype": "howto",
+      "status": "published",
+      "title": "How to Use AI for Cold Email (112 Opportunities in 7 Days)",
+      "seo_title": "How to Use AI for Cold Email: A Real Agent Workflow | AI4NTP",
+      "dek": "One agent, four steps. Scrape the data, enrich it, personalize every email, send at scale.",
+      "description": "How to use AI for cold email: the exact four-step agent workflow behind about 1,700 prospects and 112 opportunities in seven days, demoed live by a real operator.",
+      "keyword": {
+        "primary": "how to use ai for cold email",
+        "secondary": [
+          "ai cold email agent",
+          "ai for cold outreach",
+          "personalized cold email at scale"
+        ],
+        "question": "How do you use AI for cold email?",
+        "intent": "informational"
+      },
+      "answer": "AI cold email works by feeding an agent real data before it writes anything. The workflow is four steps: scrape a prospect database, enrich each record from the prospect's own website, have AI write one personalized email per prospect, then send through cold-email software. Alec Saluga's last seven days on one client: about 1,700 prospects and 112 opportunities.",
+      "takeaways": [
+        "This is one agent, not a fleet. Alec Saluga's point is that you do not need something complex to get real results.",
+        "Seven days on one client: a sequence to about 1,700 prospects, roughly 3,500 emails, and 112 opportunities.",
+        "For context Alec gives on tape: a 3% reply rate is typically considered good, and half of those replies might be telling you to stop emailing.",
+        "The personalization is what works. The agent reads the prospect's own site and references something real, like how long the firm has been around or a case it just settled.",
+        "Apify supplies the data (an off-the-shelf scraper store), and Instantly does the sending so you are not burning your personal inbox."
+      ],
+      "author": "Alec Saluga",
+      "reviewers": [
+        "Justin Novak"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "006",
+        "citations": [
+          {
+            "ts": "49:19",
+            "speaker": "Alec",
+            "claim": "Seven days, about 1,700 prospects, roughly 3,500 emails, 112 opportunities.",
+            "quote": "we started the sequence for about 1,700 people. It's likely they've gotten two emails, it's probably 3,500 emails-ish a week. And from that we've gotten 112 opportunities."
+          },
+          {
+            "ts": "49:19",
+            "speaker": "Alec",
+            "claim": "Baseline context for what a good reply rate looks like.",
+            "quote": "You're typically getting maybe 3% reply rate is pretty good."
+          },
+          {
+            "ts": "50:22",
+            "speaker": "Alec",
+            "claim": "Even that baseline is generous, since many replies are opt-outs.",
+            "quote": "Half of those 3% might be telling you to stop emailing them."
+          },
+          {
+            "ts": "50:22",
+            "speaker": "Alec",
+            "claim": "The core loop: scrape the database, pull the prospect info, write hyper-personalized emails.",
+            "quote": "what we do is we scrape that database and we pull in all the info about the prospect and we write these hyper, hyper-personalized emails"
+          },
+          {
+            "ts": "51:31",
+            "speaker": "Alec",
+            "claim": "Apify provides off-the-shelf scrapers as the data source.",
+            "quote": "what Apify does is they have some off-the-shelf scrapers here. They have a whole store filled with scrapers."
+          },
+          {
+            "ts": "52:39",
+            "speaker": "Alec",
+            "claim": "The agent drives the scraper with an ID and an API key.",
+            "quote": "You basically give them the scraper ID and an API key and it can go and use the scraper to pull in data."
+          },
+          {
+            "ts": "52:39",
+            "speaker": "Alec",
+            "claim": "The enrichment step reads the prospect's own site for a real detail.",
+            "quote": "it can go on the website and pull out some stats from the law firms, like, hey, I see you've been around since 1997"
+          },
+          {
+            "ts": "53:31",
+            "speaker": "Alec",
+            "claim": "Instantly sends at scale without burning your own inbox.",
+            "quote": "It basically allows you to send emails at scale without burning your personal email."
+          },
+          {
+            "ts": "55:29",
+            "speaker": "Alec",
+            "claim": "The reply-handling agent is the next build, not something already shipped.",
+            "quote": "then you implement the agent that's replying to the responses and setting the meetings"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "How do you use AI for cold email?",
+          "id": "how",
+          "table": null,
+          "quote": null,
+          "body": [
+            "Most AI cold email is worse than no cold email, because people point a language model at a name and a company and ask it to be charming. The result reads exactly like what it is.",
+            "The version that works inverts the order: get real data first, then write. Alec Saluga demoed this live on Session 006 and it is deliberately simple. In his words, this is not 25 agents, this is more like one agent, and it goes to show you do not need something incredibly complex to get real results."
+          ]
+        },
+        {
+          "h2": "What results should you actually expect?",
+          "id": "results",
+          "quote": null,
+          "table": {
+            "headers": [
+              "Metric",
+              "Last 7 days, one client"
+            ],
+            "rows": [
+              [
+                "Prospects in the sequence",
+                "about 1,700"
+              ],
+              [
+                "Emails sent",
+                "roughly 3,500"
+              ],
+              [
+                "Opportunities",
+                "112"
+              ],
+              [
+                "Typical good reply rate, for context",
+                "about 3%"
+              ]
+            ]
+          },
+          "body": [
+            "These are the numbers from a screenshot Alec pulled right before the session, covering the last seven days with one client.",
+            "The context matters more than the headline. Alec's own baseline: a 3% reply rate is typically considered pretty good, and half of those replies might be telling you to stop emailing them. That is what a normal cold-email operation looks like, and it is why the opportunity rate here is worth examining rather than just admiring.",
+            "One honest caveat: the client is not named, and the 3,500 figure is Alec's estimate on tape (\"it's probably 3,500 emails-ish\"), not a reported number."
+          ]
+        },
+        {
+          "h2": "Where does the prospect data come from?",
+          "id": "data",
+          "table": null,
+          "quote": null,
+          "body": [
+            "Data is the real bottleneck, not the writing. Apify is the answer Alec points people to: a store of off-the-shelf scrapers you can run without building anything.",
+            "You can scrape Facebook pages for emails, TikTok accounts for analytics, Google search results, or, in Alec's case, a lawyer and attorney lead scraper, because one of his businesses sells to attorneys.",
+            "The agent handoff is the part worth copying: you give the agent the scraper ID and an API key, and it runs the scraper itself and pulls the data in. The agent is not just writing, it is fetching."
+          ]
+        },
+        {
+          "h2": "How does the AI personalize each email?",
+          "id": "personalize",
+          "table": null,
+          "quote": {
+            "text": "it can go on the website and pull out some stats from the law firms, like, hey, I see you've been around since 1997",
+            "speaker": "Alec Saluga",
+            "ts": "52:39"
+          },
+          "body": [
+            "The scraped dataset is the starting point, not the personalization. The enrichment step is where the agent goes to the prospect's own website and pulls out something real: how long they have been around, a case they just settled.",
+            "Then the email references it. \"I see you've been around since 1997.\" \"I saw you just settled this case for this amount, we can get you five more of those.\"",
+            "It is the same instinct as the blue-bubble text message from earlier in the session: the extra layer of effort is what signals a human did the work, and that is what moves reply rates."
+          ]
+        },
+        {
+          "h2": "How do you send at scale without burning your inbox?",
+          "id": "send",
+          "table": null,
+          "quote": null,
+          "body": [
+            "The finished emails push into Instantly, which is the cold-email software behind the screenshot. Its job is deliverability: sending at volume without torching your personal domain and inbox reputation.",
+            "That is the whole loop. Pull in data, write personalized emails tailored to both the prospect and your offer, push into a sequence, get meetings on autopilot. It just runs.",
+            "What is not built yet, and Alec is explicit about this: the agent that replies to the responses and sets the meetings. That is the next layer, along with pushing it all into a CRM. Worth knowing before you assume the loop closes itself."
+          ]
+        }
+      ],
+      "howto": {
+        "total_time": null,
+        "steps": [
+          {
+            "name": "Scrape the prospect database",
+            "tool_slug": "apify",
+            "body": "Start with data, not copy. Use an off-the-shelf scraper rather than building one: Apify has a store of them, from Google Maps and search results to industry-specific lead scrapers. Alec found a lawyer and attorney lead scraper because one of his businesses sells to attorneys."
+          },
+          {
+            "name": "Hand the scraper to the agent",
+            "tool_slug": "codex",
+            "body": "Give the agent the scraper ID and an API key so it can run the scraper and pull the dataset in itself. This is what makes it an agent rather than a writing tool: it fetches its own inputs."
+          },
+          {
+            "name": "Enrich each record from the prospect's own site",
+            "tool_slug": null,
+            "body": "The dataset alone is not personalization. Have the agent visit each prospect's website and pull one real, specific detail: how long they have been in business, a recent result, something only someone who looked would know. This step is the entire difference between this and spam."
+          },
+          {
+            "name": "Write one email per prospect and push it into the sequence",
+            "tool_slug": "instantly",
+            "body": "The agent writes a hyper-personalized email tailored to both the prospect and your offer, then pushes it into cold-email software that sends at scale without burning your personal inbox. Then it runs."
+          }
+        ]
+      },
+      "itemlist": null,
+      "definition": null,
+      "results": null,
+      "faqs": [
+        {
+          "q": "Does AI cold email actually work?",
+          "a": "On one client over seven days: a sequence to about 1,700 prospects, roughly 3,500 emails, and 112 opportunities. For context, Alec Saluga's own baseline on the same call is that a 3% reply rate is typically considered good and half of those replies may be asking you to stop emailing."
+        },
+        {
+          "q": "What tools do you need for AI cold email?",
+          "a": "Three pieces: a data source (Apify's off-the-shelf scrapers), an agent to run the scraper and write the emails (Alec demoed this with Codex), and cold-email software to send at scale without burning your personal inbox (Instantly). That is the whole stack."
+        },
+        {
+          "q": "How do you personalize cold emails with AI at scale?",
+          "a": "Do not ask the AI to be charming with just a name and a company. Have the agent visit the prospect's own website and extract one specific, real detail, then reference it. Alec's example: noticing a firm has been around since 1997, or that they just settled a particular case."
+        },
+        {
+          "q": "Is this a complex build?",
+          "a": "No, and that is the point Alec makes explicitly. This is one agent doing one thing, not the 20-to-50-agent systems shown elsewhere in the same session. It pulls in data, writes personalized emails, and pushes them into a sequence."
+        },
+        {
+          "q": "Does the agent handle replies too?",
+          "a": "Not in this build. Alec names the reply-handling and meeting-setting agent as the next thing to implement, along with pushing everything into a CRM. As shown, a human still handles the responses."
+        }
+      ],
+      "links": {
+        "tools": [
+          "apify",
+          "instantly",
+          "codex",
+          "openclaw"
+        ],
+        "sessions": [
+          "006"
+        ],
+        "posts": [],
+        "cta": "/calendar"
+      },
+      "og": {
+        "kicker": "SESSION 006 - PLAYBOOK",
+        "headline_line1": "AI cold email that",
+        "headline_pre": "actually ",
+        "headline_highlight": "works",
+        "headline_post": ".",
+        "subtitle": "About 1,700 prospects. 112 opportunities. Seven days. One agent.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 110,
+        "output": "og-image.jpg"
+      }
+    },
+    {
+      "slug": "what-is-an-ai-agent",
+      "archetype": "explainer",
+      "status": "published",
+      "title": "What Is an AI Agent? Plain English, With 7 Real Ones",
+      "seo_title": "What Is an AI Agent? Plain English + 7 Real Examples | AI4NTP",
+      "dek": "The difference is not the model. It is whether you are asking for an answer or an outcome.",
+      "description": "What is an AI agent, in plain English? The difference between an agent and ChatGPT, and seven real agents that run a company, with what each one does.",
+      "keyword": {
+        "primary": "what is an ai agent",
+        "secondary": [
+          "ai agent vs chatbot",
+          "ai agent examples",
+          "what is agentic ai",
+          "ai agent vs chatgpt"
+        ],
+        "question": "What is an AI agent, and how is it different from ChatGPT?",
+        "intent": "informational"
+      },
+      "answer": "An AI agent is a program you ask for outcomes instead of answers. Conversational AI like ChatGPT returns a reply that you then act on. An agent is connected to your tools, email, and systems, holds a specific role, and takes the action itself. AI4NTP (AI for Non-Techy People) runs seven of them to operate the company.",
+      "takeaways": [
+        "The difference between an agent and ChatGPT is not the model, it is the ask: answers versus outcomes.",
+        "An agent is hooked up to tools, email, and systems, and has specific roles and actions it takes on your behalf.",
+        "Agents work best as a chain of specialists, each doing one job well, not one big bot that does everything.",
+        "Justin Novak's content agents replace what he estimates would be three or four junior marketers at about $60,000 each, north of $200,000 in headcount.",
+        "Jensen Huang of NVIDIA said on stage that every CEO needs an agent strategy. Almost none have one yet."
+      ],
+      "author": "Alec Saluga",
+      "reviewers": [
+        "Justin Novak",
+        "Ian Kilpatrick"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "006",
+        "citations": [
+          {
+            "ts": "2:16",
+            "speaker": "Alec",
+            "claim": "The core distinction: answers versus outcomes.",
+            "quote": "The difference between that and an agent is instead of asking it for answers, you're asking it for outcomes. You're asking it to take action on your behalf."
+          },
+          {
+            "ts": "2:16",
+            "speaker": "Alec",
+            "claim": "What an agent is connected to.",
+            "quote": "It's hooked up to tools, it's hooked up to your emails, it's hooked up to, sometimes, iPhones, hooked up to all of your different systems, and has specific roles and actions that it's taking on your behalf."
+          },
+          {
+            "ts": "6:42",
+            "speaker": "Alec",
+            "claim": "The tell that something is an agent: operators talk about it like a person.",
+            "quote": "you literally hear Ian referring to Atlas as if it's a person, because it can take action as if it is one"
+          },
+          {
+            "ts": "15:34",
+            "speaker": "Justin",
+            "claim": "What the content agents replace in headcount terms.",
+            "quote": "I would need a team of probably three, four junior marketers, and each one runs, call it 60 grand a year minimum. So that's north of $200,000 in headcount"
+          },
+          {
+            "ts": "16:26",
+            "speaker": "Justin",
+            "claim": "Agents work as a chain of specialists, not one big bot.",
+            "quote": "This is not one big agent. It's a chain of specialized agents, each one built for a single step."
+          },
+          {
+            "ts": "18:08",
+            "speaker": "Justin",
+            "claim": "A human stays in the loop for quality control.",
+            "quote": "we do keep a human in the loop for quality control. Because I don't want to send slop."
+          },
+          {
+            "ts": "20:32",
+            "speaker": "Justin",
+            "claim": "The team-of-specialists model, built iteratively.",
+            "quote": "It's not one big, giant bot that does everything. It's a team of specialists I've iteratively built over time, each one doing one job very, very well."
+          },
+          {
+            "ts": "1:02:36",
+            "speaker": "Alec",
+            "claim": "NVIDIA's CEO said every CEO needs an agent strategy.",
+            "quote": "Jensen Huang from NVIDIA, he on stage said every CEO needs an OpenClaw strategy."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "What is an AI agent?",
+          "id": "what-is",
+          "table": null,
+          "quote": {
+            "text": "instead of asking it for answers, you're asking it for outcomes. You're asking it to take action on your behalf.",
+            "speaker": "Alec Saluga",
+            "ts": "2:16"
+          },
+          "body": [
+            "An AI agent is a program you ask for outcomes instead of answers.",
+            "That is the whole distinction, and it does not depend on which model is underneath. An agent is hooked up to tools, to your email, sometimes to your phone, to your systems, and it has specific roles and actions it takes on your behalf."
+          ]
+        },
+        {
+          "h2": "How is an AI agent different from ChatGPT?",
+          "id": "vs-chatgpt",
+          "table": null,
+          "quote": null,
+          "body": [
+            "Most people use conversational AI. You open a browser, you type into ChatGPT or Claude, and you ask for an answer. Then you take that answer and do something with it. You are the one taking the action.",
+            "With an agent, you ask for the outcome and it takes the action. The model might be identical. The difference is the wiring and the ask.",
+            "There is a tell for whether something is really an agent, and Alec caught it live: operators start talking about them like people. Ian refers to Atlas, the agent on his Mac Studio, as \"him\", and calls him the king because he manages the other agents. That happens because it takes action as if it were a person."
+          ]
+        },
+        {
+          "h2": "What can an AI agent actually do? Seven real ones.",
+          "id": "seven",
+          "table": null,
+          "quote": null,
+          "body": [
+            "These are the seven that run AI4NTP and the founders' companies, shown live on Session 006.",
+            "One, an AI-visibility agent. It started as a dare to an agent named Atlas, became an internal tool, and now scores how visible a site is inside AI assistants. It took BrandSauce from about 26 indexed pages to 14,530.",
+            "Two, a content chain. A partner call gets recorded, and a chain of agents turns the transcript into a landing page, an Eventbrite, a Zoom page, a newsletter, an Instagram post, YouTube uploads, shorts, and tool pages. One day of work runs all month.",
+            "Three, an iMessage appointment setter. When a lead opts in but does not book, it texts them from a blue bubble, because a green bubble reads as automated and a blue one reads as human.",
+            "Four, an agent living on a school's server that helped build the platform, writes the blog 2 to 3 times a day, and fixes issues when Ian pastes in a complaint.",
+            "Five, Mission Control: one system that replaced 8-plus tools, with roughly 20 to 50 agents inside it handling intake, client email drafted in Justin's voice, time tracking, and reports that used to take hours.",
+            "Six, a cold-email agent. One agent, four steps, about 1,700 prospects and 112 opportunities in seven days.",
+            "Seven, SaucyBot: an interface that provisions a personal agent for every employee at BrandSauce, each with read-only access to the company and write access only to their own folder. The finance team analyzes shipping costs with it. One employee built himself a live Spanish-English translator so he could talk to Ian."
+          ]
+        },
+        {
+          "h2": "Is one big agent better than several small ones?",
+          "id": "chain",
+          "table": null,
+          "quote": {
+            "text": "It's not one big, giant bot that does everything. It's a team of specialists I've iteratively built over time, each one doing one job very, very well.",
+            "speaker": "Justin Novak",
+            "ts": "20:32"
+          },
+          "body": [
+            "Several small ones, and this is the most common mistake. People try to build one agent that does everything, and get something mediocre at all of it.",
+            "The content system is not one big agent. It is a chain of specialists, each built for a single step: one for the landing page, one for distribution, one for YouTube, one for shorts, one for tool pages, one for the newsletter.",
+            "It also means you never have to build the whole thing. Ian's advice to anyone looking at a 20-to-50-agent system and feeling daunted: that is not where it started. Ask your agent whether it can do one thing. Then ask about the next one."
+          ]
+        },
+        {
+          "h2": "What does an agent replace?",
+          "id": "replaces",
+          "table": null,
+          "quote": null,
+          "body": [
+            "Justin's estimate for the content output alone: three or four junior marketers at roughly $60,000 a year each, so north of $200,000 in headcount, replaced by one day of his time and a set of agents.",
+            "But the framing that matters is not replacement. A human stays in the loop for quality control, because, in Justin's words, he does not want to send slop. The agents do the heavy lifting; the humans decide what is worth saying.",
+            "That is also the guardrail against AI slop. The input is a real recorded conversation between three people, so there is no room for hallucination. The agent is amplifying something that was already worth saying, rather than filling in blanks."
+          ]
+        },
+        {
+          "h2": "Do you need to be technical to run one?",
+          "id": "technical",
+          "table": null,
+          "quote": null,
+          "body": [
+            "No, though someone in the room should know what they are doing. Ian's take on the fear that an agent will delete your database: if you set it up right, and someone knows how to manage it, employees cannot mess it up.",
+            "The proof is BrandSauce's own staff. Designers, a front-end coordinator, and the finance team all build their own tools with their own agents, sandboxed to their own folders. None of them are engineers.",
+            "The hard part turns out to be human. Ian runs weekly calls with his employees on what is even possible, and reaches for a Cesar Millan analogy: when Millan trained a bad dog, he actually ended up training the human. Ian is not prompting the bot for people. He is training people how to think about working with it.",
+            "Jensen Huang of NVIDIA said on stage that every CEO needs an agent strategy. Alec's observation from the market is that pretty much no CEOs have one, and many do not know what it is yet. That gap is the opportunity."
+          ]
+        }
+      ],
+      "definition": {
+        "term": "AI agent",
+        "text": "An AI agent is a program you ask for outcomes instead of answers: it is connected to your tools, email, and systems, holds a specific role, and takes action on your behalf.",
+        "also_known_as": [
+          "agentic AI",
+          "AI agents",
+          "autonomous agent"
+        ]
+      },
+      "howto": null,
+      "itemlist": null,
+      "results": null,
+      "faqs": [
+        {
+          "q": "What is an AI agent in simple terms?",
+          "a": "An AI agent is a program you ask for outcomes instead of answers. Where ChatGPT gives you a reply that you then act on, an agent is connected to your tools, email, and systems, has a specific role, and takes the action itself."
+        },
+        {
+          "q": "What is the difference between an AI agent and ChatGPT?",
+          "a": "The ask, not the model. Conversational AI like ChatGPT answers questions in a browser and you do the work. An agent is wired into your systems and does the work. The same underlying model can power both. As Alec Saluga put it on Session 006: instead of asking it for answers, you're asking it for outcomes."
+        },
+        {
+          "q": "What are some real examples of AI agents?",
+          "a": "Seven that run a real company: an AI-visibility agent that took a site from 26 to 14,530 indexed pages; a content chain that turns one call into a month of content; an iMessage appointment setter; an agent on a school server that writes its blog 2 to 3 times daily; a system replacing 8-plus tools with 20 to 50 agents inside it; a cold-email agent that produced 112 opportunities in seven days; and an interface giving every employee their own personal agent."
+        },
+        {
+          "q": "Should I build one big agent or several small ones?",
+          "a": "Several small ones. The pattern that works is a chain of specialists, each built for a single step and each doing one job very well. One big bot that does everything tends to be mediocre at all of it. It also lets you start with one agent and add the next, rather than designing the whole system up front."
+        },
+        {
+          "q": "Do you need to be technical to use AI agents?",
+          "a": "No. At BrandSauce, designers, a front-end coordinator, and the finance team all build their own tools with personal agents, sandboxed so they cannot break anything else. The harder problem is teaching people what is possible, which is why Ian Kilpatrick runs weekly sessions with his team on exactly that."
+        },
+        {
+          "q": "Do agents replace people?",
+          "a": "They replace tasks. Justin Novak estimates his content agents do what three or four junior marketers would, north of $200,000 in headcount, but a human stays in the loop for quality control because, as he puts it, he does not want to send slop. The agents amplify what humans decided was worth saying."
+        }
+      ],
+      "links": {
+        "tools": [
+          "openclaw",
+          "chatgpt",
+          "claude",
+          "echo-check",
+          "apify",
+          "instantly",
+          "telegram",
+          "claude-code",
+          "figma"
+        ],
+        "sessions": [
+          "006"
+        ],
+        "posts": [
+          "build-a-company-with-ai"
+        ],
+        "cta": "/register"
+      },
+      "og": {
+        "kicker": "SESSION 006 - EXPLAINER",
+        "headline_line1": "What is an",
+        "headline_pre": "AI ",
+        "headline_highlight": "agent",
+        "headline_post": "?",
+        "subtitle": "Plain English, plus the seven real ones we use to run our company.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 124,
+        "output": "og-image.jpg"
+      }
+    },
+    {
+      "slug": "best-ai-tools-for-marketers",
+      "archetype": "listicle",
+      "status": "published",
+      "title": "Best AI Tools for Marketers in 2026 (Operator-Tested, Used Live)",
+      "seo_title": "Best AI Tools for Marketers in 2026: Operator-Tested | AI4NTP",
+      "dek": "Every tool here was used live, on stage, by a real operator doing an actual marketing job.",
+      "description": "The AI tools marketers actually use in 2026, every one demoed live on stage by a real operator, grouped by the job you are trying to get done.",
+      "keyword": {
+        "primary": "best ai tools for marketers",
+        "secondary": [
+          "ai marketing tools 2026",
+          "ai tools for marketing",
+          "best ai tools for marketing"
+        ],
+        "question": "What are the best AI tools for marketers?",
+        "intent": "commercial-investigation"
+      },
+      "answer": "The best AI tools for marketers in 2026 group by the job to be done: ChatGPT and Perplexity for research, Apollo.io and Apify for prospecting, Beehiiv for owning an audience, Midjourney for brand visuals, Lovable and Claude Code for building, and Zapier for automation. Every tool listed here was demoed live on an AI4NTP session by an operator doing real work.",
+      "takeaways": [
+        "Most best-AI-tools lists rank by affiliate commission. Every tool here was used live on stage by a named operator on a recorded session.",
+        "The complete brand stack Ian Kilpatrick used costs about $50 a month: Midjourney at about $29, ChatGPT at $20, and Behance, Pexels, and Google Fonts free.",
+        "Alec Saluga's build rule: Lovable is strong for a quick site, Claude Code for back-end functionality.",
+        "Justin Novak drafted a full newsletter in a brand voice for about 20 cents and shipped it to Beehiiv live on Episode 002.",
+        "The headline is not any single tool, it is the cost collapse: a whole company built live in under an hour for a $50 monthly stack plus pocket change."
+      ],
+      "author": "Justin Novak",
+      "reviewers": [
+        "Ian Kilpatrick",
+        "Alec Saluga"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "002",
+        "citations": [
+          {
+            "ts": "6:50",
+            "speaker": "Ian",
+            "claim": "Behance is the first stop for reading design trends.",
+            "quote": "I'd start with Behance, my go-to for inspiration. It's an Adobe product where the best designers post their work, so I go there to feel out the industry and design trends."
+          },
+          {
+            "ts": "8:29",
+            "speaker": "Ian",
+            "claim": "Ian generates the logo by taking a Midjourney reference into ChatGPT.",
+            "quote": "I switch to Midjourney, a text-to-image model. I'll find a reference that fits a workout planner, then take it into ChatGPT and say, \"make me a logo for a workout planner called GotoBuild.\""
+          },
+          {
+            "ts": "13:08",
+            "speaker": "Ian",
+            "claim": "Pexels for rights-free stock, Google Fonts for the type system, both free.",
+            "quote": "I'll go to Pexels for rights-free stock photos to set the photo direction. ... I'll pull fonts from Google Fonts, which are free and usable directly on your site."
+          },
+          {
+            "ts": "25:02",
+            "speaker": "Ian",
+            "claim": "The full brand stack costs about $50 a month.",
+            "quote": "Midjourney is about $29, ChatGPT is $20, and Behance, Pexels, and Google Fonts are free, so around $50."
+          },
+          {
+            "ts": "27:34",
+            "speaker": "Alec",
+            "claim": "Alec prompts by voice with Wispr Flow daily.",
+            "quote": "I'll prompt with Wispr Flow, voice dictation I use every day"
+          },
+          {
+            "ts": "22:06",
+            "speaker": "Alec",
+            "claim": "Fireshot captures a full-page screenshot to feed a site in as AI context.",
+            "quote": "I'll use Fireshot, a Chrome extension that screenshots an entire site in one go (shout-out to Ian for that), and drop it into both Lovable and Claude Code."
+          },
+          {
+            "ts": "40:34",
+            "speaker": "Alec",
+            "claim": "Lovable has the API built in, so beginners avoid the developer console.",
+            "quote": "Lovable has the API built in, so you don't have to wire it up in a developer console, another reason it's good for starting out."
+          },
+          {
+            "ts": "44:27",
+            "speaker": "Alec",
+            "claim": "Alec's verdict on Lovable versus Claude Code.",
+            "quote": "Lovable is strong for a quick site, Claude Code for back-end functionality. If you're starting out, start with Lovable."
+          },
+          {
+            "ts": "54:46",
+            "speaker": "Justin",
+            "claim": "A newsletter drafted in brand voice cost about 20 cents.",
+            "quote": "Then I click \"draft issue.\" It costs 20 cents, scrapes the articles, and rewrites them in our voice, with credit to the sources."
+          },
+          {
+            "ts": "58:14",
+            "speaker": "Justin",
+            "claim": "Beehiiv distributes the newsletter and lets you own the audience.",
+            "quote": "I'll approve and ship it to Beehiiv, which distributes it and lets you own the audience."
+          },
+          {
+            "ts": "74:11",
+            "speaker": "Alec",
+            "claim": "Apify's free Google Maps scraper pulls a prospect list by keyword and geography; Apollo.io is the alternative.",
+            "quote": "Use Apify's free tier with the Google Maps scraper: search \"roofers\" and pull them by geo. ... Apollo.io is another option."
+          },
+          {
+            "ts": "16:13",
+            "speaker": "Ian",
+            "claim": "The domain cost one cent on a three-year term.",
+            "quote": "GoToBuild.pro is available for one cent on a three-year term."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "What makes this list different?",
+          "id": "different",
+          "body": [
+            "Most \"best AI tools\" lists are written by people who never opened the tools. They rank whatever pays the highest affiliate commission, padded with screenshots from the vendor's homepage.",
+            "Every tool below was used live, on stage, by a real operator on an AI4NTP session, to do an actual marketing job in front of an audience. We name who used it, what they used it for, and what it cost. If a tool is here, someone shipped real work with it while people watched.",
+            "Here are the tools marketers are actually using, grouped by the job you are trying to get done."
+          ],
+          "table": null,
+          "quote": null
+        }
+      ],
+      "itemlist": [
+        {
+          "group": "Research and answer-engine visibility",
+          "name": "ChatGPT",
+          "tool_slug": "chatgpt",
+          "price": "Free tier; Plus is about $20 a month.",
+          "evidence_ts": "8:29",
+          "body": "The default starting point: writing, first-draft copy, image generation, and quick reasoning. On Episode 002, Ian Kilpatrick used it to generate the first logo for a brand we built live, taking a Midjourney reference in and iterating to a final mark."
+        },
+        {
+          "group": "Research and answer-engine visibility",
+          "name": "Perplexity",
+          "tool_slug": "perplexity",
+          "price": "Free tier; Pro unlocks the stronger models.",
+          "evidence_ts": null,
+          "body": "The one to reach for when you need sourced research and step-by-step walkthroughs instead of a confident guess. It cites where its answers come from, which matters when you are briefing a campaign. Ian Kilpatrick has used it live on Episodes 002 and 006."
+        },
+        {
+          "group": "Research and answer-engine visibility",
+          "name": "Echo Check",
+          "tool_slug": "echo-check",
+          "price": "The free plan covers most use cases.",
+          "evidence_ts": null,
+          "body": "The tool most marketers have not heard of yet, and the one that will matter most in 2026. It scores how visible your brand is inside AI assistants. Buyers now ask an AI assistant before they ask Google, so \"do we show up in the answer\" is becoming its own discipline. Ian Kilpatrick used it on Episode 001 to measure exactly that."
+        },
+        {
+          "group": "Prospecting and cold outreach",
+          "name": "Apollo.io",
+          "tool_slug": "apollo-io",
+          "price": "Free tier; paid plans add credits.",
+          "evidence_ts": "74:11",
+          "body": "The off-the-shelf lead and contact database for building a prospect list. Alec Saluga used it on Episode 002 for cold-outreach data."
+        },
+        {
+          "group": "Prospecting and cold outreach",
+          "name": "Apify",
+          "tool_slug": "apify",
+          "price": "Free tier.",
+          "evidence_ts": "74:11",
+          "body": "The scrappier, more powerful option. In the Q&A, someone asked for a free alternative to a paid scraper and Alec pointed them here: a free-tier Google Maps scraper that pulls a prospect list by keyword and geography. If you have ever paid for a list you could have built yourself, this is the one to learn."
+        },
+        {
+          "group": "Content, newsletters, and owning your audience",
+          "name": "Beehiiv",
+          "tool_slug": "beehiiv",
+          "price": "Free tier to start.",
+          "evidence_ts": "58:14",
+          "body": "Where you put the audience you actually own. Social platforms rent you reach; a newsletter list is yours. On Episode 002, Justin Novak drafted a full newsletter in a brand's voice and shipped it to Beehiiv live, for about 20 cents in AI costs. The frame from that session is worth repeating: \"build it and they will come\" is a fallacy, and the nurture is where most teams lose."
+        },
+        {
+          "group": "Brand and visuals",
+          "name": "Midjourney",
+          "tool_slug": "midjourney",
+          "price": "About $29 a month on the tier Ian used; a free account gets you around 10 images.",
+          "evidence_ts": "25:02",
+          "body": "For logos, moodboards, and visual direction. On Episode 002, Ian Kilpatrick built an entire brand identity, logo, palette, type system, and a hosted brand kit, in about 15 minutes."
+        },
+        {
+          "group": "Brand and visuals",
+          "name": "Behance",
+          "tool_slug": "behance",
+          "price": "Free.",
+          "evidence_ts": "6:50",
+          "body": "The first stop for design inspiration and trend-reading. It is where the best designers post their work, so it is where Ian goes to feel out an industry before generating anything."
+        },
+        {
+          "group": "Brand and visuals",
+          "name": "Pexels",
+          "tool_slug": "pexels",
+          "price": "Free.",
+          "evidence_ts": "13:08",
+          "body": "Rights-clear stock photography, used on Episode 002 to set the photo direction for the brand kit."
+        },
+        {
+          "group": "Brand and visuals",
+          "name": "Google Fonts",
+          "tool_slug": "google-fonts",
+          "price": "Free.",
+          "evidence_ts": "13:08",
+          "body": "A professional type system for nothing, usable directly on your site. Ian picked Archivo for the Episode 002 build and had the AI pair it with a secondary font."
+        },
+        {
+          "group": "Building the actual site or landing page",
+          "name": "Lovable",
+          "tool_slug": "lovable",
+          "price": "Free tier.",
+          "evidence_ts": "40:34",
+          "body": "Turns a prompt into a live website. It is the lowest-friction place to start if you have never built before, and Alec's pick for getting a clean landing page fast. It also has the API built in, so you do not have to wire one up in a developer console, and a \"try to fix\" button that feeds errors back to the AI."
+        },
+        {
+          "group": "Building the actual site or landing page",
+          "name": "Claude Code",
+          "tool_slug": "claude-code",
+          "price": "Paid; included with Claude paid plans.",
+          "evidence_ts": "44:27",
+          "body": "The step up when you need real functionality, not just a pretty page. On Episode 002 it built a working AI workout-plan generator, live, wired to an API. Alec's rule of thumb: Lovable is strong for a quick site, Claude Code for back-end functionality."
+        },
+        {
+          "group": "Building the actual site or landing page",
+          "name": "Supabase",
+          "tool_slug": "supabase",
+          "price": "Generous free tier.",
+          "evidence_ts": null,
+          "body": "The open-source backend (database, auth, APIs) for the data layer behind a real app. Ian Kilpatrick used it on Episode 001, and it powers our own live audience tools."
+        },
+        {
+          "group": "Automation and the connective tissue",
+          "name": "Zapier",
+          "tool_slug": "zapier",
+          "price": "Free tier; paid by task volume.",
+          "evidence_ts": null,
+          "body": "The glue that connects your apps and your AI into a workflow that runs without you. Alec Saluga used it on Episode 001 to automate a transcript-to-AI pipeline."
+        },
+        {
+          "group": "Capture, voice, and speed",
+          "name": "Wispr Flow",
+          "tool_slug": "wispr-flow",
+          "price": "Free tier.",
+          "evidence_ts": "27:34",
+          "body": "Prompt your AI tools by talking instead of typing. Alec uses it daily, and prompted an entire live website build with it on Episode 002."
+        },
+        {
+          "group": "Capture, voice, and speed",
+          "name": "Fireshot",
+          "tool_slug": "fireshot",
+          "price": "Free.",
+          "evidence_ts": "22:06",
+          "body": "A free Chrome extension that captures a full-page screenshot in one click, so you can feed an entire website into an AI prompt as context. A small trick that punches far above its weight, and the reason Alec's first output looked right."
+        },
+        {
+          "group": "Capture, voice, and speed",
+          "name": "Loom",
+          "tool_slug": "loom",
+          "price": "Free tier.",
+          "evidence_ts": null,
+          "body": "Async video for handoffs, sales, and coaching. Used by the operators on Episode 001."
+        },
+        {
+          "group": "Capture, voice, and speed",
+          "name": "PLAUD Note",
+          "tool_slug": "plaud-note",
+          "price": "Paid hardware.",
+          "evidence_ts": null,
+          "body": "A pocket recorder that turns meetings and calls into an AI-ready transcript. Alec Saluga uses it, and showed it on Episodes 001 and 004."
+        }
+      ],
+      "howto": null,
+      "definition": null,
+      "results": null,
+      "faqs": [
+        {
+          "q": "What is the best AI tool for marketers?",
+          "a": "There is no single best one, which is why this list groups by job. ChatGPT is the default starting point for writing and first drafts. For sourced research, use Perplexity. For prospecting, Apify or Apollo.io. For owning an audience, Beehiiv. The marketers winning in 2026 are not the ones who found a secret tool, they are the ones who chained ordinary tools into a workflow."
+        },
+        {
+          "q": "How much do AI marketing tools cost?",
+          "a": "Less than most people expect. The complete brand stack Ian Kilpatrick used on Episode 002 was about $50 a month: Midjourney at about $29, ChatGPT at $20, and Behance, Pexels, and Google Fonts free. Most of the prospecting and capture tools here have real free tiers."
+        },
+        {
+          "q": "Are there free AI tools for marketing?",
+          "a": "Yes, and several of the most useful ones here are free. Behance, Pexels, Google Fonts, and Fireshot are free outright. Apify, Apollo.io, Beehiiv, Lovable, Zapier, Wispr Flow, Loom, Perplexity, and ChatGPT all have free tiers that cover real work. Alec used Apify's free Google Maps scraper live to build a prospect list."
+        },
+        {
+          "q": "How were these tools chosen?",
+          "a": "Every tool on this list was demonstrated live by a named operator during an AI4NTP session that we recorded. We do not list tools we have not seen used, and each one links to a page showing the episode, the operator, and what they did with it. No affiliate ranking."
+        },
+        {
+          "q": "Do I need to be technical to use these?",
+          "a": "No. AI4NTP exists for non-technical operators. Alec Saluga is a former B2B salesman with no technical background who self-taught AI. The skill that matters is tool awareness: knowing which tool to reach for at each step."
+        }
+      ],
+      "links": {
+        "tools": [
+          "chatgpt",
+          "perplexity",
+          "echo-check",
+          "apollo-io",
+          "apify",
+          "beehiiv",
+          "midjourney",
+          "behance",
+          "pexels",
+          "google-fonts",
+          "lovable",
+          "claude-code",
+          "supabase",
+          "zapier",
+          "wispr-flow",
+          "fireshot",
+          "loom",
+          "plaud-note"
+        ],
+        "sessions": [
+          "001",
+          "002"
+        ],
+        "posts": [
+          "build-a-company-with-ai"
+        ],
+        "cta": "/register"
+      },
+      "og": {
+        "kicker": "OPERATOR-TESTED",
+        "headline_line1": "Best AI tools",
+        "headline_pre": "for ",
+        "headline_highlight": "marketers",
+        "headline_post": ".",
+        "subtitle": "Every one used live, on stage, by a real operator doing a real job.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 116,
+        "output": "og-image.jpg"
+      }
+    },
+    {
+      "slug": "build-a-company-with-ai",
+      "archetype": "howto",
+      "status": "published",
+      "title": "How to Build a Company With AI in Under an Hour",
+      "seo_title": "How to Build a Company With AI in Under an Hour | AI4NTP",
+      "dek": "The exact playbook three operators ran live on stage, with what every piece cost.",
+      "description": "The exact three-phase playbook AI4NTP ran live to build a company with AI in under an hour: brand, website, and go-to-market, for about $50 a month.",
+      "keyword": {
+        "primary": "how to build a company with ai",
+        "secondary": [
+          "build a startup with ai",
+          "build a business with ai",
+          "build a company with ai"
+        ],
+        "question": "How do you build a company with AI?",
+        "intent": "informational"
+      },
+      "answer": "Building a company with AI breaks into three phases: brand identity, website, then go-to-market. AI4NTP (AI for Non-Techy People) ran all three live on Episode 002 in under an hour, building a brand kit in about 15 minutes, a working site on a real domain in 15 more, and a newsletter motion in the last 15. Total recurring cost: about $50 a month.",
+      "takeaways": [
+        "Ian Kilpatrick built a complete brand identity (logo, palette, type system, hosted brand kit) in about 15 minutes using Behance, Midjourney, ChatGPT, and OpenClaw.",
+        "The whole brand stack costs about $50 a month: Midjourney at about $29, ChatGPT at $20, and Behance, Pexels, and Google Fonts free.",
+        "The domain gotobuild.pro cost one cent on a three-year term from Namecheap, bought live on stage.",
+        "Alec Saluga's rule after building the same site in both tools: Lovable is strong for a quick site, Claude Code for back-end functionality.",
+        "A full newsletter drafted in the brand voice cost about 20 cents, and three blog posts spun out of it cost about 30 cents."
+      ],
+      "author": "Justin Novak",
+      "reviewers": [
+        "Ian Kilpatrick",
+        "Alec Saluga"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "source": {
+        "session": "002",
+        "citations": [
+          {
+            "ts": "5:51",
+            "speaker": "Justin",
+            "claim": "The audience voted and the brief locked at minute six: GotoBuild, an AI workout planner.",
+            "quote": "Locked. We're building GotoBuild: personalized weekly workout plans, generated and updated by an AI that remembers you."
+          },
+          {
+            "ts": "6:50",
+            "speaker": "Ian",
+            "claim": "Ian starts brand work on Behance to read industry design trends.",
+            "quote": "I'd start with Behance, my go-to for inspiration. It's an Adobe product where the best designers post their work, so I go there to feel out the industry and design trends."
+          },
+          {
+            "ts": "10:45",
+            "speaker": "Ian",
+            "claim": "Ian hands the logo to his OpenClaw agent to publish a full brand kit.",
+            "quote": "Now I'll take the logo to my OpenClaw agent. He's named Eian, my digital clone."
+          },
+          {
+            "ts": "16:13",
+            "speaker": "Ian",
+            "claim": "The domain gotobuild.pro cost one cent on a three-year term via Namecheap.",
+            "quote": "GoToBuild.pro is available for one cent on a three-year term."
+          },
+          {
+            "ts": "22:06",
+            "speaker": "Alec",
+            "claim": "Alec uses Fireshot to screenshot a reference site and feed it in as context.",
+            "quote": "I'll use Fireshot, a Chrome extension that screenshots an entire site in one go (shout-out to Ian for that), and drop it into both Lovable and Claude Code."
+          },
+          {
+            "ts": "25:02",
+            "speaker": "Ian",
+            "claim": "The full brand stack costs about $50 a month.",
+            "quote": "Midjourney is about $29, ChatGPT is $20, and Behance, Pexels, and Google Fonts are free, so around $50."
+          },
+          {
+            "ts": "27:34",
+            "speaker": "Alec",
+            "claim": "Alec prompts both builders by voice using Wispr Flow.",
+            "quote": "I'll prompt with Wispr Flow, voice dictation I use every day"
+          },
+          {
+            "ts": "44:27",
+            "speaker": "Alec",
+            "claim": "Alec's build-vs-build verdict after running the same brief through both tools.",
+            "quote": "Lovable is strong for a quick site, Claude Code for back-end functionality. If you're starting out, start with Lovable."
+          },
+          {
+            "ts": "49:03",
+            "speaker": "Justin",
+            "claim": "Justin names the build-it-and-they-will-come fallacy and the mid-funnel gap.",
+            "quote": "There's a \"build it and they will come\" fallacy. You need a motion to acquire customers... But most teams miss the middle of the funnel, nurturing prospects, and a newsletter is incredible for that."
+          },
+          {
+            "ts": "54:46",
+            "speaker": "Justin",
+            "claim": "A full newsletter drafted in the brand voice cost about 20 cents.",
+            "quote": "Then I click \"draft issue.\" It costs 20 cents, scrapes the articles, and rewrites them in our voice, with credit to the sources."
+          },
+          {
+            "ts": "60:42",
+            "speaker": "Justin",
+            "claim": "Three blog posts spun out of one newsletter cost about 30 cents.",
+            "quote": "from one newsletter you can spin out about 30 pieces of content. Generate three blogs for 30 cents on Haiku"
+          },
+          {
+            "ts": "69:18",
+            "speaker": "Alec",
+            "claim": "The site went live on the purchased domain with working functionality inside the hour.",
+            "quote": "The domain is hooked up and the site is live at gotobuild.pro, and the plan-building functionality works now too. We went zero to one this hour, a live site with real functionality."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "h2": "Can you really build a company with AI in an hour?",
+          "id": "can-you",
+          "body": [
+            "\"Build a company with AI\" sounds like a hook, so we did it on stage in real time, with no script and no pre-built brief.",
+            "On Episode 002, the audience picked the idea live. At minute six the room voted and the brief locked: GotoBuild, an AI workout planner with a yellow banana-barbell mascot. The company did not exist a minute earlier. Fifty-some minutes later it had a brand, a website on a real domain, and a working go-to-market motion.",
+            "Here is the exact playbook, in the order we ran it. It breaks into three 15-minute phases."
+          ],
+          "table": null,
+          "quote": null
+        },
+        {
+          "h2": "How do you build a brand identity with AI?",
+          "id": "brand",
+          "body": [
+            "Brand is where most non-technical founders freeze. It is also the fastest thing to build with AI now. Ian Kilpatrick ran it in four moves.",
+            "First, moodboard for direction. Start on Behance to read what good looks like in your space, then generate visual directions in Midjourney. Second, generate the logo: take the Midjourney reference into ChatGPT and iterate to a final mark. The audience chose the banana, and the barbell made it a workout brand.",
+            "Third, produce the full kit. Ian handed the brief to his self-hosted OpenClaw agent, which published a complete brand kit to a live URL: logo, palette, a type system grounded in a font from Google Fonts, and photo direction from Pexels. Fourth, buy the domain live. A quick check on Instant Domain Search, then he bought gotobuild.pro on Namecheap on stage for one cent.",
+            "Total recurring cost of that brand stack: about $50 a month. Midjourney is about $29, ChatGPT is $20, and Behance, Pexels, and Google Fonts are free. Time: about 15 minutes."
+          ],
+          "table": null,
+          "quote": null
+        },
+        {
+          "h2": "Should you use Lovable or Claude Code to build the site?",
+          "id": "site",
+          "body": [
+            "A pretty page is easy. A page that does something is where most no-code stops. Alec Saluga showed both at once, building the marketing site two ways in parallel to settle the question.",
+            "Both builders were fed the same two inputs: Ian's brand kit URL, so the site matched the brand, and a full-page screenshot of a reference site captured with Fireshot and pasted in as context. Alec prompted the whole thing by voice using Wispr Flow, then wired in a working AI workout-plan generator with an API key and deployed to the domain Ian had just bought.",
+            "The room voted on which build looked better, and it split. Alec's verdict is the takeaway worth keeping."
+          ],
+          "table": null,
+          "quote": {
+            "text": "Lovable is strong for a quick site, Claude Code for back-end functionality. If you're starting out, start with Lovable.",
+            "speaker": "Alec Saluga",
+            "ts": "44:27"
+          }
+        },
+        {
+          "h2": "What does a go-to-market motion look like?",
+          "id": "gtm",
+          "body": [
+            "A product nobody hears about is a hobby. The third phase is the one most teams skip, and the one that decides whether the first two mattered.",
+            "Justin Novak stood the launch up as a content engine. He set the brand voice from Ian's kit so everything sounds like one company, uploaded the brand kit as brand intelligence so colors and voice matched, then pulled in sources worth writing about. Drafting a full newsletter in that voice cost about 20 cents, and it shipped to Beehiiv, the platform where you own the audience instead of renting reach.",
+            "Then waterfall it. From that one newsletter, generate on-brand blog posts, about 30 cents for three, plus social assets with captions and on-brand imagery.",
+            "The frame Justin gave the room: \"build it and they will come\" is a fallacy. The middle of the funnel, the nurture, is where most teams lose. A newsletter plus AI is how you actually run it every week without a content team."
+          ],
+          "table": null,
+          "quote": null
+        },
+        {
+          "h2": "What did it cost, all in?",
+          "id": "cost",
+          "body": [
+            "The point of the live was not the workout app. It was the price tag.",
+            "A complete company, built in under an hour, for roughly the cost of a coffee plus a $50 monthly stack you mostly already have. None of it required an engineer, a designer, or a growth team. It required knowing which tool to reach for at each step, and a willingness to ship the same day."
+          ],
+          "table": {
+            "headers": [
+              "Piece",
+              "Cost"
+            ],
+            "rows": [
+              [
+                "Brand stack (Midjourney about $29, ChatGPT $20; Behance, Pexels, Google Fonts free)",
+                "about $50 / month"
+              ],
+              [
+                "Domain (gotobuild.pro, three-year promo term)",
+                "one cent"
+              ],
+              [
+                "Newsletter draft, in brand voice",
+                "about 20 cents"
+              ],
+              [
+                "Three blog posts, spun out of the newsletter",
+                "about 30 cents"
+              ]
+            ]
+          },
+          "quote": null
+        }
+      ],
+      "howto": {
+        "total_time": "PT1H",
+        "steps": [
+          {
+            "name": "Build the brand first",
+            "body": "Moodboard on Behance, generate directions in Midjourney, iterate the logo in ChatGPT, then have an agent publish a full brand kit with fonts and photo direction. Buy the domain live. The brand kit becomes the input for everything else, so it has to come first.",
+            "tool_slug": "midjourney"
+          },
+          {
+            "name": "Build the site second",
+            "body": "Feed the builder two things: the brand kit URL and a full-page screenshot of a reference site. Context is what separates a good first output from a bad one. Start in Lovable for speed, and reach for Claude Code the moment you need a feature that actually runs.",
+            "tool_slug": "lovable"
+          },
+          {
+            "name": "Build the go-to-market third",
+            "body": "Set the brand voice from the kit, curate sources, draft a newsletter in that voice, and ship it where you own the audience. Then waterfall the one newsletter into blog posts and social assets so a single piece of work covers the week.",
+            "tool_slug": "beehiiv"
+          }
+        ]
+      },
+      "itemlist": null,
+      "definition": null,
+      "results": null,
+      "faqs": [
+        {
+          "q": "Can you really build a company with AI in under an hour?",
+          "a": "Yes, if you mean a brand, a live website on a real domain, and a go-to-market motion. AI4NTP did exactly that on Episode 002 with an audience-chosen brief, in under an hour. What it does not mean is a finished, hardened product with customers. It means going from zero to a real, shippable starting point in one sitting."
+        },
+        {
+          "q": "How much does it cost to build a company with AI?",
+          "a": "On Episode 002 the recurring stack was about $50 a month (Midjourney about $29, ChatGPT $20, and Behance, Pexels, and Google Fonts free). One-off costs were one cent for the domain, about 20 cents for a newsletter draft, and about 30 cents for three blog posts."
+        },
+        {
+          "q": "Do you need to know how to code to build a company with AI?",
+          "a": "No. Nobody wrote code by hand on Episode 002. Alec Saluga is a former B2B salesman with no technical background who self-taught AI. The skills that mattered were tool awareness, knowing which tool to reach for at each step, and feeding the AI enough context to get a good first output."
+        },
+        {
+          "q": "Should you use Lovable or Claude Code?",
+          "a": "Alec Saluga built the same site in both, live, and his verdict was that Lovable is strong for a quick site and Claude Code is better for back-end functionality. If you are starting out, start with Lovable. Lovable also has the API built in, so you do not have to wire it up in a developer console."
+        },
+        {
+          "q": "What is the right order to build in?",
+          "a": "Brand, then site, then go-to-market. The order matters because each phase feeds the next: the brand kit is the input the website builder needs to match the brand, and the brand voice is the input the content engine needs so everything sounds like one company."
+        }
+      ],
+      "links": {
+        "tools": [
+          "behance",
+          "midjourney",
+          "chatgpt",
+          "openclaw",
+          "google-fonts",
+          "pexels",
+          "instant-domain-search",
+          "namecheap",
+          "lovable",
+          "claude-code",
+          "fireshot",
+          "wispr-flow",
+          "supabase",
+          "beehiiv",
+          "pulsar"
+        ],
+        "sessions": [
+          "002"
+        ],
+        "posts": [],
+        "cta": "/register"
+      },
+      "og": {
+        "kicker": "THE LIVE PLAYBOOK",
+        "headline_line1": "Build a company",
+        "headline_pre": "with AI in ",
+        "headline_highlight": "an hour",
+        "headline_post": ".",
+        "subtitle": "Brand, website, and go-to-market. Built live on stage for about $50 a month.",
+        "footer_note": "Field notes from people building with AI every day.",
+        "headline_size": 116,
+        "output": "og-image.jpg"
+      }
+    }
+  ]
+}

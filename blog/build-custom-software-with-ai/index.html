@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY783506Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4YY783506Y');
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Custom Software With AI: A Real $50k-$100k Build | AI4NTP</title>
+<meta name="description" content="Should you build custom software with AI instead of buying it? A real build: a school platform made with Claude Code and an agent, alongside enrollment going from 95 to over 230.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://ai4ntp.com/blog/build-custom-software-with-ai">
+
+<meta property="og:title" content="Build Custom Software With AI: A Real $50k-$100k Build | AI4NTP">
+<meta property="og:description" content="Should you build custom software with AI instead of buying it? A real build: a school platform made with Claude Code and an agent, alongside enrollment going from 95 to over 230.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ai4ntp.com/blog/build-custom-software-with-ai">
+<meta property="og:image" content="https://ai4ntp.com/blog/build-custom-software-with-ai/og-image.jpg">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Build Custom Software With AI: A Real $50k-$100k Build | AI4NTP">
+<meta name="twitter:description" content="Should you build custom software with AI instead of buying it? A real build: a school platform made with Claude Code and an agent, alongside enrollment going from 95 to over 230.">
+<meta name="twitter:image" content="https://ai4ntp.com/blog/build-custom-software-with-ai/og-image.jpg">
+<meta property="article:published_time" content="2026-07-15">
+<meta property="article:modified_time" content="2026-07-15">
+
+<link rel="icon" href="/ai4ntp-preview/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-monogram.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/ai4ntp-preview/icon-32.png">
+<link rel="apple-touch-icon" href="/ai4ntp-preview/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://ai4ntp.com/#org",
+  "name": "AI4NTP",
+  "alternateName": "AI for Non-Techy People",
+  "url": "https://ai4ntp.com",
+  "logo": "https://ai4ntp.com/icon-192.png",
+  "description": "AI4NTP (AI for Non-Techy People) runs free live sessions where real operators show non-technical professionals exactly how they use and build with AI.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Justin Novak",
+    "url": "https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/"
+  },
+  "knowsAbout": [
+    "Artificial intelligence",
+    "AI for business",
+    "AI automation",
+    "Generative AI tools",
+    "AI for non-technical professionals"
+  ],
+  "sameAs": [
+    "https://www.youtube.com/@AI4NonTechyPeople",
+    "https://x.com/ai4ntp",
+    "https://www.instagram.com/ai4ntp"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "https://ai4ntp.com/blog/build-custom-software-with-ai#post",
+  "headline": "We Built a School Platform With AI. Enrollment Went 95 to 230.",
+  "description": "Should you build custom software with AI instead of buying it? A real build: a school platform made with Claude Code and an agent, alongside enrollment going from 95 to over 230.",
+  "datePublished": "2026-07-15",
+  "dateModified": "2026-07-15",
+  "author": {
+    "@type": "Person",
+    "@id": "https://ai4ntp.com/about#ian-kilpatrick",
+    "name": "Ian Kilpatrick",
+    "url": "https://ai4ntp.com/about#ian-kilpatrick",
+    "image": "https://ai4ntp.com/sessions/001/images/ian-kilpatrick.jpg",
+    "jobTitle": "Partner at AI4NTP",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "AI4NTP"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/ianpk/"
+    ]
+  },
+  "contributor": [
+    {
+      "@type": "Person",
+      "@id": "https://ai4ntp.com/about#justin-novak",
+      "name": "Justin Novak",
+      "url": "https://ai4ntp.com/about#justin-novak",
+      "image": "https://ai4ntp.com/sessions/001/images/justin-novak.jpg",
+      "jobTitle": "Partner at AI4NTP",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "AI4NTP"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ai4ntp.com/about#alec-saluga",
+      "name": "Alec Saluga",
+      "url": "https://ai4ntp.com/about#alec-saluga",
+      "image": "https://ai4ntp.com/sessions/001/images/alec-saluga.jpg",
+      "jobTitle": "Partner at AI4NTP",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "AI4NTP"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/alec-saluga-4295521a6/"
+      ]
+    }
+  ],
+  "publisher": {
+    "@id": "https://ai4ntp.com/#org"
+  },
+  "mainEntityOfPage": {
+    "@id": "https://ai4ntp.com/blog/build-custom-software-with-ai#webpage"
+  },
+  "isPartOf": {
+    "@id": "https://ai4ntp.com/blog#blog"
+  },
+  "image": "https://ai4ntp.com/blog/build-custom-software-with-ai/og-image.jpg",
+  "articleSection": "Case study",
+  "keywords": "build custom software with ai, build vs buy software, can ai build custom software, build an app with ai",
+  "wordCount": 984,
+  "inLanguage": "en-US",
+  "mentions": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://ai4ntp.com/ai-tools/claude#software",
+      "name": "Claude (Anthropic)"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://ai4ntp.com/ai-tools/claude-code#software",
+      "name": "Claude Code"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://ai4ntp.com/ai-tools/openclaw#software",
+      "name": "OpenClaw"
+    }
+  ],
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "7 AI agents we built to run our company",
+    "url": "https://ai4ntp.com/sessions/006"
+  },
+  "isBasedOn": "https://ai4ntp.com/sessions/006",
+  "about": {
+    "@type": "CreativeWork",
+    "name": "7 AI agents we built to run our company",
+    "url": "https://ai4ntp.com/sessions/006"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ai4ntp.com/blog/build-custom-software-with-ai#webpage",
+  "url": "https://ai4ntp.com/blog/build-custom-software-with-ai",
+  "name": "We Built a School Platform With AI. Enrollment Went 95 to 230. · AI4NTP",
+  "isPartOf": {
+    "@id": "https://ai4ntp.com/blog#blog"
+  },
+  "primaryImageOfPage": "https://ai4ntp.com/blog/build-custom-software-with-ai/og-image.jpg",
+  "breadcrumb": {
+    "@id": "https://ai4ntp.com/blog/build-custom-software-with-ai#crumbs"
+  },
+  "dateModified": "2026-07-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ai4ntp.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://ai4ntp.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "We Built a School Platform With AI. Enrollment Went 95 to 230.",
+      "item": "https://ai4ntp.com/blog/build-custom-software-with-ai"
+    }
+  ],
+  "@id": "https://ai4ntp.com/blog/build-custom-software-with-ai#crumbs"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI really build custom software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It built the platform a real school runs on. Ian Kilpatrick had never seen a learning management system, brainstormed the requirements with Claude, built the first iteration with Claude Code, and used an agent on the server for the second. It handles enrollment, tuition, classes, lesson plans, email, and messaging."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to build custom software with AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alec Saluga estimated on Session 006 that the same system would have cost $50,000 to $100,000 to build custom before AI, or tens of thousands a year to license. That is an estimate of the alternative, not what Ian paid; his cost was his own time plus AI tooling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you need to be a developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ian is a designer and developer, so he is not a beginner. But the load-bearing skill here was not coding, it was not knowing what an LMS was and asking the AI to explain how existing ones work, then choosing. He went in saying he did not know what he was doing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Did the AI blog cause the enrollment increase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Partly, and Ian is careful about this. He says the increase from 95 to over 230 students is \"largely because of programmatic SEO and this AI automation\", then immediately adds \"I don't know if that's normal. I mean, she's done a great job on the school itself\" and \"I will say AI has helped quite a bit.\" The school's own quality is part of the story."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should you build or buy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy when an off-the-shelf tool genuinely fits. Build when you are stitching five tools together to approximate what you need. Ian's system replaced what would have been an LMS plus Slack plus an email tool plus a payments flow, and every feature exists because he needed it."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root{ --ink:#0F1113;--ink-soft:#1C1F23;--paper:#F4F1EA;--paper-warm:#EDE7DA;--cream:#FAF7F0;
+    --signal:#D4FF3A;--signal-deep:#A8D000;--rust:#C4471C;--line:rgba(15,17,19,.12);--line-strong:rgba(15,17,19,.32);}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;}
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.3;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");}
+  a{color:inherit;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 40px;position:relative;z-index:2;}
+  .narrow{max-width:840px;}
+  .crumb{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;padding:28px 0 0;}
+  .crumb a{text-decoration:none;border-bottom:1px solid transparent;}
+  .crumb a:hover{border-color:var(--ink);}
+  .crumb span{margin:0 8px;opacity:.5;}
+  .eyebrow{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.6;display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+  .eyebrow::before{content:'';width:28px;height:1px;background:var(--ink);opacity:.5;}
+  h1.title{font-family:'Fraunces',Georgia,serif;font-weight:300;font-optical-sizing:auto;font-size:clamp(38px,6vw,72px);letter-spacing:-.025em;line-height:1.02;margin-bottom:20px;}
+  h1.title em,.hl{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;background:var(--signal);padding:0 .12em;}
+  .lede{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(19px,2.4vw,24px);line-height:1.4;opacity:.9;max-width:720px;}
+  /* hub */
+  .hub-head{padding:8px 0 40px;border-bottom:1px solid var(--line);}
+  .cat{padding:48px 0 8px;}
+  .cat h2{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:clamp(24px,3vw,34px);letter-spacing:-.02em;margin-bottom:24px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
+  .card{display:block;background:var(--cream);border:1px solid var(--line);padding:22px;text-decoration:none;transition:border-color .2s,transform .2s;}
+  .card:hover{border-color:var(--ink);transform:translateY(-2px);}
+  .card .cn{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;letter-spacing:-.01em;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+  .card .cd{font-size:14px;line-height:1.5;opacity:.78;margin-bottom:14px;}
+  .badges{display:flex;flex-wrap:wrap;gap:6px;}
+  .badge{font-family:'JetBrains Mono','SF Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:var(--paper-warm);color:rgba(15,17,19,.7);}
+  .badge.net{background:var(--signal);color:var(--ink);}
+  /* tool page */
+  .tool-head{padding:8px 0 36px;border-bottom:1px solid var(--line);}
+  .cat-tag{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);margin-bottom:16px;}
+  .tool-sub{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(18px,2.2vw,23px);line-height:1.4;opacity:.9;max-width:680px;margin-bottom:28px;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:var(--cream);text-decoration:none;padding:14px 24px;font-family:'JetBrains Mono','SF Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;transition:background .2s,color .2s;}
+  .btn:hover{background:var(--signal);color:var(--ink);}
+  .disclosure{font-size:12px;opacity:.55;font-style:italic;}
+  .private-note{display:inline-block;font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;border:1px dashed var(--line-strong);opacity:.7;}
+  section.block{padding:40px 0;border-bottom:1px solid var(--line);}
+  section.block h2{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:clamp(22px,2.6vw,30px);letter-spacing:-.02em;margin-bottom:18px;}
+  section.block p{max-width:720px;margin-bottom:14px;}
+  .seen{background:var(--ink);color:var(--cream);border:none;padding:32px;margin:40px 0;}
+  .seen h2{color:var(--cream);}
+  .seen .ep{padding:16px 0;border-top:1px solid rgba(250,247,240,.16);}
+  .seen .ep:first-of-type{border-top:none;}
+  .seen .ep .meta{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--signal);margin-bottom:6px;}
+  .seen .ep .uf{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:19px;margin-bottom:8px;}
+  .seen .ep a{color:var(--cream);font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--signal);padding-bottom:2px;margin-right:18px;}
+  .seen .ep a:hover{color:var(--signal);}
+  .rel{display:flex;flex-wrap:wrap;gap:10px;}
+  .rel a{text-decoration:none;border:1px solid var(--line);padding:10px 16px;font-family:'JetBrains Mono','SF Mono',monospace;font-size:12px;letter-spacing:.06em;transition:border-color .2s,background .2s;}
+  .rel a:hover{border-color:var(--ink);background:var(--cream);}
+  .faq details{border-top:1px solid var(--line);padding:18px 0;}
+  .faq details:last-child{border-bottom:1px solid var(--line);}
+  .faq summary{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:18px;cursor:pointer;list-style:none;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::before{content:'+';color:var(--rust);font-weight:700;margin-right:12px;}
+  .faq details[open] summary::before{content:'\2013';}
+  .faq p{margin:14px 0 0;opacity:.85;}
+  .endcta{padding:48px 0;}
+  .endcta a{font-family:'JetBrains Mono','SF Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--signal-deep);padding-bottom:3px;margin-right:24px;}
+  .updated{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.45;padding:24px 0 0;}
+  .summary{font-size:18px;line-height:1.6;padding:28px 0 6px;max-width:760px;}
+  .facts{width:100%;border-collapse:collapse;margin:6px 0 8px;}
+  .facts th,.facts td{text-align:left;vertical-align:top;padding:11px 14px 11px 0;border-top:1px solid var(--line);font-size:15px;}
+  .facts tr:last-child td,.facts tr:last-child th{border-bottom:1px solid var(--line);}
+  .facts th{width:150px;font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;font-weight:400;white-space:nowrap;}
+  .facts a{text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:2px;}
+  .catnav{display:flex;flex-wrap:wrap;gap:9px;padding:6px 0 12px;}
+  .catnav a{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.06em;text-decoration:none;border:1px solid var(--line);padding:7px 13px;border-radius:999px;transition:border-color .2s,background .2s;}
+  .catnav a:hover{border-color:var(--ink);background:var(--cream);}
+  .cta-card{background:var(--signal);color:var(--ink);padding:38px;margin:44px 0 8px;}
+  .cta-card h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.02em;line-height:1.05;margin-bottom:12px;}
+  .cta-card p{max-width:640px;margin-bottom:26px;opacity:.82;}
+  .cta-links{display:flex;flex-wrap:wrap;gap:12px;}
+  .cta-card .btn{background:var(--ink);color:var(--signal);}
+  .cta-card .btn:hover{background:var(--ink-soft);color:var(--signal);}
+  .btn-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--ink);border:1px solid var(--ink);text-decoration:none;padding:13px 22px;font-family:'JetBrains Mono','SF Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:background .2s,color .2s;}
+  .btn-ghost:hover{background:var(--ink);color:var(--signal);}
+  /* logos */
+  .logo{position:relative;width:46px;height:46px;border-radius:11px;overflow:hidden;border:1px solid var(--line);background:#fff;flex:0 0 auto;display:grid;place-items:center;}
+  .logo img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;padding:7px;background:#fff;}
+  .logo-mono{position:absolute;inset:0;z-index:0;display:grid;place-items:center;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:20px;background:var(--signal);color:var(--ink);}
+  .logo.lg{width:68px;height:68px;border-radius:15px;}
+  .logo.lg img{padding:11px;}
+  .logo.lg .logo-mono{font-size:30px;}
+  /* directory hero */
+  .dir-hero{padding:44px 0 42px;border-bottom:1px solid var(--line);}
+  .dir-hero .lede{margin-bottom:30px;}
+  .dh-proof{display:flex;flex-direction:column;gap:16px;margin-bottom:32px;}
+  .dh-ops{display:flex;align-items:center;gap:15px;flex-wrap:wrap;}
+  .op-stack{display:flex;}
+  .op-stack img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--paper);margin-left:-12px;filter:grayscale(100%) contrast(1.05);background:var(--cream);}
+  .op-stack img:first-child{margin-left:0;}
+  .dh-stat{font-size:15px;line-height:1.45;max-width:340px;opacity:.85;}
+  .dh-stat strong{font-weight:600;}
+  .dh-companies{font-size:14px;opacity:.7;}
+  .dh-companies b{font-family:'JetBrains Mono','SF Mono',monospace;font-weight:500;font-size:12px;letter-spacing:.04em;opacity:.95;}
+  /* directory layout: sidebar + grid */
+  .dir{display:grid;grid-template-columns:236px 1fr;gap:40px;align-items:start;padding:34px 0 64px;}
+  .dir-side{position:sticky;top:22px;}
+  .search{margin-bottom:26px;}
+  .search input{width:100%;background:var(--cream) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F1113' stroke-width='2' stroke-opacity='0.45'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M21 21l-4.3-4.3'/%3E%3C/svg%3E") no-repeat 12px center;background-size:15px;border:1px solid var(--line-strong);border-radius:8px;padding:11px 14px 11px 36px;font-family:inherit;font-size:14px;color:var(--ink);}
+  .search input:focus{outline:none;border-color:var(--ink);}
+  .side-label{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.5;margin:0 0 8px 4px;}
+  .catlist,.sortlist{list-style:none;margin:0 0 26px;}
+  .catlist button,.sortlist button{display:block;width:100%;text-align:left;background:none;border:none;cursor:pointer;font:inherit;font-size:14px;color:var(--ink);padding:8px 12px;border-radius:7px;opacity:.72;transition:background .15s,opacity .15s,color .15s;}
+  .catlist button:hover,.sortlist button:hover{opacity:1;background:var(--cream);}
+  .catlist button.active,.sortlist button.active{opacity:1;background:var(--ink);color:var(--cream);font-weight:500;}
+  .dir-count{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.55;margin-bottom:18px;}
+  .no-results{padding:40px 0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:20px;opacity:.6;}
+  /* card with logo */
+  .card-top{display:flex;align-items:center;gap:13px;margin-bottom:13px;}
+  .card-meta{min-width:0;}
+  .card .cn{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;letter-spacing:-.01em;margin:0;line-height:1.1;display:block;}
+  .card-cat{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.5;margin-top:4px;}
+  .badge.free{background:transparent;border:1px solid var(--signal-deep);color:var(--signal-deep);}
+  /* tool page header */
+  .tool-id{display:flex;align-items:center;gap:18px;margin-bottom:22px;}
+  .tool-desc{font-size:18px;line-height:1.6;max-width:680px;margin-bottom:20px;opacity:.92;}
+  /* author byline (E-E-A-T) */
+  .byline{display:flex;align-items:center;gap:12px;margin:0 0 26px;flex-wrap:wrap;}
+  .byline-stack img{width:34px;height:34px;margin-left:-10px;}
+  .byline-txt{font-family:'JetBrains Mono','SF Mono',monospace;font-size:12px;letter-spacing:.02em;line-height:1.5;opacity:.85;}
+  .byline-txt a{text-decoration:none;border-bottom:1px solid var(--line-strong);}
+  .byline-txt a:hover{border-color:var(--ink);}
+  .byline-date{opacity:.6;}
+  .byline-sep{opacity:.4;}
+  /* contributor / author cards */
+  .contributors .contrib-intro{max-width:720px;margin-bottom:22px;opacity:.85;}
+  .contrib-grid{display:grid;gap:16px;}
+  .contrib-card{display:flex;gap:18px;align-items:flex-start;background:var(--cream);border:1px solid var(--line);padding:22px;}
+  .contrib-av{position:relative;width:64px;height:64px;border-radius:50%;overflow:hidden;flex:0 0 auto;background:var(--ink);display:grid;place-items:center;text-decoration:none;border:2px solid var(--paper);}
+  .contrib-av::before{content:attr(data-initials);position:absolute;font-family:'Fraunces',Georgia,serif;font-weight:300;font-size:22px;color:rgba(212,255,58,.7);}
+  .contrib-av img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.05);}
+  .contrib-body{min-width:0;}
+  .contrib-top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .contrib-name{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:20px;letter-spacing:-.01em;text-decoration:none;border-bottom:1px solid transparent;}
+  .contrib-name:hover{border-color:var(--ink);}
+  .contrib-ln{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--rust);border-bottom:1px solid transparent;}
+  .contrib-ln:hover{border-color:var(--rust);}
+  .contrib-role{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.6;margin:4px 0 10px;}
+  .contrib-bio{font-size:15px;line-height:1.6;opacity:.9;margin:0;max-width:640px;}
+  @media(max-width:920px){.dir{grid-template-columns:1fr;gap:22px;}.dir-side{position:static;}.catlist,.sortlist{display:flex;flex-wrap:wrap;gap:7px;}.catlist button,.sortlist button{width:auto;border:1px solid var(--line);}.side-label{margin-left:0;}}
+  @media(max-width:700px){.wrap{padding:0 22px;}.grid{grid-template-columns:1fr;}.seen{padding:24px;}.cta-card{padding:26px;}.cta-links{flex-direction:column;align-items:stretch;}.cta-card .btn,.btn-ghost{justify-content:center;}.facts th{width:108px;white-space:normal;}.tool-id{gap:14px;}}
+
+  /* ---- blog ---- */
+  .post-head{padding:8px 0 30px;border-bottom:1px solid var(--line);}
+  .post-dek{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(19px,2.4vw,25px);line-height:1.4;opacity:.9;max-width:720px;margin:0 0 24px;}
+  .answer-box{background:var(--cream);border-left:3px solid var(--signal-deep);padding:22px 26px;margin:34px 0 30px;}
+  .answer-box .al{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.5;margin-bottom:9px;}
+  .answer-box p{font-size:18px;line-height:1.6;margin:0;max-width:none;}
+  .takeaways{border:1px solid var(--line);padding:24px 26px;margin:0 0 34px;}
+  .takeaways h2{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.5;margin-bottom:14px;font-weight:400;}
+  .takeaways ul{margin:0;padding-left:18px;}
+  .takeaways li{margin-bottom:10px;line-height:1.55;}
+  .takeaways li:last-child{margin-bottom:0;}
+  .toc{margin:0 0 8px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .toc .tl{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.5;margin-bottom:11px;}
+  .toc ol{margin:0;padding-left:18px;}
+  .toc li{margin-bottom:6px;}
+  .toc a{text-decoration:none;border-bottom:1px solid var(--line);}
+  .toc a:hover{border-color:var(--ink);}
+  .post-body p{font-size:17px;line-height:1.68;}
+  .pquote{border-left:3px solid var(--signal);padding:4px 0 4px 22px;margin:26px 0;}
+  .pquote p{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:22px;line-height:1.4;margin:0 0 8px;}
+  .pquote cite{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-style:normal;opacity:.6;}
+  .dtable{width:100%;border-collapse:collapse;margin:22px 0 6px;}
+  .dtable th,.dtable td{text-align:left;vertical-align:top;padding:11px 14px 11px 0;border-top:1px solid var(--line);font-size:15px;}
+  .dtable thead th{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;font-weight:400;border-top:none;}
+  .dtable tbody tr:last-child td{border-bottom:1px solid var(--line);}
+  .steps{list-style:none;counter-reset:s;margin:0;}
+  .steps li{counter-increment:s;position:relative;padding:0 0 22px 46px;margin-bottom:22px;border-bottom:1px solid var(--line);}
+  .steps li:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  .steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:1px;font-family:'JetBrains Mono','SF Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--rust);}
+  .steps h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;letter-spacing:-.01em;margin-bottom:7px;}
+  .steps p{margin:0 0 8px;}
+  .steps .st{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.06em;opacity:.7;}
+  .ilist{list-style:none;margin:0;}
+  .ilist li{padding:20px 0;border-top:1px solid var(--line);}
+  .ilist li:last-child{border-bottom:1px solid var(--line);}
+  .ilist h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:20px;letter-spacing:-.01em;margin-bottom:7px;}
+  .ilist .price{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.06em;opacity:.6;margin-top:7px;}
+  .cites{margin-top:8px;}
+  .cites .ct{padding:13px 0;border-top:1px solid rgba(250,247,240,.16);font-size:14px;line-height:1.55;}
+  .cites .ct:first-child{border-top:none;}
+  .cites .cm{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--signal);margin-right:9px;}
+  .cites q{font-style:italic;opacity:.9;}
+  .post-card .pc-meta{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.5;margin-bottom:9px;}
+  .post-card .cn{margin-bottom:9px;}
+  @media(max-width:700px){.answer-box{padding:18px;}.takeaways{padding:18px;}.steps li{padding-left:34px;}}
+</style>
+<link rel="stylesheet" href="/ai4ntp-preview/reskin.css">
+</head>
+<body>
+<script src="/ai4ntp-preview/nav.js"></script>
+<nav class="crumb wrap" aria-label="Breadcrumb"><a href="/ai4ntp-preview/">Home</a><span>/</span><a href="/ai4ntp-preview/blog">Blog</a><span>/</span><span aria-current="page">We Built a School Platform With AI. Enrollment Went 95 to 230.</span></nav>
+<header class="post-head wrap narrow">
+  <div class="eyebrow">Case study &middot; From Session 006</div>
+  <h1 class="title">We Built a School Platform With AI. Enrollment Went 95 to 230.</h1>
+  <p class="post-dek">A designer with no LMS experience built the software his school runs on, then let an agent write its blog.</p>
+  <div class="byline">
+    <span class="op-stack byline-stack"><img src="/ai4ntp-preview/sessions/001/images/ian-kilpatrick.jpg" alt="Ian Kilpatrick" loading="lazy" decoding="async" style="object-position:center 22%" onerror="this.remove()"><img src="/ai4ntp-preview/sessions/001/images/justin-novak.jpg" alt="Justin Novak" loading="lazy" decoding="async" style="object-position:center" onerror="this.remove()"><img src="/ai4ntp-preview/sessions/001/images/alec-saluga.jpg" alt="Alec Saluga" loading="lazy" decoding="async" style="object-position:center 22%" onerror="this.remove()"></span>
+    <span class="byline-txt">By <a href="/ai4ntp-preview/about#ian-kilpatrick">Ian Kilpatrick</a>, with <a href="/ai4ntp-preview/about#justin-novak">Justin Novak</a> and <a href="/ai4ntp-preview/about#alec-saluga">Alec Saluga</a> <span class="byline-sep">&middot;</span> <span class="byline-date">Updated Jul 2026</span></span>
+  </div>
+</header>
+
+<div class="wrap narrow">
+  <div class="answer-box">
+    <div class="al">The short answer</div>
+    <p>Building custom software with AI is now cheaper than licensing it for many teams. Ian Kilpatrick built the learning management system his school runs on using Claude, Claude Code, and an agent on the server, having never seen an LMS before. Alec Saluga estimated the same build would have cost $50,000 to $100,000 custom.</p>
+  </div>
+  <div class="takeaways">
+    <h2>Key takeaways</h2>
+    <ul><li>Ian Kilpatrick built a full learning management system for Saints Classical after starting with no idea what an LMS was, by brainstorming with Claude and building with Claude Code.</li><li>Alec Saluga estimated the same system would run $50,000 to $100,000 to build custom, or tens of thousands a year to license, before AI.</li><li>An agent on the server writes the school blog 2 to 3 times a day, now over 300 posts, attributed to a persona named after C.S. Lewis.</li><li>Enrollment went from 95 students to over 230 in one year, which Ian attributes largely to programmatic SEO and AI automation while hedging that the school itself did a great job.</li><li>The system went well beyond an LMS: it takes tuition, handles enrollment, and has its own email and Slack-style messaging built in.</li></ul>
+  </div>
+  <nav class="toc" aria-label="On this page">
+    <div class="tl">On this page</div>
+    <ol><li><a href="#build-vs-buy">Should you build custom software with AI instead of buying it?</a></li><li><a href="#how">How do you build something you have never seen before?</a></li><li><a href="#cost">What does custom software cost now?</a></li><li><a href="#blog">What did the AI-written blog actually do?</a></li></ol>
+  </nav>
+  <section class="block post-body" id="build-vs-buy">
+    <h2>Should you build custom software with AI instead of buying it?</h2>
+    <p>The old answer was obvious: buy it. Building custom meant a budget, a team, and months. So you licensed something close enough and lived with the gaps.</p><p>Ian Kilpatrick's wife needed a way for parents and students to log in, check enrollment, and see classes, and for teachers to enter them. What she was describing was a learning management system. Ian had never seen one, because he graduated before they existed.</p><p>He built it anyway. Saints Classical, a classical tutorial in Middle Tennessee, now runs on it.</p>
+    
+    
+  </section><section class="block post-body" id="how">
+    <h2>How do you build something you have never seen before?</h2>
+    <p>The first move was not writing code. It was asking. Ian went to Claude saying he did not know what he was doing, and it walked him through how Google Classroom, Blackboard, and Blackbaud each handle it. He pulled the parts he liked and discarded the rest.</p><p>That is the whole trick, and it is why not knowing the category turned out not to matter. The AI has seen every LMS. You supply the taste and the requirements; it supplies the reference.</p><p>The first version launched to 95 students. For the second, Ian installed an agent directly on the server to help build the next iteration, and to keep helping after launch: when a problem comes in, he pastes his wife's text to the agent, tells it to fix the issue and email the parent when it is done, and it does.</p>
+    <blockquote class="pquote"><p>&ldquo;I basically started brainstorming with Claude, and then Claude Code, and built the first iteration of the LMS.&rdquo;</p><cite>Ian Kilpatrick &middot; 33:38</cite></blockquote>
+    
+  </section><section class="block post-body" id="cost">
+    <h2>What does custom software cost now?</h2>
+    <p>Alec's estimate is the useful anchor. Ten years ago this system meant licensing something for tens of thousands a year, or paying $50,000 to $100,000 to have it built custom.</p><p>That is an estimate of the alternative, not an invoice Ian paid. What he actually spent was his own time plus AI tooling. The comparison is the point: the build-versus-buy math that held for two decades has inverted for a large class of internal software.</p><p>And what he got is not a compromise. It takes tuition, handles enrollment and club signups, has its own email system, and has Slack-style groups built in. No unused features, and nothing missing.</p>
+    <blockquote class="pquote"><p>&ldquo;you're probably in the 50 to $100,000 range for custom building&rdquo;</p><cite>Alec Saluga &middot; 38:14</cite></blockquote>
+    
+  </section><section class="block post-body" id="blog">
+    <h2>What did the AI-written blog actually do?</h2>
+    <p>The agent on the server set up the school's blog and posts to it 2 to 3 times per day, written in a persona attributed to C.S. Lewis and scoped to what the school actually teaches. It is now over 300 posts, maybe around 350.</p><p>The goal was E-E-A-T: enough expert, experienced, authoritative, trustworthy material for Google to recommend the school higher. People find the articles, and because they are relevant to the curriculum, some of those readers end up signing up.</p><p>Enrollment went from 95 students to over 230 for the next year, roughly two and a half times. Ian's own framing is worth keeping intact rather than tidying up: he credits programmatic SEO and AI automation &quot;largely&quot;, and then immediately says &quot;I don't know if that's normal. I mean, she's done a great job on the school itself.&quot; AI helped quite a bit. It did not do it alone, and he is the first to say so.</p>
+    
+    
+  </section>
+  <section class="block">
+      <h2>The results</h2>
+      <table class="dtable">
+        <thead><tr><th>Metric</th><th>Before</th><th>After</th><th>Timeframe</th></tr></thead>
+        <tbody><tr><td>Enrollment</td><td>95 students</td><td>over 230 students</td><td>one year</td></tr><tr><td>Blog posts on the school site</td><td>Not stated</td><td>over 300, around 350</td><td>at 2 to 3 posts per day</td></tr></tbody>
+      </table>
+      <p class="disclosure">Figures as reported live by the operator, as of 2026-07-12.</p>
+    </section>
+  <section class="block faq">
+    <h2>Frequently asked questions</h2>
+    <details><summary>Can AI really build custom software?</summary><p>It built the platform a real school runs on. Ian Kilpatrick had never seen a learning management system, brainstormed the requirements with Claude, built the first iteration with Claude Code, and used an agent on the server for the second. It handles enrollment, tuition, classes, lesson plans, email, and messaging.</p></details><details><summary>How much does it cost to build custom software with AI?</summary><p>Alec Saluga estimated on Session 006 that the same system would have cost $50,000 to $100,000 to build custom before AI, or tens of thousands a year to license. That is an estimate of the alternative, not what Ian paid; his cost was his own time plus AI tooling.</p></details><details><summary>Do you need to be a developer?</summary><p>Ian is a designer and developer, so he is not a beginner. But the load-bearing skill here was not coding, it was not knowing what an LMS was and asking the AI to explain how existing ones work, then choosing. He went in saying he did not know what he was doing.</p></details><details><summary>Did the AI blog cause the enrollment increase?</summary><p>Partly, and Ian is careful about this. He says the increase from 95 to over 230 students is &quot;largely because of programmatic SEO and this AI automation&quot;, then immediately adds &quot;I don't know if that's normal. I mean, she's done a great job on the school itself&quot; and &quot;I will say AI has helped quite a bit.&quot; The school's own quality is part of the story.</p></details><details><summary>Should you build or buy?</summary><p>Buy when an off-the-shelf tool genuinely fits. Build when you are stitching five tools together to approximate what you need. Ian's system replaced what would have been an LMS plus Slack plus an email tool plus a payments flow, and every feature exists because he needed it.</p></details>
+  </section>
+  <section class="block">
+    <h2>Tools used in this post</h2>
+    <p>Every tool here has its own page with pricing, who used it live, and honest alternatives.</p>
+    <div class="rel"><a href="/ai4ntp-preview/ai-tools/claude">Claude (Anthropic)</a><a href="/ai4ntp-preview/ai-tools/claude-code">Claude Code</a><a href="/ai4ntp-preview/ai-tools/openclaw">OpenClaw</a></div>
+  </section>
+  <div class="seen">
+    <h2>Where this came from</h2>
+    <div class="ep">
+      <div class="meta">Session 006 &middot; Recorded live</div>
+      <div class="uf">7 AI agents we built to run our company.</div>
+      <a href="/ai4ntp-preview/sessions/006">Watch the recap &rarr;</a><a href="https://www.youtube.com/watch?v=q7-F4KbikbY" target="_blank" rel="noopener">YouTube replay &rarr;</a>
+    </div>
+    <div class="cites"><div class="ct"><span class="cm">32:22 Ian</span><q>my wife and I started working on a school last February, so a year and a half ago... it's called Saints Classical. It's a classical tutorial in Middle Tennessee.</q></div><div class="ct"><span class="cm">33:38 Ian</span><q>I basically started brainstorming with Claude, and then Claude Code, and built the first iteration of the LMS. And then the next year came around, so we launched with 95 students</q></div><div class="ct"><span class="cm">33:38 Ian</span><q>I actually installed an OpenClaw on the server to help me build the next iteration of the LMS</q></div><div class="ct"><span class="cm">36:18 Ian</span><q>he's actually set up his blog, where he posts 2 to 3 times per day. And it's all attributed to C.S. Lewis... it's now over 300, maybe around 350 blog posts</q></div><div class="ct"><span class="cm">36:18 Ian</span><q>largely because of programmatic SEO and this AI automation, we're actually launching the school with over 230 students for this next year, so a two and a half times increase in enrollment. I don't know if that's normal. I mean, she's done a great job on the school itself.</q></div><div class="ct"><span class="cm">37:34 Ian</span><q>But I will say AI has helped quite a bit with that.</q></div><div class="ct"><span class="cm">38:14 Alec</span><q>you're probably in the 50 to $100,000 range for custom building</q></div><div class="ct"><span class="cm">39:12 Ian</span><q>it's way beyond an LMS because it takes tuition. It allows enrollment and even clubs to sign up if people want to pay. It also has its own email system.</q></div></div>
+  </div>
+  <section class="block contributors">
+    <h2>Who wrote this</h2>
+    <p class="contrib-intro">Every AI4NTP post is written by an operator who was in the room when the work happened.</p>
+    <div class="contrib-grid"><div class="contrib-card">
+      <a class="contrib-av" data-initials="IK" href="https://www.linkedin.com/in/ianpk/" target="_blank" rel="noopener" aria-label="Ian Kilpatrick on LinkedIn"><img src="/ai4ntp-preview/sessions/001/images/ian-kilpatrick.jpg" alt="Ian Kilpatrick" loading="lazy" decoding="async" style="object-position:center 22%" onerror="this.remove()"></a>
+      <div class="contrib-body">
+        <div class="contrib-top"><a class="contrib-name" href="/ai4ntp-preview/about#ian-kilpatrick">Ian Kilpatrick</a><a class="contrib-ln" href="https://www.linkedin.com/in/ianpk/" target="_blank" rel="noopener">LinkedIn &rarr;</a></div>
+        <div class="contrib-role">Partner at AI4NTP</div>
+        <p class="contrib-bio">A designer, developer, and serial entrepreneur writing code since age 10. He has worked with Disney, the Golden Globes, and the AMAs, and now runs a fleet of AI agents doing real work every day.</p>
+      </div>
+    </div><div class="contrib-card">
+      <a class="contrib-av" data-initials="JN" href="https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/" target="_blank" rel="noopener" aria-label="Justin Novak on LinkedIn"><img src="/ai4ntp-preview/sessions/001/images/justin-novak.jpg" alt="Justin Novak" loading="lazy" decoding="async" style="object-position:center" onerror="this.remove()"></a>
+      <div class="contrib-body">
+        <div class="contrib-top"><a class="contrib-name" href="/ai4ntp-preview/about#justin-novak">Justin Novak</a><a class="contrib-ln" href="https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/" target="_blank" rel="noopener">LinkedIn &rarr;</a></div>
+        <div class="contrib-role">Partner at AI4NTP</div>
+        <p class="contrib-bio">Founder and host of AI4NTP. He sold his first company from his college dorm room, and as a fractional CMO has helped scale multiple businesses past $50M in ARR.</p>
+      </div>
+    </div><div class="contrib-card">
+      <a class="contrib-av" data-initials="AS" href="https://www.linkedin.com/in/alec-saluga-4295521a6/" target="_blank" rel="noopener" aria-label="Alec Saluga on LinkedIn"><img src="/ai4ntp-preview/sessions/001/images/alec-saluga.jpg" alt="Alec Saluga" loading="lazy" decoding="async" style="object-position:center 22%" onerror="this.remove()"></a>
+      <div class="contrib-body">
+        <div class="contrib-top"><a class="contrib-name" href="/ai4ntp-preview/about#alec-saluga">Alec Saluga</a><a class="contrib-ln" href="https://www.linkedin.com/in/alec-saluga-4295521a6/" target="_blank" rel="noopener">LinkedIn &rarr;</a></div>
+        <div class="contrib-role">Partner at AI4NTP</div>
+        <p class="contrib-bio">A former B2B salesman with no technical background who self-taught AI. He builds and deploys AI-driven marketing and websites, and has grown a following of over 15,000 teaching AI adoption.</p>
+      </div>
+    </div></div>
+  </section>
+  <section class="block">
+    <h2>More field notes</h2>
+    <div class="rel"><a href="/ai4ntp-preview/blog/why-ai-websites-look-the-same">Why AI-Built Websites All Look the Same (and How to Fix It)</a><a href="/ai4ntp-preview/blog/n8n-vs-claude-code">n8n vs Claude Code vs Hermes: Which One Should You Use?</a><a href="/ai4ntp-preview/blog/get-recommended-by-chatgpt">How to Get Your Business Recommended by ChatGPT</a><a href="/ai4ntp-preview/blog/ai-cold-email">How to Use AI for Cold Email (112 Opportunities in 7 Days)</a></div>
+  </section>
+  <section class="cta-card">
+    <h2>Want to watch this happen live?</h2>
+    <p>AI4NTP runs free live sessions where real operators build in real time, with the audience picking what gets built. No theory, no slides.</p>
+    <div class="cta-links">
+      <a class="btn" href="/ai4ntp-preview/calendar" data-cta="blog_register_click">Save your seat &rarr;</a>
+      <a class="btn-ghost" href="/ai4ntp-preview/ai-tools" data-cta="blog_tools_click">Browse the tools &rarr;</a>
+    </div>
+  </section>
+
+  <div class="endcta">
+    <a href="/ai4ntp-preview/blog">&larr; All posts</a>
+    <a href="https://ai4ntp.beehiiv.com" target="_blank" rel="noopener" data-cta="blog_newsletter_click">Get these in our newsletter</a>
+  </div>
+  <div class="updated">Last updated 2026-07-15</div>
+</div>
+<script src="/ai4ntp-preview/footer.js"></script>
+<script src="/ai4ntp-preview/reskin.js" defer></script>
+</body>
+</html>

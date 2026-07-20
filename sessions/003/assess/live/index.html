@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Host Dashboard · Episode 003 · AI4NTP</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --paper-warm: #EDE7DA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --line: rgba(15, 17, 19, 0.12);
+    --line-strong: rgba(15, 17, 19, 0.32);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.28;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+  a { color: inherit; }
+
+  .topbar {
+    padding: 22px 40px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .topbar-left { display: flex; align-items: baseline; gap: 24px; }
+  .logo {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .logo .four {
+    background: var(--signal);
+    padding: 0 7px;
+    margin: 0 2px;
+    border-radius: 2px;
+    font-style: italic;
+    display: inline-block;
+  }
+  .live-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .live-pill .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--rust);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+  .topbar-right { display: flex; align-items: center; gap: 24px; }
+  .stage-mode {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .stage-mode .badge {
+    background: var(--signal);
+    color: var(--ink);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  .counter-wrap { display: flex; align-items: baseline; gap: 12px; font-family: 'JetBrains Mono', monospace; }
+  .counter {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    transition: transform 0.3s;
+  }
+  .counter.bump { transform: scale(1.12); }
+  .counter-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.55; }
+
+  .dashboard {
+    padding: 24px 40px 60px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 1000px) {
+    .dashboard { grid-template-columns: 1fr; padding: 20px 20px 48px; }
+    .topbar { padding: 16px 20px; }
+  }
+
+  .col {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-height: 560px;
+  }
+  .col-header { border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+  .col-eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 6px;
+  }
+  .col-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .col-title em { font-family: 'Instrument Serif', serif; font-style: italic; }
+
+  /* FEED */
+  .feed { display: flex; flex-direction: column; gap: 12px; flex: 1; max-height: 72vh; overflow-y: auto; }
+  .feed-empty { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; opacity: 0.4; font-size: 18px; }
+  .card {
+    padding: 14px 16px;
+    border-left: 3px solid var(--line-strong);
+    background: var(--paper);
+    transition: background 1.8s, border-color 1.8s;
+    animation: slide-in 0.5s ease-out;
+  }
+  .card.fresh { background: var(--signal); border-left-color: var(--ink); }
+  @keyframes slide-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .card-who {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 5px;
+  }
+  .card-what {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.35;
+    color: var(--ink);
+  }
+  .card-reply {
+    margin-top: 9px;
+    padding-top: 9px;
+    border-top: 1px dashed var(--line);
+    font-size: 13.5px;
+    line-height: 1.4;
+    color: var(--signal-deep);
+    display: flex;
+    gap: 7px;
+  }
+  .card-reply .arrow { font-family: 'JetBrains Mono', monospace; opacity: 0.7; }
+  .card.fresh .card-reply { color: var(--ink); }
+  .card-stack { margin-top: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+  .card-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    padding: 2px 7px;
+    border-radius: 3px;
+  }
+  .card.fresh .card-chip { border-color: var(--ink); }
+  .card-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  /* CONTROLS */
+  .controls { display: flex; flex-direction: column; gap: 14px; }
+  .ctl-btn {
+    background: var(--ink);
+    color: var(--cream);
+    border: 1px solid var(--ink);
+    padding: 18px 22px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
+  }
+  .ctl-btn:hover { background: var(--signal); color: var(--ink); }
+  .ctl-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .ctl-btn.secondary { background: transparent; color: var(--ink); border-color: var(--line-strong); }
+  .ctl-btn.secondary:hover { background: var(--ink); color: var(--cream); }
+  .ctl-btn.secondary.active { background: var(--signal); color: var(--ink); border-color: var(--ink); }
+  .ctl-btn.warn { color: var(--rust); border-color: var(--rust); background: transparent; }
+  .ctl-btn.warn:hover { background: var(--rust); color: var(--cream); }
+  .ctl-hint { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 14px; opacity: 0.65; line-height: 1.4; }
+  .ctl-section { border-top: 1px dashed var(--line); padding-top: 16px; display: flex; flex-direction: column; gap: 12px; }
+  .ctl-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .toggle-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  /* SYNTHESIS PREVIEW */
+  .synth { display: flex; flex-direction: column; gap: 10px; }
+  .synth-headline {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .synth-theme {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .synth-theme-label { font-family: 'Fraunces', serif; font-size: 16px; }
+  .synth-theme-blurb { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 13px; opacity: 0.65; }
+  .synth-theme-count { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--signal-deep); }
+  .synth-empty { font-family: 'Instrument Serif', serif; font-style: italic; opacity: 0.4; font-size: 16px; }
+
+  .status-foot {
+    padding: 16px 40px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    position: relative;
+    z-index: 2;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .status-foot a { color: var(--signal-deep); text-decoration: none; opacity: 1; }
+  @media (max-width: 700px) { .status-foot { padding: 14px 20px; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <a href="/ai4ntp-preview/" class="logo">ai<span class="four">4</span>ntp</a>
+    <span class="live-pill"><span class="dot"></span>Host · Episode 003</span>
+  </div>
+  <div class="topbar-right">
+    <div class="stage-mode">
+      <span>Stage</span>
+      <span class="badge" id="mode-badge">wall</span>
+    </div>
+    <div class="counter-wrap">
+      <span class="counter" id="counter">0</span>
+      <span class="counter-label" id="counter-label">tasks</span>
+    </div>
+  </div>
+</div>
+
+<section class="dashboard">
+  <!-- LEFT: live feed -->
+  <div class="col">
+    <div class="col-header">
+      <div class="col-eyebrow">Live audience submissions</div>
+      <div class="col-title">What the room would <em>hand an agent.</em></div>
+    </div>
+    <div class="feed" id="feed">
+      <div class="feed-empty">Waiting on submissions.</div>
+    </div>
+  </div>
+
+  <!-- RIGHT: controls + synthesis -->
+  <div class="col">
+    <div class="col-header">
+      <div class="col-eyebrow">Director controls</div>
+      <div class="col-title">Run the <em>room.</em></div>
+    </div>
+
+    <div class="controls">
+      <div class="ctl-label">What the big screen shows</div>
+      <div class="toggle-row">
+        <button class="ctl-btn secondary" id="btn-mode-wall">Live wall</button>
+        <button class="ctl-btn secondary" id="btn-mode-themes">The themes</button>
+      </div>
+      <div class="ctl-hint">Open the stage view in a second tab and share that screen on Zoom.</div>
+
+      <div class="ctl-section">
+        <div class="ctl-label">Read the room</div>
+        <button class="ctl-btn" id="btn-synthesize">Synthesize the room → themes</button>
+        <div class="ctl-hint">Claude clusters every task into themes with counts, then flips the stage to the themes view.</div>
+        <div class="synth" id="synth">
+          <div class="synth-empty">No synthesis yet.</div>
+        </div>
+      </div>
+
+      <div class="ctl-section">
+        <div class="ctl-label">Danger</div>
+        <button class="ctl-btn warn" id="btn-reset">Reset all data (truncate)</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="status-foot">
+  <span>AI4NTP · Episode 003 · Host Dashboard</span>
+  <span><a href="/ai4ntp-preview/sessions/003/assess/stage" target="_blank" rel="noopener">Open stage view ↗</a> &nbsp;·&nbsp; <span id="status">Connecting…</span></span>
+</div>
+
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+  const SUPABASE_URL = 'https://qytiyechjtkrejhhczcg.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5dGl5ZWNoanRrcmVqaGhjemNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMzc0OTcsImV4cCI6MjA5MjYxMzQ5N30.P7vYQPWFlVU6GrBFNxjnl28y9dTSRCet9n9V8YNxj1U';
+
+  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  let rows = [];      // newest first
+  let mode = 'wall';
+  let synthesis = null;
+
+  function safe(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+  // ai_reply is a JSON string { stack, plan, timeline }; tolerate legacy prose.
+  function parseReply(raw) {
+    if (!raw) return null;
+    if (typeof raw === 'object') return raw;
+    try { const o = JSON.parse(raw); if (o && (o.plan || o.stack)) return o; } catch (e) {}
+    return { plan: String(raw), stack: [], timeline: '' };
+  }
+  function setStatus(msg) { document.getElementById('status').textContent = msg; }
+
+  const counterEl = document.getElementById('counter');
+  const feedEl = document.getElementById('feed');
+
+  function renderCounter(bump) {
+    counterEl.textContent = rows.length;
+    document.getElementById('counter-label').textContent = rows.length === 1 ? 'task' : 'tasks';
+    if (bump) { counterEl.classList.add('bump'); setTimeout(() => counterEl.classList.remove('bump'), 320); }
+  }
+
+  function renderFeed(freshId) {
+    const items = rows.filter(r => r.task).slice(0, 80);
+    if (!items.length) { feedEl.innerHTML = '<div class="feed-empty">Waiting on submissions.</div>'; return; }
+    feedEl.innerHTML = items.map(r => {
+      const fresh = freshId && r.id === freshId;
+      const who = r.name ? safe(r.name) : 'Anonymous';
+      const rep = parseReply(r.ai_reply);
+      const reply = rep && rep.plan
+        ? `<div class="card-reply"><span class="arrow">&#8627;</span><span>${safe(rep.plan)}</span></div>`
+        : '';
+      const chips = rep && Array.isArray(rep.stack) ? rep.stack.filter(Boolean) : [];
+      const meta = rep && (chips.length || rep.timeline)
+        ? `<div class="card-stack">${chips.map(s => `<span class="card-chip">${safe(s)}</span>`).join('')}${rep.timeline ? `<span class="card-time">${safe(rep.timeline)}</span>` : ''}</div>`
+        : '';
+      return `
+        <div class="card${fresh ? ' fresh' : ''}">
+          <div class="card-who">${who}</div>
+          <div class="card-what">${safe(r.task)}</div>
+          ${reply}${meta}
+        </div>`;
+    }).join('');
+    if (freshId) setTimeout(() => feedEl.querySelectorAll('.card.fresh').forEach(c => c.classList.remove('fresh')), 1800);
+  }
+
+  function renderModeBadge() {
+    document.getElementById('mode-badge').textContent = mode;
+    document.getElementById('btn-mode-wall').classList.toggle('active', mode === 'wall');
+    document.getElementById('btn-mode-themes').classList.toggle('active', mode === 'themes');
+  }
+
+  function renderSynth() {
+    const el = document.getElementById('synth');
+    if (!synthesis || !Array.isArray(synthesis.themes) || !synthesis.themes.length) {
+      el.innerHTML = '<div class="synth-empty">No synthesis yet.</div>';
+      return;
+    }
+    el.innerHTML =
+      `<div class="synth-headline">${safe(synthesis.headline || '')}</div>` +
+      synthesis.themes.map(t => `
+        <div class="synth-theme">
+          <div>
+            <div class="synth-theme-label">${safe(t.label)}</div>
+            <div class="synth-theme-blurb">${safe(t.blurb || '')}</div>
+          </div>
+          <div class="synth-theme-count">${t.count || 0}</div>
+        </div>`).join('');
+  }
+
+  // ---- LOADERS ----
+  async function loadRows() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_003')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(500);
+    if (error) { console.error('rows load failed', error); setStatus('Load error · check RLS'); return; }
+    rows = data || [];
+    renderCounter();
+    renderFeed();
+  }
+
+  async function loadState() {
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_003_state')
+      .select('*')
+      .eq('id', 1)
+      .single();
+    if (error) { console.error('state load failed', error); return; }
+    mode = data.mode || 'wall';
+    synthesis = data.synthesis || null;
+    renderModeBadge();
+    renderSynth();
+  }
+
+  // ---- ACTIONS ----
+  async function callApi(path, body) {
+    const res = await fetch(path, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body || {}),
+    });
+    if (!res.ok) { const text = await res.text(); throw new Error(path + ' ' + res.status + ' ' + text); }
+    return res.json();
+  }
+
+  async function setMode(m) {
+    // optimistic
+    mode = m; renderModeBadge();
+    try { await callApi('/api/state-003', { mode: m }); }
+    catch (err) { console.error(err); }
+  }
+
+  async function actSynthesize() {
+    const btn = document.getElementById('btn-synthesize');
+    const orig = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Reading the room…';
+    try {
+      const json = await callApi('/api/synthesize-003', {});
+      synthesis = json.synthesis || null;
+      mode = 'themes';
+      renderModeBadge();
+      renderSynth();
+    } catch (err) {
+      console.error(err);
+      btn.textContent = 'Failed · retry?';
+      setTimeout(() => { btn.disabled = false; btn.textContent = orig; }, 2000);
+      return;
+    }
+    btn.disabled = false; btn.textContent = orig;
+  }
+
+  async function actReset() {
+    if (!confirm('Reset all submissions, replies, and synthesis, and put the stage back to the live wall? This is destructive.')) return;
+    try {
+      await callApi('/api/state-003', { reset: true });
+      rows = []; synthesis = null; mode = 'wall';
+      renderCounter(); renderFeed(); renderModeBadge(); renderSynth();
+    } catch (err) { console.error(err); alert('Reset failed: ' + err.message); }
+  }
+
+  document.getElementById('btn-mode-wall').addEventListener('click', () => setMode('wall'));
+  document.getElementById('btn-mode-themes').addEventListener('click', () => setMode('themes'));
+  document.getElementById('btn-synthesize').addEventListener('click', actSynthesize);
+  document.getElementById('btn-reset').addEventListener('click', actReset);
+
+  // ---- REALTIME ----
+  function subscribe() {
+    supabase
+      .channel('host-003-' + Date.now())
+      .on('postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'ai4ntp_pulse_003' },
+        (payload) => {
+          rows.unshift(payload.new);
+          renderCounter(true);
+          renderFeed(payload.new.id);
+        })
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_003' },
+        (payload) => {
+          const idx = rows.findIndex(r => r.id === payload.new.id);
+          if (idx !== -1) rows[idx] = payload.new;
+          else rows.unshift(payload.new);
+          renderFeed(payload.new.id);
+        })
+      .on('postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'ai4ntp_pulse_003_state' },
+        (payload) => {
+          mode = payload.new.mode || 'wall';
+          synthesis = payload.new.synthesis || null;
+          renderModeBadge();
+          renderSynth();
+        })
+      .subscribe((status) => {
+        if (status === 'SUBSCRIBED') setStatus('Streaming · ' + new Date().toLocaleTimeString());
+        else if (['CHANNEL_ERROR','TIMED_OUT','CLOSED'].includes(status)) setStatus('Reconnecting…');
+      });
+  }
+
+  (async function init() {
+    await loadState();
+    await loadRows();
+    subscribe();
+  })();
+
+  setInterval(() => { loadState(); loadRows(); }, 30000);
+</script>
+
+</body>
+</html>

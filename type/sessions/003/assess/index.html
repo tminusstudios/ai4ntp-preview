@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY783506Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4YY783506Y');
+</script>
+
+<script defer src="/_vercel/insights/script.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your AI agent's first task · Episode 003 · AI4NTP</title>
+<meta name="description" content="If you had an AI agent, what's one task you'd hand it? Drop it in. The agent replies.">
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/type/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --paper-warm: #EDE7DA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --line: rgba(15, 17, 19, 0.12);
+    --line-strong: rgba(15, 17, 19, 0.32);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+  a { color: inherit; }
+
+  .nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  .nav-logo {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .nav-logo .four {
+    background: var(--signal);
+    padding: 0 6px;
+    margin: 0 1px;
+    border-radius: 2px;
+    font-style: italic;
+  }
+  .nav-back { text-decoration: none; color: var(--ink); opacity: 0.65; }
+  .nav-back:hover { opacity: 1; }
+
+  .hero {
+    padding: 52px 40px 18px;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .session-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 9px 18px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .session-pill .live-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--rust);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+  .hero-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(40px, 7vw, 76px);
+    letter-spacing: -0.028em;
+    line-height: 1.0;
+    margin-bottom: 18px;
+  }
+  .hero-title em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    background: var(--signal);
+    padding: 0 0.1em;
+    margin: 0 0.02em;
+    display: inline-block;
+  }
+  .hero-sub {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.4;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.88;
+  }
+
+  .stage-wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 26px 40px 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .form-card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 40px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .field { margin-bottom: 20px; }
+  .field > label {
+    display: block;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.92;
+    margin-bottom: 10px;
+  }
+  .field .opt {
+    opacity: 0.7;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    margin-left: 6px;
+  }
+  .field input[type="text"],
+  .field input[type="email"],
+  .field textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--line-strong);
+    padding: 12px 0 14px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--ink);
+    transition: border-color 0.2s;
+  }
+  .field input:focus, .field textarea:focus {
+    outline: none;
+    border-bottom-color: var(--ink);
+  }
+  .field textarea {
+    resize: vertical;
+    min-height: 96px;
+  }
+  .field input.error, .field textarea.error {
+    border-bottom-color: var(--rust);
+  }
+  .examples {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.45;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 560px) { .row-2 { grid-template-columns: 1fr; gap: 0; } }
+
+  .submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--cream);
+    border: 1px solid var(--ink);
+    padding: 18px 28px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
+    margin-top: 8px;
+    width: 100%;
+  }
+  .submit:hover { background: var(--signal); color: var(--ink); }
+  .submit:disabled { opacity: 0.6; cursor: wait; }
+
+  /* SUBMITTED + AGENT REPLY */
+  .reply-card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 40px;
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .reply-eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .reply-eyebrow .live-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--signal-deep);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  .your-task {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    opacity: 0.55;
+    margin-bottom: 22px;
+    line-height: 1.5;
+  }
+  .your-task span { text-transform: uppercase; letter-spacing: 0.16em; opacity: 0.8; }
+  .agent-out { margin-bottom: 4px; }
+  .agent-stack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .stack-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-right: 2px;
+  }
+  .chip {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background: var(--signal);
+    color: var(--ink);
+    padding: 6px 11px;
+    border-radius: 4px;
+    border: 1px solid var(--ink);
+  }
+  .agent-plan {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(22px, 3.2vw, 31px);
+    letter-spacing: -0.02em;
+    line-height: 1.28;
+    margin-bottom: 22px;
+  }
+  .agent-timeline {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    border-top: 1px dashed var(--line);
+    padding-top: 18px;
+  }
+  .tl-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .tl-value {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(26px, 3.4vw, 38px);
+    line-height: 1;
+    color: var(--ink);
+    background: var(--signal);
+    padding: 0 0.12em;
+  }
+  .agent-thinking {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    opacity: 0.6;
+  }
+  .agent-thinking .dots::after {
+    content: '...';
+    animation: dots 1.2s steps(4, end) infinite;
+  }
+  @keyframes dots {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+  }
+  .reply-foot {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px dashed var(--line);
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    opacity: 0.78;
+    line-height: 1.45;
+  }
+  .reply-again {
+    margin-top: 18px;
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    padding: 12px 20px;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .reply-again:hover { background: var(--ink); color: var(--cream); }
+
+  .stage { display: none; }
+  .stage.active { display: block; }
+
+  @media (max-width: 700px) {
+    .nav { padding: 16px 24px; }
+    .hero { padding: 34px 22px 12px; }
+    .stage-wrap { padding: 20px 20px 56px; }
+    .form-card, .reply-card { padding: 26px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/ai4ntp-preview/type/" class="nav-logo">ai<span class="four">4</span>ntp</a>
+  <a href="/ai4ntp-preview/type/sessions/003" class="nav-back">← Episode 003</a>
+</nav>
+
+<header class="hero">
+  <div class="session-pill"><span class="live-dot"></span>Episode 003 · Live now</div>
+  <h1 class="hero-title">If you had an AI agent, what's one thing you'd <em>have it do?</em></h1>
+</header>
+
+<section class="stage-wrap">
+
+  <!-- STAGE 1: SUBMIT -->
+  <div class="stage active" id="stage-submit">
+    <div class="form-card">
+      <form id="task-form" novalidate>
+        <div class="field">
+          <label for="task">The one task you'd hand it <span class="opt">required</span></label>
+          <textarea id="task" name="task" required autofocus></textarea>
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label for="name">First name <span class="opt">optional</span></label>
+            <input type="text" id="name" name="name" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="opt">optional</span></label>
+            <input type="email" id="email" name="email" autocomplete="email">
+          </div>
+        </div>
+        <button type="submit" class="submit" id="submit-btn">Hand it to the agent →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- STAGE 2: AGENT REPLY -->
+  <div class="stage" id="stage-reply">
+    <div class="reply-card">
+      <div class="reply-eyebrow"><span class="live-dot"></span>Your agent's first move</div>
+      <div class="your-task" id="your-task"></div>
+      <div class="agent-out" id="agent-out">
+        <span class="agent-thinking">Scoping your task<span class="dots"></span></span>
+      </div>
+      <div class="reply-foot">That is a taste. In the next hour, Ian builds a real one live, and you walk away knowing how to set up your own.</div>
+      <button type="button" class="reply-again" id="reply-again">Submit another →</button>
+    </div>
+  </div>
+
+</section>
+
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+  const SUPABASE_URL = 'https://qytiyechjtkrejhhczcg.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5dGl5ZWNoanRrcmVqaGhjemNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMzc0OTcsImV4cCI6MjA5MjYxMzQ5N30.P7vYQPWFlVU6GrBFNxjnl28y9dTSRCet9n9V8YNxj1U';
+
+  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  const stages = {
+    submit: document.getElementById('stage-submit'),
+    reply: document.getElementById('stage-reply'),
+  };
+  function showStage(name) {
+    for (const k in stages) stages[k].classList.toggle('active', k === name);
+  }
+
+  const taskForm = document.getElementById('task-form');
+  const taskInput = document.getElementById('task');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const submitBtn = document.getElementById('submit-btn');
+  const yourTaskEl = document.getElementById('your-task');
+  const agentOutEl = document.getElementById('agent-out');
+  const replyAgainBtn = document.getElementById('reply-again');
+
+  function safe(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  taskForm.querySelectorAll('input, textarea').forEach(el => {
+    el.addEventListener('input', () => el.classList.remove('error'));
+  });
+
+  taskForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const task = (taskInput.value || '').trim();
+    if (!task) {
+      taskInput.classList.add('error');
+      taskInput.focus();
+      return;
+    }
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Handing it over…';
+
+    const payload = {
+      task,
+      name: (nameInput.value || '').trim() || null,
+      email: (emailInput.value || '').trim() || null,
+    };
+
+    // 1) Land the submission first, so it always counts even if the AI step fails.
+    const { data, error } = await supabase
+      .from('ai4ntp_pulse_003')
+      .insert(payload)
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Submit failed', error);
+      taskInput.classList.add('error');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Try again →';
+      return;
+    }
+
+    gtag('event', 'pulse_003_submit');
+
+    // 2) Move to the reply view immediately; the agent scopes the job.
+    yourTaskEl.innerHTML = '<span>You said</span><br>' + safe(task);
+    agentOutEl.innerHTML = '<span class="agent-thinking">Scoping your task<span class="dots"></span></span>';
+    showStage('reply');
+
+    // 3) Ask Claude to scope it: stack + plan + timeline.
+    try {
+      const res = await fetch('/api/agent-003', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: data.id, task }),
+      });
+      const json = await res.json();
+      if (res.ok && (json.plan || (json.stack && json.stack.length))) {
+        renderReply(json);
+      } else {
+        renderReply({ stack: [], plan: "I'd get to work on that the moment you set me loose.", timeline: '' });
+      }
+    } catch (err) {
+      console.error('agent reply failed', err);
+      renderReply({ stack: [], plan: "I'd get to work on that the moment you set me loose.", timeline: '' });
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Hand it to the agent →';
+  });
+
+  function renderReply(r) {
+    const stack = Array.isArray(r.stack) ? r.stack.filter(Boolean) : [];
+    const stackHtml = stack.length
+      ? `<div class="agent-stack"><span class="stack-label">I'd reach for</span>${stack.map(s => `<span class="chip">${safe(s)}</span>`).join('')}</div>`
+      : '';
+    const planHtml = r.plan ? `<div class="agent-plan">${safe(r.plan)}</div>` : '';
+    const timelineHtml = r.timeline
+      ? `<div class="agent-timeline"><span class="tl-label">Done in</span><span class="tl-value">${safe(r.timeline)}</span></div>`
+      : '';
+    agentOutEl.innerHTML = stackHtml + planHtml + timelineHtml;
+  }
+
+  replyAgainBtn.addEventListener('click', () => {
+    taskForm.reset();
+    showStage('submit');
+    taskInput.focus();
+  });
+</script>
+
+</body>
+</html>

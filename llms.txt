@@ -1,0 +1,105 @@
+# AI4NTP (AI for Non-Techy People)
+
+> AI4NTP runs free, live, recorded sessions where real operators show non-technical professionals exactly how they use and build with AI. No theory or jargon: screen-shared workflows you can apply the same day. This file orients AI assistants and answer engines to what AI4NTP is, who runs it, and what it offers.
+
+## About
+- Name: AI4NTP, also written "AI for Non-Techy People".
+- What it is: a free live series (webinars on Zoom, replays on YouTube) plus written resources, teaching non-technical operators how to actually use and build with AI.
+- Audience: non-technical professionals, operators, marketers, and founders, from total beginners to people already shipping with AI.
+- What makes it different: real operators demonstrate live, on screen, exactly how they use AI to get results, then hand over the tools and prompts. Show, do not just tell.
+- Website: https://ai4ntp.com | Newsletter: https://ai4ntp.beehiiv.com | YouTube: https://www.youtube.com/@AI4NonTechyPeople
+
+## Founders and operators
+- Justin Novak: Partner at AI4NTP; leads go-to-market and moderates the sessions. https://www.linkedin.com/in/justin-edward-stephen-novak-683046158/
+- Ian Kilpatrick: Partner at AI4NTP; runs a portfolio of companies with AI and builds AI agents live. https://www.linkedin.com/in/ianpk/
+- Alec Saluga: Partner at AI4NTP; builds and deploys AI-driven marketing and websites. https://www.linkedin.com/in/alec-saluga-4295521a6/
+- Brett Haralson: community and partnerships (Quetzal Labs); co-moderates AI4NTP sessions. https://www.linkedin.com/in/brett-haralson/
+
+## What AI4NTP offers
+- Free live sessions and replays (register at https://ai4ntp.com/register).
+- A curated, operator-tested AI tools directory (https://ai4ntp.com/ai-tools).
+- Partnerships: apply to demo live as a guest, or sponsor a session (https://ai4ntp.com/partner).
+- 1:1 working sessions with the team (https://ai4ntp.com/calendar).
+
+## Key pages
+- [About AI4NTP](https://ai4ntp.com/about): who runs AI4NTP and what it does.
+- [Register](https://ai4ntp.com/register): save a seat for the next live session.
+- [AI Tools Directory](https://ai4ntp.com/ai-tools): tools demoed live, with episode and operator.
+- [Blog](https://ai4ntp.com/blog): written field notes drawn from the live sessions.
+- [Partner](https://ai4ntp.com/partner): guest and sponsor opportunities.
+
+## AI Tools Directory
+Curated tools demoed live on AI4NTP, with the episode and operator who used each. Hub: https://ai4ntp.com/ai-tools
+
+- [Apify](https://ai4ntp.com/ai-tools/apify): Web scraping and automation platform, including a Google Maps scraper. (used live in Episode 002, Episode 004, Session 006)
+- [Apollo.io](https://ai4ntp.com/ai-tools/apollo-io): Lead and contact database for prospecting. (used live in Episode 002)
+- [Beehiiv](https://ai4ntp.com/ai-tools/beehiiv): Newsletter platform where you own your audience. (used live in Episode 002)
+- [Behance](https://ai4ntp.com/ai-tools/behance): Adobe's portfolio network for design inspiration and trend-reading. (used live in Episode 002, Episode 004, Episode 005)
+- [Brand Sauce](https://ai4ntp.com/ai-tools/brand-sauce): Custom company swag stores for $1 a month. (used live in Episode 001, Session 006)
+- [Canva](https://ai4ntp.com/ai-tools/canva): Drag-and-drop design for graphics, assets, and quick mockups. (used live in Episode 004)
+- [ChatGPT](https://ai4ntp.com/ai-tools/chatgpt): OpenAI's general-purpose AI assistant for writing, images, and code. (used live in Episode 002, Episode 003, Episode 004, Episode 005, Session 006)
+- [Claude (Anthropic)](https://ai4ntp.com/ai-tools/claude): Anthropic’s family of AI models, used as an assistant and as an agent’s model brain. (used live in Episode 003, Episode 004, Episode 005, Session 006)
+- [Claude Code](https://ai4ntp.com/ai-tools/claude-code): Anthropic's agentic coding tool that writes and ships real software from your terminal. (used live in Episode 001, Episode 002, Episode 003, Episode 004, Episode 005, Session 006)
+- [Codex](https://ai4ntp.com/ai-tools/codex): OpenAI's coding agent for building and shipping apps. (used live in Episode 001, Episode 004, Episode 005, Session 006)
+- [DaFont](https://ai4ntp.com/ai-tools/dafont): A searchable font-download library used for quick brand typography exploration. (used live in Episode 005)
+- [DigitalOcean](https://ai4ntp.com/ai-tools/digitalocean): Cloud hosting with simple virtual servers (droplets) and an in-browser console. (used live in Episode 003)
+- [Echo Check](https://ai4ntp.com/ai-tools/echo-check): LLM visibility scoring: see how you rank in ChatGPT, Perplexity, Claude, and Gemini. (used live in Episode 001, Session 006)
+- [Figma](https://ai4ntp.com/ai-tools/figma): Collaborative interface design and wireframing in the browser. (used live in Episode 004, Episode 005, Session 006)
+- [Firecrawl](https://ai4ntp.com/ai-tools/firecrawl): An API that crawls websites and returns clean, LLM-ready data. (used live in Episode 003)
+- [Fireshot](https://ai4ntp.com/ai-tools/fireshot): Chrome extension that captures full-page screenshots in one click. (used live in Episode 002, Episode 005)
+- [Gemini / Nano Banana](https://ai4ntp.com/ai-tools/gemini): Google's AI assistant and model family, including image-generation workflows Alec called Nano Banana. (used live in Episode 005)
+- [GitHub](https://ai4ntp.com/ai-tools/github): The world’s largest platform for hosting and collaborating on code with Git. (used live in Episode 003, Episode 005)
+- [GoHighLevel](https://ai4ntp.com/ai-tools/gohighlevel): All-in-one CRM and marketing platform for agencies and growing businesses. (used live in Episode 004)
+- [Google Fonts](https://ai4ntp.com/ai-tools/google-fonts): Free, open-source web type library. (used live in Episode 002)
+- [Grok](https://ai4ntp.com/ai-tools/grok): xAI's conversational model, mentioned as one of the model options available inside Higgsfield. (used live in Episode 005)
+- [Hermes](https://ai4ntp.com/ai-tools/hermes): A desktop AI agent with persistent memory, skills, and model switching. (used live in Episode 004)
+- [Higgsfield](https://ai4ntp.com/ai-tools/higgsfield): Run one prompt through many image and video models in one place. (used live in Episode 004, Episode 005, Session 006)
+- [HyperFrames](https://ai4ntp.com/ai-tools/hyperframes): Open-source framework that turns HTML, CSS, and GSAP compositions into deterministic MP4 video, built for AI agents.
+- [Instant Domain Search](https://ai4ntp.com/ai-tools/instant-domain-search): Instant domain-availability search. (used live in Episode 002)
+- [Instantly](https://ai4ntp.com/ai-tools/instantly): Cold email outreach platform for sending at scale across many inboxes while protecting deliverability. (used live in Session 006)
+- [Kimi (Moonshot AI)](https://ai4ntp.com/ai-tools/kimi): A large language model from Moonshot AI, positioned as a low-cost option. (used live in Episode 003, Episode 004)
+- [Loom](https://ai4ntp.com/ai-tools/loom): Async video messaging for handoffs, sales, and coaching. (used live in Episode 001)
+- [Lovable](https://ai4ntp.com/ai-tools/lovable): Vibe-coding website builder that turns prompts into live sites. (used live in Episode 001, Episode 002, Episode 005)
+- [Manus](https://ai4ntp.com/ai-tools/manus): No-code AI agent platform for building real, functional apps. (used live in Episode 001)
+- [Midjourney](https://ai4ntp.com/ai-tools/midjourney): Text-to-image model for logos, moodboards, and visual direction. (used live in Episode 002, Episode 004, Episode 005)
+- [Miro](https://ai4ntp.com/ai-tools/miro): Online collaborative whiteboard for diagramming, planning, and mapping workflows on an infinite canvas. (used live in Session 006)
+- [n8n](https://ai4ntp.com/ai-tools/n8n): Open-source, visual workflow automation you can self-host. (used live in Episode 004)
+- [Namecheap](https://ai4ntp.com/ai-tools/namecheap): Domain registrar and hosting. (used live in Episode 002)
+- [OpenClaw](https://ai4ntp.com/ai-tools/openclaw): Self-hosted AI agent you run like a digital employee. (used live in Episode 002, Episode 003, Episode 005, Session 006)
+- [Perplexity](https://ai4ntp.com/ai-tools/perplexity): AI answer engine for research and step-by-step walkthroughs. (used live in Episode 002, Session 006)
+- [Pexels](https://ai4ntp.com/ai-tools/pexels): Free, rights-clear stock photography. (used live in Episode 002)
+- [PLAUD Note](https://ai4ntp.com/ai-tools/plaud-note): Pocket AI voice recorder that captures meetings and calls. (used live in Episode 001, Episode 004)
+- [Postgres](https://ai4ntp.com/ai-tools/postgres): Open-source relational database used as the likely production database for Milk and Cookies. (used live in Episode 005)
+- [Pulsar](https://ai4ntp.com/ai-tools/pulsar): Multi-tenant content engine that turns a brand kit into a marketing motion. (used live in Episode 002)
+- [SendGrid](https://ai4ntp.com/ai-tools/sendgrid): Email delivery service for sending transactional and marketing email at scale. (used live in Episode 003)
+- [SpyFu](https://ai4ntp.com/ai-tools/spyfu): Competitive search intelligence: see who's advertising and on what keywords. (used live in Episode 004)
+- [Stripe](https://ai4ntp.com/ai-tools/stripe): Payment infrastructure for subscriptions, checkout, and marketplace money movement. (used live in Episode 005)
+- [Supabase](https://ai4ntp.com/ai-tools/supabase): Open-source backend-as-a-service: database, auth, and APIs. (used live in Episode 001)
+- [Tailscale](https://ai4ntp.com/ai-tools/tailscale): A mesh VPN built on WireGuard that privately connects your devices and servers. (used live in Episode 003)
+- [Telegram](https://ai4ntp.com/ai-tools/telegram): A free messaging app with a bot platform (BotFather) for connecting automated agents. (used live in Episode 003, Session 006)
+- [tRPC](https://ai4ntp.com/ai-tools/trpc): TypeScript API framework Justin mentioned as a possible production API layer. (used live in Episode 005)
+- [Twilio](https://ai4ntp.com/ai-tools/twilio): Communications APIs for SMS, notifications, and customer messaging. (used live in Episode 005)
+- [Vercel](https://ai4ntp.com/ai-tools/vercel): Frontend cloud hosting for deploying web apps quickly from code or AI-built prototypes. (used live in Episode 005)
+- [Visual Studio Code](https://ai4ntp.com/ai-tools/visual-studio-code): Microsoft's free code editor, used as Justin's local workspace for Claude Code. (used live in Episode 005)
+- [Wispr Flow](https://ai4ntp.com/ai-tools/wispr-flow): AI voice dictation that lets you prompt by talking instead of typing. (used live in Episode 002, Episode 004, Episode 005)
+- [Zapier](https://ai4ntp.com/ai-tools/zapier): Automation glue that connects your apps and AI into workflows. (used live in Episode 001, Episode 004)
+
+## Blog
+Written posts drawn from our live sessions. Every claim traces to a timestamp in a session we recorded. Hub: https://ai4ntp.com/blog
+
+- [Why AI-Built Websites All Look the Same (and How to Fix It)](https://ai4ntp.com/blog/why-ai-websites-look-the-same): AI-built websites look the same because models are trained on certain design aesthetics and fall back on them when you give them nothing else to work from. (from Episode 005)
+- [n8n vs Claude Code vs Hermes: Which One Should You Use?](https://ai4ntp.com/blog/n8n-vs-claude-code): The split is by job, not by quality. (from Episode 004)
+- [How to Get Your Business Recommended by ChatGPT](https://ai4ntp.com/blog/get-recommended-by-chatgpt): Getting recommended by ChatGPT means making your site readable by answer engines. (from Session 006)
+- [We Built a School Platform With AI. Enrollment Went 95 to 230.](https://ai4ntp.com/blog/build-custom-software-with-ai): Building custom software with AI is now cheaper than licensing it for many teams. (from Session 006)
+- [How to Use AI for Cold Email (112 Opportunities in 7 Days)](https://ai4ntp.com/blog/ai-cold-email): AI cold email works by feeding an agent real data before it writes anything. (from Session 006)
+- [What Is an AI Agent? Plain English, With 7 Real Ones](https://ai4ntp.com/blog/what-is-an-ai-agent): An AI agent is a program you ask for outcomes instead of answers. (from Session 006)
+- [Best AI Tools for Marketers in 2026 (Operator-Tested, Used Live)](https://ai4ntp.com/blog/best-ai-tools-for-marketers): The best AI tools for marketers in 2026 group by the job to be done: ChatGPT and Perplexity for research, Apollo.io and Apify for prospecting, Beehiiv for owning an audience, Midjourney for brand visuals, Lovable and Claude Code for building, and Zapier for automation. (from Episode 002)
+- [How to Build a Company With AI in Under an Hour](https://ai4ntp.com/blog/build-a-company-with-ai): Building a company with AI breaks into three phases: brand identity, website, then go-to-market. (from Episode 002)
+
+## Sessions
+- [Episode 001](https://ai4ntp.com/sessions/001): How marketers are actually using AI to grow (replay available).
+- [Episode 002](https://ai4ntp.com/sessions/002): We built a company with AI in under an hour (replay available).
+- [Episode 003](https://ai4ntp.com/sessions/003): Build your own AI Clone Agent (with OpenClaw) (show notes available).
+- [Episode 004](https://ai4ntp.com/sessions/004): 7 AI tools you've never heard of (replay available).
+- [Episode 005](https://ai4ntp.com/sessions/005): Three bakery businesses built with AI in one hour (show notes available).
+- [Session 006](https://ai4ntp.com/sessions/006): 7 AI agents we built to run our company (replay available).

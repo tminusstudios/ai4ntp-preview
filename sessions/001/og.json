@@ -1,0 +1,18 @@
+{
+  "session_id": "001",
+  "status": "REPLAY",
+  "date": "MAY 21, 2026",
+  "time": "1:00 PM EST",
+  "headline_line1": "How marketers are actually",
+  "headline_pre": "using AI to",
+  "headline_highlight": "grow",
+  "headline_post": "",
+  "tagline": "THREE OPERATORS, SHOWING THEIR WORK",
+  "operators": [
+    { "img": "images/justin-novak.jpg", "name": "Justin Novak" },
+    { "img": "images/alec-saluga.jpg", "name": "Alec Saluga" },
+    { "img": "images/ian-kilpatrick.jpg", "name": "Ian Kilpatrick" }
+  ],
+  "headline_size": 108,
+  "output": "og-image.jpg"
+}

@@ -1,0 +1,2390 @@
+WEBVTT
+
+1
+00:00:04.660 --> 00:00:19.039
+Brett: Yo! Welcome, everybody! Welcome to AI4NTP. This is gonna be an insane, insane live session today. We're going to be building an entire company with 3 different builds, 3 different professional
+
+2
+00:00:19.070 --> 00:00:30.860
+Brett: amazing builders here with crazy ideas, and everybody's gonna be building in their own way. I didn't tell them what to do. We can't. They're crazy and on their way to building wild things.
+
+3
+00:00:30.910 --> 00:00:34.210
+Brett: But, we need you to tell us
+
+4
+00:00:34.280 --> 00:00:41.410
+Brett: what to build. So before we get going, I'm your host, Brett. I'm here with the fantastic builders, Justin, Ian, and Alec. Hey guys, welcome!
+
+5
+00:00:42.420 --> 00:00:43.030
+Ian: Thank you.
+
+6
+00:00:43.030 --> 00:00:57.039
+Justin Novak: What's up, guys? Welcome back. I see some familiar names in the chat. If you've been here before. If you haven't been here before, we're gonna have a good time today. This is one hour. We got the Fantastic Four back together. Guys, it's been a while. Where have y'all been?
+
+7
+00:00:57.210 --> 00:01:10.719
+Brett: Where have you been? I'm in Brock. I'm in… I'm on a family vacation. I have this amazing beige curtain behind me, just to sort of set the scene. I'm not sure what's going on, but yeah, I'm excited. Where's everybody coming in from?
+
+8
+00:01:10.920 --> 00:01:12.249
+Brett: I'm Prague today.
+
+9
+00:01:12.250 --> 00:01:16.780
+Justin Novak: I'm in New York right now, there's a bit of a heat wave, so I've got the AC cranked up.
+
+10
+00:01:16.970 --> 00:01:19.390
+Justin Novak: Durham, North Carolina.
+
+11
+00:01:19.390 --> 00:01:22.600
+Brett: Let's go! The Raleigh Durham… what's the other one?
+
+12
+00:01:23.040 --> 00:01:23.750
+Ian: Rally.
+
+13
+00:01:24.000 --> 00:01:24.780
+Ian: Well, it's relatively.
+
+14
+00:01:24.780 --> 00:01:27.559
+Brett: Browning, Durham, that's it, that's it, that's it.
+
+15
+00:01:28.420 --> 00:01:30.060
+Ian: I'm currently in Tennessee, actually.
+
+16
+00:01:30.060 --> 00:01:32.620
+Alec: Out in the building, see some San Diego here, calling in from…
+
+17
+00:01:32.620 --> 00:01:33.700
+Ian: There we go.
+
+18
+00:01:33.700 --> 00:01:34.090
+Alec: L.A.
+
+19
+00:01:34.090 --> 00:01:35.210
+Brett: myself.
+
+20
+00:01:35.210 --> 00:01:36.850
+Alec: Gotta love it. Here we go.
+
+21
+00:01:37.090 --> 00:01:39.240
+Alec: California, well represented.
+
+22
+00:01:39.390 --> 00:01:43.510
+Ian: Oh, there we go, UK. We're branching outside our borders. Dubai.
+
+23
+00:01:44.700 --> 00:01:47.780
+Brett: Alabama… Let's go, Richard!
+
+24
+00:01:47.780 --> 00:01:48.700
+Ian: Milwaukee?
+
+25
+00:01:49.190 --> 00:01:51.829
+Brett: We're neighbors. My home state's Mississippi.
+
+26
+00:01:53.100 --> 00:01:54.060
+Ian: Mumbai.
+
+27
+00:01:57.420 --> 00:01:59.760
+Brett: Alright, so, while we get going.
+
+28
+00:01:59.980 --> 00:02:03.430
+Brett: I'm going to drop… actually, to make sure…
+
+29
+00:02:03.850 --> 00:02:13.229
+Brett: Do you want to drop… Justin, do you want to drop the… make sure I… there it is. Let's go to that link, and if you guys want to pull this up, Justin, do you want to share your screen and show us? Can you?
+
+30
+00:02:14.780 --> 00:02:15.659
+Justin Novak: I gotcha, bruh.
+
+31
+00:02:16.210 --> 00:02:22.089
+Brett: This is… this is going to be how… what we decide what to build. So what Justin's about to show you is a link we dropped.
+
+32
+00:02:22.250 --> 00:02:33.660
+Brett: We did this last time. Now, this is not rehearsed, this is not scripted, this is… this is live. So, what ideas do you have that you want us to build?
+
+33
+00:02:34.000 --> 00:02:42.669
+Brett: So, if you want to go ahead and drop some ideas in there, we're gonna take the next 3-5 minutes just letting you put some ideas in, and then we're off to the races.
+
+34
+00:02:43.830 --> 00:02:44.570
+Brett: So…
+
+35
+00:02:44.840 --> 00:02:52.759
+Brett: We did this last time, and it was just a lot of fun. Alec, you, you did some stuff. You went nuts, so did Ian. It was… it was… it was…
+
+36
+00:02:52.760 --> 00:03:17.740
+Alec: No, we had a fun one, and last time, for anyone that wasn't there, basically what we did is we kind of divided tasks. So, like, Ian was on design, and then I was actually building the lander and built a little bit of functionality for an app, and then Justin kind of built out our go-to-market strategy. Today, we're going to be doing it a little bit differently, where we are all going to start and go all the way through, and kind of work in silos, and the main point of that is.
+
+37
+00:03:17.740 --> 00:03:19.009
+Alec: Showing everybody that.
+
+38
+00:03:19.010 --> 00:03:38.310
+Alec: there's a lot of different ways up the mountain here. There's a lot of different ways to achieve a good end result. We're all going to be using different tools, we're going to share what tools we're using. So I think it'll be cool to see and contrast and compare, hey, what tools are good for what? What's Ian using? What's Justin using? What's Alec using? So, I think it should be interesting to see what, you know, three guys that are
+
+39
+00:03:38.310 --> 00:03:41.640
+Alec: You know, living in this day-to-day, what tools we're using.
+
+40
+00:03:41.900 --> 00:03:42.470
+Ian: Yeah.
+
+41
+00:03:42.470 --> 00:03:45.650
+Brett: Alec, I love that, and I also like the way…
+
+42
+00:03:46.570 --> 00:03:59.329
+Brett: I like to get inside your head to see how you're thinking about it, and I'm really interested to see Justin's interpretation, Ian, what you're gonna do, and Alec… Alice will look, and I love how you preface that, Alec. It's really right.
+
+43
+00:03:59.330 --> 00:04:12.429
+Brett: There's no one way to skin this cat, right? So, Krista, you should put that in there. Make sure you put baked goods. That's such a… I've got a friend of mine that's doing crazy stuff right now with her bakery, so that's a great idea.
+
+44
+00:04:12.960 --> 00:04:13.530
+Brett: So.
+
+45
+00:04:14.020 --> 00:04:14.709
+Alec: Justin or Ian?
+
+46
+00:04:15.290 --> 00:04:25.789
+Alec: Figure out some ideas of, like, what somebody could put into the port? What's an idea? What's something that someone might put through? Is this an app? Is this a local service? Like, what should people be putting in there?
+
+47
+00:04:27.230 --> 00:04:37.429
+Ian: Oh, man. I mean, SaaS, it could be logistics for, you know, chicken… moving chickens and eggs, you know, it could be… you know, last time it was AI,
+
+48
+00:04:37.540 --> 00:04:55.050
+Ian: AI fitness trainer, you know? Honestly, off-the-wall, off-the-wall stuff, I love. I mean, it could be funny, it can be fun, but it can actually also be useful. What I usually tell most entrepreneurs is solve your own problem first, so if you have a problem, put it in there. We'll solve it 3 different ways.
+
+49
+00:04:55.360 --> 00:04:55.910
+Ian: And…
+
+50
+00:04:55.910 --> 00:04:59.430
+Brett: That's a really great… That's a great idea.
+
+51
+00:04:59.740 --> 00:05:13.360
+Ian: Yeah. What I'm actually excited about, to parry off what Alex said, is… is, not just to see, like, the three different ways that we approach a problem, but also to show everybody on the call today that if you have an idea.
+
+52
+00:05:13.800 --> 00:05:15.040
+Ian: it may…
+
+53
+00:05:15.540 --> 00:05:18.999
+Ian: It may be already done out there somewhere, but it won't be done the way you do it.
+
+54
+00:05:19.330 --> 00:05:35.070
+Ian: Right? And the way you do it will be different, because you'll see three different ways we approach a problem or an idea. And so, basically, the world is your oyster. Don't think about somebody else doing something that will inhibit you. You're actually free to…
+
+55
+00:05:35.590 --> 00:05:38.160
+Ian: Do it however you want to, you know, your own expression.
+
+56
+00:05:38.840 --> 00:05:39.670
+Brett: So, I…
+
+57
+00:05:40.080 --> 00:05:47.159
+Brett: I'm in Prague, and there's an app here that I found from one of the locals, and it is literally
+
+58
+00:05:47.340 --> 00:05:58.830
+Brett: a treasure map, you open it, and it points you to the nearest beer. The nearest pub with the beer. And it is an absolute hit here. So, that's crazy cool, right? So…
+
+59
+00:05:58.830 --> 00:05:59.380
+Ian: Yeah.
+
+60
+00:05:59.960 --> 00:06:05.140
+Brett: Justin, let's see, how many do we… what are… what are… what are people putting in
+
+61
+00:06:05.400 --> 00:06:07.829
+Brett: Right now, do we… can we get that screen up?
+
+62
+00:06:09.200 --> 00:06:15.799
+Justin Novak: Yeah, it's still loading here, so… just continue to drop them in the chat while it's loading. We've got baked goods so far.
+
+63
+00:06:16.090 --> 00:06:20.099
+Brett: That… we've got… that's 2 baked goods we've gotten just in chat alone.
+
+64
+00:06:20.470 --> 00:06:21.689
+Ian: People got a sweet tooth.
+
+65
+00:06:22.610 --> 00:06:26.189
+Brett: Mustafa, did you… did you drop that in our chat? Hang on, let me make sure you see this.
+
+66
+00:06:26.950 --> 00:06:28.520
+Brett: Yeah, fill that out here.
+
+67
+00:06:41.950 --> 00:06:44.559
+Brett: Credit repair… I'll have all these ideas.
+
+68
+00:06:44.930 --> 00:06:48.160
+Brett: Okay. So, you know, I…
+
+69
+00:06:48.310 --> 00:06:51.150
+Brett: I've actually gotten a handful of…
+
+70
+00:06:52.270 --> 00:07:02.690
+Brett: That's, like, like, 6 people asking for baked goods. Let's just roll baked goods. Does anybody have a pro- let's do baked goods. Let's do a… let's do a baked goods store
+
+71
+00:07:03.300 --> 00:07:10.430
+Brett: And… let's say… Let's say it's a… it's… It's a baked goods store.
+
+72
+00:07:10.550 --> 00:07:11.670
+Brett: And…
+
+73
+00:07:12.040 --> 00:07:27.000
+Brett: Pick a location, you guys can pick it, and let's figure out what you would do. Is it a mobile bakery? Is it a stationary bakery? Are people taking orders online? How can you use something really cool? How can you integrate AI? I'm just curious.
+
+74
+00:07:27.160 --> 00:07:28.379
+Brett: What do you think, Alan?
+
+75
+00:07:28.380 --> 00:07:45.230
+Alec: I like it. I think we can build it. I have a couple unique twists on this, so I think we'd do it. If it's cool with Justin and Ian, and we want to go that route, I'd say let's pick a location on what we want to do this for. But yeah, I'm down. Let's do it. I think I got some ideas on how we can get some AI in the mix here, and…
+
+76
+00:07:45.230 --> 00:07:56.930
+Brett: Oh, I love this. Mustafa's got a great add-on. Maybe some sweet treats in there, something. He might want a UK market. I'll let you three pick a different region, pick a city.
+
+77
+00:07:57.750 --> 00:08:01.550
+Brett: And… You ha- it has to have a bakery.
+
+78
+00:08:01.550 --> 00:08:12.830
+Alec: What if we build in our own metros? So I'm in LA, Justin's in New York, Ian's in Nashville, so we're all in pretty big metros, so we can all go, kind of, for our own markets here and build out that way.
+
+79
+00:08:12.830 --> 00:08:15.679
+Ian: That's… that's good. I love it. I like that.
+
+80
+00:08:16.040 --> 00:08:21.690
+Brett: I love it. And you have to come up with a name, and a brand, and everything else. Are we sealed on this? Thumbs up?
+
+81
+00:08:21.690 --> 00:08:22.709
+Justin Novak: Let's do it!
+
+82
+00:08:22.710 --> 00:08:23.260
+Alec: I'm good.
+
+83
+00:08:23.260 --> 00:08:34.510
+Brett: Okay, that's great, because I've been walking the streets of Prague for a week, and all I do is stop and eat baked goods, and I probably need to stop, probably. Okay, I'm just curious here.
+
+84
+00:08:34.650 --> 00:08:39.350
+Brett: Alec, what are you thinking? Like, where does your mind go here? Would you… baked goods?
+
+85
+00:08:39.710 --> 00:09:04.659
+Alec: So, with kind of the starting point of this project, rather than starting from nothing here, typically what I'll do is, rather than, like, diving into a coding tool, something like a Codex or a Cloud code, first we need to ideate. We need to figure out, you know, what's the overall vision here? What's the branding gonna look like? So, I'll typically start with just a regular, you know, Claude or ChatGPT, start there and kind of figure out the vision for this and what we want it to look like.
+
+86
+00:09:04.870 --> 00:09:28.369
+Alec: And a lot of times, what we'll do is, you gotta think, with any, you know, take even a bakery, as simple as that, for instance. There's a lot of companies out there that have been around for a long time, have spent a lot of money on perfecting their branding, and perfecting their website, and all that, so it's great to, you know, we don't want to steal something from anyone, we don't want to directly rip anything off, but it's great to get inspiration, so we're not starting from a complete
+
+87
+00:09:28.370 --> 00:09:34.379
+Alec: you know, a zero. So, I will… I'm gonna share my screen. I'll show you guys a little bit about my…
+
+88
+00:09:34.510 --> 00:09:35.760
+Alec: process here.
+
+89
+00:09:35.890 --> 00:09:38.160
+Alec: Let me know if everyone can see this.
+
+90
+00:09:40.730 --> 00:09:42.210
+Alec: Go Desktop 2.
+
+91
+00:09:43.070 --> 00:09:44.670
+Alec: Alright, can everyone see my screen?
+
+92
+00:09:45.760 --> 00:09:46.140
+Ian: Oh my gosh.
+
+93
+00:09:46.140 --> 00:09:47.859
+Brett: I cannot. Oh, no, I can't, we're.
+
+94
+00:09:48.820 --> 00:09:49.500
+Alec: Okay.
+
+95
+00:09:49.940 --> 00:09:53.590
+Alec: Cool, cool. So I'm gonna look up… book a little dated.
+
+96
+00:09:53.770 --> 00:09:56.079
+Alec: And we're just gonna start there. We're gonna see…
+
+97
+00:09:56.960 --> 00:10:15.010
+Alec: Looks good. I'd say, honestly, for our take here, national chains are probably going to be better, because they've just allotted more spend, and they've, you know, to figuring out what's working and what's not. Okay, so we've got Suzy Cakes in Manhattan Beach. Shout out Susie Cakes. I think that's kind of.
+
+98
+00:10:15.010 --> 00:10:16.260
+Brett: Look at that delicious pop-up.
+
+99
+00:10:18.150 --> 00:10:21.599
+Alec: Yeah, seriously. Okay, I'll check out Lito.
+
+100
+00:10:27.080 --> 00:10:27.910
+Alec: Looks…
+
+101
+00:10:28.060 --> 00:10:37.729
+Alec: Not necessarily my style, a little… a little dated. We want something good here. Who's got an example of something that's maybe national? Like, here, we'll take an example, we'll look at Crumble.
+
+102
+00:10:38.000 --> 00:10:39.140
+Alec: How's Crumble look?
+
+103
+00:10:40.290 --> 00:10:41.040
+Ian: Oh, yeah, Chrome Deli.
+
+104
+00:10:41.040 --> 00:10:41.880
+Brett: delicious.
+
+105
+00:10:42.670 --> 00:10:53.300
+Alec: Yeah, see, like, this is… this is absolutely dialed. So, shout out to Ian for this one. We're gonna use this as our inspiration here. Shout out to Ian for this Chrome plugin, Fireshot.
+
+106
+00:10:53.300 --> 00:10:53.830
+Ian: Oh, yeah.
+
+107
+00:10:54.110 --> 00:10:55.290
+Alec: So, what we're gonna do.
+
+108
+00:10:55.290 --> 00:10:56.170
+Brett: Change fire.
+
+109
+00:10:56.170 --> 00:11:15.659
+Alec: is now I can capture the entire page here. So this will go and it'll take a big screenshot of everything on this site. Because typically, like, honestly, before Ian put this in front of me, what I was doing is I'd go and I'd, like, take a screenshot of, like, each kind of piece of the site. So now I have this great screenshot of the entire site here. So I'm gonna save this as an image.
+
+110
+00:11:20.130 --> 00:11:22.250
+Alec: Save that to our desktop here.
+
+111
+00:11:23.590 --> 00:11:26.510
+Alec: Okay, awesome. So that's gonna be our starting point.
+
+112
+00:11:26.890 --> 00:11:37.039
+Alec: And then we just need to determine, kind of, where our branding fits, and, you know, how do we want to name this, how do we want to position this? So I will… I'll step back.
+
+113
+00:11:37.040 --> 00:11:55.390
+Alec: my process is I'm going to push this into Claude for, like, hey, general ideation. I'm gonna use WhisperFlow to give it context into what I'm… what I'm doing, what I'm building, and just get some name ideas, just kind of have a dialogue with it, like, hey, this is what we're doing, what are some good names? What are… what's a good angle here? What's a good…
+
+114
+00:11:55.390 --> 00:11:58.769
+Alec: good positioning, so that's how I'm gonna… gonna do it.
+
+115
+00:11:59.260 --> 00:12:06.659
+Brett: Before you switch, I'm gonna go to Justin next, but before you do, like, put in, like, your marketing idea, like, like, a visual.
+
+116
+00:12:07.500 --> 00:12:13.510
+Brett: what do you see here with these images that really kind of speak to you? Like, I see something, what do you see?
+
+117
+00:12:14.010 --> 00:12:28.670
+Alec: for one, it's making me hungry just looking at it. Like, we have real… real visuals on the… on the product here, and a lot of… you know, there's a lot of, like, recognition as well. Like, we have Oreo in the mix, like, a lot of household names, so there's kind of, like.
+
+118
+00:12:28.670 --> 00:12:37.430
+Alec: not necessarily, like, you know, I'm thinking of this more in a B2B lens, but this is, like, when you see Oreo, you think credibility, and, like, everyone has had an Oreo, and that resonates with them.
+
+119
+00:12:37.430 --> 00:12:50.019
+Alec: So that's one thing. The visuals are huge, like, I could see this and, like, I'm more inclined to buy, because it's actively making me hungry. So that's… that's one element that I think we will, keep in the mix here.
+
+120
+00:12:50.120 --> 00:12:55.870
+Alec: And yeah, just generally, it's clean, and it's very modern. Like, you saw the other examples that I pulled.
+
+121
+00:12:55.870 --> 00:12:56.720
+Brett: Yes, yes.
+
+122
+00:12:56.720 --> 00:13:04.780
+Alec: They weren't great. This is definitely modern, I like the branding, it's clean, so that is what we're going with, what we're gonna work off.
+
+123
+00:13:05.660 --> 00:13:11.979
+Brett: So, Alex got inspiration, thank you for that, Alex, and seems like he's on the path, and…
+
+124
+00:13:12.150 --> 00:13:16.620
+Brett: Justin, what are you thinking? Where's your… where are your… where's your thought process here?
+
+125
+00:13:18.720 --> 00:13:34.289
+Justin Novak: Well, you know, Brett, I'm a big fan of supporting local business. I love my local business owners. We don't give them enough credit. They work so hard. And, you know, I'm also a big fan of farmers. Without farmers.
+
+126
+00:13:34.750 --> 00:13:42.230
+Justin Novak: Where would we be? We wouldn't have food. What would we do without our local business owners and farmers?
+
+127
+00:13:42.430 --> 00:13:44.910
+Justin Novak: So what I was thinking could be cool is…
+
+128
+00:13:45.700 --> 00:13:48.400
+Justin Novak: My favorite baked good is cookies.
+
+129
+00:13:48.820 --> 00:13:53.770
+Justin Novak: And… Farmers, well, they've got a lot of cows.
+
+130
+00:13:53.960 --> 00:13:58.370
+Justin Novak: So, I'm gonna create a platform where local farmers
+
+131
+00:13:59.280 --> 00:14:03.399
+Justin Novak: Can find local bakers in the area.
+
+132
+00:14:04.010 --> 00:14:15.830
+Justin Novak: And they're gonna come together through this matchmaking network, and we're gonna call it Milk and Cookies. So you're gonna have a cookie delivery business that is going to deliver you fresh, local milk.
+
+133
+00:14:16.010 --> 00:14:34.219
+Justin Novak: with a beautifully baked cookie, but not just any cookie, we want to support local small business. So we're gonna support ghost kitchens, people who can't afford having a brick and mortar and a place to rent yet, so they're gonna be cooking out of a ghost kitchen, they're gonna be partnering with local farmers.
+
+134
+00:14:34.230 --> 00:14:48.120
+Justin Novak: And we're gonna call it Milk and Cookies. So that's where I'm starting. That's… I'm gonna spend a little bit of time on the branding, guys. I'll walk you through it once I've developed it. I'm gonna start in Figma. It's just a good place to ideate.
+
+135
+00:14:48.120 --> 00:14:55.700
+Justin Novak: I'm gonna look on dafont.com to find a really cool, sexy font, that's gonna really bring this to life.
+
+136
+00:14:56.530 --> 00:15:04.509
+Justin Novak: And from there, I'm just gonna start building out this matchmaking network that helps local farmers and local ghost kitchens
+
+137
+00:15:04.940 --> 00:15:06.689
+Justin Novak: Find each other and partner up.
+
+138
+00:15:07.380 --> 00:15:09.540
+Brett: I… I love that direction, that is…
+
+139
+00:15:10.410 --> 00:15:19.250
+Brett: That is so fun. That is so fun. So, I see Alex already heads down. You've already got a trail. What the heck is Ian doing over there?
+
+140
+00:15:19.250 --> 00:15:27.649
+Ian: Oh, man. I'm still in mode, the mode from last time. I'm trying to zoom through this in 15 minutes, and I think I've… I,
+
+141
+00:15:28.030 --> 00:15:29.490
+Ian: Not anxiety, but…
+
+142
+00:15:29.540 --> 00:15:37.819
+Ian: Go mode is on. I, I'm taking a different approach. I love the others. I'm going… let me just share my screen here.
+
+143
+00:15:37.820 --> 00:15:51.010
+Ian: I'll hide you guys. So I'm really looking for… because I am in Nash… well, mine's in Nashville, so I know the comfort foods, the stuff that people really look for here, and trying to make it actually something that people would
+
+144
+00:15:51.020 --> 00:15:55.560
+Ian: could actually use. So I'm going for this type of photography, this type of imagery.
+
+145
+00:15:55.720 --> 00:16:04.099
+Ian: you know, just, like, the gooey, like, oh, yeah, I just want to sit there and, like, eat it and then fall asleep for a few hours, you know? The name…
+
+146
+00:16:04.100 --> 00:16:05.270
+Brett: Oh, man.
+
+147
+00:16:05.270 --> 00:16:11.490
+Ian: Mine's gonna be a food truck, so I actually had Chad GPT whip up Sunday crumb,
+
+148
+00:16:11.490 --> 00:16:12.859
+Brett: Oh, I love that!
+
+149
+00:16:13.030 --> 00:16:22.079
+Ian: I gave it this image that said, hey, I need a… I need a logo for this, so we're gonna call it Sunday Crumb, Nashville, it's, you know, it's totally geared towards them. I mean, being…
+
+150
+00:16:22.730 --> 00:16:36.440
+Ian: having gone to a lot of breakfast and brunch places, I kind of have the vibe for it, which I'm sure we all do in our own areas, so I'm really am targeting Nashville, and if this goes well enough, maybe I'll just open a bakery, because a lot of this food is…
+
+151
+00:16:36.630 --> 00:16:44.700
+Ian: A lot of this food doesn't exist, actually. The one I was just on, I'm not even sure what this is, salmon, or if it's some kind of a, you know, I don't know.
+
+152
+00:16:44.700 --> 00:16:48.199
+Brett: I don't know what that is, but it… it looks freakin' amazing.
+
+153
+00:16:48.200 --> 00:16:49.510
+Ian: Yeah, it looks like banks and.
+
+154
+00:16:49.510 --> 00:16:52.139
+Brett: delicious and glistening. What is going on?
+
+155
+00:16:52.140 --> 00:16:55.599
+Ian: I don't know, it's just something's gonna give me a stomach ache, and I don't care, you know?
+
+156
+00:16:55.600 --> 00:16:58.850
+Brett: We should have done fitness again. This isn't gonna help my cause, Ian.
+
+157
+00:16:59.950 --> 00:17:06.930
+Ian: No, I actually started with this one, and… I mean, it's cool filling it in, it kind of looks like, I don't know, it could be taking a lot of…
+
+158
+00:17:07.109 --> 00:17:18.950
+Ian: A lot of ways, but I'm gonna fill it with just comfort, Nashville, the southern… southern hospitality, and but make it also mobile. So they'll be all around the city, watch for them, Sunday crumb, you're gonna love it.
+
+159
+00:17:19.409 --> 00:17:24.879
+Brett: Well, I promise you, at least me and Charles are gonna enjoy it. We're both from the South. I'm Mississippi, he's Alabama. Look.
+
+160
+00:17:25.059 --> 00:17:31.639
+Brett: I think y'all are off to a killer start. What is… is anybody in the chat want to come up? I know I'm gonna give y'all a few minutes head down.
+
+161
+00:17:31.819 --> 00:17:36.089
+Brett: before… a poker charl, so I'm just gonna watch…
+
+162
+00:17:36.090 --> 00:17:37.639
+Alec: something out there, too, because I've been.
+
+163
+00:17:37.640 --> 00:17:38.460
+Brett: Oh, let's go.
+
+164
+00:17:38.460 --> 00:17:55.700
+Alec: I've been very much heads down for the last few minutes. I promised to everyone on this call that we're gonna pick up the pace here and this'll be fun, but we're just getting the foundation set right now. So, here's the angle I'm going. Kind of based off Crumble, kind of based off of another startup that I heard about with cakes. We're gonna focus on cookies.
+
+165
+00:17:55.820 --> 00:18:11.009
+Alec: And we're optimizing for two things here. One being recurring revenue with one of our services, and then the other leveraging a audience that has money to spend and is already spending money. So, what we're calling this is Crumb B2B.
+
+166
+00:18:11.170 --> 00:18:25.099
+Alec: And… two offers. One is, we are going to be able to send… people are… if they want to book a meeting, say they're selling HR software, and they can't get a meeting on, they can't get in front of the HR person, they're going to be able to send cookies with their logo on it.
+
+167
+00:18:25.100 --> 00:18:35.239
+Alec: that, say, book a meeting and have some sort of call to action. That's based off an idea. I heard somebody doing something similar with cakes. So we're gonna do two things with that, and here's how we're gonna implement MetAI.
+
+168
+00:18:35.400 --> 00:18:53.829
+Alec: is we're gonna use the Nano Banana API to be able to show them in real time what their cookie's gonna look like with their logo on it. So that's gonna be one service, and then the second one is gonna be client retention, so people can sign on and send those logos with their cookies to their clients every month, or every week, or whatever cadence they select.
+
+169
+00:18:53.830 --> 00:19:13.810
+Alec: So, we're taking kind of a B2B approach to this, and should be a fun build. So, we're just getting into the mix here, and I'll show some progress on branding and how we're gonna build out this portal so people can actually put in these orders. So yeah, and we'll absolutely be able to accomplish this in the next, you know, 20, 30 minutes here, so it should be a cool final outcome.
+
+170
+00:19:15.310 --> 00:19:19.130
+Brett: That is such a fun… That's a fun twist.
+
+171
+00:19:19.470 --> 00:19:29.909
+Brett: That is a super fun, very specific use for cookies and using. Now, for those who don't know, what exactly is Nano Banana?
+
+172
+00:19:30.470 --> 00:19:46.130
+Alec: Nanobanana is basically… it's Google's image API, and it's a pretty ridiculous name, I'll acknowledge that, but definitely, you know, pretty, unforgettable. But I find it to be the best on the market for image generation. You know, like, up till now, like.
+
+173
+00:19:46.140 --> 00:20:05.879
+Alec: they've recently improved a lot, but, like, everybody knows a ChatGBT image when you see it. It's very obvious that, you know, that's AI, it doesn't look good. Nano Banana's incredible, because it, honestly, it's kind of like a Photoshop replacement, in a sense, where it's very good, like, if you have an existing image, because we're going to have our base image that's always going to feed in, which is, like, the base mock-up of a cookie.
+
+174
+00:20:05.880 --> 00:20:19.270
+Alec: And then, basically, we also push in the logo, and then that's what gives us our cookie output and, you know, the image that the customer can see. This is what their end user's gonna get, and they're gonna be able to send out.
+
+175
+00:20:19.270 --> 00:20:24.779
+Alec: So yeah, very, very good tool, and we're gonna implement that into our app, and should be, should be cool.
+
+176
+00:20:24.780 --> 00:20:25.240
+Justin Novak: Alex.
+
+177
+00:20:25.240 --> 00:20:25.770
+Brett: I'm excited.
+
+178
+00:20:25.770 --> 00:20:28.940
+Justin Novak: I don't mean to glaze you here, but that's such a cool idea. I want you to.
+
+179
+00:20:28.940 --> 00:20:29.330
+Brett: Yeah.
+
+180
+00:20:29.330 --> 00:20:30.889
+Justin Novak: Please ship this so I can use it.
+
+181
+00:20:32.670 --> 00:20:36.940
+Alec: Let's do it, man. Let's make it happen. Yeah, I mean, honestly, like, the fulfillment side…
+
+182
+00:20:37.000 --> 00:20:52.109
+Alec: shouldn't be too difficult. I mean, you have to just find a bakery that can actually make these cookies and send them out. Like, truly, to put this together won't be too hard. So, we're gonna get this rolling here. I'm going to… I'm gonna take a step back so we can start building here. You guys are gonna see how
+
+183
+00:20:52.110 --> 00:20:58.469
+Alec: fast these things can come to life, and how quick we can actually execute on these ideas, and make it happen, and push something out. My goal…
+
+184
+00:20:58.470 --> 00:21:06.949
+Alec: by the end of this is to deploy this, so everybody in here can upload their logo, and use it, and buy some cookies, send it to their clients, and pay me. Kidding.
+
+185
+00:21:06.950 --> 00:21:08.759
+Brett: Oh, that's crazy cool.
+
+186
+00:21:08.890 --> 00:21:09.810
+Justin Novak: Look!
+
+187
+00:21:09.810 --> 00:21:22.040
+Brett: Raul, of course there's going to be multiple types of cookies. Look, we're crazy here. Look, Justin, you owe me. I've kept Alec busy for about 20 minutes now, so you have the head start. Where are you now?
+
+188
+00:21:23.620 --> 00:21:48.099
+Justin Novak: I'll share my screen, show you just how I'm ideating a little bit on the branding. I want to get the branding done quickly here so that we can jump into the build. And so, as I'm playing with some branding options, I just did a quick prompt in Midjourney. Are you guys all familiar with Midjourney? Drop a yes in the chat if you've ever used it. It's a really powerful image generation model, so you'd say, I'm gonna use Whisper Flow here.
+
+189
+00:21:48.900 --> 00:21:51.800
+Justin Novak: Create me a logo for a…
+
+190
+00:21:51.950 --> 00:22:05.650
+Justin Novak: brand called Milk and Cookies that, partners local farmers with ghost kitchen bakers to then deliver milk and cookies on a subscription-based model.
+
+191
+00:22:05.770 --> 00:22:11.759
+Justin Novak: Simple branding, straightforward logo that captures the essence of this company.
+
+192
+00:22:12.180 --> 00:22:24.009
+Justin Novak: So, I was typing with Whisper Flow, or not typing, but speaking, rather, speech-to-text, and now Midjourney's gonna come up with some logo variations for me. So, not bad for, you know, first…
+
+193
+00:22:24.260 --> 00:22:34.919
+Justin Novak: you know, kind of a first run there. Some of these look alright. And so, simultaneously, what I've been doing is working VS Code, and I have…
+
+194
+00:22:35.330 --> 00:22:36.070
+Justin Novak: Oh.
+
+195
+00:22:38.170 --> 00:22:51.359
+Justin Novak: And I've created, in just a few minutes here, just a quick mock-up. This is far from ready to, to share, but what I did was…
+
+196
+00:22:51.540 --> 00:22:54.610
+Justin Novak: pulled up VS Code, And…
+
+197
+00:22:55.160 --> 00:23:09.400
+Justin Novak: I gave it a prompt. I said, I'm doing a hackathon, we have 40 minutes to build, building a marketplace, etc, like I shared with you guys. And I told it to build me an MVP quickly that is this marketplace where vendors can come on.
+
+198
+00:23:09.480 --> 00:23:25.309
+Justin Novak: Consumers can buy and check out. They can select what cookies they want in their cookie box, so they get 3 unique cookies from 3 different bakers. As you can see here, you're creating your box. I'd also like this maple oatmeal tahini, yes!
+
+199
+00:23:25.310 --> 00:23:29.739
+Justin Novak: Mexican Hot Chocolate Snickerdoodle. Alright, I think I'm gonna go with that.
+
+200
+00:23:29.880 --> 00:23:32.570
+Justin Novak: And then we get our whole milk straight from the farm.
+
+201
+00:23:33.310 --> 00:23:34.429
+Justin Novak: Check out.
+
+202
+00:23:35.150 --> 00:23:46.039
+Justin Novak: So guys, this is just a wireframe, this isn't production ready. There's a lot we'd have to do on the back end to really bring this to life and launch the business, but it gives you an idea of…
+
+203
+00:23:46.140 --> 00:23:50.160
+Justin Novak: You know, potential look and feel, and…
+
+204
+00:23:50.370 --> 00:23:55.840
+Justin Novak: How, you know, you can imagine the shape of this, how it could really turn into a real app.
+
+205
+00:23:56.850 --> 00:23:57.450
+Brett: I mean.
+
+206
+00:23:57.830 --> 00:24:06.499
+Brett: We're 20 minutes in, you've ideated a crazy idea, milk and cookies, basically farmed a cookie, a collaboration.
+
+207
+00:24:07.110 --> 00:24:09.370
+Brett: And we're looking at wireframes.
+
+208
+00:24:10.060 --> 00:24:14.540
+Brett: And here's the… here's another question that I'm gonna ask you, Justin.
+
+209
+00:24:15.000 --> 00:24:18.179
+Brett: How many lines of code did you just write?
+
+210
+00:24:20.570 --> 00:24:24.570
+Justin Novak: Great question, Brett. So… I literally…
+
+211
+00:24:25.140 --> 00:24:29.080
+Justin Novak: Hit a hotkey on my keyboard, and started talking to my computer.
+
+212
+00:24:29.250 --> 00:24:40.299
+Justin Novak: And I just gave it a brain dump. I had myself muted while you guys were talking. I apologize, I'm rude, I wasn't paying attention to you guys for a minute there, but I wanted to get a head start. I wanted to get ahead, and I wanted to show you guys, we're at…
+
+213
+00:24:40.590 --> 00:24:42.879
+Justin Novak: 28 minutes into this.
+
+214
+00:24:43.100 --> 00:25:00.599
+Justin Novak: I just typed in that prompt about 15 minutes ago. We already have something ready to share, so I didn't write a single line of code, Brett. I just talked to my computer, gave it some best practices, and we can share all these prompts with you guys after the show if you'd like, what I said specifically, but I just spoke in plain English.
+
+215
+00:25:01.540 --> 00:25:11.040
+Brett: you know, I feel like this is such a technological shift, I don't think people really understand that the tech barrier, the walls, the barriers.
+
+216
+00:25:11.170 --> 00:25:24.340
+Brett: They're down. You can build absolutely anything, and you can build at the speed of your imagination, whether it's milk and cookies, whether it's B&B cookies, or whether it's the
+
+217
+00:25:24.470 --> 00:25:35.289
+Brett: sexiest meat-slash-thing-we-couldn't figure out cookie that Ian's building in Nashville. Like, this is… this is really where we are, and it's… it's exciting. It is so exciting.
+
+218
+00:25:35.620 --> 00:25:37.570
+Brett: So, thank you for that, Justin.
+
+219
+00:25:37.830 --> 00:25:40.499
+Brett: Ian, I want to give you an opportunity,
+
+220
+00:25:40.870 --> 00:25:48.249
+Brett: what's… where are you? Have you already built the business, you've got customers, and we're gonna split the money at the end?
+
+221
+00:25:48.250 --> 00:25:51.079
+Ian: I just got 3 orders, so things are going well.
+
+222
+00:25:51.370 --> 00:25:59.140
+Ian: No, I, I just had… so I actually am working with ChatGPT and then two different open claws who are connected to the same server.
+
+223
+00:25:59.140 --> 00:26:12.829
+Ian: Doing that because each one has its own processing power and can actually think separately and inject things. So I had one that, that built out this brand kit, so I don't know if you guys can see it, but, can you see my screen?
+
+224
+00:26:13.370 --> 00:26:13.950
+Brett: We can say.
+
+225
+00:26:13.950 --> 00:26:14.590
+Ian: Okay, great.
+
+226
+00:26:14.590 --> 00:26:17.699
+Brett: Yeah, that's a much… that's a very slick-looking logo now.
+
+227
+00:26:18.150 --> 00:26:32.220
+Ian: Yeah, yeah, it's… it's, looks great, looks great. So I also… so I… I built out the band kit, basically gave it everything. He's actually reworking it, because I came up with another idea, after Alec, you know, raised the bar a little bit.
+
+228
+00:26:32.510 --> 00:26:34.930
+Ian: So, so this kind of is…
+
+229
+00:26:35.060 --> 00:26:53.939
+Ian: echoes what I did the first time around with the AI fitness trainer. You know, building out a whole brand kit, whole voice tone, everything that kind of backs up the business. Fonts, colors, everything, imagery, this kind of stuff. I don't think I even gave it that one. Look at that, counter mood, abundant, welcoming, love it.
+
+230
+00:26:54.470 --> 00:26:55.040
+Brett: I love that.
+
+231
+00:26:55.680 --> 00:27:03.029
+Ian: So, but then I was talking to a chat GPT, and I said, hey, I want something that's a bit more unique than just a bakery, just a cart.
+
+232
+00:27:03.240 --> 00:27:05.039
+Ian: And, came up with…
+
+233
+00:27:05.070 --> 00:27:14.129
+Ian: quite a few ideas. I narrowed it down to, in line, customers will be able to concoct their own fillings for donuts and pastries.
+
+234
+00:27:14.130 --> 00:27:25.820
+Ian: scan a QR code, mix in whatever they want. It's automated so that the company can go, hey, this person's orders up now has peanut butter and chocolate and caramel, or whatever. And if they come up with a…
+
+235
+00:27:25.820 --> 00:27:30.559
+Brett: So, like, on an app or something, they can pick a filling and go pick it up?
+
+236
+00:27:30.800 --> 00:27:48.759
+Ian: Yeah, they just… or in line. I want mine to be like this, you know, okay, here's my order, whatever, it has a QR code, they scan it, pay for it, they walk out the door. And if it's good, and if other people order it, they can name it. Or even if they… if there's nothing like it, they can name it. So it gives everybody the… it almost gamifies bacon goods, you know, baked goods.
+
+237
+00:27:48.760 --> 00:27:52.680
+Ian: So, and then you move around the city to keep up with them, right?
+
+238
+00:27:52.680 --> 00:27:58.830
+Ian: So that's… that's the idea, I'm going with. Right now, I have the brand kit. Let's see if the website is…
+
+239
+00:27:59.330 --> 00:28:08.739
+Ian: up yet. He was still working on it. Nope. Alright, so all I have right now is Brand Kit. Both of them are working, like, overtime right now, so…
+
+240
+00:28:08.740 --> 00:28:20.370
+Brett: I like that idea. That would be so fun, and what a cool community, local community idea, if I have… if I actually like to mix peanut butter and raspberry, and it ends up
+
+241
+00:28:20.770 --> 00:28:35.960
+Brett: some person that… the next person that comes up can see what I order, and they're like, well, that's interesting, maybe I should try that. And what if that actually… like, what if there's a mechanism where if something I went up and ordered actually sort of, like, became popular, that would be kind of cool, you know? That'd be such a way to gamify it. How cool is that?
+
+242
+00:28:35.960 --> 00:28:48.199
+Ian: Totally, totally. I mean, honestly, it could turn into a shared revenue thing if businesses actually did this. Come up with the next thing, if it hits well, we'll give you, you know, 10% of the profit, or whatever, probably not that, probably.
+
+243
+00:28:48.200 --> 00:28:52.989
+Brett: Or pick up, pick up… yeah, or it could be a non-profit. That's such a cool thing, Ian. That's so cool.
+
+244
+00:28:52.990 --> 00:28:57.459
+Ian: Come in for a free one of your own makings anytime, you know, tell everybody about it.
+
+245
+00:28:57.700 --> 00:29:02.010
+Brett: I love it. We do have technical questions. I'm not… Modi, I will… I will…
+
+246
+00:29:02.230 --> 00:29:07.660
+Brett: I will circle back to that. I'm gonna, ian, keep going, that's looking good. Alec?
+
+247
+00:29:08.370 --> 00:29:09.750
+Brett: Do you have customers yet.
+
+248
+00:29:10.080 --> 00:29:25.040
+Alec: No customers yet, but we're 20 minutes away from having some customers here. So, my process now, since I last updated everyone, one was hammering down, hey, what is this branding gonna look like, what's this site gonna look like, and starting to build.
+
+249
+00:29:25.040 --> 00:29:34.800
+Alec: is the big thing. So, what I did is, while I'm working on all that branding, I gave it a rough sense of what I'm gonna want here. So, I'll share my screen real quick, just to show everybody.
+
+250
+00:29:34.800 --> 00:29:43.709
+Alec: kind of what I have in the works here, just so everybody knows kind of what my building process looks like. So, share my screen.
+
+251
+00:29:43.980 --> 00:29:48.110
+Alec: Basically, what I'm using is… I'm using low… lovable.
+
+252
+00:29:48.110 --> 00:30:10.149
+Alec: And Lovable's very, very easy to navigate for anyone. There's a few different options. Sometimes I'd use quad codes for something like this. Sometimes I would use codecs. Lovable is going to be the easiest path for… if anyone on this call hasn't built a website before, or hasn't done a lot with some of these AI coding tools, Lovable's gonna be your easiest segue into it, and the easiest way to get in there and try something, because
+
+253
+00:30:10.150 --> 00:30:34.110
+Alec: truly all it is, is I put a prompt in here, I gave it, I gave it my crumble kind of screenshot, and I told it what I'm doing and what I want to build. And I used Whisper Flow, as Justin mentioned earlier, to, like, kind of just talk my prompt out loud and drop that in there. So, right now, it's building, which is allowing me to go in and try to generate a logo. So, I'm using Higgs Field right now.
+
+254
+00:30:34.250 --> 00:30:51.549
+Alec: Got some cool… I like this. I think I'm going to go with this logo, probably. Kind of similar to the Crumble logo, we decided we want to go with this blue. So I think that's gonna be our best option. Most likely gonna go with that, so what I'll… I'll have to do is I'm just gonna download that, and I'll drop it.
+
+255
+00:30:51.550 --> 00:31:10.879
+Alec: right back in. And then, I'm gonna use Higgs field continuously throughout this, because I'm gonna need to generate some images of the cookies. Like, you can see Lovable's generating its own images. They're not great. We want something a little more polished, something a little cleaner. So, that's what we're gonna use, but we're gonna drop this logo in it, just so it has that context, and then we will continue to build out those assets, and…
+
+256
+00:31:10.880 --> 00:31:22.540
+Alec: Basically what's gonna happen is it's gonna start to build, and it's gonna ask me for those things that I need. Like, I told it that I want to have that cookie generator, so it's gonna tell me, hey, I need your Gemini API key. And…
+
+257
+00:31:22.680 --> 00:31:38.129
+Alec: for anyone on the call where it sounds like I'm speaking Spanish, basically what that is, is, you know, you're using… you use ChatGPT, you use Gemini, you use Cloud, whatever, every day, and, you know, you just use it in the chat window. What an API key allows you to do is use that
+
+258
+00:31:38.130 --> 00:31:53.959
+Alec: same, you know, LLM or image generation model within what you're building. So instead of having, you know, having someone say, hey, go over to Gemini, put in your… this image of this cookie, and put in your logo, and it'll give you a cookie, we can just do that all on our app by using the Gemini API key.
+
+259
+00:31:53.960 --> 00:32:03.560
+Alec: So, that is, what's in the works on my side right now. Still a little bit heads down, and don't have a lot of, you know, other than this cool logo that we have, shout out to Higgsfield, great tool.
+
+260
+00:32:03.560 --> 00:32:04.170
+Brett: What can you…
+
+261
+00:32:04.170 --> 00:32:06.489
+Alec: that I will… I'll share this, actually, with you guys.
+
+262
+00:32:06.560 --> 00:32:18.119
+Alec: So, I have… this is called a… a skill. So, I have to generate new logos for things all the time. So, I have a skill made, which basically allows us to…
+
+263
+00:32:18.120 --> 00:32:29.589
+Alec: I could reuse this whenever I want, and it'll give me a logo, kind of in this style. Like, you'll see before, I didn't really give it much of a prompt, and I was getting just garbage. Like, look at this, look at these logos. I mean, these are…
+
+264
+00:32:29.690 --> 00:32:45.279
+Alec: just horrific. I couldn't use any of these. So, when I use… when I started using… like, this is… this is the line right here where I stopped using a skill file, and this is what I was… what I got after I started using that skill. So you can see, I mean, it's just night and day. So, all skill files…
+
+265
+00:32:45.320 --> 00:32:58.670
+Alec: It's very precise, and all a skill file is, truly, like, it… for whatever reason, it sounds more complex than it is. All a skill file really is, is it's a prompt. It's just a prompt saved in an MD file. So, I have…
+
+266
+00:32:59.000 --> 00:33:17.820
+Alec: a small library of skills built out where, you know, I have things for building different landing pages in different niches. Like, if it's a home service company, for instance, I have a skill for that, for how we like the landers to look for a home service company. We have skills for different tasks. Like, if I have an agent that has to do something.
+
+267
+00:33:17.820 --> 00:33:29.589
+Alec: Every day, we might have a skill for that task. So that's one thing that's important, because you can see, if this is something that you're doing very often, and your results can vary, a skill, if I said I want
+
+268
+00:33:29.590 --> 00:33:33.990
+Alec: A logo like here. We'll give you guys a quick example here in real time.
+
+269
+00:33:34.510 --> 00:33:54.059
+Alec: So we're gonna use that skill again. Typically, like, what you would do is you would upload, you'd upload the file, but Higgs field doesn't support that, so we just kind of copy and paste it in here. So, I'm gonna copy and paste this entire skill file, and we're gonna say we want a logo for… Give me something, Brad, what do we want a logo for?
+
+270
+00:33:54.260 --> 00:33:56.660
+Brett: Oh, we want a logo for,
+
+271
+00:33:56.780 --> 00:34:01.250
+Brett: Oh, let's… let's see if it'll… let's see in your image what a…
+
+272
+00:34:01.520 --> 00:34:04.140
+Brett: what a Milk and Cookies logo would look like.
+
+273
+00:34:04.600 --> 00:34:07.339
+Brett: Just to sort of compare, Justin did it very differently.
+
+274
+00:34:08.100 --> 00:34:10.129
+Brett: So I would love to see how yours, kind of.
+
+275
+00:34:10.139 --> 00:34:23.219
+Alec: Okay, so I said make a logo for milk and cookies, and then I uploaded, uploaded my skill. So we're gonna see, this will take a few seconds here, and then you'll see a very comparable outcome to this Crump B2B.
+
+276
+00:34:23.239 --> 00:34:43.349
+Alec: And then while that's working, we'll check back, see if we have something finished up. Looks like it's still… we're still working. I'd say this typically takes, depending on the complexity of what you're building, to get kind of a first version of it, you're probably looking at 5 to 10 minutes, which is a lot better than the 5 to 10 weeks or days you were looking at prior to these tools.
+
+277
+00:34:43.850 --> 00:34:44.250
+Brett: Yeah.
+
+278
+00:34:44.330 --> 00:34:52.420
+Alec: Still a huge improvement, so we'll see that here in just a minute, and let's check back on our logo, see what we have.
+
+279
+00:34:53.350 --> 00:34:53.940
+Alec: Okay.
+
+280
+00:34:53.949 --> 00:34:55.589
+Brett: Yeah, see? Yeah, yeah.
+
+281
+00:34:55.819 --> 00:34:57.319
+Brett: It's very much in that section.
+
+282
+00:34:57.320 --> 00:34:57.660
+Alec: brand.
+
+283
+00:34:57.660 --> 00:34:58.240
+Brett: ending.
+
+284
+00:34:58.580 --> 00:35:03.000
+Alec: Yeah, very like, you know, Stripe or, you know, any kind of SaaS.
+
+285
+00:35:03.010 --> 00:35:12.689
+Alec: type logo. So yeah, that just shows you, like, kind of the… you know, you're gonna… and the difference between… you'll see, like, I have a… it kind of spits out a bunch of logos for these, and these were all…
+
+286
+00:35:12.690 --> 00:35:32.170
+Alec: like, mostly just one logo. It's all prompting. Like, I just said in these prompts, like, create a standalone logo instead of, you know, because I don't want 50 different things here. So, yeah, that's… that's Higgs field. I'll show some more examples of me using this for both video generation and image generation, by the end here, but should have a…
+
+287
+00:35:32.170 --> 00:35:34.580
+Alec: Working version of the app, momentarily.
+
+288
+00:35:35.060 --> 00:35:38.310
+Brett: Sure, okay, this is a… this is a great opportunity to sort of…
+
+289
+00:35:38.590 --> 00:35:52.890
+Brett: bring everybody back to what we're doing. We kicked off this session about 30 minutes ago, 35 minutes ago. We took a poll from the live participants from y'all. We took a live poll, and we decided to make
+
+290
+00:35:53.030 --> 00:36:07.860
+Brett: bakery-style companies, and everybody has done something wildly different. As you can see, Alex doing a very cool B2B kind of crumble idea, where you can ship cookies to a potential client with your logo on them.
+
+291
+00:36:07.860 --> 00:36:25.650
+Brett: really kind of a cool marketing idea. Justin's doing a really, really interesting way for farmers to be able to integrate milk, what they have a lot of, into the community, and… but people who want to make sweet treats in bakeries use ghost kitchens if they don't actually have a kitchen, and Ian's doing some crazy stuff, and…
+
+292
+00:36:25.650 --> 00:36:41.650
+Brett: in… in Nashville, Tennessee, with his… with his mobile truck that's just gonna be making all kinds of stuff, with people able to come up and pick the filling they want before they actually place the order, and maybe even gamify it. What is going on in this world? So that's basically what we're doing now, and I…
+
+293
+00:36:41.720 --> 00:36:55.529
+Brett: If you have any questions, I'll rapid fire them. So, just so y'all know, at the end of this, we'll send you a list of all the things that the different tools that we're… because we're… we're dropping names, we've got Claude and VS Code, and all this other stuff.
+
+294
+00:36:55.570 --> 00:37:05.019
+Brett: So… oh, Justin, I'm ready. So, if you have any questions, just drop them, and I'll… I'll come back to them. Okay, that's our reset. This is what we're doing. Justin, it's back to you. What's…
+
+295
+00:37:05.780 --> 00:37:07.079
+Brett: What's… what you got?
+
+296
+00:37:07.280 --> 00:37:10.850
+Brett: What's this something all about? We want to see what this something is.
+
+297
+00:37:11.610 --> 00:37:17.719
+Justin Novak: Yeah, you know, Brett, I one-shot of the branding, I was playing with Figma and looking at inspiration on Behance, but…
+
+298
+00:37:17.880 --> 00:37:35.389
+Justin Novak: just wasn't really feeling it, especially after seeing Alec and Ian. They… they just outshined me, so I had to… I had to punch back. Because guys, this is a competition. We're gonna vote at the end who did the best. I can't let Alec and Ian be me. Not today. So, what we did was…
+
+299
+00:37:38.140 --> 00:37:42.019
+Justin Novak: Rebuild the branding in Claude Design.
+
+300
+00:37:43.080 --> 00:37:47.159
+Justin Novak: So I started with… A bit of a brand kit.
+
+301
+00:37:47.260 --> 00:37:56.059
+Justin Novak: A new, simple, modern, just really clean logo, color palette, some typography, our brand voice.
+
+302
+00:37:56.250 --> 00:38:02.960
+Justin Novak: I said we want to be neighborly, talk like the baker down the street, not a corporation, fresh and honest, cozy, not cutesy.
+
+303
+00:38:03.620 --> 00:38:17.170
+Justin Novak: And we got some tokens here, which are valuable for VS Code to be able to read these… these brand kits, because to the human eye, this is visual and looks great, but this is a good way to translate what's going on here.
+
+304
+00:38:17.610 --> 00:38:19.680
+Justin Novak: Do I know how to rate this myself?
+
+305
+00:38:19.960 --> 00:38:21.480
+Justin Novak: Absolutely not.
+
+306
+00:38:21.860 --> 00:38:23.829
+Justin Novak: I leave it to clot.
+
+307
+00:38:24.100 --> 00:38:26.919
+Justin Novak: Now, it also gave us an MVP.
+
+308
+00:38:27.300 --> 00:38:43.909
+Justin Novak: of what this app will now look like with this new brand identity. It's much cleaner, it's softer, and I think it's gonna resonate better with our customer base. We've got a massive waitlist. I know all of you in the chat want to become customers after seeing this new brand.
+
+309
+00:38:43.910 --> 00:38:50.640
+Justin Novak: identity, and so now that Claude Design Has rebranded the app.
+
+310
+00:38:51.320 --> 00:38:59.520
+Justin Novak: I downloaded the zip file that Claude Design provided, and I'm now feeding that to VS Code.
+
+311
+00:38:59.730 --> 00:39:04.580
+Justin Novak: is rebuilding that site I previously showed you guys that looked like this.
+
+312
+00:39:05.120 --> 00:39:08.190
+Justin Novak: Previously looked like this, and we'll do a side-by-side.
+
+313
+00:39:08.520 --> 00:39:13.140
+Brett: Yeah, that's… that's exactly what we need. That was 10 minutes ago.
+
+314
+00:39:13.880 --> 00:39:23.689
+Justin Novak: Yeah, and then it's gonna look something like this in just a few more moments. So, stay tuned, guys. This is… this is gonna be fun to showcase. Fingers crossed it works out.
+
+315
+00:39:24.340 --> 00:39:31.029
+Brett: That's looking good. Okay, so Alec has customers, Justin has customers, Ian, how much money have you made so far?
+
+316
+00:39:31.420 --> 00:39:31.969
+Ian: We're…
+
+317
+00:39:31.970 --> 00:39:32.899
+Brett: 3 minutes in.
+
+318
+00:39:33.180 --> 00:39:35.610
+Ian: $37.50 so far, so we're doing pretty.
+
+319
+00:39:35.610 --> 00:39:36.470
+Brett: Very good.
+
+320
+00:39:36.750 --> 00:39:37.750
+Brett: Very good.
+
+321
+00:39:39.010 --> 00:39:42.060
+Brett: So, where are you? I, like, like…
+
+322
+00:39:42.330 --> 00:39:45.210
+Brett: I'm seeing some crazy stuff getting cooked here. Where are you?
+
+323
+00:39:45.580 --> 00:39:46.410
+Ian: Me?
+
+324
+00:39:46.850 --> 00:39:47.680
+Brett: Yeah!
+
+325
+00:39:47.680 --> 00:39:54.149
+Ian: I am, man, I'm heads down right now. This is, this is intense. Let's see.
+
+326
+00:39:54.310 --> 00:40:01.019
+Ian: I'll share my screen. I'm not sure what's built yet, but I've got 3 guys working overtime over here.
+
+327
+00:40:01.710 --> 00:40:07.699
+Ian: I'm working on a QR code right now in a bakery type of, environment.
+
+328
+00:40:07.700 --> 00:40:08.749
+Brett: Come on! That will.
+
+329
+00:40:09.010 --> 00:40:10.309
+Brett: I'm on!
+
+330
+00:40:10.870 --> 00:40:14.010
+Ian: That will bring people to,
+
+331
+00:40:14.670 --> 00:40:20.510
+Ian: this page, create page. So, at the end of this, you'll be able to actually submit your own
+
+332
+00:40:21.030 --> 00:40:39.030
+Ian: your own baked, creations, concoctions, with all these different fillings, and, name your crumb, and they threw in brand kit stuff in there. Open claws need to be… need to be, curbed. But at the end, once you actually submit your bakery ideas, then it'll actually come in through here.
+
+333
+00:40:39.030 --> 00:40:48.030
+Ian: And I'll see all the different creations. I didn't actually intend for this to already actually be working, but it looks like it will be soon. So I built an admin.
+
+334
+00:40:48.210 --> 00:40:56.820
+Ian: On accident with it as well. So, current site is… is… oops, that's the brand. Here we go. Nope, here we go.
+
+335
+00:40:57.690 --> 00:41:09.580
+Ian: I just gave one of my open claws a bit more direction, because they're all kind of looking the same. I want this to feel really warm and inviting, and like, oh, I could… I just want to eat that whole page, you know? So, currently it's…
+
+336
+00:41:09.820 --> 00:41:23.929
+Ian: It's currently mostly, text, color, you know, rounded corners, which is very open claw, very chat GPT. The imagery is down here, I'm trying to bring it up top. So, actually, while it's… while we're on the topic.
+
+337
+00:41:24.230 --> 00:41:37.049
+Ian: OpenClaw and Claude and all of these, if you don't give them imagery, they're really good at making stuff look good without actually using imagery. But you'll start to recognize, oh, that's a standard template, so AI has templates.
+
+338
+00:41:37.190 --> 00:41:42.609
+Ian: They don't mean to, but they're just kind of trained on certain design, aesthetics.
+
+339
+00:41:42.760 --> 00:41:46.640
+Ian: So, what you have to do is start to give it other,
+
+340
+00:41:46.740 --> 00:42:02.770
+Ian: other, screenshots of other sites you like, or styles and designs, to kind of help guide it in the direction you want it to go. Oftentimes, it will… it will create minimum width like this, or max width like this. This is probably, like, 12,000 PX or 10,000 PX.
+
+341
+00:42:02.770 --> 00:42:10.770
+Ian: 1200 or 1000 PX wide. I like to go full width, or at least for hero images.
+
+342
+00:42:11.020 --> 00:42:22.140
+Ian: So, once you get the first iteration, it usually will look something like this, but things are kind of off-kilter, makes it cute and fun, rounded corners, I don't like super rounded corners like this, but for a bakery, it works.
+
+343
+00:42:22.190 --> 00:42:41.429
+Ian: But, first pass will always look roughly like this. Second pass is when you really want to start to refine it and give it more imagery, and then tell it specifically, like, I told mine, I want a big hero image of a warm, like, cinnamon bun, and I gave it an image with text over the top to make it feel real, you know, not just like,
+
+344
+00:42:41.430 --> 00:42:44.490
+Ian: something you'd see out of an AI vibe code, you know?
+
+345
+00:42:44.490 --> 00:42:53.250
+Ian: Because once you can do that, you can actually break out of that mode, because you're going to start seeing, and you probably already are seeing a lot of AI…
+
+346
+00:42:53.250 --> 00:43:08.200
+Ian: pages that are built kind of similarly to this. But if you can break out of it, give it a lot of training, a lot of guidance, then you can actually make it your own, and nobody will even know that you AI coded it, 5-coded it. So, let's refresh, see if he's updated. Okay, starting to get there.
+
+347
+00:43:08.200 --> 00:43:08.750
+Brett: Wow.
+
+348
+00:43:09.730 --> 00:43:10.200
+Brett: Wow.
+
+349
+00:43:10.200 --> 00:43:15.860
+Ian: Bakes for slow sundaes. I love it. Filled buns, jam rolls, savory slaps. It's great.
+
+350
+00:43:15.860 --> 00:43:17.899
+Brett: Oh, yeah. Man!
+
+351
+00:43:18.180 --> 00:43:18.989
+Ian: That's, like, a lot better.
+
+352
+00:43:18.990 --> 00:43:22.369
+Brett: What is the Amen slab? Go back to that. What is the Amen slab?
+
+353
+00:43:22.370 --> 00:43:23.070
+Ian: Hey, brother!
+
+354
+00:43:23.070 --> 00:43:23.430
+Brett: Hey, man.
+
+355
+00:43:23.430 --> 00:43:26.840
+Ian: I don't even… I don't know what it's a slab of. It said.
+
+356
+00:43:26.840 --> 00:43:31.940
+Brett: Sunday, it's all things for… it's all church-related. The Benediction Bowl? Come on!
+
+357
+00:43:31.940 --> 00:43:33.480
+Ian: Yeah, you're right.
+
+358
+00:43:33.480 --> 00:43:34.220
+Brett: Sunday afternoon.
+
+359
+00:43:34.220 --> 00:43:46.050
+Ian: Look at this. Damien slam, caramelized butter crust, soft middle, and enough richness to make lunch behave. It doesn't even know what it is. It doesn't say, is it a pastry? Is it salmon?
+
+360
+00:43:46.050 --> 00:43:50.979
+Brett: The Sunday squeeze. Some brioche buns. Oh, that is really cool.
+
+361
+00:43:51.130 --> 00:43:55.069
+Ian: Actually, while we're here, I'm gonna try this QR code and see if it actually is working.
+
+362
+00:43:55.450 --> 00:44:01.280
+Brett: Now, that's interesting. I love what it said there. Come hungry, but leave with a name worth putting on the board.
+
+363
+00:44:01.700 --> 00:44:02.340
+Ian: Oh, yeah.
+
+364
+00:44:02.340 --> 00:44:05.869
+Brett: Yeah, what… that's… that's such a great way to position that, too.
+
+365
+00:44:06.590 --> 00:44:07.170
+Ian: Oh.
+
+366
+00:44:07.730 --> 00:44:11.360
+Ian: Yeah, it is. It's not leading to… the page that I'm having it build.
+
+367
+00:44:11.590 --> 00:44:13.499
+Ian: It's currently… where is it?
+
+368
+00:44:13.500 --> 00:44:13.940
+Brett: Man.
+
+369
+00:44:13.940 --> 00:44:14.460
+Ian: Period.
+
+370
+00:44:14.460 --> 00:44:15.270
+Brett: to be done.
+
+371
+00:44:15.970 --> 00:44:20.730
+Ian: Well, it should be right here, but it looks like it's leading to a… It's pulling off.
+
+372
+00:44:20.730 --> 00:44:22.160
+Brett: Those knows his sweet treats.
+
+373
+00:44:23.190 --> 00:44:27.110
+Brett: Charles was recognizing and identifying the sweet treats on the page.
+
+374
+00:44:28.020 --> 00:44:29.389
+Ian: Oh, is he?
+
+375
+00:44:29.390 --> 00:44:30.270
+Brett: Good luck!
+
+376
+00:44:30.270 --> 00:44:32.430
+Ian: Yeah, I don' It may not…
+
+377
+00:44:32.430 --> 00:44:34.110
+Brett: I know what it is, but Charles does.
+
+378
+00:44:34.110 --> 00:44:38.689
+Ian: Yeah, yeah, Charles, if you could tell us what this is, you know, we might be able to sell it.
+
+379
+00:44:38.850 --> 00:44:39.660
+Ian: Until then.
+
+380
+00:44:39.660 --> 00:44:41.890
+Brett: Some porchetto with some crispy cracklin'.
+
+381
+00:44:42.320 --> 00:44:43.689
+Ian: I don't know.
+
+382
+00:44:43.690 --> 00:44:46.480
+Brett: You had me at Cracklin', I don't know.
+
+383
+00:44:46.860 --> 00:44:49.540
+Ian: Yeah, the description's enough for me, so…
+
+384
+00:44:49.750 --> 00:45:04.030
+Ian: Yeah, it's coming along. I think I need one more image. So this is… this is where the designer side, I mean, comes out. I want one more image to fill this out. I hate, you know, having what they call them, orphans, or, or just kind of mismatched grids. So…
+
+385
+00:45:04.100 --> 00:45:21.539
+Ian: a lot of the stuff also that I do is… comes from, like, 20-something years of, like, web design and knowing how CSS collapses, and how it lays it out. So, once you get in there, you can really just start to even talk to it in plain language, your Claude or whoever you're using.
+
+386
+00:45:21.650 --> 00:45:31.360
+Ian: And just say, I don't like this area, take a screenshot of it, give it to it, and he'll say, okay, you're right, you're right to call that out, you know. So, second pass, not so bad. I think I'm gonna do some more.
+
+387
+00:45:31.360 --> 00:45:35.719
+Brett: Wait, what did that say? Scroll down, something with some basement-style comfort food.
+
+388
+00:45:35.720 --> 00:45:36.520
+Ian: Business Church.
+
+389
+00:45:36.520 --> 00:45:37.750
+Brett: Basement swagger.
+
+390
+00:45:37.750 --> 00:45:38.220
+Ian: dagger.
+
+391
+00:45:38.630 --> 00:45:39.549
+Ian: I love that it went there.
+
+392
+00:45:39.550 --> 00:45:40.970
+Brett: I want that t-shirt!
+
+393
+00:45:43.000 --> 00:45:47.840
+Ian: Honestly, that's… the brand alone is good, so…
+
+394
+00:45:47.840 --> 00:45:51.979
+Brett: Everything's worth chasing the truck for. Everything here is ridiculously…
+
+395
+00:45:52.180 --> 00:46:03.229
+Brett: great. Yeah. We just need one more image there, I agree with you. Okay, I think… I think we gotta… I gotta keep moving. We gotta… we have almost… we're almost at the… at the end of this round. Alec.
+
+396
+00:46:03.740 --> 00:46:08.060
+Brett: Justin launched, Ian's already got money, I assume you've already had.
+
+397
+00:46:08.060 --> 00:46:08.600
+Alec: And.
+
+398
+00:46:08.600 --> 00:46:10.980
+Brett: acquisition offer for your company, and he's…
+
+399
+00:46:10.980 --> 00:46:11.700
+Ian: Yeah, Bluetooth.
+
+400
+00:46:11.700 --> 00:46:15.259
+Brett: in cookies. He's putting Bluetooth in cookies. I don't even know what's going on over there.
+
+401
+00:46:15.500 --> 00:46:17.190
+Alec: the Neuralink cookies.
+
+402
+00:46:17.320 --> 00:46:22.089
+Alec: Yeah, here, I'll take over here and show you guys what I have.
+
+403
+00:46:22.120 --> 00:46:25.480
+Alec: to work with. So, let me share screen real quick.
+
+404
+00:46:25.480 --> 00:46:49.529
+Alec: Okay, here's where we are. So we're starting to look a lot better, and you'll see there's things that we need to fix. There's things like, hey, our logo's white and header's white, so obviously we need to fix that. We have kind of our two options here. Hey, are you going to send a cookie, try to book a meeting, or do you want to do this for retention? So those are kind of our two options, and whenever you go send a box, this could be a little finicky because it's currently editing.
+
+405
+00:46:49.550 --> 00:47:02.720
+Alec: But we want to say, hey, how many cookies are we sending, and are we doing this for retention? Are we doing this for prospecting? We're gonna get stuck here, right, for the time being, just because, it's building right now. But,
+
+406
+00:47:02.720 --> 00:47:14.339
+Alec: we are now working towards creating the image generation piece. So, this is examples of how good Nano Banana is. So, we're gonna use a base image like this, where it has kind of the white cookies, we could put those logos.
+
+407
+00:47:14.340 --> 00:47:27.300
+Alec: On top here, and that's where people will, you know, they'll upload their logo, and Gemini will push that on these cookies, and that's what they'll see, and then they'll put their order in. So that should be great. And here's kind of an example of, hey, if they were
+
+408
+00:47:27.940 --> 00:47:32.550
+Alec: This is what it looks like, the different… different logos. So, this is an example of how good
+
+409
+00:47:32.550 --> 00:47:50.969
+Alec: Gemini is, and this is all inside of Higgs field, so for anyone who isn't familiar with the tool, basically, Higgs field aggregates all these different models, so, like, you can use… they have their own models, they have Nano Banana on here, they have ChatGPT, they have Grok, they have all these different images and… or different models, and it's cool.
+
+410
+00:47:50.970 --> 00:47:54.039
+Alec: Because you can, you know, if you're not getting a good…
+
+411
+00:47:54.040 --> 00:48:10.920
+Alec: output with one of these models, you could swap over to other ones. So, we are very, very close to having something workable here, and something where, you know, we could actually deploy and have people test, but we are very close. I think it looks good, too. I like the color scheme. So, we are very, very close here.
+
+412
+00:48:11.880 --> 00:48:13.789
+Brett: This… look, I, I, I think…
+
+413
+00:48:13.840 --> 00:48:29.390
+Brett: We may, since we started, I think first with you, Alec, even though I intended to start with Justin first, but I got so excited with everything that was going on, I lost my mind. We might be ready for final passes. I feel like we're getting really, really close, and one thing I want to
+
+414
+00:48:29.390 --> 00:48:40.389
+Brett: remind everybody is, at the very end of this, we're gonna have a vote to see… just a vanity vote to see who we think has the… has the coolest conception start to finish.
+
+415
+00:48:40.390 --> 00:48:50.260
+Brett: And also, if you say, anybody, you get to pick a free consultation with one of our three builders. So you get to pick whoever you want to go have a one-on-one with, and
+
+416
+00:48:50.270 --> 00:49:01.239
+Brett: this is gonna be really cool for you to be able to take maybe your ideas and spend a few minutes with them and accelerate and go forward. So, Justin, I think we're…
+
+417
+00:49:01.530 --> 00:49:11.159
+Brett: How are you doing? Are we… are we… are we ready? Are we ready to show something? Did you get acquired? Or did a Bluetooth tooth cookie eat you? I don't know. What's going on?
+
+418
+00:49:11.160 --> 00:49:18.710
+Justin Novak: I made $4 in revenue, and I'll show you guys just… just in a moment here. But in all seriousness, so we took this from…
+
+419
+00:49:18.870 --> 00:49:20.340
+Justin Novak: A simple idea.
+
+420
+00:49:20.600 --> 00:49:28.509
+Justin Novak: Right? We were all here live. You guys picked the business. We… we couldn't have prepared anything in advance, aside from, you know.
+
+421
+00:49:28.510 --> 00:49:43.929
+Justin Novak: being builders, working with AI for years now. So that's what really allowed us to get so much done in the past 53 minutes. We just know how to use the tools. That's something, Alec, I love that you preached that. It's just getting familiar
+
+422
+00:49:43.930 --> 00:49:53.880
+Justin Novak: with the tolls, and knowing when to use what, and which model is best at this, that, or the other, and so I think that's what really allowed us to ship all of this within the past
+
+423
+00:49:53.880 --> 00:50:05.179
+Justin Novak: 53 minutes. Now, if we wanted to make this a real business, it'd probably take us, you know, as a collective, maybe the whole day hacking together, and we could probably reasonably launch within 24 hours.
+
+424
+00:50:05.180 --> 00:50:08.259
+Justin Novak: Right, guys? Do you agree with that, or is that crazy for me to say?
+
+425
+00:50:08.260 --> 00:50:13.499
+Brett: No, I, I, I… And, and… Probably, yes. Probably.
+
+426
+00:50:13.500 --> 00:50:22.059
+Justin Novak: Yeah, or maybe solo a couple days, right? You know, we got a lot done in an hour here, and I want to show you guys my final pass, because we're short on time, but…
+
+427
+00:50:22.200 --> 00:50:29.049
+Justin Novak: I'm gonna start by sharing the initial wireframe I started with.
+
+428
+00:50:29.390 --> 00:50:50.590
+Justin Novak: And I'm gonna show you a real app that's live, and, so we started with this, which honestly doesn't look all that great. It was a good starting point, but it got, you know, the different parts of the marketplace, systemized, ordering for the consumer, the baker back end where they can upload their inventory and
+
+429
+00:50:50.590 --> 00:50:54.679
+Justin Novak: Document how much each cookie costs, and then the delivery service, right?
+
+430
+00:50:54.680 --> 00:50:56.450
+Justin Novak: So I turned all of that
+
+431
+00:50:56.900 --> 00:51:01.940
+Justin Novak: Into a beautifully designed web app here that is fully functional.
+
+432
+00:51:02.320 --> 00:51:08.180
+Justin Novak: on localhost. Maybe by the end of this session, it will be published, and I can share it in the chat for you guys to play with, but…
+
+433
+00:51:08.420 --> 00:51:13.750
+Justin Novak: If I'm a consumer now, I come to this app, I can click build this week's box, select my cookies.
+
+434
+00:51:15.580 --> 00:51:17.010
+Justin Novak: I like these three.
+
+435
+00:51:18.030 --> 00:51:27.060
+Justin Novak: A fresh bottle of milk from Hillcrest Dairy, bottled this morning. Alright, here's my cookies, $7 per week subscription, and I'm gonna…
+
+436
+00:51:27.500 --> 00:51:36.270
+Justin Novak: I'm gonna start, and now there's an animation of showing, you know, just like when you order an Uber, how close this delivery is to your home.
+
+437
+00:51:36.730 --> 00:51:49.099
+Justin Novak: who your delivery driver is, where it was sourced, who cooked, or baked, rather, each cookie, and a live update of where the driver is. How cool is that? And then for the bakers.
+
+438
+00:51:49.540 --> 00:52:02.739
+Justin Novak: You can upload your inventory, the name of your kitchen or brand, your signature cookies. We've got Brett's Blackberry Pie. We made $6! Look at that, we made $6 in fake money. That's pretty impressive.
+
+439
+00:52:03.120 --> 00:52:10.939
+Justin Novak: And then for delivery, as a driver, you can see the orders come in, how far they are from you, where you currently are.
+
+440
+00:52:11.480 --> 00:52:20.900
+Justin Novak: You can accept that and go pick it up for delivery. So guys, this is a full-fledged app. I mean, this looks like something you'd see in the App Store, right? We did that all.
+
+441
+00:52:21.600 --> 00:52:22.640
+Justin Novak: Under and out.
+
+442
+00:52:22.640 --> 00:52:25.640
+Brett: It's 50… 50 minutes. 50 minutes.
+
+443
+00:52:26.230 --> 00:52:28.810
+Brett: Like, that's… That's incredible.
+
+444
+00:52:29.540 --> 00:52:30.620
+Brett: That's incredible.
+
+445
+00:52:31.570 --> 00:52:35.370
+Alec: I love it. I think I'm good to, give a final pass here.
+
+446
+00:52:35.370 --> 00:52:38.499
+Brett: Is it… well, is Ian ready, or Ian, do you need…
+
+447
+00:52:38.500 --> 00:52:39.660
+Ian: And your army of women.
+
+448
+00:52:39.660 --> 00:52:40.270
+Brett: Thoughts?
+
+449
+00:52:40.270 --> 00:52:41.859
+Ian: I need a couple more minutes.
+
+450
+00:52:42.030 --> 00:52:46.110
+Brett: We'll let his army of robots continue. Alec, you go ahead and show us.
+
+451
+00:52:46.110 --> 00:52:52.909
+Alec: Alright guys, here's what we have. So, basically, and here's the beauty of Lovable as well, with… with Lovable.
+
+452
+00:52:53.610 --> 00:53:00.649
+Alec: you don't have to go and push anything to GitHub and then deploy with Vercel or anything like that. It's all baked into one. So if I want this to go live.
+
+453
+00:53:00.650 --> 00:53:14.110
+Alec: I just hit publish, and then that's it. You might have to, you know, you have to connect the domain, so, like, if I wanted Crumby2B.com, I'd go and buy that and hook that up. It's very, very simple. But what we're gonna do, I'm gonna show you what this flow looks like. So here's kind of the full…
+
+454
+00:53:14.110 --> 00:53:33.179
+Alec: landing page here. I think it looks pretty clean. I like it, it's very simple, and pretty modern. So, we're gonna go send a box, and now we're gonna build our cookie drop. So we'll say we just want… we'll send 12 cookies, that seems like a reasonable amount, and we want to do this for prospecting. We're trying to book a meeting here. So, now we can upload our logo.
+
+455
+00:53:33.520 --> 00:53:36.959
+Alec: Got a little pretend we are Nike here.
+
+456
+00:53:37.310 --> 00:53:42.649
+Alec: And then we're gonna generate our mock-up. A little baking here, and then we'll see what we have.
+
+457
+00:53:42.950 --> 00:53:45.500
+Alec: Hopefully this works. It worked for me on the initial test.
+
+458
+00:53:46.750 --> 00:53:50.570
+Alec: See? With all these things. Moment of truth. There we go.
+
+459
+00:53:50.570 --> 00:53:51.439
+Brett: Oh, there we go.
+
+460
+00:53:51.720 --> 00:54:16.500
+Alec: So everyone can see kind of their mock-up of what this is gonna look like. And I think for, like, you know, if I'm somebody that's going on the site and wants to use this service, whenever I actually see that, I'm like, okay, this is sweet, like, this is something I definitely want to move forward with, so we just continue on, and then we enter this information, we enter, hey, who are we sending this to? Could add a note, and then at the end of that, we submit our order.
+
+461
+00:54:16.500 --> 00:54:41.490
+Alec: So, that's pretty much it, and like I said earlier, there's kind of two different options here. There's also a subscription if we want to send them Nike cookies, pretending we're Nike, if we want to send that every, every month, or every quarter, whatever it is, we can do that. So, that's kind of a final go. I'm curious to see if this is done as well. Would love to show you guys some AI UGC ads, because we need to, you know, what good is a product without any
+
+462
+00:54:41.490 --> 00:54:47.610
+Alec: customers here. So, we could run something like these creatives. Doesn't look like they're done yet.
+
+463
+00:54:48.040 --> 00:54:51.809
+Alec: We'll see if we can squeeze that in here.
+
+464
+00:54:51.810 --> 00:54:56.699
+Brett: One thing I would… I would love to point out here, just kind of putting on my marketing hat.
+
+465
+00:54:57.480 --> 00:55:01.219
+Brett: What an interesting statement. Cookies that close deals.
+
+466
+00:55:01.610 --> 00:55:06.950
+Brett: And your CTAs here are very crisp. It's the value prop is there.
+
+467
+00:55:07.260 --> 00:55:18.690
+Brett: It's… and I'm just… I'm just seeing this, like, with the marketing hat for everybody paying attention, that is… it's very clear in that header what this is. And the other thing I would point out is.
+
+468
+00:55:19.740 --> 00:55:28.950
+Brett: you gave it very clear imaging from Crumble, and if you remember, it was a picture of something with a little bit of text, and if you scroll down, the emphasis is on the cookie.
+
+469
+00:55:29.110 --> 00:55:37.779
+Brett: And that's a beautiful… that's perfectly placed cookies in a box, and then as you scroll down, there's other ones that are in… in… in the blue and purple… not purple, pink.
+
+470
+00:55:37.890 --> 00:55:42.139
+Brett: Modal thing? Oh, man, it's just… it's just very crisp. Look at that, what'd you make a video?
+
+471
+00:55:42.680 --> 00:55:48.690
+Alec: Yeah. We've actually been keeping clients around about 3 months longer, ever since we started sending these every month.
+
+472
+00:55:49.120 --> 00:55:49.780
+Brett: Yeah.
+
+473
+00:55:50.050 --> 00:55:59.669
+Alec: So, obviously, if on it, like, truly, if I would have uploaded an image of the box and what it looks like, it would have looked flawless. So this is just…
+
+474
+00:55:59.680 --> 00:56:14.130
+Alec: AI UGC is almost indistinguishable at this point. So yeah, I wanted to show you guys a little bit of, you know, marketing motion here. Something that we could use, you know, post these on social media, we could run ads.
+
+475
+00:56:14.280 --> 00:56:22.359
+Alec: So yeah, that's just a little example of AI UGC. Obviously, we have our own box in there, and our own cookies, and all that, but just wanted to show you guys.
+
+476
+00:56:22.360 --> 00:56:23.170
+Ian: That is insane.
+
+477
+00:56:23.170 --> 00:56:23.889
+Alec: What's possible.
+
+478
+00:56:24.510 --> 00:56:30.510
+Ian: Does that say Tit… Titli? Titless, it's a… it's golf, it's a golf brand. Oh, Titles.
+
+479
+00:56:30.510 --> 00:56:30.930
+Brett: Oh!
+
+480
+00:56:32.010 --> 00:56:32.639
+Alec: Yeah, on the bottom.
+
+481
+00:56:32.640 --> 00:56:34.530
+Ian: That's incredible, dude. That's incredible.
+
+482
+00:56:34.530 --> 00:56:37.430
+Brett: I got… I got a box of titles. What is a tittles?
+
+483
+00:56:37.590 --> 00:56:38.350
+Ian: Let's go.
+
+484
+00:56:38.350 --> 00:56:39.780
+Brett: It's a little bit of something, a tittle.
+
+485
+00:56:40.120 --> 00:56:42.250
+Ian: Tiddler. Tiddler.
+
+486
+00:56:42.250 --> 00:56:46.819
+Brett: Man. Man, that's… that's fantastic, Alec. That's fantastic.
+
+487
+00:56:47.300 --> 00:56:47.790
+Alec: Yeah, thank you.
+
+488
+00:56:47.790 --> 00:56:48.470
+Ian: That's nuts.
+
+489
+00:56:48.470 --> 00:56:52.100
+Alec: If anyone in the… if anyone in the audience wants to partner on this, let me know.
+
+490
+00:56:55.420 --> 00:56:56.800
+Brett: Ian, are you…
+
+491
+00:56:57.160 --> 00:56:59.630
+Ian: Let's… yeah, let's go. Let's go.
+
+492
+00:56:59.940 --> 00:57:10.709
+Ian: All right, sharing my screen, here we go. Alright, warm bakes… let me move this out of the way. Warm bakes for slow Sunday. So, I actually haven't proofread any of this, I've just been going, going, filling it with…
+
+493
+00:57:10.910 --> 00:57:22.850
+Ian: I'm typically the guy who can listen to a song and not know what the lyrics say, or read… watch something, see a website and not know what it actually said. So, if there are things in here that aren't accurate, that's on me. It's not on Claude.
+
+494
+00:57:23.060 --> 00:57:28.920
+Ian: So Warm Bakes for… for Slow Sundays, right off the top, Nashville Food… Bakery Food Truck.
+
+495
+00:57:29.420 --> 00:57:39.790
+Ian: Filled buns, jam rolls, savory slabs, and customer name creations built for the line outside the truck. Love it. So you can go down to the scan… see the bakes? I added one more here, the Mercy Stack.
+
+496
+00:57:41.500 --> 00:57:45.000
+Ian: Four things worth chasing the truck for, love it. Sunday squeeze.
+
+497
+00:57:46.320 --> 00:57:58.539
+Ian: you can actually… so, come hungry, leave happy, love it. It's so good at knowing… maybe it knows me, or maybe it's just a standard template, but it's, having calls to action everywhere, and really good, strong, punchy headlines.
+
+498
+00:57:58.740 --> 00:58:07.979
+Ian: Actually, everybody on here can actually scan this QR code now. So, if you do, it'll take you down to this area here, where you'll build your own
+
+499
+00:58:08.690 --> 00:58:13.890
+Ian: pastry creation. And you can name it, give it your name, give it your, you know.
+
+500
+00:58:14.210 --> 00:58:27.550
+Ian: notes for the truck on there. So actually, I'll show you, I'll show you the creation. So the creation looks like this. This is the same page, but on the homepage. You can… you can give it a different pastry, you can give it a different,
+
+501
+00:58:28.100 --> 00:58:29.480
+Ian: what do you call it, filling?
+
+502
+00:58:29.600 --> 00:58:41.189
+Ian: You can kind of, you know, sweet and savory add-ins, toppings, name my crumb, call it whatever. It gives you some ideas, or call it the porch swing. Looks delicious. My name's Ian.
+
+503
+00:58:41.480 --> 00:58:44.170
+Ian: And, make it hot.
+
+504
+00:58:46.030 --> 00:58:49.160
+Ian: Submit to the truck, boom. So that's my order number.
+
+505
+00:58:49.990 --> 00:58:56.669
+Ian: And I can… I'm not sure what TruckView does. Oh, this is what… so I've already done, too. Lemon Light Revival and Porch Swing.
+
+506
+00:58:57.990 --> 00:59:04.700
+Ian: Or I could build another. So, it's basically an online ordering system for a a fill your own…
+
+507
+00:59:05.100 --> 00:59:06.410
+Ian: bakery truck.
+
+508
+00:59:06.730 --> 00:59:09.810
+Brett: Oh, that's great. Chris is over there baking some stuff at your truck.
+
+509
+00:59:10.160 --> 00:59:11.309
+Ian: I hope so.
+
+510
+00:59:11.580 --> 00:59:16.360
+Ian: I hope so. This is so that we also have a full brand kit. What I was hoping to get to, like, last time.
+
+511
+00:59:16.440 --> 00:59:29.300
+Ian: was a competitive analysis, a growth plan, go-to-market, LLM strategy to get mentioned by everybody. I don't want people to find this, because I'm not going to fulfill their orders, but… well, maybe, but not right now.
+
+512
+00:59:29.350 --> 00:59:38.670
+Ian: So I… last time, I know when we did an AI improv like this, I… when the guys were building, I was able to build out a lot more. This time, it was, like.
+
+513
+00:59:38.750 --> 00:59:41.540
+Ian: you know, all heads down on this stuff, but I think it turned out okay.
+
+514
+00:59:41.630 --> 00:59:43.530
+Ian: I think it turned out alright, so…
+
+515
+00:59:44.220 --> 00:59:49.249
+Ian: Let's check one more time, see if there's… Oh, we got a creation, hold on. Brown Sugar Good Sunday!
+
+516
+00:59:49.520 --> 00:59:50.790
+Brett: Let's go!
+
+517
+00:59:52.210 --> 00:59:53.450
+Ian: Ravi, thank you very much.
+
+518
+00:59:53.450 --> 00:59:54.609
+Brett: Day food!
+
+519
+00:59:54.610 --> 00:59:57.209
+Ian: Yeah, I'll deliver it to your door in about 2 hours.
+
+520
+00:59:57.970 --> 01:00:05.979
+Brett: No problem, no problem. Man, that's… that is… that's so… that is so freaking cool. That is so freaking cool. So…
+
+521
+01:00:07.210 --> 01:00:13.089
+Brett: So, Ian, that's… that's… that's pretty impressive. Justin, Ian, Alec, I gotta say, I think…
+
+522
+01:00:13.440 --> 01:00:16.600
+Brett: I think any one of these ideas, and…
+
+523
+01:00:16.720 --> 01:00:19.289
+Brett: In your city, would probably win.
+
+524
+01:00:19.470 --> 01:00:23.630
+Brett: But… I think we should have a vote.
+
+525
+01:00:23.760 --> 01:00:26.969
+Brett: I think we should have a poll, and the attendees…
+
+526
+01:00:26.970 --> 01:00:27.510
+Ian: Oh.
+
+527
+01:00:27.510 --> 01:00:34.199
+Brett: to vote. Is it Justin with milk and cookies? Is it Alec with the Sunday… what was the name.
+
+528
+01:00:34.200 --> 01:00:35.910
+Alec: Crum B2B.
+
+529
+01:00:35.910 --> 01:00:36.440
+Brett: Yes.
+
+530
+01:00:36.900 --> 01:00:42.290
+Brett: And… or… was it Alec with his… Crumbled B2B.
+
+531
+01:00:44.230 --> 01:00:48.039
+Brett: I don't know, I get to vote, too. Oh, I don't know who to vote for.
+
+532
+01:00:48.040 --> 01:00:50.050
+Ian: You can't… I don't know.
+
+533
+01:00:50.050 --> 01:00:52.069
+Brett: Chris, Chris, you gonna help me.
+
+534
+01:00:54.240 --> 01:00:55.430
+Ian: We're all winners, but…
+
+535
+01:00:55.430 --> 01:00:57.880
+Justin Novak: Can you guys see these results in real time?
+
+536
+01:00:59.180 --> 01:01:00.420
+Ian: I don't know, where is it?
+
+537
+01:01:00.970 --> 01:01:04.149
+Brett: Oh, hosts and panelists can't vote. This is great. I don't get to vote. This is fantastic.
+
+538
+01:01:04.150 --> 01:01:04.890
+Ian: about.
+
+539
+01:01:04.890 --> 01:01:06.999
+Justin Novak: I can see a sneak preview, guys, and I'll…
+
+540
+01:01:07.970 --> 01:01:16.990
+Justin Novak: I'll warn you, it's not looking good… for me. I'm just getting crushed right now. Everyone get your votes in.
+
+541
+01:01:17.200 --> 01:01:19.310
+Ian: Where are you seeing that? Where are you seeing that?
+
+542
+01:01:19.530 --> 01:01:21.030
+Brett: I think only he can see it.
+
+543
+01:01:22.080 --> 01:01:27.659
+Brett: Devin, he'll get to… he pushed… yeah, we'll get to see it in just a minute, so we'll all get to see. He's just teasing us now.
+
+544
+01:01:27.860 --> 01:01:32.180
+Justin Novak: We've got 50% participation right now, let's get another…
+
+545
+01:01:32.360 --> 01:01:35.690
+Justin Novak: Handful of votes in, should have popped up on your screen there.
+
+546
+01:01:37.220 --> 01:01:54.340
+Brett: I mean, considering that… and by the way, at the end of this, if you guys… if everybody has an opportunity to pick one of the builders to spend some time with, and maybe pitch some ideas, and get some… get your creative juices going, but it's really impressive to think about
+
+547
+01:01:54.520 --> 01:01:57.900
+Brett: wild idea, Just like this, that…
+
+548
+01:01:58.640 --> 01:02:02.869
+Brett: Anybody can come up with, and just… Build some stuff.
+
+549
+01:02:02.870 --> 01:02:06.079
+Alec: I'll add to that, I think… sorry to cut you off, I think.
+
+550
+01:02:06.080 --> 01:02:06.840
+Brett: No, no!
+
+551
+01:02:06.840 --> 01:02:21.949
+Alec: Truthfully, too, the risk now is so low. Like, you saw we all just built out an idea in real time. You know, it's not at the point anymore where, you know, you have some crazy idea for something, and you gotta go put 50 grand behind it to build out the tech.
+
+552
+01:02:21.950 --> 01:02:43.029
+Alec: And invest all this capital. It's like, hey, we just tested this, now we can go, we can even do cold outreach and hit up 50 people and see if anyone has interest in it, get our first customers in a day. Like, literally, there's no risk besides, you know, investing a little bit of time. And that time investment's honestly important, because now you're upskilling, and you're gonna be able to do this faster and faster and do this for other people.
+
+553
+01:02:43.030 --> 01:02:50.430
+Alec: So I think there's truly no losing, and now you can really test things and validate things without a lot of upfront investment.
+
+554
+01:02:50.950 --> 01:03:02.060
+Brett: I can't agree more. So, it looks really… look, look, it looks really… it's… it was a… Alec, it looks like the Crumble B2B1, Ian, the.
+
+555
+01:03:02.060 --> 01:03:02.690
+Ian: Monday, the final.
+
+556
+01:03:02.690 --> 01:03:11.009
+Brett: 5 reasons to chase the Truck was a hot second, and Justin, let's not forget about the farmers and the milk and the community, and by the way.
+
+557
+01:03:11.010 --> 01:03:12.229
+Ian: A worthy, worthy call.
+
+558
+01:03:12.230 --> 01:03:21.050
+Brett: Such a great idea. What a great experience. So, if… if you… since everybody's here at the ending, you now get the magic word. The magic word is…
+
+559
+01:03:21.580 --> 01:03:30.970
+Brett: is Wi-Fi in my cookie. Thanks, Ian. All you have to do is message that to your choice on LinkedIn, and you'll get a… you'll get your…
+
+560
+01:03:31.130 --> 01:03:35.220
+Brett: your call and your schedule. So, thanks, Ian, for the Wi-Fi and my cookie, just what we all.
+
+561
+01:03:35.220 --> 01:03:36.629
+Ian: Yeah. I'm poking out.
+
+562
+01:03:36.630 --> 01:03:38.120
+Brett: Gotcha.
+
+563
+01:03:38.120 --> 01:03:40.579
+Ian: Good job, Allie. Good job, Justin.
+
+564
+01:03:40.580 --> 01:03:42.179
+Alec: Thanks, guys. Yeah, that was fun.
+
+565
+01:03:42.700 --> 01:03:43.429
+Justin Novak: Cheers, guys.
+
+566
+01:03:43.430 --> 01:03:43.990
+Brett: fun.
+
+567
+01:03:44.090 --> 01:03:49.660
+Brett: I feel like we've done a lot. Does anybody want to add anything before we… Before we go.
+
+568
+01:03:51.330 --> 01:04:15.850
+Alec: Nothing on my side. I'll reinforce that point of, hey, the stakes are low now, we can build very fast and try things, and, you know, it's not that we need a, you know, a 6-month build anymore that's gonna cost 50 grand. It's, hey, let's throw this together, get it out into the world, see what people think, see if people like it. You know, we might very well… we take Crumby to be out there, and everyone's like, no, there's this option, it's very cheap, and we're having a lot of success with this.
+
+569
+01:04:15.850 --> 01:04:17.559
+Alec: Sure, that's fine, we just spent…
+
+570
+01:04:17.560 --> 01:04:40.480
+Alec: 45 minutes making it, no big deal. And hey, maybe everybody loves it, and it takes off overnight. So, the stakes are low, and it's a great skill to have, and it's a, you know, the tools are very easy to use. It's just a matter of going in and actually using them. So I would encourage everybody to just get in there and try stuff, and just have fun with it, because really, it is a fun process, it's a creative process, so I would encourage everybody to just get in there and try the tools.
+
+571
+01:04:41.220 --> 01:04:48.609
+Brett: I want to say, I love this, and I'll add one thing. Yes, yes, and trust me, if you have not fooled around with any of this.
+
+572
+01:04:49.800 --> 01:04:55.369
+Brett: Go do yourself a favor and spend 30 minutes on a weekend, an hour on a weekend.
+
+573
+01:04:55.770 --> 01:05:03.889
+Brett: And you don't have to know anything. You literally have a chat interface with something that knows every single thing, and all you have to do is ask.
+
+574
+01:05:04.220 --> 01:05:15.509
+Brett: I challenge you to do that. It'll change your… it'll… it'll change your mind. I've been building products at big companies for 10 years, and what we just did is a 6-month runway, and we just did it in 45 minutes.
+
+575
+01:05:15.940 --> 01:05:17.170
+Ian: Yeah. The…
+
+576
+01:05:17.230 --> 01:05:31.860
+Ian: The time is now for builders. If you have an idea, if you have any idea, you can prototype it in, like we showed you, an hour, or a weekend, and just start talking. Honestly, I agree, Brett, like, if you haven't started working with it, work with it.
+
+577
+01:05:31.860 --> 01:05:43.949
+Ian: just get to know the boundaries of it. And you'll probably prototype stuff for a few weeks, and then you'll actually start asking the questions, how do I actually make this a business, if you like the business? But the time is now for builders like you.
+
+578
+01:05:44.070 --> 01:05:45.890
+Ian: Follow your curiosity.
+
+579
+01:05:46.280 --> 01:05:59.740
+Ian: build away, and there's no… there's no loss in building. There's no… it used to be you had to raise money just to build out the prototype and prove the model. You don't have to do that anymore. So just start building. You know, if you want guidance, talk to one of us.
+
+580
+01:06:00.990 --> 01:06:06.170
+Brett: You know, it's… I hear people say, I'm not technical. I don't know how to use tech.
+
+581
+01:06:06.280 --> 01:06:14.080
+Brett: And I asked Justin this, and I'll ask Ian and Alec this. How much code did you just write during this session?
+
+582
+01:06:15.040 --> 01:06:16.620
+Ian: I think we can all try one hand.
+
+583
+01:06:16.620 --> 01:06:26.649
+Alec: There's two answers. One is not a single line, and then the other answer is, well, AI just wrote thousands of lines for me, so… Right. Whichever you choose to go with.
+
+584
+01:06:27.000 --> 01:06:27.530
+Ian: Yeah.
+
+585
+01:06:27.930 --> 01:06:31.830
+Brett: Justin, you wanna close this up? You're… you're… everybody had a piece but you, come on.
+
+586
+01:06:32.090 --> 01:06:33.410
+Brett: Some words.
+
+587
+01:06:33.880 --> 01:06:48.780
+Justin Novak: Yeah, thanks, Brett. Guys, thanks for being a part of this. Kudos to you for showing up. It's now 2 o'clock Eastern Standard Time. You know, you guys could be watching the World Cup right now, you could be working, you could be…
+
+588
+01:06:48.850 --> 01:07:04.219
+Justin Novak: whatever the case may be, but you took time out of your day to invest in your future self, because at the end of the day, AI is not gonna take your job. Someone who is proficient with AI, though, will.
+
+589
+01:07:04.420 --> 01:07:14.820
+Justin Novak: Right? So, make sure that you are the person becoming AI proficient, and this is something that Alec and I have talked about extensively, and Ian and I, and Brett and I, and all of us as a collective.
+
+590
+01:07:14.820 --> 01:07:22.420
+Justin Novak: Right? There's really no fear if you learn how to use AI, and that's what our channel's all about. We run these shows
+
+591
+01:07:22.420 --> 01:07:40.690
+Justin Novak: roughly once a week, with the intention of sharing all of our knowledge and resources with you guys, so that you can become the most AI-proficient person in the room, and it's our goal to continue to do that. So, if you enjoyed, come along for a future session, drop us a note, shoot us an email, we'd be glad to help any way we can.
+
+592
+01:07:41.820 --> 01:07:44.060
+Brett: Look, I love y'all, this is amazing.
+
+593
+01:07:44.220 --> 01:07:46.559
+Brett: Thanks for coming, let's do it again.
+
+594
+01:07:46.770 --> 01:07:50.310
+Brett: Keep out… keep building, keep changing the future. I love this.
+
+595
+01:07:50.650 --> 01:07:51.590
+Brett: Love you guys. Bye, y'all.
+
+596
+01:07:51.840 --> 01:07:52.540
+Justin Novak: Cheers, guys.
+
+597
+01:07:52.540 --> 01:07:53.170
+Ian: Bye.
+

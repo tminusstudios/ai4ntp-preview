@@ -1,0 +1,125 @@
+/* ============================================================
+   AI4NTP — V6 DARK THEME (option)
+   A drop-in override: add class "dark" to <body class="v6 dark">
+   and load this AFTER home-v6.css + sessions-cards3.css +
+   sessions-page.css. Re-skins every v6 section onto the ink
+   "Console" palette while keeping structure, type and the lime
+   accent identical. This is a THEME, not a fork.
+   ============================================================ */
+
+body.v6.dark { background: var(--ink); color: var(--on-dark); }
+
+/* texture: invert the dot field to light-on-dark */
+body.v6.dark .v6-tex {
+  background-image: radial-gradient(rgba(250,247,240,0.05) 1px, transparent 1.4px);
+}
+
+/* ---- header ---- */
+body.v6.dark .site-header { background: var(--ink); }
+body.v6.dark .nav { border-bottom: 1px solid var(--on-dark-line); }
+body.v6.dark .logo { color: var(--on-dark); }
+body.v6.dark .nav-link { color: var(--on-dark); opacity: 0.6; }
+body.v6.dark .nav-link:hover { color: var(--signal); opacity: 1; }
+
+/* ---- hero ---- */
+body.v6.dark .v6-eyebrow { color: var(--on-dark-fog); }
+body.v6.dark .v6-eyebrow::before { color: var(--signal); }
+body.v6.dark .v6-wordmark { color: var(--on-dark); }
+body.v6.dark .v6-vp { color: var(--on-dark); }
+body.v6.dark .v6-sub { color: rgba(250,247,240,0.78); }
+
+/* boxed capture → dark */
+body.v6.dark .v6-capture { background: var(--ink-soft); border-color: var(--on-dark-line); }
+body.v6.dark .v6-capture:focus-within { box-shadow: 0 0 0 3px var(--signal); }
+body.v6.dark .v6-capture input { color: var(--on-dark); }
+body.v6.dark .v6-capture input::placeholder { color: var(--on-dark-fog); }
+body.v6.dark .v6-capture button { background: var(--signal); color: var(--ink); }
+body.v6.dark .v6-capture button:hover { background: var(--on-dark); color: var(--ink); }
+body.v6.dark .v6-note { color: var(--on-dark-fog); }
+body.v6.dark .v6-note.ok { color: var(--signal); }
+body.v6.dark .v6-cred .t { color: rgba(250,247,240,0.82); }
+body.v6.dark .v6-cred .t b { color: var(--on-dark); }
+body.v6.dark .v6-cred .names { color: var(--on-dark-fog); }
+body.v6.dark .v6-cred .av img { border-color: var(--ink); }
+
+/* ---- section shells + headings ---- */
+body.v6.dark .v6-section { border-top: 1px solid var(--on-dark-line); }
+body.v6.dark .v6-section.warm { background: var(--ink-soft); }
+body.v6.dark .v6-h2 { color: var(--on-dark); }
+
+/* ---- session cards (sessions-cards3 + sessions-page) ---- */
+body.v6.dark .sc-card { background: var(--ink-soft); border-color: var(--on-dark-line); }
+body.v6.dark .sc-card:hover { box-shadow: 0 14px 32px rgba(0,0,0,0.4); }
+body.v6.dark .sc-title { color: var(--on-dark); }
+body.v6.dark .sc-dek { color: rgba(250,247,240,0.74); }
+body.v6.dark .sc-pill { background: var(--ink); color: var(--on-dark); border: 1px solid var(--on-dark-line); }
+body.v6.dark .sc-pill.upnext { background: var(--signal); color: var(--ink); border-color: var(--signal); }
+body.v6.dark .sc-crew img { border-color: var(--ink-soft); }
+body.v6.dark .sc-crew .names { color: var(--on-dark-fog); }
+body.v6.dark .sc-watch { color: var(--on-dark); }
+body.v6.dark .sc-meta { color: var(--on-dark-fog); }
+body.v6.dark .sc-meta b { color: var(--on-dark); }
+body.v6.dark .sc-meta .dot { background: var(--on-dark-line); }
+
+/* featured up-next */
+body.v6.dark .sp-feat { background: var(--ink-soft); border-color: var(--on-dark-line); }
+body.v6.dark .sp-feat .f-side { border-left-color: var(--on-dark-line); }
+body.v6.dark .sp-feat .f-when { color: var(--on-dark); }
+body.v6.dark .sp-feat .f-when .sl { color: var(--signal); }
+body.v6.dark .sp-feat .f-meta { color: var(--on-dark-fog); }
+body.v6.dark .sp-feat .f-crew img { border-color: var(--ink-soft); }
+body.v6.dark .sp-feat .f-crew .names { color: var(--on-dark-fog); }
+body.v6.dark .sp-replays .sc-metaline { border-color: var(--on-dark-line); }
+@media (max-width: 860px) { body.v6.dark .sp-feat .f-side { border-top-color: var(--on-dark-line); } }
+
+/* ---- who this is for (spectrum) ---- */
+body.v6.dark .v6-who-intro { color: rgba(250,247,240,0.8); }
+body.v6.dark .v6-spectrum::before { background: var(--on-dark-line); }
+body.v6.dark .v6-sp-dot { background: var(--signal); color: var(--ink); }
+body.v6.dark .v6-sp-label { color: var(--signal); }
+body.v6.dark .v6-sp-step h3 { color: var(--on-dark); }
+body.v6.dark .v6-sp-step p { color: rgba(250,247,240,0.74); }
+
+/* ---- logistics: was a dark band in light mode → make it an elevated panel ---- */
+body.v6.dark .v6-logi { background: var(--ink-soft); border-top: 1px solid var(--on-dark-line); }
+body.v6.dark .v6-logi-grid { border-color: var(--on-dark-line); }
+body.v6.dark .v6-logi-cell { border-color: var(--on-dark-line); }
+
+/* ---- why (steps) ---- */
+body.v6.dark .v6-how { border-top-color: var(--on-dark-line); }
+body.v6.dark .v6-step { border-right-color: var(--on-dark-line); }
+body.v6.dark .v6-step h3 { color: var(--on-dark); }
+body.v6.dark .v6-step p { color: rgba(250,247,240,0.72); }
+@media (max-width: 760px) { body.v6.dark .v6-step { border-bottom-color: var(--on-dark-line); } }
+
+/* ---- faq ---- */
+body.v6.dark .v6-faq details { border-top-color: var(--on-dark-line); }
+body.v6.dark .v6-faq details:last-child { border-bottom-color: var(--on-dark-line); }
+body.v6.dark .v6-faq summary { color: var(--on-dark); }
+body.v6.dark .v6-faq summary::after { color: var(--signal); }
+body.v6.dark .v6-faq details[open] summary::after { color: var(--signal); }
+body.v6.dark .v6-faq .ans { color: rgba(250,247,240,0.74); }
+
+/* ---- closing CTA: keep dark; lift the watermark slightly ---- */
+body.v6.dark .v6-final { border-top: 1px solid var(--on-dark-line); }
+
+/* ---- theme toggle button ---- */
+.theme-toggle {
+  position: fixed; right: var(--s5); bottom: var(--s5); z-index: 90;
+  display: inline-flex; align-items: center; gap: 9px;
+  background: var(--ink); color: var(--on-dark);
+  border: 1px solid var(--on-dark-line);
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 11px 15px; cursor: pointer; transition: border-color 0.2s, color 0.2s;
+}
+.theme-toggle:hover { border-color: var(--signal); color: var(--signal); }
+.theme-toggle .ic { width: 14px; height: 14px; display: inline-block; }
+body:not(.dark) .theme-toggle { background: var(--cream); color: var(--ink); border-color: var(--line-strong); }
+body:not(.dark) .theme-toggle:hover { border-color: var(--ink); color: var(--ink); }
+.theme-toggle .lbl-dark { display: none; }
+body.dark .theme-toggle .lbl-light { display: none; }
+body.dark .theme-toggle .lbl-dark { display: inline; }
+
+/* NOTE: the shared nav.js header is intentionally LEFT LIGHT on dark pages.
+   It's a global component and stays its native light styling everywhere.
+   (footer.js is already dark and is fine as-is.) */

@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Session 001 · Slides · AI4NTP</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="icon" type="image/svg+xml" href="/ai4ntp-preview/type/logo-primary-dark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+
+<style>
+  :root {
+    --ink: #0F1113;
+    --ink-soft: #1C1F23;
+    --paper: #F4F1EA;
+    --paper-warm: #EDE7DA;
+    --cream: #FAF7F0;
+    --signal: #D4FF3A;
+    --signal-deep: #A8D000;
+    --rust: #C4471C;
+    --fog: #8A8679;
+    --line: rgba(15, 17, 19, 0.12);
+    --line-strong: rgba(15, 17, 19, 0.35);
+  }
+
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  /* ---- Grain texture (matches landing page) ---- */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.22;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  /* ---- Reveal core overrides ---- */
+  .reveal {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .reveal .slides { text-align: left; }
+  .reveal .slides section {
+    padding: 56px 112px;
+    box-sizing: border-box;
+  }
+  /* Override reveal's default center so we can pad inside */
+  .reveal.center .slides section.present > * { max-width: 100%; }
+
+  /* ---- Typography ---- */
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    color: var(--ink);
+    letter-spacing: -0.025em;
+    line-height: 1.04;
+    margin: 0 0 24px;
+    text-transform: none;
+  }
+  .reveal h1 { font-size: 96px; }
+  .reveal h2 { font-size: 72px; }
+  .reveal h3 { font-size: 48px; }
+  .reveal h4 { font-size: 36px; font-weight: 400; }
+
+  .reveal p { margin: 0 0 20px; font-size: 28px; line-height: 1.55; }
+  .reveal em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .reveal strong { font-weight: 600; }
+
+  .highlight {
+    background: var(--signal);
+    color: var(--ink);
+    padding: 0 0.12em;
+    margin: 0 0.03em;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    display: inline-block;
+  }
+
+  /* ---- Eyebrow / metadata bars ---- */
+  .meta-strip {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 56px;
+  }
+  .meta-strip .live {
+    color: var(--rust);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 1;
+  }
+  .meta-strip .live::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--rust);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.45; transform: scale(0.8); }
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: var(--ink);
+    opacity: 0.55;
+  }
+
+  /* ---- Lists ---- */
+  /* Bullets positioned absolutely so list-item content keeps inline flow.
+     Previous flex layout broke <strong>+text into separate columns. */
+  .reveal ul, .reveal ol {
+    margin: 24px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .reveal ul li, .reveal ol li {
+    font-size: 30px;
+    line-height: 1.45;
+    padding: 18px 0 18px 40px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .reveal ol li { padding-left: 64px; }
+  .reveal ul li:last-child, .reveal ol li:last-child { border-bottom: none; }
+  .reveal ol { counter-reset: idx; }
+  .reveal ol li::before {
+    counter-increment: idx;
+    content: counter(idx, decimal-leading-zero);
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+  .reveal ul li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ink);
+    position: absolute;
+    left: 8px;
+    top: 36px;
+    opacity: 0.7;
+  }
+
+  /* ---- Speaker cards ---- */
+  .speaker-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-top: 32px;
+  }
+  .speaker-card { text-align: center; padding: 0 20px; }
+  .speaker-card .headshot {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--ink);
+    background: var(--cream);
+    margin: 0 auto 24px;
+  }
+  .speaker-card .headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.06);
+  }
+  .speaker-card .name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+  .speaker-card .role {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 18px;
+  }
+  .speaker-card .result {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.35;
+    color: var(--ink);
+    opacity: 0.92;
+  }
+
+  /* ---- Placeholder slots ---- */
+  .placeholder {
+    border: 2px dashed var(--line-strong);
+    padding: 80px 56px;
+    margin: 40px 0;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+  }
+  .placeholder-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 16px;
+    display: block;
+  }
+  .placeholder-body {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 1.35;
+    color: var(--ink);
+    opacity: 0.7;
+  }
+
+  /* ---- Big stat block ---- */
+  .stat-block {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .stat-number {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: 220px;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    margin-bottom: 28px;
+    color: var(--ink);
+  }
+  .stat-label {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 38px;
+    line-height: 1.3;
+    max-width: 820px;
+    margin: 0 auto;
+    opacity: 0.92;
+  }
+
+  /* ---- Pillar list (Alec's 4 pillars / Ian's 3 pillars) ---- */
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 24px;
+  }
+  .pillar-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .pillar-card {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--line);
+    padding: 32px 28px;
+  }
+  .pillar-card .num {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.45;
+    margin-bottom: 14px;
+  }
+  .pillar-card h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .pillar-card p {
+    font-size: 19px;
+    line-height: 1.5;
+    opacity: 0.75;
+    margin: 0;
+  }
+
+  /* ---- Callout quote (for "Sandy" line, news beat, etc.) ---- */
+  .callout {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 48px 56px;
+    margin: 32px 0;
+    border-left: 8px solid var(--signal);
+  }
+  .callout .quote {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+  .callout .attribution {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  /* ---- Section title slide ---- */
+  .section-title-eyebrow {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 28px;
+  }
+  .section-title h2 {
+    font-size: 100px;
+    line-height: 1.02;
+  }
+  .section-title .by {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 36px;
+    margin-top: 36px;
+    opacity: 0.85;
+  }
+
+  /* ---- Pulse-form CTA slide ---- */
+  .pulse-cta {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 48px;
+    margin-top: 24px;
+  }
+  .pulse-cta .url {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 28px;
+    letter-spacing: 0.06em;
+    color: var(--signal);
+  }
+  .pulse-cta .label {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  /* ---- Sign-off slide ---- */
+  .signoff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+  .signoff-line {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 56px;
+    max-width: 1000px;
+  }
+  .brand-mark {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: -0.02em;
+  }
+  .brand-mark .four {
+    background: var(--signal);
+    padding: 0 14px;
+    margin: 0 2px;
+    font-style: italic;
+    display: inline-block;
+  }
+
+  /* ---- Title slide eyebrow ---- */
+  .title-slide-eyebrow {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+  }
+  .title-slide-eyebrow .four {
+    background: var(--signal);
+    padding: 0 8px;
+    margin: 0 1px;
+    font-style: italic;
+    display: inline-block;
+  }
+
+  /* ---- Two-up framing for jobs-question slide ---- */
+  .two-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 32px;
+  }
+  .two-up .side {
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--line);
+  }
+  .two-up .side-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 14px;
+  }
+  .two-up .side-claim {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+  }
+
+  /* ---- Connection cards (bonus slide) ---- */
+  .connect-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    margin-top: 32px;
+  }
+  .connect-card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1.5px solid var(--ink);
+    padding: 28px 24px;
+  }
+  .connect-card .headshot {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--ink);
+    background: var(--cream);
+    margin: 0 auto 20px;
+  }
+  .connect-card .headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.06);
+  }
+  .connect-card .qr-slot {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px;
+    border: 2px dashed var(--line-strong);
+    background: rgba(255,255,255,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--rust);
+    text-align: center;
+    padding: 10px;
+  }
+  .connect-card .email {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    word-break: break-word;
+  }
+  .connect-card .book {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 18px;
+    background: var(--signal);
+    color: var(--ink);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1.5px solid var(--ink);
+  }
+  .connect-card .name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+  .connect-card .who {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+
+  /* ---- Reveal controls + progress (brand yellow) ---- */
+  .reveal .controls { color: var(--signal); opacity: 0.85; }
+  .reveal .controls:hover { opacity: 1; }
+  .reveal .progress {
+    background: rgba(15, 17, 19, 0.08);
+    color: var(--signal);
+  }
+  .reveal .progress span { background: var(--signal); }
+  .reveal .slide-number {
+    background: transparent;
+    color: var(--ink);
+    opacity: 0.4;
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  /* ---- Tighter type ---- */
+  .tight ul li, .tight ol li {
+    font-size: 26px;
+    padding: 14px 0 14px 40px;
+  }
+  .tight ol li { padding-left: 60px; }
+  .tight ul li::before { top: 30px; }
+  .tight ol li::before { top: 24px; }
+
+  /* ---- AI4NTP watermark (bottom-left, injected via JS, all middle slides) ---- */
+  .slide-watermark {
+    position: absolute;
+    bottom: 18px;
+    left: 28px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    opacity: 0.5;
+    z-index: 10;
+  }
+  .slide-watermark .four {
+    background: var(--signal);
+    padding: 0 5px;
+    margin: 0 1px;
+    font-style: italic;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 1 · Cold open / title                                  -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="meta-strip">
+        <span>Episode 001</span>
+        <span>May 21, 2026 · 1:00 PM EST</span>
+        <span class="live">Live on Zoom</span>
+      </div>
+
+      <div class="title-slide-eyebrow">ai<span class="four">4</span>ntp</div>
+
+      <h1>How marketers are<br>actually using AI to <span class="highlight">grow</span>.</h1>
+
+      <aside class="notes">
+        Hello everybody, welcome to this edition of AI for NTP. We're going to give everybody another minute to join. We've got over a hundred signups and looks like 30 of you are already in the room. While we're waiting, drop in the chat your name, where you're coming in from, and if you're feeling spicy, what inspired you to join.
+
+        If you run marketing at a fast-growing company and you're trying to sharpen your GTM motion, rank in LLM answers now that SEO is changing under your feet, push ROAS higher to increase profitability, or just grow at all costs to get that fresh round of funding, you're in the right room. You're going to leave today with something you can bring to your next team meeting on Monday.
+
+        We do our best to distill the latest in AI innovation through builders who are actually building, with real proof to share. Our ethos is no gatekeeping. Any questions about anything shared today, fire away in the chat. Our mission is to be a transparent ecosystem where people serious about leveling up in AI can congregate.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 2 · Agenda                                             -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">What we're covering</div>
+      <h2><span class="highlight">Agenda</span>.</h2>
+
+      <ol class="tight" style="margin-top: 24px;">
+        <li>Interactive quiz to steer the next 45 minutes.</li>
+        <li>Alec on quitting his 9-to-5 and tripling his income with AI in under 30 days.</li>
+        <li>Ian on ranking with LLMs and his playbook for PEO.</li>
+        <li>Fireside chat plus rapid-fire questions.</li>
+        <li>Bonus giveaway.</li>
+        <li>Open Q&amp;A.</li>
+      </ol>
+
+      <aside class="notes">
+        We're kicking off with an interactive quiz that will help steer our time together today. Then Alec is gonna take the stage, followed by Ian, and then we're gonna end with a quick fireside chat and bonus giveaway that I think a lot of you are really gonna appreciate. We'll end with a Q&amp;A. Feel free to ask your questions as you go and we'll either address them throughout or save them all to review at the end.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 3 · Genie wish · pulse form (the opener interactive)   -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">One genie. One wish.</div>
+      <h2>What would you ask AI<br>to do for you <span class="highlight">right now</span>?</h2>
+
+      <div class="pulse-cta">
+        <div class="label">Open in a new tab:</div>
+        <div class="url">ai4ntp.com/sessions/001/assess</div>
+      </div>
+
+      <aside class="notes">
+        All right guys, we have a lot on the docket so lets get started. if you haven't done the interactive quiz, it takes 30 seconds. Don't worry, your name won't show up on the screen. Alec, Ian, and I have literally hundreds of hours of material from using AI for years now so your answers are going to steer our conversation. I'm actually going to pull the results up on screen right here. It's worth noting I built this with AI in five minutes just last night. These type of tools are great for roundtable meetings, team huddles, strategy sessions. What's fun is you can record your entire conversation, whether that's over Zoom or using a Plod Note or some device, and uploading that transcript to a tool like this to identify key trends by word mapping. *CALL OUT SOME OF ANSWERS*
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 3 · Meet the panel                                     -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">In the room</div>
+      <h2>Three operators, <em>showing their work.</em></h2>
+
+      <div class="speaker-row">
+        <div class="speaker-card">
+          <div class="headshot">
+            <img src="/ai4ntp-preview/type/sessions/001/images/justin-novak.jpg" alt="Justin Novak" style="object-position: center 28%;">
+          </div>
+          <div class="name">Justin Novak</div>
+          <div class="role">Host</div>
+          <div class="result">Sold first company from his college dorm room to founder of NASDAQ:TTWO. Helped scale multiple businesses from ground zero to $50MM+ ARR. On a mission to connect with all the world class operators around the globe.</div>
+        </div>
+        <div class="speaker-card">
+          <div class="headshot">
+            <img src="/ai4ntp-preview/type/sessions/001/images/alec-saluga.jpg" alt="Alec Saluga" style="object-position: center 22%;">
+          </div>
+          <div class="name">Alec Saluga</div>
+          <div class="role">Guest · Aero AI</div>
+          <div class="result">Quit 9-5 and tripled his income with AI in under 30 days. Runs Aero Ai: AI Systems &amp; Lead Engines for Modern Business with a team of agents.</div>
+        </div>
+        <div class="speaker-card">
+          <div class="headshot">
+            <img src="/ai4ntp-preview/type/sessions/001/images/ian-kilpatrick.jpg" alt="Ian Kilpatrick" style="object-position: center 25%;">
+          </div>
+          <div class="name">Ian Kilpatrick</div>
+          <div class="role">Guest · BrandSauce.io</div>
+          <div class="result">28 years building businesses. Now runs a portfolio of diverse companies including global SaaS, LLM SEO, and a school with AI as his one-person marketing team.</div>
+        </div>
+      </div>
+
+      <aside class="notes">
+        For those of you who don't know me, I'm Justin Novak. I've been building and growing startups for over a decade now, from the time I was in my college dorm room. Now it's my passion to meet all the world class operators who are actually building real products with Ai.
+
+        I'm super grateful to be hosting Alec and Ian.
+
+        Alec quit his 9-to-5 and tripled his income with AI in less than 30 days. He resides in Southern California, loves to surf, and is one of my favorite people to riff with on AI.
+
+        Ian is a colleague of mine and someone I have been collaborating with for some time. He runs a portfolio of companies. I don't know how he manages all of it, including Brand Sauce, a global software company, plus a variety of other businesses, including a school that he runs with AI as his one-person marketing team for the most part.
+
+        He also built a tool that helps you rank on LLMs. It's kind of the modern day SEO, which maybe he'll show us live, or we'll have an opportunity to connect with him and learn more. He'll give us some tips and tricks as well.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 4 · Topic 01 title                                     -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: center;">
+        <div>
+          <div class="section-title-eyebrow">Topic 01 · Alec</div>
+          <h2 style="font-size: 80px; line-height: 1.02; margin-bottom: 24px;">Anything you can <span class="highlight">imagine</span>,<br>you can build.</h2>
+          <p style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 30px; opacity: 0.85; margin: 0;">
+            Alec's playbook for the era of infinite intelligence.
+          </p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/alec-speaking.jpg" alt="Alec speaking" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/alec-award.jpg" alt="Alec with award" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/alec-speaking-2.jpg" alt="Alec speaking" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/alec-exercising.jpg" alt="Alec exercising" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+        </div>
+      </div>
+
+      <aside class="notes">
+        All right, Alec, the stage is all yours, but first, by the end of this session, what is our audience going to learn?
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- Topic 01 · The 4 pillars                                     -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">Alec's four pillars</div>
+      <h3>How I'm actually operating in 2026.</h3>
+
+      <div class="pillar-grid">
+        <div class="pillar-card">
+          <div class="num">01 · Agency</div>
+          <h4>AI-first systems.</h4>
+          <p>Connected tools, centralized workspaces, automations triggered across the stack. AI as a team member, not a tool. Anti-doomer mindset — fear becomes opportunity.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="num">02 · Marketing now</div>
+          <h4>What wasn't possible 5 years ago.</h4>
+          <p>Extreme CRO at scale, AI-built UGC creatives, media buying with Claude Code, scraping and enriching competitor data, hyper-personalized outbound.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="num">03 · Personal tools</div>
+          <h4>The stack I use daily.</h4>
+          <p>WhisperFlow for voice. Plaud Note for capture (transcripts → Claude via Zapier). Claude Code for builds. Plus one non-AI tool worth its weight: Loom.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="num">04 · The unlock</div>
+          <h4>You never have to say "I don't know how."</h4>
+          <p>The reality of 2026: infinite intelligence on tap. The bottleneck isn't capability anymore. It's whether you decide to build it.</p>
+        </div>
+      </div>
+
+      <aside class="notes">
+        Alec, you really went viral with millions of views, believe it was earlier this year, for your Cloudbot content. Could you help me understand: are you still actively using Cloudbot? You were talking about media buying with Claude Code. Is that the same thing, or how do you discern between the two and when to use each?
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- Topic 01 · Thank you Alec                                    -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div style="text-align: center;">
+        <h1 style="font-size: 124px; font-weight: 300; letter-spacing: -0.025em; line-height: 1.0; margin-bottom: 40px;">
+          Thank you, <em>Alec.</em>
+        </h1>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 20px; letter-spacing: 0.04em; margin: 0;">
+          alec@workwithaero.com
+        </p>
+      </div>
+
+      <aside class="notes">
+        Guys before we segway to Ian let's take a moment to drop in the chat what you favorite nugget was, and not you're not allowed to say his hair or biceps. Alec, that's a hell of a 12 minutes, thanks for sharing all your glory with us.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 9 · Topic 02 title                                     -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: center;">
+        <div>
+          <div class="section-title-eyebrow">Topic 02 · Ian</div>
+          <h2 style="font-size: 76px; line-height: 1.02; margin-bottom: 24px;">Ranking with LLMs.<br>SEO, GEO, AEO, &amp; <span class="highlight">PEO</span>.</h2>
+          <p style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 28px; opacity: 0.85; margin: 0;">
+            How Ian gets companies cited in ChatGPT, Perplexity, and Grok.
+          </p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/ian-1.jpg" alt="Ian" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/ian-oprah.jpg" alt="Ian with Oprah" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/ian-3.jpg" alt="Ian" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+          <img src="/ai4ntp-preview/type/sessions/001/assets/ian-4.jpg" alt="Ian" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink);">
+        </div>
+      </div>
+
+      <aside class="notes">
+        Guys, I want to take a moment to introduce you to Ian, who's been a colleague of mine for a couple of years now & its been an honor collaborating with him. Ian, youve got 12 minutes, but first, by the end of your segment, what will all of our viewers learn?
+
+        So Ian, I've heard about your portfolio from working with you for years. Could you explain and give us the big picture of this portfolio you run, what's involved, and how big it is? Revenue numbers would be great, but I understand if you can't share that.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 10 · Topic 02 · Why now (with Google news beat)        -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">Why this matters now</div>
+      <h3>Your buyers stopped Googling.<br>They're asking <span class="highlight">ChatGPT</span>.</h3>
+
+      <div class="callout">
+        <div class="quote">"Google will now prioritize AI-generated answers in search results over human-written articles."</div>
+        <div class="attribution">— Google announcement, May 19, 2026</div>
+      </div>
+
+      <ul class="tight" style="margin-top: 24px;">
+        <li>Cybersecurity, fintech, devtools — every B2B category is being researched in LLMs right now.</li>
+        <li>If you're not in those answers, you don't exist for that buyer.</li>
+        <li>Almost no marketing team has a strategy for this. The window is open.</li>
+      </ul>
+
+      <aside class="notes">
+        Ian, a lot of people talk about AI slop when it comes to blog posts and social content. How do you avoid it feeling like that?
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 11 · Topic 02 · Echo Check intro                       -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">The tool</div>
+      <h3><em>Echo Check</em> — built it for myself,<br>then turned it into a business.</h3>
+
+      <p style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 26px; line-height: 1.4; opacity: 0.92; margin-top: 8px;">
+        Plug in your website. Get an LLM-readability score. Get an action plan. See where you're cited and where you're invisible.
+      </p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 24px 0 16px;">
+        <img src="/ai4ntp-preview/type/sessions/001/assets/Echo%20Check%20Slide.png" alt="Echo Check overview" style="width: 100%; border: 1px solid var(--line); display: block;">
+        <img src="/ai4ntp-preview/type/sessions/001/assets/EchoCheck%20Index%20Slide.png" alt="Echo Check Index" style="width: 100%; border: 1px solid var(--line); display: block;">
+      </div>
+
+      <p style="font-family: 'JetBrains Mono', monospace; font-size: 16px; letter-spacing: 0.12em; opacity: 0.7; margin-top: 8px;">
+        echocheck.app
+      </p>
+
+      <aside class="notes">
+        Ian i've heard you mention PEO. Did you coin this and what exactly is it?
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 12 · Topic 02 · Ian's 3-pillar playbook                -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">The playbook</div>
+      <h3>Three moves. Ship them this quarter.</h3>
+
+      <div class="pillar-grid three">
+        <div class="pillar-card">
+          <div class="num">01</div>
+          <h4>AEO + PEO audit.</h4>
+          <p>Run Echo Check on your site. Score your visibility across ChatGPT, Claude, Perplexity. Know where you're cited and where you're a ghost.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="num">02</div>
+          <h4>Programmatic SEO.</h4>
+          <p>Build out a programmatic directory. 1,000+ pages, structured for both Google and LLMs. We're getting demos every day off this.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="num">03</div>
+          <h4>Automated blog posts, with guardrails.</h4>
+          <p>Claude Code running on a server. Three posts a day. Direction + skill files. ~300 posts per site. Has to add value to humans, not just stuff keywords.</p>
+        </div>
+      </div>
+
+      <aside class="notes">
+        Ian want outcome have you seen from your PEO efforts?
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 13 · Topic 02 · The school case study                  -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div style="text-align: center;">
+        <h1 style="font-size: 124px; font-weight: 300; letter-spacing: -0.025em; line-height: 1.0; margin-bottom: 40px;">
+          Thank you, <em>Ian.</em>
+        </h1>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 20px; letter-spacing: 0.04em; margin: 0;">
+          ian@ianpk.com
+        </p>
+      </div>
+
+      <aside class="notes">
+        you can build a flywheel today that runs while you sleep, and Google itself is going to favor it.
+
+        All right, Ian, I really appreciate you coming on stage. Guys, before we move to the fireside chat, drop in the chat what your favorite nugget was. Also, not allowed to say his hair in this case. Thanks, Ian. Thanks for being you. Its been a privilege collaborating with you over the past couple years.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 14 · Fireside · jobs question                          -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div style="font-size: 112px; line-height: 1; margin-bottom: 28px;">🔥</div>
+      <div class="eyebrow">Fireside</div>
+      <h2>Is AI going to <span class="highlight">take your job</span>?</h2>
+
+      <aside class="notes">
+        Justin's transition: "Alright, we've gone deep into the weeds. Alec walked us through the unlock. Ian showed us what's about to change about search. Now let's zoom out. Both of you back on stage. First question — and this is the one everyone's afraid to ask out loud: Is AI gonna take everyone's job?"
+        Time-box: 1-2 min per speaker. No more.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 15 · Rapid Three · Question 1                          -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">Rapid Three · 01 / 03</div>
+      <h2>What's the one AI workflow<br>you <span class="highlight">actually</span> use every week?</h2>
+
+      <aside class="notes">
+        Before we get into the giveaway everyone's super excited about, we're going to do a quick rapid-fire round. You guys have something actionable to walk away with. Let's keep it to about 30 seconds per answer max.
+
+        30 seconds each. All three operators answer in turn.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 16 · Rapid Three · Question 2                          -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">Rapid Three · 02 / 03</div>
+      <h2 style="font-size: 60px;">What's 1 tool you hyped your team on and <span class="highlight">now never use</span>, and 1 tool you thought was basic but <span class="highlight">now use religiously</span>?</h2>
+
+      <aside class="notes">
+        Vulnerability beat. Each operator answers in 30 seconds.
+
+        Alec wants to be funny here. Ian's answer is the opposite — he uses Claude Code constantly. Could be a quick back-and-forth.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 17 · Rapid Three · Question 3                          -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">Rapid Three · 03 / 03</div>
+      <h2 style="font-size: 64px;">What's 1 piece of advice you would give to someone who is new to AI but wants to become more <span class="highlight">proficient</span>?</h2>
+
+      <aside class="notes">
+        Direct gift to the median attendee in the room.
+
+        Bonus question for Alec at the end: "This is a tough one, Alec. What is the best surf break in Southern California?"
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE 16 · Bonus offer + connection cards                    -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="eyebrow">Stay to the end</div>
+      <h2>Everyone here gets <span class="highlight">30 minutes</span><br>with one of us. You pick.</h2>
+
+      <p style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 26px; line-height: 1.4; max-width: 920px; opacity: 0.9; margin-top: 8px;">
+        Self select one operator who you want to meet with for a free consultation. No upsells. Just vibes.
+      </p>
+
+      <div class="connect-row">
+        <div class="connect-card">
+          <div class="headshot">
+            <img src="/ai4ntp-preview/type/sessions/001/images/justin-novak.jpg" alt="Justin Novak" style="object-position: center 28%;">
+          </div>
+          <div class="name">Justin Novak</div>
+          <div class="who">Host</div>
+          <div class="email">Justin@tminusstudios.com</div>
+          <a class="book" href="https://ai4ntp.com/calendar" target="_blank" rel="noopener">Book →</a>
+        </div>
+        <div class="connect-card">
+          <div class="headshot">
+            <img src="/ai4ntp-preview/type/sessions/001/images/alec-saluga.jpg" alt="Alec Saluga" style="object-position: center 22%;">
+          </div>
+          <div class="name">Alec Saluga</div>
+          <div class="who">Guest</div>
+          <div class="email">alec@workwithaero.com</div>
+          <a class="book" href="https://api.leadconnectorhq.com/widget/bookings/calendar-11-64KJk" target="_blank" rel="noopener">Book →</a>
+        </div>
+        <div class="connect-card">
+          <div class="headshot">
+            <img src="/ai4ntp-preview/type/sessions/001/images/ian-kilpatrick.jpg" alt="Ian Kilpatrick" style="object-position: center 25%;">
+          </div>
+          <div class="name">Ian Kilpatrick</div>
+          <div class="who">Guest</div>
+          <div class="email">ian@ianpk.com</div>
+          <a class="book" href="https://calendly.com/ian-bsauce/30min-with-ianpk" target="_blank" rel="noopener">Book →</a>
+        </div>
+      </div>
+
+      <aside class="notes">
+        Before we move to the Q&amp;A, as a gift to you guys all, for taking the time out of your day, we want to give you all an opportunity for a complimentary consultation where we can have a virtual coffee to connect. No strings attached. We'll leave all of our contact information for you here. As a refresher, we're going to give Alec and Ian a chance to shoot their shot and pitch themselves on what they can help you with. If you want to get more involved with Ai4ntp at a greater capacity you can reach out to me directly. All right, Ian and Alec, I'll pass it to you guys.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE · Q&A (open mic)                                       -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div style="font-size: 112px; line-height: 1; margin-bottom: 28px;">💬</div>
+      <div class="eyebrow">Open mic · 5-10 minutes</div>
+      <h2>Q<em>&amp;</em>A.</h2>
+      <p style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 28px; line-height: 1.4; opacity: 0.85; margin-top: 16px; max-width: 880px;">
+        Drop your questions in the chat. We'll get to as many as we can before we wrap.
+      </p>
+
+      <aside class="notes">
+        Pull questions from the chat. Distribute across all three operators based on topic relevance. Hard out at 5-10 min — don't let it drag, then transition to the sign-off.
+      </aside>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SLIDE · Sign-off                                             -->
+    <!-- ============================================================ -->
+    <section data-background-color="#F4F1EA">
+      <div class="signoff">
+        <div class="signoff-line">
+          We're the <span class="highlight">translators</span>,<br>not the oracles.
+        </div>
+        <div class="brand-mark">ai<span class="four">4</span>ntp</div>
+        <p style="margin-top: 32px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.55;">
+          ai4ntp.com · Session 002 coming soon
+        </p>
+      </div>
+
+      <aside class="notes">
+        "Translators, not oracles" — per audience brief, this line is required, prominent, exactly once. This is it.
+        Thank the room by name where possible. Tease Session 002. Drop calendar links one more time in chat.
+        Closing line: "Book your 30 with one of us. See you next time."
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  // Inject ai4ntp watermark into every slide except the first and last.
+  (function () {
+    const sections = document.querySelectorAll('.reveal .slides > section');
+    sections.forEach((section, idx) => {
+      if (idx === 0 || idx === sections.length - 1) return;
+      const watermark = document.createElement('div');
+      watermark.className = 'slide-watermark';
+      watermark.innerHTML = 'ai<span class="four">4</span>ntp';
+      section.appendChild(watermark);
+    });
+  })();
+
+  Reveal.initialize({
+    width: 1600,
+    height: 1000,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2.0,
+    center: true,
+    transition: 'fade',
+    backgroundTransition: 'fade',
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    history: true,
+    keyboard: true,
+    overview: true,
+    touch: true,
+    plugins: [RevealNotes]
+  });
+</script>
+
+</body>
+</html>

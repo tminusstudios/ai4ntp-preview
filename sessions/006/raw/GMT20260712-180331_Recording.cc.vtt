@@ -1,0 +1,1385 @@
+WEBVTT
+
+00:00:15.000 --> 00:00:25.000
+You've signed up for this session, so we'll give everyone just a moment until the room fills up. While you're getting settled, do me a favor and just drop in the chat
+
+00:00:25.000 --> 00:00:31.000
+What's one job in your business you wish you never had to do again?
+
+00:00:31.000 --> 00:00:38.000
+What is the one job in your business you wish you never had to do again? Just hold on to that.
+
+00:00:38.000 --> 00:00:39.000
+Type in the chat
+
+00:00:39.000 --> 00:00:54.000
+We'll loop back to it later. This will matter for later. So I encourage you all to drop that in the chat. All right, guys. So welcome to session 6 of AI for Ntp. That's AI for non techie people. If you're new here, our whole thing is fairly simple
+
+00:00:54.000 --> 00:01:03.000
+We're real operators. We all run our own businesses and we show you on these sessions weekly how to build with AI
+
+00:01:03.000 --> 00:01:07.000
+There's no
+
+00:01:07.000 --> 00:01:14.000
+theory, there's no gatekeep, you guys have a question. Everything we show you, we say, you can go and build yourself.
+
+00:01:14.000 --> 00:01:30.000
+But here's our promise for the next hour. We run our company on AI agents, not chat bots you type into actual agents doing real work every day that they never sleep. They never shut off. We'll touch more on what an agent is in just a moment
+
+00:01:30.000 --> 00:01:52.000
+But we're going to open the hood on all seven of them. The ones that save us time, save us money, help us make more money. And for each one that we show you, I'm going to show you two. Alec here is going to show you two and our other partner, Ian is going to show you three and save the best for last. I'm pumped for number 70. So yeah, we're going to show you what it does, why we build it
+
+00:01:52.000 --> 00:02:14.000
+and show you enough that you could go and build your own version of it, or get inspired to do something that's more relevant to your own operations. So one housekeeping note, any questions, just drop them in the chat, and at the end we'll do a Q&A. So guys, again, quick agenda, we'll showcase the 7 agents, how you can collaborate with us, and then a Q&A at the end. Alec, I'm gonna pass it to you here
+
+00:02:14.000 --> 00:02:16.000
+What is an agent?
+
+00:02:16.000 --> 00:02:35.000
+Yeah, thanks, Justin. What is an agent? So for a lot of people, this term is, what does this mean? I see this everywhere. I see people talking about it on Instagram. I see people talking about it on Twitter. But what does it mean? And I'll start out with contrasting how most people are using AI, which is conversational AI
+
+00:02:35.000 --> 00:02:51.000
+You're in your browser using ChatGPT or using Claude, and you're asking it for answers. The difference between that and an agent is instead of asking it for answers, you're asking it for outcomes. You're asking it to take action on your behalf. It's hooked up to tools. It's hooked up to your emails. It's hooked up
+
+00:02:51.000 --> 00:03:17.000
+to sometimes iPhone is hooked up to all of your different systems and has specific roles and actions that it's taking on your behalf. So you'll see a lot of different definitions about what is an agent, but that's a good way to think about it, is the contrast between conversational AI, which everyone's using, everyone's using ChatGPT, Claude in the browser, and then an agent is something where you're asking it for action and asking it to take action on your behalf
+
+00:03:17.000 --> 00:03:18.000
+Well said.
+
+00:03:18.000 --> 00:03:20.000
+Thanks, Alec. Ian, anything you want to add to that?
+
+00:03:20.000 --> 00:03:24.000
+No, that was perfect.
+
+00:03:24.000 --> 00:03:28.000
+Cool. So guys, who are we? Before we dive in, just
+
+00:03:28.000 --> 00:03:45.000
+few moments on who you're talking to, so you can know why, you can trust what you're about to see. I'm Justin, I sold my first company out of my college dorm room. We, were at the right place at the right time, and it took off, and then the past decade, I've spent in growth
+
+00:03:45.000 --> 00:04:06.000
+Go to market, building agents automations, and really helping a lot of companies grow through these technologies we're going to be sharing today. So everything I'm about to show you, I build and run inside of AI for NTP and for our clients. Ian has been building
+
+00:04:06.000 --> 00:04:07.000
+Yeah.
+
+00:04:07.000 --> 00:04:18.000
+you know a lot of software for decades now, huh? He's a very decorated entrepreneur, runs a global business, he's worked with public companies, won a lot of awards, built across just about every industry you can name
+
+00:04:18.000 --> 00:04:34.000
+And he also has a fleet of agents that run his businesses every day, day in and day out. He'll showcase those here soon. Alec here, he, was working inside a really, really big company and he quit and they then hired him back
+
+00:04:34.000 --> 00:05:03.000
+to do consulting and build all their agents. And now he's, I think, tripled or quadrupled his income within the first 30 days of quitting that job and going off on his own here and starting this consultancy building agent.
+
+00:05:03.000 --> 00:05:04.000
+Yes
+
+00:05:04.000 --> 00:05:05.000
+Guys, he lives in these tools daily. Anyways, that's the three of us. We do this for a living, and now we're gonna show you… show you how we do it. So, who wants to kick us off? Eve, do you wanna… do you wanna go first, or… Alex, do you want to go first?
+
+00:05:05.000 --> 00:05:20.000
+Yes. So before I show you the tool, let me just give a little backstory. So I have a Mac Studio. I got caught in that craze, and I'm glad I did. Mac Studio and a Mac Mini on my Mac Studio, I have an open claw named Atlas
+
+00:05:20.000 --> 00:05:26.000
+And I call him the king, because he kind of controls all my other open claws and manages them
+
+00:05:26.000 --> 00:05:43.000
+And Justin and I, a few months ago, did a call with an SEO expert who's getting paid tens of thousands a month and ended up selling his company for a lot. And on that call, he showed us this tool that does SEO for AI. It's called AEOGEO. There's a lot of acronyms, but
+
+00:05:43.000 --> 00:05:54.000
+Basically, how to be found by AI. He showed us this tool he was using and gave us some ideas, and after the call, I went to Atlas on the Mac Studio, and I said, hey, can you build this? And
+
+00:05:54.000 --> 00:06:09.000
+And he said, yeah. I said, let's do it. So we did took about a week of a lot of back and forth and we built this tool on the Mac Studio called Pulse Check. I could plug in all my websites, all my projects, my properties
+
+00:06:09.000 --> 00:06:16.000
+And see how the… if they're being mentioned by LLMs, and how they were being mentioned. And then also how I could
+
+00:06:16.000 --> 00:06:32.000
+be found a lot better and easier on LLMs. And then Justin and I were talking a few weeks after that, and he said, you know, other people will probably find this useful. I said, you're probably right. So I went to Atlas again and said, should we turn this public facing? Should we let other people use this? He says, hell yeah
+
+00:06:32.000 --> 00:06:38.000
+And so we turned it into echocheck.app, and I'll show you that real quick
+
+00:06:38.000 --> 00:06:41.000
+Oh, I need to send a request
+
+00:06:41.000 --> 00:06:42.000
+You're good
+
+00:06:42.000 --> 00:06:43.000
+All right.
+
+00:06:43.000 --> 00:07:02.000
+I think it's funny, guys, for anyone in the audience here, that's the difference between agents and conversational AI is that you literally hear Ian referring to Atlas as if it's a person because it can take action as if it is one. So that's another key difference and a key way to think about what an agent is.
+
+00:07:02.000 --> 00:07:17.000
+That's true, that's true. I actually like that. I like treating it like a person. I know it's not. I know it's software in a box somewhere in the world, but when you do treat it like a person, it's trained to work with humans, and so it actually can react to you and respond to you that way much better
+
+00:07:17.000 --> 00:07:21.000
+So because of that, I can brainstorm
+
+00:07:21.000 --> 00:07:31.000
+with it, and I did on this tool, so this is Echo check. It was basically a tool built, like I said, for myself, and then I turned it outward so that people could figure out
+
+00:07:31.000 --> 00:07:42.000
+If AI is recommending you and why it doesn't. And right on the front page here, you can plug in your website. I'll do AI for ntp.com and you can run a free check on it
+
+00:07:42.000 --> 00:07:58.000
+And see how your site's doing. This one's doing actually really well, 70. Good job, Justin. So it tells you just a quick, well, pretty robust output here, page speed on mobile needs to be better. AI crawl access
+
+00:07:58.000 --> 00:08:16.000
+is really good, so that's great. We need better FAQs. It looks like we have a lot of video content. Looks like AI can't find it well. Doesn't have that schema in there, so we need to update that. So you can get a quick readout on it. I actually didn't know how it worked when we built it. I was like, I don't know, this is black magic to me.
+
+00:08:16.000 --> 00:08:31.000
+And so I started talking to Atlas and saying, hey, how does this work? What are the actual mechanisms? And he started telling me, and then we started brainstorming on other ways we could do this. So this tool actually has things that other tools don't, and I'll show you the inside the hood here
+
+00:08:31.000 --> 00:08:35.000
+That can actually help you
+
+00:08:35.000 --> 00:08:42.000
+help you, like, better your sites, better your visibility in AI
+
+00:08:42.000 --> 00:08:58.000
+So as you can see, I'm still at F. I have a 27 echo score. But when I started out, once this loads, I was at 0. Oh, no, 8. Looks like 8 over here. And then I've started implementing some of the things that it was telling me, and I bump up my score quite a bit
+
+00:08:58.000 --> 00:09:11.000
+And the proof is in the pudding. I'll show you what this has turned into. But from this, you can actually see everything about your site, how it's being viewed by AI. You can give it prompts
+
+00:09:11.000 --> 00:09:26.000
+Like, what should I use for branded merchandise for my business, which is directly our question for Brand Sauce. How do I set up an online swag store, a company swag store? So you can give it prompts like this so it can go find if AI is talking about you
+
+00:09:26.000 --> 00:09:45.000
+You can see if you're mentioned by AI. We are not cited yet, but we are mentioned. You can see all your competition, and this is like literally all of our competitors for Brand Sauce. I didn't realize there were this many, my goodness. You can also see how LLMs see your site. So they don't see images, they don't see JavaScript
+
+00:09:45.000 --> 00:10:01.000
+They see schema markup and text. So it's kind of like a matrix style view of what your site looks like. And this is actually pretty robust here as well. And as I started implementing this plus programmatic SEO, that was another suggestion from Echo Check
+
+00:10:01.000 --> 00:10:13.000
+I'll show you that this is our Google search console. So this, Google goes out and finds pages that it can read and actually ingest into its search algorithm
+
+00:10:13.000 --> 00:10:23.000
+And you have to kind of prompt it with these things, and it has to know what to know about your company. So before March, or before May, we were… we had like
+
+00:10:23.000 --> 00:10:37.000
+26 indexed pages, 24 or 20, very little, right? So Google's like, they're a small company. I started implementing these things. Gray means it's seen by Google, but not ingested into its algorithm yet.
+
+00:10:37.000 --> 00:10:49.000
+Green means it actually is. So we started getting, what, 2,000, 7,000. Now we're all the way over to 14,530 pages that Google knows about us and will deliver to people who are searching for this stuff
+
+00:10:49.000 --> 00:10:52.000
+And and this is our
+
+00:10:52.000 --> 00:11:08.000
+Our traffic… I'm not sure what happened here in the Dark Ages, I think it wasn't tracking it, but you can see before, in April, we were getting very little traffic, and now we're over to, like, this page was 670, or this… this day, it was 671 visitors. Let me refresh real quick and see what
+
+00:11:08.000 --> 00:11:23.000
+So today, Sunday, 108 visitors already, which is twice as many as we were getting our big days back here. So this is the proof that this AEOGEO SEO stuff works. Now, really quick, I want to touch on, so AEO is Answer Engine Optimization
+
+00:11:23.000 --> 00:11:28.000
+That's it. You put FAQs on your site and AI will
+
+00:11:28.000 --> 00:11:43.000
+Well, look for those questions that their humans are asking and know what to answer them, so that's really good for AI to find you. GEO is generative engine optimization. That is, if you search in Google, you'll see that AI summary at the top
+
+00:11:43.000 --> 00:11:56.000
+That says, here's what we found based on your question. That's GEO, so it actually is a part of SEO. I know there's a lot of terms, but GEO is really good for search. That's why our search has gone up quite a bit
+
+00:11:56.000 --> 00:12:13.000
+And so has our AI traffic. So a few months ago, we were getting zero demos on BrandSauce from ChatGPT or Claude or Perplexity. And just about a month, month and a half ago, we had five demos booked in a week. In fact, it was all the demos that week, and they all found us through
+
+00:12:13.000 --> 00:12:27.000
+ChatGPT, and they all became clients. So, I was actually shocked at how fast and how well this stuff worked, and it was all thanks to my very first, honestly, it was a dare to my Atlas King
+
+00:12:27.000 --> 00:12:39.000
+To put this thing together. So, check it out, review your site, let me know what you find, tell me, tell me when you have big wins, show me your traffic and all that stuff. I'm excited to hear about it.
+
+00:12:39.000 --> 00:12:40.000
+That's
+
+00:12:40.000 --> 00:12:41.000
+Back to you.
+
+00:12:41.000 --> 00:12:45.000
+That's very cool that, you know, you
+
+00:12:45.000 --> 00:12:48.000
+We had a conversation with this expert
+
+00:12:48.000 --> 00:13:07.000
+You took notes, gave it to your agent, and then built more agents that now enable Brand Sauce to get visibility across the entire internet. And not only is it eyeballs and visibility, but it's also translating into real revenue
+
+00:13:07.000 --> 00:13:08.000
+Yeah.
+
+00:13:08.000 --> 00:13:09.000
+For your organization. So super well done.
+
+00:13:09.000 --> 00:13:10.000
+Yeah. And
+
+00:13:10.000 --> 00:13:24.000
+Yeah, very well done. I'll throw in one point on the relevancy of this for everyone in the group and the opportunity here is that everyone across this audience has looked for a service or a product in ChatGPT
+
+00:13:24.000 --> 00:13:39.000
+And rewind a few years, that wasn't a thing. You were you were looking at Google, you'd look up, hey, a roofer near me. You're going to ask ChatGPT now. So what Ian's built is enabling you to show up and be the… be basically ChatGPT's choice of recommendation
+
+00:13:39.000 --> 00:14:02.000
+So I think for everyone in the audience, you can see the value of optimizing for AEO. GEO, I'd say if you're already, you know, you have a company, you're working in marketing, it's very advantageous to start taking efforts to, you know, increase your visibility if you're somebody that's, you know, maybe an entrepreneur and looking for something to do, helping companies implement these things
+
+00:14:02.000 --> 00:14:14.000
+is something that's… it's a brand new category. It's something that didn't exist a couple years ago. So the opportunity is absolutely there. So I'd say it's highly relevant and a very big opportunity right now for everyone.
+
+00:14:14.000 --> 00:14:17.000
+Yeah, 100%.
+
+00:14:17.000 --> 00:14:20.000
+All right, who's next?
+
+00:14:20.000 --> 00:14:21.000
+Do it.
+
+00:14:21.000 --> 00:14:31.000
+All right, guys, I'll jump in next. I've got a fine line. I'll do my best to breeze through this. We've got six more to share, 5 more after this one. So are you guys seeing this Figma file here?
+
+00:14:31.000 --> 00:14:32.000
+Yep.
+
+00:14:32.000 --> 00:14:33.000
+Yes.
+
+00:14:33.000 --> 00:14:34.000
+Yeah, cool.
+
+00:14:34.000 --> 00:14:35.000
+I see my face down there. So I'm laughing at. No.
+
+00:14:35.000 --> 00:14:39.000
+Are you nervous?
+
+00:14:39.000 --> 00:14:42.000
+Thankfully, I blurred out your number, E, so you don't get…
+
+00:14:42.000 --> 00:14:44.000
+Thank you.
+
+00:14:44.000 --> 00:14:48.000
+our viewership.
+
+00:14:48.000 --> 00:14:55.000
+So guys, the big idea here really is how I build a month's worth of content
+
+00:14:55.000 --> 00:15:10.000
+Which I'll break down for you in just a moment. In one day of work. Thanks to many agents. So anytime you see this emoji here, that is an agent at work, or sometimes it is multiple agents at work. Now
+
+00:15:10.000 --> 00:15:31.000
+Guys, this is the whole system. So don't worry about the details yet. I'll walk you through each piece, like I said, but this is what a month's worth of content actually looks like, right? If we look at our Instagram page, it's all on brand and our tone of voice. If you look at our YouTube, same thing. We have shorts, we have these long form videos. If you look at our
+
+00:15:31.000 --> 00:15:47.000
+newsletter. It's all brand, our tone of voice. And so, this is very time consuming. All of you guys in the crowd, I'm sure, have created content before at some point, whether that's a LinkedIn post, a tweet, a video, building a webpage
+
+00:15:47.000 --> 00:16:04.000
+It's really, really time-consuming. And if you outsource it, it's… it's rather expensive. To get the output I'm about to show you, I would need a team of probably three, four junior marketers, and each one runs call it 60 grand a year minimum
+
+00:16:04.000 --> 00:16:13.000
+So that's north of $200,000 in headcount for what one day of my time in a set of agents now produces.
+
+00:16:13.000 --> 00:16:26.000
+And second, this is the bigger one from my point of view. The moment you hand your content to an agency, an assistant, an outside vendor, or someone brand new to the team, you risk losing your brand voice
+
+00:16:26.000 --> 00:16:41.000
+And I was a founder, or if you're VP of marketing, your content is how you represent yourself at scale. So it's the face of the internet. It's, you know, it's often the first touchpoint that a prospect ever has of you. So.
+
+00:16:41.000 --> 00:16:58.000
+It's very important. It sounds like you, it looks like you, your voice, tone, colors, and so this process is very dear to me. I've been working in the space for a very long time. But anyways, guys, here's the solution, and here's the one thing I want you to take away before I walk through this flow
+
+00:16:58.000 --> 00:17:14.000
+This is not one big agent. It's a chain of specialized agents, each one built for a single step. And so let me show you how this kicks off. We have our phone call with our partners. So me, Ian, and Alec jump on a phone call
+
+00:17:14.000 --> 00:17:21.000
+And we talk about what our next show should be. We usually riff for what, guys, 30, 45 minutes, maybe an hour.
+
+00:17:21.000 --> 00:17:22.000
+About that
+
+00:17:22.000 --> 00:17:24.000
+30 at least.
+
+00:17:24.000 --> 00:17:25.000
+Yeah, 30 leads.
+
+00:17:25.000 --> 00:17:26.000
+Yeah.
+
+00:17:26.000 --> 00:17:44.000
+This session, we said we want to show off our 7 agents we built, give tons of value, and show people what's possible with AI. So it starts there, and we record the transcript, and I have an agent that turns that transcript into a landing page. So I'm sure you guys all saw our landing page at some point when you signed up for this
+
+00:17:44.000 --> 00:17:55.000
+And that then creates an Eventbrite Zoom page, a newsletter, an Instagram post
+
+00:17:55.000 --> 00:18:08.000
+And then we market it. So that's all over the internet being distributed across all these different channels to get you guys in the room. That's how you guys are here right now from this agent distribution platform that we built
+
+00:18:08.000 --> 00:18:15.000
+So guys, we do keep a human in the loop for quality control
+
+00:18:15.000 --> 00:18:31.000
+Because I don't want to sound slop. We don't want to represent our brand that way, so it is important to have certain guardrails in place with your agents and have some human intervention. I'm not trying to completely replace myself, just the cumbersome stuff that's super time consuming. But the agent does the heavy lifting to get the right people in these rooms
+
+00:18:31.000 --> 00:18:47.000
+Okay, so we're spending an hour together now, right? And it becomes an hour of content. And the mistake most people make is they let that hour vanish into the void. We don't. We put it straight to YouTube and we have an agent that optimizes the headline
+
+00:18:47.000 --> 00:18:56.000
+The image, the description, all of this is very good so that you start ranking better and getting more views on YouTube, and it lives there forever.
+
+00:18:56.000 --> 00:19:05.000
+And then we take that transcript from the YouTube and we post it to the website, and the website is then re-optimized for
+
+00:19:05.000 --> 00:19:13.000
+Back to Ian's first agent ranking in ChatGPT and perplexity and Claude and all these LLMs you rank better there and Google
+
+00:19:13.000 --> 00:19:30.000
+And also, there's an agent that turns all of the 60 minute YouTube session into a bunch of shorts, right guys? So if you go to our YouTube and check out the shorts, these are all AI generated with a little bit of human intervention. Guys, if I did this without AI tooling and agents
+
+00:19:30.000 --> 00:19:35.000
+It would take days just to create a handful of shorts
+
+00:19:35.000 --> 00:19:37.000
+I can imagine
+
+00:19:37.000 --> 00:19:58.000
+Yeah, it's just a lot of work. But to win in this day and age, you have to be everywhere all at once. That's how you collapse time. Like you could take five years, 10 years to build a successful business, but if you want to do it in three months or six months, you have to have so much output across every channel to get all the eyeballs of your target persona on you.
+
+00:19:58.000 --> 00:20:19.000
+So guys, this turns into shorts. It turns into landing pages. The landing pages. So every tool we talk about then goes to a tolls page. So we have a tools directory on our site. And then that creates three more or four more or five more specific toll pages that are all AEO, GEO, SEO optimized for large language models
+
+00:20:19.000 --> 00:20:24.000
+And then that creates social posts on Instagram.
+
+00:20:24.000 --> 00:20:27.000
+And last but not least
+
+00:20:27.000 --> 00:20:33.000
+You guys get your webinar newsletter follow-up.
+
+00:20:33.000 --> 00:20:39.000
+So the big idea, guys, if we really step back and look at this whole board, is that
+
+00:20:39.000 --> 00:20:49.000
+Page creation, distribution, YouTube, YouTube Shorts, landing pages, tools, Instagram, each one of these has its own agent. It's not one big giant
+
+00:20:49.000 --> 00:21:04.000
+bot that does everything. It's a team of specialists I've iteratively built over time, each one doing one job very, very well. So it takes one day and it runs all month for us compounding while we sleep. That's really the power of agents
+
+00:21:04.000 --> 00:21:09.000
+Is doing the heavy lifting for you
+
+00:21:09.000 --> 00:21:28.000
+I love it. I think it's awesome. And one thing I'll note for anybody in the crowd is conceptually, you know what we're doing is we're taking existing content, things that are already happening, our conversations are these presentations that we're doing here, and it's repurposing it and creating more output for us
+
+00:21:28.000 --> 00:21:47.000
+So that might look different for everybody. I think at this point, most people are recording their meetings. So what could happen is, hey, we have an agent set up that looks at your meetings and it turns them into LinkedIn posts because you're trying to grow your social media. So conceptually, you know, it's taking existing content and stuff that's already there and
+
+00:21:47.000 --> 00:22:03.000
+pushing it out further. So I think it's really applicable to everyone. It just takes the kind of little bit of upfront work, and then it just runs. So, shout out to Justin for building that out and putting in that work upfront, and now, you know, we're all reaping the rewards of those systems
+
+00:22:03.000 --> 00:22:18.000
+Yeah. In fact, we have an agent in the chat right now, Bubbles notetaker for Dr. Thiessen, who's actually recording this for them. So another example of agents. But I think the important part about what you just showed, Justin, is that it started with a phone call between humans
+
+00:22:18.000 --> 00:22:30.000
+about talking about what to add, how to add value, what to bring to the table to educate and show people what's possible, and then the agents take it. So the agents aren't creating stuff, it's taking what we
+
+00:22:30.000 --> 00:22:37.000
+We find valuable, and what we think would be valuable to other people, and amplifying that, which is really the prime use for AI
+
+00:22:37.000 --> 00:22:53.000
+Yeah, absolutely. And the other thing that that prevents too is AI slop. It's getting our actual conversation and transcript. So there's no room for hallucinations. It has a whole hour of content to then build other content from rather than trying to fill in the blanks
+
+00:22:53.000 --> 00:22:54.000
+Yeah.
+
+00:22:54.000 --> 00:23:03.000
+So having a really robust input that you're giving to your agents, a transcript's a great way to go. And so, guys, if you're doing any type of
+
+00:23:03.000 --> 00:23:06.000
+content, think about how you can
+
+00:23:06.000 --> 00:23:23.000
+Compound it and leverage it further. So, one basic example of that is instead of just making a post on Instagram or LinkedIn, have an omnichannel distribution to post it to 10, 15 channels so that one piece of content turns into 15 pieces of content and gets more eyeballs, so
+
+00:23:23.000 --> 00:23:38.000
+It's just a no-brainer in this day and age. Alec, before I pass the baton to you, I'm excited to see agent number three here. I know you've been cooking. You gave us a little sneak preview yesterday, but guys, you can drop any questions in the Q&A. It looks like, the comment section may be turned off, so
+
+00:23:38.000 --> 00:23:41.000
+Feel free to drop any questions you have
+
+00:23:41.000 --> 00:23:42.000
+Oh, there we go
+
+00:23:42.000 --> 00:23:43.000
+It's turned on now
+
+00:23:43.000 --> 00:23:45.000
+Yes, there will be a replay. Absolutely.
+
+00:23:45.000 --> 00:23:47.000
+Yeah.
+
+00:23:47.000 --> 00:23:48.000
+Yeah, you can find all these
+
+00:23:48.000 --> 00:23:49.000
+All handled by agent that'll be sent out to you by one of the agents just today.
+
+00:23:49.000 --> 00:23:52.000
+That's right.
+
+00:23:52.000 --> 00:23:54.000
+We gotcha, we got you.
+
+00:23:54.000 --> 00:24:17.000
+Cool. Well, I'll jump into agent number three here. My Miro board doesn't look quite as good as Justin's Figma, but we will roll with it. And one quick extra piece of value for you guys, I was building this last second I was like, hey, we could use a little extra visuals to kind of articulate my point here. And so I went over to Higgsfield and I dropped a quick prompt
+
+00:24:17.000 --> 00:24:33.000
+into here, and it built out this little graphic for me. So that applies to pretty much everybody. Everybody at some point is making some sort of presentation or some sort of document where you could use some visuals to get a point across. And literally, it was 5 minutes before we jumped on, I was like, we could add something. So I went into Higgs field
+
+00:24:33.000 --> 00:24:50.000
+I gave it a prompt, and here we are. So, quick little added piece. It's not necessarily Agentic, but just a little piece of value for you guys. So, AI agent and iMessage. There's a couple core things here, one being the iMessage piece. And what's important about that is whenever you get a green text.
+
+00:24:50.000 --> 00:25:08.000
+A lot of times your initial perception is that, hey, this is scammy, this is automated, it's probably somebody trying to steal my Social Security card. With Blue iPhone, that indicates human. Everybody assumes, hey, that's an actual person that's texting me
+
+00:25:08.000 --> 00:25:23.000
+So that's one of the elements of this. And then the other piece with the AI agent is that again, taking action on your behalf, doing something that either wouldn't have been able to do before, or something that would have taken up your time. This is all now going to be able to happen automatically.
+
+00:25:23.000 --> 00:25:36.000
+So this specific use case, I have a business where we get paid per appointment. So we generate leads and we turn those leads into appointments and we get paid when they show up. So
+
+00:25:36.000 --> 00:25:52.000
+what happens oftentimes is people will opt in, but they won't necessarily book an appointment. So we, our team internally needs to be able to get them on the calendar and get them booked, and get them to show up. So what we have is an AI appointment setter using iMessage. So what that looks like is, once we get that trigger
+
+00:25:52.000 --> 00:26:10.000
+that somebody hasn't booked. We then send out some automated texts, and then as that goes through, we have some tools attached as well to send out emails and send out the links. And I have a kind of real-life example of what this could look like, because there are truly a lot of different use cases
+
+00:26:10.000 --> 00:26:38.000
+for an AI agent that's hooked up to iMessage here. So I'll give you a quick run through of something that could be used for. This isn't my exact use case, but it's absolutely something that's very possible to build out. So say you're a auto tinting company, and you're running ads, and instead of your team having to take all these calls all day, you could have an SMS agent or iMessage agent handle a lot of these things. You could hook it up with estimating tools. So I'm going to run through
+
+00:26:38.000 --> 00:26:46.000
+Basically, what would happen is once somebody opts in, they get two texts automatically. And we're asking those questions that are
+
+00:26:46.000 --> 00:26:52.000
+That factor into pricing. So what kind of vehicle do you have?
+
+00:26:52.000 --> 00:27:07.000
+and then it goes through. We have a little bit of a delay here to make it look more human. All of this can be tweaked very easily. So just the we'll go full car
+
+00:27:07.000 --> 00:27:22.000
+And I'll just continue to run you guys through what this example might look like and just a use case, but there's a lot of different ways we can get creative with this. So I have a list here built out of, hey, what can we use these types of agents for
+
+00:27:22.000 --> 00:27:39.000
+We could use it for following up on unsigned contracts. Everyone here at some point has chased somebody for, hey, have you filled this document out? We need it back. We could re-engage cold leads. If you have a CRM full of leads from a year ago that never ended up moving forward, we could send text out and say, Hey
+
+00:27:39.000 --> 00:28:06.000
+We haven't heard from you in a while. You know, do you need this whatever service you offer and start a conversation going, and you could have it prompted to handle responses correctly. So you can see here, we have this all prompted to lay out the options. We'll go ceramic
+
+00:28:06.000 --> 00:28:08.000
+Okay.
+
+00:28:08.000 --> 00:28:09.000
+Yeah, yeah.
+
+00:28:09.000 --> 00:28:13.000
+Karis said ceramic.
+
+00:28:13.000 --> 00:28:14.000
+Let's book
+
+00:28:14.000 --> 00:28:29.000
+Okay, so I think you guys get the point with this, but basically what we could do is we can handle the whole customer journey instead of, you know, we have a little error there, but instead of a person having to handle these texts and handle these calls, we're having an agent do it. And again, this is a good example of
+
+00:28:29.000 --> 00:28:45.000
+Hey, you see this one didn't work correctly for this demo. Obviously, we don't have this in production and would have would have bulletproofed this before actually pushing anything live. But all these things are very changeable. We need to change it to be able to handle responses when it doesn't fit correctly into its format.
+
+00:28:45.000 --> 00:29:08.000
+So that just all goes to show you these agents can handle tasks that somebody would have had to do, or maybe somebody just wouldn't have done it. Like in the example of reactivating a database, you know, that's work that everybody knows could yield results, but takes, you know, a fair amount of effort. So now having agents handle this instead of us, we can do more than we would have been able to in the past
+
+00:29:08.000 --> 00:29:31.000
+So, that's an example of SMS iMessage and AI agents. We have these operating within our business, booking appointments. And like I said, with our business model, we get paid per appointment. So when we can have an agent handling that one, it saves us money because we don't have to have a person do it. And two, we can monetize further because we can get more appointments booked.
+
+00:29:31.000 --> 00:29:43.000
+That's great. Alec, you are so good at bringing like these little practical things like that blue. I actually didn't know that.
+
+00:29:43.000 --> 00:29:44.000
+Yeah.
+
+00:29:44.000 --> 00:29:45.000
+And that's so helpful, you know, knowing that it's like, oh, that equals human, that equals robot scam. That alone is, like, is gold, but then also showing the practical
+
+00:29:45.000 --> 00:30:15.000
+Yeah, 100%. I don't have the stats on open rates and reply rates on blue messages versus green messages, but it is substantially higher reply rate when you're sending iMessage because it's not something where you're not typically getting those automated messages. You know, we all get messages from restaurants
+
+00:30:16.000 --> 00:30:17.000
+Right.
+
+00:30:17.000 --> 00:30:24.000
+You know, whoever that we opted in for in the past, it's like, hey, we're running this special right now, like, come in for 10% off, and it's always a green text. Like, you see those, and you just kind of immediately ignore it, because you know it's automated. But, generally speaking, you don't get those kind of text messages from iPhones. So.
+
+00:30:24.000 --> 00:30:25.000
+Right.
+
+00:30:25.000 --> 00:30:32.000
+You know, we've been able to build out systems to where we can have it send BlueText, and yeah, the reply rates are much improved
+
+00:30:32.000 --> 00:30:33.000
+Right
+
+00:30:33.000 --> 00:30:38.000
+I mean, just looking at those two alone, I'm having a reaction to each side. That's UX, you know, like, oh yeah, it's true. I mean, I feel it in here, you know?
+
+00:30:38.000 --> 00:30:40.000
+100%.
+
+00:30:40.000 --> 00:30:41.000
+So good.
+
+00:30:41.000 --> 00:30:42.000
+Yeah, like
+
+00:30:42.000 --> 00:30:55.000
+I've seen you build these a lot of the agent builds you've done for even industries beyond automotive, right? And so anyone who requires instant lead follow up and nurture
+
+00:30:55.000 --> 00:31:20.000
+could have a massive benefit from a process like this because the speed to lead is very important. If someone submits a form, right guys, we're trying to get in touch with a doctor or an appointment, whatever it is, we just want a response immediately. And if we don't get that response, we're going to go then search for another solution or another vendor. So this is a massive
+
+00:31:20.000 --> 00:31:37.000
+way to not only increase operational efficiency, you don't need an assistant there all day following up with people, but also it's a revenue driver. It's a key revenue driver, an opportunity to, really capture every lead and convert them right away
+
+00:31:37.000 --> 00:31:40.000
+In a hands-off manner, so
+
+00:31:40.000 --> 00:31:41.000
+Yeah.
+
+00:31:41.000 --> 00:31:57.000
+Yeah, that's a great point, Justin, and something I should have brought up is that, yeah, especially when you're dealing with cold traffic, the faster you can engage somebody, the more likely you are to actually convert them in the long run. So yeah, that's another added benefit to this is, you know, if you're relying on people
+
+00:31:57.000 --> 00:32:16.000
+And this comes in, you know, maybe they're on their lunch, or maybe they're, you know, it's after normal work hours. Then, you know, that might not get touched for 12 hours, and at that point, somebody might have found somebody else, and booked with somebody else. So, the speed to lead part is definitely another added bonus here. So thanks for bringing that up, Justin.
+
+00:32:16.000 --> 00:32:18.000
+For sure.
+
+00:32:18.000 --> 00:32:20.000
+It's good stuff.
+
+00:32:20.000 --> 00:32:22.000
+E, you want to go next?
+
+00:32:22.000 --> 00:32:24.000
+Sure.
+
+00:32:24.000 --> 00:32:39.000
+Let me share my next one. I'm realizing now that you all have these really cool like workflows and mine are more or less like inspiration, I guess. Like here's what you could do with AI agents, but I'm going to show you another one of those right now.
+
+00:32:39.000 --> 00:32:48.000
+This is, so to set this up, my wife and I started a school, started working on a school last February, so a year and a half ago
+
+00:32:48.000 --> 00:33:09.000
+And we were set to launch last August, almost a year ago, and called Saints Classical. It's a classical tutorial in Middle Tennessee. And so I designed the website, I did the branding for it. I made this whole brand
+
+00:33:09.000 --> 00:33:10.000
+Hmm.
+
+00:33:10.000 --> 00:33:19.000
+brand page here that kind of basically lets us see all the different variations of logos and all that stuff. It was really a lot of fun. It was great, you know, the different use cases for fonts and colors, and it was… it was great. But when it came time to launch
+
+00:33:19.000 --> 00:33:21.000
+She said, we need to
+
+00:33:21.000 --> 00:33:33.000
+we need to have a way for parents and students to log in and see if their student is enrolled and see if they have classes and all that. And then I guess we'll need teachers to
+
+00:33:33.000 --> 00:33:39.000
+You know, log in and enter classes. I was like, wow, okay. So
+
+00:33:39.000 --> 00:33:55.000
+it just kept growing like this, and I realized that what I'm doing is building an LMS, and it's called… that stands for Learning Management System. I didn't… I had never seen one of these, because I graduated before LMSs were a thing. So I just, I basically started
+
+00:33:55.000 --> 00:34:01.000
+Brainstorming with Claude, and then Claude Code, and built the first iteration of the LMS.
+
+00:34:01.000 --> 00:34:10.000
+And then the next year came around. So we launched with 95 students, which was, I thought 60 would be like, oh, huge win. We ended up having 95.
+
+00:34:10.000 --> 00:34:12.000
+And
+
+00:34:12.000 --> 00:34:24.000
+So I thought, okay, we need to up our game this next year. So I actually installed an open claw on the server to help me build the next iteration of the LMS, and here it is.
+
+00:34:24.000 --> 00:34:40.000
+It's quite an improvement. I haven't showed you the first one, but this is quite an improvement from the first one. And again, I didn't know what LMSs should look like or could, so I just built it for how I would want it to be, and brainstorming with my bot named Saint
+
+00:34:40.000 --> 00:34:53.000
+And so this is a teacher view. You can actually go through and see all the… well, first your two… next two weeks of assignments. There are no assignments now, because we're not in session right now, but you can go here and see all the
+
+00:34:53.000 --> 00:35:08.000
+basically everything around a class, you could have all your classes in here. I have one for AI and for NTP. Right here is the next class. See all the students that are in there. I only have one, it's my son, because I'm not an actual teacher, so I just put him in my class.
+
+00:35:08.000 --> 00:35:23.000
+And then… and then view all your assignments by the week, so you can enter them all in. I even injected a summarized lesson plan that the open cloud will summarize when you create a lesson plan here, you type it all in, it'll summarize it and put it in the description for you
+
+00:35:23.000 --> 00:35:33.000
+So that has helped a lot, having essentially a live person living on the server to grow this LMS
+
+00:35:33.000 --> 00:35:42.000
+You can also view it as a parent, so I can see all my kids' classes and everything about everything about my children, you
+
+00:35:42.000 --> 00:35:47.000
+See all the houses. We have different houses, like Harry Potter.
+
+00:35:47.000 --> 00:36:01.000
+So this has helped a lot because it's actually a tutorial. They meet Monday and then at home Tuesday, and then back to school Wednesday where they have really high quality teachers, and then back home Thursday where the parents are leading it, but they have this whole lesson plan
+
+00:36:01.000 --> 00:36:17.000
+there to help their kids learn and grow with the curriculum. It actually did such a good job. I've been showing it to other clients, and they're like, hey, we could actually use this for training. And so I'm like, yeah, that's actually true. So I've been starting to work this LMS system
+
+00:36:17.000 --> 00:36:31.000
+Where it has all these different roles and things for clients, for training their employees as they come on board. But beyond that, having an open claw on there, he's actually set up his blog where he posts two to three times per day
+
+00:36:31.000 --> 00:36:47.000
+And it's all attributed to C St. Louis, that's him, Saint, C.S. Lewis, and it's all relevant to just what the school talks about. So it's now over 300, maybe around 350 blog posts, which gets us past the EEAT
+
+00:36:47.000 --> 00:37:08.000
+Mark for Google, where we are expert, experienced, authoritativeness, and trustworthy. And now it means that it will actually recommend us a lot higher in Google because of this blog. People do find this blog, and I can show you the traffic, I don't have it up right now, but where they're actually finding these articles, and because they are actually very applicable and focused on what we're doing
+
+00:37:08.000 --> 00:37:25.000
+It sends people around through the, to the site, and they eventually sign up. So because of that, largely because of PSEO and this AI automation, we're actually launching this school with… we'll have over 230 students for this next year
+
+00:37:25.000 --> 00:37:41.000
+So two and a half times increase in enrollment. I don't know if that's normal. I mean, she's done a great job on the on the school itself, but I will say AI has helped quite a bit with that. So this is another use case for
+
+00:37:41.000 --> 00:37:56.000
+Brainstorming with your AI because I went into this not knowing what an LMS was and saying, hey, I don't know what I'm doing. And it said, okay, here's how other ones do it. Google Classroom, Blackboard, Blackbaud, all these other ones. And so I said, oh, I don't like this, but I do like that. And I pulled
+
+00:37:56.000 --> 00:37:58.000
+Piece it all together
+
+00:37:58.000 --> 00:38:01.000
+So it's more of an Agentic
+
+00:38:01.000 --> 00:38:06.000
+Workflow that resulted in this great LMS. So.
+
+00:38:06.000 --> 00:38:14.000
+Yeah, that's a lot. I'm trying to go fast, because I know we're limited on time, but I'll leave it right there and pass it back to y'all.
+
+00:38:14.000 --> 00:38:43.000
+Ian, you're being modest. There's nothing normal about the first or second year of having 230 students out of school. I mean, it's incredible growth. And yeah, like to Ian's point on the LMS that he has, if you look at
+
+00:38:43.000 --> 00:38:44.000
+Easily.
+
+00:38:44.000 --> 00:38:55.000
+You know, 10 years ago, you'd either have to license software like that, you know, for tens of thousands of dollars a year, or to build that, I don't know, you're probably in the $50,000 to $100,000 range for a custom build. So yeah, to be able to build that out custom for your, you know, everything has a purpose. You don't… there's no features that you don't need and all the features that you need are there and customizable
+
+00:38:55.000 --> 00:39:05.000
+So yeah, that… I mean, it's an incredible system and something that would have, you know pre AI would have cost you
+
+00:39:05.000 --> 00:39:08.000
+Oh, yeah.
+
+00:39:08.000 --> 00:39:09.000
+Yeah.
+
+00:39:09.000 --> 00:39:12.000
+a thousand X, what you… what you paid and your time investment to build it. So it's very cool, and, you know, the results speak for themselves with the school
+
+00:39:12.000 --> 00:39:37.000
+I appreciate that. I actually, the parts I failed to mention are it's way beyond an LMS because it takes tuition. It allows enrollment and even clubs to sign up if people want to pay. It also has its own email system. Oh, I forgot to show you the Slack. I built Slack into the thing so you can create groups and find people so it's entirely encompassed
+
+00:39:37.000 --> 00:39:38.000
+Unreal.
+
+00:39:38.000 --> 00:39:50.000
+in there, and I'll be launching the iOS app for it in August. That will basically be like notifications. So it's well beyond a standard LMS, and having an open claw, my own personal agent on the server, if problems come in, I
+
+00:39:50.000 --> 00:39:59.000
+Copy and paste the email or the text my wife sends me and say, hey, fix this, and then email them when it's done, email it from me. And he does, and it works like a charm. It's amazing.
+
+00:39:59.000 --> 00:40:17.000
+Yeah, that's awesome. I will say too, I think you guys can get a sense that I like to break all of these workflows down to its core concept and what it is fundamentally. When you look at what Ian did here, he built out this before also would be five different tools. He would have had Slack
+
+00:40:17.000 --> 00:40:37.000
+He would have had his LMS, he would have had 10 other tools that he's trying to stitch together. He was able to build something completely custom and something that makes sense for his business and helps it run more efficiently. So when you're thinking about, you know, you're sitting here and you're watching Ian and seeing what he built out, it's like, oh yeah, that's cool, but like, I don't have a school and I don't need an LMS.
+
+00:40:37.000 --> 00:40:56.000
+You do, if you're on this call, you likely either work in a, you know, have a business, or, you know, you're working in marketing, or whatever your role is, your company has all these functions and these different tools that are all patched together and not centralized. So that's something that's absolutely a possibility now for your company.
+
+00:40:56.000 --> 00:40:57.000
+Yeah.
+
+00:40:57.000 --> 00:40:58.000
+Yeah, well said.
+
+00:40:58.000 --> 00:41:03.000
+Absolutely.
+
+00:41:03.000 --> 00:41:04.000
+Thank you, sir.
+
+00:41:04.000 --> 00:41:16.000
+Good… good work, Ian. I love the branding. You just did a really, really tasteful job there. Guys, I'm gonna keep the pace going here. We've got 15 minutes. We might run a little bit over if you guys want to stay for some Q&A at the end. But I'll jump into the next one. Guys, the next one that I built is
+
+00:41:16.000 --> 00:41:27.000
+Similar to what Ian built, similar but different. It's something that I replaced eight plus tools with one system I built in-house. So
+
+00:41:27.000 --> 00:41:45.000
+to run our operation. So we build agents for other companies. It's a core part of what the three of us do daily. And so there's email, project management, Asana. There's time tracking, billing, Google docs, reporting, client reports, internal documents
+
+00:41:45.000 --> 00:41:56.000
+And so we were just so disconnected across the board. And so I'll show you guys in just a couple minutes here, I'll give you an overview of the system we built in house to manage
+
+00:41:56.000 --> 00:42:13.000
+All of this work, everything from intake to internal comms, client comms, time tracking, reporting, etc. So let me go ahead and share my screen. But again, guys, I want to land that this was built to scratch our own itch
+
+00:42:13.000 --> 00:42:28.000
+I was building something that I was paying a lot of money for across all these different tools that were disconnected, and they just weren't working for us. So we wanted to streamline them and build it in-house. So there's a lot of agents built into this platform and workflow.
+
+00:42:28.000 --> 00:42:37.000
+So when you arrive, you can sort by clients who are looking at warm timber right now. So these are all the requests we have coming in
+
+00:42:37.000 --> 00:42:54.000
+for warm timber. And so every request lands here, whether they make it over a phone call, email, Slack, etc, it lands here in one centralized view. We can go in and take a look at this task. It looks like it's probably an agent that the client wants to get built. Okay, they want an agent.
+
+00:42:54.000 --> 00:43:03.000
+I left a note to Danny, so these are internal notes. So, hey, Danny.
+
+00:43:03.000 --> 00:43:09.000
+We need to let Matt know we're done in
+
+00:43:09.000 --> 00:43:15.000
+Ready to
+
+00:43:15.000 --> 00:43:18.000
+Sajam's there
+
+00:43:18.000 --> 00:43:33.000
+And then this right here is emailing the client. So I could type up a message myself, but we're so busy and this has been trained on my voice. This agent based on tens of thousands of historical emails I've personally wrote myself.
+
+00:43:33.000 --> 00:43:48.000
+So I click draft AI reply, and it takes all the context from this entire thread. There's not much context here, because this thread was just opened, but it does have, you know, the due date, the client, internal comms, and so let's see what it comes up with. Matt, quick update
+
+00:43:48.000 --> 00:43:51.000
+The reporting agent is built and ready to walk through
+
+00:43:51.000 --> 00:43:54.000
+Set up so you can review deals.
+
+00:43:54.000 --> 00:43:59.000
+I want to grab 20 minutes this week, Justin, and I can respond right there to the client
+
+00:43:59.000 --> 00:44:13.000
+The next thing I want to show you guys is not only internal project management status updates that get sent to the client over email, and we can track it internally. So this just got sent to Matt
+
+00:44:13.000 --> 00:44:17.000
+Quick status update, this thread has been updated from open to in progress.
+
+00:44:17.000 --> 00:44:25.000
+and let Matt know there's 4 touchpoints happening behind the scenes, so he knows there is work getting done and progress being made on his agent.
+
+00:44:25.000 --> 00:44:31.000
+Now guys, so this allows us to do the intake AI reply, but also
+
+00:44:31.000 --> 00:44:40.000
+We want to make sure we're documenting our work, how much time we're spending. That was a whole other app that was disconnected. Say we spent two minutes here
+
+00:44:40.000 --> 00:44:54.000
+Reviewing this log time. So this is important for billing the client. Also paying our team for the time they invest into each one of these agents all tracked here. And then if we go ahead and click reports
+
+00:44:54.000 --> 00:44:59.000
+We can actually create a new report, select the client
+
+00:44:59.000 --> 00:45:15.000
+This month, generate report. And then in one shot, guys, this used to take me hours every week to send a client a report for the work that has been done. I'd go through all the notes, all the transcripts, put it into a Google Doc or a slide deck
+
+00:45:15.000 --> 00:45:28.000
+This does it all in under a minute with AI. It takes the summary of every thread, the status of the thread. Is it open? Is it in progress? How many touchpoints were there? What's the ticket number? How much time was spent? Which are completed
+
+00:45:28.000 --> 00:45:32.000
+And then the total time spent
+
+00:45:32.000 --> 00:45:44.000
+So this is going to take about a minute to load, so I'll show you one that is already done and ready
+
+00:45:44.000 --> 00:45:51.000
+Click share, copy link. I send this to the client with their invoice, which is all streamlined and happens in one click.
+
+00:45:51.000 --> 00:46:05.000
+This attaches to their invoice with their password and link here. They can access their report to show what was down this… done this month, what's in progress, what's waiting, complete, and total time spent.
+
+00:46:05.000 --> 00:46:06.000
+It's amazing.
+
+00:46:06.000 --> 00:46:08.000
+So
+
+00:46:08.000 --> 00:46:23.000
+Big idea here is I am challenging you guys to be the architect. That's the whole philosophy behind everything that we're showing you today. Whether we're showing you a Figma board, a Miro board
+
+00:46:23.000 --> 00:46:31.000
+Ian's incredible LMS or LLM ranking tool
+
+00:46:31.000 --> 00:46:36.000
+This is about taking whatever your workflow is
+
+00:46:36.000 --> 00:46:52.000
+And custom tailoring it to you, right? So if you've all these disparate tools, there is a way to consolidate them and bundle them and streamline them to fast track what you're doing and make it more efficient so that you can take yourself out of working inside of the business and start working on the business to grow it
+
+00:46:52.000 --> 00:46:59.000
+So most software is a house that someone else designed
+
+00:46:59.000 --> 00:47:17.000
+And you move in, and you live with whatever you have. Maybe you don't have washer, dryer in unit, or maybe you wanted a deck, but there is no deck, or you wanted an in-ground pool, but instead you got a hot tub, right? So, this is kind of like building your own and hiring your own architect, or you are the architect
+
+00:47:17.000 --> 00:47:43.000
+To design the exact house that… that you want to live in that would make you happy and make your life better. So, I built this for myself and for Ian and Alec and I to work more efficiently, and at the end of the day, you know, there's probably like
+
+00:47:43.000 --> 00:47:44.000
+Yeah
+
+00:47:44.000 --> 00:47:47.000
+20 to 50… 25 to 50 agents working inside of mission control that save us time, make it more efficient, make it look more professional to clients, and it's all just running in one unified spot, so… I want you guys to imagine what that could look like for your organization
+
+00:47:47.000 --> 00:47:48.000
+That's all.
+
+00:47:48.000 --> 00:47:55.000
+Yeah, Justin, that's an amazing tool because you have really cobbled together a lot of different tools that you would be using. You probably were using
+
+00:47:55.000 --> 00:48:10.000
+And I know 50, 20 to 50 agents can sound daunting, but you didn't start with that. You went iteratively. You said, how can I do this? And then how can I do that? And would it be easy to do this? And you just started tasking the agents. That's the core thing, is saying, like, here, I'm having
+
+00:48:10.000 --> 00:48:17.000
+a problem, a hard time doing this. You ask your agent, and it can build that thing so that
+
+00:48:17.000 --> 00:48:24.000
+So that it takes up that workload off of you, the things that were robotic that you would do normally.
+
+00:48:24.000 --> 00:48:27.000
+And it's a really impressive tool
+
+00:48:27.000 --> 00:48:35.000
+And that started really just with brainstorming, and you've just grown it, you know, so it can look daunting, but just start with square one, and that's a great question to ask, is like.
+
+00:48:35.000 --> 00:48:43.000
+you know, can you do this? Talk to your bot, talk to your agent, can you do this? Can you build this? Yes. Okay, great, now I've got that part done. And you're buying back your time.
+
+00:48:43.000 --> 00:48:44.000
+So viable.
+
+00:48:44.000 --> 00:49:02.000
+Yeah, 100%. I think the key word there is consolidation. This is with Ian's example, with Justin's example, this in the past would have been 10 tools that weren't necessarily customized for you. And then also, I think we all share that universal pain of
+
+00:49:02.000 --> 00:49:17.000
+Clicking between 50 different tools every single day. And when you can have just one place to work out of, it just eliminates some of that friction and allows you to work a little bit cleaner. So bravo, Justin, super impressed with that tool.
+
+00:49:17.000 --> 00:49:18.000
+Well done.
+
+00:49:18.000 --> 00:49:26.000
+Thanks, guys.
+
+00:49:26.000 --> 00:49:27.000
+Let's go.
+
+00:49:27.000 --> 00:49:34.000
+Very, very well done. I'm going to give us something a little more simple here, something a little more basic. This is not 25 agents. This is more like one agent. But nonetheless, that goes to show you that
+
+00:49:34.000 --> 00:49:55.000
+You don't need something incredibly complex to get real results. I pulled this screenshot from right before we jumped on. This is the last seven days with a client. We started the sequence. This is all cold emails, by the way. So we started the sequence for about 1700 people. It's likely they've gotten two emails since probably 35
+
+00:49:55.000 --> 00:50:15.000
+100 emails-ish a week. And from that, we've gotten 112 opportunities. Disregard the conversions part, we don't track that within this is instantly, which is the cold email software. And these type of reply rates and opportunity rates without AI and these the agent stack that we have here is just impossible
+
+00:50:15.000 --> 00:50:30.000
+You're typically getting, you know, maybe 3% reply rate is pretty good, and, you know, half of those 3% might be telling you to stop emailing you. So this opportunity rate is incredible and is only possible
+
+00:50:30.000 --> 00:50:49.000
+Because of AI so high level, what that workflow looks like is our prospect or our client, they have a database full of prospects. So what we do is we scrape that database and we pull in all the info about the pros… about the prospect, and we write these hyper, hyper-personalized emails
+
+00:50:49.000 --> 00:51:07.000
+Showing them that we did our research and that this isn't just some… it's kind of back to like the imessage versus SMS example. It shows them that we're actually, you know, we actually did our research here, and, you know, put effort into this and are actually, you know, interested in them and working with them.
+
+00:51:07.000 --> 00:51:23.000
+So that's kind of first step is scraping this database, ingesting that data, and then AI is able to write these hyper, hyper personalized email, and that gets pushed into our email sending software. And like you can see the results here send out hundreds of emails a day, and per week.
+
+00:51:23.000 --> 00:51:45.000
+It create over 100 opportunities, which for a lot of businesses is like, I can't even, you know, if you're a solopreneur, it's like, I can't even handle that. So we're absolutely crushing it with this agent here. And I want to give everybody like a very, very practical way to get into building agents and to getting results with them.
+
+00:51:45.000 --> 00:52:01.000
+So one tool that we've talked about on this, on AI for NTP is Apify. And Apify is great because I talked about that, you know, how we're scraping that data, we're pulling that data in. And that's oftentimes a real bottleneck of AI is like we need data to work with
+
+00:52:01.000 --> 00:52:20.000
+So what Apify does is they have some off the shelf scrapers here. They have a whole store filled with scrapers. You can scrape Facebook pages and look for emails. You could scrape TikTok, influencers and look for their emails or it's not limited to emails either. It's just raw data
+
+00:52:20.000 --> 00:52:37.000
+If you're looking for analytics on your TikTok account or specific TikTok account, it's all here. Google search results scraper. It's all in Apify. So one example I have for you guys is I one of my businesses we sell to attorneys
+
+00:52:37.000 --> 00:52:39.000
+So, I was in Apify
+
+00:52:39.000 --> 00:53:01.000
+Just happened to find this lawyer and attorney lead scraper. So Apify works really well with agents. You basically give them the scraper ID and an API key, and it can go and use the scraper to pull in data. So basically, it can pull in, you know, if you want employment attorneys, or if you want personal injury attorneys, if that's who you sell to, you can give that to your agent, and I'll pull up
+
+00:53:01.000 --> 00:53:14.000
+Codex here really quickly. And you can give it that scraper, and actually, I'll just show you what a data set looks like. So basically, you can run these scrapers, and it can go and pull in
+
+00:53:14.000 --> 00:53:30.000
+This is basically the data that the agent will have to work with. So you can see it pulled in some stats about the agent, and then on the agent side, what it can then do is it can then enrich, it can go on the website and pull out some stats from the law firms like, hey, I've seen you've been around since
+
+00:53:30.000 --> 00:53:50.000
+1997. Or, you know, I saw you just settled this case for this amount, like, we can get you 5 more of those, or something along those lines, something that shows that we did an extra layer. It's an extra layer of personalization, makes it look like we put in a lot of effort to reaching out to them, and then we'll boost reply rates, we'll boost how many meetings we're getting, and long-term
+
+00:53:50.000 --> 00:54:15.000
+Boost how many clients we have. So, and then that pushes into instantly, like I said, that's our cold email software, that's what this screenshot is from. It basically allows you to send emails at scale without burning your personal email. So it's a very, very simple workflow, simple agent. All it's doing, it's pulling in data, it's writing these personalized emails that are, you know, tailored to both them and what your offer is, what your business does
+
+00:54:15.000 --> 00:54:27.000
+pushing that into a cold email sequence, getting you meetings on autopilot. It just runs. It just runs. So that's kind of a very, very practical and you know
+
+00:54:27.000 --> 00:54:42.000
+probably a little bit simpler than what Ian and Justin, you know, they have 25 agents here. This is one agent. This does one thing. So this is a very, very simple agent, but nonetheless effective.
+
+00:54:42.000 --> 00:54:48.000
+Super applicable, man. I love the targeted like this thing is an engine that does this thing. It's awesome.
+
+00:54:48.000 --> 00:54:49.000
+Thanks, man.
+
+00:54:49.000 --> 00:54:51.000
+Super valuable.
+
+00:54:51.000 --> 00:54:56.000
+And it goes back to what we were saying about when we presented the
+
+00:54:56.000 --> 00:55:14.000
+Agent where we gave it the proper context from our call transcript, right? Having good context and inputs that are ingested by the agent to create proper outputs. It sounds like there's an element of that going on here, right? When you're reaching out to these
+
+00:55:14.000 --> 00:55:28.000
+prospects or individuals, you want to make sure that the AI has proper context on who they are, where they work, when they got founded, what cases they settled, and that just, in turn, is going to make your ROI of your marketing operations that much more effective.
+
+00:55:28.000 --> 00:55:57.000
+Yep, 100%. And one other piece is that, you know, like I said, this is a very simple agent, but this can be built on a million different ways, right? Like then you implement the agent that's replying to the responses and setting the meetings. And then you're having all that push into your CRM and there's so many different ways that you can start to build upon something that's working. So in a lot of cases, it's really just about getting something out there, getting something started, getting the ball rolling
+
+00:55:57.000 --> 00:56:00.000
+And then building off of that kind of initial agent.
+
+00:56:00.000 --> 00:56:04.000
+Right. And this is pretty much applicable across every industry.
+
+00:56:04.000 --> 00:56:06.000
+Yep.
+
+00:56:06.000 --> 00:56:07.000
+Yep.
+
+00:56:07.000 --> 00:56:11.000
+Anything you can imagine. It's like a multi-tool.
+
+00:56:11.000 --> 00:56:12.000
+There we go.
+
+00:56:12.000 --> 00:56:13.000
+Multi-laser school
+
+00:56:13.000 --> 00:56:14.000
+Yep.
+
+00:56:14.000 --> 00:56:15.000
+Love it.
+
+00:56:15.000 --> 00:56:16.000
+All right, are we ready for the last one?
+
+00:56:16.000 --> 00:56:21.000
+Do you want to close us out the last one, then we can jump into a Q&A and we have something to share with you guys at the end.
+
+00:56:21.000 --> 00:56:41.000
+Yes, yeah. So kudos to everybody who stuck around for one hour because this is the big daddy. This is one I've been most excited about. So to set it up really quick, so Brand Sauce, which is my company, we've been building for about eight years. In the last six months has grown about 5x. So we went from about five employees to 30
+
+00:56:41.000 --> 00:56:56.000
+around 30 employees. And our… we've just been growing a lot, so it's been really great, but it's also been harder to manage, because we're all over the world, from Ecuador to Ukraine to Philippines, and then all over the U.S. And we're all… it's completely remote
+
+00:56:56.000 --> 00:57:07.000
+And I've been talking a lot about OpenClaw and the stuff I've been building everything with on BrandSauce and all my, I call her Saucy, Saucy bot
+
+00:57:07.000 --> 00:57:15.000
+So all my… all my employees were like, hey, we want Assassi. We want Saucy bought too. I said, okay, great. So I did a Saucibot skull. Saucy you, Saucy school
+
+00:57:15.000 --> 00:57:19.000
+And I built out this interface
+
+00:57:19.000 --> 00:57:33.000
+That lets me create a new bot for each of my employees, and it walks them through the process I'll show you. So I'm the sauce boss. So
+
+00:57:33.000 --> 00:57:48.000
+Yeah, initialize each bot, and then it sends it to them, and then it walks them through the process, and then they can start using and building with their own open class, you know? So I'll show you an example of this. So if I put in Jean-Paul, he's our designer, I can give the personality
+
+00:57:48.000 --> 00:58:05.000
+You know, of the bot, I provision the bot, it takes them over to this page, his own personalized page. It walks them through the whole process. Download Telegram, find the bot father, start the bot father, give it these names, and then you'll get a token. When you plug in that token, it tells MySauce boss
+
+00:58:05.000 --> 00:58:09.000
+Hey, another one was provisioned. And then it'll ask
+
+00:58:09.000 --> 00:58:19.000
+this employee to go and find their bot on Telegram and get the pairing token. So there's two steps that they have to take. The API token and the pairing token, it's all secure
+
+00:58:19.000 --> 00:58:30.000
+And then it initializes the bot, and then they can start talking with it. And they have. So Frank is our front end coordinator. He built this whole big
+
+00:58:30.000 --> 00:58:46.000
+spreadsheet of all of our clients and all the tasks he has to do to onboard them, and it has a little check for each one, so he can go at a glance and see where each client's at, and then it gives this kind of a review at the bottom, like, here's the status update on all the clients, here's the ones you need to pay attention to.
+
+00:58:46.000 --> 00:59:02.000
+That's just his own use case, because he thought, oh, I could build this like that. Anna Billin and Gabby, they do our finance. And so they've been reviewing data, data analysis on all of our finances, shipping costs, you know, everything. Our revenue has been kind of
+
+00:59:02.000 --> 00:59:20.000
+like growing a lot, and they really need to get a wrangle on it, make sure that we're profitable, and we are. Jason's our CTO, so each one has their own use case for using it, and I've been training them on how to use it to build in their own space. So it all goes to saucy.bot and in their own folder. They can
+
+00:59:20.000 --> 00:59:26.000
+Each user has a read-only access to everything on that server and on BrandSauce
+
+00:59:26.000 --> 00:59:36.000
+But they can only build in their own folder. And this is great because they can't wreck up, mess up everything else, but they can build like crazy and then show it off at the next class.
+
+00:59:36.000 --> 00:59:40.000
+And so things like, here, I'll show you
+
+00:59:40.000 --> 00:59:56.000
+I'll show you… well, actually, yeah, I'll show you an example of this. So this is a page we built for a client of ours, where they can actually go and pick out products and say, oh, I want this shirt in this color, this color, and then I want all of these colors. And then they say, request
+
+00:59:56.000 --> 01:00:12.000
+these products, and it sends us an email saying this client wants these products added to their store. That's what BrandSauce does, we set up company stores with no minimums. So this is, like, one of our… Viviana, one of our store builder gals, she uses this tool
+
+01:00:12.000 --> 01:00:23.000
+To set up new products, new catalogs, sends them a bunch of links, the bot sets up a page just like this, and then she sends it to the client. It's great. But as each of these
+
+01:00:23.000 --> 01:00:37.000
+Employees all over the world, as they use their bots, I put it all into my bot, the sauce boss. He'll go and grab all the learnings, all the memories, all the things that it's the challenges it's overcome and put it into this big brain
+
+01:00:37.000 --> 01:00:54.000
+So this will grow as it goes, but this will be a place where new employees can come and say, hey, because we're going to definitely be hiring more. Hey, I ran into this problem, or how do I do this? And it pulls in from this hive mind all of our learnings, all of our transcripts from our video calls
+
+01:00:54.000 --> 01:01:10.000
+All of our catalog, all of the things that our employees have done, and it puts it into this one place where they can just go quickly, ask this. And if they need to, if there's not an answer there, then they can ask one of the partners where we can tell them the answer, and then that gets added to the brain. So eventually
+
+01:01:10.000 --> 01:01:28.000
+This will be the go-to for all of these employees. And so far, they've just been loving it. Daniel, he right here, he's getting a lot better English, but he's not fluent yet. And so he actually built a translator so he and I can talk on this one page he built on his with the Sassibot under his
+
+01:01:28.000 --> 01:01:43.000
+folder where we go there, and as I talk, it types out what I'm saying in Spanish, and when he talks, it types it in English, and he's also working on one that actually will speak it both directions. So I've been inspiring them to be… to think creatively and think
+
+01:01:43.000 --> 01:01:55.000
+What's possible, and I'm always saying this, I always try to find the boundaries with AI and with agentic AI like this, and I've not found very many boundaries. So I keep encouraging them, hey.
+
+01:01:55.000 --> 01:02:12.000
+Ask Saucy, see if Saucy can do that. And they've been doing it, and it's been really encouraging. And then if there's runs out, sometimes bots will die, so my Sauce bots will get them up and running again, or I can say, hey, update Franks and prompt him to send his GPT OAuth token
+
+01:02:12.000 --> 01:02:28.000
+So that it gets back to live again. But if let's say I don't see this page and their bot is dead, they can actually message my bot through their bot and say, hey, my guy's not working very well. And I'll tell my Sauce boss, hey, go fix it, and then tell them when it's ready. And he does
+
+01:02:28.000 --> 01:02:36.000
+It's just… it's a completely way different way of thinking, but it is definitely, you know, we're living in 2030 over here. So
+
+01:02:36.000 --> 01:02:37.000
+So
+
+01:02:37.000 --> 01:02:57.000
+Yeah, Ian, this is incredible. I mean, this is what real innovation looks like. And everyone's talking about, we're trying to use AI, but we don't know how. I mean, this is you're looking at it right now. This is AI deployed
+
+01:02:57.000 --> 01:02:58.000
+Right.
+
+01:02:58.000 --> 01:03:09.000
+in a real corporate setting, these are, you know, real people, but now they're AI enabled. So we're able to, you know, 10x the output of some of these people by giving them agents. I think it's probably important to note as well, like, hey, what is OpenClaw and, you know, what
+
+01:03:09.000 --> 01:03:36.000
+What's the, you know, functionality of this? I would say for anyone that doesn't know who OpenClaw is, I'm going to share my screen. This is super important
+
+01:03:36.000 --> 01:03:37.000
+It's true
+
+01:03:37.000 --> 01:03:38.000
+article here. So Jensen Huang from NVIDIA he onstage said every CEO needs an open class strategy. And from what I'm seeing in the marketplace, pretty much no CEOs do. Like there's still a lot of CEOs that don't even know what it is. So to see that Ian has
+
+01:03:38.000 --> 01:03:54.000
+fully built out, like, that… you want an open cloud strategy? That's an open class strategy, and that's deployed and built out and operational inside an organization. So it's very, very innovative, and OpenClaw, basically what it is, is, you know, when I talk about
+
+01:03:54.000 --> 01:04:12.000
+The contrast of how a lot of people are using AI versus Agentic AI, you know, you think ChatGPT, you're using it in your browser, you're asking questions. Hey, make this email sound better, whatever. With open claw, I mean, the complete opposite of of the conversational AI example is how Ian's using AI, and he has his open
+
+01:04:12.000 --> 01:04:37.000
+building out and setting up other open class, and building out software for them. So it's… that is basically allowing you like with open claw, you're able to set up these actual these actions and ask it for output and have these these different roles for it set up where it can actually go and do things for you. So just kind of high level overview on what open claw is and the importance of it. You know you have
+
+01:04:37.000 --> 01:04:50.000
+Jeff, the biggest company of the CEO of the biggest company of the world, telling you that every CEO needs an open class strategy. So that's what an open class strategy looks like. So, bravo, Ian.
+
+01:04:50.000 --> 01:05:05.000
+Thank you. Jensen Wang has been very friendly to Open Claw. In fact, I think building processes for that, which I've been really happy about. So there's a lot of fear around open claw. People think it's going to wreck everything and delete my database and all that stuff
+
+01:05:05.000 --> 01:05:20.000
+But if you set it up right, have someone that knows OpenCloud like I do with my company, then they can't mess it up. It's impossible for them to. So as long as somebody like knows how to manage it, and really it doesn't take much to know how to manage it, then yeah, you've got
+
+01:05:20.000 --> 01:05:32.000
+Agentic
+
+01:05:32.000 --> 01:05:33.000
+Yeah.
+
+01:05:33.000 --> 01:05:39.000
+bots working for everybody. And I always tell them when they say, hey, can it do this? Can it make me a PDF of all these products for this client? I say, talk to Saucy, ask Saucy. And sure enough, built this beautiful PDF for this client of ours with all these products that they asked for, you know?
+
+01:05:39.000 --> 01:05:40.000
+So yes
+
+01:05:40.000 --> 01:06:06.000
+It's great to that enablement of the existing team because they have things that you might, they're doing every day that you might not be keen to. So whenever they now have that mental framework of, hey, I have this thing, I'm going to ask my bot to do it for me
+
+01:06:06.000 --> 01:06:07.000
+Yeah
+
+01:06:07.000 --> 01:06:17.000
+Then you're getting those micro advantages every single day from people, you know, starting to build out these workflows. And, you know, that will compound and compound and compound. So, I think it's great. It's honestly of any organization I've come across some of the best implementation of AI I've probably ever seen
+
+01:06:17.000 --> 01:06:18.000
+Sure.
+
+01:06:18.000 --> 01:06:19.000
+Thank you. That means a lot. Appreciate that. All right.
+
+01:06:19.000 --> 01:06:32.000
+That's very well done. Obviously, we collaborate on brand sauce. You've onboarded me to your saucy bot and it's one of the most streamlined processes I've gone through to set up
+
+01:06:32.000 --> 01:06:43.000
+an agent or an open claw, so it can be fairly technical and scary, and if you don't know what you're doing, there's a lot of security concerns, so
+
+01:06:43.000 --> 01:07:00.000
+I felt like I was in good hands. Renee, I hope you enjoyed the seven agents we shared today. This is what we do for a living and have been doing for years now, building custom business solutions
+
+01:07:00.000 --> 01:07:13.000
+So custom build for yourself. We have slots opening up. I'll drop my calendar link, and you'll be working directly with me, Ian, and Alec to build you custom agents like the ones you saw today, or something
+
+01:07:13.000 --> 01:07:23.000
+You know, ideally custom tailored to your business based on an issue you're currently experiencing. So link is in the chat. We can do a 15-minute call to see if we're a good fit. Guys, Q&A
+
+01:07:23.000 --> 01:07:28.000
+Yeah. Bring your best challenges. We love challenges.
+
+01:07:28.000 --> 01:07:29.000
+Yeah.
+
+01:07:29.000 --> 01:07:45.000
+Yeah, the bigger the challenge, the better. We've gone 10 minutes over, but we've got a lot of you guys in the room still, so feel free to drop your question in the chat. You can raise your hand. We can pull you up to stage if you'd like to connect with us directly right now. There's also a Q&A tab you can click and submit your question there.
+
+01:07:45.000 --> 01:07:50.000
+But we'll, ian, Alex, you have a few more minutes to stick around and answer any questions if they, they have any.
+
+01:07:50.000 --> 01:07:51.000
+Yeah.
+
+01:07:51.000 --> 01:07:53.000
+Absolutely.
+
+01:07:53.000 --> 01:07:54.000
+Cool.
+
+01:07:54.000 --> 01:07:57.000
+You got somebody on stage here
+
+01:07:57.000 --> 01:07:58.000
+I'll do it
+
+01:07:58.000 --> 01:08:01.000
+Yeah.
+
+01:08:01.000 --> 01:08:04.000
+Ronnie Labuama
+
+01:08:04.000 --> 01:08:14.000
+Oh, cool.
+
+01:08:14.000 --> 01:08:16.000
+Ask to unmute.
+
+01:08:16.000 --> 01:08:24.000
+Sorry, folks, too much background noise. Yes, but I had my name.
+
+01:08:24.000 --> 01:08:25.000
+Welcome
+
+01:08:25.000 --> 01:08:26.000
+Yeah, welcome. Thanks for coming, and anything we can help.
+
+01:08:26.000 --> 01:08:32.000
+Not at all. Thanks, guys. I appreciate everything you're writing out. I appreciate it big time
+
+01:08:32.000 --> 01:08:33.000
+Thank you.
+
+01:08:33.000 --> 01:08:35.000
+Yeah, absolutely.
+
+01:08:35.000 --> 01:08:45.000
+Yeah, guys, we do these every week. So you know where to find us. We also post everything, as you guys learned on YouTube, Instagram, newsletter
+
+01:08:45.000 --> 01:08:52.000
+Yeah, you're welcome, Christy.
+
+01:08:52.000 --> 01:08:55.000
+Well, unless there's any more questions, I think that's
+
+01:08:55.000 --> 01:08:57.000
+That's a wrap, guys. That was a fun one
+
+01:08:57.000 --> 01:08:59.000
+It was
+
+01:08:59.000 --> 01:09:00.000
+Yeah.
+
+01:09:00.000 --> 01:09:01.000
+Yeah, that was good.
+
+01:09:01.000 --> 01:09:04.000
+We've got one more question here. Oh, good stuff.
+
+01:09:04.000 --> 01:09:06.000
+Not a question, but thank you.
+
+01:09:06.000 --> 01:09:20.000
+I'll ask one question of anyone who's still in here. What agent resonated with you the most or was maybe the most applicable to what you're doing?
+
+01:09:20.000 --> 01:09:22.000
+That's a good one
+
+01:09:22.000 --> 01:09:24.000
+Yeah, that's a tough
+
+01:09:24.000 --> 01:09:30.000
+Tough one to answer. They're all I really that LMS is so cool, Ian.
+
+01:09:30.000 --> 01:09:31.000
+It is cool.
+
+01:09:31.000 --> 01:09:32.000
+All the message itself.
+
+01:09:32.000 --> 01:09:33.000
+I was just thinking
+
+01:09:33.000 --> 01:09:42.000
+Thank you. I was just thinking, I want both of the things you guys did integrate those into my workflow.
+
+01:09:42.000 --> 01:09:46.000
+Social media posting at work and marketing site
+
+01:09:46.000 --> 01:09:47.000
+Nice.
+
+01:09:47.000 --> 01:09:49.000
+Christy, reach out. We can we can get you set up.
+
+01:09:49.000 --> 01:09:51.000
+Nice.
+
+01:09:51.000 --> 01:09:52.000
+Lead generation.
+
+01:09:52.000 --> 01:10:06.000
+There we go
+
+01:10:06.000 --> 01:10:07.000
+Right.
+
+01:10:07.000 --> 01:10:12.000
+Yeah, Alec, what I loved about that one is I think Ian said this prior, it's so, so specific. It knows what it is. And it just swims in that lane. It doesn't try to be something it isn't. Sometimes you see these really robust AI builds and they don't really have an identity. They do everything
+
+01:10:12.000 --> 01:10:28.000
+they're good or okay at everything, but not great at any one thing. I love how specific you built that solution. Other solutions that we've, you know, I've seen you build, Alec, for clients and companies, they're always very so specific and tailored
+
+01:10:28.000 --> 01:10:33.000
+to solve that specific business owner's challenge. I love watching your builds.
+
+01:10:33.000 --> 01:10:51.000
+Yeah, thanks, Ben. And I mean, that's the difference. Like even with what you built is that when you're getting something off the shelf.
+
+01:10:51.000 --> 01:10:52.000
+Yeah.
+
+01:10:52.000 --> 01:10:57.000
+you know, it might solve part of what you're looking for, but the odds of something, you know, that's already built to actually, you know, meet all your needs are pretty low. So yeah, I'd love to build stuff out custom that actually makes sense and actually applies and actually fills that need
+
+01:10:57.000 --> 01:11:00.000
+that our clients have.
+
+01:11:00.000 --> 01:11:02.000
+Yeah.
+
+01:11:02.000 --> 01:11:06.000
+generic idea of multiple custom agents is cool.
+
+01:11:06.000 --> 01:11:10.000
+Let's go. I'm glad you… glad that resonated.
+
+01:11:10.000 --> 01:11:18.000
+If they want to get a soft spot and open claw for their organization.
+
+01:11:18.000 --> 01:11:20.000
+What would that look like?
+
+01:11:20.000 --> 01:11:23.000
+Is that is that, like, how would you kick that off
+
+01:11:23.000 --> 01:11:39.000
+It would really just be talking to whoever runs the company or is in charge of that space and then figuring out a solution that I could set them up as manager and then show them how to basically a very similar setup to what SaucyBot is
+
+01:11:39.000 --> 01:11:42.000
+Where they could
+
+01:11:42.000 --> 01:11:58.000
+create the bots, and then walk their employees through it, and then walk them through some kind of training. That's been the hardest part, is what's possible. That's why I've been doing weekly calls with all my employees, is what's possible? How do I use this? What is it good for? And then I show them examples. And then as they do
+
+01:11:58.000 --> 01:12:09.000
+do things, then I should bring them to the front and say, here's another example. And so it spurns all these ideas. It's more of a train… you know, Cesar Milan used to train dogs
+
+01:12:09.000 --> 01:12:21.000
+Had a show, and whenever you come in and train a bad dog, he actually ended up training the human. The dog was actually fine. It was the human, how they were responding. And that's kind of how I see this. Like, you've got a bot
+
+01:12:21.000 --> 01:12:30.000
+And I need to train you on how to use the bot. I'm not going to train the bot. I'm not going to prompt it. I'm going to train you on how to think about working with it. So that's probably the biggest lift
+
+01:12:30.000 --> 01:12:35.000
+What a metaphor right there. That's great.
+
+01:12:35.000 --> 01:12:36.000
+Love it.
+
+01:12:36.000 --> 01:12:37.000
+Yeah.
+
+01:12:37.000 --> 01:12:52.000
+Cool, guys, that's a wrap. I'll give you guys a call later we can debrief and we'll plan the next one next week and go from there
+
+01:12:52.000 --> 01:12:53.000
+Thanks, Eric.
+
+01:12:53.000 --> 01:12:55.000
+Sounds good. Thanks, Justin. Thanks, everybody.
+
+01:12:55.000 --> 01:13:00.000
+See you
+
